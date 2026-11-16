@@ -1,0 +1,2400 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-18 12:46+0000\n"
+"Last-Translator: IR Führer <ir_fuhrer@noreply.pixelplanet.fun>\n"
+"Language-Team: Persian <https://translate.gs-os.com/projects/ppfun/client/"
+"fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid " which is in "
+msgstr " که در "
+
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr "${ mouseSymbol } دکمه چپ موس رو نگه دار و موس رو حرکت بده تا بچرخی"
+
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr ""
+"${ mouseSymbol } کلیک چپ یا ${ touchSymbol } بزن روی صفحه تا پیکسل گذاشته بشه"
+
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr "${ mouseSymbol } کلیک راست کرده و موس را بکشید تا جابجا شوید"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
+msgstr ""
+"راست کلیک کن ${ mouseSymbol } یا ${ touchSymbol } دوبار روی پیکسل بزن تا "
+"پیکسل رو حرف کنی"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } اسکرول موس یا ${ mouseSymbol } دکمه وسطی موس رو نگه دار و "
+"تکونش بده تا زوم کنی"
+
+msgid "(0 = infinite)"
+msgstr "(۰ = بی‌نهایت)"
+
+msgid "(click a role to activate it)"
+msgstr "(روی یک نقش کلیک کنید تا فعال شود)"
+
+msgid "(click a role to assign or remove it)"
+msgstr "(روی یک نقش کلیک کنید تا اختصاص یا حذف شود)"
+
+msgid "+last hour"
+msgstr "+آخرین ساعت"
+
+msgid "...loading Login methods and sessions..."
+msgstr "...در حال بارگذاری روش‌های ورود و نشست‌ها..."
+
+msgid "A Phish!"
+msgstr "یک ماهی!"
+
+msgid ""
+"A flag representing the role, it should be 16x11 pixels. If left empty, "
+"users with this role selected will still show their own flags."
+msgstr ""
+"پرچمی که نمایانگر نقش است، باید ۱۶×۱۱ پیکسل باشد. اگر خالی بماند، کاربرانی "
+"که این نقش را انتخاب کرده‌اند پرچم خودشان را نمایش می‌دهند."
+
+msgid "A new verification mail is getting sent to you."
+msgstr "یک ایمیل تأیید جدید برای شما ارسال می شود."
+
+msgid ""
+"A role has all the permissions of all levels below and equal to it. In "
+"example: Every role with a power level of >=50 can manage invites (50)."
+msgstr ""
+"یک نقش تمام دسترسی‌های تمام سطوح پایین‌تر و مساوی خود را دارد. مثال: هر نقش با "
+"سطح قدرت ≥۵۰ می‌تواند دعوت‌نامه‌ها را مدیریت کند (۵۰)."
+
+msgid "ACCESS MODTOOLS"
+msgstr "دسترسی به ابزارهای ناظمی"
+
+#. modlogLink has the text "Moderation Log"
+#, javascript-format
+msgid ""
+"Actions taken by moderators on the canvas can be seen in the ${ modlogLink }."
+msgstr ""
+"اقدامات انجام شده توسط ناظمان روی بوم را می‌توانید در ${ modlogLink } مشاهده "
+"کنید."
+
+msgid "Add Grid (uncheck if you need a 1:1 template)"
+msgstr "شبکه اضافه کن (تیک رو بردار اگر یک قالب یک در یک میخوای)"
+
+msgid "Add Template"
+msgstr "افزودن قالب"
+
+msgid "Add a new E-Mail Address here:"
+msgstr "یک آدرس ایمیل جدید اینجا اضافه کنید:"
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Admintools"
+msgstr "ابزارهای مدیریت"
+
+msgid "Age"
+msgstr "سن"
+
+msgid "All members of this faction are hidden"
+msgstr "تمام اعضای این فکشن مخفی هستند"
+
+msgid "All sound effects will be disabled."
+msgstr "تمامی افکت های صدا غیرفعال میشه."
+
+msgid "Always show Movement Controls"
+msgstr "همیشه کنترلای حرکتی نشون داده بشن"
+
+msgid "Always show movement control buttons"
+msgstr "همیشه دکمه‌های کنترل حرکت نمایش داده شود"
+
+msgid "An image representing your faction"
+msgstr "تصویری که نمایانگر فکشن شماست"
+
+msgid "Anti Aliasing"
+msgstr "حذف لبه‌های دندانه‌دار"
+
+msgid "Apply a filter to clean trash in large canvas areas."
+msgstr "از یک فیلتر برای تمیز کردن سطل زباله در مناطق بزرگ بوم استفاده کنید."
+
+msgid "Archive"
+msgstr "آرشیو"
+
+msgid "Assign Roles"
+msgstr "اختصاص نقش‌ها"
+
+msgid "Assign new Mod"
+msgstr "ادمین جدید انتخاب کن"
+
+msgid "Assign role per default to new members"
+msgstr "اختصاص نقش به صورت پیش‌فرض به اعضای جدید"
+
+msgid "Assign roles below their own"
+msgstr "اختصاص نقش‌های پایین‌تر از سطح خود"
+
+msgid "Assign this role to every new member automatically on join."
+msgstr "این نقش به طور خودکار به هر عضو جدید هنگام عضویت اختصاص داده شود."
+
+msgid "Assigned role per default"
+msgstr "نقش اختصاص‌یافته پیش‌فرض"
+
+msgid "Attach File"
+msgstr "پیوست فایل"
+
+msgid "Auto Zoom In"
+msgstr "زوم اتوماتیک بزرگتر"
+
+msgid "Avatar"
+msgstr "آواتار"
+
+msgid "Back"
+msgstr "بازگشت"
+
+msgid "Badge Display"
+msgstr "نمایش نشان‌ها"
+
+msgid "Badges"
+msgstr "نشان‌ها"
+
+msgid "Ban"
+msgstr "مسدود کردن"
+
+msgid "Ban media"
+msgstr "مسدود کردن رسانه"
+
+msgid "Ban members"
+msgstr "مسدود کردن اعضا"
+
+msgid "Banned"
+msgstr "بن شدی سید، بهت گفتیم یاهود بازی در نیار"
+
+msgid "Banned? Detected as Proxy?"
+msgstr "بن شدی؟ به عنوان پروکسی شناخته شدی؟"
+
+msgid "Bans"
+msgstr "مسدودی‌ها"
+
+msgid "Block"
+msgstr "بلاک"
+
+msgid "Block DMs"
+msgstr "پیام ها رو مسدود کنید"
+
+msgid ""
+"Block all Private Messages. Enabling this will make it impossible for other "
+"users to start messaging you. You can still start new DMs with other users "
+"and already ongoing DMs will still be open."
+msgstr ""
+"مسدود کردن تمام پیام‌های خصوصی. فعال کردن این گزینه باعث می‌شود سایر کاربران "
+"نتوانند به شما پیام بدهند. شما همچنان می‌توانید پیام خصوصی جدیدی با کاربران "
+"دیگر شروع کنید و پیام‌های خصوصی در حال انجام همچنان باز خواهند بود."
+
+msgid "Blocked"
+msgstr "مسدود شده"
+
+msgid "Bottom-right corner"
+msgstr "گوشه پایین سمت راست"
+
+msgid "Build image and set it to protected."
+msgstr "تصویر را بسازید و آن را روی محافظت شده تنظیم کنید."
+
+msgid "Build image on canvas."
+msgstr "ساخت تصویر روی بوم."
+
+msgid "Build image, but reset cooldown to unset-pixel cd."
+msgstr "تصویر بسازید، اما cooldown را به unset-pixel cd بازنشانی کنید."
+
+msgid "By Mod"
+msgstr "توسط ادمین"
+
+msgid "Calculate like GIMP"
+msgstr "مانند GIMP محاسبه کنید"
+
+msgid "Can not export more than 20 or no template!"
+msgstr "نمی توان بیش از 20 یا بدون قالب صادر کرد!"
+
+msgid "Can not import more than 20 or no template!"
+msgstr "نمی‌توان بیش از ۲۰ قالب وارد کرد یا قالبی وجود ندارد!"
+
+msgid "Can't read? Reload:"
+msgstr "نمیتونی بخونی؟ یک کَپچای دیگه بزن:"
+
+msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
+msgstr "داداش بوم سه بعدی رندر نشد. WebGL2 رو غیر فعال کردی ناقلا؟"
+
+msgid "Cancel"
+msgstr "لغو"
+
+msgid "Cancel adding Template"
+msgstr "لغو تغییر در قالب"
+
+msgid "Canvas"
+msgstr "بوم"
+
+msgid "Canvas Archive"
+msgstr "آرشیو بوم"
+
+msgid "Canvas Cleaner"
+msgstr "پاک کننده بوم"
+
+msgid "Canvas Error"
+msgstr "ارور بوم"
+
+msgid "Canvas Selection"
+msgstr "انتخاب بوم"
+
+msgid "Captcha"
+msgstr "کَپچا"
+
+msgid "Caught by"
+msgstr "صید شده توسط"
+
+msgid "Change Flag"
+msgstr "تغییر پرچم"
+
+msgid "Change Happened"
+msgstr "تغییر انجام شد"
+
+msgid "Change Name"
+msgstr "تغییر نام"
+
+msgid "Change Password"
+msgstr "پسوردت رو عوض کن"
+
+msgid "Channel"
+msgstr "کانال"
+
+msgid "Channel settings"
+msgstr "تنظمیات کانال"
+
+msgid "Charts"
+msgstr "نمودار"
+
+msgid "Chat"
+msgstr "چت"
+
+msgid "Chat here"
+msgstr "همینجا چت کن"
+
+msgid "Check out past versions of the canvas."
+msgstr "نسخه های قدیمی این بوم رو نشون بده."
+
+msgid "Check to allow"
+msgstr "برای اجازه دادن علامت بزنید"
+
+msgid "Check who placed in an area"
+msgstr "بررسی کنید چه کسی در اون منطقه پیکسل گذاشته"
+
+msgid "Choose Canvas"
+msgstr "بوم رو انتخاب کن"
+
+msgid "Choose Color Mode"
+msgstr "انتخاب حالت رنگ"
+
+msgid "Choose Strategy"
+msgstr "استراتژیت رو انتخاب کن"
+
+msgid "Choose Username"
+msgstr "انتخاب نام کاربری"
+
+msgid ""
+"Clean spare pixels that are surrounded by a single other color or unset "
+"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
+"two cooldowns)!)"
+msgstr ""
+"پیکسل‌های یدکی را که با یک رنگ دیگر احاطه شده‌اند یا پیکسل‌های تنظیم نشده تمیز "
+"کنید (روی بوم‌ها بسیار تهاجمی است که اجازه می‌دهد پیکسل‌های تنظیم نشده (در جایی "
+"که دو حالت خنک‌کننده وجود دارد) وجود داشته باشد!)"
+
+msgid "Clean spare pixels that are surrounded by unset pixels"
+msgstr ""
+"پیکسل های یدکی را که با پیکسل های تنظیم نشده احاطه شده اند را تمیز کنید"
+
+msgid ""
+"Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
+"pixels"
+msgstr ""
+"پیکسل‌های یدکی را که با پیکسل‌های تنظیم‌نشده و حداکثر ۱ پیکسل تنظیم‌شده دیگر "
+"احاطه شده‌اند، تمیز کنید"
+
+msgid "Cleaners can use 0cd blank colors."
+msgstr "پاک‌کننده‌ها می‌توانند از رنگ‌های خالی بدون زمان انتظار استفاده کنند."
+
+msgid "Clear"
+msgstr "پاک کردن"
+
+#, javascript-format
+msgid ""
+"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
+"select current hovering color"
+msgstr ""
+"کلیک ${ mouseSymbol } وسط موس رو بزن یا ${ touchSymbol } روی یک پیکسل نگه "
+"دار تا رنگ اون پیکسل گذاشته شده رو انتخاب کنی"
+
+msgid "Click a color in palette to select it"
+msgstr "یه رنگ توی حعبه رنگ کلیک کن تا انتخاب کنی"
+
+msgid "Click here to cease representation."
+msgstr "برای پایان نمایندگی اینجا کلیک کنید."
+
+msgid "Click here to request a new verification mail."
+msgstr "برای درخواست یک ایمیل تأیید جدید اینجا را کلیک کنید."
+
+msgid "Click to Load Captcha"
+msgstr "کلیک کن تا کَپچا لود بشه"
+
+msgid "Click to remove"
+msgstr "برای حذف کلیک کنید"
+
+msgid "Clone"
+msgstr "کلون کن"
+
+msgid "Close"
+msgstr "ببند"
+
+msgid "Close Chat"
+msgstr "چت رو ببند"
+
+msgid "Close Palette"
+msgstr "جعبه رنگ ها رو ببند"
+
+msgid "Compact Chat"
+msgstr "چت فشرده"
+
+msgid "Compact Palette"
+msgstr "حعبه رنگ فشرده"
+
+msgid "Confirm"
+msgstr "تأیید"
+
+msgid "Confirm Ban"
+msgstr "تأیید مسدودیت"
+
+msgid "Confirm Delete"
+msgstr "تأیید حذف"
+
+msgid "Confirm Kick"
+msgstr "تأیید اخراج"
+
+msgid "Confirm Leave"
+msgstr "تأیید خروج"
+
+msgid "Confirm New Password"
+msgstr "رمز عبور جدید را تأیید کنید"
+
+msgid "Confirm Password"
+msgstr "دوباره پسورد رو وارد کن"
+
+msgid "Confirm your password."
+msgstr "رمز عبور خود را تأیید کنید."
+
+#, javascript-format
+msgid "Connection error ${ code } :("
+msgstr "نتت مشکل داره کسکم. ${ code } :("
+
+msgid "Consent"
+msgstr "رضایت"
+
+msgid "Controls"
+msgstr "کنترل ها"
+
+msgid "Convert an image to canvas colors"
+msgstr "یه عکس رو تبدیل به رنگ های بوم بکن"
+
+msgid "Converter"
+msgstr "تبدیل کننده"
+
+msgid "Cooldown"
+msgstr "کولداون"
+
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+"زمان انتظار معمولاً به طور خودکار برای کشوری که در حال تسلط است تغییر می‌کند. "
+"مثلاً در صورت حمله استریمر."
+
+msgid "Coordinates"
+msgstr "مختصات"
+
+msgid "Coordinates:"
+msgstr "مختصات:"
+
+msgid "Copied"
+msgstr "کپی شد"
+
+msgid "Copy"
+msgstr "کپی"
+
+msgid "Copy Link"
+msgstr "کپی لینک"
+
+msgid "Copy Selected to Clipboard"
+msgstr "کپی مورد انتخاب‌شده در کلیپ‌بورد"
+
+msgid "Copy URL"
+msgstr "کپی URL"
+
+msgid "Copy UserId to Clipboard"
+msgstr "کپی شناسه کاربر در کلیپ‌بورد"
+
+msgid "Copy to Clipboard"
+msgstr "کپی شد سید"
+
+msgid "Could not connect to server"
+msgstr "امکان اتصال به سرور وجود ندارد"
+
+msgid "Could not connect to server, please try again later :("
+msgstr "به سرور نتونستم وصل شم. بعدا یه امتحان بکن :("
+
+msgid "Could not load captcha"
+msgstr "کَپچا لود نشد"
+
+msgid "Could not process files"
+msgstr "پردازش فایل‌ها امکان‌پذیر نیست"
+
+msgid "Couldn't set Pixel"
+msgstr "پیکسل گذاشته نشد"
+
+msgid "Countries Today"
+msgstr "کشور های امروز"
+
+msgid "Country"
+msgstr "کشور"
+
+msgid "Create Faction"
+msgstr "ایجاد فکشن"
+
+msgid "Create Invite"
+msgstr "ایجاد دعوت‌نامه"
+
+msgid "Create New Faction"
+msgstr "ایجاد فکشن جدید"
+
+msgid "Create New Invite"
+msgstr "ایجاد دعوت‌نامه جدید"
+
+msgid "Create New Role"
+msgstr "ایجاد نقش جدید"
+
+msgid "Create Role"
+msgstr "ایجاد نقش"
+
+msgid "Create roles"
+msgstr "ایجاد نقش‌ها"
+
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "اعتبار پالت بوم ۲بیت به ${ donendoLink } تعلق دارد."
+
+#, javascript-format
+msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
+msgstr "فرد سازنده جعبه رنگ بوم ماه ${ starhouseLink }."
+
+#, javascript-format
+msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr "فرد سازنده بوم 10 نفر اول ${ vinikLink }."
+
+msgid "Current Cooldown Changes per Country"
+msgstr "تغییرات فعلی زمان انتظار به ازای کشور"
+
+msgid "Custom Cursor"
+msgstr "نشانگر سفارشی"
+
+msgid "Custom Flag"
+msgstr "پرچم سفارشی"
+
+msgid "DM"
+msgstr "پیام"
+
+msgid "Daily Pixels"
+msgstr "پیکسل‌های روزانه"
+
+msgid "Daily Pixels per Country"
+msgstr "پیکسل‌های روزانه به ازای کشور"
+
+msgid "Daily Pixels per Faction"
+msgstr "پیکسل‌های روزانه به ازای فکشن"
+
+msgid "Daily Pixels per Player"
+msgstr "پیکسل‌های روزانه به ازای بازیکن"
+
+msgid "Daily Rank"
+msgstr "رتبه روزانه"
+
+msgid "Date of Award"
+msgstr "تاریخ اهدا"
+
+msgid "Date of catch"
+msgstr "تاریخ صید"
+
+msgid "Delete"
+msgstr "حذف حساب کاربری"
+
+msgid "Delete Account"
+msgstr "اکانتت رو پاک کن"
+
+msgid "Delete Faction"
+msgstr "پاک کردن فکشن"
+
+msgid "Delete My Account"
+msgstr "حذف حساب کاربری من"
+
+msgid "Delete the faction"
+msgstr "حذف فکشن"
+
+msgid "Deny"
+msgstr "رد کردن"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Description can't be empty"
+msgstr "توضیحات نمی‌تواند خالی باشد"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "توضیحات باید کمتر از ۱۰۰۰ کاراکتر باشد"
+
+msgid "Description of your faction"
+msgstr "توضیحات فکشن شما"
+
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr ""
+"از پیکسل‌پلنت پاسخی دریافت نشد. اگر این مشکل ادامه یافت، صفحه را بازخوانی "
+"کنید."
+
+msgid "Dimensions"
+msgstr "ابعاد"
+
+msgid "Disable Game Sounds"
+msgstr "صدا های بازی رو غیرفعال کن"
+
+msgid "Disable History Pencil"
+msgstr "غیرفعال کردن مداد تاریخ"
+
+msgid "Disable Overlay Pencil"
+msgstr "غیرفعال کردن مداد پوشش"
+
+msgid "Disable Pencil"
+msgstr "غیرفعال کردن مداد"
+
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "جعبه رنگ رو فشرده کن که فضای کمتری بگیره."
+
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "انجام کارها با IP (یک IP در هر خط)"
+
+msgid ""
+"Don't let people find this faction in public search or look at its profile."
+msgstr ""
+"اجازه ندهید افراد این فکشن را در جستجوی عمومی پیدا کنند یا پروفایل آن را "
+"ببینند."
+
+msgid "Don't remember"
+msgstr "یادم نیست"
+
+msgid "Don't show faction in search"
+msgstr "فکشن در جستجو نمایش داده نشود"
+
+msgid "Don't show me in global stats"
+msgstr "اسم من رو توی امار جهانی نشون نده"
+
+msgid "Done"
+msgstr "انجام شد"
+
+msgid "Download"
+msgstr "دانلود"
+
+msgid "Download Template"
+msgstr "دانلود قالب"
+
+#, javascript-format
+msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
+msgstr "بکش روی ${ mouseSymbol } موس یا ${ touchSymbol } بکش تا حرکت کنی"
+
+msgid "Duration"
+msgstr "مدت زمان"
+
+msgid "Easter Egg OFF"
+msgstr "ایستر اگ خاموش است"
+
+msgid "Easter Egg ON"
+msgstr "حالت ایستر اگ روشن است"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Edit faction"
+msgstr "ویرایش فکشن"
+
+msgid "Edit roles below their own"
+msgstr "ویرایش نقش‌های پایین‌تر از سطح خود"
+
+msgid "Edit their own role and elevate users to their own level"
+msgstr "ویرایش نقش خود و ارتقای کاربران به سطح خود"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Email can't be empty."
+msgstr "سید ایمیل خالی نمیشه که بزاری."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "ایمیل نمی‌تواند بیشتر از ۴۰ کاراکتر باشد."
+
+msgid ""
+"Email is used to verify your account. You might get a cofirmation mail after "
+"registering."
+msgstr ""
+"ایمیل برای تأیید حساب کاربری شما استفاده می‌شود. ممکن است پس از ثبت‌نام یک "
+"ایمیل تأیید دریافت کنید."
+
+msgid "Email should at least contain a dot"
+msgstr "ایمیل باید نقطه داشته باشه"
+
+msgid "Email should be at least 5 characters long."
+msgstr "ایمیل باید حداقل پنج تا کلمه داشته باشه."
+
+msgid "Email should contain a @"
+msgstr "ایمیل باید حتما @ داشته باشه"
+
+msgid "Enable Overlay"
+msgstr "فعال کردن پوشش"
+
+msgid "Enable Pencil"
+msgstr "فعال کردن مداد"
+
+msgid "Enable chat notifications"
+msgstr "نوتیفیکیشن های چت رو فعال کن"
+
+msgid "Enter Characters"
+msgstr "کاراکترای جدید رو وارد کن"
+
+msgid "Enter Reason"
+msgstr "دلیل وارد کن"
+
+msgid "Enter UserName of new Mod"
+msgstr "نام کاربری ادمین جدید را وارد کنید"
+
+msgid "Enter a little text that describes your faction"
+msgstr "متن کوتاهی که فکشن شما را توصیف می‌کند وارد کنید"
+
+msgid "Enter search term and press Search."
+msgstr "عبارت جستجو را وارد کرده و جستجو را بزنید."
+
+msgid "Enter your mail address and we will send you a new password:"
+msgstr ""
+"آدرس ایمیلتون رو وارد کنین تا ما یه لینک بفرستیم تا بتونین پسورد جدید بسازید:"
+
+msgid "Error"
+msgstr "خطا"
+
+#, javascript-format
+msgid "Error ${ retCode }"
+msgstr "خطای ${ retCode }"
+
+msgid "Error :("
+msgstr "ارور داد سید"
+
+msgid "Expand"
+msgstr "گسترش"
+
+msgid "Export enabled templates"
+msgstr "صادر کردن قالب‌های فعال"
+
+msgid "Faction"
+msgstr "فکشن"
+
+msgid "Factions"
+msgstr "فکشن‌ها"
+
+msgid "Factions Today"
+msgstr "فکشن‌های امروز"
+
+msgid "Factions Total"
+msgstr "مجموع فکشن‌ها"
+
+msgid ""
+"Factions allow you to coordinate better with other players. Search for "
+"existing factions, find friends or create your own faction."
+msgstr ""
+"فکشن‌ها به شما کمک می‌کنند هماهنگی بهتری با سایر بازیکنان داشته باشید. فکشن‌های "
+"موجود را جستجو کنید، دوستان را پیدا کنید یا فکشن خودتان را ایجاد کنید."
+
+msgid "Factor"
+msgstr "ضریب"
+
+msgid "File"
+msgstr "فایل"
+
+msgid "Filter"
+msgstr "فیلتر"
+
+msgid "Fish Display"
+msgstr "نمایش ماهی"
+
+msgid "For"
+msgstr "برای"
+
+msgid "For Developers"
+msgstr "برای توسعه‌دهندگان"
+
+#, javascript-format
+msgid ""
+"For any legal issues, please contact ${ mailLink }. If you want to delete "
+"your data, simply delete your account, this in fact wipes all privacy "
+"relevant traces. Your placed pixels will of course not be deleted."
+msgstr ""
+"برای هرگونه مشکل حقوقی، لطفاً با ${ mailLink } تماس بگیرید. اگر می‌خواهید "
+"داده‌های خود را حذف کنید، کافیست حساب کاربری خود را حذف کنید، این کار تمام ردِ "
+"مرتبط با حریم خصوصی را پاک می‌کند. پیکسل‌های قرار داده شده شما البته حذف "
+"نخواهند شد."
+
+msgid "For one day"
+msgstr "برای یک روز"
+
+msgid "For one month"
+msgstr "برای یک ماه"
+
+msgid "For one week"
+msgstr "برای یک هفته"
+
+msgid "For one year"
+msgstr "برای یک سال"
+
+msgid "For when you are playing on a potato."
+msgstr "برای موقعی که داری روی ذغال بازی میکنی."
+
+msgid "Forever"
+msgstr "برای همیشه"
+
+msgid "From History"
+msgstr "از تاریخچه"
+
+msgid "From Template"
+msgstr "از قالب"
+
+msgid "Get IID"
+msgstr "آیدی بگیر"
+
+msgid "Get Pixels"
+msgstr "پیکسل بگیر"
+
+msgid "Get Users"
+msgstr "کاربر بگیر"
+
+msgid "Get email address"
+msgstr "دریافت آدرس ایمیل"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "دریافت تعداد پیکسل‌های قرار داده شده و رتبه‌بندی"
+
+msgid "Globe View"
+msgstr "بازدید از کل جهان"
+
+msgid "Go to"
+msgstr "رفتن به"
+
+msgid "Grant"
+msgstr "اعطا کردن"
+
+msgid "Grid OFF"
+msgstr "شبکه خاموش است"
+
+msgid "Grid ON"
+msgstr "شبکه روشن است"
+
+msgid "Groups"
+msgstr "گروه‌ها"
+
+msgid "Have fun!"
+msgstr "خوش بگذره!"
+
+msgid "Height"
+msgstr "طول"
+
+msgid "Help"
+msgstr "کمک"
+
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"در اینجا ما بوم‌های حذف‌شده را جمع‌آوری می‌کنیم تا به‌درستی بایگانی کنیم (که در "
+"حال حاضر فقط یکی است)."
+
+msgid "Hide Embed"
+msgstr "مخفی کردن تعبیه‌شده"
+
+msgid "Hide from profile"
+msgstr "مخفی کردن از پروفایل"
+
+msgid ""
+"Higher zoomlevels take some time to update, the 3D globe gets updated at "
+"least once per day."
+msgstr ""
+"سطوح زوم بالاتر مدتی طول می کشد تا به روز شوند، کره سه بعدی حداقل یک بار در "
+"روز به روز می شود."
+
+msgid "Historical View"
+msgstr "حالت تاریخی"
+
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr ""
+"شیفت چپ ${ bindShift } رو نگه دار تا موس وقتی که تکون میخوره، پیکسل گذاشته "
+"بشه"
+
+msgid "How pixelplanet should look like."
+msgstr "پیکسل پلنت باید چطوری دیده بشه."
+
+msgid "I forgot my Password."
+msgstr "رمز یادم رفته."
+
+msgid "ID"
+msgstr "شناسه"
+
+msgid "IID (optional)"
+msgstr "آیدی (اختیاری)"
+
+msgid "IID Actions"
+msgstr "اقدامات آیدی"
+
+msgid "IP Actions"
+msgstr "اقدامات آیپی"
+
+msgid "Identifiers"
+msgstr "شناسه‌ها"
+
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you aren't using one, or think that you "
+"got wrongfully banned, please go to our ${ guildedLink } or send us an e-"
+"mail to ${ mailLink } and, in case of a ban, include the BID you got in the "
+"ban message."
+msgstr ""
+"اگر به عنوان پروکسی شناسایی شده‌اید اما از پروکسی استفاده نمی‌کنید، یا فکر "
+"می‌کنید به اشتباه مسدود شده‌اید، لطفاً به ${ guildedLink } ما بروید یا ایمیلی "
+"به ${ mailLink } بفرستید و در صورت مسدودیت، BID دریافتی در پیام مسدودیت را "
+"ذکر کنید."
+
+msgid ""
+"If you talk to moderators or administrators, you might get asked for one of "
+"the following identifiers:"
+msgstr ""
+"اگر با ناظمان یا مدیران صحبت کنید، ممکن است یکی از شناسه‌های زیر از شما "
+"پرسیده شود:"
+
+msgid "Image Converter"
+msgstr "تبدیل کننده عکس"
+
+msgid "Image Upload"
+msgstr "آپلود تصویر"
+
+msgid "Import templates"
+msgstr "وارد کردن قالب‌ها"
+
+msgid "Incorrect password"
+msgstr "رمز عبور نادرست"
+
+msgid "Interval"
+msgstr "فاصله"
+
+msgid "Interval is invalid"
+msgstr "فاصله نامعتبر است"
+
+msgid "Invalid Canvas"
+msgstr "بوم پیدا نشد"
+
+msgid "Invalid Coordinates"
+msgstr "مختصات اشتباه است"
+
+msgid "Invalid color selected"
+msgstr "سید رنگ نادرستی انتخاب کردین"
+
+msgid "Invite"
+msgstr "دعوت‌نامه"
+
+msgid "Invited to Chat"
+msgstr "دعوت به چت"
+
+msgid "Invites"
+msgstr "دعوت‌نامه‌ها"
+
+msgid "Is One-Time-Invite"
+msgstr "دعوت‌نامه یک‌بار مصرف است"
+
+msgid ""
+"It requests the following permissions. Uncheck what you don't want to grant:"
+msgstr ""
+"دسترسی‌های زیر را درخواست می‌کند. مواردی که نمی‌خواهید اعطا کنید را علامت نزنید:"
+
+msgid "Jannies can rollback and protect, but not watch or ban."
+msgstr ""
+"دستیاران ناظم می‌توانند بازگردانی و محافظت کنند، اما نمی‌توانند نظارت یا مسدود "
+"کنند."
+
+msgid "Join"
+msgstr "عضویت"
+
+msgid "Join Faction"
+msgstr "عضویت در فکشن"
+
+msgid "Joined"
+msgstr "عضو شد"
+
+msgid "Just for registered Users"
+msgstr "فقط برای کاربرای ثبت نام شده"
+
+msgid "Just for verified Users"
+msgstr "فقط برای کاربران ثبت نام شده"
+
+msgid "Just the Top10 of yesterday can place here"
+msgstr "فقط تاپ 10 ها میتونن اینجا فعالیت کنند سید"
+
+msgid "Keep Ratio"
+msgstr "حفظ نسبت"
+
+msgid "Kick"
+msgstr "اخراج"
+
+msgid "Kick members"
+msgstr "اخراج اعضا"
+
+msgid "Know that an account exists"
+msgstr "اطلاع از وجود یک حساب کاربری"
+
+msgid "Leave"
+msgstr "ترک کردن"
+
+msgid "Leave Faction"
+msgstr "ترک فکشن"
+
+msgid "Legal Requests"
+msgstr "درخواست‌های حقوقی"
+
+msgid "Let everyone join this faction"
+msgstr "همه بتوانند به این فکشن بپیوندند"
+
+msgid "Let people join this faction without needing an invite."
+msgstr "افراد بتوانند بدون نیاز به دعوت‌نامه به این فکشن بپیوندند."
+
+msgid "Level"
+msgstr "سطح"
+
+msgid "Light Grid"
+msgstr "پس زمینه روشن"
+
+msgid "Load Captcha"
+msgstr "کَپچا رو لود کن"
+
+msgid "Loading"
+msgstr "در حال لود کردن"
+
+msgid "Loading..."
+msgstr "در حال بارگزاری..."
+
+msgid "Log in or Register"
+msgstr "ورود یا ثبت‌نام"
+
+msgid "Log out"
+msgstr "خروج از اکانت"
+
+msgid "Log out a Session:"
+msgstr "خروج از یک نشست:"
+
+msgid "LogIn"
+msgstr "وارد شدن"
+
+msgid "Login Methods"
+msgstr "روش‌های ورود"
+
+msgid "Login to access more features and stats."
+msgstr "برای دسترسی به ویژگی ها و آمار بیشتر وارد شوید."
+
+msgid "Login to grant access to other application."
+msgstr "برای اعطای دسترسی به برنامه دیگر وارد شوید."
+
+msgid "Login to join us."
+msgstr "برای پیوستن به ما وارد شوید."
+
+msgid "Login to other application"
+msgstr "ورود به برنامه دیگر"
+
+msgid "Login with Name or Mail:"
+msgstr "با نام یا ایمیل وارد شوید:"
+
+msgid "Make Screenshot"
+msgstr "اسکرین شات بگیر"
+
+msgid "Manage Moderators"
+msgstr "ادمین ها رو مدیریت کنین"
+
+msgid "Manage Templates"
+msgstr "مدیریت قالب‌ها"
+
+msgid "Manage invites"
+msgstr "مدیریت دعوت‌نامه‌ها"
+
+msgid "Map Data"
+msgstr "اطلاعات نقشه"
+
+msgid "Maximize"
+msgstr "به حداکثر برسون"
+
+msgid "Media Actions"
+msgstr "اقدامات رسانه‌ای"
+
+msgid "Members"
+msgstr "اعضا"
+
+msgid "Minimum Color Distance"
+msgstr "حداقل فاصله رنگ"
+
+msgid "Moderation Log"
+msgstr "گزارش ناظمی"
+
+msgid "Moderation Logs"
+msgstr "گزارش‌های ناظمی"
+
+msgid "Moderators can access all Canvas, Watch and IID tools."
+msgstr "ناظمان می‌توانند به تمام ابزارهای بوم، نظارت و IID دسترسی داشته باشند."
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Modtools"
+msgstr "چیزای ادمینا"
+
+msgid "Move"
+msgstr "جا به جا کن"
+
+msgid "Mute Channel"
+msgstr "بی‌صدا کردن کانال"
+
+msgid "Muted Sound"
+msgstr "صدا ساکت است"
+
+msgid "My Factions"
+msgstr "فکشن‌های من"
+
+msgid "Name"
+msgstr "اسم"
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "نام فقط می‌تواند شامل کاراکترهای a-z . _ و - باشد"
+
+msgid "Name can't be empty."
+msgstr "اسم نمیشه که خالی باشه سید."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "اسم نباید @ و # یا / از این چیزا داشته باشه"
+
+msgid "Name must be at least 2 characters long"
+msgstr "اسم باید بیشتر از دو تا کلمه داشته باشه"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "نام باید کمتر از ۲۶ کاراکتر باشد"
+
+msgid "Name of this role"
+msgstr "نام این نقش"
+
+msgid "Name of your faction (this can not be changed later)"
+msgstr "نام فکشن شما (این بعداً قابل تغییر نیست)"
+
+msgid "Name or Email"
+msgstr "اسم یا ایمیل"
+
+msgid "New Mail"
+msgstr "ایمیل جدید"
+
+msgid "New Name"
+msgstr "نام جدید"
+
+msgid "New Password"
+msgstr "رمز جدید"
+
+msgid "New Username"
+msgstr "نام کاربری جدید"
+
+msgid "No"
+msgstr "نه"
+
+msgid "No File selected to upload"
+msgstr "فایلی برای آپلود انتخاب نشده است"
+
+msgid "No Phish!"
+msgstr "ماهی نیست!"
+
+msgid "No flag selected"
+msgstr "پرچمی انتخاب نشده است"
+
+msgid "No or invalid captcha text"
+msgstr "یا هیچ کلمه ای توی کپچا نیست یا اصن اونی که باید رو ننوشتی"
+
+msgid "No password given."
+msgstr "داداش رمز نزاشتی."
+
+msgid "No results."
+msgstr "نتیجه‌ای یافت نشد."
+
+msgid "Nobody is banned from this faction"
+msgstr "هیچ‌کس از این فکشن مسدود نشده است"
+
+msgid "Not Allowed"
+msgstr "اجازه داده نشده"
+
+msgid "Not allowed"
+msgstr "قابل قبول نیست سید"
+
+msgid "Note"
+msgstr "یادداشت"
+
+msgid "Note: Your active Faction may overwrite your flag settings."
+msgstr "توجه: فکشن فعال شما ممکن است تنظیمات پرچمتان را بازنویسی کند."
+
+msgid "OIDC LogIn"
+msgstr "ورود با OIDC"
+
+msgid "OK"
+msgstr "باشه"
+
+msgid "Offset"
+msgstr "انحراف"
+
+msgid "Oh no, the phish escaped. Better luck next time!"
+msgstr "اوه نه، ماهی فرار کرد. دفعه بعد شانست را امتحان کن!"
+
+msgid "Old Password"
+msgstr "رمز قدیمی"
+
+msgid "One-Time"
+msgstr "یک‌بار مصرف"
+
+msgid "Online Users"
+msgstr "کاربران انلاین"
+
+msgid "Online Users on Canvas"
+msgstr "یوزر های انلاین در بوم"
+
+msgid "Only verified Users are currently allowed to play."
+msgstr "در حال حاضر فقط کاربران تأیید شده اجازه بازی دارند."
+
+msgid "Opacity of Overlay in percent."
+msgstr "شفافیت پوشش به درصد."
+
+msgid "Open"
+msgstr "باز کردن"
+
+msgid "Open Chat"
+msgstr "چت رو باز کن"
+
+msgid "Open Palette"
+msgstr "جعبه رنگ ها رو باز کن"
+
+msgid "Open in PopUp"
+msgstr "باز کردن در پنجره بازشو"
+
+msgid "OpenID Connect Client registration"
+msgstr "ثبت‌نام مشتری OpenID Connect"
+
+msgid ""
+"Our main canvas is a huge worldmap, you can place wherever you like, but you "
+"will have to wait a specific Cooldown between pixels. You can check out the "
+"cooldown and requirements on the Canvas Selection menu (globe button on "
+"top). Some canvases have a different cooldown for replacing a user-set "
+"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
+"and 7s on already set pixels."
+msgstr ""
+"ببین، این بوم یک نقشه از جهان با سایز بشدت بزرگی هست که تو میتونی هرجایی که "
+"دلت میخواد توش پیکسل بزاری. اما یادت باشه هر پیکسل که میزاری یه کولداون "
+"داره. تو میتونی کولداون و چیزای لازم برای استفاده از بوم رو توی بخش انتخاب "
+"بوم ببینی. بعضی بوم ها کولداون های مختلفی دارن و اینکه وقتی تو یک پیکسل رو "
+"روی یک پیکسلی که یکی دیگه گذاشته میزاری، کولداونش با پیکسل روی یک جای بی "
+"صاحب فرق داره. اینطوری که در بوم جهان، پیکسل های بی صاحب هر 4 ثانیه هست و "
+"گذاشتن روی پیکسل های صاحب دار 7 ثانیه."
+
+msgid "Overlay OFF"
+msgstr "اورلی خاموش است"
+
+msgid "Overlay ON"
+msgstr "اورلی روشن است"
+
+msgid "Overlay Opacity"
+msgstr "شفافیت پوشش"
+
+msgid "Overview"
+msgstr "نمای کلی"
+
+msgid "Palette Download"
+msgstr "دانلود جعبه رنگ"
+
+#, javascript-format
+msgid "Palette for ${ gimpLink }"
+msgstr "جعبه رنگ برای ${ gimpLink }"
+
+msgid "Password"
+msgstr "پسورد"
+
+msgid "Password must be at least 6 characters long."
+msgstr "رمز عبور باید حداقل ۶ کاراکتر باشد."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "رمز عبور باید کمتر از ۶۰ کاراکتر باشد."
+
+msgid "Password successfully changed."
+msgstr "رمز عبور با موفقیت تغییر کرد."
+
+msgid "Passwords do not match."
+msgstr "رمزهای ورود مطابقت ندارند."
+
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "حالت مداد برای بوم ${ canvasName }"
+
+msgid "Pencil picks: "
+msgstr "انتخاب‌های مداد: "
+
+msgid "Permission"
+msgstr "دسترسی"
+
+msgid "Permissions of Powerlevels"
+msgstr "دسترسی‌های سطوح قدرت"
+
+msgid "Phish!"
+msgstr "ماهی!"
+
+msgid "Phishes"
+msgstr "ماهی‌ها"
+
+msgid "Ping"
+msgstr "پینگ"
+
+msgid "Pixel Notify OFF"
+msgstr "هشدار دهنده پیکسل خاموش است"
+
+msgid "Pixel Notify ON"
+msgstr "هشدار دهنده پیکسل روشن است"
+
+msgid "Pixel Protection"
+msgstr "محافظت از پیکسل"
+
+msgid "Pixel protected"
+msgstr "پیکسل محافظت شده است"
+
+msgid "Pixels"
+msgstr "پیکسل‌ها"
+
+msgid "Place color pixels on a large canvas with other players online!"
+msgstr "پیکسل های رنگی را روی یک بوم بزرگ با سایر بازیکنان آنلاین قرار دهید!"
+
+msgid "Placed Pixels"
+msgstr "پیکسل های گذاشته شده"
+
+msgid "Play a sound when new chat messages arrive"
+msgstr "وقتی یه پیام جدید میاد یه صدایی بده"
+
+msgid "Players and Pixels per hour"
+msgstr "پخش کننده و پیکسل در ساعت"
+
+msgid "Please prove that you are human"
+msgstr "اثبات کن که انسان هستی سید"
+
+msgid "Please refresh the website"
+msgstr "لطفاً صفحه رو رفرش کنید"
+
+msgid ""
+"Please verify your mail address or add a new one, otherwise your account "
+"could get deleted in the future."
+msgstr ""
+"لطفاً آدرس ایمیل خود را تأیید کنید یا ایمیل جدیدی اضافه کنید، در غیر این صورت "
+"حساب کاربری شما ممکن است در آینده حذف شود."
+
+msgid "Political Compass Canvas"
+msgstr "بوم قطب نمای سیاسی"
+
+msgid "Potato Mode"
+msgstr "حالت سیب زمینی"
+
+msgid "Powerlevel"
+msgstr "سطح قدرت"
+
+msgid "Powerlevel of this role. See table below for an explanation."
+msgstr "سطح قدرت این نقش. برای توضیحات به جدول زیر مراجعه کنید."
+
+#, javascript-format
+msgid ""
+"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgstr ""
+"بزن روی ${ bindAUp } یا ${ bindALeft } یا ${ bindADown } یا ${ bindARight } "
+"تا حرکت کنی"
+
+#, javascript-format
+msgid "Press ${ bindG } to toggle grid"
+msgstr "روی ${ bindG } بزن تا شبکه فعال بشه"
+
+#, javascript-format
+msgid "Press ${ bindH } to toggle historical view"
+msgstr "روی ${ bindH } بزن تا دید تاریخی فعال بشه"
+
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
+msgstr "${ bindQ } و ${ bindE } را فشار دهید تا بالا و پایین بروید"
+
+#, javascript-format
+msgid "Press ${ bindQ } or ${ bindE } to zoom"
+msgstr "بزن روی ${ bindE } ${ bindQ } تا زوم کنی"
+
+#, javascript-format
+msgid "Press ${ bindR } to copy coordinates"
+msgstr "بزن روی ${ bindR } تا مختصات کپی بشه"
+
+#, javascript-format
+msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
+msgstr ""
+"بزن روی ${ bindW } یا ${ bindA } یا ${ bindS } یا ${ bindD } تا جا به جا بشی"
+
+#, javascript-format
+msgid "Press ${ bindX } to toggle showing of pixel activity"
+msgstr "روی ${ bindX } بزن تا فعالیت پیکسلی نشون داده بشه"
+
+msgid "Private"
+msgstr "خصوصی"
+
+msgid "Profile"
+msgstr "پروفایل"
+
+msgid "Quick Actions"
+msgstr "اقدامات سریع"
+
+msgid "Range Banned"
+msgstr "رنج بن شدی سید"
+
+msgid "Rank"
+msgstr "رتبه"
+
+msgid "Ranked"
+msgstr "رتبه دار"
+
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"به روز رسانی رتبه بندی هر 5 دقیقه. رتبه بندی روزانه در نیمه شب UTC بازنشانی "
+"می شود."
+
+msgid "Read Badges and fishes"
+msgstr "خواندن نشان‌ها و ماهی‌ها"
+
+msgid "Read name, username and account age"
+msgstr "خواندن نام کاربری، یوزرنیم و سن حساب"
+
+msgid "Reason"
+msgstr "دلیل"
+
+msgid "Refresh"
+msgstr "رفرش"
+
+msgid "Register"
+msgstr "ثبت نام"
+
+msgid "Register new account here"
+msgstr "اکانت جدید بساز"
+
+msgid "Regularly update this data"
+msgstr "به‌روزرسانی منظم این داده‌ها"
+
+msgid "Reload"
+msgstr "بارگذاری جدید"
+
+msgid "Remember this decision: "
+msgstr "به خاطر سپردن این تصمیم: "
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Remove Chatmod"
+msgstr "حذف ناظم چت"
+
+msgid "Remove Cleaner"
+msgstr "حذف پاک‌کننده"
+
+msgid "Remove Janny"
+msgstr "حذف دستیار ناظم"
+
+msgid "Remove Moderator"
+msgstr "ادمین رو پاک کنین"
+
+msgid "Remove Roles"
+msgstr "حذف نقش‌ها"
+
+msgid "Remove a Login method:"
+msgstr "حذف یک روش ورود:"
+
+#, javascript-format
+msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
+msgstr "نمایندگی ${ activeFactionTitle } به عنوان ${ activeFactionRoleName }"
+
+msgid "Require Verification to Place"
+msgstr "نیاز به تأیید برای قرار دادن پیکسل"
+
+msgid "Requirements"
+msgstr "چیزای مورد نیاز"
+
+msgid "Reset"
+msgstr "بازنشانی کنین"
+
+msgid "Reset Captchas of ALL Users"
+msgstr "بازنشانی کپچای تمام کاربران"
+
+msgid "Reset your password"
+msgstr "بازنشانی رمز عبور شما"
+
+msgid "Resize"
+msgstr "تغییر اندازه"
+
+msgid "Restore"
+msgstr "بازگردانی کن"
+
+msgid "Retired Canvases (history only)"
+msgstr "بوم‌های بازنشسته (فقط تاریخچه)"
+
+msgid "Retract"
+msgstr "پس گرفتن"
+
+msgid "Revoke consent of third party applications:"
+msgstr "لغو رضایت برنامه‌های شخص ثالث:"
+
+msgid "Role"
+msgstr "نقش"
+
+msgid "Role Flags"
+msgstr "پرچم‌های نقش"
+
+msgid "Roles"
+msgstr "نقش‌ها"
+
+msgid "Roll different Captcha Fonts"
+msgstr "تغییر فونت‌های کپچا"
+
+msgid "Rollback an area of the canvas to a set date and time"
+msgstr "بازگردانی یک منطقه از بوم به تاریخ و زمان مشخص"
+
+msgid "Rollback to Date"
+msgstr "بازگشت به تاریخ"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Scale Image"
+msgstr "عکس رو اندازه کن"
+
+#, javascript-format
+msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
+msgstr ""
+"اسکرول ${ mouseSymbol } رول موس یا ${ touchSymbol } روی صفحه بکش تا زوم کنی"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Search Existing Faction"
+msgstr "جستجوی فکشن موجود"
+
+msgid "Search Term"
+msgstr "عبارت جستجو"
+
+msgid "See hidden users in member list"
+msgstr "مشاهده کاربران مخفی در لیست اعضا"
+
+msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
+msgstr "انتخاب آواتار این فکشن. فرمت‌های پشتیبانی‌شده: jpg، gif، png، webp"
+
+msgid "Select Date above"
+msgstr "تاریخ رو انتخاب کن"
+
+msgid "Select File"
+msgstr "انتخاب فایل"
+
+msgid "Select Flag"
+msgstr "انتخاب پرچم"
+
+msgid "Select Language"
+msgstr "زبانت رو انتخاب کن"
+
+msgid "Select a valid powerlevel"
+msgstr "یک سطح قدرت معتبر انتخاب کنید"
+
+msgid "Select a valid pwerlevel"
+msgstr "یک سطح قدرت معتبر انتخاب کنید"
+
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"بوم مورد نظر برای استفاده را انتخاب کنید. هر بوم منحصر به فرد است و دارای \n"
+"جعبه رنگ ها،زمان انتظار و الزامات متفاوتی است. آرشیو بوم های بسته را می "
+"توانید \n"
+"در اینجا مشاهده کنید:"
+
+msgid "Select your Avatar. Supported Formats: jpg, gif, png, webp"
+msgstr "آواتار خود را انتخاب کنید. فرمت‌های پشتیبانی‌شده: jpg، gif، png، webp"
+
+msgid "Selected Color"
+msgstr "رنگ انتخوابی"
+
+msgid "Selected Flag:"
+msgstr "پرچم انتخاب‌شده:"
+
+msgid "Selected moderation actions that happened within the past two weeks."
+msgstr "اقدامات ناظمی انتخاب‌شده که در دو هفته گذشته رخ داده‌اند."
+
+msgid "Send"
+msgstr "ارسال"
+
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "یک ایمیل فرستادیم با آموزش که پسوردتون رو عوض کنین."
+
+msgid "Serpentine"
+msgstr "شکل مارپیچ"
+
+msgid "Server Error"
+msgstr "خطای سرور"
+
+msgid "Server answered with gibberish :("
+msgstr "سرور با چرت و پرت جواب داد :("
+
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr ""
+"سرور توسط پیکسل‌های شما دچار اشکال شد. آیا از چند دستگاه استفاده می‌کنید؟"
+
+msgid "Set Password"
+msgstr "تنظیم رمز عبور"
+
+msgid ""
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
+msgstr ""
+"حفاظت از مناطق را تنظیم کنید (اگر به کنترل دقیق‌تری نیاز دارید، از محافظت با "
+"آپلود تصویر و لایه‌های آلفا استفاده کنید)"
+
+msgid ""
+"Setting a password allows you to login by username or email, rather than "
+"only relying on 3rd party login."
+msgstr ""
+"تنظیم رمز عبور به شما اجازه می‌دهد با نام کاربری یا ایمیل وارد شوید، به جای "
+"اینکه فقط به ورود شخص ثالث متکی باشید."
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Show Embedded"
+msgstr "نمایش تعبیه‌شده"
+
+msgid "Show Grid"
+msgstr "شبکه رو نشون بده"
+
+msgid "Show Grid in white instead of black."
+msgstr "شبکه را سفید نشان بده، نه سیاه."
+
+msgid "Show Pixel Activity"
+msgstr "فعالیت پیکسل ها رو نشون بده"
+
+msgid "Show circles where pixels are placed."
+msgstr "دور پیکسل هایی که گذاشته میشن دایره بزار."
+
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr "نمایش پوشش به صورت پیکسل‌های فردی کوچک در سطوح زوم بالا."
+
+msgid "Show templates as overlays ingame."
+msgstr "نمایش قالب‌ها به صورت پوشش در بازی."
+
+msgid "Shrink"
+msgstr "کوچک کردن"
+
+msgid "Size"
+msgstr "اندازه"
+
+msgid "Small Pixels When Zoomed"
+msgstr "پیکسل‌های کوچک هنگام زوم"
+
+msgid "Social Settings"
+msgstr "تنظیمات فضای اجتماعی"
+
+#, javascript-format
+msgid "Source for pixelplanet on ${ gitLink } or ${ downloadHereLink }."
+msgstr "منبع پیکسل‌پلنت در ${ gitLink } یا ${ downloadHereLink }."
+
+msgid "Stacking till"
+msgstr "انباشته شدن تا"
+
+msgid "Start chatting here"
+msgstr "اینجا میتونی چت کنی"
+
+msgid "Start checking for Malware"
+msgstr "شروع بررسی بدافزار"
+
+msgid "Statistics"
+msgstr "آمار"
+
+msgid "Status: Not running"
+msgstr "وضعیت: در حال اجرا نیست"
+
+msgid "Stay logged in: "
+msgstr "وارد بمانید: "
+
+msgid "Stop Cleaner"
+msgstr "تمیز کننده رو متوقف کنین"
+
+msgid "Stop checking for Malware"
+msgstr "توقف بررسی بدافزار"
+
+msgid "Stop requiring Verification to Place"
+msgstr "توقف نیاز به تأیید برای قرار دادن پیکسل"
+
+msgid "Submit"
+msgstr "ارسال"
+
+msgid "Switch Account"
+msgstr "تعویض حساب کاربری"
+
+#, javascript-format
+msgid "Switched to ${ canvasName }"
+msgstr "تغییر به ${ canvasName }"
+
+msgid "Template Name"
+msgstr "نام قالب"
+
+msgid "Templates"
+msgstr "قالب ها"
+
+#, javascript-format
+msgid ""
+"The application ${ appName } at ${ appUrl } wants to login with your "
+"pixelplanet account ${ accountName }"
+msgstr ""
+"برنامه ${ appName } در ${ appUrl } می‌خواهد با حساب کاربری پیکسل‌پلنت شما ${ "
+"accountName } وارد شود"
+
+msgid ""
+"The bare map data that we use, together with converted OpenStreetMap tiles "
+"for orientation, can be downloaded from mega.nz here: "
+msgstr ""
+"داده های نقشه خالی که استفاده می کنیم، به همراه کاشی های OpenStreetMap تبدیل "
+"شده برای جهت یابی، می توانند از mega.nz در اینجا دانلود شوند: "
+
+msgid ""
+"The name of your account, only a-z, A-Z, -, ., and - characters are allowed. "
+"It is permanent, you can not change it later."
+msgstr ""
+"نام حساب کاربری شما، فقط کاراکترهای a-z، A-Z، - و . مجاز هستند. این نام "
+"دائمی است و بعداً قابل تغییر نیست."
+
+msgid "The password for your account."
+msgstr "رمز عبور حساب کاربری شما."
+
+msgid "Themes"
+msgstr "تِم ها"
+
+msgid "This URL is not supported by our Media Player"
+msgstr "این URL توسط پخش‌کننده رسانه ما پشتیبانی نمی‌شود"
+
+msgid "This canvas doesn't exist"
+msgstr "این بوم وجود ندارد"
+
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"این بوم در زمان درگیری های سیاسی در بوم اصلی زمین درخواست شد. این یک نمایش "
+"1024x1024 از قطب‌نمای سیاسی با خنک‌کردن 5s و انباشته شدن 60s بود. در 21 "
+"اردیبهشت راه اندازی شد و برای ماه ها فعال بود تا اینکه در 9 آذر تعطیل شد."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"این ترکیب ایمیل/رمز عبور هک و نشت کرده است. برای محافظت از این حساب، رمز "
+"عبور بازنشانی شده است. لطفاً از عملکرد «رمز عبورم را فراموش کرده‌ام» در صفحه "
+"ورود برای تنظیم رمز عبور جدید استفاده کنید. در آینده، از نصب بدافزار خودداری "
+"کنید. با تشکر."
+
+msgid "This faction has no invites"
+msgstr "این فکشن دعوت‌نامه‌ای ندارد"
+
+msgid ""
+"This is the name that other people see, e.g. in Chat. You can change it at "
+"any time. All characters except @, /, , >, < and # are allowed."
+msgstr ""
+"این نامی است که دیگران می‌بینند، مثلاً در چت. می‌توانید آن را در هر زمان تغییر "
+"دهید. تمام کاراکترها به جز @، /، >، < و # مجاز هستند."
+
+msgid "This login may only work if your account is verified."
+msgstr ""
+"این ورود ممکن است فقط در صورتی کار کند که حساب کاربری شما تأیید شده باشد."
+
+msgid "This permission is required"
+msgstr "این دسترسی الزامی است"
+
+msgid "This user has not password set"
+msgstr "این کاربر رمز عبور تنظیم نکرده است"
+
+#. Column title in tables
+msgid "Time"
+msgstr "زمان"
+
+msgid "Timeout"
+msgstr "سید سایتو پاره کردی تابم اوت خوردی، رفرش کن"
+
+msgid "Tip: Not case-sensitive; I and l are the same"
+msgstr "راهنمایی: نیاز نیست کلمات همشون بزرگ باشن، I و I یکی هستن"
+
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+"از قرار دادن همیشگی یک رنگ واحد خسته شده‌اید؟ می‌خواهید به جای آن هنر خلق کنید"
+"، اما باید پیکسل‌ها را از تصویر دیگری بشمارید؟ قالب‌ها می‌توانند به شما کمک "
+"کنند! قالب‌ها می‌توانند به صورت پوشش نمایش داده شوند و شما می‌توانید روی آنها "
+"رسم کنید. هر پیکسل روی قالب، باید یک پیکسل روی بوم باشد."
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "Title can't be empty."
+msgstr "عنوان نمی‌تواند خالی باشد."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "عنوان حاوی کاراکتر نامعتبر مانند @، /، \\ یا # است"
+
+msgid "Title must be at least 2 characters long"
+msgstr "عنوان باید حداقل ۲ کاراکتر باشد"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "عنوان باید کمتر از ۲۶ کاراکتر باشد"
+
+msgid "Title of your faction"
+msgstr "عنوان فکشن شما"
+
+msgid "To use this page, enter your Password:"
+msgstr "برای استفاده از این صفحه، رمز عبور خود را وارد کنید:"
+
+msgid "Today"
+msgstr "امروز"
+
+msgid "Today Placed Pixels"
+msgstr "پیکسل‌های قرار داده شده امروز"
+
+msgid "Top 10 Countries [pxls / day]"
+msgstr "10 کشور برتر [pxls/day]"
+
+msgid "Top 10 Daily Ranking"
+msgstr "10 رتبه برتر روزانه"
+
+msgid "Top 10 Players [pxls / day]"
+msgstr "10 بازیکن برتر [pxls / day]"
+
+msgid "Top 10 Players from Yesterday"
+msgstr "۱۰ بازیکن برتر [پیکسل / روز]"
+
+msgid "Top-left corner"
+msgstr "گوشه بالا سمت چپ"
+
+msgid "Total"
+msgstr "جمع"
+
+msgid "Total Online Users"
+msgstr "تمام یوزر های آنلاین"
+
+msgid "Total Pixels per Faction"
+msgstr "مجموع پیکسل‌ها به ازای فکشن"
+
+msgid "Total Pixels per Player"
+msgstr "مجموع پیکسل‌ها به ازای بازیکن"
+
+msgid "Total Pixels placed per day"
+msgstr "مجموع پیکسل های روزانه"
+
+msgid "Total Rank"
+msgstr "رتبه کلی"
+
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"تبدیل هر پیکسل در منطقه به ۰ (واقعاً نباید این کار را در منطقه‌ای انجام دهید "
+"که عمدتاً ۰ نیست)"
+
+msgid "Turn on grid to highlight pixel borders."
+msgstr "شبکه رو روشن کن که مرز های دور پیکسل ها نشون داده بشه."
+
+msgid "Type of Mod"
+msgstr "نوع ناظم"
+
+msgid "Type the characters from the following image:"
+msgstr "چیز میزایی که توی این عکس هست رو توی باکس بنویس:"
+
+msgid "Unban media"
+msgstr "رفع مسدودیت رسانه"
+
+msgid "Unban members"
+msgstr "رفع مسدودیت اعضا"
+
+msgid "Unblock"
+msgstr "رفع مسدودیت"
+
+msgid "Unblock Users"
+msgstr "کاربران رو غیر مسدود کن"
+
+msgid "Unknown Captcha Error"
+msgstr "یه ارور نامعلومی این کپچای لامصب داده"
+
+msgid "Unknown Error"
+msgstr "داداش یه ارور عجیبی اتفاق افتاد که خودمم نمیدونم چیه"
+
+msgid "Unmuted Sound"
+msgstr "صدا ساکت نیست"
+
+msgid "Until the browser closes"
+msgstr "تا زمان بسته شدن مرورگر"
+
+msgid "Upload images to canvas"
+msgstr "تصاویر را روی بوم آپلود کنید"
+
+msgid "Use our custom cursor"
+msgstr "استفاده از نشانگر سفارشی ما"
+
+msgid "User"
+msgstr "کاربر"
+
+msgid "User Account"
+msgstr "اکانت کاربر"
+
+msgid "User Area"
+msgstr "منطقه یوزر"
+
+msgid "User ID and verification level"
+msgstr "شناسه کاربری و سطح تأیید"
+
+msgid "User Name"
+msgstr "یوزر نیم"
+
+msgid "Username"
+msgstr "نام کاربری"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "نام کاربری فقط می‌تواند شامل کاراکترهای a-z . _ و - باشد"
+
+msgid "Username can only contain the characters: a-z A-z . _ and -"
+msgstr "نام کاربری فقط می‌تواند شامل کاراکترهای a-z A-Z . _ و - باشد"
+
+msgid "Username can't be empty."
+msgstr "نام کاربری نمی‌تواند خالی باشد."
+
+msgid "Username must be at least 2 characters long"
+msgstr "نام کاربری باید حداقل ۲ کاراکتر باشد"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "نام کاربری باید کمتر از ۲۶ کاراکتر باشد"
+
+msgid "Users"
+msgstr "کاربران"
+
+#, javascript-format
+msgid "We are Libre Software under the ${ agplLink }, "
+msgstr "ما نرم‌افزار آزاد تحت ${ agplLink } هستیم، "
+
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"ما تصمیم گرفتیم آن را به عنوان یک تایم لپس با وب مدیا رمزگذاری شده بدون ضرر "
+"بایگانی کنیم. گرفتن اسکرین شات از تایم لپس به نمایش کامل 1:1 از چگونگی بوم "
+"در آن زمان منجر می شود."
+
+msgid ""
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr ""
+"ما از هنرمندان زیر تشکر می‌کنیم که پالت‌های خود را در دسترس عموم قرار دادند در"
+
+msgid "Weird"
+msgstr "عجیب"
+
+msgid "What the pencil should draw on the current canvas."
+msgstr "مداد باید چه چیزی روی بوم فعلی بکشد."
+
+msgid "Whether or not this invite can only be used once."
+msgstr "آیا این دعوت‌نامه فقط یک‌بار قابل استفاده است یا خیر."
+
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"در حالی که ما تمایل داریم بوم‌ها را حذف نکنیم، برخی از بوم‌ها برای سرگرمی یا "
+"به‌عنوان درخواست کاربرانی که یک میم محبوب را دوست دارند شروع می‌شوند. آن بوم‌ها "
+"ممکن است پس از مدتی کسل‌کننده و غیرفعال شوند، که در آن نقطه دلیلی برای "
+"نگهداری آنها نیست و ممکن است تصمیم به حذف آنها بگیریم."
+
+msgid "Why?"
+msgstr "چرا؟"
+
+msgid "Width"
+msgstr "عرض"
+
+msgid "Wrong Color"
+msgstr "رنگ اشتباهی انتخاب کرده اید"
+
+msgid "YOU CAN ONLY CHOOSE YOUR USERNAME ONCE!"
+msgstr "شما فقط یک بار می‌توانید نام کاربری خود را انتخاب کنید!"
+
+msgid "Yes"
+msgstr "آره"
+
+msgid "Yes, really delete Me"
+msgstr "بله، واقعاً حساب مرا حذف کن"
+
+msgid "Yesterday"
+msgstr "دیروز"
+
+msgid ""
+"You are a teacher and a pupil is playing this game, despite it not being "
+"suitable for them? Send us an email."
+msgstr ""
+"شما معلم هستید و دانش‌آموزی در حال بازی این بازی است، با وجود اینکه برای او "
+"مناسب نیست؟ برای ما ایمیل بفرستید."
+
+#, javascript-format
+msgid ""
+"You are banned. You think it is unjustified? Check out the ${ helpButton } "
+"on how to appeal. And don't forget to include the BID you can get below."
+msgstr ""
+"شما مسدود شده‌اید. فکر می‌کنید بی‌دلیل است؟ ${ helpButton } را برای نحوه اعتراض "
+"بررسی کنید. و فراموش نکنید BID زیر را ذکر کنید."
+
+msgid "You are currently not a member of any faction."
+msgstr "شما در حال حاضر عضو هیچ فکشنی نیستید."
+
+msgid "You are currently not allowed to access this game."
+msgstr "شما در حال حاضر اجازه دسترسی به این بازی را ندارید."
+
+msgid ""
+"You are currently not representing any faction. To represent one, activate a "
+"role in one of your factions below."
+msgstr ""
+"شما در حال حاضر نماینده هیچ فکشنی نیستید. برای نمایندگی، یک نقش را در یکی از "
+"فکشن‌های خود در زیر فعال کنید."
+
+#, javascript-format
+msgid ""
+"You are currently representing ${ activeFactionTitle } as ${ activeRoleName }"
+msgstr ""
+"شما در حال حاضر نماینده ${ activeFactionTitle } به عنوان ${ activeRoleName } "
+"هستید"
+
+#, javascript-format
+msgid "You are logged in as ${ name } [${ username }]."
+msgstr "شما به عنوان ${ name } [${ username }] وارد شده‌اید."
+
+msgid "You are not allowed to play this game right now :("
+msgstr "شما در حال حاضر اجازه بازی این بازی را ندارید :("
+
+msgid "You are using a Proxy."
+msgstr "فیلترشکنتو خاموش کن! وگرنه بن میشی."
+
+msgid "You are weird"
+msgstr "رفتار مشکوکی دارید"
+
+msgid ""
+"You can connect to pixelplanet and use pixelplanet accounts for oauth / oidc "
+"login. See here: "
+msgstr ""
+"شما می‌توانید به پیکسل‌پلنت متصل شوید و از حساب‌های کاربری پیکسل‌پلنت برای ورود "
+"oauth/oidc استفاده کنید. اینجا ببینید: "
+
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr ""
+"شما هنوز نمی‌توانید به این بوم دسترسی داشته باشید، چون امتیاز پیکسلی شما "
+"بسیار کم است"
+
+msgid "You can now place more on pixelplanet.fun :)"
+msgstr "حالا میتونی پیکسل های بیشتری بزاری :)"
+
+#, javascript-format
+msgid ""
+"You caught a Phish! It is a ${ FISH_TYPES[type].name } with ${ size }kg! As "
+"a bonus, your cooldown is reduced."
+msgstr ""
+"شما یک ماهی صید کردید! این یک ${ FISH_TYPES[type].name } با ${ size } "
+"کیلوگرم است! به عنوان پاداش، زمان انتظار شما کاهش یافت."
+
+msgid "You did not consent"
+msgstr "شما رضایت ندادید"
+
+msgid "You failed your captcha"
+msgstr "کَپچا رو نتونستی جواب بدی"
+
+#, javascript-format
+msgid ""
+"You have been invited to join us on pixelplanet. We currently have $"
+"{ memberCount } members."
+msgstr ""
+"شما برای پیوستن به ما در پیکسل‌پلنت دعوت شده‌اید. ما در حال حاضر ${ "
+"memberCount } عضو داریم."
+
+msgid "You have no users blocked"
+msgstr "تو هیچ کاربر مسدود شده نداری"
+
+msgid "You have to be logged in to place on this canvas"
+msgstr "باید توی سایت ثبت نام کنی که از این بوم بتونی استفاده کنی سید"
+
+msgid "You made too many requests"
+msgstr "زیادی درخواست دادی"
+
+msgid "You must be logged in to chat"
+msgstr "باید در سایت وارد بشی تا بتونی چت کنی"
+
+msgid "You must enter a UserId"
+msgstr "باید شناسه کاربری را وارد کنید"
+
+msgid "You must enter a mediaId or media BID"
+msgstr "باید شناسه رسانه یا BID رسانه را وارد کنید"
+
+msgid "You must enter a reason"
+msgstr "باید دلیل را وارد کنید"
+
+msgid "You must enter a username"
+msgstr "باید نام کاربری را وارد کنید"
+
+msgid "You must enter an BID"
+msgstr "باید BID را وارد کنید"
+
+msgid "You must enter an IID"
+msgstr "باید آیدی را وارد کنین"
+
+msgid "You must enter an IID or UserId"
+msgstr "باید IID یا شناسه کاربری را وارد کنید"
+
+msgid "You must enter at least one IID, User Id or BID"
+msgstr "باید حداقل یک IID، شناسه کاربری یا BID وارد کنید"
+
+msgid "You must select an avatar for your faction"
+msgstr "باید آواتاری برای فکشن خود انتخاب کنید"
+
+msgid "You took too long, try again."
+msgstr "خیلی کارت طول کشید. دوباره امتحان کن."
+
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"مرورگر شما به ما اجازه نمی دهد از AudioContext برای پخش صداها استفاده کنیم. "
+"آیا برخی از ویژگی های حفظ حریم خصوصی ما را مسدود می کند؟"
+
+msgid "Your Browser looks shady"
+msgstr "مرورگر شما مشکوک به نظر می‌رسد"
+
+msgid "Your Factions"
+msgstr "فکشن‌های شما"
+
+msgid "Your Internet Provider is banned from this game"
+msgstr "ارائه‌دهنده اینترنت شما از این بازی مسدود شده است"
+
+msgid "Your Roles"
+msgstr "نقش‌های شما"
+
+msgid "Your ban expires at "
+msgstr "بن جنابعالی در این زمان برداشته میشه "
+
+msgid "Your device looks weird"
+msgstr "دستگاه شما عجیب به نظر می‌رسد"
+
+msgid ""
+"Your did not set your username yet. A username is required to login to other "
+"applications. You can set it now:"
+msgstr ""
+"شما هنوز نام کاربری خود را تنظیم نکرده‌اید. نام کاربری برای ورود به برنامه‌های "
+"دیگر الزامی است. اکنون می‌توانید تنظیم کنید:"
+
+msgid "Your name is:"
+msgstr "نام شما:"
+
+msgid "Your next pixels are ready"
+msgstr "پیکسل های بعدی تو آماده هستن سید"
+
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr "وقتی که بومت کوچیکه و میخوای پیکسل بزاری، بجای پیکسل گذاشتن زوم کن."
+
+msgid "a hidden faction"
+msgstr "یک فکشن مخفی"
+
+msgid "affects"
+msgstr "تأثیر می‌گذارد"
+
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "و ${ canvas.req } تنظیم پیکسل"
+
+msgid "by"
+msgstr "توسط"
+
+msgid "check compliance here"
+msgstr "انطباق را اینجا بررسی کنید"
+
+msgid "created at"
+msgstr "ایجاد شده در"
+
+msgid "days"
+msgstr "روزها"
+
+msgid "download here"
+msgstr "اینجا دانلود کنید"
+
+msgid "lift"
+msgstr "برداشتن"
+
+msgid "or login with:"
+msgstr "یا با :"
+
+msgid "or register here:"
+msgstr "یا اینجا ثبت نام کنید:"
+
+msgid "recommended"
+msgstr "پیشنهاد شده"
+
+msgid "times used"
+msgstr "دفعات استفاده"
+
+#, javascript-format
+msgid "try again after ${ ti }min"
+msgstr "دوباره بعد ${ ti }دقیقه امتحان کن شاید درست شد"
+
+msgid "x out of bounds"
+msgstr "ایکس خارج از محدوده است"
+
+msgid "y out of bounds"
+msgstr "ایگرگ خارج از محدوده است"
+
+msgid "z out of bounds"
+msgstr "زد خارج از محدوده است"
+
+msgctxt "media-player"
+msgid "Player"
+msgstr "پخش‌کننده"
+
+msgctxt "keybinds"
+msgid "A"
+msgstr "A"
+
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+msgctxt "keybinds"
+msgid "D"
+msgstr "D"
+
+msgctxt "keybinds"
+msgid "E"
+msgstr "E"
+
+msgctxt "keybinds"
+msgid "G"
+msgstr "G"
+
+msgctxt "keybinds"
+msgid "H"
+msgstr "H"
+
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+msgctxt "keybinds"
+msgid "Q"
+msgstr "Q"
+
+msgctxt "keybinds"
+msgid "R"
+msgstr "R"
+
+msgctxt "keybinds"
+msgid "S"
+msgstr "S"
+
+msgctxt "keybinds"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+msgctxt "keybinds"
+msgid "W"
+msgstr "W"
+
+msgctxt "keybinds"
+msgid "X"
+msgstr "X"
+
+msgctxt "channel-list"
+msgid "Public"
+msgstr "عمومی"
+
+#. Column title of column indicating whether or not a faction is able to be joined in public
+msgctxt "statistics-table"
+msgid "Public"
+msgstr "عمومی"
+
+#~ msgid "No captcha id given"
+#~ msgstr "هیچ آیدی کپچایی داده نشده"
+
+#~ msgid "Yes, Delete My Account!"
+#~ msgstr "آره، اکانتم رو پاک کن!"
+
+#~ msgid "You must enter a duration"
+#~ msgstr "باید مدت زمان را وارد کنید"
+
+#~ msgid "Close Menu"
+#~ msgstr "منو رو ببند"
+
+#~ msgid "Open Menu"
+#~ msgstr "منو رو باز کن"
+
+#~ msgid "You have new messages in chat"
+#~ msgstr "توی چت پیام های حدید داری"
+
+#~ msgid "mentioned you"
+#~ msgstr "منشنت کرد"
+
+#~ msgid "Mute"
+#~ msgstr "سکوت"
+
+#~ msgid "PopUp"
+#~ msgstr "پاپ آپ"
+
+#, fuzzy
+#~ msgid "You are banned. You think it is unjustified? Check out the "
+#~ msgstr "بن شدی سید. فکر میکنی یه اشتباهی رخ داده؟ خب برو درخواست "
+
+#~ msgid "Registration"
+#~ msgstr "ثبت"
+
+#~ msgid "Forgot Password"
+#~ msgstr "پسورد رو یادم رفته"
+
+#~ msgid " on how to appeal."
+#~ msgstr " بده که بنت برداشته بشه."
+
+#~ msgid "Unbanned"
+#~ msgstr "آنبن شدی"
+
+#~ msgid "Now that you have seen this message, you are no longer banned."
+#~ msgstr "خب الان که داری این پیامو میبینی، دیگه بن نیستی."
+
+#~ msgid "Source on "
+#~ msgstr "منبع در "
+
+#, javascript-format
+#~ msgid ""
+#~ "If you got detected as proxy, but you are none, or think that you got "
+#~ "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail "
+#~ "to ${ mailLink } and include the following IID:"
+#~ msgstr ""
+#~ "اگر فکر کردن تو رباتی ولی تو فکر میکنی که نیستی، یا فکر میکنی که اشتباها "
+#~ "بن شدی، پس برو به ${ guildedLink } یا یه ایمیل به ${ mailLink } بفرست و "
+#~ "آیدی مورد نظر رو اضافه کن:"
+
+#~ msgid "Consider joining us on Guilded:"
+#~ msgstr "حتی خوب میشه اگر به گیلدد ما هم عضو بشین:"
+
+#, javascript-format
+#~ msgid "Your name is: ${ name }"
+#~ msgstr "اسم شما: ${ name }"
+
+#~ msgid "Change Username"
+#~ msgstr "اسم کاربریت رو عوض کن"
+
+#~ msgid "Change Mail"
+#~ msgstr "ایمیلت رو عوض کن"
+
+#~ msgid ""
+#~ "Please verify your mail address or your account could get deleted after a "
+#~ "few days."
+#~ msgstr ""
+#~ "لطفاً آدرس ایمیل خود را تأیید کنید، در غیر این صورت حساب شما ممکن است پس "
+#~ "از چند روز حذف شود."
+
+#~ msgid ""
+#~ "Changed Mail successfully. We sent you a verification mail,             "
+#~ "please verify your new mail address."
+#~ msgstr ""
+#~ "ایمیل با موفقیت تغییر کرد. ما یک ایمیل تأیید برای شما ارسال "
+#~ "کردیم،               لطفا آدرس ایمیل جدید خود را تأیید کنید."
+
+#~ msgid "Block all Private Messages"
+#~ msgstr "تمام پیام های خصوصی رو مسدود کنید"
+
+#~ msgid "There are no mods"
+#~ msgstr "هیچ ادمینی نیست"
+
+#~ msgid "Countries by Pixels Today"
+#~ msgstr "کشورها بر اساس پیکسل امروز"
+
+#~ msgid "Pixels placed"
+#~ msgstr "تعداد پیکسل هایی که گذاشتی"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "شیفت راست ${ bindShift } نگه دار تا وقتی موس تکون میخوره، توی دید تاریخی "
+#~ "پیکسل گذاشته بشه"
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr ""
+#~ "سید توطئه کردی؟ از سایت جوابی نگرفتیم سید، فکر کنم رفرش کنی درست بشه"
+
+#~ msgid "Place more :)"
+#~ msgstr "پیکسل های بیشتری بزار سید :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr ""
+#~ "مگه تورکی پروکسی میزنی؟ اگر وی پی انت روشنه یا پروکسیت روشنه خاموش کن سریع"
+
+#~ msgid "Show Hidden Canvases"
+#~ msgstr "بوم های مخفی را نشان بده"
+
+#~ msgid "Hide Hidden Canvases"
+#~ msgstr "بوم های مخفی را پنهان کن"
+
+#~ msgid "Coordinates in X_Y format:"
+#~ msgstr "مختصات در حالت X_Y :"

@@ -1,0 +1,2692 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: weblate <weblate@noreply.pixelplanet.fun>\n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.6\n"
+
+msgid " which is in "
+msgstr " الذي هو في "
+
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr ""
+"${ mouseSymbol } اضغط باستمرار على زر الماوس الأيسر واسحب الماوس للتدوير"
+
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr "${ mouseSymbol } نقر الايسر او ${ touchSymbol } انقر لوضع بكسل"
+
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr "${ mouseSymbol } انقر بزر الماوس الأيمن واسحبه للتحريك"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
+msgstr ""
+"${ mouseSymbol } انقر بزر الماوس الايمن او ${ touchSymbol } انقر نقرًا مزدوجًا "
+"لإزالة بكسل"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } قم بالتمرير بعجلة الماوس أو اضغط باستمرار ${ mouseSymbol } "
+"زر الماوس الأوسط واسحب للتكبير"
+
+msgid "(0 = infinite)"
+msgstr "(0 = لانهائي)"
+
+msgid "(click a role to activate it)"
+msgstr "(انقر على دور لتفعيله)"
+
+#: src\components\windows\Faction.jsx
+msgid "(click a role to assign or remove it)"
+msgstr "(انقر على دور لتعيينه أو إزالته)"
+
+#: src\components\windows\Statistics.jsx
+msgid "+last hour"
+msgstr "+آخر ساعة"
+
+msgid "...loading Login methods and sessions..."
+msgstr "...جارٍ تحميل طرق تسجيل الدخول والجلسات..."
+
+msgid "A Phish!"
+msgstr "سمكة!"
+
+#: src\components\windows\Faction.jsx
+msgid ""
+"A flag representing the role, it should be 16x11 pixels. If left empty, "
+"users with this role selected will still show their own flags."
+msgstr ""
+"علم يمثل الدور، يجب أن يكون بحجم 16×11 بكسل. إذا تُرك فارغًا، فسيظل "
+"المستخدمون الذين اختاروا هذا الدور يعرضون أعلامهم الخاصة."
+
+#: src\components\windows\Faction.jsx
+msgid ""
+"A role has all the permissions of all levels below and equal to it. In "
+"example: Every role with a power level of >=50 can manage invites (50)."
+msgstr ""
+"يمتلك الدور جميع صلاحيات المستويات الأدنى والمساوية له. مثال: كل دور "
+"بمستوى قوة أكبر من أو يساوي 50 يمكنه إدارة الدعوات (50)."
+
+msgid "ACCESS MODTOOLS"
+msgstr "الوصول إلى أدوات الإشراف"
+
+#. modlogLink has the text "Moderation Log"
+#, javascript-format
+msgid ""
+"Actions taken by moderators on the canvas can be seen in the ${ modlogLink }."
+msgstr "يمكن رؤية إجراءات المشرفين على اللوحة في ${ modlogLink }."
+
+msgid "Add a new E-Mail Address here:"
+msgstr "أضف عنوان بريد إلكتروني جديدًا هنا:"
+
+msgid "Age"
+msgstr "العمر"
+
+#: src\components\windows\Faction.jsx
+msgid "All members of this faction are hidden"
+msgstr "جميع أعضاء هذا الفصيل مخفيون"
+
+msgid "An image representing your faction"
+msgstr "صورة تمثل فصيلك"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign Roles"
+msgstr "تعيين الأدوار"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign role per default to new members"
+msgstr "تعيين الدور افتراضيًا للأعضاء الجدد"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign roles below their own"
+msgstr "تعيين أدوار أقل من دوره"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign this role to every new member automatically on join."
+msgstr "تعيين هذا الدور تلقائيًا لكل عضو جديد عند الانضمام."
+
+#: src\components\windows\Faction.jsx
+msgid "Assigned role per default"
+msgstr "الدور المعين افتراضيًا"
+
+msgid "Attach File"
+msgstr "إرفاق ملف"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Avatar"
+msgstr "الصورة الرمزية"
+
+msgid "Back"
+msgstr "رجوع"
+
+msgid "Badge Display"
+msgstr "عرض الشارات"
+
+msgid "Badges"
+msgstr "الشارات"
+
+#: src\components\windows\Faction.jsx
+msgid "Ban"
+msgstr "حظر"
+
+msgid "Ban media"
+msgstr "حظر الوسائط"
+
+#: src\components\windows\Faction.jsx
+msgid "Ban members"
+msgstr "حظر الأعضاء"
+
+#: src\components\windows\Faction.jsx
+msgid "Bans"
+msgstr "الحظرات"
+
+msgid ""
+"Block all Private Messages. Enabling this will make it impossible for other "
+"users to start messaging you. You can still start new DMs with other users "
+"and already ongoing DMs will still be open."
+msgstr ""
+"حظر جميع الرسائل الخاصة. سيؤدي تفعيل هذا إلى منع المستخدمين الآخرين من بدء "
+"مراسلتك. لا يزال بإمكانك بدء رسائل خاصة جديدة مع مستخدمين آخرين وستبقى "
+"الرسائل الجارية مفتوحة."
+
+msgid "Blocked"
+msgstr "محظور"
+
+msgid "Caught by"
+msgstr "تم الاصطياد بواسطة"
+
+#: src\components\windows\Faction.jsx
+msgid "Change Flag"
+msgstr "تغيير العلم"
+
+msgid "Change Happened"
+msgstr "حدث تغيير"
+
+msgid "Change Name"
+msgstr "تغيير الاسم"
+
+msgid "Channel"
+msgstr "القناة"
+
+msgid "Check to allow"
+msgstr "حدد للسماح"
+
+msgid "Choose Username"
+msgstr "اختر اسم المستخدم"
+
+msgid "Cleaners can use 0cd blank colors."
+msgstr "يمكن للمنظفين استخدام ألوان فارغة بدون فترة تهدئة."
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Clear"
+msgstr "مسح"
+
+msgid "Click here to cease representation."
+msgstr "انقر هنا لإيقاف التمثيل."
+
+msgid "Click to remove"
+msgstr "انقر للإزالة"
+
+msgid "Compact Chat"
+msgstr "دردشة مدمجة"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Confirm"
+msgstr "تأكيد"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Ban"
+msgstr "تأكيد الحظر"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Delete"
+msgstr "تأكيد الحذف"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Kick"
+msgstr "تأكيد الطرد"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Leave"
+msgstr "تأكيد المغادرة"
+
+msgid "Confirm your password."
+msgstr "أكد كلمة المرور."
+
+msgid "Consent"
+msgstr "الموافقة"
+
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+"عادةً ما يتم تغيير فترة التهدئة تلقائيًا للدولة المهيمنة. مثلاً في حالة "
+"هجوم بث مباشر."
+
+msgid "Copy Link"
+msgstr "نسخ الرابط"
+
+msgid "Copy Selected to Clipboard"
+msgstr "نسخ المحدد إلى الحافظة"
+
+msgid "Copy URL"
+msgstr "نسخ عنوان URL"
+
+msgid "Copy UserId to Clipboard"
+msgstr "نسخ معرّف المستخدم إلى الحافظة"
+
+msgid "Could not connect to server"
+msgstr "تعذر الاتصال بالخادم"
+
+msgid "Could not process files"
+msgstr "تعذرت معالجة الملفات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Create Faction"
+msgstr "إنشاء فصيل"
+
+#: src\components\windows\Faction.jsx
+msgid "Create Invite"
+msgstr "إنشاء دعوة"
+
+msgid "Create New Faction"
+msgstr "إنشاء فصيل جديد"
+
+#: src\components\windows\Faction.jsx
+msgid "Create New Invite"
+msgstr "إنشاء دعوة جديدة"
+
+#: src\components\windows\Faction.jsx
+msgid "Create New Role"
+msgstr "إنشاء دور جديد"
+
+#: src\components\windows\Faction.jsx
+msgid "Create Role"
+msgstr "إنشاء دور"
+
+#: src\components\windows\Faction.jsx
+msgid "Create roles"
+msgstr "إنشاء الأدوار"
+
+msgid "Current Cooldown Changes per Country"
+msgstr "تغييرات فترة التهدئة الحالية حسب الدولة"
+
+#: src\components\windows\Settings.jsx
+msgid "Custom Cursor"
+msgstr "المؤشر المخصص"
+
+#: src\components\windows\Faction.jsx
+msgid "Custom Flag"
+msgstr "علم مخصص"
+
+msgid "Daily Pixels"
+msgstr "البكسلات اليومية"
+
+#: src\components\windows\Statistics.jsx
+msgid "Daily Pixels per Country"
+msgstr "البكسلات اليومية حسب الدولة"
+
+#: src\components\windows\Statistics.jsx
+msgid "Daily Pixels per Faction"
+msgstr "البكسلات اليومية حسب الفصيل"
+
+#: src\components\windows\Statistics.jsx
+msgid "Daily Pixels per Player"
+msgstr "البكسلات اليومية حسب اللاعب"
+
+msgid "Date of Award"
+msgstr "تاريخ المنح"
+
+msgid "Date of catch"
+msgstr "تاريخ الاصطياد"
+
+#: src\components\windows\Faction.jsx
+msgid "Delete Faction"
+msgstr "حذف الفصيل"
+
+msgid "Delete My Account"
+msgstr "حذف حسابي"
+
+#: src\components\windows\Faction.jsx
+msgid "Delete the faction"
+msgstr "حذف الفصيل"
+
+msgid "Deny"
+msgstr "رفض"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Description can't be empty"
+msgstr "لا يمكن أن يكون الوصف فارغًا"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "يجب أن يكون الوصف أقصر من 1000 حرف"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Description of your faction"
+msgstr "وصف فصيلك"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Don't let people find this faction in public search or look at its profile."
+msgstr ""
+"لا تدع الأشخاص يعثرون على هذا الفصيل في البحث العام أو يطلعون على ملفه."
+
+msgid "Don't remember"
+msgstr "عدم التذكر"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Don't show faction in search"
+msgstr "عدم إظهار الفصيل في البحث"
+
+msgid "Done"
+msgstr "تم"
+
+msgid "Download"
+msgstr "تنزيل"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit faction"
+msgstr "تعديل الفصيل"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit roles below their own"
+msgstr "تعديل الأدوار الأقل من دوره"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit their own role and elevate users to their own level"
+msgstr "تعديل دوره الخاص ورفع المستخدمين إلى مستواه"
+
+msgid ""
+"Email is used to verify your account. You might get a cofirmation mail "
+"after registering."
+msgstr ""
+"يُستخدم البريد الإلكتروني للتحقق من حسابك. قد تتلقى رسالة تأكيد بعد "
+"التسجيل."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Enter a little text that describes your faction"
+msgstr "أدخل نصًا قصيرًا يصف فصيلك"
+
+msgid "Enter search term and press Search."
+msgstr "أدخل مصطلح البحث واضغط على بحث."
+
+msgid "Expand"
+msgstr "توسيع"
+
+msgid "Faction"
+msgstr "الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Factions"
+msgstr "الفصائل"
+
+#: src\components\windows\Statistics.jsx
+msgid "Factions Today"
+msgstr "الفصائل اليوم"
+
+#: src\components\windows\Statistics.jsx
+msgid "Factions Total"
+msgstr "إجمالي الفصائل"
+
+msgid ""
+"Factions allow you to coordinate better with other players. Search for "
+"existing factions, find friends or create your own faction."
+msgstr ""
+"تسمح لك الفصائل بالتنسيق بشكل أفضل مع اللاعبين الآخرين. ابحث عن الفصائل "
+"الموجودة، أو اعثر على أصدقاء، أو أنشئ فصيلك الخاص."
+
+msgid "Factor"
+msgstr "عامل"
+
+msgid "Filter"
+msgstr "تصفية"
+
+msgid "Fish Display"
+msgstr "عرض الأسماك"
+
+msgid "For"
+msgstr "لـ"
+
+msgid "For Developers"
+msgstr "للمطورين"
+
+#, javascript-format
+msgid ""
+"For any legal issues, please contact ${ mailLink }. If you want to delete "
+"your data, simply delete your account, this in fact wipes all privacy "
+"relevant traces. Your placed pixels will of course not be deleted."
+msgstr ""
+"لأي مسائل قانونية، يرجى الاتصال بـ ${ mailLink }. إذا كنت تريد حذف بياناتك، "
+"فما عليك سوى حذف حسابك، فهذا في الواقع يمحو جميع الآثار المتعلقة بالخصوصية. "
+"لن يتم حذف البكسلات التي وضعتها بالطبع."
+
+msgid "For one day"
+msgstr "ليوم واحد"
+
+msgid "For one month"
+msgstr "لشهر واحد"
+
+msgid "For one week"
+msgstr "لأسبوع واحد"
+
+msgid "For one year"
+msgstr "لسنة واحدة"
+
+msgid "Forever"
+msgstr "إلى الأبد"
+
+msgid "From History"
+msgstr "من التاريخ"
+
+msgid "From Template"
+msgstr "من القالب"
+
+msgid "Get email address"
+msgstr "الحصول على عنوان البريد الإلكتروني"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "الحصول على عدد البكسلات الموضوعة والترتيب"
+
+msgid "Grant"
+msgstr "منح"
+
+msgid "Groups"
+msgstr "المجموعات"
+
+msgid "Hide Embed"
+msgstr "إخفاء التضمين"
+
+msgid "Hide from profile"
+msgstr "إخفاء من الملف الشخصي"
+
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr ""
+"اضغط باستمرار على اليسار ${ bindShift } للقلم (للوضع أثناء تحريك الماوس)"
+
+msgid "ID"
+msgstr "المعرف"
+
+msgid "Identifiers"
+msgstr "المعرفات"
+
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you aren't using one, or think that you "
+"got wrongfully banned, please go to our ${ guildedLink } or send us an e-"
+"mail to ${ mailLink } and, in case of a ban, include the BID you got in the "
+"ban message."
+msgstr ""
+"إذا تم اكتشافك كبروكسي، ولكنك لا تستخدم واحدًا، أو تعتقد أنه تم حظرك ظلمًا، "
+"يرجى الذهاب إلى ${ guildedLink } الخاص بنا أو إرسال بريد إلكتروني إلى ${ "
+"mailLink }، وفي حالة الحظر، قم بتضمين BID الذي تلقيته في رسالة الحظر."
+
+msgid ""
+"If you talk to moderators or administrators, you might get asked for one of "
+"the following identifiers:"
+msgstr ""
+"إذا تحدثت إلى المشرفين أو المسؤولين، فقد يُطلب منك أحد المعرفات التالية:"
+
+msgid "Incorrect password"
+msgstr "كلمة مرور غير صحيحة"
+
+msgid "Invite"
+msgstr "دعوة"
+
+#: src\components\windows\Faction.jsx
+msgid "Invites"
+msgstr "الدعوات"
+
+#: src\components\windows\Faction.jsx
+msgid "Is One-Time-Invite"
+msgstr "دعوة لمرة واحدة"
+
+msgid ""
+"It requests the following permissions. Uncheck what you don't want to grant:"
+msgstr "يطلب الأذونات التالية. قم بإلغاء تحديد ما لا تريد منحه:"
+
+msgid "Jannies can rollback and protect, but not watch or ban."
+msgstr "يمكن للمشرفين الصغار التراجع والحماية، ولكن ليس المراقبة أو الحظر."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Join"
+msgstr "انضمام"
+
+#: src\components\windows\Faction.jsx
+msgid "Join Faction"
+msgstr "انضم إلى الفصيل"
+
+msgid "Joined"
+msgstr "انضم"
+
+msgid "Just for verified Users"
+msgstr "للمستخدمين الموثقين فقط"
+
+#: src\components\windows\Faction.jsx
+msgid "Kick"
+msgstr "طرد"
+
+#: src\components\windows\Faction.jsx
+msgid "Kick members"
+msgstr "طرد الأعضاء"
+
+msgid "Know that an account exists"
+msgstr "معرفة أن الحساب موجود"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Leave"
+msgstr "مغادرة"
+
+#: src\components\windows\Faction.jsx
+msgid "Leave Faction"
+msgstr "مغادرة الفصيل"
+
+msgid "Legal Requests"
+msgstr "الطلبات القانونية"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Let everyone join this faction"
+msgstr "السماح للجميع بالانضمام إلى هذا الفصيل"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Let people join this faction without needing an invite."
+msgstr "السماح للأشخاص بالانضمام إلى هذا الفصيل دون الحاجة إلى دعوة."
+
+#: src\components\windows\Faction.jsx
+msgid "Level"
+msgstr "المستوى"
+
+msgid "Log in or Register"
+msgstr "تسجيل الدخول أو التسجيل"
+
+msgid "Log out a Session:"
+msgstr "تسجيل الخروج من جلسة:"
+
+msgid "Login Methods"
+msgstr "طرق تسجيل الدخول"
+
+msgid "Login to grant access to other application."
+msgstr "تسجيل الدخول لمنح الوصول إلى تطبيق آخر."
+
+msgid "Login to join us."
+msgstr "تسجيل الدخول للانضمام إلينا."
+
+msgid "Login to other application"
+msgstr "تسجيل الدخول إلى تطبيق آخر"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Templates"
+msgstr "إدارة القوالب"
+
+#: src\components\windows\Faction.jsx
+msgid "Manage invites"
+msgstr "إدارة الدعوات"
+
+msgid "Media Actions"
+msgstr "إجراءات الوسائط"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Members"
+msgstr "الأعضاء"
+
+msgid "Moderation Log"
+msgstr "سجل الإشراف"
+
+msgid "Moderation Logs"
+msgstr "سجلات الإشراف"
+
+msgid "Moderators can access all Canvas, Watch and IID tools."
+msgstr "يمكن للمشرفين الوصول إلى جميع أدوات اللوحة والمراقبة و IID."
+
+msgid "Mute Channel"
+msgstr "كتم القناة"
+
+msgid "My Factions"
+msgstr "فصائلي"
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "يمكن أن يحتوي الاسم فقط على الأحرف: a-z . _ و -"
+
+#: src\components\windows\Faction.jsx
+msgid "Name of this role"
+msgstr "اسم هذا الدور"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Name of your faction (this can not be changed later)"
+msgstr "اسم فصيلك (لا يمكن تغييره لاحقًا)"
+
+msgid "New Name"
+msgstr "اسم جديد"
+
+msgid "No File selected to upload"
+msgstr "لم يتم تحديد ملف للتحميل"
+
+msgid "No Phish!"
+msgstr "لا سمكة!"
+
+msgid "No flag selected"
+msgstr "لم يتم اختيار علم"
+
+msgid "No results."
+msgstr "لا نتائج."
+
+#: src\components\windows\Faction.jsx
+msgid "Nobody is banned from this faction"
+msgstr "لا أحد محظور من هذا الفصيل"
+
+#: src\components\windows\Faction.jsx
+msgid "Not Allowed"
+msgstr "غير مسموح"
+
+msgid "Note"
+msgstr "ملاحظة"
+
+msgid "Note: Your active Faction may overwrite your flag settings."
+msgstr "ملاحظة: قد يتجاوز فصيلك النشط إعدادات علمك."
+
+msgid "OIDC LogIn"
+msgstr "تسجيل الدخول عبر OIDC"
+
+msgid "Oh no, the phish escaped. Better luck next time!"
+msgstr "أوه لا، هربت السمكة. حظًا أوفر في المرة القادمة!"
+
+#: src\components\windows\Faction.jsx
+msgid "One-Time"
+msgstr "لمرة واحدة"
+
+msgid "Only verified Users are currently allowed to play."
+msgstr "يُسمح فقط للمستخدمين الموثقين باللعب حاليًا."
+
+msgid "Open"
+msgstr "فتح"
+
+msgid "Open in PopUp"
+msgstr "فتح في نافذة منبثقة"
+
+msgid "OpenID Connect Client registration"
+msgstr "تسجيل عميل OpenID Connect"
+
+#: src\components\windows\Faction.jsx
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "وضع القلم للوحة ${ canvasName }"
+
+msgid "Pencil picks: "
+msgstr "اختيارات القلم: "
+
+#: src\components\windows\Faction.jsx
+msgid "Permission"
+msgstr "الإذن"
+
+#: src\components\windows\Faction.jsx
+msgid "Permissions of Powerlevels"
+msgstr "أذونات مستويات القوة"
+
+msgid "Phish!"
+msgstr "سمكة!"
+
+msgid "Phishes"
+msgstr "الأسماك"
+
+#: src\components\windows\MyFactions.jsx
+#: src\components\windows\PixelRanks.jsx
+msgid "Pixels"
+msgstr "البكسلات"
+
+msgid "Please refresh the website"
+msgstr "يرجى تحديث الموقع"
+
+msgid ""
+"Please verify your mail address or add a new one, otherwise your account "
+"could get deleted in the future."
+msgstr ""
+"يرجى التحقق من عنوان بريدك الإلكتروني أو إضافة عنوان جديد، وإلا فقد يتم حذف "
+"حسابك في المستقبل."
+
+#: src\components\windows\Faction.jsx
+msgid "Powerlevel"
+msgstr "مستوى القوة"
+
+#: src\components\windows\Faction.jsx
+msgid "Powerlevel of this role. See table below for an explanation."
+msgstr "مستوى قوة هذا الدور. انظر الجدول أدناه للحصول على تفسير."
+
+msgid "Quick Actions"
+msgstr "إجراءات سريعة"
+
+#: src\components\windows\PixelRanks.jsx
+msgid "Rank"
+msgstr "الرتبة"
+
+msgid "Read Badges and fishes"
+msgstr "قراءة الشارات والأسماك"
+
+msgid "Read name, username and account age"
+msgstr "قراءة الاسم واسم المستخدم وعمر الحساب"
+
+#: src\components\windows\Faction.jsx
+msgid "Refresh"
+msgstr "تحديث"
+
+msgid "Regularly update this data"
+msgstr "تحديث هذه البيانات بانتظام"
+
+msgid "Remember this decision: "
+msgstr "تذكر هذا القرار: "
+
+msgid "Remove"
+msgstr "إزالة"
+
+msgid "Remove Chatmod"
+msgstr "إزالة مشرف الدردشة"
+
+msgid "Remove Cleaner"
+msgstr "إزالة المنظف"
+
+msgid "Remove Janny"
+msgstr "إزالة المشرف الصغير"
+
+#: src\components\windows\Faction.jsx
+msgid "Remove Roles"
+msgstr "إزالة الأدوار"
+
+msgid "Remove a Login method:"
+msgstr "إزالة طريقة تسجيل الدخول:"
+
+#, javascript-format
+msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
+msgstr "يمثل ${ activeFactionTitle } كـ ${ activeFactionRoleName }"
+
+msgid "Require Verification to Place"
+msgstr "طلب التحقق للوضع"
+
+msgid "Reset Captchas of ALL Users"
+msgstr "إعادة تعيين الكابتشا لجميع المستخدمين"
+
+msgid "Reset your password"
+msgstr "إعادة تعيين كلمة المرور"
+
+msgid "Retract"
+msgstr "سحب"
+
+msgid "Revoke consent of third party applications:"
+msgstr "إلغاء موافقة تطبيقات الطرف الثالث:"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Role"
+msgstr "الدور"
+
+#: src\components\windows\Faction.jsx
+msgid "Role Flags"
+msgstr "أعلام الأدوار"
+
+#: src\components\windows\Faction.jsx
+msgid "Roles"
+msgstr "الأدوار"
+
+msgid "Roll different Captcha Fonts"
+msgstr "تدوير خطوط كابتشا مختلفة"
+
+msgid "Rollback an area of the canvas to a set date and time"
+msgstr "التراجع عن منطقة من اللوحة إلى تاريخ ووقت محددين"
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "Search Existing Faction"
+msgstr "البحث عن فصيل موجود"
+
+msgid "Search Term"
+msgstr "مصطلح البحث"
+
+#: src\components\windows\Faction.jsx
+msgid "See hidden users in member list"
+msgstr "رؤية المستخدمين المخفيين في قائمة الأعضاء"
+
+#: src\components\windows\Faction.jsx
+msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
+msgstr ""
+"اختر صورة رمزية لهذا الفصيل. التنسيقات المدعومة: jpg, gif, png, webp"
+
+msgid "Select Flag"
+msgstr "اختر العلم"
+
+#: src\components\windows\Faction.jsx
+msgid "Select a valid powerlevel"
+msgstr "اختر مستوى قوة صالحًا"
+
+#: src\components\windows\Faction.jsx
+msgid "Select a valid pwerlevel"
+msgstr "اختر مستوى قوة صالحًا"
+
+msgid "Select your Avatar. Supported Formats: jpg, gif, png, webp"
+msgstr "اختر صورتك الرمزية. التنسيقات المدعومة: jpg, gif, png, webp"
+
+msgid "Selected Color"
+msgstr "اللون المحدد"
+
+msgid "Selected Flag:"
+msgstr "العلم المحدد:"
+
+msgid "Selected moderation actions that happened within the past two weeks."
+msgstr "إجراءات الإشراف المحددة التي حدثت خلال الأسبوعين الماضيين."
+
+msgid "Server Error"
+msgstr "خطأ في الخادم"
+
+msgid "Set Password"
+msgstr "تعيين كلمة المرور"
+
+msgid ""
+"Setting a password allows you to login by username or email, rather than "
+"only relying on 3rd party login."
+msgstr ""
+"يتيح لك تعيين كلمة مرور تسجيل الدخول باسم المستخدم أو البريد الإلكتروني، "
+"بدلاً من الاعتماد فقط على تسجيل الدخول عبر طرف ثالث."
+
+msgid "Show Embedded"
+msgstr "إظهار المضمن"
+
+msgid "Shrink"
+msgstr "تصغير"
+
+msgid "Size"
+msgstr "الحجم"
+
+#, javascript-format
+msgid "Source for pixelplanet on ${ gitLink } or ${ downloadHereLink }."
+msgstr "مصدر pixelplanet على ${ gitLink } أو ${ downloadHereLink }."
+
+msgid "Start checking for Malware"
+msgstr "بدء التحقق من البرامج الضارة"
+
+msgid "Stay logged in: "
+msgstr "البقاء مسجلاً: "
+
+msgid "Stop checking for Malware"
+msgstr "إيقاف التحقق من البرامج الضارة"
+
+msgid "Stop requiring Verification to Place"
+msgstr "إيقاف طلب التحقق للوضع"
+
+msgid "Switch Account"
+msgstr "تبديل الحساب"
+
+#, javascript-format
+msgid ""
+"The application ${ appName } at ${ appUrl } wants to login with your "
+"pixelplanet account ${ accountName }"
+msgstr ""
+"التطبيق ${ appName } على ${ appUrl } يريد تسجيل الدخول باستخدام حساب "
+"pixelplanet الخاص بك ${ accountName }"
+
+msgid ""
+"The name of your account, only a-z, A-Z, -, ., and - characters are "
+"allowed. It is permanent, you can not change it later."
+msgstr ""
+"اسم حسابك، يُسمح فقط بالأحرف a-z و A-Z و - و . و -. إنه دائم، لا يمكنك "
+"تغييره لاحقًا."
+
+msgid "The password for your account."
+msgstr "كلمة المرور لحسابك."
+
+msgid "This URL is not supported by our Media Player"
+msgstr "عنوان URL هذا غير مدعوم من مشغل الوسائط لدينا"
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"تم اختراق هذا المزيج من البريد الإلكتروني / كلمة المرور وتسريبه. لحماية هذا "
+"الحساب، تمت إعادة تعيين كلمة المرور. يرجى استخدام وظيفة \"نسيت كلمة المرور\" "
+"في صفحة تسجيل الدخول لتعيين كلمة مرور جديدة. في المستقبل، فكر في عدم تثبيت "
+"البرامج الضارة، شكرًا لك."
+
+#: src\components\windows\Faction.jsx
+msgid "This faction has no invites"
+msgstr "هذا الفصيل ليس لديه دعوات"
+
+msgid ""
+"This is the name that other people see, e.g. in Chat. You can change it at "
+"any time. All characters except @, /, , >, < and # are allowed."
+msgstr ""
+"هذا هو الاسم الذي يراه الآخرون، على سبيل المثال في الدردشة. يمكنك تغييره في "
+"أي وقت. يُسمح بجميع الأحرف باستثناء @ و / و , و > و < و #."
+
+msgid "This login may only work if your account is verified."
+msgstr "قد يعمل تسجيل الدخول هذا فقط إذا تم التحقق من حسابك."
+
+msgid "This permission is required"
+msgstr "هذا الإذن مطلوب"
+
+msgid "This user has not password set"
+msgstr "هذا المستخدم لم يقم بتعيين كلمة مرور"
+
+#. Column title in tables
+msgid "Time"
+msgstr "الوقت"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Title"
+msgstr "العنوان"
+
+msgid "Title can't be empty."
+msgstr "لا يمكن أن يكون العنوان فارغًا."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "يحتوي العنوان على حرف غير صالح مثل @ أو / أو \\ أو #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "يجب أن يكون العنوان على الأقل حرفين"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "يجب أن يكون العنوان أقصر من 26 حرفًا"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Title of your faction"
+msgstr "عنوان فصيلك"
+
+msgid "To use this page, enter your Password:"
+msgstr "لاستخدام هذه الصفحة، أدخل كلمة المرور:"
+
+#: src\components\windows\Statistics.jsx
+msgid "Top 10 Players from Yesterday"
+msgstr "أفضل 10 لاعبين من الأمس"
+
+#: src\components\windows\Statistics.jsx
+msgid "Total Pixels per Faction"
+msgstr "إجمالي البكسلات لكل فصيل"
+
+#: src\components\windows\Statistics.jsx
+msgid "Total Pixels per Player"
+msgstr "إجمالي البكسلات لكل لاعب"
+
+msgid "Type of Mod"
+msgstr "نوع المشرف"
+
+msgid "Unban media"
+msgstr "إلغاء حظر الوسائط"
+
+#: src\components\windows\Faction.jsx
+msgid "Unban members"
+msgstr "إلغاء حظر الأعضاء"
+
+msgid "Unblock"
+msgstr "إلغاء الحظر"
+
+msgid "Until the browser closes"
+msgstr "حتى إغلاق المتصفح"
+
+#: src\components\windows\Settings.jsx
+msgid "Use our custom cursor"
+msgstr "استخدم المؤشر المخصص لدينا"
+
+msgid "User ID and verification level"
+msgstr "معرف المستخدم ومستوى التحقق"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "يمكن أن يحتوي اسم المستخدم فقط على الأحرف: a-z . _ و -"
+
+msgid "Username can only contain the characters: a-z A-z . _ and -"
+msgstr "يمكن أن يحتوي اسم المستخدم فقط على الأحرف: a-z A-z . _ و -"
+
+msgid "Username can't be empty."
+msgstr "لا يمكن أن يكون اسم المستخدم فارغًا."
+
+msgid "Username must be at least 2 characters long"
+msgstr "يجب أن يكون اسم المستخدم على الأقل حرفين"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "يجب أن يكون اسم المستخدم أقصر من 26 حرفًا"
+
+msgid "Users"
+msgstr "المستخدمون"
+
+#, javascript-format
+msgid "We are Libre Software under the ${ agplLink }, "
+msgstr "نحن برنامج حر بموجب ${ agplLink }، "
+
+msgid "What the pencil should draw on the current canvas."
+msgstr "ما الذي يجب أن يرسمه القلم على اللوحة الحالية."
+
+#: src\components\windows\Faction.jsx
+msgid "Whether or not this invite can only be used once."
+msgstr "ما إذا كانت هذه الدعوة يمكن استخدامها مرة واحدة فقط."
+
+msgid "YOU CAN ONLY CHOOSE YOUR USERNAME ONCE!"
+msgstr "يمكنك اختيار اسم المستخدم الخاص بك مرة واحدة فقط!"
+
+msgid "Yes, really delete Me"
+msgstr "نعم، احذفني حقًا"
+
+msgid ""
+"You are a teacher and a pupil is playing this game, despite it not being "
+"suitable for them? Send us an email."
+msgstr ""
+"أنت مدرس وتلميذ يلعب هذه اللعبة، على الرغم من أنها غير مناسبة له؟ أرسل لنا "
+"بريدًا إلكترونيًا."
+
+#, javascript-format
+msgid ""
+"You are banned. You think it is unjustified? Check out the ${ helpButton } "
+"on how to appeal. And don't forget to include the BID you can get below."
+msgstr ""
+"أنت محظور. هل تعتقد أن هذا غير مبرر؟ تحقق من ${ helpButton } حول كيفية "
+"الاستئناف. ولا تنس تضمين BID الذي يمكنك الحصول عليه أدناه."
+
+msgid "You are currently not a member of any faction."
+msgstr "أنت حاليًا لست عضوًا في أي فصيل."
+
+msgid "You are currently not allowed to access this game."
+msgstr "غير مسموح لك حاليًا بالوصول إلى هذه اللعبة."
+
+msgid ""
+"You are currently not representing any faction. To represent one, activate "
+"a role in one of your factions below."
+msgstr ""
+"أنت لا تمثل أي فصيل حاليًا. لتمثيل أحدها، قم بتفعيل دور في أحد فصائللك أدناه."
+
+#, javascript-format
+msgid ""
+"You are currently representing ${ activeFactionTitle } as ${ activeRoleName "
+"}"
+msgstr "أنت تمثل حاليًا ${ activeFactionTitle } كـ ${ activeRoleName }"
+
+#, javascript-format
+msgid "You are logged in as ${ name } [${ username }]."
+msgstr "أنت مسجل الدخول باسم ${ name } [${ username }]."
+
+msgid "You are not allowed to play this game right now :("
+msgstr "غير مسموح لك بلعب هذه اللعبة الآن :("
+
+msgid ""
+"You can connect to pixelplanet and use pixelplanet accounts for oauth / "
+"oidc login. See here: "
+msgstr ""
+"يمكنك الاتصال بـ pixelplanet واستخدام حسابات pixelplanet لتسجيل الدخول عبر "
+"oauth / oidc. انظر هنا: "
+
+#, javascript-format
+msgid ""
+"You caught a Phish! It is a ${ FISH_TYPES[type].name } with ${ size }kg! As "
+"a bonus, your cooldown is reduced."
+msgstr ""
+"لقد اصطدت سمكة! إنها ${ FISH_TYPES[type].name } بوزن ${ size } كجم! كمكافأة، "
+"تم تقليل فترة التهدئة الخاصة بك."
+
+msgid "You did not consent"
+msgstr "أنت لم توافق"
+
+#, javascript-format
+msgid ""
+"You have been invited to join us on pixelplanet. We currently have ${ "
+"memberCount } members."
+msgstr ""
+"لقد تمت دعوتك للانضمام إلينا على pixelplanet. لدينا حاليًا ${ memberCount } "
+"عضوًا."
+
+msgid "You must enter a UserId"
+msgstr "يجب عليك إدخال معرف المستخدم"
+
+msgid "You must enter a mediaId or media BID"
+msgstr "يجب عليك إدخال mediaId أو media BID"
+
+msgid "You must enter a reason"
+msgstr "يجب عليك إدخال سبب"
+
+msgid "You must enter a username"
+msgstr "يجب عليك إدخال اسم المستخدم"
+
+msgid "You must enter an BID"
+msgstr "يجب عليك إدخال BID"
+
+msgid "You must enter an IID or UserId"
+msgstr "يجب عليك إدخال IID أو معرف المستخدم"
+
+msgid "You must enter at least one IID, User Id or BID"
+msgstr "يجب عليك إدخال IID أو معرف المستخدم أو BID واحد على الأقل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "You must select an avatar for your faction"
+msgstr "يجب عليك اختيار صورة رمزية لفصيلك"
+
+msgid "Your Browser looks shady"
+msgstr "متصفحك يبدو مشبوهًا"
+
+msgid "Your Factions"
+msgstr "فصائللك"
+
+msgid "Your Roles"
+msgstr "أدوارك"
+
+msgid "Your device looks weird"
+msgstr "جهازك يبدو غريبًا"
+
+msgid ""
+"Your did not set your username yet. A username is required to login to "
+"other applications. You can set it now:"
+msgstr ""
+"لم تقم بتعيين اسم المستخدم الخاص بك بعد. اسم المستخدم مطلوب لتسجيل الدخول "
+"إلى تطبيقات أخرى. يمكنك تعيينه الآن:"
+
+msgid "Your name is:"
+msgstr "اسمك هو:"
+
+msgid "a hidden faction"
+msgstr "فصيل مخفي"
+
+#: src\components\windows\Faction.jsx
+msgid "affects"
+msgstr "يؤثر"
+
+#: src\components\windows\Faction.jsx
+msgid "by"
+msgstr "بواسطة"
+
+#: src\components\windows\Faction.jsx
+msgid "created at"
+msgstr "تم الإنشاء في"
+
+msgid "days"
+msgstr "أيام"
+
+msgid "download here"
+msgstr "تحميل هنا"
+
+#: src\components\windows\Faction.jsx
+msgid "lift"
+msgstr "رفع"
+
+#: src\components\windows\Faction.jsx
+msgid "times used"
+msgstr "مرات الاستخدام"
+
+#: src\components\TimelapseMaker.jsx
+msgid "A timelapse can be created once every 30 minutes."
+msgstr "يمكن إنشاء تصوير فاصل زمني مرة واحدة كل 30 دقيقة."
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Accept"
+msgstr "قبول"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Action"
+msgstr "إجراء"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Active"
+msgstr "نشط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Active NAP"
+msgstr "NAP نشط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Active NAPs"
+msgstr "NAPs النشطة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Active Template"
+msgstr "القالب النشط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Adds this template to your personal game overlay"
+msgstr "يضيف هذا القالب إلى طبقة اللعبة الشخصية الخاصة بك"
+
+#: src\components\windows\Settings.jsx
+msgid "Alerts and cooldown volume"
+msgstr "مستوى صوت التنبيهات وفترة التهدئة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Allow All"
+msgstr "السماح للجميع"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Allow Open Join"
+msgstr "السماح بالانضمام المفتوح"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Allow anyone to join freely or require invitations/applications."
+msgstr "السماح لأي شخص بالانضمام بحرية أو طلب دعوات/تقديمات."
+
+#: src\core\pixelRanks.js
+msgid "Amethyst"
+msgstr "جمشت"
+
+#: src\components\windows\MyFactions.jsx
+msgid "An image representing your faction (automatically fitted)"
+msgstr "صورة تمثل فصيلك (يتم ضبطها تلقائيًا)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Anyone can join"
+msgstr "يمكن لأي شخص الانضمام"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Application sent"
+msgstr "تم إرسال الطلب"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Application submitted. The faction admins have been notified."
+msgstr "تم تقديم الطلب. تم إخطار مسؤولي الفصيل."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Apply"
+msgstr "تقديم"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Apply & Return"
+msgstr "تطبيق والعودة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Approve Termination"
+msgstr "الموافقة على الإنهاء"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Approve termination"
+msgstr "الموافقة على الإنهاء"
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "Are you sure you want to kick ${ memberName } from the faction?"
+msgstr "هل أنت متأكد أنك تريد طرد ${ memberName } من الفصيل؟"
+
+#: src\core\pixelRanks.js
+msgid "Army Commander"
+msgstr "قائد الجيش"
+
+#: src\components\windows\Settings.jsx
+#. Sound
+msgid "AudioContext is unavailable; check privacy settings."
+msgstr "AudioContext غير متاح؛ تحقق من إعدادات الخصوصية."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Awaiting Other Faction"
+msgstr "في انتظار الفصيل الآخر"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Awaiting other faction"
+msgstr "في انتظار الفصيل الآخر"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Awaiting response"
+msgstr "في انتظار الرد"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Back to list"
+msgstr "العودة إلى القائمة"
+
+#: src\core\pixelRanks.js
+msgid "Brigade Commander"
+msgstr "قائد اللواء"
+
+#: src\core\pixelRanks.js
+msgid "Brigadier"
+msgstr "عميد"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Broken"
+msgstr "معطل"
+
+#: src\core\pixelRanks.js
+msgid "Bronze"
+msgstr "برونزي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Cancel Proposal"
+msgstr "إلغاء الاقتراح"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Cancel this pending NAP proposal?"
+msgstr "هل تريد إلغاء اقتراح NAP المعلق هذا؟"
+
+#: src\components\TimelapseMaker.jsx
+#, javascript-format
+msgid "Canvas ${ id }"
+msgstr "اللوحة ${ id }"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 0 (Earth)"
+msgstr "اللوحة 0 (الأرض)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 1 (Moon)"
+msgstr "اللوحة 1 (القمر)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 2 (135M)"
+msgstr "اللوحة 2 (135 مليون)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 7 (3D)"
+msgstr "اللوحة 7 (ثلاثي الأبعاد)"
+
+#: src\core\pixelRanks.js
+msgid "Captain"
+msgstr "نقيب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Change Template"
+msgstr "تغيير القالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Changing role automatically updates default permission presets below."
+msgstr "تغيير الدور يحدّث تلقائيًا الإعدادات المسبقة للأذونات الافتراضية أدناه."
+
+#: src\components\windows\Settings.jsx
+msgid "Chat notification volume"
+msgstr "مستوى صوت إشعارات الدردشة"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Choose any area on the canvas and up to 7 days."
+msgstr "اختر أي منطقة على اللوحة وحتى 7 أيام."
+
+#: src\components\windows\Settings.jsx
+msgid "Clear search"
+msgstr "مسح البحث"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Click a member to manage role & permissions"
+msgstr "انقر على عضو لإدارة الدور والأذونات"
+
+#: src\core\pixelRanks.js
+msgid "Colonel"
+msgstr "عقيد"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Config"
+msgstr "التكوين"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Configure canvas coordination and settings"
+msgstr "تكوين تنسيق اللوحة وإعداداتها"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Configure coordination IDs"
+msgstr "تكوين معرفات التنسيق"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Confirmation name does not match the faction name."
+msgstr "اسم التأكيد لا يطابق اسم الفصيل."
+
+#: src\core\pixelRanks.js
+msgid "Consul"
+msgstr "قنصل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Control whether your faction appears in public search and list."
+msgstr "تحكم فيما إذا كان فصيلك يظهر في البحث العام والقائمة."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Copied!"
+msgstr "تم النسخ!"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Copy faction tag"
+msgstr "نسخ علامة الفصيل"
+
+#: src\core\pixelRanks.js
+msgid "Corporal"
+msgstr "عريف"
+
+#: src\core\pixelRanks.js
+msgid "Corps Commander"
+msgstr "قائد الفيلق"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Could not create the timelapse"
+msgstr "تعذر إنشاء التصوير الفاصل الزمني"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Could not load canvases"
+msgstr "تعذر تحميل اللوحات"
+
+#: src\components\windows\Statistics.jsx
+msgid "Could not load statistics:"
+msgstr "تعذر تحميل الإحصائيات:"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Could not load the target faction template."
+msgstr "تعذر تحميل قالب الفصيل الهدف."
+
+#: src\components\TimelapseMaker.jsx
+msgid "Create timelapse"
+msgstr "إنشاء تصوير فاصل زمني"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Created date"
+msgstr "تاريخ الإنشاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Creating a faction requires at least 50,000 placed pixels."
+msgstr "يتطلب إنشاء فصيل ما لا يقل عن 50,000 بكسل موضوع."
+
+#: src\components\TimelapseMaker.jsx
+msgid "Creating timelapse..."
+msgstr "جارٍ إنشاء التصوير الفاصل الزمني..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Current Role"
+msgstr "الدور الحالي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Custom Permissions"
+msgstr "أذونات مخصصة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Date Created"
+msgstr "تاريخ الإنشاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Denied"
+msgstr "مرفوض"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Deny All"
+msgstr "رفض الكل"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Deputy"
+msgstr "نائب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Deputy (Administrator)"
+msgstr "نائب (مسؤول)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Disband Faction"
+msgstr "حل الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Disbanding..."
+msgstr "جارٍ الحل..."
+
+#: src\components\windows\Settings.jsx
+msgid "Display"
+msgstr "العرض"
+
+#: src\components\windows\Settings.jsx
+#. Interface
+msgid "Display the palette in a compact form."
+msgstr "عرض لوحة الألوان بشكل مضغوط."
+
+#: src\core\pixelRanks.js
+msgid "Division Commander"
+msgstr "قائد الفرقة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Double-click to apply | Right-click to cancel"
+msgstr "انقر نقرًا مزدوجًا للتطبيق | انقر بزر الماوس الأيمن للإلغاء"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Download timelapse video"
+msgstr "تنزيل فيديو التصوير الفاصل الزمني"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Drag to select area"
+msgstr "اسحب لتحديد المنطقة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Edit Details"
+msgstr "تعديل التفاصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Edit Faction Details"
+msgstr "تعديل تفاصيل الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Edit title, description, privacy, and open join"
+msgstr "تعديل العنوان والوصف والخصوصية والانضمام المفتوح"
+
+#: src\core\pixelRanks.js
+msgid "Emperor"
+msgstr "إمبراطور"
+
+#: src\components\windows\MyFactions.jsx
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#: src\components\TimelapseMaker.jsx
+msgid "End XY"
+msgstr "نهاية XY"
+
+#: src\components\TimelapseMaker.jsx
+msgid "End date"
+msgstr "تاريخ الانتهاء"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Enter coordinates as X, Y (for example: 12, 34)."
+msgstr "أدخل الإحداثيات كـ X، Y (على سبيل المثال: 12، 34)."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Enter the 2-3 letter tag of the other faction."
+msgstr "أدخل علامة الفصيل الآخر المكونة من 2-3 أحرف."
+
+#: src\components\TimelapseMaker.jsx
+msgid "FPS"
+msgstr "إطار في الثانية"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Details"
+msgstr "تفاصيل الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction ID"
+msgstr "معرف الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction List"
+msgstr "قائمة الفصائل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Settings & Actions"
+msgstr "إعدادات وإجراءات الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Statistics"
+msgstr "إحصائيات الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Templates"
+msgstr "قوالب الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Title / Name"
+msgstr "عنوان / اسم الفصيل"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Faction members"
+msgstr "أعضاء الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction sections"
+msgstr "أقسام الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Failed to download template image."
+msgstr "فشل تنزيل صورة القالب."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Failed to install template"
+msgstr "فشل تثبيت القالب"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Frame skip"
+msgstr "تخطي الإطار"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Full active template territory"
+msgstr "كامل إقليم القالب النشط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Full template"
+msgstr "القالب الكامل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Full template default"
+msgstr "القالب الكامل الافتراضي"
+
+#: src\components\windows\Settings.jsx
+msgid "Game volume"
+msgstr "مستوى صوت اللعبة"
+
+#: src\core\pixelRanks.js
+msgid "General"
+msgstr "جنرال"
+
+#: src\core\pixelRanks.js
+msgid "Gold"
+msgstr "ذهبي"
+
+#: src\core\pixelRanks.js
+msgid "Guardian"
+msgstr "وصي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Hidden from search"
+msgstr "مخفي من البحث"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Home"
+msgstr "الرئيسية"
+
+#: src\components\windows\Settings.jsx
+msgid "How PixelStates should look."
+msgstr "كيف يجب أن تبدو PixelStates."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Incoming Proposal"
+msgstr "اقتراح وارد"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Incoming request"
+msgstr "طلب وارد"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Indefinite duration"
+msgstr "مدة غير محددة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Install to My Templates"
+msgstr "تثبيت في قوالبي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Installed to your templates!"
+msgstr "تم التثبيت في قوالبك!"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Installing..."
+msgstr "جارٍ التثبيت..."
+
+#: src\components\windows\Settings.jsx
+msgid "Interface"
+msgstr "الواجهة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Invite only"
+msgstr "بدعوة فقط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Invite players to the faction"
+msgstr "دعوة لاعبين إلى الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Join Applications"
+msgstr "طلبات الانضمام"
+
+#: src\core\pixelRanks.js
+msgid "Keeper"
+msgstr "حارس"
+
+#: src\components\windows\Settings.jsx
+msgid "Key Bindings"
+msgstr "تعيينات المفاتيح"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Kick Member"
+msgstr "طرد عضو"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Kick lower-ranked members"
+msgstr "طرد الأعضاء ذوي الرتب الأدنى"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Lasso Tool"
+msgstr "أداة الحبل"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Leader"
+msgstr "قائد"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Leader (Co-Leader)"
+msgstr "قائد (قائد مشارك)"
+
+#: src\core\pixelRanks.js
+msgid "Legate"
+msgstr "مبعوث"
+
+#: src\core\pixelRanks.js
+msgid "Legend"
+msgstr "أسطورة"
+
+#: src\core\pixelRanks.js
+msgid "Lieutenant"
+msgstr "ملازم"
+
+#: src\components\windows\Statistics.jsx
+msgid "Loading statistics..."
+msgstr "جارٍ تحميل الإحصائيات..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Loading the target faction's active template…"
+msgstr "جارٍ تحميل القالب النشط للفصيل الهدف…"
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Loading the target template. You can already select its territory using the "
+"displayed template."
+msgstr ""
+"جارٍ تحميل القالب الهدف. يمكنك بالفعل تحديد إقليمه باستخدام القالب المعروض."
+
+#: src\components\PixelRankCounter.jsx
+msgid "MAX"
+msgstr "الحد الأقصى"
+
+#: src\core\pixelRanks.js
+msgid "Major"
+msgstr "رائد"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Make Hidden"
+msgstr "جعله مخفيًا"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Make Public"
+msgstr "جعله عامًا"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage"
+msgstr "إدارة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Admin & Roles"
+msgstr "إدارة المسؤول والأدوار"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Applications"
+msgstr "إدارة الطلبات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Configurations"
+msgstr "إدارة التكوينات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Coordination"
+msgstr "إدارة التنسيق"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Faction Settings"
+msgstr "إدارة إعدادات الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Invitations"
+msgstr "إدارة الدعوات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Member Permissions"
+msgstr "إدارة أذونات الأعضاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Members"
+msgstr "إدارة الأعضاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage NAPs"
+msgstr "إدارة NAPs"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage this member's role and permissions"
+msgstr "إدارة دور هذا العضو وأذوناته"
+
+#: src\core\pixelRanks.js
+msgid "Marshal"
+msgstr "مشير"
+
+#: src\components\windows\Settings.jsx
+msgid "Master volume for all game sounds."
+msgstr "مستوى الصوت الرئيسي لجميع أصوات اللعبة."
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Member"
+msgstr "عضو"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Member (Regular)"
+msgstr "عضو (عادي)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Membership Access"
+msgstr "وصول العضوية"
+
+#: src\components\windows\MyFactions.jsx
+msgid "My Faction"
+msgstr "فصيلي"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "NAP"
+msgstr "NAP"
+
+#: src\components\windows\MyFactions.jsx
+msgid "NAP Territory Distribution & Protection"
+msgstr "توزيع وحماية إقليم NAP"
+
+#: src\components\windows\MyFactions.jsx
+msgid "NAP feature is coming soon."
+msgstr "ميزة NAP قادمة قريبًا."
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "NAP functionality is temporarily unavailable and will be added soon."
+msgstr "وظيفة NAP غير متاحة مؤقتًا وسيتم إضافتها قريبًا."
+
+#: src\components\windows\MyFactions.jsx
+msgid "NAPs"
+msgstr "NAPs"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Need 50,000 pixels to create"
+msgstr "تحتاج إلى 50,000 بكسل للإنشاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "New NAP"
+msgstr "NAP جديد"
+
+#: src\components\windows\MyFactions.jsx
+msgid "New NAP Proposal"
+msgstr "اقتراح NAP جديد"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Next"
+msgstr "التالي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "No active or incoming non-aggression pacts."
+msgstr "لا توجد ميثاق عدم اعتداء نشط أو وارد."
+
+#: src\components\windows\MyFactions.jsx
+msgid "No active template"
+msgstr "لا يوجد قالب نشط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "No active template for this faction."
+msgstr "لا يوجد قالب نشط لهذا الفصيل."
+
+#: src\components\windows\Statistics.jsx
+msgid "No country statistics available."
+msgstr "لا توجد إحصائيات دول متاحة."
+
+#: src\components\windows\MyFactions.jsx
+msgid "No description provided."
+msgstr "لم يتم تقديم وصف."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "No description yet."
+msgstr "لا يوجد وصف بعد."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "No factions found."
+msgstr "لم يتم العثور على فصائل."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "No members to display."
+msgstr "لا يوجد أعضاء للعرض."
+
+#: src\components\windows\Statistics.jsx
+msgid "No ranking data available."
+msgstr "لا توجد بيانات ترتيب متاحة."
+
+#: src\components\windows\Settings.jsx
+msgid "No settings match your search."
+msgstr "لا توجد إعدادات تطابق بحثك."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Non-Aggression Pact (NAP)"
+msgstr "ميثاق عدم اعتداء (NAP)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Non-Aggression Pacts (NAPs)"
+msgstr "مواثيق عدم اعتداء (NAPs)"
+
+#: src\components\windows\Settings.jsx
+msgid "Not set"
+msgstr "غير معين"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Notifications"
+msgstr "الإشعارات"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Officer"
+msgstr "ضابط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Officer (Moderator)"
+msgstr "ضابط (مشرف)"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "One of the factions has no active template"
+msgstr "أحد الفصائل ليس لديه قالب نشط"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "One of the factions has no active template. NAP request unavailable."
+msgstr "أحد الفصائل ليس لديه قالب نشط. طلب NAP غير متاح."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Only owner or members with template permissions can upload"
+msgstr "فقط المالك أو الأعضاء الذين لديهم أذونات القالب يمكنهم التحميل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Open Fullscreen Territory Editor"
+msgstr "فتح محرر الإقليم بملء الشاشة"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Open only"
+msgstr "مفتوح فقط"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Origin X"
+msgstr "أصل X"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Origin Y"
+msgstr "أصل Y"
+
+#: src\components\windows\Settings.jsx
+msgid "Other"
+msgstr "أخرى"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Outgoing Proposal"
+msgstr "اقتراح صادر"
+
+#: src\core\pixelRanks.js
+msgid "Overlord"
+msgstr "سيد"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Owner"
+msgstr "مالك"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Owner Only"
+msgstr "للمالك فقط"
+
+#: src\components\windows\Settings.jsx
+msgid "Performance"
+msgstr "الأداء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Permanently Delete Faction"
+msgstr "حذف الفصيل نهائيًا"
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Permanently delete your faction, channels, templates, and pacts. This "
+"action cannot be undone."
+msgstr ""
+"حذف فصيلك وقنواتك وقوالبك ومواثيقك نهائيًا. لا يمكن التراجع عن هذا الإجراء."
+
+#: src\components\windows\Settings.jsx
+msgid "Pixel placement volume"
+msgstr "مستوى صوت وضع البكسل"
+
+#: src\components\PixelRankCounter.jsx
+#, javascript-format
+msgid "Pixel rank ${ rank.id } progress: ${ progress }%"
+msgstr "تقدم رتبة البكسل ${ rank.id }: ${ progress }%"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Pixels Today"
+msgstr "البكسلات اليوم"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Player"
+msgstr "لاعب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Please enter a target faction tag (2-3 characters)."
+msgstr "يرجى إدخال علامة الفصيل الهدف (2-3 أحرف)."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Please select an image file to upload."
+msgstr "يرجى اختيار ملف صورة للتحميل."
+
+#: src\core\pixelRanks.js
+msgid "Praetor"
+msgstr "بريتور"
+
+#: src\components\windows\Settings.jsx
+msgid "Press Escape to cancel."
+msgstr "اضغط Escape للإلغاء."
+
+#: src\components\windows\Settings.jsx
+msgid "Press a key…"
+msgstr "اضغط على مفتاح…"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Prev"
+msgstr "السابق"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Private faction"
+msgstr "فصيل خاص"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Processing..."
+msgstr "جارٍ المعالجة..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Promote/demote and configure member permissions"
+msgstr "ترقية/تخفيض وتكوين أذونات الأعضاء"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Propose NAP"
+msgstr "اقتراح NAP"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Propose New NAP"
+msgstr "اقتراح NAP جديد"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Propose Non-Aggression Pact (NAP)"
+msgstr "اقتراح ميثاق عدم اعتداء (NAP)"
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Propose a non-aggression pact with another faction protecting defined "
+"territories."
+msgstr "اقتراح ميثاق عدم اعتداء مع فصيل آخر لحماية أقاليم محددة."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Propose and accept Non-Aggression Pacts"
+msgstr "اقتراح وقبول مواثيق عدم اعتداء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Protected Territory"
+msgstr "الإقليم المحمي"
+
+#: src\components\PixelRankCounter.jsx
+msgid "Ranks"
+msgstr "الرتب"
+
+#: src\core\pixelRanks.js
+msgid "Recruit"
+msgstr "مجند"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Rectangle Tool"
+msgstr "أداة المستطيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Reject"
+msgstr "رفض"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Rejected"
+msgstr "مرفوض"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Remove Template"
+msgstr "إزالة القالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Request Termination"
+msgstr "طلب الإنهاء"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Request failed."
+msgstr "فشل الطلب."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Request termination"
+msgstr "طلب الإنهاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Reset Both"
+msgstr "إعادة تعيين كليهما"
+
+#: src\components\windows\Statistics.jsx
+msgid "Retry"
+msgstr "إعادة المحاولة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Review and accept/reject join applications"
+msgstr "مراجعة وقبول/رفض طلبات الانضمام"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Role / Rank"
+msgstr "الدور / الرتبة"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "SOON"
+msgstr "قريبًا"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Save & Return"
+msgstr "حفظ والعودة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Save Permissions"
+msgstr "حفظ الأذونات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Saving..."
+msgstr "جارٍ الحفظ..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Search Privacy"
+msgstr "خصوصية البحث"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Search by name or tag"
+msgstr "البحث بالاسم أو العلامة"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Search factions"
+msgstr "البحث عن الفصائل"
+
+#: src\components\windows\Settings.jsx
+msgid "Search settings"
+msgstr "بحث في الإعدادات"
+
+#: src\components\windows\Settings.jsx
+msgid "Search settings…"
+msgstr "بحث في الإعدادات…"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Select Entire Template for"
+msgstr "تحديد القالب بالكامل لـ"
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Select the protected area for either faction. An unselected side uses its "
+"full active template."
+msgstr ""
+"حدد المنطقة المحمية لأي من الفصيلين. الجانب غير المحدد يستخدم قالبه النشط "
+"بالكامل."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Selection"
+msgstr "التحديد"
+
+#: src\core\pixelRanks.js
+msgid "Sergeant"
+msgstr "رقيب"
+
+#: src\core\pixelRanks.js
+msgid "Sergeant Major"
+msgstr "رقيب أول"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Set Template"
+msgstr "تعيين القالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Set to Invite Only"
+msgstr "تعيين إلى بدعوة فقط"
+
+#: src\components\windows\Settings.jsx
+msgid "Animate brush"
+msgstr "تحريك الفرشاة"
+
+#: src\components\windows\Settings.jsx
+msgid "Animate the brush preview while moving it."
+msgstr "تحريك معاينة الفرشاة أثناء تحريكها."
+
+#: src\components\windows\Settings.jsx
+msgid "Settings categories"
+msgstr "فئات الإعدادات"
+
+#: src\components\windows\Settings.jsx
+msgid "Show Active Zones"
+msgstr "إظهار المناطق النشطة"
+
+#: src\components\windows\Settings.jsx
+msgid "Show fire markers for recent pixel activity."
+msgstr "إظهار علامات النار لنشاط البكسل الأخير."
+
+#: src\core\pixelRanks.js
+msgid "Silver"
+msgstr "فضي"
+
+#: src\components\windows\Settings.jsx
+msgid "Sound"
+msgstr "الصوت"
+
+#: src\components\windows\Settings.jsx
+msgid "Stack full volume"
+msgstr "مستوى صوت امتلاء المخزون"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Start XY"
+msgstr "بداية XY"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Start date"
+msgstr "تاريخ البدء"
+
+#: src\components\windows\Statistics.jsx
+msgid "Statistics sections"
+msgstr "أقسام الإحصائيات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Stats"
+msgstr "الإحصائيات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Submitting..."
+msgstr "جارٍ الإرسال..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "TAG (e.g. PXF)"
+msgstr "العلامة (مثل PXF)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "TARGET"
+msgstr "الهدف"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Tag"
+msgstr "العلامة"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Tag of your faction (2-3 uppercase latin letters or numbers, e.g. PXF)"
+msgstr "علامة فصيلك (2-3 أحرف لاتينية كبيرة أو أرقام، مثل PXF)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target"
+msgstr "الهدف"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target Canvas"
+msgstr "اللوحة الهدف"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target Faction"
+msgstr "الفصيل الهدف"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target Faction (TAG)"
+msgstr "الفصيل الهدف (TAG)"
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Target template preview is unavailable. The selected coordinates will be "
+"checked against the target faction template when you submit."
+msgstr ""
+"معاينة القالب الهدف غير متاحة. سيتم التحقق من الإحداثيات المحددة مقابل قالب "
+"الفصيل الهدف عند الإرسال."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template"
+msgstr "القالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template Image (.png, .webp, .jpeg)"
+msgstr "صورة القالب (.png، .webp، .jpeg)"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template Management"
+msgstr "إدارة القوالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template upload failed."
+msgstr "فشل تحميل القالب."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Terminated"
+msgstr "تم الإنهاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Termination approvals"
+msgstr "موافقات الإنهاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Territory Distribution & Protection"
+msgstr "توزيع وحماية الإقليم"
+
+#: src\components\windows\Settings.jsx
+msgid "That key is already assigned."
+msgstr "هذا المفتاح معين بالفعل."
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "The server returned a non-JSON response (HTTP ${ response.status })."
+msgstr "أعاد الخادم استجابة غير JSON (HTTP ${ response.status })."
+
+#: src\components\windows\MyFactions.jsx
+msgid "The server returned a non-JSON response."
+msgstr "أعاد الخادم استجابة غير JSON."
+
+#: src\components\windows\MyFactions.jsx
+msgid "There are no pending join applications."
+msgstr "لا توجد طلبات انضمام معلقة."
+
+#: src\components\windows\MyFactions.jsx
+msgid "This feature will be available soon."
+msgstr "ستتوفر هذه الميزة قريبًا."
+
+#: src\components\windows\MyFactions.jsx
+msgid "This will"
+msgstr "هذا سوف"
+
+#: src\components\windows\PixelRanks.jsx
+msgid "Tier"
+msgstr "المستوى"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Timelapse maker"
+msgstr "صانع التصوير الفاصل الزمني"
+
+#: src\components\windows\MyFactions.jsx
+msgid "To confirm, type your faction name"
+msgstr "للتأكيد، اكتب اسم فصيلك"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Today placed pixels"
+msgstr "البكسلات الموضوعة اليوم"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Easter Egg"
+msgstr "تبديل بيضة عيد الفصح"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Grid"
+msgstr "تبديل الشبكة"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Historical View"
+msgstr "تبديل العرض التاريخي"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Pencil Mode"
+msgstr "تبديل وضع القلم"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Pixel Activity"
+msgstr "تبديل نشاط البكسل"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Sound"
+msgstr "تبديل الصوت"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Template Overlay"
+msgstr "تبديل طبقة القالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Top Factions by Total Pixels"
+msgstr "أفضل الفصائل حسب إجمالي البكسلات"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Total Pixels"
+msgstr "إجمالي البكسلات"
+
+#: src\core\pixelRanks.js
+msgid "Tribune"
+msgstr "منبر"
+
+#: src\core\pixelRanks.js
+msgid "Turquoise"
+msgstr "فيروزي"
+
+#: src\components\windows\Statistics.jsx
+msgid "Unavailable"
+msgstr "غير متاح"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Update in My Templates"
+msgstr "تحديث في قوالبي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload Faction Template"
+msgstr "تحميل قالب الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload Template"
+msgstr "تحميل القالب"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload a new image template to establish your faction canvas territory."
+msgstr "قم بتحميل قالب صورة جديد لتأسيس إقليم لوحة فصيلك."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload, set, and delete faction canvas templates"
+msgstr "تحميل وتعيين وحذف قوالب لوحة الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Uploading..."
+msgstr "جارٍ التحميل..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Validity Period"
+msgstr "فترة الصلاحية"
+
+#: src\components\PixelRankCounter.jsx
+msgid "View pixel rank requirements"
+msgstr "عرض متطلبات رتبة البكسل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Visible in search"
+msgstr "مرئي في البحث"
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for alerts, notifications, and cooldown sounds."
+msgstr "مستوى صوت التنبيهات والإشعارات وأصوات فترة التهدئة."
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for color selection and pixel placement sounds."
+msgstr "مستوى صوت اختيار اللون ووضع البكسل."
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for new chat message sounds."
+msgstr "مستوى صوت رسائل الدردشة الجديدة."
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for the full pixel stack sound."
+msgstr "مستوى صوت امتلاء مخزون البكسل."
+
+#: src\components\TimelapseMaker.jsx
+msgid "X, Y"
+msgstr "X، Y"
+
+#: src\components\windows\MyFactions.jsx
+msgid "YOU"
+msgstr "أنت"
+
+#: src\components\windows\MyFactions.jsx
+msgid "You are not a member of any faction yet."
+msgstr "أنت لست عضوًا في أي فصيل بعد."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "You joined the faction."
+msgstr "لقد انضممت إلى الفصيل."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your"
+msgstr "الخاص بك"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your Faction"
+msgstr "فصيلك"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Your browser cannot preview this timelapse video."
+msgstr "متصفحك لا يمكنه معاينة فيديو التصوير الفاصل الزمني هذا."
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Your faction does not have an active template. Upload a template first to "
+"define NAP territory."
+msgstr ""
+"فصيلك ليس لديه قالب نشط. قم بتحميل قالب أولاً لتحديد إقليم NAP."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your faction must have an active template to propose NAPs"
+msgstr "يجب أن يكون لدى فصيلك قالب نشط لاقتراح NAPs"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your faction must have an active template."
+msgstr "يجب أن يكون لدى فصيلك قالب نشط."
+
+#: src\components\windows\PixelRanks.jsx
+msgid "Your pixels"
+msgstr "بكسلاتك"
+
+#: src\components\windows\Settings.jsx
+msgid "Zoom in on canvas taps instead of placing pixels."
+msgstr "التكبير عند النقر على اللوحة بدلاً من وضع البكسلات."
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "[${ factionTag }] Your Territory"
+msgstr "[${ factionTag }] إقليمك"
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "[${ targetTag }] Their Territory"
+msgstr "[${ targetTag }] إقليمهم"
+
+#: src\components\windows\MyFactions.jsx
+msgid "e.g. PXF"
+msgstr "مثل PXF"
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"including all member associations, channel messages, uploaded templates, "
+"and non-aggression pacts."
+msgstr ""
+"بما في ذلك جميع ارتباطات الأعضاء ورسائل القنوات والقوالب المحملة ومواثيق عدم "
+"الاعتداء."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "members"
+msgstr "أعضاء"
+
+#: src\components\windows\MyFactions.jsx
+msgid "name"
+msgstr "الاسم"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "other faction"
+msgstr "فصيل آخر"
+
+#: src\components\windows\MyFactions.jsx
+msgid "permanently delete"
+msgstr "حذف نهائي"
+
+#: src\components\windows\MyFactions.jsx
+msgid "the faction"
+msgstr "الفصيل"
+
+#: src\components\windows\MyFactions.jsx
+msgid "title"
+msgstr "العنوان"
+
+#: src\components\windows\MyFactions.jsx
+msgid "your faction"
+msgstr "فصيلك"
+
+msgctxt "media-player"
+msgid "Player"
+msgstr "المشغل"
+
+msgctxt "keybinds"
+msgid "A"
+msgstr "A"
+
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+msgctxt "keybinds"
+msgid "D"
+msgstr "D"
+
+msgctxt "keybinds"
+msgid "E"
+msgstr "E"
+
+msgctxt "keybinds"
+msgid "G"
+msgstr "G"
+
+msgctxt "keybinds"
+msgid "H"
+msgstr "H"
+
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+msgctxt "keybinds"
+msgid "Q"
+msgstr "Q"
+
+msgctxt "keybinds"
+msgid "R"
+msgstr "R"
+
+msgctxt "keybinds"
+msgid "S"
+msgstr "S"
+
+msgctxt "keybinds"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+msgctxt "keybinds"
+msgid "W"
+msgstr "W"
+
+msgctxt "keybinds"
+msgid "X"
+msgstr "X"
+
+msgctxt "channel-list"
+msgid "Public"
+msgstr "عام"
+
+#. Column title of column indicating whether or not a faction is able to be joined in public
+msgctxt "statistics-table"
+msgid "Public"
+msgstr "عام"
+
+#: src\components\windows\Settings.jsx
+msgid "Captcha alert sound"
+msgstr "صوت تنبيه الكابتشا"
+
+#: src\components\windows\Settings.jsx
+msgid "Chat message sound"
+msgstr "صوت رسالة الدردشة"
+
+#: src\components\windows\Settings.jsx
+msgid "Color selection sound"
+msgstr "صوت اختيار اللون"
+
+#: src\components\windows\Settings.jsx
+msgid "Cooldown ready sound"
+msgstr "صوت جاهزية فترة التهدئة"
+
+#: src\components\windows\Settings.jsx
+msgid "Error alert sound"
+msgstr "صوت تنبيه الخطأ"
+
+#: src\components\windows\Settings.jsx
+msgid "Information alert sound"
+msgstr "صوت تنبيه المعلومات"
+
+#: src\components\windows\Settings.jsx
+msgid "Notification sound"
+msgstr "صوت الإشعار"
+
+#: src\components\windows\Settings.jsx
+msgid "Pixel placement sound"
+msgstr "صوت وضع البكسل"
+
+#: src\components\windows\Settings.jsx
+msgid "Pixel stack full sound"
+msgstr "صوت امتلاء مخزون البكسل"
+
+#: src\components\windows\Settings.jsx
+msgid "Preview"
+msgstr "معاينة"
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for this sound effect."
+msgstr "مستوى الصوت لهذا المؤثر الصوتي."

@@ -1,0 +1,18 @@
+{
+  "words": [
+    "chatmsg", "topbtn", "setitem", "setrow", "tmpitm", "coorbox",
+    "onlinebox", "cooldownbox", "palettebox", "menuelement", "menuspacer",
+    "channeldd", "channellist", "chatarea", "chatinput", "chatname",
+    "chatflag", "chatts", "userarea", "fileupload", "attcontainer",
+    "attplaybutton", "buttoncontainer", "redbutton", "mdlink",
+    "actionbuttons", "deletelist", "deletelistitem", "profilebadge",
+    "expandbtn", "badgelist", "respbox", "historyselect", "historyselectfloat",
+    "modtools", "modallink", "inarea", "powerlvl", "factionlist",
+    "factionwin", "rolelist", "membercount", "chatlink", "usermessages",
+    "stattext", "statvalue", "baninfo", "watchtable", "checkcontainer",
+    "repmsg", "notifybox", "quickaccess", "menubutton", "voxelbutton",
+    "palselbutton", "chatbutton", "brushbutton", "pencilbutton",
+    "ppencil", "phistory", "poverlay", "grecaptcha", "svgr",
+    "USERAREA", "fsbtn", "hsar", "titlebar", "statwin", "css"
+  ]
+}

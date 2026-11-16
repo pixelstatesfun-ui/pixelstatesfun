@@ -1,0 +1,124 @@
+/**
+ *
+ * Userdata that gets sent to the client on various api endpoints.
+ * This should be the most basic data in order to run the game.
+ *
+ */
+import { getUserRanks } from '../data/redis/ranks.js';
+import {
+  USE_MAILER, TIMEBLOCK_USERS, TIMEBLOCK_IPS, VIP_ENABLED,
+} from './config.js';
+import { CHANNEL_TYPES, THREEPID_PROVIDERS, USERLVL } from './constants.js';
+import { getUserChatData } from '../data/sql/Channel.js';
+import { getTpid } from '../data/sql/ThreePID.js';
+import chatProvider from './ChatProvider.js';
+import { getCooldownPayload } from './CooldownManager.js';
+import { getPixelRank } from './pixelRanks.js';
+
+export default async function getMe(user, ip, lang) {
+  let id;
+  let name;
+  let username;
+  let userlvl;
+  let vipTier;
+  let havePassword;
+  let blockDm;
+  let priv;
+
+  /* [[id, name], ...] */
+  let blocked;
+  /* { type: [cid, name, lastTs, lastReadTs, muted, avatarId] } */
+  let channels = {
+    [CHANNEL_TYPES.PUBLIC]: chatProvider.getAccessiblePublicChannels(lang),
+  };
+
+  if (user) {
+    ({
+      id, name, username, userlvl, vipTier, blockDm,
+      isPrivate: priv,
+      hasPassword: havePassword,
+    } = user);
+  } else {
+    id = 0;
+    name = null;
+    username = null;
+    userlvl = USERLVL.ANONYM;
+    vipTier = 0;
+    havePassword = false;
+    blockDm = false;
+    priv = false;
+    blocked = [];
+  }
+
+  /*
+   * make sure ip.getAllowance() if fetched here to make a user.touch() possible
+   * later
+   */
+  const [ranks, chatData,, discordTpid] = await Promise.all([
+    (user) ? getUserRanks(id) : null,
+    (user) ? getUserChatData(id) : null,
+    user && ip.getAllowance(),
+    (user) ? getTpid(id, THREEPID_PROVIDERS.DISCORD) : null,
+  ]);
+
+  user?.touch(ip.ipString);
+  ip.touch();
+
+  if (chatData) {
+    blocked = chatData.blocked;
+    channels = {
+      ...channels,
+      ...chatData.channels,
+    };
+  }
+
+  const cooldownPayload = await getCooldownPayload(user, ip);
+  const me = {
+    id, name, username, userlvl, vipTier: VIP_ENABLED ? vipTier : 0,
+    vipEnabled: VIP_ENABLED,
+    ...cooldownPayload,
+    havePassword, blockDm, priv,
+    channels, blocked,
+    discordLinked: !!discordTpid,
+  };
+
+  if (ranks) {
+    const [
+      totalPixels,
+      dailyTotalPixels,
+      ranking,
+      dailyRanking,
+    ] = ranks;
+    me.totalPixels = totalPixels;
+    me.dailyTotalPixels = dailyTotalPixels;
+    me.ranking = ranking;
+    me.dailyRanking = dailyRanking;
+    me.pixelRank = getPixelRank(totalPixels);
+  } else {
+    me.totalPixels = 0;
+    me.dailyTotalPixels = 0;
+    me.ranking = 0;
+    me.dailyRanking = 0;
+    me.pixelRank = getPixelRank(0);
+  }
+
+  if (user && TIMEBLOCK_USERS) {
+    const timeBlockProps = TIMEBLOCK_USERS.get(user.id);
+    if (timeBlockProps) {
+      [me.replacementInterval, me.replacementMessage] = timeBlockProps;
+    }
+  }
+  if (TIMEBLOCK_IPS && !me.replacementMessage) {
+    const timeBlockProps = TIMEBLOCK_IPS.get(ip.ipString);
+    if (timeBlockProps) {
+      [me.replacementInterval, me.replacementMessage] = timeBlockProps;
+    }
+  }
+
+  // eslint-disable-next-line max-len
+  if (USE_MAILER && userlvl >= USERLVL.REGISTERED && userlvl < USERLVL.VERIFIED) {
+    me.messages = ['not_verified'];
+  }
+
+  return me;
+}

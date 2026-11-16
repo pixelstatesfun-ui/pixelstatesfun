@@ -1,0 +1,4266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-20 23:30+0000\n"
+"Last-Translator: hjik <goi89ma@noreply.pixelplanet.fun>\n"
+"Language-Team: Russian "
+"<https://translate.gs-os.com/projects/ppfun/client/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid " which is in "
+msgstr " , через "
+
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr ""
+"${ mouseSymbol } Удерживая левую кнопку мыши, перемещайте мышь, чтобы "
+"поворачивать камеру"
+
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr ""
+"${ mouseSymbol } Нажмите левую кнопку мыши или ${ touchSymbol } нажмите "
+"пальцем, чтобы поставить пиксель"
+
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr ""
+"${ mouseSymbol } Удерживая правую кнопку мыши, перемещайте мышь, чтобы "
+"передвигаться"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a "
+"pixel"
+msgstr ""
+"${ mouseSymbol } Нажимайте правую кнопку мыши или ${ touchSymbol } дважды "
+"коснитесь пальцем, чтобы убрать пиксель"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } Прокручивайте колесо мыши или, удерживая ${ mouseSymbol } "
+"среднюю копку мыши, перемещайте мышь, чтобы изменять масштаб"
+
+msgid "(0 = infinite)"
+msgstr "(0 = бесконечно)"
+
+msgid "(click a role to activate it)"
+msgstr "(нажмите на роль, чтобы её активировать)"
+
+#: src\components\windows\Faction.jsx
+msgid "(click a role to assign or remove it)"
+msgstr "(нажмите на роль, чтобы назначить или убрать её)"
+
+#: src\components\windows\Statistics.jsx
+msgid "+last hour"
+msgstr "+последний час"
+
+msgid "...loading Login methods and sessions..."
+msgstr "...загрузка способов входа и сессий..."
+
+msgid "A Phish!"
+msgstr "Рыба!"
+
+#: src\components\windows\Faction.jsx
+msgid ""
+"A flag representing the role, it should be 16x11 pixels. If left empty, "
+"users with this role selected will still show their own flags."
+msgstr ""
+"Флаг, отображающий роль, должен быть размером 16x11 пикселей. Если не "
+"назначен, у пользователей всё равно будут отображаться их флаги."
+
+msgid "A new verification mail is getting sent to you."
+msgstr "Вам будет отправлено новое письмо с подтверждением."
+
+#: src\components\windows\Faction.jsx
+msgid ""
+"A role has all the permissions of all levels below and equal to it. In "
+"example: Every role with a power level of >=50 can manage invites (50)."
+msgstr ""
+"Роль обладает всеми разрешениями всех уровней ниже и равного ей уровня. "
+"Например: каждая роль с уровнем полномочий >=50 может управлять "
+"приглашениями (50)."
+
+msgid "ACCESS MODTOOLS"
+msgstr "ДОСТУП К ИНСТРУМЕНТАМ МОДЕРАТОРА"
+
+#. modlogLink has the text "Moderation Log"
+#, javascript-format
+msgid ""
+"Actions taken by moderators on the canvas can be seen in the ${ modlogLink "
+"}."
+msgstr "Для просмотра действий модераторов на полотне существуют ${ modlogLink }."
+
+msgid "Add Grid (uncheck if you need a 1:1 template)"
+msgstr "Добавить сетку (снимите флажок, если вам нужен шаблон 1:1)"
+
+msgid "Add Template"
+msgstr "Добавить шаблон"
+
+msgid "Add a new E-Mail Address here:"
+msgstr "Добавлять новую почту здесь:"
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Admintools"
+msgstr "Инструменты администратора"
+
+msgid "Age"
+msgstr "Возраст"
+
+#: src\components\windows\Faction.jsx
+msgid "All members of this faction are hidden"
+msgstr "Все участники этой фракции скрыты"
+
+#: src\components\windows\Settings.jsx
+#. Sound
+msgid "All sound effects will be disabled."
+msgstr "Все звуковые эффекты будут отключены."
+
+#: src\components\windows\Settings.jsx
+#. Controls
+msgid "Always show Movement Controls"
+msgstr "Всегда показывать управление движением"
+
+#: src\components\windows\Settings.jsx
+#. Controls
+msgid "Always show movement control buttons"
+msgstr "Всегда показывать кнопки управления движением"
+
+msgid "An image representing your faction"
+msgstr "Изображение, представляющее вашу фракцию"
+
+msgid "Anti Aliasing"
+msgstr "Сглаживание"
+
+msgid "Apply a filter to clean trash in large canvas areas."
+msgstr "Примените фильтр, чтобы очистить мусор на больших областях полотна."
+
+msgid "Archive"
+msgstr "Архив"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign Roles"
+msgstr "Выдать роли"
+
+msgid "Assign new Mod"
+msgstr "Назначить нового модератора"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign role per default to new members"
+msgstr "Выдавать роль новым участникам по умолчанию"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign roles below their own"
+msgstr "Выдавать роли ниже собственной"
+
+#: src\components\windows\Faction.jsx
+msgid "Assign this role to every new member automatically on join."
+msgstr "Автоматически выдавать эту роль каждому зашедшему участнику."
+
+#: src\components\windows\Faction.jsx
+msgid "Assigned role per default"
+msgstr "Выдавать роль по умолчанию"
+
+msgid "Attach File"
+msgstr "Прикрепить файл"
+
+#: src\components\windows\Settings.jsx
+msgid "Auto Zoom In"
+msgstr "Автомасштабирование"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Avatar"
+msgstr "Аватар"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Badge Display"
+msgstr "Отображение значков"
+
+msgid "Badges"
+msgstr "Значки"
+
+#: src\components\windows\Faction.jsx
+msgid "Ban"
+msgstr "Забанить"
+
+msgid "Ban media"
+msgstr "Забанить медиафайл"
+
+#: src\components\windows\Faction.jsx
+msgid "Ban members"
+msgstr "Банить участников"
+
+msgid "Banned"
+msgstr "Забанен"
+
+msgid "Banned? Detected as Proxy?"
+msgstr "Вы в бане? Определяетесь как прокси?"
+
+#: src\components\windows\Faction.jsx
+msgid "Bans"
+msgstr "Баны"
+
+msgid "Block"
+msgstr "Заблокировать"
+
+msgid "Block DMs"
+msgstr "Заблокировать ЛС"
+
+msgid ""
+"Block all Private Messages. Enabling this will make it impossible for other "
+"users to start messaging you. You can still start new DMs with other users "
+"and already ongoing DMs will still be open."
+msgstr ""
+"Блокировать все личные сообщения. Если вы включите эту функцию, другие "
+"пользователи не смогут отправлять вам сообщения. Вы по-прежнему сможете "
+"создавать переписки с другими пользователями, а уже созданные переписки "
+"останутся открытыми."
+
+msgid "Blocked"
+msgstr "Заблокирован"
+
+msgid "Bottom-right corner"
+msgstr "Нижний правый угол"
+
+msgid "Build image and set it to protected."
+msgstr "Построить изображение на холсте и поставить защиту."
+
+msgid "Build image on canvas."
+msgstr "Построить изображение на холсте."
+
+msgid "Build image, but reset cooldown to unset-pixel cd."
+msgstr ""
+"Построить изображение, но сбросить перезарядку до перезарядки нетронутого "
+"пикселя."
+
+msgid "By Mod"
+msgstr "Модератором"
+
+msgid "Calculate like GIMP"
+msgstr "Вычислять как GIMP"
+
+msgid "Can not export more than 20 or no template!"
+msgstr "Нельзя экспортировать более 20 шаблонов или ни одного!"
+
+msgid "Can not import more than 20 or no template!"
+msgstr "Нельзя импортировать более 20 шаблонов или ни одного!"
+
+msgid "Can't read? Reload:"
+msgstr "Не можете прочитать? Обновить:"
+
+msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
+msgstr "Не получается отобразить 3D полотно, у вас выключен WebGL2?"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Cancel adding Template"
+msgstr "Отменить добавление шаблона"
+
+#: src\components\TimelapseMaker.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas"
+msgstr "Полотно"
+
+msgid "Canvas Archive"
+msgstr "Архив полотен"
+
+msgid "Canvas Cleaner"
+msgstr "Очиститель полотна"
+
+msgid "Canvas Error"
+msgstr "Ошибка полотна"
+
+msgid "Canvas Selection"
+msgstr "Выбор полотна"
+
+msgid "Captcha"
+msgstr "Капча"
+
+msgid "Caught by"
+msgstr "Поймано"
+
+#: src\components\windows\Faction.jsx
+msgid "Change Flag"
+msgstr "Сменить флаг"
+
+msgid "Change Happened"
+msgstr "Произошли изменения"
+
+msgid "Change Name"
+msgstr "Изменить ник"
+
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+msgid "Channel"
+msgstr "Канал"
+
+msgid "Channel settings"
+msgstr "Настройки канала"
+
+#: src\components\windows\Statistics.jsx
+msgid "Charts"
+msgstr "Графики"
+
+msgid "Chat"
+msgstr "Чат"
+
+msgid "Chat here"
+msgstr "Общайтесь здесь"
+
+#: src\components\windows\Settings.jsx
+msgid "Check out past versions of the canvas."
+msgstr "Посмотрите прошлые версии полотна."
+
+msgid "Check to allow"
+msgstr "Отметьте, чтобы разрешить"
+
+msgid "Check who placed in an area"
+msgstr "Проверить, кто ставил пиксели в области"
+
+msgid "Choose Canvas"
+msgstr "Выбрать полотно"
+
+msgid "Choose Color Mode"
+msgstr "Выберите цветовой режим"
+
+msgid "Choose Strategy"
+msgstr "Выберите стратегию"
+
+msgid "Choose Username"
+msgstr "Выберите имя пользователя"
+
+msgid ""
+"Clean spare pixels that are surrounded by a single other color or unset "
+"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there "
+"are two cooldowns)!)"
+msgstr ""
+"Очистка лишних пикселей, окруженных одним другим цветом или нетронутыми "
+"пикселями (ОЧЕНЬ АГРЕССИВНО НА ПОЛОТНАХ, КОТОРЫЕ ДОПУСКАЮТ НЕТРОНУТЫЕ "
+"ПИКСЕЛИ (где есть две перезарядки)!)"
+
+msgid "Clean spare pixels that are surrounded by unset pixels"
+msgstr "Очистка лишних пикселей, окруженных нетронутыми пикселями"
+
+msgid ""
+"Clean spare pixels that are surrounded by unset pixels and up to 1 other "
+"set pixels"
+msgstr ""
+"Очистка лишних пикселей, окруженных нетронутыми пикселями и до 1 другого "
+"перекрашенного пикселя"
+
+msgid "Cleaners can use 0cd blank colors."
+msgstr "Уборщики могут использовать цвета фона без перезарядки."
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Clear"
+msgstr "Очистить"
+
+#, javascript-format
+msgid ""
+"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
+"select current hovering color"
+msgstr ""
+"Нажмите ${ mouseSymbol } среднюю кнопку мыши или ${ touchSymbol } "
+"удерживайте палец на пикселе, чтобы выбрать цвет пикселя, над которым вы "
+"удерживаете курсор/палец"
+
+msgid "Click a color in palette to select it"
+msgstr "Нажмите на цвет в палитре, чтобы выбрать его"
+
+msgid "Click here to cease representation."
+msgstr "Нажмите здесь, чтобы прекратить представительство."
+
+msgid "Click here to request a new verification mail."
+msgstr "Нажмите здесь, чтобы запросить новое письмо с подтверждением."
+
+msgid "Click to Load Captcha"
+msgstr "Нажмите, чтобы загрузить капчу"
+
+msgid "Click to remove"
+msgstr "Нажмите, чтобы удалить"
+
+msgid "Clone"
+msgstr "Дублировать"
+
+#: src\components\windows\Faction.jsx
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Close Chat"
+msgstr "Закрыть чат"
+
+msgid "Close Palette"
+msgstr "Закрыть палитру"
+
+msgid "Compact Chat"
+msgstr "Компактный чат"
+
+#: src\components\windows\Settings.jsx
+#. Interface
+msgid "Compact Palette"
+msgstr "Компактная палитра"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Ban"
+msgstr "Подтвердить бан"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Delete"
+msgstr "Подтвердить удаление"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Kick"
+msgstr "Подтвердить кик"
+
+#: src\components\windows\Faction.jsx
+msgid "Confirm Leave"
+msgstr "Подтвердить выход"
+
+msgid "Confirm New Password"
+msgstr "Подтвердите новый пароль"
+
+msgid "Confirm Password"
+msgstr "Повторите пароль"
+
+msgid "Confirm your password."
+msgstr "Подтвердите пароль."
+
+#, javascript-format
+msgid "Connection error ${ code } :("
+msgstr "Ошибка соединения ${ code } :("
+
+msgid "Consent"
+msgstr "Согласие"
+
+#: src\components\windows\Settings.jsx
+msgid "Controls"
+msgstr "Управление"
+
+msgid "Convert an image to canvas colors"
+msgstr "Преобразует изображение в цвета холста"
+
+msgid "Converter"
+msgstr "Пикселизатор"
+
+msgid "Cooldown"
+msgstr "Перезарядка"
+
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+"Перезарядка обычно автоматически изменяется для страны, которая доминирует. "
+"Например, когда идёт рейд стримера."
+
+msgid "Coordinates"
+msgstr "Координаты"
+
+msgid "Coordinates:"
+msgstr "Координаты:"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Copied"
+msgstr "Скопировано"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\FactionBrowser.jsx
+msgid "Copy"
+msgstr "Скопировать"
+
+msgid "Copy Link"
+msgstr "Скопировать ссылку"
+
+msgid "Copy Selected to Clipboard"
+msgstr "Скопировать выбранное в буфер обмена"
+
+msgid "Copy URL"
+msgstr "Скопировать URL"
+
+msgid "Copy UserId to Clipboard"
+msgstr "Скопировать ID пользователей в буфер обмена"
+
+msgid "Copy to Clipboard"
+msgstr "Скопировать в буфер обмена"
+
+msgid "Could not connect to server"
+msgstr "Не удалось подключиться к серверу"
+
+msgid "Could not connect to server, please try again later :("
+msgstr "Не удается подключиться к серверу, пожалуйста, попробуйте позже :("
+
+msgid "Could not load captcha"
+msgstr "Не удалось загрузить капчу"
+
+msgid "Could not process files"
+msgstr "Не удалось обработать файлы"
+
+msgid "Couldn't set Pixel"
+msgstr "Невозможно поставить пиксель"
+
+#: src\components\windows\Statistics.jsx
+msgid "Countries Today"
+msgstr "Страны сегодня"
+
+#: src\components\windows\Statistics.jsx
+msgid "Country"
+msgstr "Страна"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Create Faction"
+msgstr "Создать фракцию"
+
+#: src\components\windows\Faction.jsx
+msgid "Create Invite"
+msgstr "Создать приглашение"
+
+msgid "Create New Faction"
+msgstr "Создать новую фракцию"
+
+#: src\components\windows\Faction.jsx
+msgid "Create New Invite"
+msgstr "Создать новое приглашение"
+
+#: src\components\windows\Faction.jsx
+msgid "Create New Role"
+msgstr "Создать новую роль"
+
+#: src\components\windows\Faction.jsx
+msgid "Create Role"
+msgstr "Создать роль"
+
+#: src\components\windows\Faction.jsx
+msgid "Create roles"
+msgstr "Создавать роли"
+
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "Авторство палитры 2бит принадлежит ${ donendoLink }."
+
+#, javascript-format
+msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
+msgstr "Авторство палитры луны принадлежит ${ starhouseLink }."
+
+#, javascript-format
+msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr "Авторство палитры Топ-10 принадлежит ${ vinikLink }."
+
+msgid "Current Cooldown Changes per Country"
+msgstr "Текущий кулдаун изменений на страну"
+
+#: src\components\windows\Settings.jsx
+msgid "Custom Cursor"
+msgstr "Встроенный курсор"
+
+#: src\components\windows\Faction.jsx
+msgid "Custom Flag"
+msgstr "Пользовательский флаг"
+
+msgid "DM"
+msgstr "ЛС"
+
+msgid "Daily Pixels"
+msgstr "Пиксели за день"
+
+#: src\components\windows\Statistics.jsx
+msgid "Daily Pixels per Country"
+msgstr "Пиксели поставленные странами за день"
+
+#: src\components\windows\Statistics.jsx
+msgid "Daily Pixels per Faction"
+msgstr "Пиксели за день по фракциям"
+
+#: src\components\windows\Statistics.jsx
+msgid "Daily Pixels per Player"
+msgstr "Пикселей размещенных за день игроками"
+
+#: src\components\windows\Faction.jsx
+msgid "Daily Rank"
+msgstr "Ежедневный рейтинг"
+
+msgid "Date of Award"
+msgstr "Дата награждения"
+
+msgid "Date of catch"
+msgstr "Когда поймана"
+
+#: src\components\windows\Faction.jsx
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete Account"
+msgstr "Удалить аккаунт"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Delete Faction"
+msgstr "Удалить фракцию"
+
+msgid "Delete My Account"
+msgstr "Удалить мой аккаунт"
+
+#: src\components\windows\Faction.jsx
+msgid "Delete the faction"
+msgstr "Удалять фракцию"
+
+msgid "Deny"
+msgstr "Отклонить"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Description"
+msgstr "Описание"
+
+msgid "Description can't be empty"
+msgstr "Описание не может быть пустым"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "Описание должно быть короче 1000 символов"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Description of your faction"
+msgstr "Описание вашей фракции"
+
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr ""
+"Нет ответа от pixelplanet. Попробуйте обновить страницу, если проблема не "
+"исчезнет."
+
+msgid "Dimensions"
+msgstr "Размеры"
+
+#: src\components\windows\Settings.jsx
+#. Sound
+msgid "Disable Game Sounds"
+msgstr "Отключение звуков игры"
+
+msgid "Disable History Pencil"
+msgstr "Отключить рисование по истории"
+
+msgid "Disable Overlay Pencil"
+msgstr "Отключить рисование по оверлею"
+
+msgid "Disable Pencil"
+msgstr "Отключить непрерывное рисование"
+
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Отображение палитры в компактной форме, занимающей меньше места на экране."
+
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Сделать что-то с IP (один IP на строку)"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Don't let people find this faction in public search or look at its profile."
+msgstr ""
+"Не позволять людям находить эту фракцию в публичном поиске или "
+"просматривать её профиль."
+
+msgid "Don't remember"
+msgstr "Не запоминать"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Don't show faction in search"
+msgstr "Не отображать фракцию в поиске"
+
+msgid "Don't show me in global stats"
+msgstr "Не отображать меня в глобальной статистике"
+
+msgid "Done"
+msgstr "Принять"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "Download Template"
+msgstr "Скачать шаблон"
+
+#, javascript-format
+msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
+msgstr ""
+"Перемещайте ${ mouseSymbol } мышь или ${ touchSymbol } проводите пальцем, "
+"чтобы перемещаться"
+
+msgid "Duration"
+msgstr "Длительность"
+
+msgid "Easter Egg OFF"
+msgstr "Пасхалки выключены"
+
+msgid "Easter Egg ON"
+msgstr "Пасхалки включены"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit"
+msgstr "Изменить"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit faction"
+msgstr "Редактировать фракцию"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit roles below their own"
+msgstr "Редактировать роли ниже своей"
+
+#: src\components\windows\Faction.jsx
+msgid "Edit their own role and elevate users to their own level"
+msgstr "Редактировать собственную роль и повышать пользователей до своего уровня"
+
+msgid "Email"
+msgstr "Электронный адрес"
+
+msgid "Email can't be empty."
+msgstr "Необходимо указать адрес электронной почты."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "Электронная почта не может быть длиннее 40 символов."
+
+msgid ""
+"Email is used to verify your account. You might get a cofirmation mail "
+"after registering."
+msgstr ""
+"Почта используется для подтверждения аккаунта. Вы можете получить письмо с "
+"подтверждением после регистрации."
+
+msgid "Email should at least contain a dot"
+msgstr "Электронная почта должна содержать точку"
+
+msgid "Email should be at least 5 characters long."
+msgstr "Электронная почта должна состоять не менее чем из 5 символов."
+
+msgid "Email should contain a @"
+msgstr "Электронная почта должна содержать @"
+
+msgid "Enable Overlay"
+msgstr "Включить оверлей"
+
+msgid "Enable Pencil"
+msgstr "Включить непрерывное рисование"
+
+#: src\components\windows\Settings.jsx
+msgid "Enable chat notifications"
+msgstr "Включить уведомления чата"
+
+msgid "Enter Characters"
+msgstr "Введите символы"
+
+msgid "Enter Reason"
+msgstr "Введите причину"
+
+msgid "Enter UserName of new Mod"
+msgstr "Введите имя пользователя нового модератора"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Enter a little text that describes your faction"
+msgstr "Введите небольшой текст, описывающий вашу фракцию"
+
+msgid "Enter search term and press Search."
+msgstr "Введите поисковый запрос и нажмите Поиск."
+
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Введите свой адрес электронной почты, и мы вышлем вам новый пароль:"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Error"
+msgstr "Ошибка"
+
+#, javascript-format
+msgid "Error ${ retCode }"
+msgstr "Ошибка ${ retCode }"
+
+msgid "Error :("
+msgstr "Ошибка :("
+
+msgid "Expand"
+msgstr "Развернуть"
+
+msgid "Export enabled templates"
+msgstr "Экспортировать включенные шаблоны"
+
+msgid "Faction"
+msgstr "Фракция"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Factions"
+msgstr "Фракции"
+
+#: src\components\windows\Statistics.jsx
+msgid "Factions Today"
+msgstr "Фракции сегодня"
+
+#: src\components\windows\Statistics.jsx
+msgid "Factions Total"
+msgstr "Фракции всего"
+
+msgid ""
+"Factions allow you to coordinate better with other players. Search for "
+"existing factions, find friends or create your own faction."
+msgstr ""
+"Фракции позволяют лучше координировать свои действия с другими игроками. "
+"Ищите существующие фракции, находите друзей или создайте свою собственную "
+"фракцию."
+
+msgid "Factor"
+msgstr "Фактор"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "Filter"
+msgstr "Фильтр"
+
+msgid "Fish Display"
+msgstr "Галерея рыб"
+
+msgid "For"
+msgstr "Для"
+
+msgid "For Developers"
+msgstr "Для разработчиков"
+
+#, javascript-format
+msgid ""
+"For any legal issues, please contact ${ mailLink }. If you want to delete "
+"your data, simply delete your account, this in fact wipes all privacy "
+"relevant traces. Your placed pixels will of course not be deleted."
+msgstr ""
+"В случае возникновения юридических вопросов, пожалуйста, свяжитесь с ${ "
+"mailLink }. Если вы хотите удалить свои данные, просто удалите свой аккаунт "
+"– это фактически приведет к удалению всех данных, касающихся вашей "
+"конфиденциальности. Ваши размещенные пиксели, конечно же, не будут удалены."
+
+msgid "For one day"
+msgstr "На один день"
+
+msgid "For one month"
+msgstr "На один месяц"
+
+msgid "For one week"
+msgstr "На одну неделю"
+
+msgid "For one year"
+msgstr "На один год"
+
+#: src\components\windows\Settings.jsx
+#. Performance
+msgid "For when you are playing on a potato."
+msgstr "Когда вы играете на калькуляторе."
+
+msgid "Forever"
+msgstr "Навсегда"
+
+msgid "From History"
+msgstr "истории"
+
+msgid "From Template"
+msgstr "шаблону"
+
+msgid "Get IID"
+msgstr "Получить IID"
+
+msgid "Get Pixels"
+msgstr "Получить пиксели"
+
+msgid "Get Users"
+msgstr "Получить пользователей"
+
+msgid "Get email address"
+msgstr "Получить адрес электронной почты"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Получить количество размещенных пикселей и рейтинг"
+
+msgid "Globe View"
+msgstr "Просмотр глобуса"
+
+msgid "Go to"
+msgstr "Перейти"
+
+msgid "Grant"
+msgstr "Предоставить"
+
+msgid "Grid OFF"
+msgstr "Сетка выключена"
+
+msgid "Grid ON"
+msgstr "Сетка включена"
+
+msgid "Groups"
+msgstr "Группы"
+
+msgid "Have fun!"
+msgstr "Развлекайтесь!"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Help"
+msgstr "Помощь"
+
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Здесь мы храним эти полотна, чтобы заархивировать их должным образом, "
+"которых на данный момент только одно."
+
+msgid "Hide Embed"
+msgstr "Спрятать вставленное"
+
+msgid "Hide from profile"
+msgstr "Скрыть из профиля"
+
+msgid ""
+"Higher zoomlevels take some time to update, the 3D globe gets updated at "
+"least once per day."
+msgstr ""
+"Более высокие уровни увеличения масштаба карты требуют некоторое время для "
+"обновления, 3D глобус обновляется как минимум один раз в день."
+
+#: src\components\windows\Settings.jsx
+msgid "Historical View"
+msgstr "Режим истории"
+
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr ""
+"Удерживайте левый ${ bindShift } для установки пикселей во время движения "
+"мыши"
+
+msgid "How pixelplanet should look like."
+msgstr "Внешний вид pixelplanet."
+
+msgid "I forgot my Password."
+msgstr "Я забыл мой пароль."
+
+#: src\components\windows\Faction.jsx
+msgid "ID"
+msgstr "ID"
+
+msgid "IID (optional)"
+msgstr "IID (необязательно)"
+
+msgid "IID Actions"
+msgstr "Действия с IID"
+
+msgid "IP Actions"
+msgstr "Действия с IP"
+
+msgid "Identifiers"
+msgstr "Идентификаторы"
+
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you aren't using one, or think that you "
+"got wrongfully banned, please go to our ${ guildedLink } or send us an "
+"e-mail to ${ mailLink } and, in case of a ban, include the BID you got in "
+"the ban message."
+msgstr ""
+"Если вас определили как прокси, но вы не используете прокси или вы "
+"считаете, что вас незаслуженно забанили, пожалуйста, перейдите в наш ${ "
+"guildedLink } или отправите нам письмо на ${ mailLink } и, в случае бана, "
+"укажите ваш BID, который вы получили в сообщение о бане."
+
+msgid ""
+"If you talk to moderators or administrators, you might get asked for one of "
+"the following identifiers:"
+msgstr ""
+"При общении с модераторами или администраторами вас могут попросить "
+"предоставить один из следующих идентификаторов:"
+
+msgid "Image Converter"
+msgstr "Преобразователь изображений"
+
+msgid "Image Upload"
+msgstr "Загрузить изображение"
+
+msgid "Import templates"
+msgstr "Импортировать шаблоны"
+
+msgid "Incorrect password"
+msgstr "Неверный пароль"
+
+msgid "Interval"
+msgstr "Интервал"
+
+msgid "Interval is invalid"
+msgstr "Недопустимый интервал"
+
+msgid "Invalid Canvas"
+msgstr "Некорректное полотно"
+
+msgid "Invalid Coordinates"
+msgstr "Некорректные координаты"
+
+msgid "Invalid color selected"
+msgstr "Выбран недопустимый цвет"
+
+msgid "Invite"
+msgstr "Приглашение"
+
+msgid "Invited to Chat"
+msgstr "Приглашение в чат"
+
+#: src\components\windows\Faction.jsx
+msgid "Invites"
+msgstr "Приглашения"
+
+#: src\components\windows\Faction.jsx
+msgid "Is One-Time-Invite"
+msgstr "Одноразовое приглашение"
+
+msgid "It requests the following permissions. Uncheck what you don't want to grant:"
+msgstr ""
+"Оно запрашивает следующие разрешения. Снимите галочку с пунктов, которые вы "
+"не хотите предоставлять:"
+
+msgid "Jannies can rollback and protect, but not watch or ban."
+msgstr ""
+"Мини-модераторы могут откатывать и защищать пиксели, но не просматривать, "
+"кто ставил пиксели или банить игроков."
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Join"
+msgstr "Присоединиться"
+
+#: src\components\windows\Faction.jsx
+msgid "Join Faction"
+msgstr "Присоединиться к фракции"
+
+msgid "Joined"
+msgstr "Присоединился"
+
+msgid "Just for registered Users"
+msgstr "Только для зарегистрированных пользователей"
+
+msgid "Just for verified Users"
+msgstr "Только для подтвержденных пользователей"
+
+msgid "Just the Top10 of yesterday can place here"
+msgstr "Только игроки, попавшие в Топ-10 вчерашнего дня могут рисовать здесь"
+
+msgid "Keep Ratio"
+msgstr "Сохранять пропорции"
+
+#: src\components\windows\Faction.jsx
+msgid "Kick"
+msgstr "Кикнуть"
+
+#: src\components\windows\Faction.jsx
+msgid "Kick members"
+msgstr "Кикать участников"
+
+msgid "Know that an account exists"
+msgstr "Знать, что аккаунт существует"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Leave"
+msgstr "Выйти"
+
+#: src\components\windows\Faction.jsx
+msgid "Leave Faction"
+msgstr "Выйти из фракции"
+
+msgid "Legal Requests"
+msgstr "Юридические запросы"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Let everyone join this faction"
+msgstr "Позволить всем заходить в эту фракцию"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Let people join this faction without needing an invite."
+msgstr "Позволить всем заходить в эту фракцию без приглашения."
+
+#: src\components\windows\Faction.jsx
+msgid "Level"
+msgstr "Уровень"
+
+#: src\components\windows\Settings.jsx
+msgid "Light Grid"
+msgstr "Светлая сетка"
+
+msgid "Load Captcha"
+msgstr "Загрузить капчу"
+
+msgid "Loading"
+msgstr "Загрузка"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Loading..."
+msgstr "Загрузка..."
+
+msgid "Log in or Register"
+msgstr "Войдите или зарегистрируйтесь"
+
+msgid "Log out"
+msgstr "Выйти"
+
+msgid "Log out a Session:"
+msgstr "Завершить сессию:"
+
+msgid "LogIn"
+msgstr "Войти в аккаунт"
+
+msgid "Login Methods"
+msgstr "Способы входа"
+
+msgid "Login to access more features and stats."
+msgstr "Войдите, чтобы получить доступ к дополнительным функциям и статистике."
+
+msgid "Login to grant access to other application."
+msgstr "Войдите, чтобы дать доступ другому приложению."
+
+msgid "Login to join us."
+msgstr "Войдите, чтобы присоединиться к нам."
+
+msgid "Login to other application"
+msgstr "Вход в другое приложение"
+
+msgid "Login with Name or Mail:"
+msgstr "Войти с помощью ника или почты:"
+
+msgid "Make Screenshot"
+msgstr "Сделать снимок экрана"
+
+msgid "Manage Moderators"
+msgstr "Управление модераторами"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Templates"
+msgstr "Управление шаблонами"
+
+#: src\components\windows\Faction.jsx
+msgid "Manage invites"
+msgstr "Управлять приглашениями"
+
+msgid "Map Data"
+msgstr "Картографические данные"
+
+msgid "Maximize"
+msgstr "Увеличить"
+
+msgid "Media Actions"
+msgstr "Действия с медиафайлами"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Members"
+msgstr "Участники"
+
+msgid "Minimum Color Distance"
+msgstr "Минимальное цветовое расстояние"
+
+msgid "Moderation Log"
+msgstr "Логи модераторов"
+
+msgid "Moderation Logs"
+msgstr "Логи модераторов"
+
+msgid "Moderators can access all Canvas, Watch and IID tools."
+msgstr ""
+"Модераторы могут использовать все инструменты полотна, смотреть, кто ставил "
+"пиксели и инструменты работы с IID."
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Modtools"
+msgstr "Инструменты модератора"
+
+msgid "Move"
+msgstr "Двигать"
+
+msgid "Mute Channel"
+msgstr "Заглушить канал"
+
+msgid "Muted Sound"
+msgstr "Звук выключен"
+
+msgid "My Factions"
+msgstr "Мои фракции"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Name"
+msgstr "Имя"
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "Имя может содержать только символы: a-z . _ и -"
+
+msgid "Name can't be empty."
+msgstr "Имя не может быть пустым."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Имя содержит недопустимые символы, такие как @, /, \\ или #"
+
+msgid "Name must be at least 2 characters long"
+msgstr "Имя должно состоять не менее чем из 2 символов"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "Имя должно быть короче 26 символов"
+
+#: src\components\windows\Faction.jsx
+msgid "Name of this role"
+msgstr "Имя этой роли"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Name of your faction (this can not be changed later)"
+msgstr "Имя вашей фракции (позже его нельзя будет изменить)"
+
+msgid "Name or Email"
+msgstr "Имя или адрес электронной почты"
+
+msgid "New Mail"
+msgstr "Новая почта"
+
+msgid "New Name"
+msgstr "Новый ник"
+
+msgid "New Password"
+msgstr "Новый пароль"
+
+msgid "New Username"
+msgstr "Новое имя пользователя"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "No File selected to upload"
+msgstr "Не выбран файл для загрузки"
+
+msgid "No Phish!"
+msgstr "Рыба сорвалась!"
+
+msgid "No flag selected"
+msgstr "Не выбран флаг"
+
+msgid "No or invalid captcha text"
+msgstr "Текст капчи отсутствует или неверный"
+
+msgid "No password given."
+msgstr "Пароль не указан."
+
+msgid "No results."
+msgstr "Нет результатов."
+
+#: src\components\windows\Faction.jsx
+msgid "Nobody is banned from this faction"
+msgstr "Никто не забанен в этой фракции"
+
+#: src\components\windows\Faction.jsx
+msgid "Not Allowed"
+msgstr "Не разрешено"
+
+msgid "Not allowed"
+msgstr "Не разрешено"
+
+msgid "Note"
+msgstr "Замечание"
+
+msgid "Note: Your active Faction may overwrite your flag settings."
+msgstr "Примечание: Активная фракция может перезаписать настройки вашего флага."
+
+msgid "OIDC LogIn"
+msgstr "Вход через OIDC"
+
+msgid "OK"
+msgstr "Ок"
+
+msgid "Offset"
+msgstr "Смещение"
+
+msgid "Oh no, the phish escaped. Better luck next time!"
+msgstr "О нет, рыба сорвалась. Удачи в следующий раз!"
+
+msgid "Old Password"
+msgstr "Старый пароль"
+
+#: src\components\windows\Faction.jsx
+msgid "One-Time"
+msgstr "Одноразовое"
+
+msgid "Online Users"
+msgstr "Пользователей онлайн"
+
+msgid "Online Users on Canvas"
+msgstr "Пользователей онлайн на полотне"
+
+msgid "Only verified Users are currently allowed to play."
+msgstr "Только подверженные пользователи могут играть сейчас."
+
+msgid "Opacity of Overlay in percent."
+msgstr "Прозрачность оверлея в процентах."
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Open Chat"
+msgstr "Открыть чат"
+
+msgid "Open Palette"
+msgstr "Открыть палитру"
+
+msgid "Open in PopUp"
+msgstr "Открыть во всплывающем окне"
+
+msgid "OpenID Connect Client registration"
+msgstr "Регистрация клиента OpenID Connect"
+
+msgid ""
+"Our main canvas is a huge worldmap, you can place wherever you like, but "
+"you will have to wait a specific Cooldown between pixels. You can check out "
+"the cooldown and requirements on the Canvas Selection menu (globe button on "
+"top). Some canvases have a different cooldown for replacing a user-set "
+"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
+"and 7s on already set pixels."
+msgstr ""
+"Наше основное полотно - огромная карта мира, вы можете ставить пиксели где "
+"хотите, но вам нужно ждать перезарядку между поставленными пикселями. Вы "
+"можете узнать перезарядку и требования в меню выбора полотен (кнопка с "
+"глобусом сверху). Некоторые полотна имеют разную перезарядку для перекраски "
+"уже поставленных пользователями пикселей и для нетронутых пикселей, "
+"например, 4с/7с значит что 4с для нетронутых пикселей и 7с для уже "
+"поставленных ранее."
+
+msgid "Overlay OFF"
+msgstr "Оверлей выключен"
+
+msgid "Overlay ON"
+msgstr "Оверлей включен"
+
+msgid "Overlay Opacity"
+msgstr "Прозрачность оверлея"
+
+#: src\components\windows\Faction.jsx
+msgid "Overview"
+msgstr "Обзор"
+
+msgid "Palette Download"
+msgstr "Скачать палитру"
+
+#, javascript-format
+msgid "Palette for ${ gimpLink }"
+msgstr "Палитра для ${ gimpLink }"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password must be at least 6 characters long."
+msgstr "Пароль должен содержать как минимум 6 символов."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "Пароль должен быть короче 60 символов."
+
+msgid "Password successfully changed."
+msgstr "Пароль успешно изменен."
+
+msgid "Passwords do not match."
+msgstr "Пароли не совпадают."
+
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Режим непрерывного рисования для полотна: ${ canvasName }"
+
+msgid "Pencil picks: "
+msgstr "Рисование по: "
+
+#: src\components\windows\Faction.jsx
+msgid "Permission"
+msgstr "Разрешение"
+
+#: src\components\windows\Faction.jsx
+msgid "Permissions of Powerlevels"
+msgstr "Права уровней полномочий"
+
+msgid "Phish!"
+msgstr "Рыба поймана!"
+
+msgid "Phishes"
+msgstr "Рыбы"
+
+msgid "Ping"
+msgstr "Упомянуть"
+
+msgid "Pixel Notify OFF"
+msgstr "Активность пикселей выключена"
+
+msgid "Pixel Notify ON"
+msgstr "Активность пикселей включена"
+
+msgid "Pixel Protection"
+msgstr "Защита пикселей"
+
+msgid "Pixel protected"
+msgstr "Пиксель защищён"
+
+#: src\components\windows\MyFactions.jsx
+#: src\components\windows\PixelRanks.jsx
+msgid "Pixels"
+msgstr "Пикселей"
+
+msgid "Place color pixels on a large canvas with other players online!"
+msgstr "Ставьте цветные пиксели на огромном полотне с другими людьми по сети!"
+
+#: src\components\windows\Faction.jsx
+msgid "Placed Pixels"
+msgstr "Поставленных пикселей"
+
+#: src\components\windows\Settings.jsx
+msgid "Play a sound when new chat messages arrive"
+msgstr "Воспроизводить звук при поступлении новых сообщений чата"
+
+msgid "Players and Pixels per hour"
+msgstr "Игроки и пиксели в час"
+
+msgid "Please prove that you are human"
+msgstr "Подтвердите, что вы человек"
+
+msgid "Please refresh the website"
+msgstr "Пожалуйста, обновите страницу"
+
+msgid ""
+"Please verify your mail address or add a new one, otherwise your account "
+"could get deleted in the future."
+msgstr ""
+"Пожалуйста, подтвердите ваш адрес электронной почты или добавьте новый, "
+"иначе ваш аккаунт может быть удален в будущем."
+
+msgid "Political Compass Canvas"
+msgstr "Полотно политического компаса"
+
+#: src\components\windows\Settings.jsx
+#. Performance
+msgid "Potato Mode"
+msgstr "Режим калькулятора"
+
+#: src\components\windows\Faction.jsx
+msgid "Powerlevel"
+msgstr "Уровень полномочий"
+
+#: src\components\windows\Faction.jsx
+msgid "Powerlevel of this role. See table below for an explanation."
+msgstr "Уровень полномочий этой роли. Объяснение приведено в таблице ниже."
+
+#, javascript-format
+msgid "Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgstr ""
+"Нажмайте ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight }, "
+"чтобы перемещаться"
+
+#, javascript-format
+msgid "Press ${ bindG } to toggle grid"
+msgstr "Нажмите ${ bindG }, чтобы переключить сетку"
+
+#, javascript-format
+msgid "Press ${ bindH } to toggle historical view"
+msgstr "Нажмите ${ bindH }, чтобы переключить режим истории"
+
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
+msgstr "Нажимайте ${ bindQ } и ${ bindE }, чтобы перемещаться вверх и вниз"
+
+#, javascript-format
+msgid "Press ${ bindQ } or ${ bindE } to zoom"
+msgstr "Нажимайте ${ bindQ } или ${ bindE }, чтобы изменять масштаб"
+
+#, javascript-format
+msgid "Press ${ bindR } to copy coordinates"
+msgstr "Нажмите ${ bindR }, чтобы скопировать координаты"
+
+#, javascript-format
+msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
+msgstr "Нажимайте ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD }, чтобы перемещаться"
+
+#, javascript-format
+msgid "Press ${ bindX } to toggle showing of pixel activity"
+msgstr "Нажмите ${ bindX }, чтобы переключить активность пикселей"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Private"
+msgstr "Закрытый профиль"
+
+#: src\core\pixelRanks.js
+msgid "Private (military rank)"
+msgstr "Рядовой"
+
+msgid "Profile"
+msgstr "Профиль"
+
+msgid "Quick Actions"
+msgstr "Быстрые действия"
+
+msgid "Range Banned"
+msgstr "Область адресов забанена"
+
+#: src\components\windows\PixelRanks.jsx
+msgid "Rank"
+msgstr "Ранг"
+
+msgid "Ranked"
+msgstr "Учитывается в рейтинге"
+
+#: src\components\windows\Statistics.jsx
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Рейтинг обновляется каждые 5 минут. Ежедневный рейтинг обновляется в "
+"полночь UTC."
+
+msgid "Read Badges and fishes"
+msgstr "Просматривать значки и рыб"
+
+msgid "Read name, username and account age"
+msgstr "Просматривать ник, имя пользователя и время создания аккаунта"
+
+msgid "Reason"
+msgstr "Причина"
+
+#: src\components\windows\Faction.jsx
+msgid "Refresh"
+msgstr "Обновить"
+
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+msgid "Register new account here"
+msgstr "Зарегистрируйте новый аккаунт здесь"
+
+msgid "Regularly update this data"
+msgstr "Регулярно обновлять эти данные"
+
+msgid "Reload"
+msgstr "Обновить"
+
+msgid "Remember this decision: "
+msgstr "Запомнить это решение: "
+
+msgid "Remove"
+msgstr "Убрать"
+
+msgid "Remove Chatmod"
+msgstr "Убрать модератора чата"
+
+msgid "Remove Cleaner"
+msgstr "Убрать уборщика"
+
+msgid "Remove Janny"
+msgstr "Убрать мини-модератора"
+
+msgid "Remove Moderator"
+msgstr "Убрать модератора"
+
+#: src\components\windows\Faction.jsx
+msgid "Remove Roles"
+msgstr "Убрать роли"
+
+msgid "Remove a Login method:"
+msgstr "Убрать способ входа:"
+
+#, javascript-format
+msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
+msgstr "Представляет ${ activeFactionTitle } как ${ activeFactionRoleName }"
+
+msgid "Require Verification to Place"
+msgstr "Требовать подтвержденный аккаунт для размещения пикселей"
+
+msgid "Requirements"
+msgstr "Требования"
+
+msgid "Reset"
+msgstr "Сброс"
+
+msgid "Reset Captchas of ALL Users"
+msgstr "Сбросить капчу ВСЕХ пользователей"
+
+msgid "Reset your password"
+msgstr "Сбросить ваш пароль"
+
+msgid "Resize"
+msgstr "Изменить размер"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Retired Canvases (history only)"
+msgstr "Списанные полотна (только история)"
+
+msgid "Retract"
+msgstr "Свернуть"
+
+msgid "Revoke consent of third party applications:"
+msgstr "Отозвать разрешения у сторонних приложений:"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Role"
+msgstr "Роль"
+
+#: src\components\windows\Faction.jsx
+msgid "Role Flags"
+msgstr "Флаги ролей"
+
+#: src\components\windows\Faction.jsx
+msgid "Roles"
+msgstr "Роли"
+
+msgid "Roll different Captcha Fonts"
+msgstr "Выбрать другие шрифты капчи"
+
+msgid "Rollback an area of the canvas to a set date and time"
+msgstr "Откатить область полотна до установленной даты и времени"
+
+msgid "Rollback to Date"
+msgstr "Откатить до даты"
+
+#: src\components\windows\Faction.jsx
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Scale Image"
+msgstr "Масштабировать изображение"
+
+#, javascript-format
+msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
+msgstr ""
+"Вращайте ${ mouseSymbol } колесо мыши или ${ touchSymbol } сводите пальцы, "
+"чтобы изменять масштаб"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Search Existing Faction"
+msgstr "Поиск существующих фракций"
+
+msgid "Search Term"
+msgstr "Поисковый запрос"
+
+#: src\components\windows\Faction.jsx
+msgid "See hidden users in member list"
+msgstr "Видеть скрытых пользователей в списке участников"
+
+#: src\components\windows\Faction.jsx
+msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
+msgstr ""
+"Выберите аватар для этой фракции. Поддерживаемые форматы: jpg, gif, png, "
+"webp"
+
+msgid "Select Date above"
+msgstr "Выберите дату выше"
+
+msgid "Select File"
+msgstr "Выбрать файл"
+
+msgid "Select Flag"
+msgstr "Выбрать флаг"
+
+#: src\components\windows\Settings.jsx
+msgid "Select Language"
+msgstr "Выбрать язык"
+
+#: src\components\windows\Faction.jsx
+msgid "Select a valid powerlevel"
+msgstr "Выберите допустимый уровень полномочий"
+
+#: src\components\windows\Faction.jsx
+msgid "Select a valid pwerlevel"
+msgstr "Выберите допустимый уровень полномочий"
+
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Выберите полотно, которое хотите использовать.\n"
+"Каждое полотно уникально и имеет разные палитры, время восстановления и "
+"требования.\n"
+"Архивированные полотна доступны здесь:"
+
+msgid "Select your Avatar. Supported Formats: jpg, gif, png, webp"
+msgstr "Выберите свой аватар. Поддерживаемые форматы: jpg, gif, png, webp"
+
+msgid "Selected Color"
+msgstr "выбранному цвету"
+
+msgid "Selected Flag:"
+msgstr "Выбранный флаг:"
+
+msgid "Selected moderation actions that happened within the past two weeks."
+msgstr "Определённые действия модераторов за последние две недели."
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Вам отправлено письмо с инструкциями по сбросу пароля."
+
+msgid "Serpentine"
+msgstr "Серпантин"
+
+msgid "Server Error"
+msgstr "Ошибка сервера"
+
+msgid "Server answered with gibberish :("
+msgstr "Сервер ответил тарабарщиной :("
+
+msgid "Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr "Сервер сбит с толку вашими пикселями. Вы играете на нескольких устройствах?"
+
+msgid "Set Password"
+msgstr "Установить пароль"
+
+msgid ""
+"Set protection of areas (if you need finer grained control, use protect "
+"with image upload and alpha layers)"
+msgstr ""
+"Поставить защиту на область (если вам нужен более точный контроль, "
+"используйте защиту вместе с загрузкой изображения и альфа слоями)"
+
+msgid ""
+"Setting a password allows you to login by username or email, rather than "
+"only relying on 3rd party login."
+msgstr ""
+"Установка пароля позволит вам входить по нику или почте, а не только с "
+"помощью сторонних сервисов."
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Show Embedded"
+msgstr "Показать вставленное"
+
+#: src\components\windows\Settings.jsx
+#. Display
+msgid "Show Grid"
+msgstr "Отображение сетки"
+
+#: src\components\windows\Settings.jsx
+msgid "Show Grid in white instead of black."
+msgstr "Отображать сетку белым цветом вместо черного."
+
+#: src\components\windows\Settings.jsx
+msgid "Show Pixel Activity"
+msgstr "Отображение активности пикселей"
+
+#: src\components\windows\Settings.jsx
+msgid "Show circles where pixels are placed."
+msgstr "Показывает круги, где был размещён пиксель."
+
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr ""
+"Показывать оверлей в виде маленьких отдельных пикселей при высоком уровне "
+"масштабирования."
+
+msgid "Show templates as overlays ingame."
+msgstr "Показывать шаблоны в виде оверлея в игре."
+
+msgid "Shrink"
+msgstr "Уменьшить"
+
+msgid "Size"
+msgstr "Вес"
+
+msgid "Small Pixels When Zoomed"
+msgstr "Оверлей в виде мелких пикселей"
+
+msgid "Social Settings"
+msgstr "Настройки приватности"
+
+#, javascript-format
+msgid "Source for pixelplanet on ${ gitLink } or ${ downloadHereLink }."
+msgstr "Исходный код pixelplanet на ${ gitLink } или ${ downloadHereLink }."
+
+msgid "Stacking till"
+msgstr "Запас перезарядки"
+
+msgid "Start chatting here"
+msgstr "Начать общение здесь"
+
+msgid "Start checking for Malware"
+msgstr "Начать проверять на вредоносное ПО"
+
+msgid "Statistics"
+msgstr "Статистика"
+
+msgid "Status: Not running"
+msgstr "Статус: Не запущено"
+
+msgid "Stay logged in: "
+msgstr "Оставаться в системе: "
+
+msgid "Stop Cleaner"
+msgstr "Остановить очиститель"
+
+msgid "Stop checking for Malware"
+msgstr "Прекратить проверять на вредоносное ПО"
+
+msgid "Stop requiring Verification to Place"
+msgstr "Прекратить требовать подтвержденный аккаунт для размещения пикселей"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Switch Account"
+msgstr "Сменить аккаунт"
+
+#, javascript-format
+msgid "Switched to ${ canvasName }"
+msgstr "Переключено на полотно: ${ canvasName }"
+
+msgid "Template Name"
+msgstr "Имя шаблона"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Templates"
+msgstr "Шаблоны"
+
+#, javascript-format
+msgid ""
+"The application ${ appName } at ${ appUrl } wants to login with your "
+"pixelplanet account ${ accountName }"
+msgstr ""
+"Приложение ${ appName } по адресу ${ appUrl } хочет войти с помощью вашего "
+"аккаунта pixelplanet ${ accountName }"
+
+msgid ""
+"The bare map data that we use, together with converted OpenStreetMap tiles "
+"for orientation, can be downloaded from mega.nz here: "
+msgstr ""
+"Исходные данные которые мы используем, вместе с преобразованными "
+"фрагментами OpenStreetMap для ориентации, их можно скачать с mega.nz здесь: "
+
+msgid ""
+"The name of your account, only a-z, A-Z, -, ., and - characters are "
+"allowed. It is permanent, you can not change it later."
+msgstr ""
+"Имя вашего аккаунта, только символы a-z, A-Z, -, ., и - разрешены. Изменить "
+"его позже будет невозможно."
+
+msgid "The password for your account."
+msgstr "Пароль вашего аккаунта."
+
+#: src\components\windows\Settings.jsx
+msgid "Themes"
+msgstr "Темы"
+
+msgid "This URL is not supported by our Media Player"
+msgstr "Этот URL не поддерживается нашим проигрывателем"
+
+msgid "This canvas doesn't exist"
+msgstr "Этого полотна не существует"
+
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Это полотно попросили создать во время политических конфликтов на основном "
+"полотне Земли. Это был политический компас в разрешении 1024x1024 с "
+"5-секундным временем восстановления и 60-секундным запасом перезарядки. Он "
+"был запущен 11 мая 2020 и оставался активным в течение нескольких месяцев, "
+"пока не был закрыт 30 ноября 2020."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"Эта комбинация почта/пароль стала частью утечки данных. Чтобы защитить этот "
+"аккаунт, пароль был сброшен. Пожалуйста, воспользуетесь кнопкой \"Забыли "
+"пароль\" на странице входа, чтобы установить новый пароль. В будущем "
+"подумайте о том, чтобы не устанавливать вредоносное ПО. Спасибо."
+
+#: src\components\windows\Faction.jsx
+msgid "This faction has no invites"
+msgstr "У этой фракции нет приглашений"
+
+msgid ""
+"This is the name that other people see, e.g. in Chat. You can change it at "
+"any time. All characters except @, /, , >, < and # are allowed."
+msgstr ""
+"Это имя, которое другие пользователи будут видеть, например, в чате. Вы "
+"можете изменить его в любое время. Доступны все символы, кроме @, /, , >, < "
+"и #."
+
+msgid "This login may only work if your account is verified."
+msgstr "Вы сможете авторизоваться, только если ваш аккаунт подтверждён."
+
+msgid "This permission is required"
+msgstr "Это разрешение необходимо"
+
+msgid "This user has not password set"
+msgstr "У этого пользователя не установлен пароль"
+
+#. Column title in tables
+msgid "Time"
+msgstr "Время"
+
+msgid "Timeout"
+msgstr "Тайм-аут"
+
+msgid "Tip: Not case-sensitive; I and l are the same"
+msgstr "Примечание: I и l являются одинаковыми; регистр символов неважен"
+
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel "
+"on the template, should be one pixel on the canvas."
+msgstr ""
+"Устали постоянно спамить один единственный цвет? Хотите вместо этого "
+"создавать рисунки, но вам нужно считать пиксели по какому-то другому "
+"изображению? Шаблоны могут помочь вам в этом! Шаблоны могут отображаться "
+"как оверлей и вы можете рисовать поверх него. Один пиксель в шаблоне должен "
+"соответствовать одному пикселю на полотне."
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Title"
+msgstr "Название"
+
+msgid "Title can't be empty."
+msgstr "Название не может быть пустым."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "Название содержит недопустимые символы: @, /, \\ или #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "Название должно содержать не менее 2 символов"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "Название должно быть короче 26 символов"
+
+#: src\components\windows\Faction.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Title of your faction"
+msgstr "Название вашей фракции"
+
+msgid "To use this page, enter your Password:"
+msgstr "Чтобы использовать эту страницу, введите ваш пароль:"
+
+#: src\components\windows\MyFactions.jsx
+#: src\components\windows\Statistics.jsx
+msgid "Today"
+msgstr "Сегодня"
+
+#: src\components\windows\Faction.jsx
+msgid "Today Placed Pixels"
+msgstr "Поставленных пикселей сегодня"
+
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Топ-10 стран [пикселей/день]"
+
+msgid "Top 10 Daily Ranking"
+msgstr "Быть в Топ-10 ежедневного рейтинга"
+
+msgid "Top 10 Players [pxls / day]"
+msgstr "Топ-10 игроков [пикселей/день]"
+
+#: src\components\windows\Statistics.jsx
+msgid "Top 10 Players from Yesterday"
+msgstr "Топ-10 игроков за вчера"
+
+msgid "Top-left corner"
+msgstr "Верхний левый угол"
+
+#: src\components\windows\Statistics.jsx
+msgid "Total"
+msgstr "Всего"
+
+msgid "Total Online Users"
+msgstr "Всего пользователей онлайн"
+
+#: src\components\windows\Statistics.jsx
+msgid "Total Pixels per Faction"
+msgstr "Всего пикселей по фракциям"
+
+#: src\components\windows\Statistics.jsx
+msgid "Total Pixels per Player"
+msgstr "Всего пикселей размещенных игроками"
+
+msgid "Total Pixels placed per day"
+msgstr "Всего пикселей, размещенных за день"
+
+#: src\components\windows\Faction.jsx
+msgid "Total Rank"
+msgstr "Общий рейтинг"
+
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA "
+"THAT ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"Стирает пиксели в области в ноль (НЕ СТОИТ ИСПОЛЬЗОВАТЬ В ОБЛАСТИ, КОТОРАЯ "
+"УЖЕ НЕ ОБНУЛЕНА)"
+
+#: src\components\windows\Settings.jsx
+#. Display
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Включите сетку, чтобы выделить границы пикселей."
+
+msgid "Type of Mod"
+msgstr "Тип модератора"
+
+msgid "Type the characters from the following image:"
+msgstr "Введите символы с изображения:"
+
+msgid "Unban media"
+msgstr "Разбанить медиафайл"
+
+#: src\components\windows\Faction.jsx
+msgid "Unban members"
+msgstr "Разбанивать участников"
+
+msgid "Unblock"
+msgstr "Разблокировать"
+
+msgid "Unblock Users"
+msgstr "Разблокировать пользователей"
+
+msgid "Unknown Captcha Error"
+msgstr "Неизвестная ошибка капчи"
+
+msgid "Unknown Error"
+msgstr "Неизвестная ошибка"
+
+msgid "Unmuted Sound"
+msgstr "Звук включен"
+
+msgid "Until the browser closes"
+msgstr "До закрытия браузера"
+
+msgid "Upload images to canvas"
+msgstr "Загружает изображения на полотно"
+
+#: src\components\windows\Settings.jsx
+msgid "Use our custom cursor"
+msgstr "Используйте наш встроенный курсор"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "User Account"
+msgstr "Аккаунт пользователя"
+
+msgid "User Area"
+msgstr "Зона пользователя"
+
+msgid "User ID and verification level"
+msgstr "ID пользователя и уровень подтверждения"
+
+msgid "User Name"
+msgstr "Имя пользователя"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "Имя пользователя может содержать только a-z . _ и -"
+
+msgid "Username can only contain the characters: a-z A-z . _ and -"
+msgstr "Имя пользователя может содержать только a-z A-z . _ и -"
+
+msgid "Username can't be empty."
+msgstr "Имя пользователя не может быть пустым."
+
+msgid "Username must be at least 2 characters long"
+msgstr "Имя пользователя должно быть не менее двух символов"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "Имя пользователя должно быть короче 26 символов"
+
+msgid "Users"
+msgstr "Пользователи"
+
+#, javascript-format
+msgid "We are Libre Software under the ${ agplLink }, "
+msgstr "Мы свободное программное обеспечение под лицензией ${ agplLink }, "
+
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking "
+"a screenshot from the timelapse results in a perfect 1:1 representation of "
+"how the canvas was at that time."
+msgstr ""
+"Мы решили заархивировать его в виде таймлапса с кодировкой webm без потерь. "
+"Снимок экрана из таймлапса дает идеальное изображение 1:1 того, каким был "
+"холст в то время."
+
+msgid ""
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr "Мы очень благодарны художникам, которые предложили свои палитры публике на"
+
+msgid "Weird"
+msgstr "Странно"
+
+msgid "What the pencil should draw on the current canvas."
+msgstr "Как будет идти непрерывное рисование на текущем полотне."
+
+#: src\components\windows\Faction.jsx
+msgid "Whether or not this invite can only be used once."
+msgstr "Можно ли использовать это приглашение только один раз."
+
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason "
+"to keep them and we may decide to remove them."
+msgstr ""
+"Хотя мы обычно не удаляем холсты, некоторые из них создаются просто так или "
+"по просьбе пользователей, которым нравится популярный мем. Со временем "
+"такие холсты могут стать скучными и неактивными, и тогда нет причин их "
+"хранить – мы можем принять решение об их удалении."
+
+msgid "Why?"
+msgstr "Почему?"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Wrong Color"
+msgstr "Некорректный цвет"
+
+msgid "YOU CAN ONLY CHOOSE YOUR USERNAME ONCE!"
+msgstr "ВЫ МОЖЕТЕ ВЫБРАТЬ ВАШЕ ИМЯ ПОЛЬЗОВАТЕЛЯ ТОЛЬКО ОДИН РАЗ!"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "Yes, really delete Me"
+msgstr "Да, удалите меня"
+
+#: src\components\windows\Statistics.jsx
+msgid "Yesterday"
+msgstr "Вчера"
+
+msgid ""
+"You are a teacher and a pupil is playing this game, despite it not being "
+"suitable for them? Send us an email."
+msgstr ""
+"Если вы – учитель, и ученик играет в эту игру, хотя она ему не подходит, "
+"пожалуйста, отправьте нам электронное письмо."
+
+#, javascript-format
+msgid ""
+"You are banned. You think it is unjustified? Check out the ${ helpButton } "
+"on how to appeal. And don't forget to include the BID you can get below."
+msgstr ""
+"Вы забанены. Вы считаете это несправедливым? Ознакомьтесь с ${ helpButton "
+"}, чтобы узнать, как подать апелляцию. И не забудьте указать BID, который "
+"вы можете найти ниже."
+
+msgid "You are currently not a member of any faction."
+msgstr "Вы не состоите ни в одной фракции."
+
+msgid "You are currently not allowed to access this game."
+msgstr "В настоящее время вам запрещено иметь доступ к этой игре."
+
+msgid ""
+"You are currently not representing any faction. To represent one, activate "
+"a role in one of your factions below."
+msgstr ""
+"Вы не представляете ни одну из фракций. Чтобы представлять одну из них, "
+"активируйте роль в одной из ваших фракций снизу."
+
+#, javascript-format
+msgid ""
+"You are currently representing ${ activeFactionTitle } as ${ activeRoleName "
+"}"
+msgstr "Вы представляете ${ activeFactionTitle } как ${ activeRoleName }"
+
+#, javascript-format
+msgid "You are logged in as ${ name } [${ username }]."
+msgstr "Вы вошли как ${ name } [${ username }]."
+
+msgid "You are not allowed to play this game right now :("
+msgstr "Сейчас вам нельзя играть в эту игру :("
+
+msgid "You are using a Proxy."
+msgstr "Вы используете прокси."
+
+msgid "You are weird"
+msgstr "Вы странный"
+
+msgid ""
+"You can connect to pixelplanet and use pixelplanet accounts for oauth / "
+"oidc login. See here: "
+msgstr ""
+"Вы можете подключить pixelplanet и использовать аккаунты pixelplanet для "
+"входа через OAuth/OIDC. Подробнее здесь: "
+
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr ""
+"Вы пока не можете получить доступ к этому полотну. Вам нужно поставить "
+"больше пикселей"
+
+msgid "You can now place more on pixelplanet.fun :)"
+msgstr "Вы можете рисовать дальше на pixelplanet.fun :)"
+
+#, javascript-format
+msgid ""
+"You caught a Phish! It is a ${ FISH_TYPES[type].name } with ${ size }kg! As "
+"a bonus, your cooldown is reduced."
+msgstr ""
+"Вы поймали рыбу! Это ${ FISH_TYPES[type].name } весом ${ size }кг! В "
+"качестве бонуса, время перезарядки уменьшено."
+
+msgid "You did not consent"
+msgstr "Вы не дали согласие"
+
+msgid "You failed your captcha"
+msgstr "Вы неправильно решили капчу"
+
+#, javascript-format
+msgid ""
+"You have been invited to join us on pixelplanet. We currently have ${ "
+"memberCount } members."
+msgstr ""
+"Вы были приглашены к нам на pixelplanet. Сейчас у нас ${ memberCount } "
+"участников."
+
+msgid "You have no users blocked"
+msgstr "У вас нет заблокированных пользователей"
+
+msgid "You have to be logged in to place on this canvas"
+msgstr "Вы должны войти в аккаунт, чтобы ставить на этом полотне"
+
+msgid "You made too many requests"
+msgstr "Вы сделали слишком много запросов"
+
+msgid "You must be logged in to chat"
+msgstr "Вы должны быть авторизованы, чтобы общаться в чате"
+
+msgid "You must enter a UserId"
+msgstr "Необходимо указать ID пользователя"
+
+msgid "You must enter a mediaId or media BID"
+msgstr "Вы должны ввести mediaId или BID медиафайла"
+
+msgid "You must enter a reason"
+msgstr "Необходимо указать причину"
+
+msgid "You must enter a username"
+msgstr "Необходимо указать имя пользователя"
+
+msgid "You must enter an BID"
+msgstr "Необходимо указать BID"
+
+msgid "You must enter an IID"
+msgstr "Необходимо указать IID"
+
+msgid "You must enter an IID or UserId"
+msgstr "Необходимо указать IID или ID пользователя"
+
+msgid "You must enter at least one IID, User Id or BID"
+msgstr "Необходимо ввести хотя бы один IID, ID пользователя или BID"
+
+#: src\components\windows\MyFactions.jsx
+msgid "You must select an avatar for your faction"
+msgstr "Вы должны выбрать аватар для вашей фракции"
+
+msgid "You took too long, try again."
+msgstr "Слишком долго, попробуйте еще раз."
+
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Ваш браузер не позволяет нам использовать AudioContext для воспроизведения "
+"звуков. У вас есть какая-то функция конфиденциальности, блокирующая "
+"AudioContext?"
+
+msgid "Your Browser looks shady"
+msgstr "Ваш браузер выглядит подозрительно"
+
+msgid "Your Factions"
+msgstr "Ваши фракции"
+
+msgid "Your Internet Provider is banned from this game"
+msgstr "Вашему интернет-провайдеру запрещено играть в эту игру"
+
+msgid "Your Roles"
+msgstr "Ваши роли"
+
+msgid "Your ban expires at "
+msgstr "Ваш бан истечет "
+
+msgid "Your device looks weird"
+msgstr "Ваше устройство подозрительное"
+
+msgid ""
+"Your did not set your username yet. A username is required to login to "
+"other applications. You can set it now:"
+msgstr ""
+"Вы ещё не указали свое имя пользователя. Имя пользователя требуется для "
+"входа в другие приложения. Вы можете указать его сейчас:"
+
+msgid "Your name is:"
+msgstr "Ваш ник:"
+
+msgid "Your next pixels are ready"
+msgstr "Ваши новые пиксели готовы"
+
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Увеличение масштаба вместо размещения пикселя, когда вы пытаетесь поставить "
+"пиксель и масштаб невелик."
+
+msgid "a hidden faction"
+msgstr "скрытую фракцию"
+
+#: src\components\windows\Faction.jsx
+msgid "affects"
+msgstr "затрагивает"
+
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "и ${ canvas.req } поставленных пикселей"
+
+#: src\components\windows\Faction.jsx
+msgid "by"
+msgstr "от"
+
+msgid "check compliance here"
+msgstr "проверьте соответствие здесь"
+
+#: src\components\windows\Faction.jsx
+msgid "created at"
+msgstr "создано"
+
+msgid "days"
+msgstr "дней"
+
+msgid "download here"
+msgstr "скачать здесь"
+
+#: src\components\windows\Faction.jsx
+msgid "lift"
+msgstr "снять"
+
+msgid "or login with:"
+msgstr "или войдите с помощью:"
+
+msgid "or register here:"
+msgstr "или зарегистрируйтесь здесь:"
+
+msgid "recommended"
+msgstr "рекомендовано"
+
+#: src\components\windows\Faction.jsx
+msgid "times used"
+msgstr "использовано раз"
+
+#, javascript-format
+msgid "try again after ${ ti }min"
+msgstr "попробуйте снова через ${ ti }мин"
+
+msgid "x out of bounds"
+msgstr "х вне границ"
+
+msgid "y out of bounds"
+msgstr "у вне границ"
+
+msgid "z out of bounds"
+msgstr "z вне границ"
+
+#: src\components\TimelapseMaker.jsx
+msgid "A timelapse can be created once every 30 minutes."
+msgstr "Таймлапс можно создавать раз в 30 минут."
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Accept"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Action"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Active"
+msgstr "Активно"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Active NAP"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Active NAPs"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Active Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Adds this template to your personal game overlay"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Alerts and cooldown volume"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Allow All"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Allow Open Join"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Allow anyone to join freely or require invitations/applications."
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Amethyst"
+msgstr "Аметист"
+
+#: src\components\windows\MyFactions.jsx
+msgid "An image representing your faction (automatically fitted)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Anyone can join"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Application sent"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Application submitted. The faction admins have been notified."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Apply"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Apply & Return"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Approve Termination"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Approve termination"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "Are you sure you want to kick ${ memberName } from the faction?"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Army Commander"
+msgstr "Командующий армией"
+
+#: src\components\windows\Settings.jsx
+#. Sound
+msgid "AudioContext is unavailable; check privacy settings."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Awaiting Other Faction"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Awaiting other faction"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Awaiting response"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Back to list"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Brigade Commander"
+msgstr "Командир бригады"
+
+#: src\core\pixelRanks.js
+msgid "Brigadier"
+msgstr "Бригадир"
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Broken"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Bronze"
+msgstr "Бронза"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Cancel Proposal"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Cancel this pending NAP proposal?"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+#, javascript-format
+msgid "Canvas ${ id }"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 0 (Earth)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 1 (Moon)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 2 (135M)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Canvas 7 (3D)"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Captain"
+msgstr "Капитан"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Change Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Changing role automatically updates default permission presets below."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Chat notification volume"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Choose any area on the canvas and up to 7 days."
+msgstr "Выберите любую область холста и период продолжительностью до 7 дней."
+
+#: src\components\windows\Settings.jsx
+msgid "Clear search"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Click a member to manage role & permissions"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Colonel"
+msgstr "Полковник"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Config"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Configure canvas coordination and settings"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Configure coordination IDs"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Confirmation name does not match the faction name."
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Consul"
+msgstr "Консул"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Control whether your faction appears in public search and list."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Copied!"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Copy Coordinates"
+msgstr "Копировать координаты"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Copy faction tag"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Corporal"
+msgstr "Ефрейтор"
+
+#: src\core\pixelRanks.js
+msgid "Corps Commander"
+msgstr "Командир корпуса"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Could not create the timelapse"
+msgstr "Не удалось создать таймлапс"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Could not load canvases"
+msgstr "Не удалось загрузить холсты"
+
+#: src\components\windows\Statistics.jsx
+msgid "Could not load statistics:"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Could not load the target faction template."
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Create timelapse"
+msgstr "Создать таймлапс"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Created date"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Creating a faction requires at least 50,000 placed pixels."
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Creating timelapse..."
+msgstr "Создание таймлапса..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Current Role"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Custom Permissions"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Date Created"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Denied"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Deny All"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Deputy"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Deputy (Administrator)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Disband Faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Disbanding..."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Display"
+msgstr "Отображение"
+
+#: src\components\windows\Settings.jsx
+#. Interface
+msgid "Display the palette in a compact form."
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Division Commander"
+msgstr "Командир дивизии"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Double-click to apply | Right-click to cancel"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Download timelapse video"
+msgstr "Скачать видео таймлапса"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Drag to select area"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Edit Details"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Edit Faction Details"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Edit title, description, privacy, and open join"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Emperor"
+msgstr "Император"
+
+#: src\components\windows\MyFactions.jsx
+msgid "End Date"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "End XY"
+msgstr "Конечная точка X, Y"
+
+#: src\components\TimelapseMaker.jsx
+msgid "End date"
+msgstr "Конечная дата"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Enter coordinates as X, Y (for example: 12, 34)."
+msgstr "Введите координаты в формате X, Y (например: 12, 34)."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Enter the 2-3 letter tag of the other faction."
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "FPS"
+msgstr "Кадров в секунду"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Details"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction ID"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction List"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Settings & Actions"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Statistics"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Templates"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction Title / Name"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Faction members"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Faction sections"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Failed to download template image."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Failed to install template"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Frame skip"
+msgstr "Пропуск кадров"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Full active template territory"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Full template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Full template default"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Game volume"
+msgstr "Общая громкость"
+
+#: src\core\pixelRanks.js
+msgid "General"
+msgstr "Генерал"
+
+#: src\core\pixelRanks.js
+msgid "Gold"
+msgstr "Золото"
+
+#: src\core\pixelRanks.js
+msgid "Guardian"
+msgstr "Хранитель"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Hidden from search"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Home"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "How PixelStates should look."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Incoming Proposal"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Incoming request"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Indefinite duration"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Install to My Templates"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Installed to your templates!"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Installing..."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Interface"
+msgstr "Интерфейс"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Invite only"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Invite players to the faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Join Applications"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Keeper"
+msgstr "Страж"
+
+#: src\components\windows\Settings.jsx
+msgid "Key Bindings"
+msgstr "Назначение клавиш"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Kick Member"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Kick lower-ranked members"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Lasso Tool"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Leader"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Leader (Co-Leader)"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Legate"
+msgstr "Легат"
+
+#: src\core\pixelRanks.js
+msgid "Legend"
+msgstr "Легенда"
+
+#: src\core\pixelRanks.js
+msgid "Lieutenant"
+msgstr "Лейтенант"
+
+#: src\components\windows\Statistics.jsx
+msgid "Loading statistics..."
+msgstr "Загрузка статистики..."
+
+#: src\components\windows\MyFactions.jsx
+msgid "Loading the target faction's active template…"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Loading the target template. You can already select its territory using the "
+"displayed template."
+msgstr ""
+
+#: src\components\PixelRankCounter.jsx
+msgid "MAX"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Major"
+msgstr "Майор"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Make Hidden"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Make Public"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Admin & Roles"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Applications"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Configurations"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Coordination"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Faction Settings"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Invitations"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Member Permissions"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage Members"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage NAPs"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Manage this member's role and permissions"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Marshal"
+msgstr "Маршал"
+
+#: src\components\windows\Settings.jsx
+msgid "Master volume for all game sounds."
+msgstr "Общая громкость всех звуков игры."
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Member"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Member (Regular)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Membership Access"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "My Faction"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "NAP"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "NAP Territory Distribution & Protection"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "NAP feature is coming soon."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "NAP functionality is temporarily unavailable and will be added soon."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "NAPs"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Need 50,000 pixels to create"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "New NAP"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "New NAP Proposal"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Next"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "No active or incoming non-aggression pacts."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "No active template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "No active template for this faction."
+msgstr ""
+
+#: src\components\windows\Statistics.jsx
+msgid "No country statistics available."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "No description provided."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "No description yet."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "No factions found."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "No members to display."
+msgstr ""
+
+#: src\components\windows\Statistics.jsx
+msgid "No ranking data available."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "No settings match your search."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Non-Aggression Pact (NAP)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Non-Aggression Pacts (NAPs)"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Not set"
+msgstr "Не назначено"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Officer"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Officer (Moderator)"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "One of the factions has no active template"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "One of the factions has no active template. NAP request unavailable."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Only owner or members with template permissions can upload"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Open Fullscreen Territory Editor"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Open only"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Origin X"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Origin Y"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Other"
+msgstr "Другое"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Outgoing Proposal"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Overlord"
+msgstr "Повелитель"
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Owner"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Owner Only"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Performance"
+msgstr "Производительность"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Permanently Delete Faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Permanently delete your faction, channels, templates, and pacts. This "
+"action cannot be undone."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Pixel placement volume"
+msgstr ""
+
+#: src\components\PixelRankCounter.jsx
+#, javascript-format
+msgid "Pixel rank ${ rank.id } progress: ${ progress }%"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Pixels Today"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Player"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Please enter a target faction tag (2-3 characters)."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Please select an image file to upload."
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Praetor"
+msgstr "Претор"
+
+#: src\components\windows\Settings.jsx
+msgid "Press Escape to cancel."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Press a key…"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Prev"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Private faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Processing..."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Promote/demote and configure member permissions"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Propose NAP"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Propose New NAP"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Propose Non-Aggression Pact (NAP)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Propose a non-aggression pact with another faction protecting defined "
+"territories."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Propose and accept Non-Aggression Pacts"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Protected Territory"
+msgstr ""
+
+#: src\components\PixelRankCounter.jsx
+msgid "Ranks"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Recruit"
+msgstr "Новобранец"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Rectangle Tool"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Reject"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Rejected"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Remove Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Request Termination"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "Request failed."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Request termination"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Reset Both"
+msgstr ""
+
+#: src\components\windows\Statistics.jsx
+msgid "Retry"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Review and accept/reject join applications"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Role / Rank"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "SOON"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Save & Return"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Save Changes"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Save Permissions"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Saving..."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Search Privacy"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Search by name or tag"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "Search factions"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Search settings"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Search settings…"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Select Entire Template for"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Select the protected area for either faction. An unselected side uses its "
+"full active template."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Selection"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Sergeant"
+msgstr "Сержант"
+
+#: src\core\pixelRanks.js
+msgid "Sergeant Major"
+msgstr "Старший сержант"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Set Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Set to Invite Only"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Animate brush"
+msgstr "Анимация кисти"
+
+#: src\components\windows\Settings.jsx
+msgid "Animate the brush preview while moving it."
+msgstr "Анимировать предварительный просмотр кисти при перемещении."
+
+#: src\components\windows\Settings.jsx
+msgid "Settings categories"
+msgstr "Категории настроек"
+
+#: src\components\windows\Settings.jsx
+msgid "Show Active Zones"
+msgstr "Показывать активные зоны"
+
+#: src\components\windows\Settings.jsx
+msgid "Show fire markers for recent pixel activity."
+msgstr "Показывать огненные маркеры недавней активности пикселей."
+
+#: src\core\pixelRanks.js
+msgid "Silver"
+msgstr "Серебро"
+
+#: src\components\windows\Settings.jsx
+msgid "Sound"
+msgstr "Звук"
+
+#: src\components\windows\Settings.jsx
+msgid "Stack full volume"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Start Date"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Start XY"
+msgstr "Начальная точка X, Y"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Start date"
+msgstr "Начальная дата"
+
+#: src\components\windows\Statistics.jsx
+msgid "Statistics sections"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Stats"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Submitting..."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "TAG (e.g. PXF)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "TARGET"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Tag"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Tag of your faction (2-3 uppercase latin letters or numbers, e.g. PXF)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target Canvas"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target Faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Target Faction (TAG)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Target template preview is unavailable. The selected coordinates will be "
+"checked against the target faction template when you submit."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template Image (.png, .webp, .jpeg)"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template Management"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Template upload failed."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Terminated"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Termination approvals"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Territory Distribution & Protection"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "That key is already assigned."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "The server returned a non-JSON response (HTTP ${ response.status })."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "The server returned a non-JSON response."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "There are no pending join applications."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "This feature will be available soon."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "This will"
+msgstr ""
+
+#: src\components\windows\PixelRanks.jsx
+msgid "Tier"
+msgstr "Уровень"
+
+#: src\components\TimelapseMaker.jsx
+msgid "Timelapse maker"
+msgstr "Создание таймлапса"
+
+#: src\components\windows\MyFactions.jsx
+msgid "To confirm, type your faction name"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Today placed pixels"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Easter Egg"
+msgstr "Включить или выключить пасхальное яйцо"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Grid"
+msgstr "Включить или выключить сетку"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Historical View"
+msgstr "Включить или выключить просмотр истории"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Pencil Mode"
+msgstr "Включить или выключить режим карандаша"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Pixel Activity"
+msgstr "Включить или выключить активность пикселей"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Sound"
+msgstr "Включить или выключить звук"
+
+#: src\components\windows\Settings.jsx
+msgid "Toggle Template Overlay"
+msgstr "Включить или выключить наложение шаблона"
+
+#: src\components\windows\MyFactions.jsx
+msgid "Top Factions by Total Pixels"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Total Pixels"
+msgstr ""
+
+#: src\core\pixelRanks.js
+msgid "Tribune"
+msgstr "Трибун"
+
+#: src\core\pixelRanks.js
+msgid "Turquoise"
+msgstr "Бирюза"
+
+#: src\components\windows\Statistics.jsx
+msgid "Unavailable"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Update in My Templates"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload Faction Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload Template"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload a new image template to establish your faction canvas territory."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Upload, set, and delete faction canvas templates"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Uploading..."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Validity Period"
+msgstr ""
+
+#: src\components\PixelRankCounter.jsx
+msgid "View pixel rank requirements"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Visible in search"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for alerts, notifications, and cooldown sounds."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for color selection and pixel placement sounds."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for new chat message sounds."
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for the full pixel stack sound."
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "X, Y"
+msgstr "X, Y"
+
+#: src\components\windows\MyFactions.jsx
+msgid "YOU"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "You are not a member of any faction yet."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "You joined the faction."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your Faction"
+msgstr ""
+
+#: src\components\TimelapseMaker.jsx
+msgid "Your browser cannot preview this timelapse video."
+msgstr "Ваш браузер не поддерживает предварительный просмотр этого таймлапса."
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"Your faction does not have an active template. Upload a template first to "
+"define NAP territory."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your faction must have an active template to propose NAPs"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "Your faction must have an active template."
+msgstr ""
+
+#: src\components\windows\PixelRanks.jsx
+msgid "Your pixels"
+msgstr ""
+
+#: src\components\windows\Settings.jsx
+msgid "Zoom in on canvas taps instead of placing pixels."
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "[${ factionTag }] Your Territory"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+#, javascript-format
+msgid "[${ targetTag }] Their Territory"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "e.g. PXF"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid ""
+"including all member associations, channel messages, uploaded templates, "
+"and non-aggression pacts."
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+msgid "members"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "name"
+msgstr ""
+
+#: src\components\windows\FactionBrowser.jsx
+#: src\components\windows\MyFactions.jsx
+msgid "other faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "permanently delete"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "the faction"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "title"
+msgstr ""
+
+#: src\components\windows\MyFactions.jsx
+msgid "your faction"
+msgstr ""
+
+msgctxt "media-player"
+msgid "Player"
+msgstr "Проигрыватель"
+
+msgctxt "keybinds"
+msgid "A"
+msgstr "A"
+
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+msgctxt "keybinds"
+msgid "D"
+msgstr "D"
+
+msgctxt "keybinds"
+msgid "E"
+msgstr "E"
+
+msgctxt "keybinds"
+msgid "G"
+msgstr "G"
+
+msgctxt "keybinds"
+msgid "H"
+msgstr "H"
+
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+msgctxt "keybinds"
+msgid "Q"
+msgstr "Q"
+
+msgctxt "keybinds"
+msgid "R"
+msgstr "R"
+
+msgctxt "keybinds"
+msgid "S"
+msgstr "S"
+
+msgctxt "keybinds"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+msgctxt "keybinds"
+msgid "W"
+msgstr "W"
+
+msgctxt "keybinds"
+msgid "X"
+msgstr "X"
+
+msgctxt "channel-list"
+msgid "Public"
+msgstr "Публичные"
+
+#. Column title of column indicating whether or not a faction is able to be joined in public
+msgctxt "statistics-table"
+msgid "Public"
+msgstr "Публичная"
+
+#: src\components\windows\Settings.jsx
+msgid "Captcha alert sound"
+msgstr "Звук проверки CAPTCHA"
+
+#: src\components\windows\Settings.jsx
+msgid "Chat message sound"
+msgstr "Звук сообщения в чате"
+
+#: src\components\windows\Settings.jsx
+msgid "Color selection sound"
+msgstr "Звук выбора цвета"
+
+#: src\components\windows\Settings.jsx
+msgid "Cooldown ready sound"
+msgstr "Звук окончания перезарядки"
+
+#: src\components\windows\Settings.jsx
+msgid "Error alert sound"
+msgstr "Звук ошибки"
+
+#: src\components\windows\Settings.jsx
+msgid "Information alert sound"
+msgstr "Звук информационного уведомления"
+
+#: src\components\windows\Settings.jsx
+msgid "Notification sound"
+msgstr "Звук уведомления"
+
+#: src\components\windows\Settings.jsx
+msgid "Pixel placement sound"
+msgstr "Звук установки пикселя"
+
+#: src\components\windows\Settings.jsx
+msgid "Pixel stack full sound"
+msgstr "Звук заполнения запаса пикселей"
+
+#: src\components\windows\Settings.jsx
+msgid "Preview"
+msgstr "Прослушать"
+
+#: src\components\windows\Settings.jsx
+msgid "Volume for this sound effect."
+msgstr "Громкость этого звукового эффекта."
+
+msgid "Chaos Event"
+msgstr "Хаотическое событие"
+
+msgid "Manage Chaos Event with reduced pixel cooldowns across all canvases."
+msgstr "Управление хаотическим событием с уменьшенным временем перезарядки пикселей на всех холстах."
+
+msgid "Event Status"
+msgstr "Статус события"
+
+msgid "Inactive"
+msgstr "Неактивно"
+
+msgid "Time Remaining"
+msgstr "Осталось времени"
+
+msgid "Prince (VIP) Base Cooldown"
+msgstr "Базовая перезарядка для Принца (VIP)"
+
+msgid "Regular Users Occupied Pixel Cooldown"
+msgstr "Перезарядка занятого пикселя для обычных пользователей"
+
+msgid "Blank Pixel Cooldowns"
+msgstr "Перезарядка пустых пикселей"
+
+msgid "Stop Chaos Event"
+msgstr "Остановить хаотическое событие"
+
+msgid "Chaos Event is currently turned off. Configure the parameters below and start the event."
+msgstr "Хаотическое событие сейчас выключено. Настройте параметры ниже и запустите событие."
+
+msgid "Launch Chaos Event"
+msgstr "Запустить хаотическое событие"
+
+msgid "Quick Presets"
+msgstr "Быстрые настройки"
+
+msgid "Prince (VIP) Base Occupied Pixel Cooldown (ms)"
+msgstr "Базовая перезарядка занятого пикселя для Принца (VIP), мс"
+
+msgid "Chaos applies VIP multipliers to blank and occupied pixels."
+msgstr "Во время хаотического события множители VIP применяются к пустым и занятым пикселям."
+
+msgid "Without active Void: Prince 95%, King 90%, Emperor 80%."
+msgstr "Без активной Пустоты: Принц — 95%, Король — 90%, Император — 80%."
+
+msgid "During active Void, the configured active Void multipliers apply."
+msgstr "Во время активной Пустоты применяются заданные для неё множители."
+
+msgid "Regular Users Occupied Pixel Cooldown (ms)"
+msgstr "Перезарядка занятого пикселя для обычных пользователей, мс"
+
+msgid "Event Duration (minutes)"
+msgstr "Длительность события (минуты)"
+
+msgid "minutes"
+msgstr "минут"
+
+msgid "Quick duration"
+msgstr "Быстрая настройка длительности"
+
+msgid "Blank pixel settings are independent."
+msgstr "Настройки перезарядки пустых пикселей задаются отдельно."
+
+msgid "Regular Users Blank Cooldown (ms)"
+msgstr "Перезарядка пустого пикселя для обычных пользователей, мс"
+
+msgid "VIP Blank Cooldown (ms)"
+msgstr "Перезарядка пустого пикселя для VIP, мс"
+
+msgid "Hide Advanced Settings"
+msgstr "Скрыть дополнительные настройки"
+
+msgid "Show Advanced Settings (King, Emperor)"
+msgstr "Показать дополнительные настройки (Король, Император)"
+
+msgid "King (VIP+) Cooldown (ms), defaults to about 90% of VIP cooldown"
+msgstr "Перезарядка для Короля (VIP+), мс; по умолчанию около 90% перезарядки VIP"
+
+msgid "Emperor (VIP++) Cooldown (ms), defaults to about 80% of VIP cooldown"
+msgstr "Перезарядка для Императора (VIP++), мс; по умолчанию около 80% перезарядки VIP"
+
+msgid "Start Chaos Event"
+msgstr "Начать хаотическое событие"
+
+msgid "When Chaos Event starts, cooldowns change immediately for all online and offline players on all canvases and revert automatically when time expires."
+msgstr "После запуска хаотического события время перезарядки сразу изменится для всех игроков — онлайн и офлайн — на всех холстах и автоматически вернётся к прежнему по окончании события."
+
+msgid "Permanent Cooldown Settings"
+msgstr "Настройки постоянной перезарядки"
+
+msgid "Set permanent pixel cooldowns for all canvases or for one selected canvas."
+msgstr "Задать постоянную перезарядку пикселей для всех холстов или выбранного холста."
+
+msgid "All canvases"
+msgstr "Все холсты"
+
+msgid "Canvas list is not available yet. Please refresh the page."
+msgstr "Список холстов пока недоступен. Обновите страницу."
+
+msgid "Current Setting"
+msgstr "Текущая настройка"
+
+msgid "Custom (Permanent)"
+msgstr "Пользовательская (постоянная)"
+
+msgid "Default (1s User / 0.5s VIP)"
+msgstr "По умолчанию (1 с для пользователей / 0,5 с для VIP)"
+
+msgid "VIP Cooldown Pixel"
+msgstr "Перезарядка пикселя для VIP"
+
+msgid "Blank Pixel Cooldown"
+msgstr "Перезарядка пустого пикселя"
+
+msgid "Cooldown Reserve"
+msgstr "Запас перезарядки"
+
+msgid "Change Cooldown Permanently"
+msgstr "Изменить постоянную перезарядку"
+
+msgid "Presets"
+msgstr "Предустановки"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Fast"
+msgstr "Быстро"
+
+msgid "Slow"
+msgstr "Медленно"
+
+msgid "VIP Cooldown Pixel (ms)"
+msgstr "Перезарядка пикселя для VIP (мс)"
+
+msgid "Cooldown Reserve (seconds)"
+msgstr "Запас перезарядки (секунды)"
+
+msgid "Prince (VIP) uses this cooldown as its base."
+msgstr "Для Принца (VIP) это базовое время перезарядки."
+
+msgid "King and Emperor have separate cooldown settings."
+msgstr "Для Короля и Императора задаются отдельные значения перезарядки."
+
+msgid "Void applies each tier's multiplier."
+msgstr "В Пустоте применяется множитель, соответствующий уровню VIP."
+
+msgid "Set blank pixel cooldowns independently from occupied pixel cooldowns."
+msgstr "Задавать перезарядку пустых пикселей отдельно от перезарядки занятых пикселей."
+
+msgid "Regular users (ms)"
+msgstr "Обычные пользователи (мс)"
+
+msgid "Prince (VIP) (ms)"
+msgstr "Принц (VIP), мс"
+
+msgid "VIP stack limits: Prince 10 min, King 14 min, Emperor 20 min."
+msgstr "Максимальный запас пикселей VIP: Принц — 10 минут, Король — 14 минут, Император — 20 минут."
+
+msgid "Apply Permanently"
+msgstr "Применить постоянно"
+
+msgid "Reset to Defaults"
+msgstr "Сбросить настройки"
+
+msgid "These settings are stored permanently and take effect immediately for the selected canvas."
+msgstr "Эти настройки сохраняются постоянно и сразу применяются к выбранному холсту."
+
+msgid "Manage VIP"
+msgstr "Управление VIP"
+
+msgid "VIP perks are currently disabled by server configuration."
+msgstr "Возможности VIP отключены в настройках сервера."
+
+msgid "Target a user by UID, IID, username, or nickname."
+msgstr "Укажите пользователя по UID, IID, имени пользователя или никнейму."
+
+msgid "Use d, h, or m units (up to 10 years), or permanent."
+msgstr "Используйте обозначения d (дни), h (часы) или m (минуты), максимум на 10 лет, либо укажите permanent для бессрочного срока."
+
+msgid "Grant VIP"
+msgstr "Выдать VIP"
+
+msgid "Revoke VIP"
+msgstr "Отозвать VIP"
+
+msgid "Preparing history"
+msgstr "Подготовка истории"
+
+msgid "Loading historical frames"
+msgstr "Загрузка исторических кадров"
+
+msgid "Creating video"
+msgstr "Создание видео"
+
+msgid "Finishing up"
+msgstr "Завершение"
+
+msgid "Completed"
+msgstr "Готово"
+
+msgid "Canvas ${id}"
+msgstr "Холст ${id}"
+
+msgid "Your timelapse is ready to view and download."
+msgstr "Таймлапс готов к просмотру и скачиванию."
+
+msgid "Your timelapse is ready"
+msgstr "Таймлапс готов"
+
+msgid "Return to the game to watch or download it."
+msgstr "Вернитесь в игру, чтобы посмотреть или скачать видео."
+
+msgid "Timelapse creation progress"
+msgstr "Ход создания таймлапса"
+
+msgid "Reset Verification for ALL Users"
+msgstr "Сбросить проверки для ВСЕХ пользователей"
+
+msgid "Summon Bonus Void"
+msgstr "Призвать бонусную Пустоту"
+
+msgid "Remove Trial Mod"
+msgstr "Снять права модератора-стажёра"
+
+msgid "Trial Mod"
+msgstr "Модератор-стажёр"
+
+msgid "Trial Mod: masked IPs; no wipe/captcha/rename/IID bans."
+msgstr "Модератор-стажёр: IP-адреса замаскированы; недоступны вайп, CAPTCHA, переименование и баны по IID."
+
+msgid "Restore this area of the canvas from history."
+msgstr "Восстановить эту область холста по истории."
+
+msgid "Build image using all canvas colors, including OSM/background colors; nearby shades are matched to the closest palette color."
+msgstr "Создать изображение, используя все цвета холста, включая цвета OSM и фона; близкие оттенки подбираются к ближайшему цвету палитры."
+
+msgid "Fill the selected area with one palette color."
+msgstr "Залить выбранную область одним цветом палитры."
+
+msgid "Replace mismatched set pixels with enabled template colors. Empty pixels are left untouched."
+msgstr "Заменить несовпадающие установленные пиксели цветами включённого шаблона. Пустые пиксели останутся без изменений."
+
+msgid "Color palette"
+msgstr "Палитра"
+
+msgid "No history backups are configured; rollback is unavailable."
+msgstr "Резервные копии истории не настроены; откат недоступен."
+
+msgid "Fix pixels using enabled template colors"
+msgstr "Исправить пиксели, используя цвета включённых шаблонов."
+
+msgid "Timelapse"
+msgstr "Таймлапс"
+
+msgid "User area sections"
+msgstr "Разделы личного кабинета"
+
+msgid "Click to customize your profile banner"
+msgstr "Нажмите, чтобы настроить баннер профиля"
+
+msgid "Change or remove avatar"
+msgstr "Изменить или удалить аватар"
+
+msgid "Daily rating"
+msgstr "Рейтинг за день"
+
+msgid "Total rating"
+msgstr "Общий рейтинг"
+
+msgid "Pixels today"
+msgstr "Пикселей за сегодня"
+
+msgid "Pixels placed"
+msgstr "Установлено пикселей"
+
+msgid "Discord account linked successfully."
+msgstr "Аккаунт Discord успешно привязан."
+
+msgid "Connect your Discord account"
+msgstr "Привяжите аккаунт Discord"
+
+msgid "Discord is optional for gameplay, required for staff/VIP."
+msgstr "Для игры Discord не обязателен, но требуется для персонала и VIP."
+
+msgid "Link Discord!"
+msgstr "Привязать Discord!"
+
+msgid "Change Nickname"
+msgstr "Изменить никнейм"
+
+msgid "Your rating"
+msgstr "Ваш рейтинг"
+
+msgid "Loading Converter..."
+msgstr "Загрузка конвертера..."
+
+msgid "Loading ModTools..."
+msgstr "Загрузка инструментов модерации..."
+
+msgid "2x Speed (0.5s / 0.25s VIP, 1h)"
+msgstr "Скорость 2× (0,5 с / 0,25 с VIP, 1 ч)"
+
+msgid "Chaos (0.2s / 0.1s VIP, 30m)"
+msgstr "Хаос (0,2 с / 0,1 с VIP, 30 мин)"
+
+msgid "Ultra (0.1s / 0.05s VIP, 15m)"
+msgstr "Ультра (0,1 с / 0,05 с VIP, 15 мин)"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Ban information"
+msgstr "Информация о бане"
+
+msgid "Ban by ID (BANID)"
+msgstr "Бан по ID (BANID)"
+
+msgid "Ban by IID (BANIID)"
+msgstr "Бан по IID (BANIID)"
+
+msgid "Unban"
+msgstr "Разбанить"
+
+msgid "Add to whitelist"
+msgstr "Добавить в белый список"
+
+msgid "Remove from whitelist"
+msgstr "Удалить из белого списка"
+
+msgid "Give CAPTCHA"
+msgstr "Выдать CAPTCHA"
+
+msgid "Change username"
+msgstr "Изменить имя пользователя"
+
+msgid "List online users"
+msgstr "Список пользователей онлайн"
+
+msgid "Search alternate accounts"
+msgstr "Найти связанные аккаунты"
+
+msgid "Check flag"
+msgstr "Проверить флаг"
+
+msgid "Check linked accounts"
+msgstr "Проверить связанные аккаунты"
+
+msgid "Check IID"
+msgstr "Проверить IID"
+
+msgid "Check proxy"
+msgstr "Проверить прокси"
+
+msgid "ModTools"
+msgstr "Инструменты модерации"
+
+msgid "Link Discord ID"
+msgstr "Привязать Discord ID"
+
+msgid "Give Notification"
+msgstr "Отправить уведомление"
+
+msgid "Unlink Discord account"
+msgstr "Отвязать аккаунт Discord"
+
+msgid "Emperor (VIP++)"
+msgstr "Император (VIP++)"
+
+msgid "Prince (VIP)"
+msgstr "Принц (VIP)"
+
+msgid "King (VIP+)"
+msgstr "Король (VIP+)"
+
+msgid "30d / 12h / permanent"
+msgstr "30д / 12ч / бессрочно"

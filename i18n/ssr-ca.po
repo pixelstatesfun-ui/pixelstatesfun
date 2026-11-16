@@ -1,0 +1,1000 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-03 06:30+0000\n"
+"Last-Translator: TheCat13 <thecat13@noreply.pixelplanet.fun>\n"
+"Language-Team: Catalan <https://translate.gs-os.com/projects/ppfun/server/ca/"
+">\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+msgid "1bit"
+msgstr "1bit"
+
+msgid "2bit"
+msgstr "2bit"
+
+msgid "3D Canvas"
+msgstr "Llenç 3D"
+
+msgid "A 3D globe of our whole map"
+msgstr "Un globus 3D del nostre mapa sencer"
+
+msgid ""
+"A canvas for the most active players from the the previous day. Daily "
+"ranking updates at 00:00 UTC."
+msgstr ""
+"Un llenç per als jugadors més actius del dia anterior. La classificació "
+"diària s'actualitza a les 00:00 UTC."
+
+msgid "A file was too large"
+msgstr "Un fitxer era massa gran"
+
+msgid "Access modtools"
+msgstr "Accedeix a les eines de moderador"
+
+msgid "Add Application"
+msgstr "Afegeix l'Aplicació"
+
+msgid "Add an Application (OIDC Client)"
+msgstr "Afegeix una Aplicació (Client OIDC)"
+
+msgid "Add new application"
+msgstr "Afegeix una aplicació nova"
+
+msgid "An error occured. Please try again later."
+msgstr "S'ha produït un error. Si us plau, torna-ho a intentar més tard."
+
+msgid "Application changed successfully"
+msgstr "L'aplicació s'ha canviat amb èxit"
+
+msgid "Application deleted"
+msgstr "L'aplicació s'ha suprimit"
+
+msgid "Application successfully added"
+msgstr "L'aplicació s'ha afegit amb èxit"
+
+msgid "Avatar can only be an image"
+msgstr "L'avatar ha de ser una imatge"
+
+msgid "Avatar not given or not an image"
+msgstr "L'avatar no ha estat proporcionat o no és una imatge"
+
+msgid "Black and White canvas"
+msgstr "Llenç en Blanc i Negre"
+
+msgid "Can not change a role above your own"
+msgstr "No pots canviar un rol superior al teu"
+
+msgid "Can not change a role that is equal to your own"
+msgstr "No pots canviar un rol igual al teu"
+
+msgid "Can not change the default setting of this role"
+msgstr "No pots canviar la configuració predeterminada d'aquest rol"
+
+msgid "Can not change the powerlevel of a role equal or above you"
+msgstr "No pots canviar el nivell de poder d'un rol igual o superior al teu"
+
+msgid "Can not change the powerlevel of the Sovereign"
+msgstr "No pots canviar el nivell de poder del Sobirà"
+
+msgid "Can not chat while being banned"
+msgstr "No pots xatejar mentre estàs banejat"
+
+msgid "Can not create a role on the same level as yours"
+msgstr "No pots crear un rol amb el mateix nivell que el teu"
+
+msgid "Can not create a role with a powerlevel beyond yours"
+msgstr "No pots crear un rol amb més nivell que el teu"
+
+msgid "Can not delete a role on the same level as yours"
+msgstr "No pots suprimir un rol amb el mateix nivell que el teu"
+
+msgid "Can not delete this role"
+msgstr "No pots suprimir aquest rol"
+
+msgid "Can not elevate the powerlevel of a role beyond yours"
+msgstr "No pots elevar el nivell de poder d'un rol més enllà del teu"
+
+msgid "Can not elevate the powerlevel of a role to yours"
+msgstr "No pots elevar el nivell de poder d'un rol al teu"
+
+#, javascript-format
+msgid "Can not have more than ${ MAX_ROLES_PER_FACTION } faction roles"
+msgstr "No es poden tenir més de ${ MAX_ROLES_PER_FACTION } rols de facció"
+
+msgid "Can not have more than 20 invites per faction"
+msgstr "No es poden tenir més de 20 invitacions per facció"
+
+msgid "Can not modify user equal to you or above you"
+msgstr "No pots modificar un usuari igual o superior a tu"
+
+#. when leaving a faction and you are the last owner
+msgid "Can not orphan a faction"
+msgstr "No es pot deixar una facció orfe"
+
+#, javascript-format
+msgid ""
+"Can not upload this many files at once, only 5 are allowed, you have $"
+"{ amountOfFiles }"
+msgstr ""
+"No es poden pujar tants fitxers alhora, només se'n permeten 5, tens $"
+"{ amountOfFiles }"
+
+msgid "Can only have one Sovereign role"
+msgstr "Només es pot tenir un rol Sobirà"
+
+msgid "Click here"
+msgstr "Clica aquí"
+
+msgid "Click to Verify"
+msgstr "Clica per Verificar"
+
+msgid "Client Name"
+msgstr "Nom de Client"
+
+msgid "Confirm New Password"
+msgstr "Confirma la Contrasenya Nova"
+
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas!"
+msgstr ""
+"Conquereix territori en una Terra més petita amb els oceans protegits. "
+"Comparteix refredament amb el llenç de la Terra!"
+
+msgid "Consent"
+msgstr "Consentiment"
+
+msgid "Coronavirus"
+msgstr "Coronavirus"
+
+msgid "Could not change the flag of this role"
+msgstr "No s'ha pogut canviar la bandera d'aquest rol"
+
+msgid "Could not change this setting. Maybe try again later."
+msgstr ""
+"No s'ha pogut canviar aquesta configuració. Potser torna a provar-ho més "
+"tard."
+
+msgid "Could not close this Session."
+msgstr "No s'ha pogut tancar aquesta Sessió."
+
+msgid "Could not find this login method"
+msgstr "No s'ha pogut trobar aquest mètode d'inici de sessió"
+
+msgid "Could not leave this channel"
+msgstr "No s'ha pogut sortir d'aquest canal"
+
+msgid "Could not set this factions avatar"
+msgstr "No s'ha pogut establir l'avatar d'aquesta facció"
+
+msgid "Could not set your avatar"
+msgstr "No s'ha pogut establir el teu avatar"
+
+msgid "Could not set your faction role"
+msgstr "No s'ha pogut establir el teu rol de facció"
+
+msgid "Could not upload all files"
+msgstr "No s'han pogut pujar tots els fitxers"
+
+msgid "Couldn't find this mail in our database"
+msgstr "No hem pogut trobar aquest correu electrònic a la nostra base de dades"
+
+msgid "Default"
+msgstr "Per defecte"
+
+msgid "Delete Application"
+msgstr "Suprimeix l'Aplicació"
+
+msgid "Description can't be empty"
+msgstr "La descripció no pot estar buida"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "La descripció ha de tenir menys de 1000 caràcters"
+
+msgid "Display name for your OIDC client"
+msgstr "Nom de visualització pel teu client OIDC"
+
+msgid "Double click on globe to go back."
+msgstr "Fes doble clic al globus per tornar i aterrar on pitgis."
+
+msgid "E-Mail already in use."
+msgstr "El correu electrònic ja està en ús."
+
+msgid "Earth"
+msgstr "Terra"
+
+msgid "Edit existing applications"
+msgstr "Edita aplicacions ja existents"
+
+msgid "Email can't be empty."
+msgstr "Has d'omplir el correu electrònic."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "El correu electrònic no pot contenir més de 40 caràcters."
+
+msgid "Email should at least contain a dot"
+msgstr "El correu electrònic ha de contenir com a mínim un punt"
+
+msgid "Email should be at least 5 characters long."
+msgstr "El correu electrònic ha de comptar, com a mínim, amb 5 caràcters."
+
+msgid "Email should contain a @"
+msgstr "El correu electrònic ha de contenir una @"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Failed to create a new user :("
+msgstr "No s'ha pogut crear un usuari nou :("
+
+#, javascript-format
+msgid ""
+"File ${ filename } has ${ sizeMB } MB and is too large. It may only be $"
+"{ MAX_FILE_SIZE_MB } MB"
+msgstr ""
+"El fitxer ${ filename } té ${ sizeMB } MB i és massa gran. Només pot ser "
+"fins a ${ MAX_FILE_SIZE_MB } MB"
+
+#, javascript-format
+msgid "File ${ filename } has an invalid extension"
+msgstr "El fitxer ${ filename } té una extensió invàlida"
+
+msgid "File is broken"
+msgstr "El fitxer està trencat"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid ""
+"Generate a new client_secret. The old secret will become invalid immediately."
+msgstr ""
+"Genera un nou client_secret. El secret antic esdevindrà invàlid "
+"immediatament."
+
+msgid "Get email address"
+msgstr "Obtén l'adreça de correu electrònic"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Obtén la quantitat de Píxels col·locats i la classificació"
+
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgstr ""
+"Diverteix-te i no dubtis de contactar amb nosaltres si tens cap problema :)"
+
+msgid "Hello"
+msgstr "Hola"
+
+#, javascript-format
+msgid "Hello ${ email }, you can set your new password here:"
+msgstr "Hola ${ email }, pots establir la teva contrasenya nova aquí:"
+
+#, javascript-format
+msgid "Hello ${ name }"
+msgstr "Hola ${ name }"
+
+msgid ""
+"If this was you, please ignore this email. If it wasn't you, please go to <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> and log-out any session "
+"that you are unaware of under \"Login Methods\" in the User Area and change "
+"your password."
+msgstr ""
+"Si has estat tu, ignora aquest correu. Si no has estat tu, ves a <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> i tanca qualsevol "
+"sessió que desconeguis a \"Mètodes d'inici de sessió\" a l'Àrea d'Usuari i "
+"canvia la contrasenya."
+
+#, javascript-format
+msgid ""
+"If you did not request this mail, please just ignore it (the ip that "
+"requested this mail was ${ ip })."
+msgstr ""
+"Si no has sol·licitat aquest correu electrònic, si us plau ignora'l (la IP "
+"que va sol·licitar aquest correu era ${ ip })."
+
+msgid "Incorrect password"
+msgstr "Contrasenya incorrecta"
+
+msgid "Invalid type of media"
+msgstr "Tipus de fitxer multimèdia invàlid"
+
+msgid "Invalid url :( Please check your mail again."
+msgstr ""
+"URL invàlida :( Si us plau, comprova el teu correu electrònic un altre cop."
+
+msgid "Just admins can do that"
+msgstr "Només els administradors poden fer això"
+
+msgid "Just janny, mod or admin can do that"
+msgstr "Només els janny, mods i admins poden fer-ho"
+
+msgid "Just mods and admins can do that"
+msgstr "Només els mods i admins poden fer-ho"
+
+msgid "Know that an account exists"
+msgstr "Saber que un compte existeix"
+
+#. "scopes" is a technical term and should not be translated
+msgid "List of available scopes"
+msgstr "Llista de scopes disponibles"
+
+msgid "Loading..."
+msgstr "Carregant..."
+
+msgid "Login from new location on PixelPlanet"
+msgstr "Inicia la sessió des d'una nova ubicació a PixelPlanet"
+
+msgid "Login is required"
+msgstr "Cal iniciar sessió"
+
+msgid "Mail is already in use!"
+msgstr "Aquest correu ja està en ús!"
+
+msgid "Mail is not configured on the server"
+msgstr "Aquest correu no està configurat al servidor"
+
+msgid "Mail verification"
+msgstr "Verificació del correu electrònic"
+
+msgid "MimeType or extension not known or supported"
+msgstr "Tipus MIME o extensió no conegut/da o no compatible"
+
+#, javascript-format
+msgid "Mimetype ${ mimeType } of file ${ filename } is invalid or not allowed"
+msgstr ""
+"El tipus MIME ${ mimeType } del fitxer ${ filename } és invàlid o no està "
+"permès"
+
+msgid "Minimap"
+msgstr "Minimapa"
+
+msgid "Mirror of PixelCanvas"
+msgstr "Mirall de PixelCanvas"
+
+msgid "Mirror of PixelZone"
+msgstr "Mirall de PixelZone"
+
+msgid "Moon"
+msgstr "Lluna"
+
+msgid ""
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
+msgstr ""
+"Llenç de la Lluna. Espai segur per a l'art. No es poden fer banderes ni text "
+"gran (tret que siguin part d'un art) ni imatges superiors a 1,5k x 1,5k "
+"píxels."
+
+msgid "Name already in use."
+msgstr "Aquest nom ja està en ús."
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "El nom només pot contenir els caràcters: a-z . _ i -"
+
+msgid "Name can't be empty."
+msgstr "El nom és obligatori."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "El nom conté caràcters invalids com:  @   /   \\   #"
+
+msgid "Name is too long"
+msgstr "El nom és massa llarg"
+
+msgid "Name must be at least 2 characters long"
+msgstr "El nom ha de ser com a mínim de 2 caràcters"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "El nom no pot tenir més de 26 caràcters"
+
+msgid "Name or Email does not exist!"
+msgstr "El Nom o Correu no existeix!"
+
+msgid "New Password"
+msgstr "Contrasenya nova"
+
+msgid "No Avatar given"
+msgstr "No s'ha proporcionat cap Avatar"
+
+msgid "No Captcha given"
+msgstr "No s'ha rebut el captcha"
+
+msgid "No or invalid fish id."
+msgstr "No hi ha id de peix o és invàlid."
+
+msgid "No password given."
+msgstr "No s'ha escrit una contrasenya."
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "No redirect_uris given."
+msgstr "No s'ha proporcionat cap redirect_uris."
+
+msgid "No such badge found"
+msgstr "No s'ha trobat aquesta insígnia"
+
+msgid "No such fish found"
+msgstr "No s'ha trobat aquest peix"
+
+msgid "One redirect URIs per line"
+msgstr "Un redirect URIs per línia"
+
+msgid "One redirect_uri per line"
+msgstr "Un redirect_uri per línia"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Only five redirect_uris are allowed per client"
+msgstr "Només es permeten cinc redirect_uris per client"
+
+msgid "Only four colors. Same rules as moon!"
+msgstr "Només quatre colors. Les mateixes regles que a la lluna!"
+
+msgid "OpenID Connect specs"
+msgstr "Especificacions d'OpenID Connect"
+
+msgid "Or by copying following url:"
+msgstr "O copiant la següent URL:"
+
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr ""
+"El nostre llenç principal, un enorme mapa del món. Col·loca per allà on "
+"vulguis!"
+
+msgid "Password must be at least 6 characters long."
+msgstr "La contrasenya ha de tenir 6 caràcters com a mínim."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "La contrasenya ha de tenir menys de 60 caràcters."
+
+msgid "Password successfully changed."
+msgstr "La contrasenya ha sigut reemplaçada amb èxit."
+
+msgid "Permission"
+msgstr "Permís"
+
+msgid "PixelCanvas"
+msgstr "PixelCanvas"
+
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "Globus 3D de PixelPlanet.Fun"
+
+msgid "PixelZone"
+msgstr "PixelZone"
+
+#, javascript-format
+msgid ""
+"Pixelplanet fulfills the OpenID Connect (OIDC) specifications. So an "
+"application that supports OIDC could ask for consent and login using "
+"pixelplanet accounts. The required endpoints can be auto-discovered via the $"
+"{ wellKnownUrl } URL."
+msgstr ""
+"Pixelplanet compleix les especificacions OpenID Connect (OIDC). Per tant, "
+"una aplicació que admeti OIDC podria demanar consentiment i iniciar sessió "
+"utilitzant comptes de pixelplanet. Els punts finals requerits es poden "
+"descobrir automàticament a través de l'URL ${ wellKnownUrl }."
+
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "Col·loca Voxels en un llenç 3D amb altres jugadors."
+
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr ""
+"Pinta amb píxels de colors en un gran llenç amb altres jugadors en línia"
+
+msgid "Please try again."
+msgstr "Sisplau torna a intentar-ho."
+
+msgid "Please use int channel"
+msgstr "Si us plau, utilitza el canal \"int\""
+
+msgid "Read Badges and fishes"
+msgstr "Llegeix Insígnies i peixos"
+
+msgid "Read name, username and account age"
+msgstr "Llegeix el nom, el nom d'usuari i l'edat del compte"
+
+msgid "Redirect URIs"
+msgstr "Redirect URIs"
+
+msgid "Regularly update this data"
+msgstr "Actualitza aquestes dades regularment"
+
+msgid "Request stalled"
+msgstr "Sol·licitud estancada"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid "Reroll client_secret"
+msgstr ""
+
+msgid "Reset Password"
+msgstr "Restablir la contrasenya"
+
+msgid "Reset your password here"
+msgstr "Restableix la teva contrasenya aquí"
+
+msgid "Role flag can only be an image"
+msgstr "La bandera de rol ha de ser una imatge"
+
+msgid "Role flag needs to be 16x11"
+msgstr "La bandera del rol ha de ser de 16x11"
+
+msgid "Server Error"
+msgstr "Error del Servidor"
+
+msgid "Server error while deleting user."
+msgstr "Error del servidor en suprimir l'usuari."
+
+msgid "Someone logged into your account from a new location, with the IP:"
+msgstr ""
+"Algú ha iniciat la sessió al teu compte des d'una nova ubicació, amb la IP:"
+
+msgid "Space-separated list of available scopes"
+msgstr "Llista separada per espais dels scopes disponibles"
+
+msgid ""
+"Space-separated list of default scopes, they will be used on requests if no "
+"other scope is given."
+msgstr ""
+"Llista separada per espais dels scopes predeterminats, s'utilitzaran en "
+"sol·licituds si no es proporciona cap altre scope."
+
+#. 'scope' is used as a technical term here, do not translate that word
+msgid ""
+"Space-separated list of default scopes, they will be used on requests where "
+"no other scope is given."
+msgstr ""
+"Llista separada per espais dels scopes predeterminats, s'utilitzaran en "
+"sol·licituds on no es proporciona cap altre scope."
+
+msgid "Space-separated list of scopes that should be available"
+msgstr "Llista separada per espais dels scopes que haurien d'estar disponibles"
+
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr "Llenç especial per conscienciar sobre el SARS-CoV-2 (vacuna't)."
+
+msgid "Stop flooding."
+msgstr "Calma't una mica."
+
+msgid "Submit"
+msgstr "Envia"
+
+msgid "Thanks"
+msgstr "Gràcies"
+
+#, javascript-format
+msgid "The file ${ filename } is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr ""
+"El fitxer ${ filename } està prohibit ${ reason }. ID de prohibició: $"
+"{ mbid }"
+
+msgid "The user owning this badge is private"
+msgstr "L'usuari propietari d'aquesta insígnia és privat"
+
+msgid "The user owning this fish is private"
+msgstr "L'usuari propietari d'aquest peix és privat"
+
+msgid "This application is not allowed to login"
+msgstr "Aquesta aplicació no té permís per iniciar sessió"
+
+msgid "This application redirects to an unallowed page"
+msgstr "Aquesta aplicació redirigeix a una pàgina no autoritzada"
+
+msgid "This application sent a faulty login request with no redirection"
+msgstr ""
+"Aquesta aplicació ha enviat una sol·licitud d'inici de sessió defectuosa "
+"sense cap redirecció"
+
+msgid "This application uses a PKCE method we do not support"
+msgstr "Aquesta aplicació utilitza un mètode PKCE que no admetem"
+
+msgid "This application uses a login method we do not support"
+msgstr "Aquesta aplicació utilitza un mètode d'inici de sessió que no admetem"
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function below to set a new password. In the future, consider not installing "
+"malware, Thank You."
+msgstr ""
+"Aquesta combinació de correu electrònic / contrasenya ha estat piratejada i "
+"filtrada. Per protegir aquest compte, s'ha restablert la contrasenya. "
+"Sisplau, utilitza la funció \"He oblidat la meva contrasenya\" a continuació "
+"per establir una nova contrasenya. En el futur, considera no instal·lar "
+"malware, gràcies."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"Aquesta combinació de correu electrònic / contrasenya ha estat piratejada i "
+"filtrada. Per protegir aquest compte, s'ha restablert la contrasenya. "
+"Sisplau, utilitza la funció \"He oblidat la meva contrasenya\" a la pàgina "
+"d'inici de sessió per establir una nova contrasenya. En el futur, considera "
+"no instal·lar malware, gràcies."
+
+msgid "This email provider is not allowed"
+msgstr "Aquest proveïdor de correu electrònic no està permès"
+
+msgid "This faction does not exist"
+msgstr "Aquesta facció no existeix"
+
+msgid "This faction is full"
+msgstr "Aquesta facció està plena"
+
+msgid "This faction is private"
+msgstr "Aquesta facció és privada"
+
+#, javascript-format
+msgid "This media is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr ""
+"Aquest tipus de fitxer està prohibit ${ reason }. ID de prohibició: ${ mbid }"
+
+msgid "This password-reset link isn't valid anymore :("
+msgstr "Aquest enllaç per restablir la contrasenya ja no és vàlid :("
+
+msgid "This user has not password set"
+msgstr "Aquest usuari no té contrasenya"
+
+msgid "This user is private"
+msgstr "Aquest usuari és privat"
+
+msgid "Title can't be empty."
+msgstr "El títol no pot estar buit."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "El títol conté algun caràcter invàlid com @, /, \\ o #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "El títol ha de tenir 2 caràcters com a mínim"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "El títol ha de tenir menys de 26 caràcters"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Too many or too long redirect_uris"
+msgstr "Hi ha massa redirect_uris o són massa llargs"
+
+msgid "Top10"
+msgstr "Top10"
+
+msgid "Unknown Captcha Error"
+msgstr "Error Desconegut del Captcha"
+
+#, javascript-format
+msgid "Unknown field ${ name } in request"
+msgstr "Camp desconegut ${ name } a la petició"
+
+msgid "Update Application"
+msgstr "Actualitza l'Aplicació"
+
+msgid "User ID and verification level"
+msgstr "ID d'usuari i nivell de verificació"
+
+msgid "User doesn't exist in our database :("
+msgstr "L'usuari no existeix a la nostra base de dades :("
+
+msgid "Username already in use."
+msgstr "El nom d'usuari ja està en ús."
+
+msgid "Username can not start with pp_"
+msgstr "El nom d'usuari no pot començar amb pp_"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "El nom d'usuari només pot contenir els caràcters: a-z . _ i -"
+
+msgid "Username can't be empty."
+msgstr "El nom d'usuari és obligatori."
+
+msgid "Username must be at least 2 characters long"
+msgstr "El nom d'usuari ha de contenir 2 caràcters com a mínim"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "El nom d'usuari ha de tenir menys de 26 caràcters"
+
+msgid ""
+"We already sent you a mail with instructions. Please wait before requesting "
+"another mail."
+msgstr ""
+"Ja t'hem enviat un correu electrònic amb les instruccions. Si us plau, "
+"espera abans de sol·licitar un altre correu."
+
+#, javascript-format
+msgid ""
+"We already sent you a verification mail, you can request another one in $"
+"{ minLeft } minutes."
+msgstr ""
+"Ja t'hem enviat un correu electrònic de verificació abans. Pots sol·licitar-"
+"ne un altre en ${ minLeft } minuts."
+
+msgid "We currently do not allow file uploads"
+msgstr "Actualment no permetem pujar fitxers"
+
+#, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
+msgstr ""
+"Benvingut ${ name } a PixelPlanet, si us plau verifica el teu correu "
+"electrònic"
+
+msgid "You already chose your username"
+msgstr "Ja has triat el teu nom d'usuari"
+
+msgid "You already have that name."
+msgstr "Ja tens aquest nom."
+
+msgid "You are already part of this faction"
+msgstr "Ja ets part d'aquesta facció"
+
+msgid "You are already verified."
+msgstr "Ja estàs verificat."
+
+msgid "You are banned from this faction"
+msgstr "Estàs banejat d'aquesta facció"
+
+#, javascript-format
+msgid "You are muted for another ${ timeMin } minutes"
+msgstr "Estàs silenciat ${ timeMin } minuts més"
+
+#, fuzzy, javascript-format
+msgid "You are muted for another ${ ttl } seconds"
+msgstr "Estàs silenciat ${ ttl } segons més"
+
+msgid "You are not allowed to access this page"
+msgstr "No tens permís per accedir a aquesta pàgina"
+
+msgid "You are not banned"
+msgstr "No estàs banejat"
+
+msgid "You are not logged in"
+msgstr "No has iniciat sessió"
+
+msgid "You are now verified :)"
+msgstr "Ja estàs verificat :)"
+
+msgid "You are permanently muted, join our guilded to appeal the mute"
+msgstr ""
+"Estàs permanentment silenciat, uneix-te al nostre Guilded per apel·lar el "
+"mute"
+
+#, javascript-format
+msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
+msgstr "Estàs enviant missatges massa ràpid, has d'esperar ${ waitTime }s :("
+
+msgid "You attached too many files"
+msgstr "Has adjuntat masses fitxers"
+
+msgid ""
+"You can not delete this login method, because you have nothing else left."
+msgstr ""
+"No pots suprimir aquest mètode d'inici de sessió, perquè no et queda res més."
+
+msgid "You can not register an account while you are banned"
+msgstr "No pots registrar un compte mentre estiguis banejat"
+
+msgid "You can not register an account with a proxy"
+msgstr "No pots registrar un compte amb un proxy"
+
+msgid "You can not send chat messages while using a proxy"
+msgstr "No pots enviar missatges al xat mentre estiguis utilitzant “proxys”"
+
+#, javascript-format
+msgid ""
+"You can only be owner of ${ MAX_OWNED_FACTIONS_PER_USER } factions in total"
+msgstr ""
+"Només pots ser propietari de ${ MAX_OWNED_FACTIONS_PER_USER } faccions en "
+"total"
+
+#, javascript-format
+msgid "You can only have ${ MAX_FACTIONS_PER_USER } factions in total"
+msgstr "Només pots tenir ${ MAX_FACTIONS_PER_USER } faccions en total"
+
+msgid ""
+"You can register your own application here to get the client_id and "
+"client_secret needed to make use of this."
+msgstr ""
+"Pots registrar la teva pròpia aplicació aquí per obtenir el client_id i el "
+"client_secret necessaris per fer-ne ús."
+
+msgid "You can't send a message this long :("
+msgstr "No pots enviar un missatge tan llarg :("
+
+msgid "You did not provide all necessary information"
+msgstr "No has proporcionat tota la informació necessària"
+
+msgid ""
+"You do not have any email adress set. Please add one under \"Login Methods\"."
+msgstr ""
+"No tens cap adreça de correu electrònic establerta. Afegeix-ne una a "
+"«Mètodes d'Inici de Sessió»."
+
+msgid "You don't have access to this channel"
+msgstr "No tens accés a aquest canal"
+
+msgid "You failed your captcha"
+msgstr "Has fallat el captcha"
+
+msgid "You forgot your password for PixelPlanet? Get a new one here"
+msgstr "Has oblidat la teva contrasenya de PixelPlanet? Obtén una de nova aquí"
+
+msgid "You have to fill out all fields"
+msgstr "Has d'omplir tots els camps"
+
+msgid "You must be logged in to access this page"
+msgstr "Has d'iniciar sessió per accedir a aquesta pàgina"
+
+msgid "You need an invite to join this faction"
+msgstr "Necessites una invitació per unir-te a aquesta facció"
+
+#. "scope" is a technical term and should not be translated
+msgid "You need to define a valid scope"
+msgstr "Has de definir un scope vàlid"
+
+msgid "You need to directly access this page in the browser :("
+msgstr "Has d'accedir directament a aquesta pàgina en el navegador :("
+
+#, javascript-format
+msgid "You reached your maximum upload quota of ${ MAX_USER_MEDIA_SIZE_MB } MB"
+msgstr ""
+"Has arribat a la quota màxima de pujades de ${ MAX_USER_MEDIA_SIZE_MB } MB"
+
+msgid ""
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
+msgstr ""
+"Has sol·licitat obtenir una nova contrasenya. Pots canviar la teva "
+"contrasenya durant els propers 30 minuts aquí: "
+
+msgid "You sent an empty password or invalid data :("
+msgstr "La contrasenya o dades que has enviat són invàlides :("
+
+msgid "You took too long, try again"
+msgstr "Has trigat massa temps, torna-ho a provar"
+
+msgid "You will be automatically redirected after 15s"
+msgstr "Seràs redirigit automàticament al cap de 15 segons"
+
+msgid "Your Browser looks shady"
+msgstr "El teu Navegador sembla sospitós"
+
+msgid ""
+"Your account must be at least two weeks old before you can create a faction"
+msgstr ""
+"El teu compte ha de tenir almenys dues setmanes abans de poder crear una "
+"facció"
+
+msgid "Your account needs to be verified to access this page"
+msgstr "Cal verificar el teu compte per accedir a aquesta pàgina"
+
+msgid "Your country is temporary muted from this chat channel"
+msgstr "El teu país està silenciat temporalment en aquest canal de xat"
+
+msgid "Your device looks weird"
+msgstr "El teu dispositiu sembla estrany"
+
+msgid "Your mail has to be verified in order to chat"
+msgstr "S'ha de verificar el correu electrònic per poder xatejar"
+
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"El codi de verificació del correu electrònic no és vàlid o ja ha caducat :"
+"( si us plau sol·licita'n un de nou."
+
+msgid "Your passwords do not match :("
+msgstr "Les contrasenyes no coincideixen :("
+
+#. This media is banned xyz
+msgid "because it is propaganda"
+msgstr "perquè és propaganda"
+
+#. This media is banned xyz
+msgid "for being an attempt to scam people"
+msgstr "per ser un intent d'estafar la gent"
+
+#. This media is banned xyz
+msgid "for being degenerate"
+msgstr "per ser degenerat"
+
+#. This media is banned xyz
+msgid "for containing CSAM"
+msgstr "per contenir CSAM"
+
+#. This media is banned xyz
+msgid "for containing graphic violence"
+msgstr "per contenir violència gràfica"
+
+#. This media is banned xyz
+msgid "for containing personal information"
+msgstr "per contenir informació personal"
+
+#. This media is banned xyz
+msgid "for glorifying terrorism"
+msgstr "per glorificar el terrorisme"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "redirect_uris does not look legit"
+msgstr "els redirect_uris no semblen legítims"
+
+msgid "to go back to pixelplanet"
+msgstr "per tornar a PixelPlanet"
+
+msgid ""
+"welcome to our little community of pixelplacers, to use your account, you "
+"have to verify your mail. You can do that here: "
+msgstr ""
+"benvingut a la nostra petita comunitat de col·locadors de píxels. Per "
+"utilizar el teu compte, has de verificar el teu correu electrònic. Pots fer-"
+"ho aquí: "
+
+#~ msgid "Incorrect password!"
+#~ msgstr "Contrasenya incorrecta!"
+
+#~ msgid "You are banned"
+#~ msgstr "Has sigut vetat"
+
+#~ msgid "Your Internet Provider is banned"
+#~ msgstr "El teu proveïdor d'internet està vetat"
+
+#~ msgid "ppfun"
+#~ msgstr "ppfun"
+
+#~ msgid "PixelPlanet.Fun PopUp"
+#~ msgstr "Finestra emergent de PixelPlanet.fun"
+
+#~ msgid "PixelPlanet.Fun"
+#~ msgstr "PixelPlanet.Fun"
+
+#~ msgid "PixelPlanet.fun Password Reset"
+#~ msgstr "Restablir la contrasenya de PixelPlanet.fun"
+
+#, javascript-format
+#~ msgid "Hello ${ name }, you can set your new password here:"
+#~ msgstr "Hola ${ name }, pots configurar la teva nova contrasenya aquí:"
+
+#~ msgid "You took too long, try again."
+#~ msgstr "Has trigat massa, prova-ho un altre cop."
+
+#~ msgid "Failed to create new user :("
+#~ msgstr "No s'ha pogut crear un nou usuari :("
+
+#~ msgid "Failed to establish session after register :("
+#~ msgstr "No s'ha pogut establir la sessió després del registre :("
+
+#~ msgid "You are not even logged in."
+#~ msgstr "Ni tan sols has iniciat sessió."
+
+#, fuzzy
+#~ msgid "Server error when logging out."
+#~ msgstr "S'ha produït un error del servidor"
+
+#~ msgid "You are not authenticated."
+#~ msgstr "No estàs verificat."
+
+#~ msgid "PixelPlanet.fun Accounts"
+#~ msgstr "Comptes de PixelPlanet.fun"
+
+#, javascript-format
+#~ msgid "Or ${ clickHere } to go back to pixelplanet"
+#~ msgstr "O ${ clickHere } per tornar a PixelPlanet"
+
+#~ msgid "Ow no! Spam protection decided to mute you"
+#~ msgstr "Oh no! La protecció contra l'spam ha decidit silenciar-te"
+
+#~ msgid ""
+#~ "This passwort reset link is wrong or already expired, please request a "
+#~ "new one (Note: you can use those links just once)"
+#~ msgstr ""
+#~ "Aquest enllaç de restabliment de la contrasenya és incorrecte o ja ha "
+#~ "caducat, si us plau sol·licita'n un de nou (nota: només pots utilitzar "
+#~ "aquests enllaços un cop)"
+
+#~ msgid "No captcha text given"
+#~ msgstr "No has introduït el text pel captcha"
+
+#~ msgid "No captcha id given"
+#~ msgstr "No s'ha rebut la id del captcha"

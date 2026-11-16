@@ -1,0 +1,365 @@
+:root {
+  --control-bg-selected: #c1c1c1;
+  --control-bg-highlight: #dedede;
+  --control-bg: #a6a4a4;
+  --menu-bg: rgba(169, 169, 169, 0.95);
+}
+
+a:link {
+  color: #91ffe0;
+}
+
+a:visited {
+  color: #b5d06d;
+}
+
+a:hover {
+  color: #d9f68a;
+}
+
+.modallink {
+  color: #91ffe0;
+}
+
+.modallink:hover {
+  color: #d9f68a;
+}
+
+.inarea {
+  border-color: #d5d5d5;
+}
+
+.menu, .menuelement {
+  border-radius: 8px;
+}
+
+.deletelistitem.selected {
+  background-color: #8c5e5e;
+}
+
+.deletelistitem.unselected:hover {
+  background-color: #7d5f5f;
+}
+
+.tab-list-item {
+  color: #e2e2e2; 
+}
+.tab-list-item.active {
+  background-color: #7b7b7b;
+  color: white;
+}
+.tab-list-item:not(.active):hover {
+  background-color: #636363;
+}
+
+tr:nth-child(even) {
+  background-color: #505050;
+}
+
+.window, .popup {
+  background-color: rgba(59, 59, 59, 0.98);
+  color: #ff8c22;
+}
+.window {
+  border-radius: 4px;
+}
+
+.win-title {
+  color: #8a5007;
+}
+
+.win-topbtn:hover {
+  background-color: #8b8b8b;
+}
+
+.actionbuttons, .coorbox, .onlinebox, .cooldownbox, .historyselect {
+  background-color: rgba(27, 27, 27, 0.8);
+  color: #ffd4ae;
+  border-radius: 15px;
+}
+
+#pencilbutton.ppencil {
+  background-color: rgba(131, 147, 19, 0.8);
+}
+#pencilbutton.phistory {
+  background-color: rgba(31, 84, 111, 0.8);
+}
+#pencilbutton.poverlay {
+  background-color: rgba(117, 31, 31, 0.8);
+}
+
+.modal, .Alert, .popup-modal {
+  background: #262626 none repeat scroll 0 0;;
+  color: #ff8c22;
+}
+
+.modal, .popup-modal {
+  border-radius: 15px;
+}
+
+.popup-fsbtn {
+  color: #666363;
+  border-radius: 0 15px 0 0;
+  background: linear-gradient(45deg, transparent 0%, transparent 50%, #373636 60%);
+}
+.popup-fsbtn:hover {
+  color: #bfb9b9;
+}
+
+.Alert {
+  border-radius: 10px;
+}
+
+.modal-content, .win-content, .popup-content, .baninfo {
+  color: #f8f8f8;
+}
+
+h3, h4 {
+  color: #f38826;
+}
+
+.modaldesc {
+  color: hsl(0, 0%, 88%);
+}
+
+.modaldivider {
+  background-color: hsla(216, 4%, 74%, .3);
+}
+
+.modalinfo, .tmpitm-desc span {
+  color: #ddd;
+}
+
+.modalcvtext, .tmpitm-desc {
+  color: hsla(220, 100%, 95.3%, 0.6);
+}
+
+.overlay {
+  background-color: rgba(187, 187, 187, 0.75);
+}
+
+.chatname {
+  background-color: #3e4143;
+}
+.mention {
+  background-color: #4a4642;
+}
+.chatmsg:hover {
+  background-color: #2525252b;
+}
+.msg {
+  color: #f3f3f3;
+}
+.msg.info{
+  color: #ff91a6;
+}
+.msg.event{
+  color: #9dc8ff;
+}
+.msg.greentext{
+  color: #94ff94;
+}
+.mdlink-button {
+  color: #fff4bd;
+}
+
+.chatlink {
+  color: #f9edde;
+}
+
+.statvalue {
+  color: #ecc9ff;
+}
+
+.actionbuttons:hover, .onlinebox:hover, .coorbox:hover {
+  background-color: rgba(71, 71, 71, 0.8);
+}
+
+.c-last-hour {
+  color: lime;
+}
+
+/* Keep core controls rounded and legible in every theme. */
+button,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea,
+.window,
+.popup,
+.popup-content,
+.modal-content,
+.menu,
+.menuelement,
+.channeldd,
+.channeldd-button,
+.setitem,
+.chatinput,
+.att-button,
+.att-redbutton {
+  border-radius: 12px;
+}
+
+.userarea-panel,
+.userarea-stat,
+.faction-requirement {
+  border-radius: 14px;
+}
+
+:root {
+  --control-bg: #272e38;
+  --control-bg-highlight: #343e4c;
+  --control-bg-selected: #39475a;
+  --control-txt-color: #edf2f7;
+  --caption-txt-color: #bdc7d2;
+  --border-seperator-color: #485464;
+  --menu-bg: rgba(31, 37, 46, 0.98);
+  --button-bg-pressed: #415368;
+  --pixelstates-surface: #20262f;
+  --pixelstates-raised: #2a323e;
+  --pixelstates-hover: #374252;
+  --pixelstates-border: #485464;
+  --pixelstates-text: #edf2f7;
+  --pixelstates-muted: #bdc7d2;
+  --pixelstates-accent: #8ccaff;
+}
+
+button,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea,
+.menu,
+.menuelement,
+.setitem,
+.channeldd,
+.channeldd-button,
+.chatinput,
+.att-button,
+.att-redbutton {
+  background-color: var(--pixelstates-raised);
+  border-color: var(--pixelstates-border);
+  color: var(--pixelstates-text);
+}
+
+.window,
+.popup,
+.modal,
+.Alert,
+.popup-modal,
+.modal-content,
+.win-content,
+.popup-content,
+.userarea-panel,
+.userarea-stat,
+.faction-requirement {
+  background-color: var(--pixelstates-surface);
+  border-color: var(--pixelstates-border);
+  color: var(--pixelstates-text);
+}
+
+.actionbuttons,
+.coorbox,
+.onlinebox,
+.cooldownbox,
+.historyselect,
+#palettebox {
+  background-color: var(--pixelstates-raised);
+  border: 1px solid var(--pixelstates-border);
+  color: var(--pixelstates-text);
+}
+
+.menu.MAIN {
+  background: var(--pixelstates-surface);
+  border: 1px solid var(--pixelstates-border);
+  color: var(--pixelstates-text);
+}
+
+.menu.MAIN > .menuelement {
+  background: var(--pixelstates-raised);
+  border-color: var(--pixelstates-border);
+  color: var(--pixelstates-text);
+}
+
+.menu.MAIN > .menuelement.selected,
+.menu.MAIN > .menuelement:hover,
+.actionbuttons:hover,
+.onlinebox:hover,
+.coorbox:hover,
+button:hover {
+  background-color: var(--pixelstates-hover);
+}
+
+.userarea-tabs button.active,
+.faction-tabs button.active,
+.tab-list-item.active {
+  background-color: var(--pixelstates-hover);
+  border-color: var(--pixelstates-accent);
+  color: var(--pixelstates-text);
+}
+
+.userarea-hero {
+  background: linear-gradient(135deg, var(--pixelstates-raised), var(--pixelstates-surface));
+  color: var(--pixelstates-text);
+}
+
+.userarea-avatar {
+  border-color: var(--pixelstates-border);
+  background-color: var(--pixelstates-raised);
+  color: var(--pixelstates-muted);
+}
+
+.modaldesc,
+.modalinfo,
+.modalcvtext,
+.tmpitm-desc,
+.tmpitm-desc span {
+  color: var(--pixelstates-muted);
+}
+
+h2,
+h3,
+h4,
+.win-title {
+  color: var(--pixelstates-accent);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--pixelstates-muted);
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--pixelstates-accent);
+  outline-offset: 2px;
+}
+
+.userarea-identity .userarea-name {
+  color: #fff;
+}
+
+.templates-area > h2 {
+  color: #fff;
+}
+
+:root {
+  --settings-tab-bg: var(--pixelstates-raised);
+  --settings-tab-hover: var(--pixelstates-hover);
+  --settings-tab-active: var(--pixelstates-hover);
+  --settings-tab-indicator: var(--pixelstates-accent);
+}
+
+.settings-category-tab,
+.settings-category-tab.selected,
+.settings-category-tab.selected:hover,
+.userarea-tabs button.active,
+.faction-tabs button.active,
+.statistics-tabs button.active,
+.faction-subtabs button.active,
+.tab-list-item.active,
+.vip-customize-tabs button.active {
+  background-color: var(--pixelstates-hover);
+  border-color: var(--pixelstates-accent);
+  color: var(--pixelstates-text);
+}

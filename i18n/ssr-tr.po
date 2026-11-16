@@ -1,0 +1,991 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-04-18 20:25+0000\n"
+"Last-Translator: qaghan <qaghan@noreply.pixelplanet.fun>\n"
+"Language-Team: Turkish <https://translate.gs-os.com/projects/ppfun/server/tr/"
+">\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+msgid "1bit"
+msgstr "1bit"
+
+msgid "2bit"
+msgstr "2bit"
+
+msgid "3D Canvas"
+msgstr "3B Tuval"
+
+msgid "A 3D globe of our whole map"
+msgstr "Tüm haritamızın 3 boyutlu küresi"
+
+msgid ""
+"A canvas for the most active players from the the previous day. Daily "
+"ranking updates at 00:00 UTC."
+msgstr ""
+"Geçen günün en etkin oyuncuları için yapılmış bir tuval. Sıralama her gün "
+"UTC 00.00'da güncellenir."
+
+msgid "A file was too large"
+msgstr "Bir dosya fazla büyüktü"
+
+msgid "Access modtools"
+msgstr "Moderatör araçlarına eriş"
+
+msgid "Add Application"
+msgstr "Aplikasyon ekle"
+
+msgid "Add an Application (OIDC Client)"
+msgstr "Aplikasyon Ekle (OIDC Client)"
+
+msgid "Add new application"
+msgstr "Yeni bir aplikasyon ekle"
+
+msgid "An error occured. Please try again later."
+msgstr "Bİr hata oluştu. Lütfen başka bir zaman deneyin."
+
+msgid "Application changed successfully"
+msgstr "Aplikasyon başarıyla değiştirildi"
+
+msgid "Application deleted"
+msgstr "Aplikasyon silindi"
+
+msgid "Application successfully added"
+msgstr "Aplikasyon başarıyla eklendi"
+
+msgid "Avatar can only be an image"
+msgstr "Avatar yalnızca bir görsel olabilir"
+
+msgid "Avatar not given or not an image"
+msgstr "Avatar sağlanmadı ya da görsel değil"
+
+msgid "Black and White canvas"
+msgstr "Siyah beyaz tuval"
+
+msgid "Can not change a role above your own"
+msgstr "Kendi rolünden yüksek roller değiştirilemez"
+
+msgid "Can not change a role that is equal to your own"
+msgstr "Kendi rolüne denk roller değiştirilemez"
+
+msgid "Can not change the default setting of this role"
+msgstr "Bu rolün varsayılan ayarları değiştirilemez"
+
+msgid "Can not change the powerlevel of a role equal or above you"
+msgstr "Kendi rolünden yüksek bir rolün güç düzeyi değiştirilemez"
+
+msgid "Can not change the powerlevel of the Sovereign"
+msgstr "Egemenin güç düzeyi değiştirilemez"
+
+msgid "Can not chat while being banned"
+msgstr "Banın varken konuşamazsın"
+
+msgid "Can not create a role on the same level as yours"
+msgstr "Kendi rolüne denk bir rol oluşturamazsın"
+
+msgid "Can not create a role with a powerlevel beyond yours"
+msgstr "Kendi rolünden yüksek güç düzeyinde bir rol oluşturulamaz"
+
+msgid "Can not delete a role on the same level as yours"
+msgstr "Kendi rolüne denk bir rol silinemez"
+
+msgid "Can not delete this role"
+msgstr "Bu rol silinemez"
+
+msgid "Can not elevate the powerlevel of a role beyond yours"
+msgstr "Bir rolün güç düzeyi kendi rolününkini aşacak şekilde değiştirilemez"
+
+msgid "Can not elevate the powerlevel of a role to yours"
+msgstr ""
+"Bir rolün güç düzeyi kendi rolününkine eşit olacak şekilde değiştirilemez"
+
+#, javascript-format
+msgid "Can not have more than ${ MAX_ROLES_PER_FACTION } faction roles"
+msgstr ""
+
+msgid "Can not have more than 20 invites per faction"
+msgstr "Örgüt başı 20'den fazla davet linki bulunamaz"
+
+msgid "Can not modify user equal to you or above you"
+msgstr "Kendine denk veya kendinden yüksek kullanıcılar düzenlenemez"
+
+#. when leaving a faction and you are the last owner
+msgid "Can not orphan a faction"
+msgstr "Örgüt başıboş bırakılamaz"
+
+#, javascript-format
+msgid ""
+"Can not upload this many files at once, only 5 are allowed, you have $"
+"{ amountOfFiles }"
+msgstr ""
+"Aynı anda bu sayıda dosya yüklenilemez, sınır 5'tir, sizdeki ise $"
+"{ amountOfFiles }"
+
+msgid "Can only have one Sovereign role"
+msgstr "Yalnız bir Egemen rolü bulunabilir"
+
+msgid "Click here"
+msgstr "Buraya tıklayarak"
+
+msgid "Click to Verify"
+msgstr "Doğrulamak için Tıkla"
+
+msgid "Client Name"
+msgstr "Client Adı"
+
+msgid "Confirm New Password"
+msgstr "Yeni Parolayı Onayla"
+
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas!"
+msgstr ""
+"Okyanusun korunduğu bu küçük dünyada fetihler yapın. Bu tuval Dünya tuvali "
+"ile bekleme süresini paylaşır!"
+
+msgid "Consent"
+msgstr "İzin"
+
+msgid "Coronavirus"
+msgstr "Koronavirüs"
+
+msgid "Could not change the flag of this role"
+msgstr "Rol bayrağı değiştirilemedi"
+
+msgid "Could not change this setting. Maybe try again later."
+msgstr "Ayar değiştirilemedi. Belki daha sonra tekrar deneyin."
+
+msgid "Could not close this Session."
+msgstr "Oturum kapatılamadı."
+
+msgid "Could not find this login method"
+msgstr "Giriş yöntemi bulunamadı"
+
+msgid "Could not leave this channel"
+msgstr "Kanaldan ayrılınamadı"
+
+msgid "Could not set this factions avatar"
+msgstr "Örgüt avatarı ayarlanamadı"
+
+msgid "Could not set your avatar"
+msgstr "Avatarınız ayarlanamadı"
+
+msgid "Could not set your faction role"
+msgstr "Örgüt rolünüz ayarlanamadı"
+
+msgid "Could not upload all files"
+msgstr "Dosyaların tümü yüklenemedi"
+
+msgid "Couldn't find this mail in our database"
+msgstr "Bu e-posta adresini veritabanımızda bulamadık"
+
+msgid "Default"
+msgstr "Varsayılan"
+
+msgid "Delete Application"
+msgstr "Uygulamayı Sil"
+
+msgid "Description can't be empty"
+msgstr "Açıklama boş bırakılamaz"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "Açıklama 1000 karakterden kısa olmalıdır"
+
+msgid "Display name for your OIDC client"
+msgstr "OIDC client'ı için görünen ad"
+
+msgid "Double click on globe to go back."
+msgstr "Küreye çift tıklayarak geri dönün."
+
+msgid "E-Mail already in use."
+msgstr "Bu e-posta adresi kullanılıyor."
+
+msgid "Earth"
+msgstr "Dünya"
+
+msgid "Edit existing applications"
+msgstr "Var olan uygulamaları düzenle"
+
+msgid "Email can't be empty."
+msgstr "E-posta adresi boş olamaz."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "E-postanız 40 karakterden uzun olamaz."
+
+msgid "Email should at least contain a dot"
+msgstr "E-postanız en az bir nokta içermelidir"
+
+msgid "Email should be at least 5 characters long."
+msgstr "E-postanız en az 5 karakterden oluşmalıdır."
+
+msgid "Email should contain a @"
+msgstr "E-postanız @ içermelidir"
+
+msgid "Error"
+msgstr "Hata"
+
+msgid "Failed to create a new user :("
+msgstr "Yeni kullanıcı oluşturulamadı :("
+
+#, javascript-format
+msgid ""
+"File ${ filename } has ${ sizeMB } MB and is too large. It may only be $"
+"{ MAX_FILE_SIZE_MB } MB"
+msgstr ""
+"Dosya ${ filename } ${ sizeMB } MB boyutunda ve fazla büyük. En fazla $"
+"{ MAX_FILE_SIZE_MB } MB olabilir"
+
+#, javascript-format
+msgid "File ${ filename } has an invalid extension"
+msgstr "Dosya ${ filename } geçersiz bir uzantıya sahip"
+
+msgid "File is broken"
+msgstr "Dosya bozuk"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid ""
+"Generate a new client_secret. The old secret will become invalid immediately."
+msgstr "Yeni bir client_secret oluştur. Eski secret anında geçersiz olacaktır."
+
+msgid "Get email address"
+msgstr "E-posta adresini al"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Yerleştirilen Pixel sayısını ve sıralamayı al"
+
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgstr ""
+"Eğlenmene bak ve herhangi bir sıkıntı yaşarsan bize ulaşmaktan çekinme :)"
+
+msgid "Hello"
+msgstr "Esenlikler"
+
+#, javascript-format
+msgid "Hello ${ email }, you can set your new password here:"
+msgstr "Esenlikler ${ email }, yeni parolanızı buradan ayarlayabilirsiniz:"
+
+#, javascript-format
+msgid "Hello ${ name }"
+msgstr "Esenlikler ${ name }"
+
+msgid ""
+"If this was you, please ignore this email. If it wasn't you, please go to <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> and log-out any session "
+"that you are unaware of under \"Login Methods\" in the User Area and change "
+"your password."
+msgstr ""
+"Eğer bu sizdiyseniz, bu e-postayı görmezden gelin. Eğer değildiyseniz, "
+"lütfen <a href=\"https://pixelplanet.fun\">pixelplanet.fun</a> adresine "
+"gidin ve Kullanıcı Alanı'ndan \"Giril Yöntemleri\" altındaki farkında "
+"olmadığınız oturumlardan çıkın ve ardından parolanızı değiştirin."
+
+#, javascript-format
+msgid ""
+"If you did not request this mail, please just ignore it (the ip that "
+"requested this mail was ${ ip })."
+msgstr ""
+"Eğer bu e-postayı siz istemediyseniz lütfen görmezden gelin (bunu isteyen "
+"ip: ${ ip })."
+
+msgid "Incorrect password"
+msgstr ""
+
+msgid "Invalid type of media"
+msgstr "Geçersiz medya türü"
+
+msgid "Invalid url :( Please check your mail again."
+msgstr "Geçersiz bağlantı :( Lütfen e-postanızı yeniden kontrol ediniz."
+
+msgid "Just admins can do that"
+msgstr "Bunu yalnızca yöneticiler yapabilir"
+
+msgid "Just janny, mod or admin can do that"
+msgstr "Yalnızca jannyler, modlar ve adminler bunu yapabilir"
+
+msgid "Just mods and admins can do that"
+msgstr "Yalnızca modlar ve adminler bunu yapabilir"
+
+msgid "Know that an account exists"
+msgstr "Hesap varlığından haberdar ol"
+
+#. "scopes" is a technical term and should not be translated
+msgid "List of available scopes"
+msgstr "Mevcut scopes listesi"
+
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+msgid "Login from new location on PixelPlanet"
+msgstr "Pixelplanet üzerinde bir konumdan giriş"
+
+msgid "Login is required"
+msgstr "Giriş zorunludur"
+
+msgid "Mail is already in use!"
+msgstr "E-posta adresi zaten kullanmakta!"
+
+msgid "Mail is not configured on the server"
+msgstr "E-posta sunucuda yapılandırılmamış"
+
+msgid "Mail verification"
+msgstr "E-posta adresi doğrulaması"
+
+msgid "MimeType or extension not known or supported"
+msgstr "MimeType veya uzantı bilinmiyor veya desteklenmiyor"
+
+#, javascript-format
+msgid "Mimetype ${ mimeType } of file ${ filename } is invalid or not allowed"
+msgstr "${ filename } dosyasının ${ mimeType } mimetype'ı geçersiz veya yasak"
+
+msgid "Minimap"
+msgstr "Küçük Harita"
+
+msgid "Mirror of PixelCanvas"
+msgstr "PixelCanvas'ın aynası"
+
+msgid "Mirror of PixelZone"
+msgstr "PixelZone'un aynası"
+
+msgid "Moon"
+msgstr "Ay"
+
+msgid ""
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
+msgstr ""
+"Ay tuvali. Eserler için güvenilir bir yer. Bayraklar, büyük yazılar veya "
+"1500x1500'den büyük eserler yasaktır."
+
+msgid "Name already in use."
+msgstr "Ad zaten kullanılmakta."
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "Ad yalnızca bu karakterleri içerebilir: a-z . _ ve -"
+
+msgid "Name can't be empty."
+msgstr "Kullanıcı adınız boş olamaz."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr ""
+"Kullanıcı adınız @, /, \\ veya # gibi geçersiz karakterler bulunduruyor"
+
+msgid "Name is too long"
+msgstr "Ad fazla uzun"
+
+msgid "Name must be at least 2 characters long"
+msgstr "Kullanıcı adınız en az 2 karakterden oluşmalıdır"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "Kullanıcı adınız 26 karakterden az olmalıdır"
+
+msgid "Name or Email does not exist!"
+msgstr "Ad veya E-posta yok!"
+
+msgid "New Password"
+msgstr "Yeni Parola"
+
+msgid "No Avatar given"
+msgstr "Herhangi bir Avatar verilmedi"
+
+msgid "No Captcha given"
+msgstr "Captcha girilmedi"
+
+msgid "No or invalid fish id."
+msgstr "Balık id'si boş veya geçersiz."
+
+msgid "No password given."
+msgstr "Bir parola girilmedi."
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "No redirect_uris given."
+msgstr "Herhangi bir redirect_uri verilmedi."
+
+msgid "No such badge found"
+msgstr "Rozet bulunamadı"
+
+msgid "No such fish found"
+msgstr "Balık bulunamadı"
+
+msgid "One redirect URIs per line"
+msgstr "Satır başına bir redirect URI"
+
+msgid "One redirect_uri per line"
+msgstr "Satır başına bir redirect_uri"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Only five redirect_uris are allowed per client"
+msgstr "Client başına yalnızca beş redirect_uri'a izin verilir"
+
+msgid "Only four colors. Same rules as moon!"
+msgstr "Yalnızca dört renk. Ay ile aynı kurallar!"
+
+msgid "OpenID Connect specs"
+msgstr "OpenID Connect spesifikasyonu"
+
+msgid "Or by copying following url:"
+msgstr "Veya bağlantıyı kopyalayarak:"
+
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr ""
+"Ana tuvalimiz, devasa bir dünya haritası. İstediğin yere piksel atabilirsin!"
+
+msgid "Password must be at least 6 characters long."
+msgstr "Parolanız en az 6 karakterden oluşmalıdır."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "Parolanız 60 karakterden kısa olmalıdır."
+
+msgid "Password successfully changed."
+msgstr "Parolanız başarıyla değiştirildi."
+
+msgid "Permission"
+msgstr "İzin"
+
+msgid "PixelCanvas"
+msgstr "PixelCanvas"
+
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "PixelPlanet.Fun 3BKüre"
+
+msgid "PixelZone"
+msgstr "PixelZone"
+
+#, javascript-format
+msgid ""
+"Pixelplanet fulfills the OpenID Connect (OIDC) specifications. So an "
+"application that supports OIDC could ask for consent and login using "
+"pixelplanet accounts. The required endpoints can be auto-discovered via the $"
+"{ wellKnownUrl } URL."
+msgstr ""
+"Pixelplanet OpenID Connect (OIDC) spesifikasyonlarına uymaktadır. Yani OIDC "
+"destekleyen bir uygulama pixelplanet hesapları ile izin alabilmektedir ve "
+"giriş yapabilmektedir. Gerekli endpointler ${ wellKnownUrl } URL'i ile auto-"
+"discover edilebilmektedir."
+
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "3B bir tuvalde diğer oyuncularla küpler yerleştirin."
+
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr ""
+"Diğer oyuncularla beraber harita tarzı tuvallerde renkli pikseller atın"
+
+msgid "Please try again."
+msgstr "Lütfen tekrar deneyin."
+
+msgid "Please use int channel"
+msgstr "Lütfen int kanalını kullanın"
+
+msgid "Read Badges and fishes"
+msgstr "Rozetleri ve balıkları gör"
+
+msgid "Read name, username and account age"
+msgstr "Ad, kullanıcı adı ve hesap yaşını gör"
+
+msgid "Redirect URIs"
+msgstr "Redirect URI'ları"
+
+msgid "Regularly update this data"
+msgstr "Düzenli olarak bu veriyi güncelle"
+
+msgid "Request stalled"
+msgstr "İstek duraksadı"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid "Reroll client_secret"
+msgstr "client_secret tekrar oluştur"
+
+msgid "Reset Password"
+msgstr "Parolayı Sıfırla"
+
+msgid "Reset your password here"
+msgstr "Parolanızı buradan sıfırlayabilirsiniz"
+
+msgid "Role flag can only be an image"
+msgstr "Rol bayrağı yalnızca görsel olabilmektedir"
+
+msgid "Role flag needs to be 16x11"
+msgstr "Rol bayrağı 16x11 olmak zorundadır"
+
+msgid "Server Error"
+msgstr "Sunucu Hatası"
+
+msgid "Server error while deleting user."
+msgstr "Kullanıcı silerken sunucu hatası."
+
+msgid "Someone logged into your account from a new location, with the IP:"
+msgstr "Birisi hesabınıza bu IP adresi ile yeni bir konumdan giriş yaptı:"
+
+msgid "Space-separated list of available scopes"
+msgstr "Mevcut scope'ların boşluklarla ayrılmış listesi"
+
+msgid ""
+"Space-separated list of default scopes, they will be used on requests if no "
+"other scope is given."
+msgstr ""
+"Varsayılan scope'ların boşluklarla ayrılmış listesi, bunlar yalnızca başka "
+"herhangi bir scope verilmediyse isteklerde kullanılacaktır."
+
+#. 'scope' is used as a technical term here, do not translate that word
+msgid ""
+"Space-separated list of default scopes, they will be used on requests where "
+"no other scope is given."
+msgstr ""
+"Varsayılan scope'ların boşluklarla ayrılmış listesi, bunlar yalnızca başka "
+"herhangi bir scope verilmediği zaman isteklerde kullanılacaktır."
+
+msgid "Space-separated list of scopes that should be available"
+msgstr "Mevcut olması gereken scope'ların boşluklarla ayrılmış listesi"
+
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr "Koronavirüs farkındalığını yaymak için özel olarak yapılan tuval."
+
+msgid "Stop flooding."
+msgstr "Flood yapmayı bırak."
+
+msgid "Submit"
+msgstr "Gönder"
+
+msgid "Thanks"
+msgstr "Sağ olun"
+
+#, javascript-format
+msgid "The file ${ filename } is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr ""
+"Dosya ${ filename }, ${ reason } nedeni ile yasaklandı. Ban ID'si: ${ mbid }"
+
+msgid "The user owning this badge is private"
+msgstr "Bu rozetin sahibi olan hesap gizlidir"
+
+msgid "The user owning this fish is private"
+msgstr "Bu balığın sahibi olan hesap gizlidir"
+
+msgid "This application is not allowed to login"
+msgstr "Bu uygulamanın giriş yapmasına izin verilmemektedir"
+
+msgid "This application redirects to an unallowed page"
+msgstr "Bu uygulama izin verilmeyen bir sayfaya yönlendirmektedir"
+
+msgid "This application sent a faulty login request with no redirection"
+msgstr "Bu uygulama yönlendirmesi olmayan bozuk bir istekte bulundu"
+
+msgid "This application uses a PKCE method we do not support"
+msgstr "Bu uygulama bizim desteklemediğimiz bir PKCE yöntemi kullanmaktadır"
+
+msgid "This application uses a login method we do not support"
+msgstr "Bu uygulama bizim desteklemediğimiz bir giriş yöntemi kullanmaktadır"
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function below to set a new password. In the future, consider not installing "
+"malware, Thank You."
+msgstr ""
+"Bu e-posta / parola kombinasyonu hacklenmiştir ve sızdırılmıştır. Hesabı "
+"koruyabilmek için parola sıfırlanmıştır. Lütfen aşağıdaki \"Parolamı "
+"unuttum\" tuşu ile yeni bir parola ayarlayın. Bundan sonrası için kötü "
+"amaçlı yazılım kurmamayı bir düşünün, teşekkürler."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"Bu e-posta / parola kombinasyonu hacklenmiştir ve sızdırılmıştır. Hesabı "
+"koruyabilmek için parola sıfırlanmıştır. Lütfen giriş sayfasındaki "
+"\"Parolamı unuttum\" tuşu ile yeni bir parola ayarlayın. Bundan sonrası için "
+"kötü amaçlı yazılım kurmamayı bir düşünün, teşekkürler."
+
+msgid "This email provider is not allowed"
+msgstr "Bu e-posta sağlayıcısına izin verilmiyor"
+
+msgid "This faction does not exist"
+msgstr "Böyle bir örgüt yok"
+
+msgid "This faction is full"
+msgstr "Bu örgüt dolu"
+
+msgid "This faction is private"
+msgstr "Bu örgüt gizlidir"
+
+#, javascript-format
+msgid "This media is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "Bu medya ${ reason } nedeniyle yasaklanmıştır. Ban ID'si: ${ mbid }"
+
+msgid "This password-reset link isn't valid anymore :("
+msgstr "Bu parola değiştirme bağlantısı artık geçerli değil :("
+
+msgid "This user has not password set"
+msgstr ""
+
+msgid "This user is private"
+msgstr "Bu kullanıcı gizlidir"
+
+msgid "Title can't be empty."
+msgstr "Başlık boş bırakılamaz."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "Başlık @, /, \\ veya # gibi geçersiz karakterler barındırıyor"
+
+msgid "Title must be at least 2 characters long"
+msgstr "Başlık en az 2 karakter uzunluğunda olmalıdır"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "Başlık 26 karakterden kısa olmalıdır"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Too many or too long redirect_uris"
+msgstr "Fazla sayıda veya fazla uzun redirect_uri"
+
+msgid "Top10"
+msgstr "Top10"
+
+msgid "Unknown Captcha Error"
+msgstr "Bilinmeyen Captcha Hatası"
+
+#, javascript-format
+msgid "Unknown field ${ name } in request"
+msgstr "İstekte bilinmeyen alan ${ name }"
+
+msgid "Update Application"
+msgstr "Uygulamayı Güncelle"
+
+msgid "User ID and verification level"
+msgstr "Kullanıcı ID'si ve doğrulama düzeyi"
+
+msgid "User doesn't exist in our database :("
+msgstr "Kullanıcı, veritabanımızda bulunamadı :("
+
+msgid "Username already in use."
+msgstr "Bu kullanıcı adı kullanılıyor."
+
+msgid "Username can not start with pp_"
+msgstr "Kullanıcı adı pp_ ile başlayamaz"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "Kullanıcı adı yalnızca a-z . _ ve - karakterleri barındırabilir"
+
+msgid "Username can't be empty."
+msgstr "Kullanıcı adı boş bırakılamaz."
+
+msgid "Username must be at least 2 characters long"
+msgstr "Kullanıcı adı en az 2 karakter uzunluğunda olmalıdır"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "Kullanıcı adı 26 karakterden kısa olmalıdır"
+
+msgid ""
+"We already sent you a mail with instructions. Please wait before requesting "
+"another mail."
+msgstr ""
+"Halihazırda talimatlar içeren bir posta gönderildi. Lütfen başka bir posta "
+"talep etmeden önce bekle."
+
+#, javascript-format
+msgid ""
+"We already sent you a verification mail, you can request another one in $"
+"{ minLeft } minutes."
+msgstr ""
+"Size önceden bir doğrulama e-postası yolladık, ${ minLeft } dakika sonra "
+"yenisini isteyebilirsiniz."
+
+msgid "We currently do not allow file uploads"
+msgstr "Şu anda dosya yüklemelerine izin vermemekteyiz"
+
+#, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
+msgstr ""
+"PixelPlanet'e hoş geldiniz ${ name }, lütfen e-posta adresinizi doğrulayın"
+
+msgid "You already chose your username"
+msgstr "Kullanıcı adınızı çoktan seçtiniz"
+
+msgid "You already have that name."
+msgstr "Bu ada zaten sahipsiniz."
+
+msgid "You are already part of this faction"
+msgstr "Bu örgütün zaten üyesisiniz"
+
+msgid "You are already verified."
+msgstr "Zaten doğrulanmışsınız."
+
+msgid "You are banned from this faction"
+msgstr "Bu örgütten yasaklandınız"
+
+#, javascript-format
+msgid "You are muted for another ${ timeMin } minutes"
+msgstr "${ timeMin } dakikalığına susturuldunuz"
+
+#, javascript-format
+msgid "You are muted for another ${ ttl } seconds"
+msgstr "${ ttl } saniyeliğine susturuldunuz"
+
+msgid "You are not allowed to access this page"
+msgstr "Bu sayfaya erişiminiz yok"
+
+msgid "You are not banned"
+msgstr "Yasaklı değilsiniz"
+
+msgid "You are not logged in"
+msgstr "Giriş yapmadınız"
+
+msgid "You are now verified :)"
+msgstr "Artık hesabın doğrulandı :)"
+
+msgid "You are permanently muted, join our guilded to appeal the mute"
+msgstr ""
+"Kalıcı olarak susturuldunuz, kaldırtılması için Guilded sunucumuza katılın"
+
+#, javascript-format
+msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
+msgstr "Çok hızlı ileti yolluyorsunuz, ${ waitTime }s beklemeniz gerekiyor :("
+
+msgid "You attached too many files"
+msgstr "Çok fazla dosya eklediniz"
+
+msgid ""
+"You can not delete this login method, because you have nothing else left."
+msgstr "Bu giriş yöntemini silemezsiniz çünkü elinizde tek kalandır."
+
+msgid "You can not register an account while you are banned"
+msgstr "Yasaklıyken yeni bir hesap kayıt edemezsiniz"
+
+msgid "You can not register an account with a proxy"
+msgstr "Bir vekil sunucuna bağlıyken yeni bir hesap kaydedemezsiniz"
+
+msgid "You can not send chat messages while using a proxy"
+msgstr "Proxy kullanırken sohbete ileti yollayamazsın"
+
+#, javascript-format
+msgid ""
+"You can only be owner of ${ MAX_OWNED_FACTIONS_PER_USER } factions in total"
+msgstr "En fazla ${ MAX_OWNED_FACTIONS_PER_USER } örgütün lideri olabilirsiniz"
+
+#, javascript-format
+msgid "You can only have ${ MAX_FACTIONS_PER_USER } factions in total"
+msgstr "En fazla ${ MAX_FACTIONS_PER_USER } örgütte olabilirsiniz"
+
+msgid ""
+"You can register your own application here to get the client_id and "
+"client_secret needed to make use of this."
+msgstr ""
+"Burada kendi uygulamanızı kaydederek uygulamanız için gerekli olan client_id "
+"ve client_secret değerlerini alabilirsiniz."
+
+msgid "You can't send a message this long :("
+msgstr "Bunca uzun bir ileti yollayamazsın :("
+
+msgid "You did not provide all necessary information"
+msgstr "Gerekli tüm bilgileri vermediniz"
+
+msgid ""
+"You do not have any email adress set. Please add one under \"Login Methods\"."
+msgstr ""
+"Bir e-posta adresiniz bulunmamaktadır. Lütfen \"Giriş Yöntemleri\" altında "
+"bir tane ekleyin."
+
+msgid "You don't have access to this channel"
+msgstr "Bu kanala erişiminiz yok"
+
+msgid "You failed your captcha"
+msgstr "Doğrulamayı yanlış çözdünüz"
+
+msgid "You forgot your password for PixelPlanet? Get a new one here"
+msgstr "PixelPlanet parolanı unuttun mu? Buradan yenisini al"
+
+msgid "You have to fill out all fields"
+msgstr "Tüm alanları doldurmalısınız"
+
+msgid "You must be logged in to access this page"
+msgstr "Bu sayfaya erişebilmek için giriş yapmış olmanız gerekmektedir"
+
+msgid "You need an invite to join this faction"
+msgstr "Bu örgüte katılabilmek için davete ihtiyacınız vardır"
+
+#. "scope" is a technical term and should not be translated
+msgid "You need to define a valid scope"
+msgstr "Geçerli bir scope tanımlamanız gerekmektedir"
+
+msgid "You need to directly access this page in the browser :("
+msgstr "Bu sayfaya tarayıcınızdan direkt olarak erişmeniz gerekmektedir :("
+
+#, javascript-format
+msgid "You reached your maximum upload quota of ${ MAX_USER_MEDIA_SIZE_MB } MB"
+msgstr "Maksimum yükleme kotanız ${ MAX_USER_MEDIA_SIZE_MB } MB'a ulaştınız"
+
+msgid ""
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
+msgstr ""
+"Yeni parola isteğinde bulundunuz. Parolanızı 30 dakika içinde buradan "
+"değiştirebilirsiniz: "
+
+msgid "You sent an empty password or invalid data :("
+msgstr "Boş parola ya da geçersiz veri yolladınız :("
+
+msgid "You took too long, try again"
+msgstr "İşiniz fazla uzun sürdü, tekrar deneyin"
+
+msgid "You will be automatically redirected after 15s"
+msgstr "15 saniye içerisinde otomatik olarak yönlendirileceksin"
+
+msgid "Your Browser looks shady"
+msgstr "Tarayıcınız şüpheli duruyor"
+
+msgid ""
+"Your account must be at least two weeks old before you can create a faction"
+msgstr "Örgüt oluşturabilmek için hesabınız en az iki haftalık olmalıdır"
+
+msgid "Your account needs to be verified to access this page"
+msgstr ""
+"Bu sayfaya erişebilmek için hesabınızın doğrulanmış olması gerekmektedir"
+
+msgid "Your country is temporary muted from this chat channel"
+msgstr "Ülkeniz geçici olarak susturuldu"
+
+msgid "Your device looks weird"
+msgstr ""
+
+msgid "Your mail has to be verified in order to chat"
+msgstr "Sohbet edebilmek için e-posta adresinizi onaylamanız gerekiyor"
+
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"Doğrulama kodunuz geçersiz ya da kodunuzun süresi geçmiş :(, lütfen yeniden "
+"istekte bulunun."
+
+msgid "Your passwords do not match :("
+msgstr "Parolalarınız uyuşmuyor :("
+
+#. This media is banned xyz
+msgid "because it is propaganda"
+msgstr "çünkü propagandadır"
+
+#. This media is banned xyz
+msgid "for being an attempt to scam people"
+msgstr "çünkü insanları dolandırma çabasıdır"
+
+#. This media is banned xyz
+msgid "for being degenerate"
+msgstr "çünkü dejeneredir"
+
+#. This media is banned xyz
+msgid "for containing CSAM"
+msgstr "çünkü çocuk pornosu içermektedir"
+
+#. This media is banned xyz
+msgid "for containing graphic violence"
+msgstr "çünkü şiddet görüntüsü içermektedir"
+
+#. This media is banned xyz
+msgid "for containing personal information"
+msgstr "çünkü kişisel bilgi içermektedir"
+
+#. This media is banned xyz
+msgid "for glorifying terrorism"
+msgstr "çünkü terörü yüceltmektedir"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "redirect_uris does not look legit"
+msgstr "redirect_uri geçerli durmuyor"
+
+msgid "to go back to pixelplanet"
+msgstr "pixelplanet'e dönün"
+
+msgid ""
+"welcome to our little community of pixelplacers, to use your account, you "
+"have to verify your mail. You can do that here: "
+msgstr ""
+"piksel atanlardan oluşan bu küçük topluluğumuza hoş geldiniz, hesabınızı "
+"kullanabilmek için e-posta adresini doğrulayın. Bunu buradan yapabilirsiniz: "
+
+#~ msgid "Please refresh the website"
+#~ msgstr "Lütfen sayfayı yenileyin"
+
+#~ msgid "Incorrect password!"
+#~ msgstr "Yanlış parola!"
+
+#~ msgid "Can not have more than 20 faction roles"
+#~ msgstr "20'den fazla örgüt rolü bulunamaz"
+
+#~ msgid "No file metadata given"
+#~ msgstr "Dosya üstverisi verilmedi"
+
+#~ msgid "You are banned"
+#~ msgstr "Yasaklısınız"
+
+#~ msgid "Your Internet Provider is banned"
+#~ msgstr "İnternet sağlayıcınız yasaklı"
+
+#~ msgid "ppfun"
+#~ msgstr "ppfun"
+
+#~ msgid "PixelPlanet.Fun PopUp"
+#~ msgstr "PixelPlanet.Fun PopUp"
+
+#~ msgid "PixelPlanet.Fun"
+#~ msgstr "PixelPlanet.Fun"
+
+#~ msgid "PixelPlanet.fun Password Reset"
+#~ msgstr "PixelPlanet.fun Parola Sıfırlama"
+
+#, javascript-format
+#~ msgid "Hello ${ name }, you can set your new password here:"
+#~ msgstr "Esenlikler ${ name }, parolanızı buradan ayarlayabilirsiniz:"
+
+#~ msgid "You took too long, try again."
+#~ msgstr "Çözmeniz çok sürdü, tekrar deneyiniz."
+
+#~ msgid "Failed to create new user :("
+#~ msgstr "Yeni kullanıcı oluşturulamadı :("
+
+#~ msgid "Failed to establish session after register :("
+#~ msgstr "Kayıttan sonra oturum oluşturulamadı :("
+
+#~ msgid "You are not even logged in."
+#~ msgstr "Daha oturum bile açmadınız."
+
+#~ msgid "Server error when logging out."
+#~ msgstr "Oturum kapatılırken sunucu hatası oluştu."
+
+#~ msgid "You are not authenticated."
+#~ msgstr "Kimliğiniz doğrulanamadı."
+
+#~ msgid "Muted Users can not delete their account."
+#~ msgstr "Susturulan kullanıcılar hesaplarını silemez."
+
+#~ msgid "Muted Users can not do this."
+#~ msgstr "Susturulan kullanıcılar bunu yapamaz."
+
+#~ msgid "PixelPlanet.fun Accounts"
+#~ msgstr "PixelPlanet.fun Hesapları"
+
+#, javascript-format
+#~ msgid "Or ${ clickHere } to go back to pixelplanet"
+#~ msgstr "Veya ${ clickHere } pixelplanet'e dönebilirsin"
+
+#~ msgid "Ow no! Spam protection decided to mute you"
+#~ msgstr "Olamaz! Spam koruması seni susturdu"
+
+#~ msgid ""
+#~ "This passwort reset link is wrong or already expired, please request a "
+#~ "new one (Note: you can use those links just once)"
+#~ msgstr ""
+#~ "Bu parola değiştirme bağlantısı yanlış veya çoktan sona erdi, lütfen yeni "
+#~ "bir talepte bulun (Not: bu bağlantıları tek seferlik kullanabilirsin)"
+
+#~ msgid "No captcha text given"
+#~ msgstr "Captcha metni girilmedi"
+
+#~ msgid "No captcha id given"
+#~ msgstr "Captcha id'si girilmedi"

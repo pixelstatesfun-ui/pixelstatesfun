@@ -1,0 +1,2306 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"PO-Revision-Date: 2026-10-08 07:07+0000\n"
+"Last-Translator: Ngvn <ngvn@noreply.pixelplanet.fun>\n"
+"Language-Team: Vietnamese <https://translate.gs-os.com/projects/ppfun/client/"
+"vi/>\n"
+"Language: vi\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid " which is in "
+msgstr " tức là sau "
+
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr "${ mouseSymbol } Nhấn giữ chuột trái và di chuyển chuột để xoay"
+
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr ""
+"${ mouseSymbol } Nhấp chuột trái hoặc ${ touchSymbol } chạm vào màn hình để "
+"đặt một pixel"
+
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr "${ mouseSymbol } Nhấp chuột phải và kéo chuột để di chuyển"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
+msgstr ""
+"${ mouseSymbol } Nhấp chuột phải hoặc ${ touchSymbol } chạm vào màn hình hai "
+"lần để xoá một pixel"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } Sử dụng con lăn của chuột hoặc nhấn giữ ${ mouseSymbol } "
+"nút giữa của chuột và kéo để phóng to"
+
+msgid "(0 = infinite)"
+msgstr "(0 = tô vô hạn)"
+
+msgid "(click a role to activate it)"
+msgstr "(chọn một vai trò để kích hoạt nó)"
+
+msgid "(click a role to assign or remove it)"
+msgstr "(chọn một vai trò để giao hoặc xóa nó)"
+
+msgid "+last hour"
+msgstr "+một tiếng trước"
+
+msgid "...loading Login methods and sessions..."
+msgstr "...đang tải các phương pháp và phiên đăng nhập..."
+
+msgid "A Phish!"
+msgstr "Là Ká kìa!"
+
+msgid ""
+"A flag representing the role, it should be 16x11 pixels. If left empty, "
+"users with this role selected will still show their own flags."
+msgstr ""
+"Một lá cờ đại diện cho vai trò, nên dùng ảnh kích thước 16x11 pixel. Nếu để "
+"trống, người dùng có vai trò trên sẽ hiện thị cờ của người dùng."
+
+msgid "A new verification mail is getting sent to you."
+msgstr "Một email xác thực đã được gửi cho bạn."
+
+msgid ""
+"A role has all the permissions of all levels below and equal to it. In "
+"example: Every role with a power level of >=50 can manage invites (50)."
+msgstr ""
+"Một vai trò sẽ có tất cả quyền hạn của mức quyền hạn thấp hơn hoặc bằng nó. "
+"Ví dụ: Tất cả vai trò với mức quyền hạn >= 50 có thể quản lí lời mời (50)."
+
+msgid "ACCESS MODTOOLS"
+msgstr "TRUY CẬP CÔNG CỤ MOD"
+
+#. modlogLink has the text "Moderation Log"
+#, javascript-format
+msgid ""
+"Actions taken by moderators on the canvas can be seen in the ${ modlogLink }."
+msgstr "Những hành động do mod trên khung vẽ có thể tìm thấy ở ${ modlogLink }."
+
+msgid "Add Grid (uncheck if you need a 1:1 template)"
+msgstr "Thêm lưới (không chọn nếu cần ảnh mẫu 1:1)"
+
+msgid "Add Template"
+msgstr "Thêm ảnh mẫu"
+
+msgid "Add a new E-Mail Address here:"
+msgstr "Thêm địa chỉ Email vào đây:"
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Admintools"
+msgstr "Công cụ quản trị"
+
+msgid "Age"
+msgstr "Tuổi"
+
+msgid "All members of this faction are hidden"
+msgstr "Tất cả thành viên trong nhóm đều đã bị ẩn"
+
+msgid "All sound effects will be disabled."
+msgstr "Tất cả hiệu ứng âm thanh đều bị vô hiệu hoá."
+
+msgid "Always show Movement Controls"
+msgstr "Luôn luôn hiện bảng phím điều hướng"
+
+msgid "Always show movement control buttons"
+msgstr "Luôn hiển thị phím điều hướng"
+
+msgid "An image representing your faction"
+msgstr "Một hình ảnh đại diện cho nhóm của bạn"
+
+msgid "Anti Aliasing"
+msgstr "Khử răng cưa"
+
+msgid "Apply a filter to clean trash in large canvas areas."
+msgstr "Áp dụng bộ lọc để làm sạch ở những khu vực của khung vẽ rộng lớn."
+
+msgid "Archive"
+msgstr "Lưu trữ"
+
+msgid "Assign Roles"
+msgstr "Cấp vai trò"
+
+msgid "Assign new Mod"
+msgstr "Chọn Mod mới"
+
+msgid "Assign role per default to new members"
+msgstr "Vai trò này là vai trò mặc định cho thành viên mới"
+
+msgid "Assign roles below their own"
+msgstr "Cấp vai trò thấp hơn bản thân"
+
+msgid "Assign this role to every new member automatically on join."
+msgstr "Cấp vai trò này cho mọi thành viên mới khi tham gia."
+
+msgid "Assigned role per default"
+msgstr "Mặc định cấp vai trò"
+
+msgid "Attach File"
+msgstr "Đính kèm tệp tin"
+
+msgid "Auto Zoom In"
+msgstr "Tự động phóng to"
+
+msgid "Avatar"
+msgstr "Ảnh đại diện"
+
+msgid "Back"
+msgstr "Quay lại"
+
+msgid "Badge Display"
+msgstr "Trưng bày huy hiệu"
+
+msgid "Badges"
+msgstr "Các huy hiệu"
+
+msgid "Ban"
+msgstr "Cấm"
+
+msgid "Ban media"
+msgstr "Cấm đa phương tiện"
+
+msgid "Ban members"
+msgstr "Cấm thành viên"
+
+msgid "Banned"
+msgstr "Bị cấm"
+
+msgid "Banned? Detected as Proxy?"
+msgstr "Bị cấm? Bị nhận diện là Proxy?"
+
+msgid "Bans"
+msgstr "Lệnh cấm"
+
+msgid "Block"
+msgstr "Chặn"
+
+msgid "Block DMs"
+msgstr "Chặn tin nhắn trực tiếp"
+
+msgid ""
+"Block all Private Messages. Enabling this will make it impossible for other "
+"users to start messaging you. You can still start new DMs with other users "
+"and already ongoing DMs will still be open."
+msgstr ""
+"Chặn mọi tin nhắn riêng tư. Kích hoạt cài đặt này sẽ làm cho người dùng khác "
+"không thể bắt đầu nhắn tin với bạn. Bạn vẫn có thể bắt đầu tin nhắn trực "
+"tiếp mới với người dùng khác và mọi những tin nhắn trực tiếp đang có vẫn sẽ "
+"mở."
+
+msgid "Blocked"
+msgstr "Đã bị chặn"
+
+msgid "Bottom-right corner"
+msgstr "Góc dưới bên phải"
+
+msgid "Build image and set it to protected."
+msgstr "Xây ảnh và đặt thành được bảo vệ."
+
+msgid "Build image on canvas."
+msgstr "Xây ảnh trên khung vẽ."
+
+msgid "Build image, but reset cooldown to unset-pixel cd."
+msgstr ""
+"Xây ảnh, nhưng đặt lại thời gian hồi 1 pixel về thời gian cho các pixel chưa "
+"được đặt."
+
+msgid "By Mod"
+msgstr "Bởi Mod"
+
+msgid "Calculate like GIMP"
+msgstr "Tính toán như GIMP"
+
+msgid "Can not export more than 20 or no template!"
+msgstr "Không thể xuất ra nhiều hơn 20 hoặc không có ảnh mẫu!"
+
+msgid "Can not import more than 20 or no template!"
+msgstr "Không thể nhập vào nhiều hơn 20 hoặc không có ảnh mẫu!"
+
+msgid "Can't read? Reload:"
+msgstr "Bạn không đọc được? Tải lại:"
+
+msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
+msgstr "Không thể kết xuất đồ họa 3D từ khung vẽ, bạn có đang tắt WebGL2?"
+
+msgid "Cancel"
+msgstr "Hủy"
+
+msgid "Cancel adding Template"
+msgstr "Huỷ thêm ảnh mẫu"
+
+msgid "Canvas"
+msgstr "Khung vẽ"
+
+msgid "Canvas Archive"
+msgstr "Lưu trữ khung vẽ"
+
+msgid "Canvas Cleaner"
+msgstr "Dọn Khung Vẽ"
+
+msgid "Canvas Error"
+msgstr "Lỗi khung vẽ"
+
+msgid "Canvas Selection"
+msgstr "Lựa chọn khung vẽ"
+
+msgid "Captcha"
+msgstr "Captcha"
+
+msgid "Caught by"
+msgstr "Được bắt bởi"
+
+msgid "Change Flag"
+msgstr "Đổi cờ"
+
+msgid "Change Happened"
+msgstr "Đã ghi nhận thay đổi"
+
+msgid "Change Name"
+msgstr "Đổi tên"
+
+msgid "Change Password"
+msgstr "Đổi mật khẩu"
+
+msgid "Channel"
+msgstr "Kênh"
+
+msgid "Channel settings"
+msgstr "Cài đặt kênh"
+
+msgid "Charts"
+msgstr "Biểu đồ"
+
+msgid "Chat"
+msgstr "Chat"
+
+msgid "Chat here"
+msgstr "Trò chuyện ở đây"
+
+msgid "Check out past versions of the canvas."
+msgstr "Xem phiên bản cũ của các khung vẽ."
+
+msgid "Check to allow"
+msgstr "Nhấn để cho phép"
+
+msgid "Check who placed in an area"
+msgstr "Kiểm tra ai đã đặt pixel trong 1 khu vực"
+
+msgid "Choose Canvas"
+msgstr "Chọn khung vẽ"
+
+msgid "Choose Color Mode"
+msgstr "Chọn chế độ màu"
+
+msgid "Choose Strategy"
+msgstr "Chọn phương pháp"
+
+msgid "Choose Username"
+msgstr "Chọn tên người dùng"
+
+msgid ""
+"Clean spare pixels that are surrounded by a single other color or unset "
+"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
+"two cooldowns)!)"
+msgstr ""
+"Xóa các pixel thừa được bao quanh bởi một màu khác hoặc các pixel chưa được "
+"đặt (QUY TRÌNH RẤT MẠNH MẼ TRÊN CÁC KHUNG VẼ CHO PHÉP CÓ PIXEL CHƯA ĐƯỢC ĐẶT "
+"(nơi có hai loại thời gian hồi pixel)!)"
+
+msgid "Clean spare pixels that are surrounded by unset pixels"
+msgstr "Xóa các pixel thừa được bao quanh bởi các pixel chưa được đặt"
+
+msgid ""
+"Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
+"pixels"
+msgstr ""
+"Xóa các pixel thừa được bao quanh bởi pixel chưa được đặt và tới 1 pixel "
+"được đặt khác"
+
+msgid "Cleaners can use 0cd blank colors."
+msgstr "Các trình dọn có thể dùng màu trống không-thời-gian-hồi."
+
+msgid "Clear"
+msgstr "Xóa"
+
+#, javascript-format
+msgid ""
+"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
+"select current hovering color"
+msgstr ""
+"Nhấn con lăn chuột ${ mouseSymbol } hoặc bấm giữ ${ touchSymbol } để chọn "
+"màu qua pixel"
+
+msgid "Click a color in palette to select it"
+msgstr "Nhấn vào một màu ở bảng màu để chọn"
+
+msgid "Click here to cease representation."
+msgstr "Nhấn vào đây để hủy đại diện cho nhóm."
+
+msgid "Click here to request a new verification mail."
+msgstr "Nhấn vào đây để yêu cầu một email xác thực mới."
+
+msgid "Click to Load Captcha"
+msgstr "Nhấn vào để tải Captcha"
+
+msgid "Click to remove"
+msgstr "Chọn để hủy bỏ"
+
+msgid "Clone"
+msgstr "Bản sao"
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Close Chat"
+msgstr "Đóng chat"
+
+msgid "Close Palette"
+msgstr "Đóng bảng màu"
+
+msgid "Compact Chat"
+msgstr "Chức năng chat nhỏ gọn"
+
+msgid "Compact Palette"
+msgstr "Bảng màu nhỏ gọn"
+
+msgid "Confirm"
+msgstr "Xác nhận"
+
+msgid "Confirm Ban"
+msgstr "Xác nhận cấm"
+
+msgid "Confirm Delete"
+msgstr "Xác nhận xoá"
+
+msgid "Confirm Kick"
+msgstr "Xác nhận khai trừ"
+
+msgid "Confirm Leave"
+msgstr "Xác nhận rời đi"
+
+msgid "Confirm New Password"
+msgstr "Xác nhận mật khẩu mới"
+
+msgid "Confirm Password"
+msgstr "Xác nhận mật khẩu"
+
+msgid "Confirm your password."
+msgstr "Xác nhận mật khẩu của bạn."
+
+#, javascript-format
+msgid "Connection error ${ code } :("
+msgstr "Lỗi kết nối ${ code } :("
+
+msgid "Consent"
+msgstr "Cho phép"
+
+msgid "Controls"
+msgstr "Các phím điều khiển"
+
+msgid "Convert an image to canvas colors"
+msgstr "Chuyển đổi 1 ảnh thành màu khung vẽ"
+
+msgid "Converter"
+msgstr "Bộ chuyển đổi màu"
+
+msgid "Cooldown"
+msgstr "Thời gian hồi 1 pixel"
+
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+"Thời gian hồi 1 pixel thường tự động thay đổi trong một quốc gia chiếm ưu "
+"thế. Ví dụ như một cuộc tấn công của một streamer."
+
+msgid "Coordinates"
+msgstr "Toạ độ"
+
+msgid "Coordinates:"
+msgstr "Toạ độ:"
+
+msgid "Copied"
+msgstr "Đã chép tọa độ"
+
+msgid "Copy"
+msgstr "Sao chép"
+
+msgid "Copy Link"
+msgstr "Sao chép liên lết"
+
+msgid "Copy Selected to Clipboard"
+msgstr "Sao chép phần đã chọn vào bảng nhớ tạm"
+
+msgid "Copy URL"
+msgstr "Sao chép URL"
+
+msgid "Copy UserId to Clipboard"
+msgstr "Sao chép mã số người dùng vào bảng nhớ tạm"
+
+msgid "Copy to Clipboard"
+msgstr "Sao chép vào bảng nhớ tạm"
+
+msgid "Could not connect to server"
+msgstr "Không thể kết nối vào máy chủ"
+
+msgid "Could not connect to server, please try again later :("
+msgstr "Không thể kết nối vào máy chủ, vui lòng thử lại sau :("
+
+msgid "Could not load captcha"
+msgstr "Không thể tải captcha"
+
+msgid "Could not process files"
+msgstr "Không thể xử lí các tệp"
+
+msgid "Couldn't set Pixel"
+msgstr "Không thể đặt pixel"
+
+msgid "Countries Today"
+msgstr "Các quốc gia hôm nay"
+
+msgid "Country"
+msgstr "Quốc gia"
+
+msgid "Create Faction"
+msgstr "Tạo nhóm"
+
+msgid "Create Invite"
+msgstr "Tạo lời mời"
+
+msgid "Create New Faction"
+msgstr "Tạo nhóm mới"
+
+msgid "Create New Invite"
+msgstr "Tạo lời mời mới"
+
+msgid "Create New Role"
+msgstr "Tạo vai trò mới"
+
+msgid "Create Role"
+msgstr "Tạo vai trò"
+
+msgid "Create roles"
+msgstr "Tạo các vai trò"
+
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "Bảng màu cho khung vẽ 2bit được lấy từ ${ donendoLink }."
+
+#, javascript-format
+msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
+msgstr "Bảng màu cho khung vẽ Mặt Trăng được lấy từ ${ starhouseLink }."
+
+#, javascript-format
+msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr "Bảng màu cho khung vẽ Top10 được lấy từ ${ vinikLink }."
+
+msgid "Current Cooldown Changes per Country"
+msgstr "Những thay đổi thời gian hồi 1 pixel hiện tại theo tửng quốc gia"
+
+msgid "Custom Cursor"
+msgstr "Con trỏ của web"
+
+msgid "Custom Flag"
+msgstr "Cờ tùy chỉnh"
+
+msgid "DM"
+msgstr "Nhắn tin trực tiếp"
+
+msgid "Daily Pixels"
+msgstr "Pixel hằng ngày"
+
+msgid "Daily Pixels per Country"
+msgstr "Pixel hằng ngày mỗi quốc gia"
+
+msgid "Daily Pixels per Faction"
+msgstr "Pixel hàng ngày mỗi nhóm"
+
+msgid "Daily Pixels per Player"
+msgstr "Pixel hàng ngày mỗi người chơi"
+
+msgid "Daily Rank"
+msgstr "Thứ hạng hàng ngày"
+
+msgid "Date of Award"
+msgstr "Ngày trao"
+
+msgid "Date of catch"
+msgstr "Ngày bắt được"
+
+msgid "Delete"
+msgstr "Xoá"
+
+msgid "Delete Account"
+msgstr "Xoá tài khoản"
+
+msgid "Delete Faction"
+msgstr "Xoá nhóm"
+
+msgid "Delete My Account"
+msgstr "Xóa tài khoản này"
+
+msgid "Delete the faction"
+msgstr "Xoá nhóm"
+
+msgid "Deny"
+msgstr "Từ chối"
+
+msgid "Description"
+msgstr "Phần mô tả"
+
+msgid "Description can't be empty"
+msgstr "Phần mô tả không thể để trống"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "Phần mô tả phải ngắn hơn 1000 ký tự"
+
+msgid "Description of your faction"
+msgstr "Mô tả của nhóm của bạn"
+
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr ""
+"Không nhận được phản hồi từ pixelplanet. Hãy thử tải lại trang nếu vấn đề "
+"này vẫn tiếp diễn."
+
+msgid "Dimensions"
+msgstr "Kích thước"
+
+msgid "Disable Game Sounds"
+msgstr "Tắt âm thanh"
+
+msgid "Disable History Pencil"
+msgstr "Vô hiệu hoá chế độ bút chì theo lịch sử"
+
+msgid "Disable Overlay Pencil"
+msgstr "Vô hiệu hoá chế độ bút chì theo lớp phủ"
+
+msgid "Disable Pencil"
+msgstr "Vô hiệu hoá bút chì"
+
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "Hiện thị bảng màu ở dạng nhỏ gọn và tốn ít không gian hơn."
+
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Làm các thứ với các IP (một IP mỗi dòng)"
+
+msgid ""
+"Don't let people find this faction in public search or look at its profile."
+msgstr ""
+"Không để mọi người tìm nhóm này trong tìm kiếm công khai hoặc xem hồ sơ nhóm."
+
+msgid "Don't remember"
+msgstr "Không nhớ"
+
+msgid "Don't show faction in search"
+msgstr "Không hiện thị nhóm trong phần tìm kiếm"
+
+msgid "Don't show me in global stats"
+msgstr "Đừng hiện thị tôi ở bảng xếp hạng toàn cầu"
+
+msgid "Done"
+msgstr "Hoàn thành"
+
+msgid "Download"
+msgstr "Tải xuống"
+
+msgid "Download Template"
+msgstr "Tải xuống ảnh mẫu"
+
+#, javascript-format
+msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
+msgstr ""
+"Kéo ${ mouseSymbol } chuột hoặc ${ touchSymbol } dùng hai ngón tay để di "
+"chuyển"
+
+msgid "Duration"
+msgstr "Khoảng thời gian"
+
+msgid "Easter Egg OFF"
+msgstr "TẮT trứng phục sinh"
+
+msgid "Easter Egg ON"
+msgstr "BẬT trứng phục sinh"
+
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+msgid "Edit faction"
+msgstr "Chỉnh sửa nhóm"
+
+msgid "Edit roles below their own"
+msgstr "Chỉnh sửa vai trò bên dưới vai trò của họ"
+
+msgid "Edit their own role and elevate users to their own level"
+msgstr ""
+"Họ tự chỉnh sửa vai trò của mình và nâng cấp người dùng lên cấp độ phù hợp"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Email can't be empty."
+msgstr "Không thể để trống phần Email."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "Email nhập vào không được quá 40 ký tự."
+
+msgid ""
+"Email is used to verify your account. You might get a cofirmation mail after "
+"registering."
+msgstr ""
+"Email sẽ được dùng để xác minh tài khoản của bạn. Bạn có thể nhận một mail "
+"xác thực sau khi đăng kí."
+
+msgid "Email should at least contain a dot"
+msgstr "Email phải chứa ít nhất một dấu chấm"
+
+msgid "Email should be at least 5 characters long."
+msgstr "Email phải chứa ít nhất 5 kí tự."
+
+msgid "Email should contain a @"
+msgstr "Email phải chứa một kí tự @"
+
+msgid "Enable Overlay"
+msgstr "Bật lớp phủ"
+
+msgid "Enable Pencil"
+msgstr "Kích hoạt bút chì"
+
+msgid "Enable chat notifications"
+msgstr "Bật thông báo về chat"
+
+msgid "Enter Characters"
+msgstr "Nhập ký tự"
+
+msgid "Enter Reason"
+msgstr "Nhập lí do"
+
+msgid "Enter UserName of new Mod"
+msgstr "Nhập tên người dùng của mod mới"
+
+msgid "Enter a little text that describes your faction"
+msgstr "Hãy mô tả một chút về nhóm của bạn"
+
+msgid "Enter search term and press Search."
+msgstr "Nhập từ khoá tìm kiếm và nhấn Tìm kiếm."
+
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Nhập địa chỉ mail của bạn và chúng tôi sẻ gửi bạn một mật khẩu mới:"
+
+msgid "Error"
+msgstr "Lỗi"
+
+#, javascript-format
+msgid "Error ${ retCode }"
+msgstr "Lỗi ${ retCode }"
+
+msgid "Error :("
+msgstr "Lỗi :("
+
+msgid "Expand"
+msgstr "Mở rộng"
+
+msgid "Export enabled templates"
+msgstr "Xuất ra bản mẫu đã được kích hoạt"
+
+msgid "Faction"
+msgstr "Nhóm"
+
+msgid "Factions"
+msgstr "Các nhóm"
+
+msgid "Factions Today"
+msgstr "Các nhóm hôm nay"
+
+msgid "Factions Total"
+msgstr "Tổng nhóm"
+
+msgid ""
+"Factions allow you to coordinate better with other players. Search for "
+"existing factions, find friends or create your own faction."
+msgstr ""
+"Nhóm cho phép bạn phối hợp với những người khác tốt hơn. Tìm kiếm những nhóm "
+"có sẵn, tìm bạn bè hoặc tạo một nhóm cho riêng mình."
+
+msgid "Factor"
+msgstr "Hệ số"
+
+msgid "File"
+msgstr "Tệp"
+
+msgid "Filter"
+msgstr "Bộ lọc"
+
+msgid "Fish Display"
+msgstr "Trưng bày cá"
+
+msgid "For"
+msgstr "Cho"
+
+msgid "For Developers"
+msgstr "Dành cho nhà phát triển"
+
+#, javascript-format
+msgid ""
+"For any legal issues, please contact ${ mailLink }. If you want to delete "
+"your data, simply delete your account, this in fact wipes all privacy "
+"relevant traces. Your placed pixels will of course not be deleted."
+msgstr ""
+"Với mọi vấn đề pháp lí, vui lòng liên hệ ${mailLink}. Nếu bạn muốn xoá dữ "
+"liệu của bạn, bạn chỉ cần xoá tài khoản của bạn, hành động này sẽ xóa mọi "
+"dấu vết liên quan đến quyền riêng tư. Pixel bạn đã đặt tất nhiên sẽ không bị "
+"xoá."
+
+msgid "For one day"
+msgstr "Trong một ngày"
+
+msgid "For one month"
+msgstr "Trong một tháng"
+
+msgid "For one week"
+msgstr "Trong một tuần"
+
+msgid "For one year"
+msgstr "Trong một năm"
+
+msgid "For when you are playing on a potato."
+msgstr "Khi máy bạn quá gà."
+
+msgid "Forever"
+msgstr "Mãi mãi"
+
+msgid "From History"
+msgstr "Từ lịch sử"
+
+msgid "From Template"
+msgstr "Từ ảnh mẫu"
+
+msgid "Get IID"
+msgstr "Nhận IID"
+
+msgid "Get Pixels"
+msgstr "Nhận pixel"
+
+msgid "Get Users"
+msgstr "Nhận người dùng"
+
+msgid "Get email address"
+msgstr "Nhận địa chỉ email"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Nhận số lượng pixel đã được vẽ và bảng xếp hạng"
+
+msgid "Globe View"
+msgstr "Chế độ địa cầu"
+
+msgid "Go to"
+msgstr "Dịch chuyển đến"
+
+msgid "Grant"
+msgstr "Cho phép"
+
+msgid "Grid OFF"
+msgstr "Chế độ lưới TẮT"
+
+msgid "Grid ON"
+msgstr "Chế độ lưới BẬT"
+
+msgid "Groups"
+msgstr "Nhóm"
+
+msgid "Have fun!"
+msgstr "Chúc vui vẻ!"
+
+msgid "Height"
+msgstr "Chiều cao"
+
+msgid "Help"
+msgstr "Trợ giúp"
+
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Ở đây chúng tôi thu thập các khung vẽ đã bị loại bỏ để lưu trữ chúng tử tế. "
+"Hiện nay chỉ có một cái."
+
+msgid "Hide Embed"
+msgstr "Ẩn nội dung nhúng"
+
+msgid "Hide from profile"
+msgstr "Ẩn khỏi hồ sơ"
+
+msgid ""
+"Higher zoomlevels take some time to update, the 3D globe gets updated at "
+"least once per day."
+msgstr ""
+"Độ thu phóng cao hơn yêu cầu chút thời gian để cập nhật. Quả địa cầu 3D được "
+"cập nhật ít nhất một lần mỗi ngày."
+
+msgid "Historical View"
+msgstr "Chế độ xem lịch sử"
+
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr "Giữ ${ bindShift } trái để dùng bút chì (để tô khi di chuyển chuột)"
+
+msgid "How pixelplanet should look like."
+msgstr "Pixelplanet nên trông như thế nào."
+
+msgid "I forgot my Password."
+msgstr "Tôi đã quên mật khẩu của tôi."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IID (optional)"
+msgstr "IID (tuỳ chọn)"
+
+msgid "IID Actions"
+msgstr "Hành động về IID"
+
+msgid "IP Actions"
+msgstr "Hành động về IP"
+
+msgid "Identifiers"
+msgstr "Mã định danh"
+
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you aren't using one, or think that you "
+"got wrongfully banned, please go to our ${ guildedLink } or send us an e-"
+"mail to ${ mailLink } and, in case of a ban, include the BID you got in the "
+"ban message."
+msgstr ""
+"Nếu bạn bị nhận dạng là proxy, nhưng bạn không sử dụng, hoặc cho rằng bạn đã "
+"bị cấm oan, vui lòng truy cập ${ guildedLink } của chúng tôi hoặc gửi chúng "
+"tôi một email đến ${ mailLink } và, trong trường hợp án cấm, hãy bao gồm mã "
+"BID bạn nhận được trong tin nhắn cấm."
+
+msgid ""
+"If you talk to moderators or administrators, you might get asked for one of "
+"the following identifiers:"
+msgstr ""
+"Nếu bạn liên lạc với mod hoặc quản trị viên, bạn có thể được yêu cầu một "
+"trong các mã định danh sau:"
+
+msgid "Image Converter"
+msgstr "Bộ chuyển đổi màu cho ảnh"
+
+msgid "Image Upload"
+msgstr "Tải hình ảnh"
+
+msgid "Import templates"
+msgstr "Nhập các ảnh mẫu"
+
+msgid "Incorrect password"
+msgstr "Không đúng mật khẩu"
+
+msgid "Interval"
+msgstr "Khoảng thời gian"
+
+msgid "Interval is invalid"
+msgstr "Khoảng thời gian không hợp lệ"
+
+msgid "Invalid Canvas"
+msgstr "Khung vẽ không hợp lệ"
+
+msgid "Invalid Coordinates"
+msgstr "Toạ độ không hợp lệ"
+
+msgid "Invalid color selected"
+msgstr "Màu không hợp lệ đã được chọn"
+
+msgid "Invite"
+msgstr "Mời"
+
+msgid "Invited to Chat"
+msgstr "Mời vào chat"
+
+msgid "Invites"
+msgstr "Những lời mời"
+
+msgid "Is One-Time-Invite"
+msgstr "Là lời mời dùng một lần"
+
+msgid ""
+"It requests the following permissions. Uncheck what you don't want to grant:"
+msgstr ""
+"Bên này yêu cầu các quyền sau. Bỏ chọn những gì bạn không muốn cho phép:"
+
+msgid "Jannies can rollback and protect, but not watch or ban."
+msgstr "Lao công có thể rollback và bảo vệ, nhưng không thể theo dõi hoặc cấm."
+
+msgid "Join"
+msgstr "Tham gia"
+
+msgid "Join Faction"
+msgstr "Tham gia nhóm"
+
+msgid "Joined"
+msgstr "Đã tham gia"
+
+msgid "Just for registered Users"
+msgstr "Chỉ cho người dùng đã đăng kí"
+
+msgid "Just for verified Users"
+msgstr "Chỉ cho người dùng đã xác thực"
+
+msgid "Just the Top10 of yesterday can place here"
+msgstr "Chỉ Top10 hôm qua mới có thể đặt ở đây"
+
+msgid "Keep Ratio"
+msgstr "Giữ tỉ lệ"
+
+msgid "Kick"
+msgstr "Khai trừ"
+
+msgid "Kick members"
+msgstr "Khai trừ thành viên"
+
+msgid "Know that an account exists"
+msgstr "Biết rằng một tài khoản có tồn tại"
+
+msgid "Leave"
+msgstr "Rời"
+
+msgid "Leave Faction"
+msgstr "Rời nhóm"
+
+msgid "Legal Requests"
+msgstr "Yêu cầu pháp lí"
+
+msgid "Let everyone join this faction"
+msgstr "Cho phép mọi người tham gia nhóm này"
+
+msgid "Let people join this faction without needing an invite."
+msgstr "Cho phép mọi người tham gia nhóm này không cần lời mời."
+
+msgid "Level"
+msgstr "Mức"
+
+msgid "Light Grid"
+msgstr "Lưới sáng"
+
+msgid "Load Captcha"
+msgstr "Tải captcha"
+
+msgid "Loading"
+msgstr "Đang tải"
+
+msgid "Loading..."
+msgstr "Đang tải…"
+
+msgid "Log in or Register"
+msgstr "Đăng nhập hoặc đăng kí"
+
+msgid "Log out"
+msgstr "Đăng xuất"
+
+msgid "Log out a Session:"
+msgstr "Đăng xuất một phiên đăng nhập:"
+
+msgid "LogIn"
+msgstr "Đăng nhập"
+
+msgid "Login Methods"
+msgstr "Các phương thức đăng nhập"
+
+msgid "Login to access more features and stats."
+msgstr "Đăng nhập để có thể sử dụng số liệu và nhiều tính năng khác."
+
+msgid "Login to grant access to other application."
+msgstr "Đăng nhập để có thể truy cập các chương trình khác."
+
+msgid "Login to join us."
+msgstr "Đăng nhập để tham gia cùng chúng tôi."
+
+msgid "Login to other application"
+msgstr "Đăng nhập vào các chương trình khác"
+
+msgid "Login with Name or Mail:"
+msgstr "Đăng nhập bằng tên hoặc email:"
+
+msgid "Make Screenshot"
+msgstr "Tạo ảnh chụp màn hình"
+
+msgid "Manage Moderators"
+msgstr "Quản lí mod"
+
+msgid "Manage Templates"
+msgstr "Quản lí ảnh mẫu"
+
+msgid "Manage invites"
+msgstr "Quản lí lời mời"
+
+msgid "Map Data"
+msgstr "Dữ liệu bản đồ"
+
+msgid "Maximize"
+msgstr "Phóng to"
+
+msgid "Media Actions"
+msgstr "Hành động về đa phương tiện"
+
+msgid "Members"
+msgstr "Những thành viên"
+
+msgid "Minimum Color Distance"
+msgstr "Khoảng cách màu tối thiểu"
+
+msgid "Moderation Log"
+msgstr "Nhật kí quản lí"
+
+msgid "Moderation Logs"
+msgstr "Nhật ký quản lý"
+
+msgid "Moderators can access all Canvas, Watch and IID tools."
+msgstr "Mod có thể truy cập mọi khung vẽ, theo dõi và các công cụ IID."
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Modtools"
+msgstr "Công cụ mod"
+
+msgid "Move"
+msgstr "Di chuyển"
+
+msgid "Mute Channel"
+msgstr "Tắt tiếng kênh"
+
+msgid "Muted Sound"
+msgstr "Âm thanh đã bị tắt tiếng"
+
+msgid "My Factions"
+msgstr "Nhóm của tôi"
+
+msgid "Name"
+msgstr "Tên"
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "Tên chỉ có thể chứa các kí tự sau: a-z . _ và -"
+
+msgid "Name can't be empty."
+msgstr "Tên không thể để trống."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Tên chứa các kí tự không hợp lệ như @, /, / hoặc #"
+
+msgid "Name must be at least 2 characters long"
+msgstr "Tên phải chứa ít nhất hai kí tự"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "Tên phải ngắn hơn 26 kí tự"
+
+msgid "Name of this role"
+msgstr "Tên của vai trò này"
+
+msgid "Name of your faction (this can not be changed later)"
+msgstr "Tên của nhóm bạn (thứ không thể thay đổi sau)"
+
+msgid "Name or Email"
+msgstr "Tên hoặc email"
+
+msgid "New Mail"
+msgstr "Email mới"
+
+msgid "New Name"
+msgstr "Tên mới"
+
+msgid "New Password"
+msgstr "Mật khẩu mới"
+
+msgid "New Username"
+msgstr "Tên người dùng mới"
+
+msgid "No"
+msgstr "Không"
+
+msgid "No File selected to upload"
+msgstr "Không có tệp nào được chọn để đăng tải"
+
+msgid "No Phish!"
+msgstr "Không có Ká!"
+
+msgid "No flag selected"
+msgstr "Không cờ nào được chọn"
+
+msgid "No or invalid captcha text"
+msgstr "Không có hoặc mã captcha không hợp lệ"
+
+msgid "No password given."
+msgstr "Không mật khẩu nào được cung cấp."
+
+msgid "No results."
+msgstr "Không có kết quả."
+
+msgid "Nobody is banned from this faction"
+msgstr "Không ai bị cấm trong nhóm này"
+
+msgid "Not Allowed"
+msgstr "Không được cho phép"
+
+msgid "Not allowed"
+msgstr "Không được cho phép"
+
+msgid "Note"
+msgstr "Ghi chú"
+
+msgid "Note: Your active Faction may overwrite your flag settings."
+msgstr ""
+"Ghi chú: Nhóm đang hoạt động hiện tại của bạn có thể sẽ ghi đè cờ tùy chỉnh."
+
+msgid "OIDC LogIn"
+msgstr "Đăng nhập OIDC"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Offset"
+msgstr "Khoảng cách"
+
+msgid "Oh no, the phish escaped. Better luck next time!"
+msgstr "Ôi không, Ká đã chạy thoát. Chúc may mắn lần sau!"
+
+msgid "Old Password"
+msgstr "Mật khẩu cũ"
+
+msgid "One-Time"
+msgstr "Một lần"
+
+msgid "Online Users"
+msgstr "Người dùng trực tuyến"
+
+msgid "Online Users on Canvas"
+msgstr "Người dùng trực tuyến trên khung vẽ"
+
+msgid "Only verified Users are currently allowed to play."
+msgstr "Hiện chỉ những người dùng đã xác thực được phép chơi."
+
+msgid "Opacity of Overlay in percent."
+msgstr "Độ đục của lớp phủ theo tỉ lệ phần trăm."
+
+msgid "Open"
+msgstr "Mở"
+
+msgid "Open Chat"
+msgstr "Mở chat"
+
+msgid "Open Palette"
+msgstr "Mở bảng màu"
+
+msgid "Open in PopUp"
+msgstr "Mở bằng PopUp"
+
+msgid "OpenID Connect Client registration"
+msgstr "Đăng kí máy khách OpenID Connect"
+
+msgid ""
+"Our main canvas is a huge worldmap, you can place wherever you like, but you "
+"will have to wait a specific Cooldown between pixels. You can check out the "
+"cooldown and requirements on the Canvas Selection menu (globe button on "
+"top). Some canvases have a different cooldown for replacing a user-set "
+"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
+"and 7s on already set pixels."
+msgstr ""
+"Khung vẽ chính của chúng tôi là một bản đồ thế giới rộng lớn, bạn có thể vẽ "
+"bất cứ nơi nào bạn muốn, nhưng bạn buộc phải chờ đợi một thời gian hồi 1 "
+"pixel cụ thể cho mỗi pixel. Bạn có thể kiểm tra thời gian hồi 1 pixel và "
+"những yêu cầu trong phần lựa chọn khung vẽ (nút nhấn hình địa cầu phía "
+"trên). Một vài khung vẽ có thời gian hồi 1 pixel khác nhau khi thay thế các "
+"pixel do người dùng đặt hoặc đặt một pixel chưa đặt. Ví dụ như 4s/7s nghĩa "
+"là 4 giây trên những pixel mới và 7 giây cho những pixel đã đặt từ trước."
+
+msgid "Overlay OFF"
+msgstr "TẮT lớp phủ"
+
+msgid "Overlay ON"
+msgstr "BẬT lớp phủ"
+
+msgid "Overlay Opacity"
+msgstr "Độ mờ lớp phủ"
+
+msgid "Overview"
+msgstr "Xem trước"
+
+msgid "Palette Download"
+msgstr "Tải xuống bảng màu"
+
+#, javascript-format
+msgid "Palette for ${ gimpLink }"
+msgstr "Bảng màu cho ${ gimpLink }"
+
+msgid "Password"
+msgstr "Mật khẩu"
+
+msgid "Password must be at least 6 characters long."
+msgstr "Mật khẩu phải chứa ít nhất 6 kí tự."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "Mật khẩu phải ngắn hơn 60 kí tự."
+
+msgid "Password successfully changed."
+msgstr "Đã đổi mật khẩu thành công."
+
+msgid "Passwords do not match."
+msgstr "Mật khẩu không khớp."
+
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Chế độ bút chì cho khung vẽ ${ canvasName }"
+
+msgid "Pencil picks: "
+msgstr "Chọn bút chì: "
+
+msgid "Permission"
+msgstr "Quyền hạn"
+
+msgid "Permissions of Powerlevels"
+msgstr "Quyền của mức quyền hạng"
+
+msgid "Phish!"
+msgstr "Ká!"
+
+msgid "Phishes"
+msgstr "Ká đã bắt được"
+
+msgid "Ping"
+msgstr "Ping"
+
+msgid "Pixel Notify OFF"
+msgstr "Thông báo pixel TẮT"
+
+msgid "Pixel Notify ON"
+msgstr "Thông báo pixel BẬT"
+
+msgid "Pixel Protection"
+msgstr "Bảo vệ điểm ảnh"
+
+msgid "Pixel protected"
+msgstr "Pixel đã được bảo vệ"
+
+msgid "Pixels"
+msgstr "Pixel"
+
+msgid "Place color pixels on a large canvas with other players online!"
+msgstr ""
+"Đặt các pixel đầy màu sắc trong một khung vẽ rộng lớn với những ngưởi chơi "
+"trực tuyến khác!"
+
+msgid "Placed Pixels"
+msgstr "Số pixel đã đặt"
+
+msgid "Play a sound when new chat messages arrive"
+msgstr "Phát một đoạn âm thanh khi một tin nhắn chat mới xuất hiện"
+
+msgid "Players and Pixels per hour"
+msgstr "Số người chơi và pixel mỗi giờ"
+
+msgid "Please prove that you are human"
+msgstr "Vui lòng chứng minh bạn là con người"
+
+msgid "Please refresh the website"
+msgstr "Vui lòng tải lại trang"
+
+msgid ""
+"Please verify your mail address or add a new one, otherwise your account "
+"could get deleted in the future."
+msgstr ""
+"Vui lòng xác thực địa chỉ email của bạn hoặc thêm một cái mới, nếu không tài "
+"khoản của bạn có thể bị xoá trong tương lai."
+
+msgid "Political Compass Canvas"
+msgstr "Khung vẽ phổ chính trị"
+
+msgid "Potato Mode"
+msgstr "Chế độ khoai tây"
+
+msgid "Powerlevel"
+msgstr "Mức quyền hạn"
+
+msgid "Powerlevel of this role. See table below for an explanation."
+msgstr ""
+"Mức quyền hạn của vai trò này. Xem bảng bên dưới để biết thêm chi tiết."
+
+#, javascript-format
+msgid ""
+"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgstr ""
+"Nhấn ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } để di "
+"chuyển"
+
+#, javascript-format
+msgid "Press ${ bindG } to toggle grid"
+msgstr "Nhấn ${ bindG } để bật/tắt chế dộ lưới"
+
+#, javascript-format
+msgid "Press ${ bindH } to toggle historical view"
+msgstr "Nhấn ${ bindH } để bật/tắt chế độ xem lịch sử"
+
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
+msgstr "Nhấn ${ bindQ } và ${ bindE } để đi chuyển lên và xuống"
+
+#, javascript-format
+msgid "Press ${ bindQ } or ${ bindE } to zoom"
+msgstr "Nhấn ${ bindQ } hoặc ${ bindE } để thu phóng"
+
+#, javascript-format
+msgid "Press ${ bindR } to copy coordinates"
+msgstr "Nhấn ${ bindR } để sao chép toạ độ"
+
+#, javascript-format
+msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
+msgstr "Nhấn ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } để di chuyển"
+
+#, javascript-format
+msgid "Press ${ bindX } to toggle showing of pixel activity"
+msgstr ""
+"Nhấn ${ bindX } để bật tắt chế độ xem các hoạt động liên quan đến điểm ảnh"
+
+msgid "Private"
+msgstr "Riêng tư"
+
+msgid "Profile"
+msgstr "Hồ sơ"
+
+msgid "Quick Actions"
+msgstr "Những hành động nhanh"
+
+msgid "Range Banned"
+msgstr "Phạm vi bị cấm"
+
+msgid "Rank"
+msgstr "Xếp hạng"
+
+msgid "Ranked"
+msgstr "Được xếp hạng"
+
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Bảng xếp hạng được cập nhật mỗi 5 phút. Bảng xếp hạng hàng ngày được đặt lại "
+"mỗi nửa đêm theo giờ UTC."
+
+msgid "Read Badges and fishes"
+msgstr "Đọc các huy hiệu và cá"
+
+msgid "Read name, username and account age"
+msgstr "Đọc tên, Tên người dùng và tuổi tài khoản"
+
+msgid "Reason"
+msgstr "Lí do"
+
+msgid "Refresh"
+msgstr "Làm mới"
+
+msgid "Register"
+msgstr "Đăng kí"
+
+msgid "Register new account here"
+msgstr "Đăng kí tài khoản mới tại đây"
+
+msgid "Regularly update this data"
+msgstr "Cập nhật dữ liệu này thường xuyên"
+
+msgid "Reload"
+msgstr "Tải lại"
+
+msgid "Remember this decision: "
+msgstr "Nhớ lựa chọn này "
+
+msgid "Remove"
+msgstr "Xoá"
+
+msgid "Remove Chatmod"
+msgstr "Xoá cuộc trò chuyện mod"
+
+msgid "Remove Cleaner"
+msgstr "Xoá trình dọn"
+
+msgid "Remove Janny"
+msgstr "Xoá lao công"
+
+msgid "Remove Moderator"
+msgstr "Xoá mod"
+
+msgid "Remove Roles"
+msgstr "Xoá (các) vai trò"
+
+msgid "Remove a Login method:"
+msgstr "Xoá một phương thức đăng nhập:"
+
+#, javascript-format
+msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
+msgstr ""
+"Đại diện cho nhóm ${ activeFactionTitle }với vai trò $"
+"{ activeFactionRoleName }"
+
+msgid "Require Verification to Place"
+msgstr "Yêu cầu xác thực để đặt"
+
+msgid "Requirements"
+msgstr "Những yêu cầu"
+
+msgid "Reset"
+msgstr "Đặt lại"
+
+msgid "Reset Captchas of ALL Users"
+msgstr "Đặt lại captcha cho MỌI người dùng"
+
+msgid "Reset your password"
+msgstr "Đặt lại mật khẩu của bạn"
+
+msgid "Resize"
+msgstr "Chỉnh kích thước"
+
+msgid "Restore"
+msgstr "Khôi phục"
+
+msgid "Retired Canvases (history only)"
+msgstr "Khung vẽ ngừng hoạt động (chỉ xem lịch sử)"
+
+msgid "Retract"
+msgstr "Thu hồi"
+
+msgid "Revoke consent of third party applications:"
+msgstr "Hủy chấp thuận cho ứng dụng bên thứ ba:"
+
+msgid "Role"
+msgstr "Vai trò"
+
+msgid "Role Flags"
+msgstr "Cờ vai trò"
+
+msgid "Roles"
+msgstr "Các vai trò"
+
+msgid "Roll different Captcha Fonts"
+msgstr "Chọn phông chữ Captcha khác"
+
+msgid "Rollback an area of the canvas to a set date and time"
+msgstr "Rollback một khu vực của khung vẽ đến một ngày và thời gian cụ thể"
+
+msgid "Rollback to Date"
+msgstr "Rollback tới ngày"
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Scale Image"
+msgstr "Chỉnh kích thước ảnh"
+
+#, javascript-format
+msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
+msgstr ""
+"Lăn ${ mouseSymbol } con lăn cuột hoặc ${ touchSymbol } dùng hai ngón tay để "
+"thu phóng"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "Search Existing Faction"
+msgstr "Tìm kiếm các nhóm tồn tại"
+
+msgid "Search Term"
+msgstr "Tìm kiếm thuật ngữ"
+
+msgid "See hidden users in member list"
+msgstr "Xem người dùng ẩn trong danh sách thành viên"
+
+msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
+msgstr ""
+"Đặt ảnh đại diện cho nhóm này. Định dạng được hỗ trợ: jpg, gif, png, webp"
+
+msgid "Select Date above"
+msgstr "Đặt ngày ở trên"
+
+msgid "Select File"
+msgstr "Chọn tệp"
+
+msgid "Select Flag"
+msgstr "Chọn cờ"
+
+msgid "Select Language"
+msgstr "Chọn ngôn ngữ"
+
+msgid "Select a valid powerlevel"
+msgstr "Chọn một mức quyền hạn hợp lệ"
+
+msgid "Select a valid pwerlevel"
+msgstr "Chọn một mức quyền hạn hợp lệ"
+
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Chọn một khung vẽ bạn muốn chơi.\n"
+"Mỗi khung vẽ đều độc đáo và có những bảng màu, thời gian hồi 1 pixel và yêu "
+"cầu khác nhau.\n"
+"Các khung vẽ được lưu trữ có thể được truy cập ở đây:"
+
+msgid "Select your Avatar. Supported Formats: jpg, gif, png, webp"
+msgstr "Đặt ảnh đại diện cho bạn. Định dạng được hỗ trợ: jpg, gif, png, webp"
+
+msgid "Selected Color"
+msgstr "Màu đã chọn"
+
+msgid "Selected Flag:"
+msgstr "Các cờ đã chọn:"
+
+msgid "Selected moderation actions that happened within the past two weeks."
+msgstr "Chọn một hành động quản trị đã xẩy ra trong vòng 2 tuần trước."
+
+msgid "Send"
+msgstr "Gửi"
+
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Gửi cho bạn một mail với hướng dẫn đặt lại mật khẩu của bạn."
+
+msgid "Serpentine"
+msgstr "Quét đảo chiều"
+
+msgid "Server Error"
+msgstr "Lỗi hệ thống"
+
+msgid "Server answered with gibberish :("
+msgstr "Máy chủ trả lời bằng thông tin vô nghĩa :("
+
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr ""
+"Máy chủ cảm thấy bối rối về các pixel của bạn. Bạn có đang chơi trên nhiều "
+"thiết bị không?"
+
+msgid "Set Password"
+msgstr "Đặt mật khẩu"
+
+msgid ""
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
+msgstr ""
+"Đặt bảo vệ cho khu vực (Nếu bạn muốn có kiểm soát tốt hơn, sử dụng chức năng "
+"bảo vệ cùng với tải lên ảnh và lớp phủ alpha)"
+
+msgid ""
+"Setting a password allows you to login by username or email, rather than "
+"only relying on 3rd party login."
+msgstr ""
+"Đặt mật khẩu cho phép bạn đăng nhập bằng tên người dùng hoặc email, thay vì "
+"chỉ phụ thuộc vào bên thứ ba để đăng nhập."
+
+msgid "Settings"
+msgstr "Cài đặt"
+
+msgid "Show Embedded"
+msgstr "Hiện nội dung nhúng"
+
+msgid "Show Grid"
+msgstr "Hiện thị lưới"
+
+msgid "Show Grid in white instead of black."
+msgstr "Hiện thị lưới trắng thay vì đen."
+
+msgid "Show Pixel Activity"
+msgstr "Hiện thị các hoạt động pixel"
+
+msgid "Show circles where pixels are placed."
+msgstr "Hiện dấu hình tròn nơi có pixel được đặt."
+
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr "Hiện lớp phủ như các pixel nhỏ lẻ khi phóng to."
+
+msgid "Show templates as overlays ingame."
+msgstr "Hiện thị các ảnh mẫu như lớp phủ trong game."
+
+msgid "Shrink"
+msgstr "Thu nhỏ"
+
+msgid "Size"
+msgstr "Kích thước"
+
+msgid "Small Pixels When Zoomed"
+msgstr "Pixel nhỏ khi phóng to"
+
+msgid "Social Settings"
+msgstr "Cài đặt xã hội"
+
+#, javascript-format
+msgid "Source for pixelplanet on ${ gitLink } or ${ downloadHereLink }."
+msgstr "Mã nguồn của pixelplanet tại ${ gitLink } hoặc ${ downloadHereLink }."
+
+msgid "Stacking till"
+msgstr "Xếp chồng đến"
+
+msgid "Start chatting here"
+msgstr "Bắt đầu trò chuyện ở đây"
+
+msgid "Start checking for Malware"
+msgstr "Bắt đầu kiểm tra phần mền độc hại"
+
+msgid "Statistics"
+msgstr "Số liệu"
+
+msgid "Status: Not running"
+msgstr "Trạng thái: Không chạy"
+
+msgid "Stay logged in: "
+msgstr "Giữ đăng nhập trong: "
+
+msgid "Stop Cleaner"
+msgstr "Dừng trình dọn"
+
+msgid "Stop checking for Malware"
+msgstr "Dừng kiểm tra phần mền độc hại"
+
+msgid "Stop requiring Verification to Place"
+msgstr "Ngừng yêu cầu xác thực để đặt"
+
+msgid "Submit"
+msgstr "Đăng"
+
+msgid "Switch Account"
+msgstr "Đổi tài khoản"
+
+#, javascript-format
+msgid "Switched to ${ canvasName }"
+msgstr "Đổi sang ${ canvasName }"
+
+msgid "Template Name"
+msgstr "Tên ảnh mẫu"
+
+msgid "Templates"
+msgstr "Các ảnh mẫu"
+
+#, javascript-format
+msgid ""
+"The application ${ appName } at ${ appUrl } wants to login with your "
+"pixelplanet account ${ accountName }"
+msgstr ""
+"Chương trình ${ appName } tại ${ appUrl } muốn đăng nhập tài khoản "
+"pixelplanet ${ accountName } của bạn"
+
+msgid ""
+"The bare map data that we use, together with converted OpenStreetMap tiles "
+"for orientation, can be downloaded from mega.nz here: "
+msgstr ""
+"Dữ liệu bản đồ gốc chúng tôi sử dụng cùng với các ô bản đồ từ OpenStreetMap "
+"đã qua xử lí để định vị có thể được tải xuống từ mega.nz ngay đây: "
+
+msgid ""
+"The name of your account, only a-z, A-Z, -, ., and - characters are allowed. "
+"It is permanent, you can not change it later."
+msgstr ""
+"Tên tài khoản của bạn, chỉ các kí tự a-z, A-Z, -, ., và - là được cho phép. "
+"Lựa chọn này là vĩnh viễn, bạn không thể thay đổi sau."
+
+msgid "The password for your account."
+msgstr "Mật khẩu cho tài khoản của bạn."
+
+msgid "Themes"
+msgstr "Chủ đề"
+
+msgid "This URL is not supported by our Media Player"
+msgstr "URL này không được trình đa phương tiện của chúng tôi hỗ trợ"
+
+msgid "This canvas doesn't exist"
+msgstr "Khung vẽ này không tồn tại"
+
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Khung vẽ này được yêu cầu trong thời gian tranh cãi chính trị ở khung vẽ "
+"chính Trái đất. Cái này có kích thước 1024x1024 biểu thị một phổ chính trị "
+"với thời gian hồi 1 pixel 5 giây và xếp chồng được 60 giây. Nó được kích "
+"hoạt vào ngày 11 tháng 5 và được giữ hoạt động trong nhiều tháng trước khi "
+"đóng lại vào ngày 30 tháng 11."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"Email / mật khẩu này đã bị hack và đã rò rỉ. Để bảo vệ tài khoản này, mật "
+"khẩu đã được cài đặt lại. Vui lòng sử dụng chức năng “Quên mật khẩu” tại "
+"trang đăng nhập để thiết lập một mật khẩu mới. Lần sau, hãy cân nhắc không "
+"tải những phần mềm độc hại, cảm ơn."
+
+msgid "This faction has no invites"
+msgstr "Nhóm này không có lời mời"
+
+msgid ""
+"This is the name that other people see, e.g. in Chat. You can change it at "
+"any time. All characters except @, /, , >, < and # are allowed."
+msgstr ""
+"Đây là tên mà người khác thấy, ví dụ trong chat. Bạn có thể đổi nó bất cứ "
+"lúc nào. Tất cả kí tự trừ @, /, , >, < và # đều được cho phép."
+
+msgid "This login may only work if your account is verified."
+msgstr "Lần đăng nhập này chỉ hoạt động khi tài khoản của bạn được xác thực."
+
+msgid "This permission is required"
+msgstr "Quyền hạn này cần thiết"
+
+msgid "This user has not password set"
+msgstr "Người dùng này chưa đặt mật khẩu"
+
+#. Column title in tables
+msgid "Time"
+msgstr "Thời gian"
+
+msgid "Timeout"
+msgstr "Hết thời gian chờ"
+
+msgid "Tip: Not case-sensitive; I and l are the same"
+msgstr ""
+"Lời khuyên: Không phân biệt chữ hoa với chữ thường; I và l được coi là như "
+"nhau"
+
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+"Thấy chán với việc vẽ đúng một màu từ ngày này qua ngày khác? Thay vào đó "
+"bạn muốn vẽ tranh, nhưng bạn phải tính toán từng pixel từ cái bức ảnh khác? "
+"Ảnh mẫu có thể giúp bạn làm việc đó! Ảnh mẫu có thể được hiển thị dưới dạng "
+"lớp phủ và bạn có thể vẽ lên đó. Một pixel ở ảnh mẫu sẽ là một pixel ở khung "
+"vẽ."
+
+msgid "Title"
+msgstr "Tên hiệu"
+
+msgid "Title can't be empty."
+msgstr "Tên hiệu không thể để trống."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "Tên hiệu chứa các kí tự không hợp lệ như @, /, \\ hoặc #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "Tên hiệu phải dài ít nhất hai kí tự"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "Tên hiệu phải ngắn hơn 26 kí tự"
+
+msgid "Title of your faction"
+msgstr "Tên hiệu cho nhóm của bạn"
+
+msgid "To use this page, enter your Password:"
+msgstr "Để sử dụng trang này, hãy nhập mật khẩu của bạn:"
+
+msgid "Today"
+msgstr "Hôm nay"
+
+msgid "Today Placed Pixels"
+msgstr "Số pixel đã đặt vào hôm nay"
+
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 các nước [pixel / ngày]"
+
+msgid "Top 10 Daily Ranking"
+msgstr "Bảng xếp hạng top 10 hằng ngày"
+
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 người chơi [pixel/ngày]"
+
+msgid "Top 10 Players from Yesterday"
+msgstr "Top 10 người chơi hôm qua"
+
+msgid "Top-left corner"
+msgstr "Góc trên bên trái"
+
+msgid "Total"
+msgstr "Tổng pixel"
+
+msgid "Total Online Users"
+msgstr "Tổng số người dùng trực tuyến"
+
+msgid "Total Pixels per Faction"
+msgstr "Tổng pixel được đặt mỗi nhóm"
+
+msgid "Total Pixels per Player"
+msgstr "Tổng pixel được đặt trong từng người chơi"
+
+msgid "Total Pixels placed per day"
+msgstr "Tổng pixel được đặt trong từng ngày"
+
+msgid "Total Rank"
+msgstr "Tổng hạng"
+
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"Đặt mọi pixel khong khu vực thành 9 (BẠN THẬT SỰ KHÔNG NÊN LÀM THẾ TRÊN BẤT "
+"CỨ KHU VỰC NÀO NẾU CHỖ ĐÓ KHÔNG VỐN ĐA SỐ LÀ 0)"
+
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Bật chế độ lưới để làm nổi bật biên giới các điểm ảnh."
+
+msgid "Type of Mod"
+msgstr "Kiểu của mod"
+
+msgid "Type the characters from the following image:"
+msgstr "Nhập ký tự có trong hình ảnh sau:"
+
+msgid "Unban media"
+msgstr "Bỏ cấm đa phương tiện"
+
+msgid "Unban members"
+msgstr "Bỏ cấm thành viên"
+
+msgid "Unblock"
+msgstr "Bỏ chặn"
+
+msgid "Unblock Users"
+msgstr "Bỏ chặn người dùng"
+
+msgid "Unknown Captcha Error"
+msgstr "Lỗi Chaptra không xác định"
+
+msgid "Unknown Error"
+msgstr "Lỗi không xác định"
+
+msgid "Unmuted Sound"
+msgstr "Âm thanh không bị tắt tiếng"
+
+msgid "Until the browser closes"
+msgstr "Đến khi trình duyệt đóng"
+
+msgid "Upload images to canvas"
+msgstr "Tải ảnh lên khung vẽ"
+
+msgid "Use our custom cursor"
+msgstr "Sử dụng con trỏ đặc biệt của chúng tôi"
+
+msgid "User"
+msgstr "Người dùng"
+
+msgid "User Account"
+msgstr "Tài khoản người dùng"
+
+msgid "User Area"
+msgstr "Khu vực người dùng"
+
+msgid "User ID and verification level"
+msgstr "ID Người dùng và cấp độ xác thực"
+
+msgid "User Name"
+msgstr "Tên người dùng"
+
+msgid "Username"
+msgstr "Tên người dùng"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "Tên người dùng chỉ có thể chứa các kí tự sau: a-z . _ và -"
+
+msgid "Username can only contain the characters: a-z A-z . _ and -"
+msgstr "chỉ có thể chứa các kí tự sau: a-z A-Z . _ và -"
+
+msgid "Username can't be empty."
+msgstr "Tên người dùng không thể để trống."
+
+msgid "Username must be at least 2 characters long"
+msgstr "Tên người dùng phải chứa ít nhất hai kí tự"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "Tên người dùng phải ngắn hơn 26 kí tự"
+
+msgid "Users"
+msgstr "Những người dùng"
+
+#, javascript-format
+msgid "We are Libre Software under the ${ agplLink }, "
+msgstr "Chúng tôi là Phần mền Tự do theo giấy phép ${ agplLink }, "
+
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Chúng tôi quyết định lưu trữ bằng mã hoá webm không mất mát. Chụp màn hình "
+"từ timelapse tạo ra kết quả 1:1 hoàn hảo hiện thị khung vẽ trông như thế nào "
+"lúc đó."
+
+msgid ""
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr ""
+"Chúng tôi cảm ơn những hoạ sĩ sau, những người đã cho phép công chúng sử "
+"dụng bảng màu của họ tại"
+
+msgid "Weird"
+msgstr "Kì lạ"
+
+msgid "What the pencil should draw on the current canvas."
+msgstr "Bút chì nên vẽ gì trong khung vẽ hiện tại."
+
+msgid "Whether or not this invite can only be used once."
+msgstr "Liệu lời mời này có thể được sử dụng một lần hay không."
+
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Khi chúng tôi cố gắn không xoá khung vẽ, một số khung vẽ được bắt đầu cho "
+"vui hoặc vì yêu cầu của người dùng người đang thích thú với một meme phổ "
+"biến lúc ấy. Những khung vẽ đó có thể trở nên nhàm chán và không hoạt động "
+"trong một khoảng thời gian, lúc đó không có lí do gì để giữ chúng và chúng "
+"tôi quyết định xoá chúng đi."
+
+msgid "Why?"
+msgstr "Tại sao?"
+
+msgid "Width"
+msgstr "Chiều rộng"
+
+msgid "Wrong Color"
+msgstr "Sai màu"
+
+msgid "YOU CAN ONLY CHOOSE YOUR USERNAME ONCE!"
+msgstr "BẠN CHỈ CÓ THỂ CHỌN TÊN CỦA BẠN MỘT LẦN DUY NHẤT!"
+
+msgid "Yes"
+msgstr "Vâng"
+
+msgid "Yes, really delete Me"
+msgstr "Vâng, thật sự hãy xoá tôi"
+
+msgid "Yesterday"
+msgstr "Hôm qua"
+
+msgid ""
+"You are a teacher and a pupil is playing this game, despite it not being "
+"suitable for them? Send us an email."
+msgstr ""
+"Bạn là giáo viên và một học sinh đang chơi trò chơi này, dù nó không phù "
+"hợp? Hãy gửi cho chúng tôi một email."
+
+#, javascript-format
+msgid ""
+"You are banned. You think it is unjustified? Check out the ${ helpButton } "
+"on how to appeal. And don't forget to include the BID you can get below."
+msgstr ""
+"Bạn đã bị cấm. Bạn cho rằng điều này không công bằng? Hãy xem $"
+"{ helpButton } về cách kháng cáo. Và đừng quên ghi rõ BID bạn có thể nhận "
+"được dưới đây."
+
+msgid "You are currently not a member of any faction."
+msgstr "Bạn hiện đang không trong bất cứ nhóm nào."
+
+msgid "You are currently not allowed to access this game."
+msgstr "Bạn hiện tại không được phép truy cập trò chơi này."
+
+msgid ""
+"You are currently not representing any faction. To represent one, activate a "
+"role in one of your factions below."
+msgstr ""
+"Bạn hiện không đại diện cho bất kì nhóm nào. Để đại diện, kích hoạt một vai "
+"trò từ một trong các nhóm của bạn dưới đây."
+
+#, javascript-format
+msgid ""
+"You are currently representing ${ activeFactionTitle } as ${ activeRoleName }"
+msgstr ""
+"Bạn đang đại diện cho nhóm${ activeFactionTitle }với vai trò$"
+"{ activeRoleName }"
+
+#, javascript-format
+msgid "You are logged in as ${ name } [${ username }]."
+msgstr "Bạn đã đăng nhập với tên ${ name } [${ username }]."
+
+msgid "You are not allowed to play this game right now :("
+msgstr "Bây giờ bạn không được phép chơi trò chơi này :("
+
+msgid "You are using a Proxy."
+msgstr "Bạng đang dùng Proxy."
+
+msgid "You are weird"
+msgstr "Bạn trông khá kì lạ"
+
+msgid ""
+"You can connect to pixelplanet and use pixelplanet accounts for oauth / oidc "
+"login. See here: "
+msgstr ""
+"Bạn có thể kết nối tới pixelplanet và sử dụng tài khoản pixelplanet cho đăng "
+"nhập oauth / oidc. Xem ở đây: "
+
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "Bạn chưa thể truy cập khung vẽ này, vì điểm pixel của bạn quá thấp"
+
+msgid "You can now place more on pixelplanet.fun :)"
+msgstr "Bạn có thể đặt nhiều hơn tại pixelplanet.fun :)"
+
+#, javascript-format
+msgid ""
+"You caught a Phish! It is a ${ FISH_TYPES[type].name } with ${ size }kg! As "
+"a bonus, your cooldown is reduced."
+msgstr ""
+"Bạn đã bắt được một con Ká! Đây là một con ${ FISH_TYPES[type].name } với $"
+"{ size }kg! Như một phần thưởng, thời gian hồi 1 pixel của bạn sẽ được giảm."
+
+msgid "You did not consent"
+msgstr "Bạn không đồng ý"
+
+msgid "You failed your captcha"
+msgstr "Bạn đã không giải được captcha"
+
+#, javascript-format
+msgid ""
+"You have been invited to join us on pixelplanet. We currently have $"
+"{ memberCount } members."
+msgstr ""
+"Bạn đã được mời tham gia chúng tôi ở pixelplanet. Hiện nay chúng tôi có $"
+"{ memberCount } thành viên."
+
+msgid "You have no users blocked"
+msgstr "Bạn không có người dùng nào bị chặn"
+
+msgid "You have to be logged in to place on this canvas"
+msgstr "Bạn phải đăng nhập để vẽ ở khung ảnh này"
+
+msgid "You made too many requests"
+msgstr "Bạn đã tạo quá nhiều yêu cầu"
+
+msgid "You must be logged in to chat"
+msgstr "Bạn phải đăng nhập để trò chuyện"
+
+msgid "You must enter a UserId"
+msgstr "Bạn phải nhập một UserId"
+
+msgid "You must enter a mediaId or media BID"
+msgstr "Bạn phải nhập một mediaid hoặc BID"
+
+msgid "You must enter a reason"
+msgstr "Bạn phải nhập một lí do"
+
+msgid "You must enter a username"
+msgstr "Bạn phải nhập một tên người dùng"
+
+msgid "You must enter an BID"
+msgstr "Bạn phải nhập một BID"
+
+msgid "You must enter an IID"
+msgstr "Bạn phải nhập một IID"
+
+msgid "You must enter an IID or UserId"
+msgstr "Bạn phải nhập một IID hoặc UserId"
+
+msgid "You must enter at least one IID, User Id or BID"
+msgstr "Bạn phải nhập một IID, User Id hoặc BID"
+
+msgid "You must select an avatar for your faction"
+msgstr "Bạn phải đặt một ảnh đại diện cho nhóm của bạn"
+
+msgid "You took too long, try again."
+msgstr "Bạn đã mất quá nhiều thời gian, vui lòng thử lại."
+
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Trình duyệt của bạn không cho phép chúng tôi sử dụng AudioContext để phát âm "
+"thanh. Bạn có đang kích hoạt các chức năng riêng tư mà ngăn cản chúng tôi "
+"không?"
+
+msgid "Your Browser looks shady"
+msgstr "Trình duyệt của bạn trông đáng ngờ"
+
+msgid "Your Factions"
+msgstr "Nhóm của bạn"
+
+msgid "Your Internet Provider is banned from this game"
+msgstr "Nhà cung cấp dịch vụ Internet cuủa bạn đã cấm bạn vào trò chơi này"
+
+msgid "Your Roles"
+msgstr "(Những) vai trò của bạn"
+
+msgid "Your ban expires at "
+msgstr "Lệnh cấm của bạn sẽ hết hiệu lực vào "
+
+msgid "Your device looks weird"
+msgstr "Thiết bị của bạn trông kì lạ"
+
+msgid ""
+"Your did not set your username yet. A username is required to login to other "
+"applications. You can set it now:"
+msgstr ""
+"Bạn chưa có một tên người dùng cho bạn. Một tên người dùng là cần thiết để "
+"đăng nhập vào các chương trình khác. Bạn có thể đặt nó ở đây ngay bây giờ:"
+
+msgid "Your name is:"
+msgstr "Tên bạn là:"
+
+msgid "Your next pixels are ready"
+msgstr "Pixel tiếp theo cho bạn đã sẵn sàng"
+
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Phóng to thay vì đặt một pixel khi nhấn vào khung vẽ và mức thu phóng đủ nhỏ."
+
+msgid "a hidden faction"
+msgstr "một nhóm ẩn"
+
+msgid "affects"
+msgstr "bên ảnh hưởng"
+
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "và ${ canvas.req } pixel đã đặt"
+
+msgid "by"
+msgstr "bời"
+
+msgid "check compliance here"
+msgstr "kiểm tra sự tuân thủ ngay đây"
+
+msgid "created at"
+msgstr "tạo lúc"
+
+msgid "days"
+msgstr "ngày"
+
+msgid "download here"
+msgstr "Tải xuống tại đây"
+
+msgid "lift"
+msgstr "gỡ bỏ"
+
+msgid "or login with:"
+msgstr "hoặc đăng nhập với:"
+
+msgid "or register here:"
+msgstr "hoặc đăng kí ở đây:"
+
+msgid "recommended"
+msgstr "khuyến khích"
+
+msgid "times used"
+msgstr "số lần sữ dụng"
+
+#, javascript-format
+msgid "try again after ${ ti }min"
+msgstr "vui lòng thử lại sau ${ ti } phút"
+
+msgid "x out of bounds"
+msgstr "(Toạ độ) x vượt quá giới hạn"
+
+msgid "y out of bounds"
+msgstr "(Toạ độ) y vượt quá giới hạn"
+
+msgid "z out of bounds"
+msgstr "(Toạ độ) z vượt quá giới hạn"
+
+msgctxt "media-player"
+msgid "Player"
+msgstr "Trình phát"
+
+msgctxt "keybinds"
+msgid "A"
+msgstr "A"
+
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+msgctxt "keybinds"
+msgid "D"
+msgstr "D"
+
+msgctxt "keybinds"
+msgid "E"
+msgstr "E"
+
+msgctxt "keybinds"
+msgid "G"
+msgstr "G"
+
+msgctxt "keybinds"
+msgid "H"
+msgstr "H"
+
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+msgctxt "keybinds"
+msgid "Q"
+msgstr "Q"
+
+msgctxt "keybinds"
+msgid "R"
+msgstr "R"
+
+msgctxt "keybinds"
+msgid "S"
+msgstr "S"
+
+msgctxt "keybinds"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+msgctxt "keybinds"
+msgid "W"
+msgstr "W"
+
+msgctxt "keybinds"
+msgid "X"
+msgstr "X"
+
+msgctxt "channel-list"
+msgid "Public"
+msgstr "Công cộng"
+
+#. Column title of column indicating whether or not a faction is able to be joined in public
+msgctxt "statistics-table"
+msgid "Public"
+msgstr "Công khai"
+
+#~ msgid "Add an Mail Adress here:"
+#~ msgstr "Thêm địa chỉ Email tại đây:"
+
+#~ msgid "Player"
+#~ msgstr "Người chơi"
+
+#~ msgid "Yes, Delete My Account!"
+#~ msgstr "Ừ, xoá tài khoản của tôi!"
+
+#~ msgid "Daily Pixel"
+#~ msgstr "Pixel hàng ngày"
+
+#~ msgid "Pixel"
+#~ msgstr "Pixel"
+
+#~ msgid "Public"
+#~ msgstr "Công cộng"
+
+#~ msgid "Change your Mail Adress here:"
+#~ msgstr "Đổi thư mục điện tử của bạn ở đây:"

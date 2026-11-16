@@ -1,0 +1,931 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"PO-Revision-Date: 2026-10-08 07:07+0000\n"
+"Last-Translator: Ngvn <ngvn@noreply.pixelplanet.fun>\n"
+"Language-Team: Vietnamese <https://translate.gs-os.com/projects/ppfun/server/"
+"vi/>\n"
+"Language: vi\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid "1bit"
+msgstr "1bit"
+
+msgid "2bit"
+msgstr "2bit"
+
+msgid "3D Canvas"
+msgstr "Khu vẽ 3D"
+
+msgid "A 3D globe of our whole map"
+msgstr "Một quả địa cầu 3D cho cả bản đồ của chúng ta"
+
+msgid ""
+"A canvas for the most active players from the the previous day. Daily "
+"ranking updates at 00:00 UTC."
+msgstr ""
+"Một khung vẽ cho những người chơi tích cực nhất vào ngày hôm trước. Xếp hạng "
+"hàng ngày được cập nhật mỗi 00:00 UTC."
+
+msgid "A file was too large"
+msgstr "Tập tin quá lớn"
+
+msgid "Access modtools"
+msgstr "Truy cập công cụ mod"
+
+msgid "Add Application"
+msgstr "Thêm chương trình"
+
+msgid "Add an Application (OIDC Client)"
+msgstr "Thêm chương trình (Máy khách OIDC)"
+
+msgid "Add new application"
+msgstr "Thêm chương trình mới"
+
+msgid "An error occured. Please try again later."
+msgstr "Một lỗi đã xuất hiện. Vui lòng thử lại sau giây lát."
+
+msgid "Application changed successfully"
+msgstr "Chương trình đã được thay đổi thành công"
+
+msgid "Application deleted"
+msgstr "Đã xoá chương trình"
+
+msgid "Application successfully added"
+msgstr "Đã thêm chương trình thành công"
+
+msgid "Avatar can only be an image"
+msgstr "Ảnh đại diện phải là tệp tin ảnh"
+
+msgid "Avatar not given or not an image"
+msgstr "Ảnh đại diện không được cung cấp hoặc không phải một ảnh"
+
+msgid "Black and White canvas"
+msgstr "Khung vẽ Đen - Trắng"
+
+msgid "Can not change a role above your own"
+msgstr "Không thể đổi vai trò cao hơn vai trò của bạn"
+
+msgid "Can not change a role that is equal to your own"
+msgstr "Không thể đổi vai trò bằng vai trò của bạn"
+
+msgid "Can not change the default setting of this role"
+msgstr "Không thể đổi cài đặt mặc định của vai trò này"
+
+msgid "Can not change the powerlevel of a role equal or above you"
+msgstr "Không thể thay đổi mức quyền hạn của vai trò ngang hàng hoặc trên bạn"
+
+msgid "Can not change the powerlevel of the Sovereign"
+msgstr "Không thể chỉnh mức quyền hạn của vai trò có quyền hạn tối cao"
+
+msgid "Can not chat while being banned"
+msgstr "Không thể trò chuyện khi bị cấm"
+
+msgid "Can not create a role on the same level as yours"
+msgstr "Không thể tạo vai trò có mức quyền hạn ngang hàng với bạn"
+
+msgid "Can not create a role with a powerlevel beyond yours"
+msgstr "Không thể tạo vai trò có mức quyền hạn cao hơn bạn"
+
+msgid "Can not delete a role on the same level as yours"
+msgstr "Không thể xóa vai trò có mức quyền hạn ngang hàng với bạn"
+
+msgid "Can not delete this role"
+msgstr "Không thể xoá vai trò này"
+
+msgid "Can not elevate the powerlevel of a role beyond yours"
+msgstr "Không thể tăng mức quyền hạn của vai trò trên bạn"
+
+msgid "Can not elevate the powerlevel of a role to yours"
+msgstr "Không thể tăng mức quyền hạn của một vai trò lên ngang hàng với bạn"
+
+#, javascript-format
+msgid "Can not have more than ${ MAX_ROLES_PER_FACTION } faction roles"
+msgstr "Không thể có nhiều hơn ${ MAX_ROLES_PER_FACTION } vai trò nhóm"
+
+msgid "Can not have more than 20 invites per faction"
+msgstr "Không thể có hơn 20 lời mời mỗi nhóm"
+
+msgid "Can not modify user equal to you or above you"
+msgstr ""
+"Không thể chỉnh sửa người dùng có quyền hạn ngang hàng hoặc cao hơn bạn"
+
+#. when leaving a faction and you are the last owner
+msgid "Can not orphan a faction"
+msgstr "Không thể kiến nhóm không có người"
+
+#, javascript-format
+msgid ""
+"Can not upload this many files at once, only 5 are allowed, you have $"
+"{ amountOfFiles }"
+msgstr ""
+"Không thể tải lên quá nhiều tệp cùng một lúc, chỉ cho phép tối đa là 5, bạn "
+"hiện cố tải ${ amountOfFiles } tệp"
+
+msgid "Can only have one Sovereign role"
+msgstr "Chỉ có thể có 1 vai trò với quyền hạn tối cao"
+
+msgid "Click here"
+msgstr "Nhấn vào đây"
+
+msgid "Click to Verify"
+msgstr "Nhấn vào để xác thực"
+
+msgid "Client Name"
+msgstr "Tên máy khách"
+
+msgid "Confirm New Password"
+msgstr "Xác nhận mật khẩu mới"
+
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas!"
+msgstr ""
+"Chiếm đất trên một Trái Đất nhỏ hơn với biển được bảo vệ. Có chia sẻ thời "
+"gian hồi 1 pixel với khung vẽ Trái Đất thường!"
+
+msgid "Consent"
+msgstr "Cho phép"
+
+msgid "Coronavirus"
+msgstr "Virus Corona"
+
+msgid "Could not change the flag of this role"
+msgstr "Không thể đổi cờ của vai trò này"
+
+msgid "Could not change this setting. Maybe try again later."
+msgstr "Không thể thay đổi cài đặt này. Vui lòng thử lại sau."
+
+msgid "Could not close this Session."
+msgstr "Không thể đóng phiên này."
+
+msgid "Could not find this login method"
+msgstr "Không thể tìm thấy phương pháp đăng nhập này"
+
+msgid "Could not leave this channel"
+msgstr "Không thể rời kênh này"
+
+msgid "Could not set this factions avatar"
+msgstr "Không thể đặt ảnh đại diện cho nhóm này"
+
+msgid "Could not set your avatar"
+msgstr "Không thể đặt ảnh đại diện của bạn"
+
+msgid "Could not set your faction role"
+msgstr "Không thể đặt vai trò trong nhóm của bạn"
+
+msgid "Could not upload all files"
+msgstr "Không thể tải lên mọi tệp tin"
+
+msgid "Couldn't find this mail in our database"
+msgstr "Không thể tìm thấy mail này trong cơ sở dữ liệu của chúng tôi"
+
+msgid "Default"
+msgstr "Mặc định"
+
+msgid "Delete Application"
+msgstr "Xoá chương trình"
+
+msgid "Description can't be empty"
+msgstr "Phần mô tả không thể để trống"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "Phần mô tả phải ngắn hơn 1000 ký tự"
+
+msgid "Display name for your OIDC client"
+msgstr "Tên hiển thị cho máy khách OIDC của bạn"
+
+msgid "Double click on globe to go back."
+msgstr "Nhấn đúp lên quả địa cầu để quay lại."
+
+msgid "E-Mail already in use."
+msgstr "Email đã được sử dụng."
+
+msgid "Earth"
+msgstr "Trái đất"
+
+msgid "Edit existing applications"
+msgstr "Xoá chương trình đang tồn tại"
+
+msgid "Email can't be empty."
+msgstr "Không thể để trống phần Email."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "Email nhập vào không được quá 40 ký tự."
+
+msgid "Email should at least contain a dot"
+msgstr "Email phải chứa ít nhất một dấu chấm"
+
+msgid "Email should be at least 5 characters long."
+msgstr "Email phải chứa ít nhất 5 kí tự."
+
+msgid "Email should contain a @"
+msgstr "Email phải chứa một kí tự @"
+
+msgid "Error"
+msgstr "Lỗi"
+
+msgid "Failed to create a new user :("
+msgstr "Thất bại khi tạo người dùng mới :("
+
+#, javascript-format
+msgid ""
+"File ${ filename } has ${ sizeMB } MB and is too large. It may only be $"
+"{ MAX_FILE_SIZE_MB } MB"
+msgstr ""
+"Tệp tin ${ filename } chứa ${ sizeMB } MB và quá lớn. Nó chỉ có thể chứa $"
+"{ MAX_FILE_SIZE_MB } MB"
+
+#, javascript-format
+msgid "File ${ filename } has an invalid extension"
+msgstr "Tệp tin ${ filename } chứa phần mở rộng không hợp lệ"
+
+msgid "File is broken"
+msgstr "Tệp tin đã bị hỏng"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid ""
+"Generate a new client_secret. The old secret will become invalid immediately."
+msgstr ""
+"Tạo một client_secret mới. Cái cũ sẽ ngay lập tức trở nên không hợp lệ."
+
+msgid "Get email address"
+msgstr "Nhận địa chỉ email"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Nhận số lượng pixel đã được vẽ và bảng xếp hạng"
+
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgstr ""
+"Chúc vui vẻ và đừng ngại liên hệ chúng tôi nếu bạn gặp phải bất cứ vấn đề :)"
+
+msgid "Hello"
+msgstr "Xin chào"
+
+#, javascript-format
+msgid "Hello ${ email }, you can set your new password here:"
+msgstr "Xin chào ${ email }, bạn có thể đặt mật khẩu mới ở đây:"
+
+#, javascript-format
+msgid "Hello ${ name }"
+msgstr "Xin chào ${ name }"
+
+msgid ""
+"If this was you, please ignore this email. If it wasn't you, please go to <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> and log-out any session "
+"that you are unaware of under \"Login Methods\" in the User Area and change "
+"your password."
+msgstr ""
+"Nếu đây là bạn, vui lòng bỏ qua tin nhắn này. Nếu không, hãy truy cập <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> và đăng xuất mọi phiên "
+"đăng nhập mà bạn không biết ở phần \"Các phương pháp đăng nhập\"ở phần Khu "
+"vực Người dùng và đổi lại mật khẩu của bạn."
+
+#, javascript-format
+msgid ""
+"If you did not request this mail, please just ignore it (the ip that "
+"requested this mail was ${ ip })."
+msgstr ""
+"Nếu bạn không yêu cầu mail, vui lòng bỏ qua (ip đã yêu cầu thư này là $"
+"{ ip })."
+
+msgid "Incorrect password"
+msgstr "Không đúng mật khẩu"
+
+msgid "Invalid type of media"
+msgstr "Loại đa phương tiện không hợp lệ"
+
+msgid "Invalid url :( Please check your mail again."
+msgstr "Liên kết không hợp lệ :( Vui lòng kiểm tra mail của bạn lần nữa."
+
+msgid "Just admins can do that"
+msgstr "Chỉ những quản trị viên mới được làm vậy"
+
+msgid "Just janny, mod or admin can do that"
+msgstr "Chỉ lao công, mod hoặc quản trị viên mới được làm vậy"
+
+msgid "Just mods and admins can do that"
+msgstr "Chỉ các mod và quản trị viên mới được làm vậy"
+
+msgid "Know that an account exists"
+msgstr "Biết rằng một tài khoản có tồn tại"
+
+#. "scopes" is a technical term and should not be translated
+msgid "List of available scopes"
+msgstr "Danh sách scopes (các scope) có sẵn"
+
+msgid "Loading..."
+msgstr "Đang tải…"
+
+msgid "Login from new location on PixelPlanet"
+msgstr "Đăng nhập từ vị trí mới trên PixelPlanet"
+
+msgid "Login is required"
+msgstr "Yêu cầu đăng nhập"
+
+msgid "Mail is already in use!"
+msgstr "Email này đã được sử dụng!"
+
+msgid "Mail is not configured on the server"
+msgstr "Chức năng gửi email chưa được cấu hình trên máy chủ"
+
+msgid "Mail verification"
+msgstr "Xác thực email"
+
+msgid "MimeType or extension not known or supported"
+msgstr ""
+"Kiểu phương tiện hoặc phần mở rộng không được biết đến hoặc không được hỗ trợ"
+
+#, javascript-format
+msgid "Mimetype ${ mimeType } of file ${ filename } is invalid or not allowed"
+msgstr ""
+"Kiểu phương tiện ${ mimeType } hoặc tệp ${ filename } không hợp lệ hoặc "
+"không được cho phép"
+
+msgid "Minimap"
+msgstr "Bản đồ mini"
+
+msgid "Mirror of PixelCanvas"
+msgstr "Bản sao của PixelCanvas"
+
+msgid "Mirror of PixelZone"
+msgstr "Bản sao của PixelZone"
+
+msgid "Moon"
+msgstr "Mặt trăng"
+
+msgid ""
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
+msgstr ""
+"Khung vẽ Mặt trăng. Nơi an toàn của các tác phẩm. Không cho phép cờ hoặc chữ "
+"quá lớn (trừ khi đó là một phần của tác phẩm) hoặc tác phẩm lớn hơn 1500 x "
+"1500 pixel."
+
+msgid "Name already in use."
+msgstr "Tên đã được sử dụng."
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "Tên chỉ có thể chứa các kí tự sau: a-z . _ và -"
+
+msgid "Name can't be empty."
+msgstr "Tên không thể để trống."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Tên chứa các kí tự không hợp lệ như @, /, / hoặc #"
+
+msgid "Name is too long"
+msgstr "Tên quá dài"
+
+msgid "Name must be at least 2 characters long"
+msgstr "Tên phải chứa ít nhất hai kí tự"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "Tên phải ngắn hơn 26 kí tự"
+
+msgid "Name or Email does not exist!"
+msgstr "Tên hoặc email không tồn tại!"
+
+msgid "New Password"
+msgstr "Mật khẩu mới"
+
+msgid "No Avatar given"
+msgstr "Không ảnh đại diện nào được cung cấp"
+
+msgid "No Captcha given"
+msgstr "Không mã captcha nào được cung cấp"
+
+msgid "No or invalid fish id."
+msgstr "Fish id không có hoặc không hợp lệ."
+
+msgid "No password given."
+msgstr "Không mật khẩu nào được cung cấp."
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "No redirect_uris given."
+msgstr "Không redirect_uris nào được cung cấp."
+
+msgid "No such badge found"
+msgstr "Không tìm thấy huy hiệu nào như vậy"
+
+msgid "No such fish found"
+msgstr "Không tìm thấy con cá nào như vậy"
+
+msgid "One redirect URIs per line"
+msgstr "Một URI chuyển hướng mỗi dòng"
+
+msgid "One redirect_uri per line"
+msgstr "Một redirect_uri mỗi dòng"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Only five redirect_uris are allowed per client"
+msgstr "Chỉ cho phép 5 redirect_uris mỗi máy khách"
+
+msgid "Only four colors. Same rules as moon!"
+msgstr "Chỉ bốn màu. Luật như mặt trăng!"
+
+msgid "OpenID Connect specs"
+msgstr "Thông số kỹ thuật OpenID Connect"
+
+msgid "Or by copying following url:"
+msgstr "Hoặc bằng cách sao chép liên kết sau đây:"
+
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr ""
+"Khung vẽ chính của chúng tôi, một bản đồ rộng lớn của thế giới. Vẽ bất cứ "
+"đâu bạn muốn!"
+
+msgid "Password must be at least 6 characters long."
+msgstr "Mật khẩu phải chứa ít nhất 6 kí tự."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "Mật khẩu phải ngắn hơn 60 kí tự."
+
+msgid "Password successfully changed."
+msgstr "Đã đổi mật khẩu thành công."
+
+msgid "Permission"
+msgstr "Quyền hạn"
+
+msgid "PixelCanvas"
+msgstr "PixelCanvas"
+
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "Quả địa cầu 3D PixelPlanet.Fun"
+
+msgid "PixelZone"
+msgstr "PixelZone"
+
+#, javascript-format
+msgid ""
+"Pixelplanet fulfills the OpenID Connect (OIDC) specifications. So an "
+"application that supports OIDC could ask for consent and login using "
+"pixelplanet accounts. The required endpoints can be auto-discovered via the $"
+"{ wellKnownUrl } URL."
+msgstr ""
+"Pixelplanet tuân thủ tiêu chuẩn OpenID Connect (OIDC). Do đó, các ứng dụng "
+"hỗ trợ OIDC có thể yêu cầu xác thực người dùng và đăng nhập bằng tài khoản "
+"Pixelplanet. Điểm cuối cần thiết có thể được tự động tìm thấy thông qua URL $"
+"{wellKnownUrl}."
+
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "Đặt pixel 3D trên một khung vẽ 3D với người khác."
+
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr ""
+"Đặt các pixel đầy màu sắc trên một khung vẽ dạng bản đồ với các người chơi "
+"trực tuyến khác"
+
+msgid "Please try again."
+msgstr "Vui lòng thử lại."
+
+msgid "Please use int channel"
+msgstr "Vui lòng sử dụng kênh int"
+
+msgid "Read Badges and fishes"
+msgstr "Đọc các huy hiệu và cá"
+
+msgid "Read name, username and account age"
+msgstr "Đọc tên, Tên người dùng và tuổi tài khoản"
+
+msgid "Redirect URIs"
+msgstr "URI chuyển hướng"
+
+msgid "Regularly update this data"
+msgstr "Cập nhật dữ liệu này thường xuyên"
+
+msgid "Request stalled"
+msgstr "Yêu cầu đã bị đình trệ"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid "Reroll client_secret"
+msgstr "Tạo mới client_secret"
+
+msgid "Reset Password"
+msgstr "Đặt lại mật khẩu"
+
+msgid "Reset your password here"
+msgstr "Đặt lại mật khẩu của bạn tại đây"
+
+msgid "Role flag can only be an image"
+msgstr "Cờ vai trò chỉ có thể là hình ảnh"
+
+msgid "Role flag needs to be 16x11"
+msgstr "Cờ vai trò cần có kích thước 16x11"
+
+msgid "Server Error"
+msgstr "Lỗi hệ thống"
+
+msgid "Server error while deleting user."
+msgstr "Lỗi máy chủ khi xoá người dùng."
+
+msgid "Someone logged into your account from a new location, with the IP:"
+msgstr "Ai đó đã đăng nhập vào tài khoản của bạn ở một vị trí mới, với IP:"
+
+msgid "Space-separated list of available scopes"
+msgstr "Danh sách scopes (các scope) có sẵn được ngăn cách bằng dấu cách"
+
+msgid ""
+"Space-separated list of default scopes, they will be used on requests if no "
+"other scope is given."
+msgstr ""
+"Danh sách scopes (các scope) mặc địch được ngăn cách bằng dấu cách, chúng sẽ "
+"được sử dụng khi không có scope nào được đưa ra."
+
+#. 'scope' is used as a technical term here, do not translate that word
+msgid ""
+"Space-separated list of default scopes, they will be used on requests where "
+"no other scope is given."
+msgstr ""
+"Danh sách scopes (các scope) có sẵn được ngăn cách bằng dấu cách, chúng sẽ "
+"được sữ dụng khi không có scope nào được cung cấp."
+
+msgid "Space-separated list of scopes that should be available"
+msgstr ""
+"Danh sách scopes (các scope) có sẵn được ngăn cách bằng dấu cách và nên có "
+"sẵn"
+
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr ""
+"Khung vẽ đặc biệt để nâng cao nhận thức về SARS-CoV-2 (hãy tiêm vắc xin)."
+
+msgid "Stop flooding."
+msgstr "Dừng spam lại."
+
+msgid "Submit"
+msgstr "Đăng"
+
+msgid "Thanks"
+msgstr "Cảm ơn"
+
+#, javascript-format
+msgid "The file ${ filename } is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "Tệp tin ${ filename } đã bị cấm ${ reason }. ID lệnh cấm: ${ mbid }"
+
+msgid "The user owning this badge is private"
+msgstr "Người dùng sở hữu huy hiệu này hiện đang ở chế độ riêng tư"
+
+msgid "The user owning this fish is private"
+msgstr "Người dùng sở hữu con cá này hiện đang ở chế độ riêng tư"
+
+msgid "This application is not allowed to login"
+msgstr "Chương trình này không được cho phép để đăng nhập"
+
+msgid "This application redirects to an unallowed page"
+msgstr "Chương trình này đang chuyển hướng đến một trang không được cho phép"
+
+msgid "This application sent a faulty login request with no redirection"
+msgstr ""
+"Chương trình này đã gửi một yêu cầu đăng nhập lỗi với không có chuyển hướng"
+
+msgid "This application uses a PKCE method we do not support"
+msgstr "Chương trình này sử dụng thủ thuật PKCE mà chúng tôi không hỗ trợ"
+
+msgid "This application uses a login method we do not support"
+msgstr ""
+"Chương trình này sử dụng một phương thức đăng nhập mà chúng tôi không hỗ trợ"
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function below to set a new password. In the future, consider not installing "
+"malware, Thank You."
+msgstr ""
+"Email / mật khẩu này đã bị hack và đã rò rỉ. Để bảo vệ tài khoản này, mật "
+"khẩu đã được cài đặt lại. Vui lòng sử dụng chức năng “Quên mật khẩu” bên "
+"dưới để thiết lập một mật khẩu mới. Lần sau, hãy cân nhắc không tải những "
+"phần mềm độc hại, cảm ơn."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"Email / mật khẩu này đã bị hack và đã rò rỉ. Để bảo vệ tài khoản này, mật "
+"khẩu đã được cài đặt lại. Vui lòng sử dụng chức năng “Quên mật khẩu” tại "
+"trang đăng nhập để thiết lập một mật khẩu mới. Lần sau, hãy cân nhắc không "
+"tải những phần mềm độc hại, cảm ơn."
+
+msgid "This email provider is not allowed"
+msgstr "Nhà cung cấp dịch vụ Email này không được cho phép"
+
+msgid "This faction does not exist"
+msgstr "Nhóm này không tồn tại"
+
+msgid "This faction is full"
+msgstr "Nhóm này đã đầy"
+
+msgid "This faction is private"
+msgstr "Nhóm này là nhóm riêng tư"
+
+#, javascript-format
+msgid "This media is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "Đa phương tiện này đã bị cấm ${ reason }. ID lệnh cấm: ${ mbid }"
+
+msgid "This password-reset link isn't valid anymore :("
+msgstr "Liên kết thiết đặt lại mật khẩu này hiện đã không còn khả dụng :("
+
+msgid "This user has not password set"
+msgstr "Người dùng này chưa đặt mật khẩu"
+
+msgid "This user is private"
+msgstr "Người dùng riêng tư"
+
+msgid "Title can't be empty."
+msgstr "Tên hiệu không thể để trống."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "Tên hiệu chứa các kí tự không hợp lệ như @, /, \\ hoặc #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "Tên hiệu phải dài ít nhất hai kí tự"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "Tên hiệu phải ngắn hơn 26 kí tự"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Too many or too long redirect_uris"
+msgstr "redirect_uris quá nhiều hoặc quá dài"
+
+msgid "Top10"
+msgstr "Top10"
+
+msgid "Unknown Captcha Error"
+msgstr "Lỗi Chaptra không xác định"
+
+#, javascript-format
+msgid "Unknown field ${ name } in request"
+msgstr "Yêu cầu chứa trường không xác định ${ name }"
+
+msgid "Update Application"
+msgstr "Cập nhật chương trình"
+
+msgid "User ID and verification level"
+msgstr "ID Người dùng và cấp độ xác thực"
+
+msgid "User doesn't exist in our database :("
+msgstr "Tên người dùng không tồn tại ở cơ sở dữ liệu của chúng tôi :("
+
+msgid "Username already in use."
+msgstr "Tên người dùng đã được sử dụng."
+
+msgid "Username can not start with pp_"
+msgstr "Tên người dùng không được bắt đầu bằng pp_"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "Tên người dùng chỉ có thể chứa các kí tự sau: a-z . _ và -"
+
+msgid "Username can't be empty."
+msgstr "Tên người dùng không thể để trống."
+
+msgid "Username must be at least 2 characters long"
+msgstr "Tên người dùng phải chứa ít nhất hai kí tự"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "Tên người dùng phải ngắn hơn 26 kí tự"
+
+msgid ""
+"We already sent you a mail with instructions. Please wait before requesting "
+"another mail."
+msgstr ""
+"Chúng tôi đã gửi cho bạn một mail với hướng dẫn. Vui lòng đợi trước khi yêu "
+"cầu thêm một mail khác."
+
+#, javascript-format
+msgid ""
+"We already sent you a verification mail, you can request another one in $"
+"{ minLeft } minutes."
+msgstr ""
+"Chúng tôi đã gửi cho bạn một email xác thực, bạn có thể yêu cầu một mail "
+"khác sau ${ minLeft } phút."
+
+msgid "We currently do not allow file uploads"
+msgstr "Chúng tôi hiện không cho phép tải lên tệp"
+
+#, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
+msgstr ""
+"Chào mừng ${ name } đã đến với PixelPlanet, vui lòng xác thực email của bạn"
+
+msgid "You already chose your username"
+msgstr "Bạn đã chọn tên người dùng của bạn"
+
+msgid "You already have that name."
+msgstr "Bạn đã chọn tên người dùng này."
+
+msgid "You are already part of this faction"
+msgstr "Bạn đã là thành viên của nhóm này"
+
+msgid "You are already verified."
+msgstr "Bạn đã xác thực rồi."
+
+msgid "You are banned from this faction"
+msgstr "Bạn đã bị cấm khỏi nhóm này"
+
+#, javascript-format
+msgid "You are muted for another ${ timeMin } minutes"
+msgstr "Bạn hiện bị tắt tiếng trong ${ timeMin } phút tiếp theo"
+
+#, javascript-format
+msgid "You are muted for another ${ ttl } seconds"
+msgstr "Bạn hiện bị tắt tiếng trong ${ ttl } giây tiếp theo"
+
+msgid "You are not allowed to access this page"
+msgstr "Bạn không được phép truy cập trang này"
+
+msgid "You are not banned"
+msgstr "Bạn không bị cấm"
+
+msgid "You are not logged in"
+msgstr "Bạn không đăng nhập"
+
+msgid "You are now verified :)"
+msgstr "Bạn giờ đã được xác thực :)"
+
+msgid "You are permanently muted, join our guilded to appeal the mute"
+msgstr ""
+"Bạn đã bị tắt tiếng vĩnh viễn, hãy xem qua hướng dẫn của chúng tôi để kháng "
+"cáo"
+
+#, javascript-format
+msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
+msgstr "Bạn đang gửi tin nhắn quá nhanh, bạn phải đợi ${ waitTime }s :("
+
+msgid "You attached too many files"
+msgstr "Bạn đính kèm quá ­nhiều tệp"
+
+msgid ""
+"You can not delete this login method, because you have nothing else left."
+msgstr ""
+"Bạn không thể xoá phương thức đăng nhập này, vỉ bạn không còn cách nào khác."
+
+msgid "You can not register an account while you are banned"
+msgstr "Bạn không thể đăng kí một tài khoản khi bạn bị cấm"
+
+msgid "You can not register an account with a proxy"
+msgstr "Bạn không thể đăng kí một tài khoản khi đang sử dụng proxy"
+
+msgid "You can not send chat messages while using a proxy"
+msgstr "Bạn không thể gửi các tin nhắn chat khi đang sử dụng proxy"
+
+#, javascript-format
+msgid ""
+"You can only be owner of ${ MAX_OWNED_FACTIONS_PER_USER } factions in total"
+msgstr ""
+"Bạn chỉ có thể là chủ sở hữu của tổng cộng ${ MAX_OWNED_FACTIONS_PER_USER } "
+"nhóm"
+
+#, javascript-format
+msgid "You can only have ${ MAX_FACTIONS_PER_USER } factions in total"
+msgstr "Bạn chỉ được phép có tổng cộng ${ MAX_FACTIONS_PER_USER } nhóm"
+
+msgid ""
+"You can register your own application here to get the client_id and "
+"client_secret needed to make use of this."
+msgstr ""
+"Bạn có thể đăng kí chương trình riêng của bạn ở đây để nhận client_id và "
+"client_secret cần thiết để sử dụng cái này."
+
+msgid "You can't send a message this long :("
+msgstr "Bạn không thể gửi một tin nhắn dài như thế :("
+
+msgid "You did not provide all necessary information"
+msgstr "Bạn đã không cung cấp mọi thông tin cần thiết"
+
+msgid ""
+"You do not have any email adress set. Please add one under \"Login Methods\"."
+msgstr ""
+"Bạn chưa có bất cứ địa chỉ email nào. Vui lòng thêm một cái dưới phần \"Các "
+"phương thức đăng nhập\"."
+
+msgid "You don't have access to this channel"
+msgstr "Bạn không có quyền truy cập kênh này"
+
+msgid "You failed your captcha"
+msgstr "Bạn đã không giải được captcha"
+
+msgid "You forgot your password for PixelPlanet? Get a new one here"
+msgstr "Bạn đã quên mật khẩu trong PixelPlanet? Tạo cái mới ở đây"
+
+msgid "You have to fill out all fields"
+msgstr "Bạn phải điền đầy đủ tất cả các trường"
+
+msgid "You must be logged in to access this page"
+msgstr "Bạn phải đăng nhập để truy cập trang này"
+
+msgid "You need an invite to join this faction"
+msgstr "Bạn cần một lời mời để tham gia nhóm này"
+
+#. "scope" is a technical term and should not be translated
+msgid "You need to define a valid scope"
+msgstr "Bạn phải xác định một scope phù hợp"
+
+msgid "You need to directly access this page in the browser :("
+msgstr "Bạn cần phải trực tiếp truy cập trang này tại trình duyệt :("
+
+#, javascript-format
+msgid "You reached your maximum upload quota of ${ MAX_USER_MEDIA_SIZE_MB } MB"
+msgstr "Bạn đã đạt đến hạn mức tải lên tối đa là ${MAX_USER_MEDIA_SIZE_MB} MB"
+
+msgid ""
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
+msgstr ""
+"Bạn đã yêu cầu lấy một mật khẩu mới. Bạn có thể đổi mật khẩu của bạn trong "
+"vòng 30 phút tại đây: "
+
+msgid "You sent an empty password or invalid data :("
+msgstr "Bạn đã đặt một mật khẩu trống hoặc dữ liệu không hợp lệ :("
+
+msgid "You took too long, try again"
+msgstr "Bạn mất quá lâu, vui lòng thử lại"
+
+msgid "You will be automatically redirected after 15s"
+msgstr "Bạn sẽ được tự động chuyển hướng sau 15 giây"
+
+msgid "Your Browser looks shady"
+msgstr "Trình duyệt của bạn trông đáng ngờ"
+
+msgid ""
+"Your account must be at least two weeks old before you can create a faction"
+msgstr ""
+"Tài khoản của bạn phải ít nhất hai tuần tuổi trước khi bạn có thể tạo một "
+"nhóm"
+
+msgid "Your account needs to be verified to access this page"
+msgstr "Tài khoản của bạn phải được xác thực để truy cập trang này"
+
+msgid "Your country is temporary muted from this chat channel"
+msgstr "Quốc gia của bạn hiện đang tạm thời bị tắt tiếng trong kênh chat này"
+
+msgid "Your device looks weird"
+msgstr "Thiết bị của bạn trông kì lạ"
+
+msgid "Your mail has to be verified in order to chat"
+msgstr "Email của bạn phải được xác thực để có thể trò chuyện"
+
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"Mã xác thực của bạn không hợp lệ hoặc đã hết hạn :(, vui lòng tạo cái mới."
+
+msgid "Your passwords do not match :("
+msgstr "Mật khẩu của bạn không khớp :("
+
+#. This media is banned xyz
+msgid "because it is propaganda"
+msgstr "vì đây là tuyên truyền"
+
+#. This media is banned xyz
+msgid "for being an attempt to scam people"
+msgstr "vì đây là nỗ lực để lừa đảo người khác"
+
+#. This media is banned xyz
+msgid "for being degenerate"
+msgstr "vì là nội dung suy đồi"
+
+#. This media is banned xyz
+msgid "for containing CSAM"
+msgstr "vì chứa CSAM"
+
+#. This media is banned xyz
+msgid "for containing graphic violence"
+msgstr "vì chứa nội dung bạo lực ghê rợn"
+
+#. This media is banned xyz
+msgid "for containing personal information"
+msgstr "vì chứa thông tin cá nhân"
+
+#. This media is banned xyz
+msgid "for glorifying terrorism"
+msgstr "vì cổ xuý khủng bố"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "redirect_uris does not look legit"
+msgstr "redirect_uris trông không hợp lệ"
+
+msgid "to go back to pixelplanet"
+msgstr "quay lại pixelplanet"
+
+msgid ""
+"welcome to our little community of pixelplacers, to use your account, you "
+"have to verify your mail. You can do that here: "
+msgstr ""
+"chào mừng đã đến với cộng đồng nhỏ của chúng tôi cho những người hay đặt "
+"pixel ở đây, để sử dụng tài khoản của bạn, bạn cần phải xác thực email của "
+"bạn. Bạn có thể làm thế ở đây: "
+
+#~ msgid "Please refresh the website"
+#~ msgstr "Vui lòng tải lại trang"
+
+#~ msgid "Incorrect password!"
+#~ msgstr "Mật khẩu sai!"
+
+#~ msgid "Can not have more than 20 faction roles"
+#~ msgstr "Không thể có hơn 20 vai trò của nhóm"

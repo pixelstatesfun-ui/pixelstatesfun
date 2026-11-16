@@ -1,0 +1,957 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-18 21:19+0000\n"
+"Last-Translator: IR Führer <ir_fuhrer@noreply.pixelplanet.fun>\n"
+"Language-Team: Persian <https://translate.gs-os.com/projects/ppfun/server/"
+"fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid "1bit"
+msgstr "1 بیت"
+
+msgid "2bit"
+msgstr "2بیت"
+
+msgid "3D Canvas"
+msgstr "بوم سه بعدی"
+
+msgid "A 3D globe of our whole map"
+msgstr "یک کره سه بعدی از کل نقشه ما"
+
+msgid ""
+"A canvas for the most active players from the the previous day. Daily "
+"ranking updates at 00:00 UTC."
+msgstr ""
+"بوم برای فعال ترین بازیکنان روز قبل. به روز رسانی رتبه بندی روزانه در ساعت "
+"00:00 UTC."
+
+msgid "A file was too large"
+msgstr "یک فایل بیش از حد بزرگ بود"
+
+msgid "Access modtools"
+msgstr "دسترسی به ابزار های مادریتوری"
+
+msgid "Add Application"
+msgstr "اضافه کردن برنامه"
+
+msgid "Add an Application (OIDC Client)"
+msgstr "اضافه کردن برنامه(دومرحله ای)"
+
+msgid "Add new application"
+msgstr "برنامه ی جدید"
+
+msgid "An error occured. Please try again later."
+msgstr "خطایی رخ داده است. لطفاً بعداً دوباره امتحان کنید."
+
+msgid "Application changed successfully"
+msgstr "برنامه با موفقیت تغییر کرد"
+
+msgid "Application deleted"
+msgstr "برنامه حذف شد"
+
+msgid "Application successfully added"
+msgstr "برنامه با موفقیت اضافه شد"
+
+msgid "Avatar can only be an image"
+msgstr "آواتار فقط می‌تواند یک تصویر باشد"
+
+msgid "Avatar not given or not an image"
+msgstr "آواتار داده نشده یا تصویر نیست"
+
+msgid "Black and White canvas"
+msgstr "بوم سیاه و سفید"
+
+msgid "Can not change a role above your own"
+msgstr "نمی‌توان نقشی بالاتر از سطح خود را تغییر داد"
+
+msgid "Can not change a role that is equal to your own"
+msgstr "نمی‌توان نقشی هم‌سطح با خود را تغییر داد"
+
+msgid "Can not change the default setting of this role"
+msgstr "نمی‌توان تنظیم پیش‌فرض این نقش را تغییر داد"
+
+msgid "Can not change the powerlevel of a role equal or above you"
+msgstr "نمی‌توان سطح قدرت نقشی هم‌سطح یا بالاتر از خود را تغییر داد"
+
+msgid "Can not change the powerlevel of the Sovereign"
+msgstr "نمی‌توان سطح قدرت حاکم (Sovereign) را تغییر داد"
+
+msgid "Can not chat while being banned"
+msgstr "تا زمانی که بن هستی نمیتونی چت کنی"
+
+msgid "Can not create a role on the same level as yours"
+msgstr "نمی‌توان نقشی در همان سطح خود ایجاد کرد"
+
+msgid "Can not create a role with a powerlevel beyond yours"
+msgstr "نمی‌توان نقشی با سطح قدرت بالاتر از خود ایجاد کرد"
+
+msgid "Can not delete a role on the same level as yours"
+msgstr "نمی‌توان نقشی هم‌سطح با خود را حذف کرد"
+
+msgid "Can not delete this role"
+msgstr "نمی‌توان این نقش را حذف کرد"
+
+msgid "Can not elevate the powerlevel of a role beyond yours"
+msgstr "نمی‌توان سطح قدرت نقشی را بالاتر از خود ارتقا داد"
+
+msgid "Can not elevate the powerlevel of a role to yours"
+msgstr "نمی‌توان سطح قدرت نقشی را به سطح خود ارتقا داد"
+
+#, javascript-format
+msgid "Can not have more than ${ MAX_ROLES_PER_FACTION } faction roles"
+msgstr "نمی‌توان بیش از ${ MAX_ROLES_PER_FACTION } نقش در هر فکشن داشت"
+
+msgid "Can not have more than 20 invites per faction"
+msgstr "نمی‌توان بیش از ۲۰ دعوت‌نامه در هر فکشن داشت"
+
+msgid "Can not modify user equal to you or above you"
+msgstr "نمی‌توان کاربری هم‌سطح یا بالاتر از خود را تغییر داد"
+
+#. when leaving a faction and you are the last owner
+msgid "Can not orphan a faction"
+msgstr "نمی‌توان یک فکشن را بدون مالک رها کرد"
+
+#, javascript-format
+msgid ""
+"Can not upload this many files at once, only 5 are allowed, you have $"
+"{ amountOfFiles }"
+msgstr ""
+"نمی‌توان این تعداد فایل را یک‌باره آپلود کرد، فقط ۵ فایل مجاز است، شما ${ "
+"amountOfFiles } فایل دارید"
+
+msgid "Can only have one Sovereign role"
+msgstr "فقط می‌توان یک نقش حاکم (Sovereign) داشت"
+
+msgid "Click here"
+msgstr "اینجا کلیک کنید"
+
+msgid "Click to Verify"
+msgstr "برای تایید کلیک کنید"
+
+msgid "Client Name"
+msgstr "اسم مشتری"
+
+msgid "Confirm New Password"
+msgstr "رمز عبور جدید را تأیید کنید"
+
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas!"
+msgstr ""
+"زمینی کوچک‌تر با اقیانوسی محافظت‌شده رو فتح کنین. تایم کولد داون با دنیای اصلی "
+"به اشتراک گزاشته میشه!"
+
+msgid "Consent"
+msgstr "رضایت"
+
+msgid "Coronavirus"
+msgstr "ویروس کرونا"
+
+msgid "Could not change the flag of this role"
+msgstr "پرچم این نقش قابل تغییر نبود"
+
+msgid "Could not change this setting. Maybe try again later."
+msgstr "این تنظیم قابل تغییر نبود. شاید بعداً دوباره تلاش کنید."
+
+msgid "Could not close this Session."
+msgstr "نتوانستیم این جلسه را ببندیم."
+
+msgid "Could not find this login method"
+msgstr "این روش ورود به سیستم پیدا نشد"
+
+msgid "Could not leave this channel"
+msgstr "نمی‌توان از این کانال خارج شد"
+
+msgid "Could not set this factions avatar"
+msgstr "تصویر نمایه این گروه قابل تنظیم نبود"
+
+msgid "Could not set your avatar"
+msgstr "تصویر نمایه شما قابل تنظیم نبود"
+
+msgid "Could not set your faction role"
+msgstr "نقش گروهی شما قابل تنظیم نبود"
+
+msgid "Could not upload all files"
+msgstr "همه پرونده‌ها بارگذاری نشدند"
+
+msgid "Couldn't find this mail in our database"
+msgstr "این ایمیل در پایگاه داده ما یافت نشد"
+
+msgid "Default"
+msgstr "پیشفرض"
+
+msgid "Delete Application"
+msgstr "حذف برنامه"
+
+msgid "Description can't be empty"
+msgstr "توضیحات نمی‌تواند خالی باشد"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "توضیحات باید کمتر از ۱۰۰۰ کاراکتر باشد"
+
+msgid "Display name for your OIDC client"
+msgstr "نام نمایشی برای کلاینت دو مرحله ای شما"
+
+msgid "Double click on globe to go back."
+msgstr "برای بازگشت بر روی globe دوبار کلیک کنید."
+
+msgid "E-Mail already in use."
+msgstr "ایمیل در حال حاضر در حال استفاده است."
+
+msgid "Earth"
+msgstr "زمین"
+
+msgid "Edit existing applications"
+msgstr "ویرایش برنامه‌های موجود"
+
+msgid "Email can't be empty."
+msgstr "ایمیل نمی تواند خالی باشد."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "ایمیل نمی‌تواند بیشتر از ۴۰ کاراکتر باشد."
+
+msgid "Email should at least contain a dot"
+msgstr "ایمیل حداقل باید حاوی یک نقطه باشد"
+
+msgid "Email should be at least 5 characters long."
+msgstr "ایمیل باید حداقل 5 کاراکتر باشد."
+
+msgid "Email should contain a @"
+msgstr "ایمیل باید حاوی @ باشد"
+
+msgid "Error"
+msgstr "خطا"
+
+msgid "Failed to create a new user :("
+msgstr "ایجاد کاربر جدید ناموفق بود :("
+
+#, javascript-format
+msgid ""
+"File ${ filename } has ${ sizeMB } MB and is too large. It may only be $"
+"{ MAX_FILE_SIZE_MB } MB"
+msgstr ""
+"پرونده ${ filename } دارای ${ sizeMB } مگابایت است و بیش از حد بزرگ است. "
+"حداکثر مجاز ${ MAX_FILE_SIZE_MB } مگابایت است"
+
+#, javascript-format
+msgid "File ${ filename } has an invalid extension"
+msgstr "پرونده ${ filename } پسوند نامعتبری دارد"
+
+msgid "File is broken"
+msgstr "پرونده خراب است"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid ""
+"Generate a new client_secret. The old secret will become invalid immediately."
+msgstr ""
+"یک 'client_secret' جدید تولید کنید. رمز قدیمی بلافاصله نامعتبر خواهد شد."
+
+msgid "Get email address"
+msgstr "دریافت آدرس ایمیل"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "دریافت تعداد پیکسل‌های قرار داده شده و رتبه‌بندی"
+
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgstr "لذت ببرید و در صورت بروز هرگونه مشکل با ما در ارتباط باشید :)"
+
+msgid "Hello"
+msgstr "سلام"
+
+#, javascript-format
+msgid "Hello ${ email }, you can set your new password here:"
+msgstr "سلام ${ email }، می‌توانید رمز عبور جدید خود را اینجا تنظیم کنید:"
+
+#, javascript-format
+msgid "Hello ${ name }"
+msgstr "سلام ${ name }"
+
+msgid ""
+"If this was you, please ignore this email. If it wasn't you, please go to <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> and log-out any session "
+"that you are unaware of under \"Login Methods\" in the User Area and change "
+"your password."
+msgstr ""
+"اگر این شما بودید، لطفاً این ایمیل را نادیده بگیرید. اگر شما نبودید، لطفاً به "
+"<a href=\"https://pixelplanet.fun\">pixelplanet.fun</a> بروید و در قسمت "
+"«روش‌های ورود» در ناحیه کاربری، هر جلسه‌ای را که از آن بی‌اطلاع هستید، از سیستم "
+"خارج شوید و رمز عبور خود را تغییر دهید."
+
+#, javascript-format
+msgid ""
+"If you did not request this mail, please just ignore it (the ip that "
+"requested this mail was ${ ip })."
+msgstr ""
+"اگر شما این ایمیل را درخواست نکرده‌اید، لطفاً آن را نادیده بگیرید (آی‌پی "
+"درخواست‌کننده این ایمیل ${ ip } بود)."
+
+msgid "Incorrect password"
+msgstr "رمز عبور نادرست"
+
+msgid "Invalid type of media"
+msgstr "نوع رسانه نامعتبر است"
+
+msgid "Invalid url :( Please check your mail again."
+msgstr "آدرس اینترنتی نامعتبر :( لطفا دوباره ایمیل خود را بررسی کنید."
+
+msgid "Just admins can do that"
+msgstr "فقط ادمین ها میتونن این کار رو بکنن"
+
+msgid "Just janny, mod or admin can do that"
+msgstr "فقط نظافتچی، ناظم یا مدیر اجازه انجام این کار را دارند"
+
+msgid "Just mods and admins can do that"
+msgstr "فقط ناظمان و مدیران اجازه انجام این کار را دارند"
+
+msgid "Know that an account exists"
+msgstr "اطلاع از وجود یک حساب کاربری"
+
+#. "scopes" is a technical term and should not be translated
+msgid "List of available scopes"
+msgstr "فهرست\"scopes\" های موجود"
+
+msgid "Loading..."
+msgstr "بارگذاری..."
+
+msgid "Login from new location on PixelPlanet"
+msgstr "ورود از طریق آی‌پی جدید در پیکسل پلنت"
+
+msgid "Login is required"
+msgstr "ورود الزامی است"
+
+msgid "Mail is already in use!"
+msgstr "ایمیل از قبل در حال استفاده است!"
+
+msgid "Mail is not configured on the server"
+msgstr "ایمیل روی سرور پیکربندی نشده است"
+
+msgid "Mail verification"
+msgstr "تایید ایمیل"
+
+msgid "MimeType or extension not known or supported"
+msgstr "نوع Mime یا پسوند شناخته شده یا پشتیبانی نمی‌شود"
+
+#, javascript-format
+msgid "Mimetype ${ mimeType } of file ${ filename } is invalid or not allowed"
+msgstr "نوع Mime ${ mimeType } پرونده ${ filename } نامعتبر یا مجاز نیست"
+
+msgid "Minimap"
+msgstr "مینی‌مپ"
+
+msgid "Mirror of PixelCanvas"
+msgstr "آینه بوم پیکسل"
+
+msgid "Mirror of PixelZone"
+msgstr "آینه منطقه پیکسل"
+
+msgid "Moon"
+msgstr "ماه"
+
+msgid ""
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
+msgstr ""
+"بوم ماه. فضای امن برای هنر بدون پرچم یا متن بزرگ (مگر اینکه بخشی از هنر) یا "
+"هنری بزرگتر از 1.5k × 1.5k پیکسل باشد."
+
+msgid "Name already in use."
+msgstr "این نام قبلاً استفاده شده است."
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "نام فقط می‌تواند شامل کاراکترهای a-z . _ و - باشد"
+
+msgid "Name can't be empty."
+msgstr "نام نمی تواند خالی باشد."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "اسم نباید @ و # یا / از این چیزا داشته باشه"
+
+msgid "Name is too long"
+msgstr "نام خیلی طولانی است"
+
+msgid "Name must be at least 2 characters long"
+msgstr "نام باید حداقل 2 کاراکتر باشد"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "نام باید کمتر از ۲۶ کاراکتر باشد"
+
+msgid "Name or Email does not exist!"
+msgstr "چنین اسم یا ایمیلی وجود ندارد!"
+
+msgid "New Password"
+msgstr "رمز عبور جدید"
+
+msgid "No Avatar given"
+msgstr "تصویر نمایه مشخص نشده است"
+
+msgid "No Captcha given"
+msgstr "کپچا داده نشده است"
+
+msgid "No or invalid fish id."
+msgstr "شناسه ماهی وجود ندارد یا نامعتبر است."
+
+msgid "No password given."
+msgstr "رمز عبور داده نشده است."
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "No redirect_uris given."
+msgstr "هیچ \"redirect_uris\" ارائه نشده است."
+
+msgid "No such badge found"
+msgstr "نشان مورد نظر یافت نشد"
+
+msgid "No such fish found"
+msgstr "ماهی مورد نظر پیدا نشد"
+
+msgid "One redirect URIs per line"
+msgstr "یک نشانی بازگردانی در هر خط"
+
+msgid "One redirect_uri per line"
+msgstr "یک redirect_uri در هر خط"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Only five redirect_uris are allowed per client"
+msgstr "فقط پنج redirect_uri برای هر کلاینت مجاز است"
+
+msgid "Only four colors. Same rules as moon!"
+msgstr "فقط چهار رنگ. قوانین مشابه بوم ماه!"
+
+msgid "OpenID Connect specs"
+msgstr "مشخصات OpenID Connect"
+
+msgid "Or by copying following url:"
+msgstr "یا با کپی کردن آدرس زیر:"
+
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr ""
+"بوم اصلی ما، نقشه عظیمی از جهان است. هر جایی که دوست دارید پیکسل بزارید!"
+
+msgid "Password must be at least 6 characters long."
+msgstr "رمز عبور باید حداقل ۶ کاراکتر باشد."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "رمز عبور باید کمتر از ۶۰ کاراکتر باشد."
+
+msgid "Password successfully changed."
+msgstr "رمز عبور با موفقیت تغییر کرد."
+
+msgid "Permission"
+msgstr "دسترسی"
+
+msgid "PixelCanvas"
+msgstr "بوم پیکسل"
+
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "مدل کروی. بوم اصلی پیکسل پلنت"
+
+msgid "PixelZone"
+msgstr "منطقه پیکسل"
+
+#, javascript-format
+msgid ""
+"Pixelplanet fulfills the OpenID Connect (OIDC) specifications. So an "
+"application that supports OIDC could ask for consent and login using "
+"pixelplanet accounts. The required endpoints can be auto-discovered via the $"
+"{ wellKnownUrl } URL."
+msgstr ""
+"Pixelplanet مشخصات OpenID Connect (OIDC) را برآورده می‌کند. بنابراین برنامه‌ای "
+"که از OIDC پشتیبانی می‌کند، می‌تواند با استفاده از حساب‌های pixelplanet درخواست "
+"رضایت و ورود به سیستم کند. نقاط پایانی مورد نیاز می‌توانند به صورت خودکار از "
+"طریق آدرس اینترنتی ${ wellKnownUrl } کشف شوند."
+
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "وکسل‌ها را با دیگران روی بوم سه‌بعدی قرار دهید."
+
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr "پیکسل‌های رنگی را روی بوم طرح‌دار نقشه با دیگر بازیکنان آنلاین قرار دهید"
+
+msgid "Please try again."
+msgstr "لطفا دوباره تلاش کنید."
+
+msgid "Please use int channel"
+msgstr "لطفا از کانال int استفاده کنید"
+
+msgid "Read Badges and fishes"
+msgstr "خواندن نشان‌ها و ماهی‌ها"
+
+msgid "Read name, username and account age"
+msgstr "خواندن نام کاربری، یوزرنیم و سن حساب"
+
+msgid "Redirect URIs"
+msgstr "لینک های مرجوعی"
+
+msgid "Regularly update this data"
+msgstr "به‌روزرسانی منظم این داده‌ها"
+
+msgid "Request stalled"
+msgstr "درخواست متوقف شد"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid "Reroll client_secret"
+msgstr "بازتولید client_secret"
+
+msgid "Reset Password"
+msgstr "بازنشانی رمز عبور"
+
+msgid "Reset your password here"
+msgstr "رمز عبور خود را در اینجا بازنشانی کنید"
+
+msgid "Role flag can only be an image"
+msgstr "پرچم نقش فقط می‌تواند یک تصویر باشد"
+
+msgid "Role flag needs to be 16x11"
+msgstr "پرچم نقش باید ۱۶×۱۱ باشد"
+
+msgid "Server Error"
+msgstr "خطای سرور"
+
+msgid "Server error while deleting user."
+msgstr "خطای سرور هنگام حذف کاربر."
+
+msgid "Someone logged into your account from a new location, with the IP:"
+msgstr "شخصی از یک مکان جدید با IP زیر وارد حساب کاربری شما شده است:"
+
+msgid "Space-separated list of available scopes"
+msgstr "فهرست scope‌های موجود با فاصله جدا شده"
+
+msgid ""
+"Space-separated list of default scopes, they will be used on requests if no "
+"other scope is given."
+msgstr ""
+"فهرست scope‌های پیش‌فرض با فاصله جدا شده، در درخواست‌هایی که scope دیگری مشخص "
+"نشده استفاده خواهند شد."
+
+#. 'scope' is used as a technical term here, do not translate that word
+msgid ""
+"Space-separated list of default scopes, they will be used on requests where "
+"no other scope is given."
+msgstr ""
+"فهرستscope‌های پیش‌فرض با فاصله جدا شده، در درخواست‌هایی کهscope دیگری مشخص "
+"نشده استفاده خواهند شد."
+
+msgid "Space-separated list of scopes that should be available"
+msgstr "فهرست scope‌هایی که باید موجود باشند با فاصله جدا شده"
+
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr "بوم ویژه برای آگاهی‌بخشی درباره SARS-CoV2 (واکسن نزنید)."
+
+msgid "Stop flooding."
+msgstr "اینقدر پیام نفرست."
+
+msgid "Submit"
+msgstr "ارسال"
+
+msgid "Thanks"
+msgstr "ممنون"
+
+#, javascript-format
+msgid "The file ${ filename } is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "پرونده ${ filename } ممنوع شده ${ reason }. شناسه ممنوعیت: ${ mbid }"
+
+msgid "The user owning this badge is private"
+msgstr "کاربری که این نشان را دارد، خصوصی است"
+
+msgid "The user owning this fish is private"
+msgstr "کاربری که مالک این ماهی است، خصوصی است"
+
+msgid "This application is not allowed to login"
+msgstr "این برنامه اجازه ورود ندارد"
+
+msgid "This application redirects to an unallowed page"
+msgstr "این برنامه به یک صفحه غیرمجاز ارجاع داده می‌شود"
+
+msgid "This application sent a faulty login request with no redirection"
+msgstr ""
+"این برنامه یک درخواست ورود به سیستم معیوب و بدون تغییر مسیر مرجوعی ارسال کرد"
+
+msgid "This application uses a PKCE method we do not support"
+msgstr "این برنامه از روش PKCE استفاده می‌کند که ما از آن پشتیبانی نمی‌کنیم"
+
+msgid "This application uses a login method we do not support"
+msgstr ""
+"این برنامه از روشی برای ورود به سیستم استفاده می‌کند که ما از آن پشتیبانی "
+"نمی‌کنیم"
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function below to set a new password. In the future, consider not installing "
+"malware, Thank You."
+msgstr ""
+"این ترکیب ایمیل/رمز عبور هک یا فاش شده است. برای محافظت از این حساب، رمز "
+"عبور بازنشانی شده است. لطفاً از گزینه «رمز عبور خود را فراموش کرده‌ام» در زیر "
+"برای تنظیم رمز عبور جدید استفاده کنید. در آینده در نظر بگیرید که بدافزاری "
+"نصب نکنید، متشکرم."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"این ترکیب ایمیل/رمز عبور هک و نشت کرده است. برای محافظت از این حساب، رمز "
+"عبور بازنشانی شده است. لطفاً از عملکرد «رمز عبورم را فراموش کرده‌ام» در صفحه "
+"ورود برای تنظیم رمز عبور جدید استفاده کنید. در آینده، از نصب بدافزار خودداری "
+"کنید. با تشکر."
+
+msgid "This email provider is not allowed"
+msgstr "این ارائه دهنده ایمیل مجاز نیست"
+
+msgid "This faction does not exist"
+msgstr "این گروه وجود ندارد"
+
+msgid "This faction is full"
+msgstr "این گروه ظرفیت آن تکمیل شده است"
+
+msgid "This faction is private"
+msgstr "این گروه خصوصی است"
+
+#, javascript-format
+msgid "This media is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "این رسانه ممنوع شده ${ reason }. شناسه ممنوعیت: ${ mbid }"
+
+msgid "This password-reset link isn't valid anymore :("
+msgstr "این password-reset دیگر معتبر نیست :("
+
+msgid "This user has not password set"
+msgstr "این کاربر رمز عبور تنظیم نکرده است"
+
+msgid "This user is private"
+msgstr "این کاربر خصوصی است"
+
+msgid "Title can't be empty."
+msgstr "عنوان نمی‌تواند خالی باشد."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "عنوان حاوی کاراکتر نامعتبر مانند @، /، \\ یا # است"
+
+msgid "Title must be at least 2 characters long"
+msgstr "عنوان باید حداقل ۲ کاراکتر باشد"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "عنوان باید کمتر از ۲۶ کاراکتر باشد"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Too many or too long redirect_uris"
+msgstr "redirect_uris بیش از حد زیاد یا طولانی است"
+
+msgid "Top10"
+msgstr "ده نفر برتر"
+
+msgid "Unknown Captcha Error"
+msgstr "کپچا یه خطایی داده که خودمم نمیدونم چیه"
+
+#, javascript-format
+msgid "Unknown field ${ name } in request"
+msgstr "فیلد ناشناخته ${ name } در درخواست"
+
+msgid "Update Application"
+msgstr "به‌روزرسانی برنامه"
+
+msgid "User ID and verification level"
+msgstr "شناسه کاربری و سطح تأیید"
+
+msgid "User doesn't exist in our database :("
+msgstr "کاربر در پایگاه داده ما وجود ندارد :("
+
+msgid "Username already in use."
+msgstr "نام کاربری در حال حاضر استفاده شده است."
+
+msgid "Username can not start with pp_"
+msgstr "نام کاربری نمی‌تواند با pp_ شروع شود"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "نام کاربری فقط می‌تواند شامل کاراکترهای a-z . _ و - باشد"
+
+msgid "Username can't be empty."
+msgstr "نام کاربری نمی‌تواند خالی باشد."
+
+msgid "Username must be at least 2 characters long"
+msgstr "نام کاربری باید حداقل ۲ کاراکتر باشد"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "نام کاربری باید کمتر از ۲۶ کاراکتر باشد"
+
+msgid ""
+"We already sent you a mail with instructions. Please wait before requesting "
+"another mail."
+msgstr ""
+"ما قبلاً یک ایمیل با دستورالعمل برای شما ارسال کردیم. لطفاً قبل از درخواست "
+"ایمیل دیگری صبر کنید."
+
+#, javascript-format
+msgid ""
+"We already sent you a verification mail, you can request another one in $"
+"{ minLeft } minutes."
+msgstr ""
+"ما قبلاً یک ایمیل تأیید برای شما ارسال کرده‌ایم، می‌توانید یک ایمیل دیگر را در $"
+"{ minLeft }دقیقه دیگر درخواست کنید."
+
+msgid "We currently do not allow file uploads"
+msgstr "در حال حاضر بارگذاری پرونده مجاز نیست"
+
+#, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
+msgstr "خوش آمدید ${ name } به پیکسل‌پلنت، لطفاً ایمیل خود را تأیید کنید"
+
+msgid "You already chose your username"
+msgstr "شما قبلاً نام کاربری خود را انتخاب کرده‌اید"
+
+msgid "You already have that name."
+msgstr "شما قبلاً این نام را دارید."
+
+msgid "You are already part of this faction"
+msgstr "شما از قبل عضو این گروه هستید"
+
+msgid "You are already verified."
+msgstr "شما قبلاً تأیید شده‌اید."
+
+msgid "You are banned from this faction"
+msgstr "شما از این گروه محروم شده‌اید"
+
+#, javascript-format
+msgid "You are muted for another ${ timeMin } minutes"
+msgstr "شما برای ${ timeMin } دقیقه بی صدا شدین"
+
+#, javascript-format
+msgid "You are muted for another ${ ttl } seconds"
+msgstr "شما برای ${ ttl } ثانیه بی صدا شدین"
+
+msgid "You are not allowed to access this page"
+msgstr "شما اجازه دسترسی به این صفحه را ندارید"
+
+msgid "You are not banned"
+msgstr "تو بن نشدی"
+
+msgid "You are not logged in"
+msgstr "شما وارد نشده اید"
+
+msgid "You are now verified :)"
+msgstr "الان تایید شدی :)"
+
+msgid "You are permanently muted, join our guilded to appeal the mute"
+msgstr "شما به طور دائم بی‌صدا شده‌اید، برای اعتراض به گیلدد ما بپیوندید"
+
+#, javascript-format
+msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
+msgstr "شما خیلی سریع پیام ارسال می‌کنید، باید ${ waitTime } ثانیه صبر کنید :("
+
+msgid "You attached too many files"
+msgstr "شما پرونده‌های بیش از حدی پیوست کردید"
+
+msgid ""
+"You can not delete this login method, because you have nothing else left."
+msgstr ""
+"شما نمی‌توانید این روش ورود را حذف کنید، زیرا روش دیگری باقی نمانده است."
+
+msgid "You can not register an account while you are banned"
+msgstr "شما نمی‌توانید در زمان محرومیت حساب کاربری ثبت کنید"
+
+msgid "You can not register an account with a proxy"
+msgstr "شما نمی‌توانید با پروکسی حساب کاربری ثبت کنید"
+
+msgid "You can not send chat messages while using a proxy"
+msgstr "شما نمی‌توانید هنگام استفاده از پروکسی پیام چت ارسال کنید"
+
+#, javascript-format
+msgid ""
+"You can only be owner of ${ MAX_OWNED_FACTIONS_PER_USER } factions in total"
+msgstr ""
+"شما در مجموع فقط می‌توانید مالک ${ MAX_OWNED_FACTIONS_PER_USER } گروه باشید"
+
+#, javascript-format
+msgid "You can only have ${ MAX_FACTIONS_PER_USER } factions in total"
+msgstr "شما در مجموع فقط می‌توانید ${ MAX_FACTIONS_PER_USER } گروه داشته باشید"
+
+msgid ""
+"You can register your own application here to get the client_id and "
+"client_secret needed to make use of this."
+msgstr ""
+"شما می‌توانید برنامه خود را اینجا ثبت کنید تا client_id و client_secret مورد "
+"نیاز برای استفاده از این قابلیت را دریافت کنید."
+
+msgid "You can't send a message this long :("
+msgstr "نمیشه اینقدر پیام بدی :("
+
+msgid "You did not provide all necessary information"
+msgstr "شما تمام اطلاعات لازم را ارائه نکرده‌اید"
+
+msgid ""
+"You do not have any email adress set. Please add one under \"Login Methods\"."
+msgstr ""
+"شما هیچ نشانی ایمیل تنظیم نکرده‌اید. لطفاً یکی در بخش «روش‌های ورود» افزود کنید."
+
+msgid "You don't have access to this channel"
+msgstr "تو به این کانال دسترسی نداری"
+
+msgid "You failed your captcha"
+msgstr "شما کپچای خود را اشتباه جواب دادین"
+
+msgid "You forgot your password for PixelPlanet? Get a new one here"
+msgstr ""
+"رمز عبور خود را برای PixelPlanet فراموش کرده اید؟ یک مورد جدید را از اینجا "
+"دریافت کنید"
+
+msgid "You have to fill out all fields"
+msgstr "شما باید تمام فیلدها را پر کنید"
+
+msgid "You must be logged in to access this page"
+msgstr "برای دسترسی به این صفحه باید وارد شده باشید"
+
+msgid "You need an invite to join this faction"
+msgstr "برای پیوستن به این گروه به دعوت‌نامه نیاز دارید"
+
+#. "scope" is a technical term and should not be translated
+msgid "You need to define a valid scope"
+msgstr "شما باید یک scope معتبر تعریف کنید"
+
+msgid "You need to directly access this page in the browser :("
+msgstr "شما باید مستقیماً از مرورگر به این صفحه دسترسی داشته باشید :("
+
+#, javascript-format
+msgid "You reached your maximum upload quota of ${ MAX_USER_MEDIA_SIZE_MB } MB"
+msgstr "شما به سقف بارگذاری ${ MAX_USER_MEDIA_SIZE_MB } مگابایت خود رسیدید"
+
+msgid ""
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
+msgstr ""
+"شما درخواست کرده اید که یک رمز عبور جدید دریافت کنید. می توانید رمز عبور خود "
+"را ظرف 30 دقیقه آینده در اینجا تغییر دهید: "
+
+msgid "You sent an empty password or invalid data :("
+msgstr "رمز خالی یا داده نامعتبر فرستادی :("
+
+msgid "You took too long, try again"
+msgstr "خیلی طول کشید، دوباره تلاش کنید"
+
+msgid "You will be automatically redirected after 15s"
+msgstr "پس از 15 ثانیه به طور خودکار هدایت می شوید"
+
+msgid "Your Browser looks shady"
+msgstr "مرورگر شما مشکوک به نظر می‌رسد"
+
+msgid ""
+"Your account must be at least two weeks old before you can create a faction"
+msgstr ""
+"حساب کاربری شما باید حداقل دو هفته قدمت داشته باشد تا بتوانید گروه ایجاد کنید"
+
+msgid "Your account needs to be verified to access this page"
+msgstr "حساب کاربری شما برای دسترسی به این صفحه باید تأیید شده باشد"
+
+msgid "Your country is temporary muted from this chat channel"
+msgstr "کشور شما موقتاً از این کانال چت بی‌صدا شده است"
+
+msgid "Your device looks weird"
+msgstr "دستگاه شما عجیب به نظر می‌رسد"
+
+msgid "Your mail has to be verified in order to chat"
+msgstr "برای چت کردن، ایمیل شما باید تأیید شود"
+
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"کد تأیید ایمیل شما نامعتبر است یا قبلاً منقضی شده است :(، لطفاً یک کد جدید "
+"درخواست کنید."
+
+msgid "Your passwords do not match :("
+msgstr "رمزهای شما همخوانی ندارند :("
+
+#. This media is banned xyz
+msgid "because it is propaganda"
+msgstr "زیرا پروپاگاندا است"
+
+#. This media is banned xyz
+msgid "for being an attempt to scam people"
+msgstr "به دلیل تلاش برای کلاهبرداری از افراد"
+
+#. This media is banned xyz
+msgid "for being degenerate"
+msgstr "به دلیل محتوای منحط"
+
+#. This media is banned xyz
+msgid "for containing CSAM"
+msgstr "به دلیل حاوی سوءاستفاده جنسی از کودکان"
+
+#. This media is banned xyz
+msgid "for containing graphic violence"
+msgstr "به دلیل حاوی خشونت تصویری"
+
+#. This media is banned xyz
+msgid "for containing personal information"
+msgstr "به دلیل حاوی اطلاعات شخصی"
+
+#. This media is banned xyz
+msgid "for glorifying terrorism"
+msgstr "به دلیل تمجید از تروریسم"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "redirect_uris does not look legit"
+msgstr "redirect_uris معتبر به نظر نمی‌رسد"
+
+msgid "to go back to pixelplanet"
+msgstr "برای بازگشت به pixelplanet"
+
+msgid ""
+"welcome to our little community of pixelplacers, to use your account, you "
+"have to verify your mail. You can do that here: "
+msgstr ""
+"به pixelplacers خوش آمدید، برای استفاده از حساب خود، باید ایمیل خود را تأیید "
+"کنید. تو میتوانی آن کار را اینجا انجام بدی: "
+
+#~ msgid "Please refresh the website"
+#~ msgstr "لطفا سایت رو رفرش کنید"
+
+#~ msgid "Incorrect password!"
+#~ msgstr "رمزت رو غلط وارد کردی!"
+
+#~ msgid "Server error when deleting user."
+#~ msgstr "خطای سرور هنگام حذف کاربر!"
+
+#~ msgid "You are banned"
+#~ msgstr "بن شدی سید"
+
+#~ msgid "Your Internet Provider is banned"
+#~ msgstr "ارائه دهنده اینترنت شما ممنوع شده است"
+
+#~ msgid "PixelPlanet.fun Password Reset"
+#~ msgstr "تنظیم مجدد رمز عبور PixelPlanet.fun"
+
+#, javascript-format
+#~ msgid "Hello ${ name }, you can set your new password here:"
+#~ msgstr "سلام ${ name }، میتونی اینجا رمز جدیدت رو بزاری:"
+
+#~ msgid "You took too long, try again."
+#~ msgstr "خیلی کار رو طولش دادی، دوباره امتحان کن."
+
+#~ msgid "Failed to create new user :("
+#~ msgstr "کاربر جدید ایجاد نشد :("
+
+#~ msgid "Failed to establish session after register :("
+#~ msgstr "تشکیل جلسه پس از ثبت نام انجام نشد :("
+
+#~ msgid "You are not even logged in."
+#~ msgstr "تو حتی وارد هم نشدی."
+
+#~ msgid "Server error when logging out."
+#~ msgstr "خطای سرور هنگام خروج از سیستم."
+
+#~ msgid "You are not authenticated."
+#~ msgstr "شما احراز هویت نشده اید."
+
+#~ msgid "PixelPlanet.fun Accounts"
+#~ msgstr "حساب‌های PixelPlanet.fun"
+
+#, javascript-format
+#~ msgid "Or ${ clickHere } to go back to pixelplanet"
+#~ msgstr "یا ${ clickHere } تا به پیکسل پلنت برگردی"

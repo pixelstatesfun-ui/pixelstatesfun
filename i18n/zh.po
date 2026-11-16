@@ -1,0 +1,2230 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"PO-Revision-Date: 2026-06-24 07:30+0000\n"
+"Last-Translator: Extreme Motorsex <em@noreply.pixelplanet.fun>\n"
+"Language-Team: Chinese (Simplified Han script) <https://translate.gs-os.com/"
+"projects/ppfun/client/zh_Hans/>\n"
+"Language: zh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid " which is in "
+msgstr " 包含在 "
+
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr "${ mouseSymbol } 按住鼠标左键并拖拽以回转"
+
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr "${ mouseSymbol } 点击鼠标左键或 ${ touchSymbol } 单击以放置像素"
+
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr "${ mouseSymbol } 点击鼠标右键并拖拽以平移"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
+msgstr "${ mouseSymbol } 点击右键或 ${ touchSymbol } 双击以移除像素"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } 滚动鼠标滚轮或按住 ${ mouseSymbol } 鼠标中键并拖拽以缩放"
+
+msgid "(0 = infinite)"
+msgstr "（0即无限）"
+
+msgid "(click a role to activate it)"
+msgstr "（点击一个身份以激活它）"
+
+msgid "(click a role to assign or remove it)"
+msgstr "（点击一个身份以分配或移除）"
+
+msgid "+last hour"
+msgstr "+最后小时"
+
+msgid "...loading Login methods and sessions..."
+msgstr "…正在加载登陆步骤…"
+
+msgid "A Phish!"
+msgstr "鱼儿上钩了！"
+
+msgid ""
+"A flag representing the role, it should be 16x11 pixels. If left empty, "
+"users with this role selected will still show their own flags."
+msgstr ""
+"代表角色的旗帜，尺寸应为 16×11 像素。如果留空，选择此角色的用户仍将显示他们自"
+"己的旗帜。"
+
+msgid "A new verification mail is getting sent to you."
+msgstr "正在向您发送一封新验证邮件。"
+
+msgid ""
+"A role has all the permissions of all levels below and equal to it. In "
+"example: Every role with a power level of >=50 can manage invites (50)."
+msgstr ""
+"角色拥有与其级别相同及以下的所有权限。例如：所有权限级别大于等于50的角色都可"
+"以管理邀请(50)。"
+
+msgid "ACCESS MODTOOLS"
+msgstr "访问管理员工具"
+
+#. modlogLink has the text "Moderation Log"
+#, javascript-format
+msgid ""
+"Actions taken by moderators on the canvas can be seen in the ${ modlogLink }."
+msgstr "版主在画布上采取的操作可以在${ modlogLink }中查看。"
+
+msgid "Add Grid (uncheck if you need a 1:1 template)"
+msgstr "添加网格（若您需要1比1模板则取消选中）"
+
+msgid "Add Template"
+msgstr "添加模板"
+
+msgid "Add a new E-Mail Address here:"
+msgstr "请在此处添加新的电子邮件地址："
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Admintools"
+msgstr "管理员工具"
+
+msgid "Age"
+msgstr "年龄"
+
+msgid "All members of this faction are hidden"
+msgstr "该派系所有成员均已隐藏"
+
+msgid "All sound effects will be disabled."
+msgstr "所有声音效果都将不可用。"
+
+msgid "Always show Movement Controls"
+msgstr "总是显示移动控制"
+
+msgid "Always show movement control buttons"
+msgstr "总是显示移动控制按钮"
+
+msgid "An image representing your faction"
+msgstr "表示您所在派别的图片"
+
+msgid "Anti Aliasing"
+msgstr "抗锯齿"
+
+msgid "Apply a filter to clean trash in large canvas areas."
+msgstr "启用过滤器以清理大画布区域中的杂笔。"
+
+msgid "Archive"
+msgstr "文档"
+
+msgid "Assign Roles"
+msgstr "分配身份"
+
+msgid "Assign new Mod"
+msgstr "指定新管理员"
+
+msgid "Assign role per default to new members"
+msgstr "默认为新成员分配角色"
+
+msgid "Assign roles below their own"
+msgstr "分配角色在其下方"
+
+msgid "Assign this role to every new member automatically on join."
+msgstr "将此角色自动分配给每位新成员。"
+
+msgid "Assigned role per default"
+msgstr "默认分配的角色"
+
+msgid "Attach File"
+msgstr "附加文件"
+
+msgid "Auto Zoom In"
+msgstr "自动放大"
+
+msgid "Avatar"
+msgstr "阿凡达"
+
+msgid "Back"
+msgstr "回退"
+
+msgid "Badge Display"
+msgstr "徽章显示"
+
+msgid "Badges"
+msgstr "徽章"
+
+msgid "Ban"
+msgstr "封禁"
+
+msgid "Ban media"
+msgstr "封禁媒体"
+
+msgid "Ban members"
+msgstr "禁令成员"
+
+msgid "Banned"
+msgstr "已封禁"
+
+msgid "Banned? Detected as Proxy?"
+msgstr "被封禁了？被检测为代理网络连接了？"
+
+msgid "Bans"
+msgstr "封禁"
+
+msgid "Block"
+msgstr "屏蔽"
+
+msgid "Block DMs"
+msgstr "屏蔽私信"
+
+msgid ""
+"Block all Private Messages. Enabling this will make it impossible for other "
+"users to start messaging you. You can still start new DMs with other users "
+"and already ongoing DMs will still be open."
+msgstr ""
+"屏蔽所有私信。启用此功能后，其他用户将无法向您发送私信。您仍然可以与其他用户"
+"发起新的私信，并且正在进行的私信对话仍将保持开放状态。"
+
+msgid "Blocked"
+msgstr "已屏蔽"
+
+msgid "Bottom-right corner"
+msgstr "右下角"
+
+msgid "Build image and set it to protected."
+msgstr "建造图像，并将其设为受保护。"
+
+msgid "Build image on canvas."
+msgstr "在画布上建造图像。"
+
+msgid "Build image, but reset cooldown to unset-pixel cd."
+msgstr "建造图像，但将冷却时间重置为未设置像素冷却时间。"
+
+msgid "By Mod"
+msgstr "来自管理员"
+
+msgid "Calculate like GIMP"
+msgstr "以GIMP式计算"
+
+msgid "Can not export more than 20 or no template!"
+msgstr "无法导出超过20个模板！"
+
+msgid "Can not import more than 20 or no template!"
+msgstr "无法导入超过20个模板！"
+
+msgid "Can't read? Reload:"
+msgstr "无法辩识？点此重新加载："
+
+msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
+msgstr "无法渲染三维画布，您是否禁用了WebGL2？"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel adding Template"
+msgstr "取消添加模板"
+
+msgid "Canvas"
+msgstr "画布"
+
+msgid "Canvas Archive"
+msgstr "画布档案"
+
+msgid "Canvas Cleaner"
+msgstr "画布清理器"
+
+msgid "Canvas Error"
+msgstr "画布错误"
+
+msgid "Canvas Selection"
+msgstr "画布选择"
+
+msgid "Captcha"
+msgstr "验证码"
+
+msgid "Caught by"
+msgstr "抓取者"
+
+msgid "Change Flag"
+msgstr "更改标志"
+
+msgid "Change Happened"
+msgstr "发生变化"
+
+msgid "Change Name"
+msgstr "更改名称"
+
+msgid "Change Password"
+msgstr "更改密码"
+
+msgid "Channel"
+msgstr "渠道"
+
+msgid "Channel settings"
+msgstr "频道设置"
+
+msgid "Charts"
+msgstr "图表"
+
+msgid "Chat"
+msgstr "聊天"
+
+msgid "Chat here"
+msgstr "此处聊天"
+
+msgid "Check out past versions of the canvas."
+msgstr "检查画布历史版本。"
+
+msgid "Check to allow"
+msgstr "检查以允许"
+
+msgid "Check who placed in an area"
+msgstr "检查谁在区域内绘画"
+
+msgid "Choose Canvas"
+msgstr "选择画布"
+
+msgid "Choose Color Mode"
+msgstr "选择颜色模式"
+
+msgid "Choose Strategy"
+msgstr "选择策略"
+
+msgid "Choose Username"
+msgstr "选择用户名"
+
+msgid ""
+"Clean spare pixels that are surrounded by a single other color or unset "
+"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
+"two cooldowns)!)"
+msgstr ""
+"清除被单一颜色或未设置像素包围的空白像素（在允许未设置像素的画布上非常激进，"
+"因为画布上有两个冷却时间！）"
+
+msgid "Clean spare pixels that are surrounded by unset pixels"
+msgstr "干净的备用像素，周围环绕着未设置的像素"
+
+msgid ""
+"Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
+"pixels"
+msgstr "清理未被至少1个已绘画像素包围的空闲像素"
+
+msgid "Cleaners can use 0cd blank colors."
+msgstr "清理人员可以使用不消耗等待时间的空白颜料。"
+
+msgid "Clear"
+msgstr "清除"
+
+#, javascript-format
+msgid ""
+"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
+"select current hovering color"
+msgstr "点击 ${ mouseSymbol } 鼠标中键或 ${ touchSymbol } 长按以吸取颜色"
+
+msgid "Click a color in palette to select it"
+msgstr "在调色盘中点击一个颜色以选择"
+
+msgid "Click here to cease representation."
+msgstr "点击此处停止代理。"
+
+msgid "Click here to request a new verification mail."
+msgstr "点击此处以请求新验证电子邮件。"
+
+msgid "Click to Load Captcha"
+msgstr "点击此处加载验证码"
+
+msgid "Click to remove"
+msgstr "点击移除"
+
+msgid "Clone"
+msgstr "复制"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Close Chat"
+msgstr "关闭聊天"
+
+msgid "Close Palette"
+msgstr "关闭调色板"
+
+msgid "Compact Chat"
+msgstr "紧凑聊天"
+
+msgid "Compact Palette"
+msgstr "便携调色盘"
+
+msgid "Confirm"
+msgstr "确认"
+
+msgid "Confirm Ban"
+msgstr "确认封禁"
+
+msgid "Confirm Delete"
+msgstr "确认删除"
+
+msgid "Confirm Kick"
+msgstr "确认踢除"
+
+msgid "Confirm Leave"
+msgstr "确认离开"
+
+msgid "Confirm New Password"
+msgstr "确认新密码"
+
+msgid "Confirm Password"
+msgstr "确认密码"
+
+msgid "Confirm your password."
+msgstr "请确认您的密码。"
+
+#, javascript-format
+msgid "Connection error ${ code } :("
+msgstr "连接错误 ${ code } :("
+
+msgid "Consent"
+msgstr "同意"
+
+msgid "Controls"
+msgstr "控制"
+
+msgid "Convert an image to canvas colors"
+msgstr "将图像转换为画布颜色"
+
+msgid "Converter"
+msgstr "转换器"
+
+msgid "Cooldown"
+msgstr "冷却"
+
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+"对于占据优势的国家／地区，冷却时间通常会自动调整。例如，在主播突袭的情况下。"
+
+msgid "Coordinates"
+msgstr "坐标"
+
+msgid "Coordinates:"
+msgstr "坐标："
+
+msgid "Copied"
+msgstr "已复制"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Copy Link"
+msgstr "复制链接"
+
+msgid "Copy Selected to Clipboard"
+msgstr "复制到剪贴板"
+
+msgid "Copy URL"
+msgstr "复制链接"
+
+msgid "Copy UserId to Clipboard"
+msgstr "将 UID 复制到剪贴板"
+
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+msgid "Could not connect to server"
+msgstr "无法连接到服务器"
+
+msgid "Could not connect to server, please try again later :("
+msgstr "无法连接到服务器，请稍后再试 :("
+
+msgid "Could not load captcha"
+msgstr "验证码加载失败"
+
+msgid "Could not process files"
+msgstr "无法处理文件"
+
+msgid "Couldn't set Pixel"
+msgstr "无法设置像素"
+
+msgid "Countries Today"
+msgstr "今日国家／地区"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Create Faction"
+msgstr "创建派别"
+
+msgid "Create Invite"
+msgstr "创建邀请"
+
+msgid "Create New Faction"
+msgstr "创建新派别"
+
+msgid "Create New Invite"
+msgstr "创建新邀请"
+
+msgid "Create New Role"
+msgstr "创建新角色"
+
+msgid "Create Role"
+msgstr "创建角色"
+
+msgid "Create roles"
+msgstr "创建角色"
+
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "2bit 画布调色板的功劳归于 ${ donendoLink }。"
+
+#, javascript-format
+msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
+msgstr "月亮调色板的功劳归于 ${ starhouseLink }。"
+
+#, javascript-format
+msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr "前10名画布的调色板由${ vinikLink }提供。"
+
+msgid "Current Cooldown Changes per Country"
+msgstr "当前各国冷却时间变化"
+
+msgid "Custom Cursor"
+msgstr "自定义光标"
+
+msgid "Custom Flag"
+msgstr "自定义旗帜"
+
+msgid "DM"
+msgstr "私信"
+
+msgid "Daily Pixels"
+msgstr "每日像素"
+
+msgid "Daily Pixels per Country"
+msgstr "各国每日像素数"
+
+msgid "Daily Pixels per Faction"
+msgstr "每阵营每日像素数"
+
+msgid "Daily Pixels per Player"
+msgstr "玩家每日像素数"
+
+msgid "Daily Rank"
+msgstr "每日排名"
+
+msgid "Date of Award"
+msgstr "颁奖日期"
+
+msgid "Date of catch"
+msgstr "捕捞日期"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete Account"
+msgstr "删除帐户"
+
+msgid "Delete Faction"
+msgstr "删除派系"
+
+msgid "Delete My Account"
+msgstr "删除我的帐户"
+
+msgid "Delete the faction"
+msgstr "删除该派系"
+
+msgid "Deny"
+msgstr "否定"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Description can't be empty"
+msgstr "描述不可为空"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "描述必须小于1千个字符"
+
+msgid "Description of your faction"
+msgstr "派别的描述"
+
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr "我还没收到 pixelplanet 的回复。如果问题仍然存在，请尝试刷新页面。"
+
+msgid "Dimensions"
+msgstr "方面"
+
+msgid "Disable Game Sounds"
+msgstr "关闭游戏音效"
+
+msgid "Disable History Pencil"
+msgstr "禁用历史记录铅笔"
+
+msgid "Disable Overlay Pencil"
+msgstr "禁用叠加铅笔"
+
+msgid "Disable Pencil"
+msgstr "禁用铅笔"
+
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr "以紧凑的形式显示调色板，占用更少的屏幕空间。"
+
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "对 IP 地址进行操作（每行一个 IP 地址）"
+
+msgid ""
+"Don't let people find this faction in public search or look at its profile."
+msgstr "不让人们公开搜索并发现该派别或查看该派别的资料。"
+
+msgid "Don't remember"
+msgstr "不记得了"
+
+msgid "Don't show faction in search"
+msgstr "不在搜索中展示派别"
+
+msgid "Don't show me in global stats"
+msgstr "不要在全球统计数据中显示"
+
+msgid "Done"
+msgstr "完毕"
+
+msgid "Download"
+msgstr "下载"
+
+msgid "Download Template"
+msgstr "下载模板"
+
+#, javascript-format
+msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
+msgstr "拖动鼠标符号 ${ mouseSymbol } 或触摸符号 ${ touchSymbol } 进行移动"
+
+msgid "Duration"
+msgstr "期间"
+
+msgid "Easter Egg OFF"
+msgstr "复活节彩蛋关闭"
+
+msgid "Easter Egg ON"
+msgstr "复活节彩蛋开启"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit faction"
+msgstr "编辑派系"
+
+msgid "Edit roles below their own"
+msgstr "编辑角色如下"
+
+msgid "Edit their own role and elevate users to their own level"
+msgstr "编辑他们自己的角色，并将用户提升到他们自己的水平"
+
+msgid "Email"
+msgstr "电子邮件"
+
+msgid "Email can't be empty."
+msgstr "邮箱地址不能为空。"
+
+msgid "Email can't be longer than 40 characters."
+msgstr "电子邮件长度不能超过 40 个字符。"
+
+msgid ""
+"Email is used to verify your account. You might get a cofirmation mail after "
+"registering."
+msgstr "我们会使用您的邮箱地址来验证您的账户。注册后您可能会收到一封确认邮件。"
+
+msgid "Email should at least contain a dot"
+msgstr "电子邮件至少应该包含一个句点"
+
+msgid "Email should be at least 5 characters long."
+msgstr "电子邮件地址至少应包含 5 个字符。"
+
+msgid "Email should contain a @"
+msgstr "电子邮件地址应包含 @ 符号"
+
+msgid "Enable Overlay"
+msgstr "启用叠加层"
+
+msgid "Enable Pencil"
+msgstr "启用铅笔"
+
+msgid "Enable chat notifications"
+msgstr "启用聊天通知"
+
+msgid "Enter Characters"
+msgstr "输入字符"
+
+msgid "Enter Reason"
+msgstr "请输入原因"
+
+msgid "Enter UserName of new Mod"
+msgstr "输入新版主的用户名"
+
+msgid "Enter a little text that describes your faction"
+msgstr "输入一点文字以描述你的派别"
+
+msgid "Enter search term and press Search."
+msgstr "输入搜索词并按搜索。"
+
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "请输入您的邮箱地址，我们将向您发送新密码："
+
+msgid "Error"
+msgstr "错误"
+
+#, javascript-format
+msgid "Error ${ retCode }"
+msgstr "错误 ${retCode}"
+
+msgid "Error :("
+msgstr "错误 :("
+
+msgid "Expand"
+msgstr "扩张"
+
+msgid "Export enabled templates"
+msgstr "已启用导出功能的模板"
+
+msgid "Faction"
+msgstr "派"
+
+msgid "Factions"
+msgstr "派系"
+
+msgid "Factions Today"
+msgstr "今日派系"
+
+msgid "Factions Total"
+msgstr "派系总数"
+
+msgid ""
+"Factions allow you to coordinate better with other players. Search for "
+"existing factions, find friends or create your own faction."
+msgstr ""
+"派别系统能让你更好地与其他玩家协作，你可以搜索现有派别、结交好友或创建自己的"
+"派别。"
+
+msgid "Factor"
+msgstr "因素"
+
+msgid "File"
+msgstr "文件"
+
+msgid "Filter"
+msgstr "筛选"
+
+msgid "Fish Display"
+msgstr "鱼类展示"
+
+msgid "For"
+msgstr "为了"
+
+msgid "For Developers"
+msgstr "面向开发者"
+
+#, javascript-format
+msgid ""
+"For any legal issues, please contact ${ mailLink }. If you want to delete "
+"your data, simply delete your account, this in fact wipes all privacy "
+"relevant traces. Your placed pixels will of course not be deleted."
+msgstr ""
+"如有任何法律问题，请联系 ${mailLink}。如果您想删除您的数据，只需删除您的帐户"
+"即可，这实际上会清除所有与隐私相关的痕迹。您放置的像素当然不会受到影响。"
+
+msgid "For one day"
+msgstr "一天"
+
+msgid "For one month"
+msgstr "一个月"
+
+msgid "For one week"
+msgstr "一周"
+
+msgid "For one year"
+msgstr "一年"
+
+msgid "For when you are playing on a potato."
+msgstr "当你用土豆玩游戏的时候。"
+
+msgid "Forever"
+msgstr "永远"
+
+msgid "From History"
+msgstr "从历史"
+
+msgid "From Template"
+msgstr "从模板"
+
+msgid "Get IID"
+msgstr "获取 IID"
+
+msgid "Get Pixels"
+msgstr "获取像素"
+
+msgid "Get Users"
+msgstr "获取用户"
+
+msgid "Get email address"
+msgstr "获取电子邮件地址"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "获取投放的像素数量和排名"
+
+msgid "Globe View"
+msgstr "环球视角"
+
+msgid "Go to"
+msgstr "前往"
+
+msgid "Grant"
+msgstr "授予"
+
+msgid "Grid OFF"
+msgstr "电网关闭"
+
+msgid "Grid ON"
+msgstr "电网开启"
+
+msgid "Groups"
+msgstr "团体"
+
+msgid "Have fun!"
+msgstr "玩得开心！"
+
+msgid "Height"
+msgstr "高度"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr "我们在此收集已移除的画布，以便妥善归档。目前只有一幅。"
+
+msgid "Hide Embed"
+msgstr "隐藏嵌入内容"
+
+msgid "Hide from profile"
+msgstr "从个人资料隐藏"
+
+msgid ""
+"Higher zoomlevels take some time to update, the 3D globe gets updated at "
+"least once per day."
+msgstr "更高的缩放级别需要一些时间才能更新，3D 地球每天至少更新一次。"
+
+msgid "Historical View"
+msgstr "历史视角"
+
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr "按住左 ${ bindShift } 键可插入铅笔图标（移动鼠标时可放置铅笔）"
+
+msgid "How pixelplanet should look like."
+msgstr "pixelplanet 应该是什么样子。"
+
+msgid "I forgot my Password."
+msgstr "我忘记密码了。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IID (optional)"
+msgstr "IID（可选）"
+
+msgid "IID Actions"
+msgstr "IID 操作"
+
+msgid "IP Actions"
+msgstr "IP 操作"
+
+msgid "Identifiers"
+msgstr "标识符"
+
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you aren't using one, or think that you "
+"got wrongfully banned, please go to our ${ guildedLink } or send us an e-"
+"mail to ${ mailLink } and, in case of a ban, include the BID you got in the "
+"ban message."
+msgstr ""
+"如果您被检测为代理用户，但您并未使用代理，或者您认为自己被错误封禁，请访问我"
+"们的 ${guildedLink} 或发送电子邮件至 ${mailLink}，如果被封禁，请在封禁信息中"
+"包含您收到的 BID。"
+
+msgid ""
+"If you talk to moderators or administrators, you might get asked for one of "
+"the following identifiers:"
+msgstr "如果您与版主或管理员交谈，他们可能会要求您提供以下身份标识之一："
+
+msgid "Image Converter"
+msgstr "图片转换器"
+
+msgid "Image Upload"
+msgstr "图片上传"
+
+msgid "Import templates"
+msgstr "导入模板"
+
+msgid "Incorrect password"
+msgstr "密码错误"
+
+msgid "Interval"
+msgstr "间隔"
+
+msgid "Interval is invalid"
+msgstr "间隔无效"
+
+msgid "Invalid Canvas"
+msgstr "无效画布"
+
+msgid "Invalid Coordinates"
+msgstr "无效坐标"
+
+msgid "Invalid color selected"
+msgstr "选择了无效的颜色"
+
+msgid "Invite"
+msgstr "邀请"
+
+msgid "Invited to Chat"
+msgstr "受邀聊天"
+
+msgid "Invites"
+msgstr "邀请"
+
+msgid "Is One-Time-Invite"
+msgstr "一次性邀请"
+
+msgid ""
+"It requests the following permissions. Uncheck what you don't want to grant:"
+msgstr "它会请求以下权限。取消勾选您不想授予的权限："
+
+msgid "Jannies can rollback and protect, but not watch or ban."
+msgstr "管理员可以回滚和保护，但不能监视或封禁。"
+
+msgid "Join"
+msgstr "加入"
+
+msgid "Join Faction"
+msgstr "加入阵营"
+
+msgid "Joined"
+msgstr "加入"
+
+msgid "Just for registered Users"
+msgstr "仅限注册用户"
+
+msgid "Just for verified Users"
+msgstr "仅限已验证用户"
+
+msgid "Just the Top10 of yesterday can place here"
+msgstr "只有昨天的前十名才能排在这里"
+
+msgid "Keep Ratio"
+msgstr "保持比例"
+
+msgid "Kick"
+msgstr "踢"
+
+msgid "Kick members"
+msgstr "踢成员"
+
+msgid "Know that an account exists"
+msgstr "确认账户存在"
+
+msgid "Leave"
+msgstr "离开"
+
+msgid "Leave Faction"
+msgstr "离开派系"
+
+msgid "Legal Requests"
+msgstr "法律请求"
+
+msgid "Let everyone join this faction"
+msgstr "让所有人都加入这个派系"
+
+msgid "Let people join this faction without needing an invite."
+msgstr "允许人们无需邀请即可加入该阵营。"
+
+msgid "Level"
+msgstr "等级"
+
+msgid "Light Grid"
+msgstr "轻网格"
+
+msgid "Load Captcha"
+msgstr "加载验证码"
+
+msgid "Loading"
+msgstr "加载中"
+
+msgid "Loading..."
+msgstr "加载中…"
+
+msgid "Log in or Register"
+msgstr "登录或注册"
+
+msgid "Log out"
+msgstr "退出登录"
+
+msgid "Log out a Session:"
+msgstr "注销会话："
+
+msgid "LogIn"
+msgstr "登录"
+
+msgid "Login Methods"
+msgstr "登录方式"
+
+msgid "Login to access more features and stats."
+msgstr "登录即可查看更多功能和统计数据。"
+
+msgid "Login to grant access to other application."
+msgstr "登录以授予其他应用程序访问权限。"
+
+msgid "Login to join us."
+msgstr "登录即可加入我们。"
+
+msgid "Login to other application"
+msgstr "登录其他应用程序"
+
+msgid "Login with Name or Mail:"
+msgstr "使用姓名或邮箱登录："
+
+msgid "Make Screenshot"
+msgstr "截屏"
+
+msgid "Manage Moderators"
+msgstr "管理版主"
+
+msgid "Manage Templates"
+msgstr "管理模板"
+
+msgid "Manage invites"
+msgstr "管理邀请"
+
+msgid "Map Data"
+msgstr "地图数据"
+
+msgid "Maximize"
+msgstr "最大化"
+
+msgid "Media Actions"
+msgstr "媒体行动"
+
+msgid "Members"
+msgstr "成员"
+
+msgid "Minimum Color Distance"
+msgstr "最小颜色距离"
+
+msgid "Moderation Log"
+msgstr "审核日志"
+
+msgid "Moderation Logs"
+msgstr "审核日志"
+
+msgid "Moderators can access all Canvas, Watch and IID tools."
+msgstr "版主可以访问所有 Canvas、Watch 和 IID 工具。"
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Modtools"
+msgstr "模组工具"
+
+msgid "Move"
+msgstr "移动"
+
+msgid "Mute Channel"
+msgstr "静音频道"
+
+msgid "Muted Sound"
+msgstr "静音"
+
+msgid "My Factions"
+msgstr "我的派系"
+
+msgid "Name"
+msgstr "姓名"
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "名字只能含有以下字符：a~z . _ -"
+
+msgid "Name can't be empty."
+msgstr "名称不能为空。"
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "名称包含无效字符，例如 @、/、\\ 或 #"
+
+msgid "Name must be at least 2 characters long"
+msgstr "名称至少需要2字符长"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "名称必须少于26字符"
+
+msgid "Name of this role"
+msgstr "该职位名称"
+
+msgid "Name of your faction (this can not be changed later)"
+msgstr "你的阵营名称（之后无法更改）"
+
+msgid "Name or Email"
+msgstr "姓名或电子邮件"
+
+msgid "New Mail"
+msgstr "新电子邮件"
+
+msgid "New Name"
+msgstr "新名称"
+
+msgid "New Password"
+msgstr "新密码"
+
+msgid "New Username"
+msgstr "新用户名"
+
+msgid "No"
+msgstr "不"
+
+msgid "No File selected to upload"
+msgstr "未选择要上传的文件"
+
+msgid "No Phish!"
+msgstr "没有鱼！"
+
+msgid "No flag selected"
+msgstr "未选择旗帜"
+
+msgid "No or invalid captcha text"
+msgstr "验证码缺失或无效"
+
+msgid "No password given."
+msgstr "无可用密码。"
+
+msgid "No results."
+msgstr "没有结果。"
+
+msgid "Nobody is banned from this faction"
+msgstr "这个阵营里没有人被禁止加入"
+
+msgid "Not Allowed"
+msgstr "不允许"
+
+msgid "Not allowed"
+msgstr "不允许"
+
+msgid "Note"
+msgstr "注意"
+
+msgid "Note: Your active Faction may overwrite your flag settings."
+msgstr "注意：您当前使用的阵营可能会覆盖您的旗帜设置。"
+
+msgid "OIDC LogIn"
+msgstr "OIDC 登录"
+
+msgid "OK"
+msgstr "好的"
+
+msgid "Offset"
+msgstr "抵消"
+
+msgid "Oh no, the phish escaped. Better luck next time!"
+msgstr "糟糕，鱼跑了。下次好运吧！"
+
+msgid "Old Password"
+msgstr "旧密码"
+
+msgid "One-Time"
+msgstr "一度"
+
+msgid "Online Users"
+msgstr "在线用户"
+
+msgid "Online Users on Canvas"
+msgstr "Canvas上的在线用户"
+
+msgid "Only verified Users are currently allowed to play."
+msgstr "目前只有经过验证的用户才能参与游戏。"
+
+msgid "Opacity of Overlay in percent."
+msgstr "叠加层的不透明度百分比。"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Open Chat"
+msgstr "开放聊天"
+
+msgid "Open Palette"
+msgstr "开放调色板"
+
+msgid "Open in PopUp"
+msgstr "在弹出窗口中打开"
+
+msgid "OpenID Connect Client registration"
+msgstr "OpenID Connect 客户端注册"
+
+msgid ""
+"Our main canvas is a huge worldmap, you can place wherever you like, but you "
+"will have to wait a specific Cooldown between pixels. You can check out the "
+"cooldown and requirements on the Canvas Selection menu (globe button on "
+"top). Some canvases have a different cooldown for replacing a user-set "
+"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
+"and 7s on already set pixels."
+msgstr ""
+"我们的主要画布是一张巨大的世界地图，您可以将其放置在任何您喜欢的地方，但像素"
+"之间需要等待特定的冷却时间。您可以在画布选择菜单（顶部的地球按钮）中查看冷却"
+"时间和要求。某些画布对替换用户设置的像素和在未设置的像素上放置像素的冷却时间"
+"不同。例如，4 秒／7 秒表示对新设置的像素冷却 4 秒，对已设置的像素冷却 7 秒。"
+
+msgid "Overlay OFF"
+msgstr "叠加层关闭"
+
+msgid "Overlay ON"
+msgstr "叠加层开启"
+
+msgid "Overlay Opacity"
+msgstr "叠加不透明度"
+
+msgid "Overview"
+msgstr "概述"
+
+msgid "Palette Download"
+msgstr "调色板下载"
+
+#, javascript-format
+msgid "Palette for ${ gimpLink }"
+msgstr "${ gimpLink }调色板"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Password must be at least 6 characters long."
+msgstr "密码长度必须至少为 6 个字符。"
+
+msgid "Password must be shorter than 60 characters."
+msgstr "密码长度必须少于 60 个字符。"
+
+msgid "Password successfully changed."
+msgstr "密码已成功更改。"
+
+msgid "Passwords do not match."
+msgstr "密码不匹配。"
+
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "${canvasName}画布的铅笔模式"
+
+msgid "Pencil picks: "
+msgstr "铅笔拨片： "
+
+msgid "Permission"
+msgstr "允许"
+
+msgid "Permissions of Powerlevels"
+msgstr "权力等级的权限"
+
+msgid "Phish!"
+msgstr "钓鱼！"
+
+msgid "Phishes"
+msgstr "网络钓鱼"
+
+msgid "Ping"
+msgstr "提到"
+
+msgid "Pixel Notify OFF"
+msgstr "像素通知已关闭"
+
+msgid "Pixel Notify ON"
+msgstr "像素通知已开启"
+
+msgid "Pixel Protection"
+msgstr "像素保护"
+
+msgid "Pixel protected"
+msgstr "像素保护"
+
+msgid "Pixels"
+msgstr "像素"
+
+msgid "Place color pixels on a large canvas with other players online!"
+msgstr "在线与其他玩家一起，在大画布上放置彩色像素！"
+
+msgid "Placed Pixels"
+msgstr "放置像素"
+
+msgid "Play a sound when new chat messages arrive"
+msgstr "当收到新聊天消息时播放声音"
+
+msgid "Players and Pixels per hour"
+msgstr "每小时玩家数和像素数"
+
+msgid "Please prove that you are human"
+msgstr "请证明你是人类"
+
+msgid "Please refresh the website"
+msgstr "请刷新网站"
+
+msgid ""
+"Please verify your mail address or add a new one, otherwise your account "
+"could get deleted in the future."
+msgstr "请验证您的邮箱地址或添加新的邮箱地址，否则您的账号将来可能会被删除。"
+
+msgid "Political Compass Canvas"
+msgstr "政治罗盘画布"
+
+msgid "Potato Mode"
+msgstr "土豆模式"
+
+msgid "Powerlevel"
+msgstr "能量等级"
+
+msgid "Powerlevel of this role. See table below for an explanation."
+msgstr "该角色的权力等级。详情请参见下表。"
+
+#, javascript-format
+msgid ""
+"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgstr ""
+"按下 ${ bindAUp }、${ bindALeft }、${ bindADown }、${ bindARight } 键即可移动"
+
+#, javascript-format
+msgid "Press ${ bindG } to toggle grid"
+msgstr "按下 ${ bindG } 切换网格"
+
+#, javascript-format
+msgid "Press ${ bindH } to toggle historical view"
+msgstr "按下 ${ bindH } 可切换历史视图"
+
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
+msgstr "按下 ${ bindQ } 和 ${ bindE } 即可上下飞行"
+
+#, javascript-format
+msgid "Press ${ bindQ } or ${ bindE } to zoom"
+msgstr "按下 ${ bindQ } 或 ${ bindE } 键可放大"
+
+#, javascript-format
+msgid "Press ${ bindR } to copy coordinates"
+msgstr "按下 ${ bindR } 复制坐标"
+
+#, javascript-format
+msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
+msgstr "按下 ${ bindW }、${ bindA }、${ bindS }、${ bindD } 键即可移动"
+
+#, javascript-format
+msgid "Press ${ bindX } to toggle showing of pixel activity"
+msgstr "按下 ${ bindX } 可切换像素活动的显示"
+
+msgid "Private"
+msgstr "私人的"
+
+msgid "Profile"
+msgstr "轮廓"
+
+msgid "Quick Actions"
+msgstr "快速操作"
+
+msgid "Range Banned"
+msgstr "禁射"
+
+msgid "Rank"
+msgstr "秩"
+
+msgid "Ranked"
+msgstr "排名"
+
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr "排名每5分钟更新一次。每日排名将于UTC时间午夜重置。"
+
+msgid "Read Badges and fishes"
+msgstr "阅读徽章和鱼"
+
+msgid "Read name, username and account age"
+msgstr "读取名称、用户名和帐户年龄"
+
+msgid "Reason"
+msgstr "原因"
+
+msgid "Refresh"
+msgstr "刷新"
+
+msgid "Register"
+msgstr "登记"
+
+msgid "Register new account here"
+msgstr "在此注册新账号"
+
+msgid "Regularly update this data"
+msgstr "定期更新这些数据"
+
+msgid "Reload"
+msgstr "重新加载"
+
+msgid "Remember this decision: "
+msgstr "记住这个决定： "
+
+msgid "Remove"
+msgstr "消除"
+
+msgid "Remove Chatmod"
+msgstr "移除聊天版主"
+
+msgid "Remove Cleaner"
+msgstr "去除清洁剂"
+
+msgid "Remove Janny"
+msgstr "移除迷你版主"
+
+msgid "Remove Moderator"
+msgstr "移除版主"
+
+msgid "Remove Roles"
+msgstr "移除角色"
+
+msgid "Remove a Login method:"
+msgstr "移除登录方式："
+
+#, javascript-format
+msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
+msgstr "将${ activeFactionTitle }表示为${ activeFactionRoleName }"
+
+msgid "Require Verification to Place"
+msgstr "需要验证才能放置"
+
+msgid "Requirements"
+msgstr "要求"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Reset Captchas of ALL Users"
+msgstr "重置所有用户的验证码"
+
+msgid "Reset your password"
+msgstr "重置密码"
+
+msgid "Resize"
+msgstr "调整大小"
+
+msgid "Restore"
+msgstr "恢复"
+
+msgid "Retired Canvases (history only)"
+msgstr "已退役的画布（仅供历史参考）"
+
+msgid "Retract"
+msgstr "缩回"
+
+msgid "Revoke consent of third party applications:"
+msgstr "撤销对第三方应用程序的同意："
+
+msgid "Role"
+msgstr "角色"
+
+msgid "Role Flags"
+msgstr "角色标志"
+
+msgid "Roles"
+msgstr "角色"
+
+msgid "Roll different Captcha Fonts"
+msgstr "轮换不同的验证码字体"
+
+msgid "Rollback an area of the canvas to a set date and time"
+msgstr "将画布上的某个区域回滚到设定的日期和时间"
+
+msgid "Rollback to Date"
+msgstr "回滚至日期"
+
+msgid "Save"
+msgstr "节省"
+
+msgid "Scale Image"
+msgstr "比例图像"
+
+#, javascript-format
+msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
+msgstr "滚动鼠标滚轮 ${mouseSymbol} 或捏合手势 ${touchSymbol} 进行缩放"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search Existing Faction"
+msgstr "搜索现有派系"
+
+msgid "Search Term"
+msgstr "搜索词"
+
+msgid "See hidden users in member list"
+msgstr "查看成员列表中的隐藏用户"
+
+msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
+msgstr "选择此阵营的头像。支持的格式：jpg、gif、png、webp"
+
+msgid "Select Date above"
+msgstr "请在上方选择日期"
+
+msgid "Select File"
+msgstr "选择文件"
+
+msgid "Select Flag"
+msgstr "选择标志"
+
+msgid "Select Language"
+msgstr "选择语言"
+
+msgid "Select a valid powerlevel"
+msgstr "选择有效的功率级别"
+
+msgid "Select a valid pwerlevel"
+msgstr ""
+
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"选择您想要使用的画布。\n"
+"每个画布都是独一无二的，拥有不同的调色板、冷却时间和使用要求。\n"
+"您可以在这里访问已存档的画布："
+
+msgid "Select your Avatar. Supported Formats: jpg, gif, png, webp"
+msgstr "选择您的头像。支持的格式：jpg、gif、png、webp"
+
+msgid "Selected Color"
+msgstr "选定颜色"
+
+msgid "Selected Flag:"
+msgstr "已选旗帜："
+
+msgid "Selected moderation actions that happened within the past two weeks."
+msgstr "过去两周内发生的部分审核操作。"
+
+msgid "Send"
+msgstr "发送"
+
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "我已向您发送一封包含重置密码说明的邮件。"
+
+msgid "Serpentine"
+msgstr "蛇形"
+
+msgid "Server Error"
+msgstr "服务器错误"
+
+msgid "Server answered with gibberish :("
+msgstr "服务器回复的是乱码 :("
+
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr "服务器无法识别您的像素。您是否在多个设备上玩游戏？"
+
+msgid "Set Password"
+msgstr "设置密码"
+
+msgid ""
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
+msgstr ""
+"设置区域保护（如果需要更精细的控制，请使用“上传图像并启用 Alpha 图层保护”功"
+"能）"
+
+msgid ""
+"Setting a password allows you to login by username or email, rather than "
+"only relying on 3rd party login."
+msgstr "设置密码后，您可以使用用户名或电子邮件登录，而不仅仅依赖第三方登录。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Show Embedded"
+msgstr "显示嵌入式内容"
+
+msgid "Show Grid"
+msgstr "显示网格"
+
+msgid "Show Grid in white instead of black."
+msgstr "将网格显示为白色而不是黑色。"
+
+msgid "Show Pixel Activity"
+msgstr "显示像素活动"
+
+msgid "Show circles where pixels are placed."
+msgstr "在像素所在位置显示圆圈。"
+
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr "在高缩放级别下，将叠加层显示为单个小像素。"
+
+msgid "Show templates as overlays ingame."
+msgstr "在游戏中以叠加层的形式显示模板。"
+
+msgid "Shrink"
+msgstr "收缩"
+
+msgid "Size"
+msgstr "尺寸"
+
+msgid "Small Pixels When Zoomed"
+msgstr "放大后像素很小"
+
+msgid "Social Settings"
+msgstr "社交场合"
+
+#, javascript-format
+msgid "Source for pixelplanet on ${ gitLink } or ${ downloadHereLink }."
+msgstr "pixelplanet 的源代码位于 ${ gitLink } 或${ downloadHereLink }。"
+
+msgid "Stacking till"
+msgstr "堆叠式收银机"
+
+msgid "Start chatting here"
+msgstr "从这里开始聊天"
+
+msgid "Start checking for Malware"
+msgstr "开始检查恶意软件"
+
+msgid "Statistics"
+msgstr "统计数据"
+
+msgid "Status: Not running"
+msgstr "状态：未运行"
+
+msgid "Stay logged in: "
+msgstr "保持登录状态： "
+
+msgid "Stop Cleaner"
+msgstr "停止清洁剂"
+
+msgid "Stop checking for Malware"
+msgstr "停止检查恶意软件"
+
+msgid "Stop requiring Verification to Place"
+msgstr "停止要求验证才能放置"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Switch Account"
+msgstr "切换账户"
+
+#, javascript-format
+msgid "Switched to ${ canvasName }"
+msgstr "已切换到${ canvasName }"
+
+msgid "Template Name"
+msgstr "模板名称"
+
+msgid "Templates"
+msgstr "模板"
+
+#, javascript-format
+msgid ""
+"The application ${ appName } at ${ appUrl } wants to login with your "
+"pixelplanet account ${ accountName }"
+msgstr ""
+"应用程序 ${ appName }（位于 ${ appUrl }）想要使用您的 Pixelplanet 帐户 $"
+"{ accountName } 登录"
+
+msgid ""
+"The bare map data that we use, together with converted OpenStreetMap tiles "
+"for orientation, can be downloaded from mega.nz here: "
+msgstr ""
+"我们使用的原始地图数据，以及用于定位的转换后的 OpenStreetMap 图块，可以从 "
+"mega.nz 下载，链接如下： "
+
+msgid ""
+"The name of your account, only a-z, A-Z, -, ., and - characters are allowed. "
+"It is permanent, you can not change it later."
+msgstr ""
+"您的账户名称，仅允许使用 a-z、A-Z、-、. 和 - 等字符。此名称为永久性名称，无法"
+"更改。"
+
+msgid "The password for your account."
+msgstr "您的账户密码。"
+
+msgid "Themes"
+msgstr "主题"
+
+msgid "This URL is not supported by our Media Player"
+msgstr "我们的媒体播放器不支持此网址"
+
+msgid "This canvas doesn't exist"
+msgstr "这幅画布不存在"
+
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"这幅画布是在地球主大陆发生政治冲突期间应邀绘制的。它是一幅1024x1024像素的政治"
+"罗盘图，冷却时间为5秒，叠加时间为60秒。它于5月11日上线，并持续运营数月，直到"
+"11月30日关闭。"
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"您的邮箱／密码组合已被盗用并泄露。为保护此账户，密码已重置。请使用登录页面上"
+"的“忘记密码”功能设置新密码。今后请尽量不要安装恶意软件，谢谢。"
+
+msgid "This faction has no invites"
+msgstr "该派系没有邀请函"
+
+msgid ""
+"This is the name that other people see, e.g. in Chat. You can change it at "
+"any time. All characters except @, /, , >, < and # are allowed."
+msgstr ""
+"这是其他人看到的名称，例如在聊天中。您可以随时更改。除 @、/、\\、>、< 和 # 之"
+"外，所有字符均可使用。"
+
+msgid "This login may only work if your account is verified."
+msgstr "只有经过验证的帐户才能使用此登录方式。"
+
+msgid "This permission is required"
+msgstr "需要此权限"
+
+msgid "This user has not password set"
+msgstr "此用户未设置密码"
+
+#. Column title in tables
+msgid "Time"
+msgstr "时间"
+
+msgid "Timeout"
+msgstr "暂停"
+
+msgid "Tip: Not case-sensitive; I and l are the same"
+msgstr "提示：不区分大小写；I 和 l 意思相同"
+
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+"厌倦了总是使用单一颜色？想创作艺术作品，却不得不根据其他图像计算像素？模板可"
+"以帮到你！模板可以以叠加层的形式显示，您可以在其上绘制图形。模板上的一个像素"
+"应该对应画布上的一个像素。"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Title can't be empty."
+msgstr "标题不能为空。"
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "标题包含无效字符，如：@ / \\ #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "标题必须至少为2字符长"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "标题必须少于26字符"
+
+msgid "Title of your faction"
+msgstr "你的阵营名称"
+
+msgid "To use this page, enter your Password:"
+msgstr "要使用此页面，请输入您的密码："
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Today Placed Pixels"
+msgstr "今天放置的像素"
+
+msgid "Top 10 Countries [pxls / day]"
+msgstr "排名前10的国家／地区［像素／天］"
+
+msgid "Top 10 Daily Ranking"
+msgstr "每日排名前10"
+
+msgid "Top 10 Players [pxls / day]"
+msgstr "每日排名前10的玩家［像素／天］"
+
+msgid "Top 10 Players from Yesterday"
+msgstr "昨日10大球员"
+
+msgid "Top-left corner"
+msgstr "左上角"
+
+msgid "Total"
+msgstr "全部的"
+
+msgid "Total Online Users"
+msgstr "在线用户总数"
+
+msgid "Total Pixels per Faction"
+msgstr "每个阵营的总像素数"
+
+msgid "Total Pixels per Player"
+msgstr "每位玩家的总像素数"
+
+msgid "Total Pixels placed per day"
+msgstr "每日像素总数"
+
+msgid "Total Rank"
+msgstr "总排名"
+
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"将区域内的每个像素值都变为 0（千万不要对任何并非大部分像素值都为 0 的区域执行"
+"此操作）"
+
+msgid "Turn on grid to highlight pixel borders."
+msgstr "开启网格线以高亮显示像素边界。"
+
+msgid "Type of Mod"
+msgstr "版主类型"
+
+msgid "Type the characters from the following image:"
+msgstr "请输入下图中的字符："
+
+msgid "Unban media"
+msgstr "解禁媒体"
+
+msgid "Unban members"
+msgstr "解除成员禁令"
+
+msgid "Unblock"
+msgstr "解除封锁"
+
+msgid "Unblock Users"
+msgstr "解除用户封锁"
+
+msgid "Unknown Captcha Error"
+msgstr "未知验证码错误"
+
+msgid "Unknown Error"
+msgstr "未知错误"
+
+msgid "Unmuted Sound"
+msgstr "未静音的声音"
+
+msgid "Until the browser closes"
+msgstr "直到浏览器关闭"
+
+msgid "Upload images to canvas"
+msgstr "上传图片到画布"
+
+msgid "Use our custom cursor"
+msgstr "使用我们自定义的光标"
+
+msgid "User"
+msgstr "用户"
+
+msgid "User Account"
+msgstr "用户帐户"
+
+msgid "User Area"
+msgstr "用户区"
+
+msgid "User ID and verification level"
+msgstr "用户 ID 和验证级别"
+
+msgid "User Name"
+msgstr "用户名"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "用户名只能包含以下字符：a-z . _ 和 -"
+
+msgid "Username can only contain the characters: a-z A-z . _ and -"
+msgstr "用户名只能包含以下字符：a-z A-Z . _ 和 -"
+
+msgid "Username can't be empty."
+msgstr "用户名不能为空。"
+
+msgid "Username must be at least 2 characters long"
+msgstr "用户名长度必须至少为 2 个字符"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "用户名长度必须少于 26 个字符"
+
+msgid "Users"
+msgstr "用户"
+
+#, javascript-format
+msgid "We are Libre Software under the ${ agplLink }, "
+msgstr "我们是遵循${ agplLink }许可协议的自由软件， "
+
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"我们决定将其存档为无损编码的webm格式延时视频。从延时视频中截取屏幕截图，可以"
+"完美地 1:1 还原当时画布的状态。"
+
+msgid ""
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr "我们感谢以下艺术家，他们向公众公开了他们的调色板"
+
+msgid "Weird"
+msgstr "诡异的"
+
+msgid "What the pencil should draw on the current canvas."
+msgstr "铅笔应该在当前的画布上画什么。"
+
+msgid "Whether or not this invite can only be used once."
+msgstr "此邀请是否只能使用一次。"
+
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"虽然我们通常不会删除画布，但有些画布是为了好玩而创建的，或者应喜欢当前流行梗"
+"的用户的要求而创建的。一段时间后，这些画布可能会变得黯淡无光，失去活力，这时"
+"就没有理由保留它们了，我们可能会决定将它们移除。"
+
+msgid "Why?"
+msgstr "为什么？"
+
+msgid "Width"
+msgstr "宽度"
+
+msgid "Wrong Color"
+msgstr "颜色错误"
+
+msgid "YOU CAN ONLY CHOOSE YOUR USERNAME ONCE!"
+msgstr "你只能选择一次用户名！"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Yes, really delete Me"
+msgstr "是的，真的要删除我"
+
+msgid "Yesterday"
+msgstr "昨天"
+
+msgid ""
+"You are a teacher and a pupil is playing this game, despite it not being "
+"suitable for them? Send us an email."
+msgstr ""
+"您是一名教师，而您的学生正在玩这款不适合他们的游戏？请给我们发送电子邮件。"
+
+#, javascript-format
+msgid ""
+"You are banned. You think it is unjustified? Check out the ${ helpButton } "
+"on how to appeal. And don't forget to include the BID you can get below."
+msgstr ""
+"您已被封禁。您认为封禁不合理？请查看《${ helpButton }》了解如何申诉。别忘了附"
+"上您可以从下方获取的 BID 进报。"
+
+msgid "You are currently not a member of any faction."
+msgstr "你目前不属于任何派系。"
+
+msgid "You are currently not allowed to access this game."
+msgstr "您目前无权访问此游戏。"
+
+msgid ""
+"You are currently not representing any faction. To represent one, activate a "
+"role in one of your factions below."
+msgstr "您目前未代表任何阵营。要代表某个阵营，请在下方激活您所在阵营的角色。"
+
+#, javascript-format
+msgid ""
+"You are currently representing ${ activeFactionTitle } as ${ activeRoleName }"
+msgstr "您当前将${ activeFactionTitle }表示为${ activeRoleName }"
+
+#, javascript-format
+msgid "You are logged in as ${ name } [${ username }]."
+msgstr "您已以 ${ name } [ ${ username } ] 身份登录。"
+
+msgid "You are not allowed to play this game right now :("
+msgstr "你现在不能玩这个游戏 :("
+
+msgid "You are using a Proxy."
+msgstr "您正在使用代理服务器。"
+
+msgid "You are weird"
+msgstr "你真奇怪"
+
+msgid ""
+"You can connect to pixelplanet and use pixelplanet accounts for oauth / oidc "
+"login. See here: "
+msgstr ""
+"您可以连接到pixelplanet并使用pixelplanet帐户进行oauth/oidc登录。详情请见此处"
+"： "
+
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr "您目前无法访问此画布，因为您的像素得分太低"
+
+msgid "You can now place more on pixelplanet.fun :)"
+msgstr "现在你可以在pixelplanet.fun上放置更多东西了:)"
+
+#, javascript-format
+msgid ""
+"You caught a Phish! It is a ${ FISH_TYPES[type].name } with ${ size }kg! As "
+"a bonus, your cooldown is reduced."
+msgstr ""
+"你钓到了一条鱼！它是一条重 ${ size }kg 的 ${ FISH_TYPES[type].name } 鱼！此外"
+"，你的冷却时间缩短了。"
+
+msgid "You did not consent"
+msgstr "你没有同意"
+
+msgid "You failed your captcha"
+msgstr "你的验证码验证失败了"
+
+#, javascript-format
+msgid ""
+"You have been invited to join us on pixelplanet. We currently have $"
+"{ memberCount } members."
+msgstr "您已受邀加入 pixelplanet。我们目前有 ${ memberCount } 位成员。"
+
+msgid "You have no users blocked"
+msgstr "您没有屏蔽任何用户"
+
+msgid "You have to be logged in to place on this canvas"
+msgstr "您必须登录才能在此画布上放置内容"
+
+msgid "You made too many requests"
+msgstr "你提出的请求太多了"
+
+msgid "You must be logged in to chat"
+msgstr "您必须登录才能聊天"
+
+msgid "You must enter a UserId"
+msgstr "您必须输入用户Id"
+
+msgid "You must enter a mediaId or media BID"
+msgstr "您必须输入媒体 ID 或媒体 BID"
+
+msgid "You must enter a reason"
+msgstr "您必须输入原因"
+
+msgid "You must enter a username"
+msgstr "您必须输入用户名"
+
+msgid "You must enter an BID"
+msgstr "您必须输入BID"
+
+msgid "You must enter an IID"
+msgstr "您必须输入IID"
+
+msgid "You must enter an IID or UserId"
+msgstr "您必须输入IID或UserId"
+
+msgid "You must enter at least one IID, User Id or BID"
+msgstr "您必须至少输入一个 IID、用户 ID 或 BID"
+
+msgid "You must select an avatar for your faction"
+msgstr "你必须为你的阵营选择一个头像"
+
+msgid "You took too long, try again."
+msgstr "你用时太久了，请重试。"
+
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"您的浏览器不允许我们使用 AudioContext 播放声音。您是否启用了某些隐私设置阻止"
+"了我们？"
+
+msgid "Your Browser looks shady"
+msgstr "你的浏览器看起来可疑"
+
+msgid "Your Factions"
+msgstr "你的派系"
+
+msgid "Your Internet Provider is banned from this game"
+msgstr "您的网络服务提供商已被禁止参与此游戏"
+
+msgid "Your Roles"
+msgstr "你的角色"
+
+msgid "Your ban expires at "
+msgstr "您的禁令将于何时到期 "
+
+msgid "Your device looks weird"
+msgstr "你的设备看起来很奇怪"
+
+msgid ""
+"Your did not set your username yet. A username is required to login to other "
+"applications. You can set it now:"
+msgstr "您尚未设置用户名。登录其他应用程序需要用户名。您现在即可设置："
+
+msgid "Your name is:"
+msgstr "你的名字是："
+
+msgid "Your next pixels are ready"
+msgstr "您的下一个像素已准备就绪"
+
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr "当点击画布且缩放级别较小时，放大而不是放置像素。"
+
+msgid "a hidden faction"
+msgstr "隐藏派系"
+
+msgid "affects"
+msgstr "影响"
+
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "和 ${ canvas.req } 像素设置"
+
+msgid "by"
+msgstr "经过"
+
+msgid "check compliance here"
+msgstr "在此处检查合规性"
+
+msgid "created at"
+msgstr "创建于"
+
+msgid "days"
+msgstr "天"
+
+msgid "download here"
+msgstr "点击此处下载"
+
+msgid "lift"
+msgstr "解除"
+
+msgid "or login with:"
+msgstr "或使用以下方式登录："
+
+msgid "or register here:"
+msgstr "或在此注册："
+
+msgid "recommended"
+msgstr "受到推崇的"
+
+msgid "times used"
+msgstr "使用次数"
+
+#, javascript-format
+msgid "try again after ${ ti }min"
+msgstr "请在${ ti }分钟后重试"
+
+msgid "x out of bounds"
+msgstr "x 出界"
+
+msgid "y out of bounds"
+msgstr "y 出界"
+
+msgid "z out of bounds"
+msgstr "z 出界"
+
+msgctxt "media-player"
+msgid "Player"
+msgstr "媒体播放器"
+
+msgctxt "keybinds"
+msgid "A"
+msgstr "A"
+
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+msgctxt "keybinds"
+msgid "D"
+msgstr "D"
+
+msgctxt "keybinds"
+msgid "E"
+msgstr "E"
+
+msgctxt "keybinds"
+msgid "G"
+msgstr "G"
+
+msgctxt "keybinds"
+msgid "H"
+msgstr "H"
+
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+msgctxt "keybinds"
+msgid "Q"
+msgstr "Q"
+
+msgctxt "keybinds"
+msgid "R"
+msgstr "R"
+
+msgctxt "keybinds"
+msgid "S"
+msgstr "S"
+
+msgctxt "keybinds"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+msgctxt "keybinds"
+msgid "W"
+msgstr "W"
+
+msgctxt "keybinds"
+msgid "X"
+msgstr "X"
+
+msgctxt "channel-list"
+msgid "Public"
+msgstr "民众"
+
+#. Column title of column indicating whether or not a faction is able to be joined in public
+msgctxt "statistics-table"
+msgid "Public"
+msgstr "民众"
+
+#~ msgid "No captcha id given"
+#~ msgstr "未提供验证码 ID"
+
+#~ msgid "Change your Mail Adress here:"
+#~ msgstr "此处更改你的邮箱地址："
+
+#~ msgid "# Today"
+#~ msgstr "＃今天"
+
+#~ msgid "# Total"
+#~ msgstr "＃全部"
+
+#~ msgid ""
+#~ "Block all Private Messages. Enabling this will delete all your current "
+#~ "DMs. You can still start new DMs with other users, but other users won't "
+#~ "be able to start DMs with you."
+#~ msgstr ""
+#~ "屏蔽所有私信。启用该功能后您的所有现有私信将被删除。您仍然可以私信其他用"
+#~ "户，但其他用户将无法私信您。"
+
+#~ msgid "Consider joining us on Matrix:"
+#~ msgstr "欢迎加入我们的 Matrix 项目："
+
+#~ msgid "Close Menu"
+#~ msgstr "关闭菜单"

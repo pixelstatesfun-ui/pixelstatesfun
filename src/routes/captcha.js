@@ -1,0 +1,91 @@
+/*
+ * route providing captcha
+ */
+import logger from '../core/logger.js';
+import { requestCaptcha } from '../core/captchaserver.js';
+import { registerCaptcha } from '../data/sql/Captcha.js';
+import { CAPTCHA_PROVIDER } from '../core/config.js';
+
+async function captcha(req, res) {
+  res.set({
+    'Access-Control-Expose-Headers': 'captcha-id, challenge-needed',
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+  });
+
+  if (CAPTCHA_PROVIDER !== 'ppfun') {
+    res.status(404).end();
+    return;
+  }
+
+  if (req.csrfPossible) {
+    res.status(403);
+    res.set({ 'Content-Type': 'text/html; charset=utf-8' });
+    res.send(
+      // eslint-disable-next-line max-len
+      '<html><body><h1>Captchaserver: 403 Server Error</h1>Cross-Site request rejected</body></html>',
+    );
+    return;
+  }
+
+  try {
+    /* ensures IP table is populated */
+    await req.ip.getAllowance();
+    const { ipString } = req.ip;
+    const { browserHash } = req.device;
+
+    let data;
+    let text;
+    let id;
+    let needChallenge;
+    /* eslint-disable no-await-in-loop */
+    let retries = 3;
+    while (typeof needChallenge !== 'boolean' && retries) {
+      /*
+       * captcha data could return duplicate ids, so we retry if that is the
+       * case
+       */
+      retries -= 1;
+      const captchaData = await new Promise((resolve) => {
+        requestCaptcha((...args) => resolve(args));
+      });
+
+      // error return
+      if (captchaData[0]) {
+        throw new Error(captchaData[0]);
+      }
+      [, text, data, id] = captchaData;
+
+      try {
+        needChallenge = await registerCaptcha(id, text, browserHash, ipString);
+      } catch (error) {
+        if (error.code !== 'ER_DUP_ENTRY') {
+          console.error(`SQL Error on registerCaptcha: ${error.message}`);
+          throw new Error('SQL Error on registering Captcha');
+        }
+      }
+    }
+    /* eslint-enable no-await-in-loop */
+    if (typeof needChallenge !== 'boolean') {
+      throw new Error('Could not generate unique Captcha');
+    }
+
+    res.set({
+      'Content-Type': 'image/svg+xml',
+      'Captcha-Id': id,
+      'Challenge-Needed': needChallenge ? '1' : '0',
+    });
+    res.end(data);
+  } catch (err) {
+    if (!res.writableEnded) {
+      res.status(503);
+      res.set({ 'Content-Type': 'text/html; charset=utf-8' });
+      res.send(
+        // eslint-disable-next-line max-len
+        '<html><body><h1>Captchaserver: 503 Server Error</h1>Maybe try it later again</body></html>',
+      );
+    }
+    logger.warn(err.message);
+  }
+}
+
+export default captcha;

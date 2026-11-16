@@ -1,0 +1,4 @@
+ALTER TABLE FactionNaps
+  ADD COLUMN IF NOT EXISTS startDate datetime DEFAULT NULL AFTER requestedBy,
+  ADD COLUMN IF NOT EXISTS endDate datetime DEFAULT NULL AFTER startDate,
+  ADD COLUMN IF NOT EXISTS territory longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL AFTER endDate;

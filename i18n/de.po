@@ -1,0 +1,2570 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 17:18+0000\n"
+"Last-Translator: Coldi <coldbaba50@gmail.com>\n"
+"Language-Team: German <https://translate.gs-os.com/projects/ppfun/client/de/"
+">\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
+
+msgid " which is in "
+msgstr " was eintrifft in "
+
+#, javascript-format
+msgid "${ mouseSymbol } Hold left mouse button and drag mouse to rotate"
+msgstr ""
+"${ mouseSymbol } Halte die linke Maustaste gedrückt und ziehe um zu rotieren"
+
+#, javascript-format
+msgid "${ mouseSymbol } Left click or ${ touchSymbol } tap to place a pixel"
+msgstr ""
+"${ mouseSymbol } Linksklick oder ${ touchSymbol } tippe um ein Pixel zu "
+"platzieren"
+
+#, javascript-format
+msgid "${ mouseSymbol } Right click and drag mouse to pan"
+msgstr ""
+"${ mouseSymbol } Halte die rechte Maustaste gedrückt und ziehe um dich zu "
+"bewegen"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Right click or ${ touchSymbol } double-tap to remove a pixel"
+msgstr ""
+"${ mouseSymbol } Rechtsklick oder ${ touchSymbol } tippe zweimal um ein "
+"Voxel zu entfernen"
+
+#, javascript-format
+msgid ""
+"${ mouseSymbol } Scroll mouse wheel or hold ${ mouseSymbol } middle mouse "
+"button and drag to zoom"
+msgstr ""
+"${ mouseSymbol } Scrolle mit dem Mausrad oder halte ${ mouseSymbol } die "
+"mittlere Maustaste gedrückt und ziehe zum zoomen"
+
+msgid "(0 = infinite)"
+msgstr "(0 = unbegrenzt)"
+
+msgid "(click a role to activate it)"
+msgstr "(klicke auf eine Rolle, um sie zu aktivieren)"
+
+msgid "(click a role to assign or remove it)"
+msgstr "(klicke auf eine Rolle, um sie zuzuweisen oder zu entfernen)"
+
+msgid "+last hour"
+msgstr "+letzte Stunde"
+
+msgid "...loading Login methods and sessions..."
+msgstr "Wird geladen… Anmeldemethoden und Sitzungen…"
+
+msgid "A Phish!"
+msgstr "Ein Fisch!"
+
+msgid ""
+"A flag representing the role, it should be 16x11 pixels. If left empty, "
+"users with this role selected will still show their own flags."
+msgstr ""
+"Eine Flagge, welche diese Rolle repräsentiert, es sollte 16x11 Pixel haben. "
+"Wenn leer gelassen, werden Mitglieder mit dieser aktivierten Rolle ihre "
+"eigene Flagge zeigen."
+
+msgid "A new verification mail is getting sent to you."
+msgstr "Eine neue Bestätigungsmail wurde gesendet."
+
+msgid ""
+"A role has all the permissions of all levels below and equal to it. In "
+"example: Every role with a power level of >=50 can manage invites (50)."
+msgstr ""
+"Eine Rolle hat die Summe aller Befugnisse von Powerlevel gleich oder unter "
+"sie. Zum Beispiel: Jede Rolle mit einem Powerlevel von >= 50 kann "
+"Einladungen verwalten (50)."
+
+msgid "ACCESS MODTOOLS"
+msgstr "ZUGRIFF AUF MODERATIONSWERKZEUGE"
+
+#. modlogLink has the text "Moderation Log"
+#, javascript-format
+msgid ""
+"Actions taken by moderators on the canvas can be seen in the ${ modlogLink }."
+msgstr ""
+"Die von Moderatoren auf der Leinwand durchgeführten Aktionen können im $"
+"{ modlogLink } eingesehen werden."
+
+msgid "Add Grid (uncheck if you need a 1:1 template)"
+msgstr "Zeichne Raster (deaktiviere falls du eine 1:1 Vorlage benötigst)"
+
+msgid "Add Template"
+msgstr "Vorlage hinzufügen"
+
+msgid "Add a new E-Mail Address here:"
+msgstr "Fügen Sie hier eine neue E-Mail-Adresse hinzu:"
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Admintools"
+msgstr "Admin Werkzeuge"
+
+msgid "Age"
+msgstr "Alter"
+
+msgid "All members of this faction are hidden"
+msgstr "Alle Mitglieder dieser Fraktion sind versteckt"
+
+msgid "All sound effects will be disabled."
+msgstr "Alle Toneffekte werden ausgeschaltet."
+
+msgid "Always show Movement Controls"
+msgstr "Bewegungssteuerung immer anzeigen"
+
+msgid "Always show movement control buttons"
+msgstr "Die Tasten zur Bewegungssteuerung immer anzeigen"
+
+msgid "An image representing your faction"
+msgstr "Ein Bild welches deine Fraktion repräsentiert"
+
+msgid "Anti Aliasing"
+msgstr "Kantenglättung"
+
+msgid "Apply a filter to clean trash in large canvas areas."
+msgstr "Wende einen filter in einem Bereich der Leinwand an."
+
+msgid "Archive"
+msgstr "Archiv"
+
+msgid "Assign Roles"
+msgstr "Rolle zuweisen"
+
+msgid "Assign new Mod"
+msgstr "Moderator zuweisen"
+
+msgid "Assign role per default to new members"
+msgstr "Weise diese Rolle neuen Mitgliedern beim Beitritt zu"
+
+msgid "Assign roles below their own"
+msgstr "Weise Rollen unter deren eigenen zu"
+
+msgid "Assign this role to every new member automatically on join."
+msgstr "Weise diese Rolle jedem neuen Mitglied zu, wenn diese beitreten."
+
+msgid "Assigned role per default"
+msgstr "Rolle standardmäßig zuweisen"
+
+msgid "Attach File"
+msgstr "Datei anhängen"
+
+msgid "Auto Zoom In"
+msgstr "Automaticher Zoom"
+
+msgid "Avatar"
+msgstr "Avatar"
+
+msgid "Back"
+msgstr "Zurück"
+
+msgid "Badge Display"
+msgstr "Abzeichen-Anzeige"
+
+msgid "Badges"
+msgstr "Abzeichen"
+
+msgid "Ban"
+msgstr "Bann"
+
+msgid "Ban media"
+msgstr "Banne Medium"
+
+msgid "Ban members"
+msgstr "Banne Mitglieder"
+
+msgid "Banned"
+msgstr "Gebannt"
+
+msgid "Banned? Detected as Proxy?"
+msgstr "Gesperrt? Als Proxy erkannt?"
+
+msgid "Bans"
+msgstr "Banns"
+
+msgid "Block"
+msgstr "Blocke"
+
+msgid "Block DMs"
+msgstr "Blockiere PNs"
+
+msgid ""
+"Block all Private Messages. Enabling this will make it impossible for other "
+"users to start messaging you. You can still start new DMs with other users "
+"and already ongoing DMs will still be open."
+msgstr ""
+"Alle privaten Nachrichten blockieren. Wenn diese Option aktiviert ist, "
+"können andere Nutzer dir keine Nachrichten mehr senden. Du kannst weiterhin "
+"neue Direktnachrichten an andere Nutzer senden, und bereits laufende "
+"Direktnachrichten bleiben weiterhin geöffnet."
+
+msgid "Blocked"
+msgstr "Blockiert"
+
+msgid "Bottom-right corner"
+msgstr "Ecko unten-rechts"
+
+msgid "Build image and set it to protected."
+msgstr "Lade Bild und schütze es."
+
+msgid "Build image on canvas."
+msgstr "Zeiche Bild auf Leinwand."
+
+msgid "Build image, but reset cooldown to unset-pixel cd."
+msgstr "Lade Bild und setze Abklingzeit wenn möglich zurück."
+
+msgid "By Mod"
+msgstr "Von Moderator"
+
+msgid "Calculate like GIMP"
+msgstr "Berechne wie GIMP"
+
+msgid "Can not export more than 20 or no template!"
+msgstr "Kann nicht mehr als 20 oder keine Vorlagen exportieren!"
+
+msgid "Can not import more than 20 or no template!"
+msgstr "Kann nicht mehr als 20 oder keine Vorlagen importieren!"
+
+msgid "Can't read? Reload:"
+msgstr "Unlesbar? Hier neu laden:"
+
+msgid "Can't render 3D canvas, do you have WebGL2 disabled?"
+msgstr "Kann die 3D Leinwand nicht laden. Ist WebGL2 im Browser deaktiviert?"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Cancel adding Template"
+msgstr "Hinzufügen abbrechen"
+
+msgid "Canvas"
+msgstr "Leinwand"
+
+msgid "Canvas Archive"
+msgstr "Leinwandarchiv"
+
+msgid "Canvas Cleaner"
+msgstr "Canvas Bereiniger"
+
+msgid "Canvas Error"
+msgstr "Leinwandfehler"
+
+msgid "Canvas Selection"
+msgstr "Leinwandauswahl"
+
+msgid "Captcha"
+msgstr "Captcha"
+
+msgid "Caught by"
+msgstr "Gefangen von"
+
+msgid "Change Flag"
+msgstr "Ändere Flagge"
+
+msgid "Change Happened"
+msgstr "Eine Veränderung passierte"
+
+msgid "Change Name"
+msgstr "Ändere Namen"
+
+msgid "Change Password"
+msgstr "Passwort ändern"
+
+msgid "Channel"
+msgstr "Kanal"
+
+msgid "Channel settings"
+msgstr "Kanal Einstellungen"
+
+msgid "Charts"
+msgstr "Diagramme"
+
+msgid "Chat"
+msgstr "Kommentarsektion"
+
+msgid "Chat here"
+msgstr "Unterhalte dich hier"
+
+msgid "Check out past versions of the canvas."
+msgstr "Siehe vergangene Versionen der Leinwand."
+
+msgid "Check to allow"
+msgstr "Aktivieren, um zu erlauben"
+
+msgid "Check who placed in an area"
+msgstr "Kontrolliere wer in einem Bereich Pixel platzierte"
+
+msgid "Choose Canvas"
+msgstr "Leinwand auswählen"
+
+msgid "Choose Color Mode"
+msgstr "Wähle Farb Modus"
+
+msgid "Choose Strategy"
+msgstr "Wähle Strategie"
+
+msgid "Choose Username"
+msgstr "Wähle einen Benutzernamen"
+
+msgid ""
+"Clean spare pixels that are surrounded by a single other color or unset "
+"pixels (VERY AGGRESSIVE ON CANVASES THAT ALLOW UNSET PIXELS (where there are "
+"two cooldowns)!)"
+msgstr ""
+"Bereinige einzelne Pixel welche von ungesetzten PIxeln und beliebigen Pixeln "
+"einer anderen Farbe umeben sind (SEHR AGGRESSIV AUF LEINWÄNDEN WELCHE "
+"UNGESETZTE PIXEL ERLAUBEN)"
+
+msgid "Clean spare pixels that are surrounded by unset pixels"
+msgstr ""
+"Bereinige einzelne Pixels welche von nur ungesetzten Pixel umgeben sind"
+
+msgid ""
+"Clean spare pixels that are surrounded by unset pixels and up to 1 other set "
+"pixels"
+msgstr ""
+"Bereinige einzelne Pixel welche von ungesetzten und bis zu 1 andersfarbigen "
+"Pixel umgeben sind"
+
+msgid "Cleaners can use 0cd blank colors."
+msgstr "Putzfrauen können 0cd-Farben (ungesetzte Pixel) verwenden."
+
+msgid "Clear"
+msgstr "Leeren"
+
+#, javascript-format
+msgid ""
+"Click ${ mouseSymbol } middle mouse button or ${ touchSymbol } long-tap to "
+"select current hovering color"
+msgstr ""
+"Klicke ${ mouseSymbol } die mittlere Maustaste oder ${ touchSymbol } halte "
+"gedrückt um eine Farbe von der Leinwand auszuwählen"
+
+msgid "Click a color in palette to select it"
+msgstr "Klicke auf eine Farbe in der Palette um sie auszuwählen"
+
+msgid "Click here to cease representation."
+msgstr "Hier klicken, um die Vertretung zu beenden."
+
+msgid "Click here to request a new verification mail."
+msgstr "Klicke hier um eine neue Bestätigungsmail zu beantragen."
+
+msgid "Click to Load Captcha"
+msgstr "Klicke um Captcha zu laden"
+
+msgid "Click to remove"
+msgstr "Klicke um zu entfernen"
+
+msgid "Clone"
+msgstr "Klonen"
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Close Chat"
+msgstr "Schließe Kommentarsektion"
+
+msgid "Close Palette"
+msgstr "Schließe Palette"
+
+msgid "Compact Chat"
+msgstr "Kompakter Chat"
+
+msgid "Compact Palette"
+msgstr "Kompakte Palette"
+
+msgid "Confirm"
+msgstr "Bestätigen"
+
+msgid "Confirm Ban"
+msgstr "Bann bestätigen"
+
+msgid "Confirm Delete"
+msgstr "Löschung bestätigen"
+
+msgid "Confirm Kick"
+msgstr "Rauswurf bestätigen"
+
+msgid "Confirm Leave"
+msgstr "Verlassen bestätigen"
+
+msgid "Confirm New Password"
+msgstr "Neues Passwort bestätigen"
+
+msgid "Confirm Password"
+msgstr "Passwort bestätigen"
+
+msgid "Confirm your password."
+msgstr "Passwort bestätigen."
+
+#, javascript-format
+msgid "Connection error ${ code } :("
+msgstr "Verbindungsfehler ${ code } :("
+
+msgid "Consent"
+msgstr "Einstimmung"
+
+msgid "Controls"
+msgstr "Steuerung"
+
+msgid "Convert an image to canvas colors"
+msgstr "Konvertiere ein Bild zu Leinwand Farben"
+
+msgid "Converter"
+msgstr "Umwandler"
+
+msgid "Cooldown"
+msgstr "Abklingzeit"
+
+msgid ""
+"Cooldown is usually automatically changed for a country that is dominating. "
+"In example in the case of a streamer raid."
+msgstr ""
+"Die Abklingzeit wird üblicherweise automatisch für Länder vergrößert, welche "
+"zur Zeit dominieren. Zum Beispiel im Fall eines Streamer Raids."
+
+msgid "Coordinates"
+msgstr "Koordinaten"
+
+msgid "Coordinates:"
+msgstr "Koordinaten:"
+
+msgid "Copied"
+msgstr "Kopiert"
+
+msgid "Copy"
+msgstr "Kopieren"
+
+msgid "Copy Link"
+msgstr "Kopiere Link"
+
+msgid "Copy Selected to Clipboard"
+msgstr "Kopiere Ausgewähltes in die Zwischenablage"
+
+msgid "Copy URL"
+msgstr "Kopiere URL"
+
+msgid "Copy UserId to Clipboard"
+msgstr "Kopiere UserID in die Zwischenablage"
+
+msgid "Copy to Clipboard"
+msgstr "In die Zwischenablage kopiert"
+
+msgid "Could not connect to server"
+msgstr "Konnte nicht zum Server verbinden"
+
+msgid "Could not connect to server, please try again later :("
+msgstr ""
+"Kann nicht zum Server verbinden, bitte versuche es später noch einmal :("
+
+msgid "Could not load captcha"
+msgstr "Konnte Captcha nicht laden"
+
+msgid "Could not process files"
+msgstr "Konnte Dateien nicht verarbeiten"
+
+msgid "Couldn't set Pixel"
+msgstr "Konnte keinen Pixel setzen"
+
+msgid "Countries Today"
+msgstr "Länder heute"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Create Faction"
+msgstr "Fraktion erstellen"
+
+msgid "Create Invite"
+msgstr "Einladung erstellen"
+
+msgid "Create New Faction"
+msgstr "Erstelle neue Fraktion"
+
+msgid "Create New Invite"
+msgstr "Erstelle neue Einladung"
+
+msgid "Create New Role"
+msgstr "Erstelle neue Rolle"
+
+msgid "Create Role"
+msgstr "Rolle erstellen"
+
+msgid "Create roles"
+msgstr "Rollen erstellen"
+
+#, javascript-format
+msgid "Credit for the Palette of the 2bit canvas goes to ${ donendoLink }."
+msgstr "Vielen Dank an ${ donendoLink } für die Palette der 2bit Leinwand."
+
+#, javascript-format
+msgid "Credit for the Palette of the Moon goes to ${ starhouseLink }."
+msgstr "Vielen Dank an ${ starhouseLink } für die Palette der Mond Leinwand."
+
+#, javascript-format
+msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
+msgstr "Vielen Dank an ${ vinikLink } für die Palette der Top10 Leinwand."
+
+msgid "Current Cooldown Changes per Country"
+msgstr "Aktuell modifizierte Abklingzeit per Land"
+
+msgid "Custom Cursor"
+msgstr "Spezieller Zeiger"
+
+msgid "Custom Flag"
+msgstr "Individuelle Flagge"
+
+msgid "DM"
+msgstr "DM"
+
+msgid "Daily Pixels"
+msgstr "Tägliche Pixel"
+
+msgid "Daily Pixels per Country"
+msgstr "Tägliche Pixel pro Land"
+
+msgid "Daily Pixels per Faction"
+msgstr "Tägliche Pixel pro Fraktion"
+
+msgid "Daily Pixels per Player"
+msgstr "Tägliche Pixel pro Spieler"
+
+msgid "Daily Rank"
+msgstr "Tägliche Rangliste"
+
+msgid "Date of Award"
+msgstr "Auszeichnungsdatum"
+
+msgid "Date of catch"
+msgstr "Datum des Fanges"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Delete Account"
+msgstr "Konto löschen"
+
+msgid "Delete Faction"
+msgstr "Fraktion Löschen"
+
+msgid "Delete My Account"
+msgstr "Mein Konto löschen"
+
+msgid "Delete the faction"
+msgstr "Lösche diese Fraktion"
+
+msgid "Deny"
+msgstr "Ablehnen"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Description can't be empty"
+msgstr "Beschreibung kann nicht leer sein"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "Beschreibung darf nicht länger als 1000 Zeichen sein"
+
+msgid "Description of your faction"
+msgstr "Beschreibung einer Fraktion"
+
+msgid ""
+"Didn't get an answer from pixelplanet. Try to refresh if this problem "
+"persists."
+msgstr ""
+"Keine Antwort von pixelplanet erhalten. Falls das Problem weiterhin besteht, "
+"versuche es, die Seite neu zu laden."
+
+msgid "Dimensions"
+msgstr "Dimensionen"
+
+msgid "Disable Game Sounds"
+msgstr "Deaktiviere Spiel Ton"
+
+msgid "Disable History Pencil"
+msgstr "Historischen Pinsel ausschalten"
+
+msgid "Disable Overlay Pencil"
+msgstr "Vorlagen Pinsel ausschalten"
+
+msgid "Disable Pencil"
+msgstr "Deaktiviere Pinsel"
+
+msgid "Display Palette in a compact form that takes less screen space."
+msgstr ""
+"Zeige die Palette in einer kleineren Form an, welche weniger Platz benötigt."
+
+msgid "Do stuff with IPs (one IP per line)"
+msgstr "Mache etwas mit IPs (eine IP pro Zeile)"
+
+msgid ""
+"Don't let people find this faction in public search or look at its profile."
+msgstr ""
+"Andere Benutzer können diese Fraktion in der Suche nicht finden und das "
+"Profil dieser nicht aufrufen."
+
+msgid "Don't remember"
+msgstr "nicht merken"
+
+msgid "Don't show faction in search"
+msgstr "Zeige Fraktion nicht in der Suche"
+
+msgid "Don't show me in global stats"
+msgstr "Zeige mich nicht in globalen Statistiken"
+
+msgid "Done"
+msgstr "Fertig"
+
+msgid "Download"
+msgstr "Herunterladen"
+
+msgid "Download Template"
+msgstr "Bild herunterladen"
+
+#, javascript-format
+msgid "Drag ${ mouseSymbol } mouse or ${ touchSymbol } pan to move"
+msgstr ""
+"Ziehe mit der ${ mouseSymbol } Maus oder ${ touchSymbol } wische zum "
+"navigieren"
+
+msgid "Duration"
+msgstr "Dauer"
+
+msgid "Easter Egg OFF"
+msgstr "Osterei AUS"
+
+msgid "Easter Egg ON"
+msgstr "Osterei EIN"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Edit faction"
+msgstr "Bearbeite Fraktion"
+
+msgid "Edit roles below their own"
+msgstr "Bearbeite Rollen unter deiner eigenen"
+
+msgid "Edit their own role and elevate users to their own level"
+msgstr ""
+"Bearbeite die eigene Roller und erhebe andere Mitglieder auf eigenes Level"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Email can't be empty."
+msgstr "E-Mail Feld kann nicht leer sein."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "E-Mail kann nicht länger als 40 Zeichen sein."
+
+msgid ""
+"Email is used to verify your account. You might get a cofirmation mail after "
+"registering."
+msgstr ""
+"E-Mail-Adresse wird dazu benutzt, Konten zu verifizieren. Du könntest einen "
+"Bestätigungsmail nach der Registrierung bekommen."
+
+msgid "Email should at least contain a dot"
+msgstr "E-Mail sollte zumindest einen Punkt beinhalten"
+
+msgid "Email should be at least 5 characters long."
+msgstr "E-Mail sollte mindestens 5 Zeichen lang sein."
+
+msgid "Email should contain a @"
+msgstr "E-Mail sollte ein \"@\" beinhalten"
+
+msgid "Enable Overlay"
+msgstr "Vorlage einschalten"
+
+msgid "Enable Pencil"
+msgstr "Pinsel einschalten"
+
+msgid "Enable chat notifications"
+msgstr "Aktiviere Kommentarsektionsbenachrichtigungen"
+
+msgid "Enter Characters"
+msgstr "Zeichen eingeben"
+
+msgid "Enter Reason"
+msgstr "Gebe eine Begründung an"
+
+msgid "Enter UserName of new Mod"
+msgstr "Gebe Name des neuen Moderators ein"
+
+msgid "Enter a little text that describes your faction"
+msgstr "Gebe einen kurzen Text ein, der deine Fraktion beschreibt"
+
+msgid "Enter search term and press Search."
+msgstr "Gebe einen Suchbegriff ein und klicke auf Suchen."
+
+msgid "Enter your mail address and we will send you a new password:"
+msgstr "Gib deine Mail Adresse an und wir senden dir ein neues Passwort:"
+
+msgid "Error"
+msgstr "Fehler"
+
+#, javascript-format
+msgid "Error ${ retCode }"
+msgstr "Fehler ${ retCode }"
+
+msgid "Error :("
+msgstr "Fehler :("
+
+msgid "Expand"
+msgstr "Erweitern"
+
+msgid "Export enabled templates"
+msgstr "Exportiere eingeschaltete Vorlagen"
+
+msgid "Faction"
+msgstr "Fraktion"
+
+msgid "Factions"
+msgstr "Fraktionen"
+
+msgid "Factions Today"
+msgstr "Fraktionen Heute"
+
+msgid "Factions Total"
+msgstr "Fraktionen Gesamt"
+
+msgid ""
+"Factions allow you to coordinate better with other players. Search for "
+"existing factions, find friends or create your own faction."
+msgstr ""
+"Fraktionen ermöglichen es, sich besser mit anderen Spieler zu koordinieren. "
+"Suche existierende Fraktionen, finde Freunde oder erstelle deine Eigene."
+
+msgid "Factor"
+msgstr "Faktor"
+
+msgid "File"
+msgstr "Datei"
+
+msgid "Filter"
+msgstr ""
+
+msgid "Fish Display"
+msgstr "Fisch Ausstellung"
+
+msgid "For"
+msgstr "Für"
+
+msgid "For Developers"
+msgstr "Für Entwickler"
+
+#, javascript-format
+msgid ""
+"For any legal issues, please contact ${ mailLink }. If you want to delete "
+"your data, simply delete your account, this in fact wipes all privacy "
+"relevant traces. Your placed pixels will of course not be deleted."
+msgstr ""
+"Bei rechtlichen Angelegenheiten wenden Sie sich bitte an ${mailLink}. Wenn "
+"Sie Ihre Daten löschen möchten, löschen Sie einfach Ihr Konto. Dadurch "
+"werden tatsächlich alle privatsphärenrelevanten Spuren entfernt. Ihre "
+"gesetzten Pixel werden natürlich nicht gelöscht."
+
+msgid "For one day"
+msgstr "Für einen Tag"
+
+msgid "For one month"
+msgstr "Für einen Monat"
+
+msgid "For one week"
+msgstr "Für eine Woche"
+
+msgid "For one year"
+msgstr "Für ein Jahr"
+
+msgid "For when you are playing on a potato."
+msgstr "Wenn du auf einer Kartoffel spielst."
+
+msgid "Forever"
+msgstr "Für immer"
+
+msgid "From History"
+msgstr "Von Historie"
+
+msgid "From Template"
+msgstr "Von der Vorlage"
+
+msgid "Get IID"
+msgstr "Kriege IID"
+
+msgid "Get Pixels"
+msgstr "Gib Pixel"
+
+msgid "Get Users"
+msgstr "Gib Spieler"
+
+msgid "Get email address"
+msgstr "Sehe E-Mail-Adresse"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Zugriff auf die Anzahl gesetzter Pixel und Rang"
+
+msgid "Globe View"
+msgstr "Globus Ansicht"
+
+msgid "Go to"
+msgstr "Gehe zu"
+
+msgid "Grant"
+msgstr "Grant"
+
+msgid "Grid OFF"
+msgstr "Raster Aus"
+
+msgid "Grid ON"
+msgstr "Raster Ein"
+
+msgid "Groups"
+msgstr "Gruppen"
+
+msgid "Have fun!"
+msgstr "Viel Spaß!"
+
+msgid "Height"
+msgstr "Höhe"
+
+msgid "Help"
+msgstr "Hilfe"
+
+msgid ""
+"Here we collect removed canvases to archive them properly. Which is "
+"currently only one."
+msgstr ""
+"Hier sammeln wir vergangene Leinwände um sie ordentlich zu archivieren (zur "
+"Zeit nur eine)."
+
+msgid "Hide Embed"
+msgstr "Verstecke Einbettung"
+
+msgid "Hide from profile"
+msgstr "Von Profil verstecken"
+
+msgid ""
+"Higher zoomlevels take some time to update, the 3D globe gets updated at "
+"least once per day."
+msgstr ""
+"Die höheren Zoomlevel brauchen etwas Zeit um aktualisiert zu werden, der 3D "
+"Globus wird mindestens einmal pro Tag neu geladen."
+
+msgid "Historical View"
+msgstr "Historische Ansicht"
+
+#, javascript-format
+msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
+msgstr ""
+"Halte die linke ${ bindShift } Taste gedrückt um den Pinsel zu benutzen "
+"(setze Pixel während die Maus bewegt wird)"
+
+msgid "How pixelplanet should look like."
+msgstr "Wähle aus wie pixelplanet aussehen soll."
+
+msgid "I forgot my Password."
+msgstr "Ich habe mein Passwort vergessen."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "IID (optional)"
+msgstr "IID (optional)"
+
+msgid "IID Actions"
+msgstr "IID Aktionen"
+
+msgid "IP Actions"
+msgstr "IP Aktionen"
+
+msgid "Identifiers"
+msgstr "Kennungen"
+
+#, javascript-format
+msgid ""
+"If you got detected as proxy, but you aren't using one, or think that you "
+"got wrongfully banned, please go to our ${ guildedLink } or send us an e-"
+"mail to ${ mailLink } and, in case of a ban, include the BID you got in the "
+"ban message."
+msgstr ""
+"Falls Sie fälschlicherweise als Proxy erkannt wurden oder glauben, zu "
+"Unrecht gebannt worden zu sein, besuchen Sie bitte unseren ${guildedLink} "
+"oder senden Sie eine E-Mail an ${mailLink}. Fügen Sie im Falle eines Bannes "
+"bitte die BID aus der Bannnachricht bei."
+
+msgid ""
+"If you talk to moderators or administrators, you might get asked for one of "
+"the following identifiers:"
+msgstr ""
+"Wenn Sie mit Moderatoren oder Administratoren sprechen, werden Sie "
+"möglicherweise nach einer der folgenden Kennungen gefragt:"
+
+msgid "Image Converter"
+msgstr "Bild Konverter"
+
+msgid "Image Upload"
+msgstr "Bild Hochladen"
+
+msgid "Import templates"
+msgstr "Importiere Vorlagen"
+
+msgid "Incorrect password"
+msgstr "Falsches Passwort"
+
+msgid "Interval"
+msgstr "Intervall"
+
+msgid "Interval is invalid"
+msgstr "Intervall ist ungültig"
+
+msgid "Invalid Canvas"
+msgstr "Ungültige Leinwand"
+
+msgid "Invalid Coordinates"
+msgstr "Ungültige Koordinaten"
+
+msgid "Invalid color selected"
+msgstr "Ungültige Farbe ausgewählt"
+
+msgid "Invite"
+msgstr "Einladung"
+
+msgid "Invited to Chat"
+msgstr "Einladung zur Kommentarsektion"
+
+msgid "Invites"
+msgstr "Einladungen"
+
+msgid "Is One-Time-Invite"
+msgstr "Ist einmalige Einladung"
+
+msgid ""
+"It requests the following permissions. Uncheck what you don't want to grant:"
+msgstr ""
+"Die Anwendung fordert die folgenden Berechtigungen an. Deaktiviere, was "
+"nicht weitergegeben werden soll:"
+
+msgid "Jannies can rollback and protect, but not watch or ban."
+msgstr ""
+"Hausmeister können zurückspulen und beschützen, aber nicht Pixel abfragen "
+"oder bannen."
+
+msgid "Join"
+msgstr "Beitreten"
+
+msgid "Join Faction"
+msgstr "Fraktion beitreten"
+
+msgid "Joined"
+msgstr "Beigetreten"
+
+msgid "Just for registered Users"
+msgstr "Nur für registrierte Benutzer"
+
+msgid "Just for verified Users"
+msgstr "Nur für verifizierte Benutzer"
+
+msgid "Just the Top10 of yesterday can place here"
+msgstr "Nur die Top10 Spieler von gestern dürfen hier spielen"
+
+msgid "Keep Ratio"
+msgstr "Seitenverhältniss beibehalten"
+
+msgid "Kick"
+msgstr "Rauswerfen"
+
+msgid "Kick members"
+msgstr "Mitglied rauswerfen"
+
+msgid "Know that an account exists"
+msgstr "Erfahren, dass ein pixelplanet Konto existiert"
+
+msgid "Leave"
+msgstr "Verlassen"
+
+msgid "Leave Faction"
+msgstr "Fraktion verlassen"
+
+msgid "Legal Requests"
+msgstr "Rechtliche Anfragen"
+
+msgid "Let everyone join this faction"
+msgstr "Erlaube es jedem, dieser Fraktion beizutreten"
+
+msgid "Let people join this faction without needing an invite."
+msgstr "Jeder kann die Fraktion auch ohne Einladung betreten."
+
+msgid "Level"
+msgstr "Level"
+
+msgid "Light Grid"
+msgstr "Helles Raster"
+
+msgid "Load Captcha"
+msgstr "Lade Captcha"
+
+msgid "Loading"
+msgstr "Lädt"
+
+msgid "Loading..."
+msgstr "Lade..."
+
+msgid "Log in or Register"
+msgstr "Einloggen oder Registrieren"
+
+msgid "Log out"
+msgstr "Abmelden"
+
+msgid "Log out a Session:"
+msgstr "Sitzungen abmelden:"
+
+msgid "LogIn"
+msgstr "Einloggen"
+
+msgid "Login Methods"
+msgstr "Anmeldemethoden"
+
+msgid "Login to access more features and stats."
+msgstr "Melde dich an um mehr Funktionen und Statistikan zu sehen."
+
+msgid "Login to grant access to other application."
+msgstr "Anmelden um dieser Anwendung Zugriff zu gewähren."
+
+msgid "Login to join us."
+msgstr "Einloggen um beizutreten."
+
+msgid "Login to other application"
+msgstr "Mit anderer Anwendung anmelden"
+
+msgid "Login with Name or Mail:"
+msgstr "Mit Name oder E-Mail anmelden:"
+
+msgid "Make Screenshot"
+msgstr "Bildschirmaufnahme machen"
+
+msgid "Manage Moderators"
+msgstr "Verwalte Moderatoren"
+
+msgid "Manage Templates"
+msgstr "Vorlagen bearbeiten"
+
+msgid "Manage invites"
+msgstr "Einladungen bearbeiten"
+
+msgid "Map Data"
+msgstr "Karten Dateien"
+
+msgid "Maximize"
+msgstr "Maximieren"
+
+msgid "Media Actions"
+msgstr "Media Aktionen"
+
+msgid "Members"
+msgstr "Mitglieder"
+
+msgid "Minimum Color Distance"
+msgstr "Minimum Farb Distanz"
+
+msgid "Moderation Log"
+msgstr "Moderationsprotokoll"
+
+msgid "Moderation Logs"
+msgstr "Moderationsprotokolle"
+
+msgid "Moderators can access all Canvas, Watch and IID tools."
+msgstr ""
+"Moderatoren können bannen, Pixel ansehen, zurückspulen und ungesetzte 0cd "
+"Pixel verwenden."
+
+#. This if for moderation tools, it's not important to translate this
+msgid "Modtools"
+msgstr "Moderationshilfen"
+
+msgid "Move"
+msgstr "Verschieben"
+
+msgid "Mute Channel"
+msgstr "Kanal stummschalten"
+
+msgid "Muted Sound"
+msgstr "Ton stummgeschaltet"
+
+msgid "My Factions"
+msgstr "Meine Fraktionen"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "Name kann nur die folgenden Zeichen beinhalten: a-z._ und -"
+
+msgid "Name can't be empty."
+msgstr "Name kann nicht leer sein."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Ungültige Zeichen im Namen wie @,/.\\ oder #"
+
+msgid "Name must be at least 2 characters long"
+msgstr "Name muss mindestens 2 Zeichen lang sein"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "Name muss kürzer als 26 Zeichen sein"
+
+msgid "Name of this role"
+msgstr "Name dieser Rolle"
+
+msgid "Name of your faction (this can not be changed later)"
+msgstr "Name der Fraktion (diese kann später nicht mehr geändert werden)"
+
+msgid "Name or Email"
+msgstr "Name oder Email"
+
+msgid "New Mail"
+msgstr "Neue Mail"
+
+msgid "New Name"
+msgstr "Neuer Name"
+
+msgid "New Password"
+msgstr "Neues Passwort"
+
+msgid "New Username"
+msgstr "Neuer Name"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "No File selected to upload"
+msgstr "Keine Datei zum Hochladen ausgewählt"
+
+msgid "No Phish!"
+msgstr "Kein Fisch!"
+
+msgid "No flag selected"
+msgstr "Keine Flagge ausgewählt"
+
+msgid "No or invalid captcha text"
+msgstr "Kein oder falscher Captcha Text"
+
+msgid "No password given."
+msgstr "Kein Passwort eingegeben."
+
+msgid "No results."
+msgstr "Keine Ergebnisse."
+
+msgid "Nobody is banned from this faction"
+msgstr "Niemand ist aus dieser Fraktion verbannt"
+
+msgid "Not Allowed"
+msgstr "Nicht erlaubt"
+
+msgid "Not allowed"
+msgstr "Nicht erlaubt"
+
+msgid "Note"
+msgstr "Hinweis"
+
+msgid "Note: Your active Faction may overwrite your flag settings."
+msgstr ""
+"Hinweis: Deine aktive Fraktion kann deine Flaggen-Einstellungen "
+"überschreiben."
+
+msgid "OIDC LogIn"
+msgstr "OIDC Anmeldung"
+
+msgid "OK"
+msgstr "In Ordnung"
+
+msgid "Offset"
+msgstr "Abweichung"
+
+msgid "Oh no, the phish escaped. Better luck next time!"
+msgstr "Oh nein! Der Fisch ist entkommen! Viel Glück beim nächsten mal!"
+
+msgid "Old Password"
+msgstr "Altes Passwort"
+
+msgid "One-Time"
+msgstr "Einmalig"
+
+msgid "Online Users"
+msgstr "Spieler online"
+
+msgid "Online Users on Canvas"
+msgstr "Spieler auf dieser Leinwand"
+
+msgid "Only verified Users are currently allowed to play."
+msgstr "Nur verifizierte Spieler sind zur Zeit erlaubt zu spielen."
+
+msgid "Opacity of Overlay in percent."
+msgstr "Deckkraft der Vorlage in Prozent."
+
+msgid "Open"
+msgstr "Öffnen"
+
+msgid "Open Chat"
+msgstr "Öffne Kommentarsektion"
+
+msgid "Open Palette"
+msgstr "Öffne Palette"
+
+msgid "Open in PopUp"
+msgstr "In kleinem Fenster öffnen"
+
+msgid "OpenID Connect Client registration"
+msgstr "OpenID Connect Anwendung registrieren"
+
+msgid ""
+"Our main canvas is a huge worldmap, you can place wherever you like, but you "
+"will have to wait a specific Cooldown between pixels. You can check out the "
+"cooldown and requirements on the Canvas Selection menu (globe button on "
+"top). Some canvases have a different cooldown for replacing a user-set "
+"pixels than placing on a unset pixel. i.e. 4s/7s means 4s on fresh pixels "
+"and 7s on already set pixels."
+msgstr ""
+"Unsere Standardleinwand ist eine große Weltkarte. Pixel können überall "
+"gesetzen werden, aber es kann nur eine begrenzte Anzahl and Pixel per Zeit "
+"platziert werden. Die Vorraussetzungen und die Wartezeit sind im Auswahlmenu "
+"zu sehen (Globus Taste am oberen Bildschirmrand). Manche Leinwände haben "
+"eine niedrigere Wartezeit für ungesetzte Pixel im Vergleich zu von anderen "
+"Spielern gesetzte Pixel. z.B. 4s/7s heißt dass man 4s für jedes neue Pixel "
+"warten muss, allerdings 7s wenn man über ein Pixel eines anderen Spielers "
+"setzt."
+
+msgid "Overlay OFF"
+msgstr "Vorlage AUS"
+
+msgid "Overlay ON"
+msgstr "Vorlage EIN"
+
+msgid "Overlay Opacity"
+msgstr "Vorlagen Deckkraft"
+
+msgid "Overview"
+msgstr "Übersicht"
+
+msgid "Palette Download"
+msgstr "Palette herunterladen"
+
+#, javascript-format
+msgid "Palette for ${ gimpLink }"
+msgstr "Palette für ${ gimpLink }"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Password must be at least 6 characters long."
+msgstr "Passwort muss mindestens 6 Zeichen lang sein."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "Passwort muss kürzer als 60 Zeichen sein."
+
+msgid "Password successfully changed."
+msgstr "Passwort erfolgreich geändert."
+
+msgid "Passwords do not match."
+msgstr "Passwörter stimmen nicht überein."
+
+#, javascript-format
+msgid "Pencil Mode for ${ canvasName } canvas"
+msgstr "Pinsel Modus für ${ canvasName } Leinwand"
+
+msgid "Pencil picks: "
+msgstr "Pinsel wählt: "
+
+msgid "Permission"
+msgstr "Berechtigung"
+
+msgid "Permissions of Powerlevels"
+msgstr "Berechtigungen von Powerlevels"
+
+msgid "Phish!"
+msgstr "Fisch!"
+
+msgid "Phishes"
+msgstr "Fische"
+
+msgid "Ping"
+msgstr "Erwähnen"
+
+msgid "Pixel Notify OFF"
+msgstr "Pixelaktivität Aus"
+
+msgid "Pixel Notify ON"
+msgstr "Pixelaktivität Ein"
+
+msgid "Pixel Protection"
+msgstr "Pixel beschützen"
+
+msgid "Pixel protected"
+msgstr "Pixel beschützt"
+
+msgid "Pixels"
+msgstr "Pixel"
+
+msgid "Place color pixels on a large canvas with other players online!"
+msgstr ""
+"Zeichne gemeinsam mit anderen Spielern auf einer großen Leinwand online!"
+
+msgid "Placed Pixels"
+msgstr "Plazierte Pixel"
+
+msgid "Play a sound when new chat messages arrive"
+msgstr "Spielt ein Geräusch ab, wenn eine neue Chat Nachricht eintrifft"
+
+msgid "Players and Pixels per hour"
+msgstr "Spieler und Pixel pro Stunde"
+
+msgid "Please prove that you are human"
+msgstr "Bitte beweise, dass du ein Mensch bist"
+
+msgid "Please refresh the website"
+msgstr "Bitte lade die Seite neu"
+
+msgid ""
+"Please verify your mail address or add a new one, otherwise your account "
+"could get deleted in the future."
+msgstr ""
+"Bitte bestätigen Sie Ihre E-Mail-Adresse oder fügen Sie eine neue hinzu, da "
+"Ihr Account andernfalls in Zukunft gelöscht werden könnte."
+
+msgid "Political Compass Canvas"
+msgstr "Politischer Kompass Leinwand"
+
+msgid "Potato Mode"
+msgstr "Erdapfel Modus"
+
+msgid "Powerlevel"
+msgstr "Powerlevel"
+
+msgid "Powerlevel of this role. See table below for an explanation."
+msgstr "Powerlevel dieser Rolle. Siehe die Tabelle unten für eine Erklärung."
+
+#, javascript-format
+msgid ""
+"Press ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } to move"
+msgstr ""
+"Drücke ${ bindAUp }, ${ bindALeft }, ${ bindADown }, ${ bindARight } zum "
+"navigieren"
+
+#, javascript-format
+msgid "Press ${ bindG } to toggle grid"
+msgstr "Drücke ${ bindG } um das Raster ein- und auszuschalten"
+
+#, javascript-format
+msgid "Press ${ bindH } to toggle historical view"
+msgstr "Drücke ${ bindH } um zur historischen Ansicht zu wechseln"
+
+#, javascript-format
+msgid "Press ${ bindQ } and ${ bindE } to fly up and down"
+msgstr "Drücke ${ bindQ } oder ${ bindE } um hoch und runter zu fliegen"
+
+#, javascript-format
+msgid "Press ${ bindQ } or ${ bindE } to zoom"
+msgstr "Drücke ${ bindQ } oder ${ bindE } zum zoomen"
+
+#, javascript-format
+msgid "Press ${ bindR } to copy coordinates"
+msgstr "Drücke ${ bindR } um aktuelle Koordinaten zu kopieren"
+
+#, javascript-format
+msgid "Press ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } to move"
+msgstr "Drücke ${ bindW }, ${ bindA }, ${ bindS }, ${ bindD } zum navigieren"
+
+#, javascript-format
+msgid "Press ${ bindX } to toggle showing of pixel activity"
+msgstr "Drücke ${ bindX } um Pixelaktivität anzuzeigen"
+
+msgid "Private"
+msgstr "Privat"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Quick Actions"
+msgstr "Schnellzugriff"
+
+msgid "Range Banned"
+msgstr "IP Bereich Gebannt"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Ranked"
+msgstr "Gewertet"
+
+msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
+msgstr ""
+"Die Rangliste wird alle 5min aktualisiert. Die tägliche Liste wird um "
+"Mitternacht UTC zurückgestellt."
+
+msgid "Read Badges and fishes"
+msgstr "Sehe Auszeichnungen und Fische"
+
+msgid "Read name, username and account age"
+msgstr "Sehe Name, Benutzername und Alter des Kontos"
+
+msgid "Reason"
+msgstr "Grund"
+
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+msgid "Register"
+msgstr "Konto erstellen"
+
+msgid "Register new account here"
+msgstr "Erstelle ein neues Konto hier"
+
+msgid "Regularly update this data"
+msgstr "Aktualisiere diese Daten regelmäßig"
+
+msgid "Reload"
+msgstr "Neu laden"
+
+msgid "Remember this decision: "
+msgstr "Diese Entscheidung merken: "
+
+msgid "Remove"
+msgstr "Entfernen"
+
+msgid "Remove Chatmod"
+msgstr "Chatmod entfernen"
+
+msgid "Remove Cleaner"
+msgstr "Entferne Putzfrau"
+
+msgid "Remove Janny"
+msgstr "Entferne Hausmeister"
+
+msgid "Remove Moderator"
+msgstr "Entferne Moderator"
+
+msgid "Remove Roles"
+msgstr "Rollen entfernen"
+
+msgid "Remove a Login method:"
+msgstr "Entferne eine Anmeldungsmethode:"
+
+#, javascript-format
+msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
+msgstr "Vertritt ${ activeFactionTitle } als ${ activeFactionRoleName }"
+
+msgid "Require Verification to Place"
+msgstr "Benötige Verifikation um zu spielen"
+
+msgid "Requirements"
+msgstr "Vorraussetzungen"
+
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+msgid "Reset Captchas of ALL Users"
+msgstr "Captchas ALLER Benutzer zurücksetzen"
+
+msgid "Reset your password"
+msgstr "Setze das Passwort zurück"
+
+msgid "Resize"
+msgstr "Größe ändern"
+
+msgid "Restore"
+msgstr "Wiederherstellen"
+
+msgid "Retired Canvases (history only)"
+msgstr "Eingestellte Leinwände (nur historisch)"
+
+msgid "Retract"
+msgstr "Zurücknehmen"
+
+msgid "Revoke consent of third party applications:"
+msgstr "Drittanwendungen Berechtigungen entziehen:"
+
+msgid "Role"
+msgstr "Rolle"
+
+msgid "Role Flags"
+msgstr "Rollen-Flaggen"
+
+msgid "Roles"
+msgstr "Rollen"
+
+msgid "Roll different Captcha Fonts"
+msgstr "Rolle eine andere Schriftart für Captchas"
+
+msgid "Rollback an area of the canvas to a set date and time"
+msgstr "Spule einen Bereich auf der Leinwand zum angegebenen Zeitpunkt zurück"
+
+msgid "Rollback to Date"
+msgstr "Spule zum Datum zurück"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Scale Image"
+msgstr "Skaliere Bild"
+
+#, javascript-format
+msgid "Scroll ${ mouseSymbol } mouse wheel or ${ touchSymbol } pinch to zoom"
+msgstr ""
+"Scrolle ${ mouseSymbol } mit them Mausrad oder ${ touchSymbol } benutze Zwei-"
+"Finger-Zoom zum zoomen"
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "Search Existing Faction"
+msgstr "Suche existierende Fraktion"
+
+msgid "Search Term"
+msgstr "Suchbegriff"
+
+msgid "See hidden users in member list"
+msgstr "Sehe versteckte Mitglieder in der Mitgliederliste"
+
+msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
+msgstr ""
+"Wähle ein Avatar dieser Fraktion. Unterstützte Formate: jpg, gif, png, webp"
+
+msgid "Select Date above"
+msgstr "Datum auswählen"
+
+msgid "Select File"
+msgstr "Datei auswählen"
+
+msgid "Select Flag"
+msgstr "Flagge auswählen"
+
+msgid "Select Language"
+msgstr "Sprache Auswählen"
+
+msgid "Select a valid powerlevel"
+msgstr "Wähle ein gültiges Powerlevel"
+
+msgid "Select a valid pwerlevel"
+msgstr "Wähle ein gültiges Powerlevel"
+
+msgid ""
+"Select the canvas you want to use.\n"
+"Every canvas is unique and has different palettes, cooldown and "
+"requirements.\n"
+"Archived canvases can be accessed here:"
+msgstr ""
+"Wähle die Leinwand aus, welche du benutzen willst.\n"
+"Jede Leinwand ist einzigartig und hat unterschiedliche Paletten, "
+"Abklingzeiten und Voraussetzungen.\n"
+"Das Archiv vergangenen Leinwänden kann hier eingesehen werden:"
+
+msgid "Select your Avatar. Supported Formats: jpg, gif, png, webp"
+msgstr "Wähle dein Avatar. Unterstützte Formate: jpg, gif, png, webp"
+
+msgid "Selected Color"
+msgstr "Ausgewählte Farbe"
+
+msgid "Selected Flag:"
+msgstr "Wähle Flagge:"
+
+msgid "Selected moderation actions that happened within the past two weeks."
+msgstr ""
+"Ausgewählte Moderationsaktionen, die in den letzten zwei Wochen stattgefunden "
+"haben."
+
+msgid "Send"
+msgstr "Senden"
+
+msgid "Sent you a mail with instructions to reset your password."
+msgstr "Sendete eine E-Mail mit Instruktionen um das Passwort zurückzusetzen."
+
+msgid "Serpentine"
+msgstr "Serpentine"
+
+msgid "Server Error"
+msgstr "Serverfehler"
+
+msgid "Server answered with gibberish :("
+msgstr "Server antwortet mit wirrwarr :("
+
+msgid ""
+"Server got confused by your pixels. Are you playing on multiple devices?"
+msgstr ""
+"Der Server wurde von deinen Pixeln verwirrt. Spielst du auf mehreren Geräten?"
+
+msgid "Set Password"
+msgstr "Passwort setzen"
+
+msgid ""
+"Set protection of areas (if you need finer grained control, use protect with "
+"image upload and alpha layers)"
+msgstr ""
+"Setze Gebiet auf geschützt (falls genauere Kontrolle erwünscht, lade Bild "
+"mit Transparenz mit \"protect\" hoch)"
+
+msgid ""
+"Setting a password allows you to login by username or email, rather than "
+"only relying on 3rd party login."
+msgstr ""
+"Ein gesetztes Passwort erlaubt die Anmeldung mit Benutzernamen oder E-Mail-"
+"Adresse, anstatt nur vom Drittanbieter."
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Show Embedded"
+msgstr "Zeige Einbettung"
+
+msgid "Show Grid"
+msgstr "Raster anzeigen"
+
+msgid "Show Grid in white instead of black."
+msgstr "Zeige das Raster in weiß anstatt schwarz."
+
+msgid "Show Pixel Activity"
+msgstr "Pixelaktivität anzeigen"
+
+msgid "Show circles where pixels are placed."
+msgstr "Zeige Kreise, wo Pixel von Spielern gesetzt werden."
+
+msgid "Show overlay as small individual pixels on high zoomlevels."
+msgstr "Zeige Vorlagen als kleine einzelne Pixel in hohen Vergrößerungsstufen."
+
+msgid "Show templates as overlays ingame."
+msgstr "Zeige Vorlagen als Bild über der Leinwand."
+
+msgid "Shrink"
+msgstr "Verkleinern"
+
+msgid "Size"
+msgstr "Größe"
+
+msgid "Small Pixels When Zoomed"
+msgstr "Klein-Pixel Zoom"
+
+msgid "Social Settings"
+msgstr "Soziale Einstellungen"
+
+#, javascript-format
+msgid "Source for pixelplanet on ${ gitLink } or ${ downloadHereLink }."
+msgstr "Quelltext für pixelplanet auf ${ gitLink } oder ${ downloadHereLink }."
+
+msgid "Stacking till"
+msgstr "Gesamtzeit"
+
+msgid "Start chatting here"
+msgstr "Beginne dich hier zu unterhalten"
+
+msgid "Start checking for Malware"
+msgstr "Fange an, auf Malware zu prüfen"
+
+msgid "Statistics"
+msgstr "Statistiken"
+
+msgid "Status: Not running"
+msgstr "Status: Inaktiv"
+
+msgid "Stay logged in: "
+msgstr "Bleibe angemeldet: "
+
+msgid "Stop Cleaner"
+msgstr "Stoppe Cleaner"
+
+msgid "Stop checking for Malware"
+msgstr "Höre auf, auf Malware zu prüfen"
+
+msgid "Stop requiring Verification to Place"
+msgstr "Höre auf, Verifizierung zum Spielen zu benötigen"
+
+msgid "Submit"
+msgstr "Absenden"
+
+msgid "Switch Account"
+msgstr "Benutzer wechseln"
+
+#, javascript-format
+msgid "Switched to ${ canvasName }"
+msgstr "Gewechselt zu ${ canvasName }"
+
+msgid "Template Name"
+msgstr "Vorlagenname"
+
+msgid "Templates"
+msgstr "Vorlagen"
+
+#, javascript-format
+msgid ""
+"The application ${ appName } at ${ appUrl } wants to login with your "
+"pixelplanet account ${ accountName }"
+msgstr ""
+"Die Anwendung ${ appName } auf ${ appUrl } will sich mit dem Pixelplanet "
+"Benutzer ${ accountName } anmelden"
+
+msgid ""
+"The bare map data that we use, together with converted OpenStreetMap tiles "
+"for orientation, can be downloaded from mega.nz here: "
+msgstr ""
+"Die Kartendaten die wir benutzen, zusammen mit konvertierten OpenStreetMap "
+"Kacheln zur Orientierung können auf mega.nz heruntergeladen werden: "
+
+msgid ""
+"The name of your account, only a-z, A-Z, -, ., and - characters are allowed. "
+"It is permanent, you can not change it later."
+msgstr ""
+"Der Name des Benutzers, nur [a-z][A-Z]- und . Zeichen sind erlaubt. Dies ist "
+"permanent, es kann später nicht mehr geändert werden."
+
+msgid "The password for your account."
+msgstr "Das Passwort für deinen Benutzer."
+
+msgid "Themes"
+msgstr "Stile"
+
+msgid "This URL is not supported by our Media Player"
+msgstr "Diese URL wird von unserem Medienspieler nicht unterstützt"
+
+msgid "This canvas doesn't exist"
+msgstr "Diese Leinwand existiert nicht"
+
+msgid ""
+"This canvas got requested during a time of political conflicts on the main "
+"Earth canvas. It was a 1024x1024 representation of the political compass "
+"with a 5s cooldown and 60s stacking. It got launched on May 11th and "
+"remained active for months till it got shut down on November 30th."
+msgstr ""
+"Diese Leinwand wurde zu Zeiten politscher Konlikte auf der Erd-Leinwand "
+"gestarted. Es war eine 1024x1024 Abbildung des politischen Kompass mit 5s "
+"Abklingzeit und 60s gesamter Wartezeit. Es wurde am 11. Mai 2020 gestartet "
+"und war für Monate aktiv bis es am 30. November geschlossen wurde."
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+"Diese E-Mail-Adresse und dieses Passwort wurden gehackt und veröffentlicht. "
+"Um Ihr Konto zu schützen, wurde das Passwort zurückgesetzt. Bitte nutzen Sie "
+"die Funktion „Passwort vergessen“ auf der Anmeldeseite, um ein neues "
+"Passwort festzulegen. Bitte installieren Sie zukünftig keine Schadsoftware. "
+"Vielen Dank."
+
+msgid "This faction has no invites"
+msgstr "Diese Fraktion hat keine Einladungen"
+
+msgid ""
+"This is the name that other people see, e.g. in Chat. You can change it at "
+"any time. All characters except @, /, , >, < and # are allowed."
+msgstr ""
+"Das ist der Name, den andere Spieler sehen, z.B. im Chat. Er kann jederzeit "
+"geändert werden. Alle Zichen bis auf @/><,# sind erlaubt."
+
+msgid "This login may only work if your account is verified."
+msgstr ""
+"Einloggen funktioniert womöglich nur, wenn dein Benutzer verifiziert ist."
+
+msgid "This permission is required"
+msgstr "Diese Berechtigung ist erforderlich"
+
+msgid "This user has not password set"
+msgstr "Für diesen Benutzer wurde kein Passwort festgelegt"
+
+#. Column title in tables
+msgid "Time"
+msgstr "Zeit"
+
+msgid "Timeout"
+msgstr "Zeitüberschreitung"
+
+msgid "Tip: Not case-sensitive; I and l are the same"
+msgstr ""
+"Tipp: Groß- und Kleinschreibung wird nicht berücksichtigt; l und I sind "
+"dasselbe"
+
+msgid ""
+"Tired of always spaming one single color? Want to create art instead, but "
+"you have to count pixels from some other image? Templates can help you with "
+"that! Templates can show as overlay and you can draw over them. One pixel on "
+"the template, should be one pixel on the canvas."
+msgstr ""
+"Bist du es leid, immer nur eine Farbe zu spammen? Willst du stattdessen "
+"Kunst zeichnen, aber Pixel von einem Bild zu zählen ist zu anstrengen? "
+"Vorlagen können dir hier aushelfen! Vorlagen können als Overlay angezeigt "
+"werden, über die du zeichnen kannst. Ein Pixel in der Vorlage, soll ein "
+"Pixel auf der Leinwand repräsentieren."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Title can't be empty."
+msgstr "Titel darf nicht leer sein."
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr "Titel enthält unerlaubte Zeichen wie @,/,\\ oder #"
+
+msgid "Title must be at least 2 characters long"
+msgstr "Title muss mindestens zwei Zeichen lang sein"
+
+msgid "Title must be shorter than 26 characters"
+msgstr "Titel darf nicht länger als 26 Zeichen sein"
+
+msgid "Title of your faction"
+msgstr "Titel der Fraktion"
+
+msgid "To use this page, enter your Password:"
+msgstr "Bitte Passwort eingeben, um diese Seite zu verwenden:"
+
+msgid "Today"
+msgstr "Heute"
+
+msgid "Today Placed Pixels"
+msgstr "Heutige Pixel"
+
+msgid "Top 10 Countries [pxls / day]"
+msgstr "Top 10 Länder [pixel / tag]"
+
+msgid "Top 10 Daily Ranking"
+msgstr "Top 10 Platzierung am Vortag"
+
+msgid "Top 10 Players [pxls / day]"
+msgstr "Top 10 Spieler [pixel / tag]"
+
+msgid "Top 10 Players from Yesterday"
+msgstr "Top 10 Spieler von Gestern"
+
+msgid "Top-left corner"
+msgstr "Ecke links-oben"
+
+msgid "Total"
+msgstr "Gesamt"
+
+msgid "Total Online Users"
+msgstr "Spieler insgesamt"
+
+msgid "Total Pixels per Faction"
+msgstr "Gesamte Pixel pro Fraktion"
+
+msgid "Total Pixels per Player"
+msgstr "Pixel pro Tag und Spieler"
+
+msgid "Total Pixels placed per day"
+msgstr "Pixel pro Tag insgesamt"
+
+msgid "Total Rank"
+msgstr "Gesamt Rang"
+
+msgid ""
+"Turn every pixel in area to 0 (YOU REALLY SHOULDN'T DO THAT ON ANY AREA THAT "
+"ISN'T ALREADY MOSTLY 0)"
+msgstr ""
+"Setze jedes Pixel im Bereich zu 0 (DO SOLLTEST DIES NUR TUN, WENN DER "
+"BEREICH BEREITS FAST VOLLSTÄNDIG 0 IST)"
+
+msgid "Turn on grid to highlight pixel borders."
+msgstr "Aktiviere das Raster um Pixelgrenzen zu sehen."
+
+msgid "Type of Mod"
+msgstr "Typ des Moderators"
+
+msgid "Type the characters from the following image:"
+msgstr "Gebe die Zeichen aus dem folgenden Bild ein:"
+
+msgid "Unban media"
+msgstr "Media-Bann aufheben"
+
+msgid "Unban members"
+msgstr "Mitglieder-Bann aufheben"
+
+msgid "Unblock"
+msgstr "Stummschaltung aufheben"
+
+msgid "Unblock Users"
+msgstr "Entblocke Spieler"
+
+msgid "Unknown Captcha Error"
+msgstr "Unbekannter Captcha-Fehler"
+
+msgid "Unknown Error"
+msgstr "Unbekannter Fehler"
+
+msgid "Unmuted Sound"
+msgstr "Ton eingeschaltet"
+
+msgid "Until the browser closes"
+msgstr "Bis der Browser geschlossen wird"
+
+msgid "Upload images to canvas"
+msgstr "Lade ein Bild zur Leinwand hoch"
+
+msgid "Use our custom cursor"
+msgstr "Benutze unseren eigenen Zeiger"
+
+msgid "User"
+msgstr "Spieler"
+
+msgid "User Account"
+msgstr "Konto"
+
+msgid "User Area"
+msgstr "Spielerbereich"
+
+msgid "User ID and verification level"
+msgstr "Benutzer ID und Verifikationslevel"
+
+msgid "User Name"
+msgstr "Spielername"
+
+msgid "Username"
+msgstr "Benutzername"
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "Benutzername kann nur [a-z]._ und - beinhalten"
+
+msgid "Username can only contain the characters: a-z A-z . _ and -"
+msgstr "Benutzername kann nur die Zeichen [a-z][A-Z]._- beinhalten"
+
+msgid "Username can't be empty."
+msgstr "Benutzername darf nicht leer sein."
+
+msgid "Username must be at least 2 characters long"
+msgstr "Benutzername muss mindestens zwei Zeichen lang sein"
+
+msgid "Username must be shorter than 26 characters"
+msgstr "Benutzername muss kürzer als 26 Zeichen sein"
+
+msgid "Users"
+msgstr "Benutzer"
+
+#, javascript-format
+msgid "We are Libre Software under the ${ agplLink }, "
+msgstr "Wir sind Freie Softer unter der ${ agplLink }, "
+
+msgid ""
+"We decided to archive it as a timelapse with lossless encoded webm. Taking a "
+"screenshot from the timelapse results in a perfect 1:1 representation of how "
+"the canvas was at that time."
+msgstr ""
+"Wir haben uns entschieden sie in der Form eines Zeitraffers in verlustfrei "
+"kodiertes webm zu archivieren. Eine Bildschirmaufnahme aus dem Video ergibt "
+"eine perfekte 1:1 Abbildung der Leinwand zu dieser Zeit."
+
+msgid ""
+"We thank the following artists, who made their palettes available to the "
+"public on"
+msgstr ""
+"Wir bedanken uns bei diesen Künstlern, welche ihre Farbpaletten der "
+"Öffentlichkeit zugänglich machten auf"
+
+msgid "Weird"
+msgstr "Komisch"
+
+msgid "What the pencil should draw on the current canvas."
+msgstr "Was der Pinsel auf der aktuellen Leinwand zeichnen soll."
+
+msgid "Whether or not this invite can only be used once."
+msgstr "Ob die Einladung nur ein einziges mal verwendet werden kann."
+
+msgid ""
+"While we tend to not delete canvases, some canvases are started for fun or "
+"as a request by users who like a currently popular meme. Those canvases can "
+"become dull and inactive after a while, at which point there is no reason to "
+"keep them and we may decide to remove them."
+msgstr ""
+"Wir vermeiden es, Leinwände zu entfernen. Allerdings werden manche zum Spaß "
+"gestartet oder von Spielern angefragt, weil sie aktuelle Memes mögen. Diese "
+"Leinwände können nach einiger Zeit langweilig werden und nach Wochen ohne "
+"erwähnenswerte Aktivität, entscheiden wir uns manchmal, diese zu entfernen."
+
+msgid "Why?"
+msgstr "Wieso?"
+
+msgid "Width"
+msgstr "Breite"
+
+msgid "Wrong Color"
+msgstr "Falsche Farbe"
+
+msgid "YOU CAN ONLY CHOOSE YOUR USERNAME ONCE!"
+msgstr "DER BENUTZERNAME KANN NUR EINMAL GEWÄHLT WERDEN!"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Yes, really delete Me"
+msgstr "Ja, lösch mich wirklich"
+
+msgid "Yesterday"
+msgstr "Gestern"
+
+msgid ""
+"You are a teacher and a pupil is playing this game, despite it not being "
+"suitable for them? Send us an email."
+msgstr ""
+"Du bist ein Lehrer und ein Schüler spielt dieses Spiel, obwohl es nicht für "
+"sie geeignet ist? Sende uns eine E-Mail."
+
+#, javascript-format
+msgid ""
+"You are banned. You think it is unjustified? Check out the ${ helpButton } "
+"on how to appeal. And don't forget to include the BID you can get below."
+msgstr ""
+"Du bist verbannt und du glaubst, es ist ungerechtfertigt? Gehe zur $"
+"{ helpButton } um zu erfahren, wie man Einspruch erhebt. Und vergesse nicht, "
+"die BID anzugeben, welche unten steht."
+
+msgid "You are currently not a member of any faction."
+msgstr "Du bist zur Zeit kein Mitglied dieser Fraktion."
+
+msgid "You are currently not allowed to access this game."
+msgstr "Du bist zur Zeit nicht erlaubt dieses Spiel zu spielen."
+
+msgid ""
+"You are currently not representing any faction. To represent one, activate a "
+"role in one of your factions below."
+msgstr ""
+"Du vertrittst zur Zeit keine Fraktion. Um eine zu vertreten, aktiviere eine "
+"Rolle in einer der Fraktionen unten."
+
+#, javascript-format
+msgid ""
+"You are currently representing ${ activeFactionTitle } as ${ activeRoleName }"
+msgstr "Du vertrittst zur Zeit ${ activeFactionTitle } als ${ activeRoleName }"
+
+#, javascript-format
+msgid "You are logged in as ${ name } [${ username }]."
+msgstr "Angemeldet als ${ name } [${ username }]."
+
+msgid "You are not allowed to play this game right now :("
+msgstr "Du bist zur Zeit nicht erlaubt zu spielen :("
+
+msgid "You are using a Proxy."
+msgstr "Du benutzt ein Proxy."
+
+msgid "You are weird"
+msgstr "Du bist seltsam"
+
+msgid ""
+"You can connect to pixelplanet and use pixelplanet accounts for oauth / oidc "
+"login. See here: "
+msgstr ""
+"Du kannst dich zu pixelplaent verbinden und pixelplanet Benutzer für oauth / "
+"oidc Login verden. Siehe hier: "
+
+msgid "You can not access this canvas yet, because your pixel score is too low"
+msgstr ""
+"Du kannst diese Leinwand noch nicht verwenden, weil dein Pixel Punktestand "
+"zu gering ist. Platziere mehr Pixel"
+
+msgid "You can now place more on pixelplanet.fun :)"
+msgstr "Du kannst nun mehr Pixel auf pixelplanet.fun setzen :)"
+
+#, javascript-format
+msgid ""
+"You caught a Phish! It is a ${ FISH_TYPES[type].name } with ${ size }kg! As "
+"a bonus, your cooldown is reduced."
+msgstr ""
+"Du hast eine Fisch gefangen! Es ist ein ${ FISH_TYPES[type].name } mit $"
+"{ size }kg! Zur Belohnung ist die Abklingzeit nun reduziert."
+
+msgid "You did not consent"
+msgstr "Keine Einwilligung erteilt"
+
+msgid "You failed your captcha"
+msgstr "Captcha Text ist falsch"
+
+#, javascript-format
+msgid ""
+"You have been invited to join us on pixelplanet. We currently have $"
+"{ memberCount } members."
+msgstr ""
+"Einladung, uns auf pixelplanet beizutreten. Wir haben zur Zeit $"
+"{ memberCount } Mitglieder."
+
+msgid "You have no users blocked"
+msgstr "Du hast keine Benutzer blockiert"
+
+msgid "You have to be logged in to place on this canvas"
+msgstr "Melde dich an um auf dieser Leinwand zu spielen"
+
+msgid "You made too many requests"
+msgstr "Zu viele Anfragen gesendet"
+
+msgid "You must be logged in to chat"
+msgstr "Melde dich an, um dich zu unterhalten"
+
+msgid "You must enter a UserId"
+msgstr "Eine Benutzer ID muss angegeben werden"
+
+msgid "You must enter a mediaId or media BID"
+msgstr "Du musst eine mediaId oder media BID eingeben"
+
+msgid "You must enter a reason"
+msgstr "Keinen Grund angegeben"
+
+msgid "You must enter a username"
+msgstr "Keinen Benutzernamen angegeben"
+
+msgid "You must enter an BID"
+msgstr "Keine BID eingegeben"
+
+msgid "You must enter an IID"
+msgstr "Du musst eine IID angeben"
+
+msgid "You must enter an IID or UserId"
+msgstr "Keine BID oder BenutzerID angegeben"
+
+msgid "You must enter at least one IID, User Id or BID"
+msgstr "Mindestens eine IID, Benutzer ID oder BID muss angegeben werden"
+
+msgid "You must select an avatar for your faction"
+msgstr "Du musst ein Avatar für deine Fraktion auswählen"
+
+msgid "You took too long, try again."
+msgstr "Du hast zu lange gebraucht, versuche es noch einmal."
+
+msgid ""
+"Your Browser doesn't allow us to use AudioContext to play sounds. Do you "
+"have some privacy feature blocking us?"
+msgstr ""
+"Dein Browser erlaubt uns nicht, mit AudioContext Töne abzuspielen. Werden "
+"wir von Privatsphäreneinstellungen blockiert?"
+
+msgid "Your Browser looks shady"
+msgstr "Dein Browser sieht verdächtig aus"
+
+msgid "Your Factions"
+msgstr "Deine Fraktionen"
+
+msgid "Your Internet Provider is banned from this game"
+msgstr "Dein Internet Anbieter ist von diesem Spiel verbannt"
+
+msgid "Your Roles"
+msgstr "Deine Rollen"
+
+msgid "Your ban expires at "
+msgstr "Du bist gesperrt bis "
+
+msgid "Your device looks weird"
+msgstr "Dein Gerät sieht unheimlich aus"
+
+msgid ""
+"Your did not set your username yet. A username is required to login to other "
+"applications. You can set it now:"
+msgstr ""
+"Der Benutzername ist noch nicht gesetzt. Er wird zur Anmeldung auf "
+"Drittanwendungen benötigt. Setze ihn hier:"
+
+msgid "Your name is:"
+msgstr "Dein Name ist:"
+
+msgid "Your next pixels are ready"
+msgstr "Deine nächsten Pixel sind verfügbar"
+
+msgid ""
+"Zoom in instead of placing a pixel when you tap the canvas and your zoom is "
+"small."
+msgstr ""
+"Zoome rein anstatt einen Pixel zu setzen wenn auf kleineren Zoomlevel "
+"geklickt wird."
+
+msgid "a hidden faction"
+msgstr "eine versteckte Fraktion"
+
+msgid "affects"
+msgstr "beeinflusst"
+
+#, javascript-format
+msgid "and ${ canvas.req } Pixels set"
+msgstr "und ${ canvas.req } gesetzte Pixel"
+
+msgid "by"
+msgstr "von"
+
+msgid "check compliance here"
+msgstr "hier auf Konformität prüfen"
+
+msgid "created at"
+msgstr "erstellt am"
+
+msgid "days"
+msgstr "Tage"
+
+msgid "download here"
+msgstr "hier herunterladen"
+
+msgid "lift"
+msgstr "aufheben"
+
+msgid "or login with:"
+msgstr "oder melde dich an mit:"
+
+msgid "or register here:"
+msgstr "oder registriere dich hier:"
+
+msgid "recommended"
+msgstr "empfohlen"
+
+msgid "times used"
+msgstr "verwendet"
+
+#, javascript-format
+msgid "try again after ${ ti }min"
+msgstr "Versuche es in ${ ti }Minuten nochmal"
+
+msgid "x out of bounds"
+msgstr "x außerhalb des Spielfelds"
+
+msgid "y out of bounds"
+msgstr "y außerhalb des Spielfelds"
+
+msgid "z out of bounds"
+msgstr "z außerhalb des Spielfelds"
+
+msgctxt "media-player"
+msgid "Player"
+msgstr "Spieler"
+
+msgctxt "keybinds"
+msgid "A"
+msgstr "A"
+
+msgctxt "keybinds"
+msgid "B"
+msgstr "B"
+
+msgctxt "keybinds"
+msgid "D"
+msgstr "D"
+
+msgctxt "keybinds"
+msgid "E"
+msgstr "E"
+
+msgctxt "keybinds"
+msgid "G"
+msgstr "G"
+
+msgctxt "keybinds"
+msgid "H"
+msgstr "H"
+
+msgctxt "keybinds"
+msgid "M"
+msgstr "M"
+
+msgctxt "keybinds"
+msgid "N"
+msgstr "N"
+
+msgctxt "keybinds"
+msgid "Q"
+msgstr "Q"
+
+msgctxt "keybinds"
+msgid "R"
+msgstr "R"
+
+msgctxt "keybinds"
+msgid "S"
+msgstr "S"
+
+msgctxt "keybinds"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "keybinds"
+msgid "T"
+msgstr "T"
+
+msgctxt "keybinds"
+msgid "W"
+msgstr "W"
+
+msgctxt "keybinds"
+msgid "X"
+msgstr "X"
+
+msgctxt "channel-list"
+msgid "Public"
+msgstr "Öffentlich"
+
+#. Column title of column indicating whether or not a faction is able to be joined in public
+msgctxt "statistics-table"
+msgid "Public"
+msgstr "Öffentlich"
+
+#~ msgid "No captcha id given"
+#~ msgstr "Keine Captcha-ID angegeben"
+
+#~ msgid "Add an Mail Adress here:"
+#~ msgstr "Füge hier eine Mail Adresse hinzu:"
+
+#~ msgid "Player"
+#~ msgstr "Spieler"
+
+#~ msgid "Yes, Delete My Account!"
+#~ msgstr "Ja, löche mein Konto!"
+
+#~ msgid "Daily Pixel"
+#~ msgstr "Tägliche Pixel"
+
+#~ msgid "Pixel"
+#~ msgstr "Pixel"
+
+#~ msgid "Powerlevel of this role. See table below for explenation."
+#~ msgstr ""
+#~ "Powerlevel dieser Rolle. Siehe die Tabelle unten für eine Erklärung."
+
+#~ msgid "Public"
+#~ msgstr "Öffentlich"
+
+#~ msgid "Change your Mail Adress here:"
+#~ msgstr "Hier können Sie Ihre E-Mail-Adresse ändern:"
+
+#~ msgid ""
+#~ "Block all Private Messages. Enabling this will delete all your current "
+#~ "DMs. You can still start new DMs with other users, but other users won't "
+#~ "be able to start DMs with you."
+#~ msgstr ""
+#~ "Sämtliche privaten Nachrichten blockieren. Wenn dies aktiviert wird, "
+#~ "werden alle deine aktuellen Direktnachrichten gelöscht. Du kannst "
+#~ "weiterhin neue Direktnachrichten mit anderen Nutzern beginnen, aber "
+#~ "andere Nutzer können keine Direktnachrichten mit dir beginnen."
+
+#~ msgid "You must enter a duration"
+#~ msgstr "Du musst eine Dauer angeben"
+
+#~ msgid "Consider joining us on Matrix:"
+#~ msgstr "Besuche uns auch auf Matrix:"
+
+#~ msgid "Close Menu"
+#~ msgstr "Schließe Menü"
+
+#~ msgid "Open Menu"
+#~ msgstr "Öffne Menü"
+
+#~ msgid "You have new messages in chat"
+#~ msgstr "Du hast neue Nachrichten in der Kommentarsektion"
+
+#~ msgid "mentioned you"
+#~ msgstr "hat dich erwähnt"
+
+#~ msgid "Mute"
+#~ msgstr "Stummschalten"
+
+#~ msgid "Source for pixelplanet on "
+#~ msgstr "Quelltext von pixelplanet auf "
+
+#~ msgid ""
+#~ "You can connect to pixelplanet and use pixelplanet accounts for oauth / "
+#~ "oidc login. See here:"
+#~ msgstr ""
+#~ "Du kannst dich mit Pixelplanet verbinden und Pixelplanet Konten zur "
+#~ "Anmeldung für oauth /oidc verwenden. Siehe:"
+
+#~ msgid "PopUp"
+#~ msgstr "Benachrichtigung"
+
+#~ msgid "BID"
+#~ msgstr "BID"
+
+#~ msgid "You are banned. You think it is unjustified? Check out the "
+#~ msgstr ""
+#~ "Du bist gebannt. Wenn du glaubst, dass dies ein Irrtum war, sehe in die "
+
+#~ msgid "Registration"
+#~ msgstr "Registrieren"
+
+#~ msgid "Forgot Password"
+#~ msgstr "Passwort vergessen"
+
+#~ msgid " on how to appeal."
+#~ msgstr " um zu erfahren, wie du Einspruch einlegen kannst."
+
+#~ msgid "Unbanned"
+#~ msgstr "Wieder entsperrt"
+
+#~ msgid "Now that you have seen this message, you are no longer banned."
+#~ msgstr "Da du diese Nachricht jetzt gelesen hast, bist du wieder entsperrt."
+
+#~ msgid "Source on "
+#~ msgstr "Quelltext auf "
+
+#, javascript-format
+#~ msgid ""
+#~ "If you got detected as proxy, but you are none, or think that you got "
+#~ "wrongfully banned, please go to our ${ guildedLink } or send us an e-mail "
+#~ "to ${ mailLink } and include the following IID:"
+#~ msgstr ""
+#~ "Solltest du als Proxy erkannt werden, aber keine benutzen, oder du "
+#~ "glaubst zu Unrecht gesperrt worden zu sein, dann kontaktiere uns auf $"
+#~ "{ guildedLink } oder sende uns eine E-Mail ${ mailLink } und gib diese "
+#~ "IID an:"
+
+#~ msgid "Consider joining us on Guilded:"
+#~ msgstr "Triff uns und andere Spieler auf guilded:"
+
+#, javascript-format
+#~ msgid "Your name is: ${ name }"
+#~ msgstr "Dein Name ist: ${ name }"
+
+#~ msgid "Change Username"
+#~ msgstr "Namen ändern"
+
+#~ msgid "Change Mail"
+#~ msgstr "E-Mail ändern"
+
+#~ msgid ""
+#~ "Please verify your mail address or your account could get deleted after a "
+#~ "few days."
+#~ msgstr ""
+#~ "Bitte bestätige deine E-Mail Adresse oder dein Konto könnte nach einigen "
+#~ "Tagen gelöscht werden."
+
+#~ msgid ""
+#~ "Changed Mail successfully. We sent you a verification mail,             "
+#~ "please verify your new mail address."
+#~ msgstr ""
+#~ "Erfolgreich änderte Mail Adresse. Wir haben dir eine neue "
+#~ "Bestätigungsmail gesendet."
+
+#~ msgid "Block all Private Messages"
+#~ msgstr "Blockiere alle Privaten Nachrichten"
+
+#~ msgid "There are no mods"
+#~ msgstr "Es gibt keine Moderatoren"
+
+#~ msgid "Countries by Pixels Today"
+#~ msgstr "Länder nach heutigen Pixel"
+
+#~ msgid "Pencil Mode"
+#~ msgstr "Pinsel Modus"
+
+#~ msgid "Pixels placed"
+#~ msgstr "Pixels gesetzt"
+
+#~ msgid "History Pencil ON"
+#~ msgstr "Historischer Pinsel EIN"
+
+#~ msgid "Overlay Pencil ON"
+#~ msgstr "Vorlagen Pinsel EIN"
+
+#, javascript-format
+#~ msgid ""
+#~ "Hold right ${ bindShift } for placing while moving mouse according to "
+#~ "historical view"
+#~ msgstr ""
+#~ "Halte die rechte ${ bindShift } Taste gedrückt um Pixel unter der Maus "
+#~ "nach der aktuellen historischen Ansicht zu setzen"
+
+#~ msgid "Right-Shift Auto-Color"
+#~ msgstr "Rechts-Shift Auto-Farbe"
+
+#~ msgid "Place pixels from overlay on right-shift, instead of history."
+#~ msgstr ""
+#~ "Platziere beim Halten von Rechts-Shift laut Vorlage anstatt von der "
+#~ "historischen Ansicht."
+
+#~ msgid "Didn't get an answer from pixelplanet. Maybe try to refresh?"
+#~ msgstr ""
+#~ "Keine Antwort von pixelplanet erhalten. Vielleicht versuche die Seite neu "
+#~ "zu laden?"
+
+#~ msgid "Place more :)"
+#~ msgstr "Spiel mehr :)"
+
+#~ msgid "No Proxies Allowed :("
+#~ msgstr "Kein Proxy erlaubt :("
+
+#~ msgid "Show Hidden Canvases"
+#~ msgstr "Zeige versteckte Leinwände"
+
+#~ msgid "Hide Hidden Canvases"
+#~ msgstr "Verstecke geheime Leinwände"
+
+#~ msgid "ban"
+#~ msgstr "verbanne"
+
+#~ msgid "Register New Account"
+#~ msgstr "Registriere neues Konto"
+
+#~ msgid "Restore my Password"
+#~ msgstr "Passwort wiederherstellen"
+
+#~ msgid "Welcome to PixelPlanet.fun"
+#~ msgstr "Willkommen auf PixelPlanet.fun"
+
+#~ msgid "Look at past Canvases"
+#~ msgstr "Zeige vergangene Leinwände"
+
+#~ msgid "Ranking"
+#~ msgstr "Rangliste"
+
+#~ msgid "Daily"
+#~ msgstr "Täglich"
+
+#~ msgid "Coordinates in X_Y format:"
+#~ msgstr "Koordinaten in X_Y Format:"
+
+#~ msgctxt "keybinds"
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "your IP"
+#~ msgstr "deiner IP"
+
+#~ msgid "Partners:"
+#~ msgstr "Partner:"
+
+#~ msgid "User online"
+#~ msgstr "Spieler anwesend"
+
+#~ msgid "You successfully linked your mc account."
+#~ msgstr "Minecraft Konto wurde erfolgreich verknüpft."
+
+#~ msgid "You denied."
+#~ msgstr "Abgelehnt."
+
+#, javascript-format
+#~ msgid "You requested to link your mc account ${ minecraftname }."
+#~ msgstr "Anfrage um das Minecraft Konto ${ minecraftname } zu verknüpfen."
+
+#~ msgid "Accept"
+#~ msgstr "Annehmen"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Datenschutzerklärung"
+
+#~ msgid "Terms of Service"
+#~ msgstr "Nutzungsbedingungen"
+
+#~ msgid ""
+#~ "This site is protected by reCAPTCHA and the Google ${ reCaptchaPP } and $"
+#~ "{ reCaptchaTOS } apply."
+#~ msgstr ""
+#~ "Diese Seite ist mit Google reCaptcha geschützt und deren ${ reCaptchaPP } "
+#~ "und ${ reCaptchaTOS } gelten."
+
+#~ msgid ""
+#~ "This site is protected by hCAPTCHA and its ${ hCaptchaPP } and $"
+#~ "{ hCaptchaTOS } apply."
+#~ msgstr ""
+#~ "Diese Seite ist mit hCaptcha geschützt und deren ${ hCaptchaPP } und $"
+#~ "{ hCaptchaTOS } gelten."
+
+#~ msgid "I think we experienced some error :("
+#~ msgstr "Ich glaube wir haben einen Fehler :("
+
+#~ msgid "Error: ${ error }"
+#~ msgstr "Fehler: ${ error }"
+
+#~ msgid "Pixel gesetzt"
+#~ msgstr "Pixel plaziert"

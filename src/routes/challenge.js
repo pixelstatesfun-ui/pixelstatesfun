@@ -1,0 +1,87 @@
+/*
+ * route providing javascript challenge
+ */
+import logger from '../core/logger.js';
+import requestChallenge from '../core/challengeserver.js';
+import { registerChallenge } from '../data/sql/Captcha.js';
+import { CAPTCHA_PROVIDER } from '../core/config.js';
+
+async function challenge(req, res) {
+  req.tickRateLimiter(3000);
+  if (CAPTCHA_PROVIDER !== 'ppfun') {
+    res.status(404).end();
+    return;
+  }
+
+  res.set({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Content-Type': 'application/javascript; charset=UTF-8',
+  });
+
+  if (req.csrfPossible) {
+    res.status(403);
+    res.send(
+
+      'console.log(\'JS Challenge experienced an server error 403\');',
+    );
+    return;
+  }
+
+  try {
+    /* ensures IP table is populated */
+    await req.ip.getAllowance();
+    const { ipString } = req.ip;
+    const { browserHash } = req.device;
+
+    let solution;
+    let data;
+    let needCaptcha;
+    /* eslint-disable no-await-in-loop */
+    let retries = 3;
+    while (typeof needCaptcha !== 'boolean' && retries) {
+      /*
+       * challenge data could return duplicate solution, so we retry
+       */
+      retries -= 1;
+      const challengeData = await new Promise((resolve) => {
+        requestChallenge((...args) => resolve(args));
+      });
+
+      // error return
+      if (challengeData[0]) {
+        throw new Error(challengeData[0]);
+      }
+      [, solution, data] = challengeData;
+
+      try {
+        needCaptcha = await registerChallenge(solution, browserHash, ipString);
+      } catch (error) {
+        if (error.code !== 'ER_DUP_ENTRY') {
+          console.error(`SQL Error on registerChallenge: ${error.message}`);
+          throw new Error('SQL Error on registering Challenge');
+        }
+      }
+    }
+    /* eslint-enable no-await-in-loop */
+    if (typeof needCaptcha !== 'boolean') {
+      throw new Error('Could not generate unique Challenge');
+    }
+
+    logger.info(`CHALLENGE ${ipString} received a challenge.`);
+
+    res.end(data);
+  } catch (err) {
+    if (!res.writableEnded) {
+      res.status(503);
+      res.send(
+
+        'console.log(\'JS Challenge experienced an server error 503\');',
+      );
+    }
+    if (err.message !== 'OVERLOADED') {
+      logger.warn(err.message);
+    }
+  }
+}
+
+export default challenge;

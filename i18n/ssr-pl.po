@@ -1,0 +1,956 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: admin@pixelplanet.fun\n"
+"PO-Revision-Date: 2026-06-08 17:30+0000\n"
+"Last-Translator: Aikon <aikon@noreply.pixelplanet.fun>\n"
+"Language-Team: Polish <https://translate.gs-os.com/projects/ppfun/server/pl/>"
+"\n"
+"Language: pl\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.5\n"
+
+msgid "1bit"
+msgstr "1bit"
+
+msgid "2bit"
+msgstr "2bit"
+
+msgid "3D Canvas"
+msgstr "Płótno 3D"
+
+msgid "A 3D globe of our whole map"
+msgstr "Globus 3D całej naszej mapy"
+
+msgid ""
+"A canvas for the most active players from the the previous day. Daily "
+"ranking updates at 00:00 UTC."
+msgstr ""
+"Canvas dla najaktywniejszych graczy z poprzedniego dnia. Codzienne "
+"aktualizacje rankingów o godzinie 00:00 UTC."
+
+msgid "A file was too large"
+msgstr "Plik był za duży"
+
+msgid "Access modtools"
+msgstr "Wejdź do narzędzi moderatora"
+
+msgid "Add Application"
+msgstr "Dodaj aplikację"
+
+msgid "Add an Application (OIDC Client)"
+msgstr "Dodaj aplikację (Klient OIDC)"
+
+msgid "Add new application"
+msgstr "Dodaj nową aplikację"
+
+msgid "An error occured. Please try again later."
+msgstr "Wystąpił błąd. Proszę spróbuj ponownie później."
+
+msgid "Application changed successfully"
+msgstr "Aplikacja zmieniona pomyślnie"
+
+msgid "Application deleted"
+msgstr "Aplikacja usunięta"
+
+msgid "Application successfully added"
+msgstr "Aplikacja dodana pomyślnie"
+
+msgid "Avatar can only be an image"
+msgstr "Awatar może być tylko zdjęciem"
+
+msgid "Avatar not given or not an image"
+msgstr "Nie podano awataru, albo nie jest zdjęciem"
+
+msgid "Black and White canvas"
+msgstr "Czarno-białe płótno"
+
+msgid "Can not change a role above your own"
+msgstr "Nie można zmienić roli, która jest powyżej twojej własnej"
+
+msgid "Can not change a role that is equal to your own"
+msgstr "Nie można zmienić roli, która jest równa Twojej własnej"
+
+msgid "Can not change the default setting of this role"
+msgstr "Nie można zmienić domyślnych ustawień tej roli"
+
+msgid "Can not change the powerlevel of a role equal or above you"
+msgstr ""
+"Nie można zmienić poziomu władzy roli, która jest równa lub powyżej Ciebie"
+
+msgid "Can not change the powerlevel of the Sovereign"
+msgstr "Nie można zmienić poziomu władzy roli Suweryna"
+
+msgid "Can not chat while being banned"
+msgstr "Nie można czatować, gdy ma sie bana"
+
+msgid "Can not create a role on the same level as yours"
+msgstr "Nie można stworzyć roli, która jest równa Twojemu poziomowi"
+
+msgid "Can not create a role with a powerlevel beyond yours"
+msgstr "Nie można stworzyć roli, której poziom władzy jest większy od Twojego"
+
+msgid "Can not delete a role on the same level as yours"
+msgstr "Nie można usunąć roli, która jest równa Twojemu poziomowi"
+
+msgid "Can not delete this role"
+msgstr "Nie można usunąć tej roli"
+
+msgid "Can not elevate the powerlevel of a role beyond yours"
+msgstr "Nie można podnieść poziomu władzy roli, która jest powyżej Twojej"
+
+msgid "Can not elevate the powerlevel of a role to yours"
+msgstr "Nie można podnieść poziomu władzy roli do Twojej"
+
+#, javascript-format
+msgid "Can not have more than ${ MAX_ROLES_PER_FACTION } faction roles"
+msgstr "Nie można mieć więcej niż ${ MAX_ROLES_PER_FACTION } ról w frakcji"
+
+msgid "Can not have more than 20 invites per faction"
+msgstr "Nie można mieć więcej niż 20 zaproszeń na frakcję"
+
+msgid "Can not modify user equal to you or above you"
+msgstr "Nie można zmodyfikować użytkownika równego lub wyższego Tobie"
+
+#. when leaving a faction and you are the last owner
+msgid "Can not orphan a faction"
+msgstr "Nie można osierocić frakcji"
+
+#, javascript-format
+msgid ""
+"Can not upload this many files at once, only 5 are allowed, you have $"
+"{ amountOfFiles }"
+msgstr ""
+"Nie można przesłać tylu plików na raz, tylko 5 jest dozwolonych, a Ty masz $"
+"{ amountOfFiles }"
+
+msgid "Can only have one Sovereign role"
+msgstr "Można mieć tylko jedną rolę Suweryna"
+
+msgid "Click here"
+msgstr "Kliknij tutaj"
+
+msgid "Click to Verify"
+msgstr "Kliknij, aby zweryfikować"
+
+msgid "Client Name"
+msgstr "Nazwa klienta"
+
+msgid "Confirm New Password"
+msgstr "Potwierdź nowe hasło"
+
+msgid ""
+"Conquer land on a smaller earth with protected ocean. Shares cooldown with "
+"earth canvas!"
+msgstr ""
+"Podbij tereny na mniejszej ziemi z chronionym oceanem. dzieli czas "
+"odnowienia z płótnem ziemi!"
+
+msgid "Consent"
+msgstr "Zgoda"
+
+msgid "Coronavirus"
+msgstr "Koronawirus"
+
+msgid "Could not change the flag of this role"
+msgstr "Nie mógł zmienić flagi tej roli"
+
+msgid "Could not change this setting. Maybe try again later."
+msgstr "Nie mógł zmienić tego ustawienia. Może spróbuj ponownie później."
+
+msgid "Could not close this Session."
+msgstr "Nie mógł zamknąć tej sesji."
+
+msgid "Could not find this login method"
+msgstr "Nie mógł znaleźć tej metody logowania"
+
+msgid "Could not leave this channel"
+msgstr "Nie mógł wyjść z tego kanału"
+
+msgid "Could not set this factions avatar"
+msgstr "Nie mógł ustawić awataru tej frakcji"
+
+msgid "Could not set your avatar"
+msgstr "Nie mógł ustawić Twojego awataru"
+
+msgid "Could not set your faction role"
+msgstr "Nie mógł ustawić Twojej roli frakcji"
+
+msgid "Could not upload all files"
+msgstr "Nie mógł przesłać wszystkich plików"
+
+msgid "Couldn't find this mail in our database"
+msgstr "Nie udało się znaleźć tego e-maila w naszej bazie danych"
+
+msgid "Default"
+msgstr "Domyślny"
+
+msgid "Delete Application"
+msgstr "Usuń aplikację"
+
+msgid "Description can't be empty"
+msgstr "Opis nie może być pusty"
+
+msgid "Description must be shorter than 1000 characters"
+msgstr "Opis musi być krótszy niż 1000 znaków"
+
+msgid "Display name for your OIDC client"
+msgstr "Wyświetl nazwe dla twojego klienta OIDC"
+
+msgid "Double click on globe to go back."
+msgstr "Kliknij dwukrotnie w globus, aby wrócić do normalnego widoku."
+
+msgid "E-Mail already in use."
+msgstr "E-mail jest już używany."
+
+msgid "Earth"
+msgstr "Ziemia"
+
+msgid "Edit existing applications"
+msgstr "Edytuj istniejące już aplikacje"
+
+msgid "Email can't be empty."
+msgstr "E-mail nie może być pusty."
+
+msgid "Email can't be longer than 40 characters."
+msgstr "E-mail nie może być dłuższy niż 40 znaków."
+
+msgid "Email should at least contain a dot"
+msgstr "E-mail powinien zawierać przynajmniej kropkę"
+
+msgid "Email should be at least 5 characters long."
+msgstr "E-mail powinien być przynajmniej 5 znaków długi."
+
+msgid "Email should contain a @"
+msgstr "E-mail powinien zawierać @"
+
+msgid "Error"
+msgstr "Błąd"
+
+msgid "Failed to create a new user :("
+msgstr "Nie udało się stworzyć nowego użytkownika :("
+
+#, javascript-format
+msgid ""
+"File ${ filename } has ${ sizeMB } MB and is too large. It may only be $"
+"{ MAX_FILE_SIZE_MB } MB"
+msgstr ""
+"Plik ${ filename } ma ${ sizeMB } MB i jest za duży. Może mieć tylko ${ "
+"MAX_FILE_SIZE_MB } MB"
+
+#, javascript-format
+msgid "File ${ filename } has an invalid extension"
+msgstr "Plik ${ filename } ma nieprawidłowe rozszerzenie"
+
+msgid "File is broken"
+msgstr "Plik jest uszkodzony"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid ""
+"Generate a new client_secret. The old secret will become invalid immediately."
+msgstr ""
+"Generuj nowy client_secret. Stary secret natychmiast stanie się nieważny."
+
+msgid "Get email address"
+msgstr "Uzyskaj adres e-mail"
+
+msgid "Get the amount of Pixels placed and ranking"
+msgstr "Uzyskaj liczbę umieszczonych pikseli i ranking"
+
+msgid ""
+"Have fun and don't hesitate to contact us if you encounter any problems :)"
+msgstr ""
+"Miłej zabawy i nie wahaj się z nami skontaktować, jeśli napotkasz "
+"jakiekolwiek problemy :)"
+
+msgid "Hello"
+msgstr "Witaj"
+
+#, javascript-format
+msgid "Hello ${ email }, you can set your new password here:"
+msgstr "Witaj ${ email }, możesz ustawić swoje nowe hasło tutaj:"
+
+#, javascript-format
+msgid "Hello ${ name }"
+msgstr "Witaj ${ name }"
+
+msgid ""
+"If this was you, please ignore this email. If it wasn't you, please go to <a "
+"href=\"https://pixelplanet.fun\">pixelplanet.fun</a> and log-out any session "
+"that you are unaware of under \"Login Methods\" in the User Area and change "
+"your password."
+msgstr ""
+"Jeśli to byłeś ty, zignoruj ten e-mail. Jeśli to nie byłeś ty, proszę "
+"przejdź do <a href=\"https://pixelplanet.fun\">pixelplanet.fun</a> i wyloguj "
+"wszystkie sesje, o których nie masz pojęcia pod \"Metody logowania\" w "
+"strefie użytkownika i zmień swoje hasło."
+
+#, javascript-format
+msgid ""
+"If you did not request this mail, please just ignore it (the ip that "
+"requested this mail was ${ ip })."
+msgstr ""
+"Jeśli to nie Ty prosiłeś o ten e-mail, zignoruj go (adres IP, który zażądał "
+"tej poczty, to ${ ip })."
+
+msgid "Incorrect password"
+msgstr "Nieprawidłowe hasło"
+
+msgid "Invalid type of media"
+msgstr "Nieprawidłowy typ medium"
+
+msgid "Invalid url :( Please check your mail again."
+msgstr "Nieprawidłowy adres URL :( Sprawdź swojego e-maila ponownie."
+
+msgid "Just admins can do that"
+msgstr "Tylko administracja może to zrobić"
+
+msgid "Just janny, mod or admin can do that"
+msgstr "Tylko mini-moderator, mod albo admin mogą to zrobić"
+
+msgid "Just mods and admins can do that"
+msgstr "Tylko mody i admini mogą to zrobić"
+
+msgid "Know that an account exists"
+msgstr "Wiedz, jak konto istnieje"
+
+#. "scopes" is a technical term and should not be translated
+msgid "List of available scopes"
+msgstr "Lista dostępnych scopes"
+
+msgid "Loading..."
+msgstr "Ładowanie..."
+
+msgid "Login from new location on PixelPlanet"
+msgstr "Zaloguj się z nowej lokalizacji na PixelPlanet"
+
+msgid "Login is required"
+msgstr "Wymagany jest login"
+
+msgid "Mail is already in use!"
+msgstr "E-mail już jest w użyciu!"
+
+msgid "Mail is not configured on the server"
+msgstr "E-mail nie jest skonfigurowany na serwerze"
+
+msgid "Mail verification"
+msgstr "Weryfikacja e-maila"
+
+msgid "MimeType or extension not known or supported"
+msgstr "Nieznane lub nieobsługiwane rozszerzenie typu MIME"
+
+#, javascript-format
+msgid "Mimetype ${ mimeType } of file ${ filename } is invalid or not allowed"
+msgstr ""
+"Typ MIME ${ mimeType } pliku ${ filename } jest nieprawidłowy lub "
+"niedozwolony"
+
+msgid "Minimap"
+msgstr "Minimapa"
+
+msgid "Mirror of PixelCanvas"
+msgstr "Lustro PixelCanvas"
+
+msgid "Mirror of PixelZone"
+msgstr "Lustro PixelZone"
+
+msgid "Moon"
+msgstr "Księżyc"
+
+msgid ""
+"Moon canvas. Safe space for art. No flags or large text (unless part of art) "
+"or art larger than 1.5k x 1.5k pixels."
+msgstr ""
+"Płótno księżycowe. Bezpieczna przestrzeń dla rysunków. Żadnych flag ani "
+"dużego tekstu (chyba, że jest to część rysunku) ani rysunków o wymiarach "
+"większych niż 1,5 tys. x 1,5 tys. pikseli."
+
+msgid "Name already in use."
+msgstr "Nazwa jest zajęta."
+
+msgid "Name can only contain the characters: a-z . _ and -"
+msgstr "Nazwa może zawierać tylko a-z, ., _, i -"
+
+msgid "Name can't be empty."
+msgstr "Nazwa nie może być pusta."
+
+msgid "Name contains invalid character like @, /, \\ or #"
+msgstr "Nazwa zawiera nieprawidłowy znak, taki jak @, /, \\ lub #"
+
+msgid "Name is too long"
+msgstr "Nazwa jest za długa"
+
+msgid "Name must be at least 2 characters long"
+msgstr "Nazwa musi mieć co najmniej 2 znaki"
+
+msgid "Name must be shorter than 26 characters"
+msgstr "Nazwa musi być krótsza niż 26 znaków"
+
+msgid "Name or Email does not exist!"
+msgstr "Nazwa lub e-mail nie istnieje!"
+
+msgid "New Password"
+msgstr "Nowe hasło"
+
+msgid "No Avatar given"
+msgstr "Brak podanego awataru"
+
+msgid "No Captcha given"
+msgstr "Nie podano Captcha"
+
+msgid "No or invalid fish id."
+msgstr "Brak lub nieprawidłowy ID ryby."
+
+msgid "No password given."
+msgstr "Nie podano hasła."
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "No redirect_uris given."
+msgstr "Nie podano redirect_uris."
+
+msgid "No such badge found"
+msgstr "Nie znaleziono takiej odznaki"
+
+msgid "No such fish found"
+msgstr "Nie znaleziono takiej ryby"
+
+msgid "One redirect URIs per line"
+msgstr "Jeden przekierowujący URI na wiersz"
+
+msgid "One redirect_uri per line"
+msgstr "Jeden redirect_uri na wiersz"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Only five redirect_uris are allowed per client"
+msgstr "Maksymalnie 5 redirect_uris jest dozwolonych na klienta"
+
+msgid "Only four colors. Same rules as moon!"
+msgstr "Tylko cztery kolory. Takie same zasady jak dla płótna księżycowego!"
+
+msgid "OpenID Connect specs"
+msgstr "Specyfikacje OpenID Connect"
+
+msgid "Or by copying following url:"
+msgstr "Lub kopiując następujący adres URL:"
+
+msgid "Our main canvas, a huge map of the world. Place anywhere you like!"
+msgstr "Nasze główne płótno, wielka mapa świata, Rysuj gdziekolwiek chcesz!"
+
+msgid "Password must be at least 6 characters long."
+msgstr "Hasło musi mieć co najmniej 6 znaków."
+
+msgid "Password must be shorter than 60 characters."
+msgstr "Hasło musi być krótsze niż 60 znaków."
+
+msgid "Password successfully changed."
+msgstr "Pomyślnie zmieniono hasło."
+
+msgid "Permission"
+msgstr "Uprawnienie"
+
+msgid "PixelCanvas"
+msgstr "PixelCanvas"
+
+msgid "PixelPlanet.Fun 3DGlobe"
+msgstr "Globus 3D PixelPlanet.Fun"
+
+msgid "PixelZone"
+msgstr "PixelZone"
+
+#, javascript-format
+msgid ""
+"Pixelplanet fulfills the OpenID Connect (OIDC) specifications. So an "
+"application that supports OIDC could ask for consent and login using "
+"pixelplanet accounts. The required endpoints can be auto-discovered via the $"
+"{ wellKnownUrl } URL."
+msgstr ""
+"PixelPlanet spełnia specyfikacje OpenID Connect (OIDC). Dzięki temu, "
+"aplikacja która wspiera OIDC może zapytać się o zgodę i zalogować się "
+"używając kont pixelplanet. Wymagane punkty końcowe mogą być automatycznie "
+"odkryte poprzez ${ wellKnownUrl } URL."
+
+msgid "Place Voxels on a 3D canvas with others."
+msgstr "Postaw voxele na płótnie 3D wraz z innymi."
+
+msgid "Place color pixels on an map styled canvas with other players online"
+msgstr ""
+"Stawiaj kolorowe piksele na płótnie w stylu mapy wraz z innymi graczami "
+"online"
+
+msgid "Please try again."
+msgstr "Proszę spróbuj ponownie."
+
+msgid "Please use int channel"
+msgstr "Proszę użyj kanału międzynarodowego"
+
+msgid "Read Badges and fishes"
+msgstr "Pokaż odznaki i ryby"
+
+msgid "Read name, username and account age"
+msgstr "Przeczytaj imię, nazwę użytkownika i wiek konta."
+
+msgid "Redirect URIs"
+msgstr ""
+
+msgid "Regularly update this data"
+msgstr "Regularnie aktualizuj te dane"
+
+msgid "Request stalled"
+msgstr "Żądanie wstrzymane"
+
+#. 'client_secret' is a technical term and should not be translated
+msgid "Reroll client_secret"
+msgstr "Wygeneruj ponownie client_secret"
+
+msgid "Reset Password"
+msgstr "Zresetuj hasło"
+
+msgid "Reset your password here"
+msgstr "Zresetuj swoje hasło tutaj"
+
+msgid "Role flag can only be an image"
+msgstr "Flaga roli może być tylko obrazem"
+
+msgid "Role flag needs to be 16x11"
+msgstr "Flaga roli musi być 16x11"
+
+msgid "Server Error"
+msgstr "Błąd Serwera"
+
+msgid "Server error while deleting user."
+msgstr "Błąd serwera podczas usuwania użytkownika."
+
+msgid "Someone logged into your account from a new location, with the IP:"
+msgstr "Ktoś zalogował się na Twoje konto z nowej lokalizacji, z adresem IP:"
+
+msgid "Space-separated list of available scopes"
+msgstr ""
+
+msgid ""
+"Space-separated list of default scopes, they will be used on requests if no "
+"other scope is given."
+msgstr ""
+
+#. 'scope' is used as a technical term here, do not translate that word
+msgid ""
+"Space-separated list of default scopes, they will be used on requests where "
+"no other scope is given."
+msgstr ""
+
+msgid "Space-separated list of scopes that should be available"
+msgstr ""
+
+msgid "Special canvas to spread awareness of SARS-CoV2 (take the vax)."
+msgstr ""
+"Specjalne płótno mające na celu szerzenie świadomości na temat SARS-CoV2."
+
+msgid "Stop flooding."
+msgstr "Przestań Spamować."
+
+msgid "Submit"
+msgstr "Podaj"
+
+msgid "Thanks"
+msgstr "Dzięki"
+
+#, javascript-format
+msgid "The file ${ filename } is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "Plik ${ filename } Jest zbanowany ${ reason }. ID Bana:${ mbid }"
+
+msgid "The user owning this badge is private"
+msgstr ""
+
+msgid "The user owning this fish is private"
+msgstr ""
+
+msgid "This application is not allowed to login"
+msgstr ""
+
+msgid "This application redirects to an unallowed page"
+msgstr ""
+
+msgid "This application sent a faulty login request with no redirection"
+msgstr ""
+
+msgid "This application uses a PKCE method we do not support"
+msgstr ""
+
+msgid "This application uses a login method we do not support"
+msgstr ""
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function below to set a new password. In the future, consider not installing "
+"malware, Thank You."
+msgstr ""
+
+msgid ""
+"This email / password combination got hacked and leaked. To protect this "
+"account, the password has been reset. Please use the \"Forgot my password\" "
+"function on the LogIn page to set a new password. In the future, consider "
+"not installing malware, Thank You."
+msgstr ""
+
+msgid "This email provider is not allowed"
+msgstr "Ten dostawca maila jest niedozwolony"
+
+msgid "This faction does not exist"
+msgstr ""
+
+msgid "This faction is full"
+msgstr "Ta frakcja jest pełna"
+
+msgid "This faction is private"
+msgstr "Ta frakcja jest prywatna"
+
+#, javascript-format
+msgid "This media is banned ${ reason }. Ban ID: ${ mbid }"
+msgstr "To medium jest zbanowane ${ reason }. ID banu: ${ mbid }"
+
+msgid "This password-reset link isn't valid anymore :("
+msgstr "Ten link do resetowania hasła jest już nieważny :("
+
+msgid "This user has not password set"
+msgstr ""
+
+msgid "This user is private"
+msgstr "Ten użytkownik ma prywatny profil"
+
+msgid "Title can't be empty."
+msgstr ""
+
+msgid "Title contains invalid character like @, /, \\ or #"
+msgstr ""
+
+msgid "Title must be at least 2 characters long"
+msgstr ""
+
+msgid "Title must be shorter than 26 characters"
+msgstr "Opis musi być krótszy niz 26"
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "Too many or too long redirect_uris"
+msgstr ""
+
+msgid "Top10"
+msgstr "Top10"
+
+msgid "Unknown Captcha Error"
+msgstr "Nieznany błąd Captcha"
+
+#, javascript-format
+msgid "Unknown field ${ name } in request"
+msgstr ""
+
+msgid "Update Application"
+msgstr ""
+
+msgid "User ID and verification level"
+msgstr ""
+
+msgid "User doesn't exist in our database :("
+msgstr "Użytkownik nie istnieje w naszej bazie danych :("
+
+msgid "Username already in use."
+msgstr "Nazwa użytkownika jest już przez kogoś używana."
+
+msgid "Username can not start with pp_"
+msgstr ""
+
+msgid "Username can only contain the characters: a-z . _ and -"
+msgstr "Nazwa może tylko zawierać litery a-z . _ i -"
+
+msgid "Username can't be empty."
+msgstr "Nazwa nie może być pusta."
+
+msgid "Username must be at least 2 characters long"
+msgstr "Nazwa musi być przynajmniej 2 literowa"
+
+msgid "Username must be shorter than 26 characters"
+msgstr ""
+
+msgid ""
+"We already sent you a mail with instructions. Please wait before requesting "
+"another mail."
+msgstr ""
+"Wysłaliśmy już do Ciebie maila z instrukcjami. Poczekaj, zanim poprosisz o "
+"kolejną wiadomość."
+
+#, javascript-format
+msgid ""
+"We already sent you a verification mail, you can request another one in $"
+"{ minLeft } minutes."
+msgstr ""
+"Wysłaliśmy już do Ciebie wiadomość weryfikacyjną. Możesz poprosić o kolejną "
+"za ${ minLeft } minut."
+
+msgid "We currently do not allow file uploads"
+msgstr ""
+
+#, javascript-format
+msgid "Welcome ${ name } to PixelPlanet, please verify your mail"
+msgstr "Witamy ${ name } w PixelPlanet. Zweryfikuj swojego maila"
+
+msgid "You already chose your username"
+msgstr "Wybrałeś już swoja nazwe"
+
+msgid "You already have that name."
+msgstr "Już masz tą nazwe."
+
+msgid "You are already part of this faction"
+msgstr "Już jestes w tej frakcji"
+
+msgid "You are already verified."
+msgstr "Już jesteś zweryfikowany."
+
+msgid "You are banned from this faction"
+msgstr "Jesteś zbanowany z tej frakcji"
+
+#, javascript-format
+msgid "You are muted for another ${ timeMin } minutes"
+msgstr "Jesteś wyciszony na kolejne ${ timeMin } minut"
+
+#, javascript-format
+msgid "You are muted for another ${ ttl } seconds"
+msgstr "Jesteś wyciszony przez kolejne ${ ttl } sekundy"
+
+msgid "You are not allowed to access this page"
+msgstr "Nie masz dostępu do tej strony"
+
+msgid "You are not banned"
+msgstr "Nie jesteś zbanowany"
+
+msgid "You are not logged in"
+msgstr "Nie jesteś zalogowany"
+
+msgid "You are now verified :)"
+msgstr "Jesteś teraz zweryfikowany :)"
+
+msgid "You are permanently muted, join our guilded to appeal the mute"
+msgstr ""
+"Zostałeś pernamentnie wyciszony dołącz do naszego guilded aby odwołać się od "
+"wyciszenia"
+
+#, javascript-format
+msgid "You are sending messages too fast, you have to wait ${ waitTime }s :("
+msgstr "Wysyłasz wiadomości za szybko, musisz poczekać ${waitTime } s :("
+
+msgid "You attached too many files"
+msgstr "Załączyłeś zbyt wiele plików"
+
+msgid ""
+"You can not delete this login method, because you have nothing else left."
+msgstr ""
+
+msgid "You can not register an account while you are banned"
+msgstr ""
+
+msgid "You can not register an account with a proxy"
+msgstr ""
+
+msgid "You can not send chat messages while using a proxy"
+msgstr "Nie możesz wysyłać wiadomości na chat z proxy"
+
+#, javascript-format
+msgid ""
+"You can only be owner of ${ MAX_OWNED_FACTIONS_PER_USER } factions in total"
+msgstr ""
+
+#, javascript-format
+msgid "You can only have ${ MAX_FACTIONS_PER_USER } factions in total"
+msgstr ""
+
+msgid ""
+"You can register your own application here to get the client_id and "
+"client_secret needed to make use of this."
+msgstr ""
+
+msgid "You can't send a message this long :("
+msgstr "Nie możesz wysłać tak długiej wiadomości :("
+
+msgid "You did not provide all necessary information"
+msgstr ""
+
+msgid ""
+"You do not have any email adress set. Please add one under \"Login Methods\"."
+msgstr ""
+
+msgid "You don't have access to this channel"
+msgstr "Nie masz dostępu do tego kanału"
+
+msgid "You failed your captcha"
+msgstr "Nie udało Ci się wykonać captcha"
+
+msgid "You forgot your password for PixelPlanet? Get a new one here"
+msgstr "Zapomniałeś hasła do PixelPlanet? Zrób nowe tutaj"
+
+msgid "You have to fill out all fields"
+msgstr ""
+
+msgid "You must be logged in to access this page"
+msgstr ""
+
+msgid "You need an invite to join this faction"
+msgstr ""
+
+#. "scope" is a technical term and should not be translated
+msgid "You need to define a valid scope"
+msgstr ""
+
+msgid "You need to directly access this page in the browser :("
+msgstr ""
+
+#, javascript-format
+msgid "You reached your maximum upload quota of ${ MAX_USER_MEDIA_SIZE_MB } MB"
+msgstr ""
+"Osiągnąłeś maksymalny limit przesyłania wynoszący ${ "
+"MAX_USER_MEDIA_SIZE_MB } MB"
+
+msgid ""
+"You requested to get a new password. You can change your password within the "
+"next 30min here: "
+msgstr ""
+"Prosiłeś o otrzymanie nowego hasła. Możesz zmienić swoje hasło w ciągu "
+"najbliższych 30 minut tutaj: "
+
+msgid "You sent an empty password or invalid data :("
+msgstr "Wysłałeś puste hasło lub nieprawidłowe dane :("
+
+msgid "You took too long, try again"
+msgstr "Zajęło Tobie to zbyt długo, spróbuj ponownie"
+
+msgid "You will be automatically redirected after 15s"
+msgstr "Po 15 sekundach nastąpi automatyczne przekierowanie"
+
+msgid "Your Browser looks shady"
+msgstr "Twoja przeglądarka wygląda dziwnie"
+
+msgid ""
+"Your account must be at least two weeks old before you can create a faction"
+msgstr ""
+
+msgid "Your account needs to be verified to access this page"
+msgstr ""
+
+msgid "Your country is temporary muted from this chat channel"
+msgstr "Twój kraj został tymczasowo wyciszony z tego kanału"
+
+msgid "Your device looks weird"
+msgstr ""
+
+msgid "Your mail has to be verified in order to chat"
+msgstr "Twój mail musi zostać zweryfikowany aby móc korzystać z czatu"
+
+msgid ""
+"Your mail verification code is invalid or already expired :(, please request "
+"a new one."
+msgstr ""
+"Twój kod weryfikacyjny maila jest nieprawidłowy lub już wygasł :(, poproś o "
+"nowy."
+
+msgid "Your passwords do not match :("
+msgstr "Twoje hasła nie pasują do siebie :("
+
+#. This media is banned xyz
+msgid "because it is propaganda"
+msgstr ""
+
+#. This media is banned xyz
+msgid "for being an attempt to scam people"
+msgstr ""
+
+#. This media is banned xyz
+msgid "for being degenerate"
+msgstr ""
+
+#. This media is banned xyz
+msgid "for containing CSAM"
+msgstr ""
+
+#. This media is banned xyz
+msgid "for containing graphic violence"
+msgstr ""
+
+#. This media is banned xyz
+msgid "for containing personal information"
+msgstr ""
+
+#. This media is banned xyz
+msgid "for glorifying terrorism"
+msgstr ""
+
+#. "redirect_uris" is a technical term and should not be translated
+msgid "redirect_uris does not look legit"
+msgstr ""
+
+msgid "to go back to pixelplanet"
+msgstr "by wrócić na pixelplanet"
+
+msgid ""
+"welcome to our little community of pixelplacers, to use your account, you "
+"have to verify your mail. You can do that here: "
+msgstr ""
+"witamy w naszej małej społeczności pixelplacerów, aby móc korzystać ze "
+"swojego konta, musisz zweryfikować swojego maila, Możesz to zrobić tutaj: "
+
+#~ msgid "Please refresh the website"
+#~ msgstr "Prosze odśwież strone"
+
+#~ msgid "Incorrect password!"
+#~ msgstr "Niepoprawne hasło!"
+
+#~ msgid "You are banned"
+#~ msgstr "Jesteś zbanowany"
+
+#~ msgid "Your Internet Provider is banned"
+#~ msgstr "Twój dostawca jest zbanowany"
+
+#~ msgid "ppfun"
+#~ msgstr "ppfun"
+
+#~ msgid "PixelPlanet.Fun PopUp"
+#~ msgstr "PixelPlanet.Fun PopUp"
+
+#~ msgid "PixelPlanet.Fun"
+#~ msgstr "Pixelplanet.Fun"
+
+#~ msgid "PixelPlanet.fun Password Reset"
+#~ msgstr "Resetowanie hasła PixelPlanet.fun"
+
+#, javascript-format
+#~ msgid "Hello ${ name }, you can set your new password here:"
+#~ msgstr "Witaj ${ name } możesz ustawić swoje nowe hasło tutaj:"
+
+#~ msgid "You took too long, try again."
+#~ msgstr "Trwało to zbyt długo. Spróbuj ponownie."
+
+#~ msgid "Failed to create new user :("
+#~ msgstr "Nie udało się stworzyć nowego konta :("
+
+#~ msgid "Failed to establish session after register :("
+#~ msgstr "Nie udało się ustanowić sesji po zarejestrowaniu :("
+
+#~ msgid "You are not even logged in."
+#~ msgstr "Nie jesteś nawet zalogowany."
+
+#~ msgid "Server error when logging out."
+#~ msgstr "Błąd serwera podczas wylogowywania."
+
+#~ msgid "You are not authenticated."
+#~ msgstr "Nie jesteś uwierzytelniony."
+
+#~ msgid "Muted Users can not delete their account."
+#~ msgstr "Wyciszeni Użytkownicy nie mogą usunąć swoich kont."
+
+#~ msgid "Muted Users can not do this."
+#~ msgstr "Wyciszeni Użytkownicy nie mogą tego zrobić."
+
+#~ msgid "PixelPlanet.fun Accounts"
+#~ msgstr "Konta Pixelplanet.fun"
+
+#, javascript-format
+#~ msgid "Or ${ clickHere } to go back to pixelplanet"
+#~ msgstr "Lub ${clickHere }, aby wrócić do pixelplanet"

@@ -1,0 +1,180 @@
+
+.window {
+  border-radius: 5px;
+}
+
+.channeldd-category {
+  border-radius: 3px;
+}
+
+.channeldd {
+  border-radius: 5px;
+}
+
+.menu, .menuelement {
+  border-radius: 10px;
+}
+
+.actionbuttons, .coorbox, .onlinebox, .cooldownbox, .historyselect {
+  border-radius: 21px;
+}
+
+.modal, .popup-modal {
+  border-radius: 21px;
+}
+
+.popup-fsbtn {
+  border-radius: 0 21px 0 0;
+}
+
+.Alert {
+  border-radius: 12px;
+}
+
+.notifybox {
+  border-radius: 21px;
+}
+
+/* Keep core controls rounded and legible in every theme. */
+button,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea,
+.window,
+.popup,
+.popup-content,
+.modal-content,
+.menu,
+.menuelement,
+.channeldd,
+.channeldd-button,
+.setitem,
+.chatinput,
+.att-button,
+.att-redbutton {
+  border-radius: 12px;
+}
+
+.actionbuttons,
+.coorbox,
+.onlinebox,
+.cooldownbox,
+.historyselect,
+#palettebox {
+  background-color: #eaf4ff;
+  border: 1px solid #33485c;
+  color: #172b3e;
+}
+
+.menu.MAIN {
+  background: #eaf4ff;
+  border: 1px solid #33485c;
+  border-radius: 14px;
+  color: #172b3e;
+}
+
+.menu.MAIN > .menuelement {
+  margin: 4px;
+  border: 1px solid #b9ccde;
+  border-radius: 9px;
+  background: #f8fbff;
+}
+
+.menu.MAIN > .menuelement.selected,
+.menu.MAIN > .menuelement:hover {
+  background: #d5e9fb;
+}
+
+.userarea-tabs button.active,
+.faction-tabs button.active {
+  background: #d5e9fb;
+  color: #172b3e;
+}
+
+.userarea-hero {
+  background: linear-gradient(135deg, #edf7ff, #fffaf4);
+  color: #263a4e;
+}
+
+.userarea-panel,
+.userarea-stat,
+.faction-requirement {
+  border-radius: 14px;
+}
+
+:root {
+  --control-bg: #fffaf2;
+  --control-bg-highlight: #f3e8d8;
+  --control-bg-selected: #f8ddc1;
+  --control-txt-color: #43362d;
+  --caption-txt-color: #77685c;
+  --border-seperator-color: #ddc7ad;
+  --menu-bg: rgba(255, 250, 242, 0.97);
+  --settings-tab-bg: #fffaf2;
+  --settings-tab-hover: #f3e8d8;
+  --settings-tab-active: #fffaf2;
+  --settings-tab-indicator: #d77a45;
+}
+
+.window,
+.popup,
+.modal,
+.Alert,
+.popup-modal,
+.modal-content,
+.win-content,
+.popup-content,
+.userarea-panel,
+.userarea-stat,
+.faction-requirement,
+.setitem {
+  border-color: #ddc7ad;
+  background-color: #fffaf2;
+  color: #43362d;
+}
+
+button,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea,
+.menu,
+.menuelement,
+.channeldd,
+.channeldd-button,
+.chatinput,
+.att-button,
+.att-redbutton {
+  border-color: #ddc7ad;
+  background-color: #fffaf2;
+  color: #43362d;
+}
+
+.menu.MAIN {
+  border-color: #ddc7ad;
+  background: #fff6e9;
+  color: #43362d;
+}
+
+.menu.MAIN > .menuelement {
+  border-color: #ead7c1;
+  background: #fffaf2;
+  color: #43362d;
+}
+
+.menu.MAIN > .menuelement.selected,
+.menu.MAIN > .menuelement:hover,
+button:hover {
+  background-color: #f3e8d8;
+}
+
+.userarea-tabs button.active,
+.faction-tabs button.active {
+  border-color: #d77a45;
+  background: #f8ddc1;
+  color: #43362d;
+}
+
+.userarea-hero {
+  background: linear-gradient(135deg, #f8ddc1, #fffaf2);
+  color: #43362d;
+}
