@@ -474,7 +474,7 @@ msgstr ""
 msgid "Back to list"
 msgstr ""
 
-#: src/components/windows/index.js:44
+#: src/components/windows/index.js:45
 msgid "Badge Display"
 msgstr ""
 
@@ -706,7 +706,7 @@ msgstr ""
 msgid "Canvas 7 (3D)"
 msgstr ""
 
-#: src/components/windows/index.js:42
+#: src/components/windows/index.js:43
 msgid "Canvas Archive"
 msgstr ""
 
@@ -728,7 +728,7 @@ msgstr ""
 
 #: src/components/CooldownTools.jsx:166
 #: src/components/menus/mainMenu.js:43
-#: src/components/windows/index.js:41
+#: src/components/windows/index.js:42
 msgid "Canvas Selection"
 msgstr ""
 
@@ -846,7 +846,7 @@ msgstr ""
 msgid "Charts"
 msgstr ""
 
-#: src/components/windows/index.js:40
+#: src/components/windows/index.js:41
 msgid "Chat"
 msgstr ""
 
@@ -1215,7 +1215,7 @@ msgstr ""
 
 #: src/components/windows/Converter.jsx:199
 #: src/components/windows/UserArea.jsx:174
-#: src/components/windows/index.js:39
+#: src/components/windows/index.js:40
 msgid "Converter"
 msgstr ""
 
@@ -2051,7 +2051,7 @@ msgstr ""
 #: src/components/FactionCoordination.jsx:836
 #: src/components/FactionCoordination.jsx:838
 #: src/components/windows/FactionSystemTab.jsx:1161
-#: src/components/windows/index.js:50
+#: src/components/windows/index.js:52
 msgid "Faction"
 msgstr ""
 
@@ -2355,7 +2355,7 @@ msgstr ""
 
 #: src/components/BanInfo.jsx:87
 #: src/components/menus/mainMenu.js:124
-#: src/components/windows/index.js:36
+#: src/components/windows/index.js:37
 msgid "Help"
 msgstr ""
 
@@ -2565,7 +2565,7 @@ msgstr ""
 msgid "Invalid color selected"
 msgstr ""
 
-#: src/components/windows/index.js:55
+#: src/components/windows/index.js:57
 msgid "Invite"
 msgstr ""
 
@@ -2826,8 +2826,8 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: src/components/buttons/QuickAccessButtons.jsx:22
 #: src/components/buttons/QuickAccessButtons.jsx:23
+#: src/components/buttons/QuickAccessButtons.jsx:24
 msgid "Log in"
 msgstr ""
 
@@ -3042,13 +3042,13 @@ msgid "Minimum Color Distance"
 msgstr ""
 
 #: src/components/windows/UserArea.jsx:181
-#: src/components/windows/index.js:47
+#: src/components/windows/index.js:49
 #. This if for moderation tools, it's not important to translate this
 msgid "ModTools"
 msgstr ""
 
 #: src/components/windows/Help.jsx:67
-#: src/components/windows/index.js:54
+#: src/components/windows/index.js:56
 msgid "Moderation Log"
 msgstr ""
 
@@ -3093,7 +3093,7 @@ msgstr ""
 msgid "My Faction"
 msgstr ""
 
-#: src/components/windows/index.js:49
+#: src/components/windows/index.js:51
 msgid "My Factions"
 msgstr ""
 
@@ -3421,7 +3421,7 @@ msgstr ""
 msgid "Notifications"
 msgstr ""
 
-#: src/components/windows/index.js:68
+#: src/components/windows/index.js:70
 msgid "OIDC LogIn"
 msgstr ""
 
@@ -3949,7 +3949,7 @@ msgid "Ranking updates every 5 min. Daily rankings get reset at midnight UTC."
 msgstr ""
 
 #: src/components/PixelRankCounter.jsx:44
-#: src/components/windows/index.js:53
+#: src/components/windows/index.js:55
 msgid "Ranks"
 msgstr ""
 
@@ -4260,7 +4260,7 @@ msgstr ""
 #: src/components/menus/mainMenu.js:99
 #: src/components/windows/Search.jsx:59
 #: src/components/windows/Search.jsx:92
-#: src/components/windows/index.js:52
+#: src/components/windows/index.js:54
 msgid "Search"
 msgstr ""
 
@@ -4446,7 +4446,7 @@ msgid ""
 msgstr ""
 
 #: src/components/menus/mainMenu.js:116
-#: src/components/windows/index.js:37
+#: src/components/windows/index.js:38
 msgid "Settings"
 msgstr ""
 
@@ -4580,7 +4580,7 @@ msgstr ""
 #: src/components/menus/mainMenu.js:108
 #: src/components/windows/FactionSystemTab.jsx:700
 #: src/components/windows/UserArea.jsx:173
-#: src/components/windows/index.js:48
+#: src/components/windows/index.js:50
 msgid "Statistics"
 msgstr ""
 
@@ -4753,12 +4753,12 @@ msgstr ""
 msgid "Template upload failed."
 msgstr ""
 
-#: src/components/buttons/QuickAccessButtons.jsx:33
-#: src/components/buttons/QuickAccessButtons.jsx:34
+#: src/components/buttons/QuickAccessButtons.jsx:35
+#: src/components/buttons/QuickAccessButtons.jsx:36
 #: src/components/windows/Faction.jsx:94
 #: src/components/windows/MyFactions.jsx:1482
 #: src/components/windows/Templates.jsx:61
-#: src/components/windows/index.js:45
+#: src/components/windows/index.js:46
 msgid "Templates"
 msgstr ""
 
@@ -5293,7 +5293,7 @@ msgid ""
 msgstr ""
 
 #: src/components/ManageVip.jsx:52
-#: src/components/windows/index.js:51
+#: src/components/windows/index.js:53
 msgid "User"
 msgstr ""
 
@@ -5301,10 +5301,10 @@ msgstr ""
 msgid "User Account"
 msgstr ""
 
-#: src/components/buttons/QuickAccessButtons.jsx:22
 #: src/components/buttons/QuickAccessButtons.jsx:23
+#: src/components/buttons/QuickAccessButtons.jsx:24
 #: src/components/windows/UserArea.jsx:186
-#: src/components/windows/index.js:38
+#: src/components/windows/index.js:39
 msgid "User Area"
 msgstr ""
 
@@ -5922,7 +5922,7 @@ msgstr ""
 msgid "z out of bounds"
 msgstr ""
 
-#: src/components/windows/index.js:43
+#: src/components/windows/index.js:44
 msgctxt "media-player"
 msgid "Player"
 msgstr ""

@@ -4,6 +4,7 @@ import { t } from 'ttag';
 
 import FaPaintRoller from '../../icons/FaPaintRoller.svg';
 import MdPerson from '../../icons/MdPerson.svg';
+import Flame from "../../icons/icons-flame.svg";
 import useLink from '../hooks/link.js';
 
 const QuickAccessButtons = () => {
@@ -25,6 +26,7 @@ const QuickAccessButtons = () => {
       >
         <MdPerson />
       </button>
+
       {templatesAvailable && (
         <button
           type="button"
@@ -37,6 +39,20 @@ const QuickAccessButtons = () => {
           <FaPaintRoller />
         </button>
       )}
+
+<button
+  type="button"
+  id="quickfire"
+  className="actionbuttons quickaccess-button"
+  title="Fire"
+  aria-label="Fire"
+  onClick={() => link('FIRE', {
+    target: 'parent',
+    reuse: true,
+  })}
+>
+  <Flame />
+</button>
     </div>
   );
 };

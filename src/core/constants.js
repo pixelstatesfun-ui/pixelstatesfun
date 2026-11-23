@@ -238,6 +238,7 @@ export const AVAILABLE_POPUPS = [
   'CONVERTER',
   'I',
   'MODLOG',
+  'FIRE',
 ];
 
 /*

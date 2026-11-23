@@ -6437,7 +6437,7 @@ textarea,
   }
 
   .pixel-rank-counter {
-    top: calc(env(safe-area-inset-top, 0px) + 8px);
+    top: calc(env(safe-area-inset-top, 0px) + 16px);
     right: calc(env(safe-area-inset-right, 0px) + 8px);
     height: 36px;
     gap: 4px;
@@ -6586,7 +6586,7 @@ textarea,
 
 @media (max-width: 380px) {
   .pixel-rank-counter {
-    top: calc(env(safe-area-inset-top, 0px) + 6px);
+    top: calc(env(safe-area-inset-top, 0px) + 16px);
     right: calc(env(safe-area-inset-right, 0px) + 6px);
     height: 34px;
     padding: 0 5px;
@@ -6609,6 +6609,11 @@ textarea,
   .pixel-ranks-table th:last-child,
   .pixel-ranks-table td:last-child {
     width: 54px;
+  }
+
+  .void-timer{
+    right: 10px;
+    top: 60px;
   }
 }
 
@@ -7123,4 +7128,124 @@ textarea,
 
 .quickaccess-button.actionbuttons{
   z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .void-timer{
+  right: 10px;
+  top: 60px;
+  }
+}
+
+.fire-window {
+  padding: 12px;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.fire-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.fire-header h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.fire-status {
+  color: #ff7138;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.fire-summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: rgba(255, 100, 30, 0.1);
+  border-radius: 6px;
+}
+
+.fire-summary strong {
+  font-size: 20px;
+}
+
+.fire-update {
+  position: relative;
+  right: 10px;
+  font-size: 11px;
+  opacity: 0.65;
+  margin: 4px 0;
+}
+
+.fire-zone-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.fire-zone {
+  padding: 11px;
+  border: 1px solid rgba(255, 120, 40, 0.2);
+  border-radius: 6px;
+}
+
+.fire-zone-header,
+.fire-coordinates {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fire-zone-header {
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.fire-coordinates {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.fire-intensity {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fire-intensity-bar {
+  height: 100%;
+  background: #ff7138;
+}
+
+.fire-empty {
+  text-align: center;
+  padding: 25px 10px;
+  opacity: 0.6;
+}
+
+.fire-coordinates {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #ff873d;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fire-coordinates {
+  display: block;
+  gap: 10px;
+  color: #ff873d;
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -16,6 +16,7 @@ import Faction from './Faction.jsx';
 import User from './User.jsx';
 import Search from './Search.jsx';
 import PixelRanks from './PixelRanks.jsx';
+import Fire from './Fire.jsx';
 
 const reloadOnCatch = () => Promise.resolve({ default: RefreshPrompt });
 
@@ -43,6 +44,7 @@ export default {
   PLAYER: [Player, c('media-player').t`Player`, false],
   BADGE_DISPLAY: [BadgeDisplay, t`Badge Display`, true],
   TEMPLATES: [Templates, t`Templates`, false],
+  FIRE: [Fire, 'Fire', false],
   /* t: This if for moderation tools, it's not important to translate this */
   MODTOOLS: [Modtools, t`ModTools`, false],
   STATISTICS: [Statistics, t`Statistics`, false],
