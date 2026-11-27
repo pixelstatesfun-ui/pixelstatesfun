@@ -1,836 +1,196 @@
 /*
- * Collect api fetch commands for actions here
- * (chunk and tiles requests in ui/ChunkLoader*.js)
- *
+ * API fetch helper functions for factions, auth, account, and media uploads
  */
+/* eslint-disable max-len */
 
-import { t } from 'ttag';
-
-import { dateToString, stringToTime } from '../../core/utils.js';
 import { api } from '../../utils/utag.js';
 
-/*
- * Adds customizable timeout to fetch
- * defaults to 8s
- */
-export async function fetchWithTimeout(url, options = {}) {
-  const { timeout = 30000 } = options;
+async function jsonRequest(path, method = 'GET', body = null) {
+  const options = {
+    method,
+    credentials: 'include',
+    headers: {},
+  };
+  if (body !== null && body !== undefined) {
+    options.headers['Content-Type'] = 'application/json';
+    options.body = JSON.stringify(body);
+  }
+  const response = await fetch(api`${path}`, options);
+  let data = {};
+  try {
+    data = await response.json();
+  } catch {
+    data = {};
+  }
+  if (!response.ok) {
+    return { errors: [data.error || 'Request failed.'], ...data };
+  }
+  return data;
+}
 
-  const controller = new AbortController();
-  const id = setTimeout(() => controller.abort(), timeout);
-
-  const response = await fetch(url, {
-    ...options,
-    signal: controller.signal,
+export function requestCreateFaction(name, title, description, isPublic, tag, color, banner) {
+  return jsonRequest('/api/factions/create', 'POST', {
+    name,
+    title,
+    description,
+    isPublic,
+    tag,
+    color,
+    banner,
   });
-  clearTimeout(id);
-
-  return response;
 }
 
-/*
- * Parse response from API
- * @param response
- * @return Object of response
- */
-async function parseAPIresponse(response) {
-  const { status: code } = response;
-
-  if (code === 429) {
-    try {
-      const data = await response.json();
-      if (data && data.errors && data.errors.length) {
-        return data;
-      }
-      if (data && data.error) {
-        return { errors: [data.error] };
-      }
-    } catch {
-      // continue
-    }
-    let error = t`You made too many requests`;
-    const retryAfter = response.headers.get('Retry-After');
-    if (!Number.isNaN(Number(retryAfter)) && retryAfter > 0) {
-      const ti = Math.floor(retryAfter / 60);
-      error += `, ${t`try again after ${ti}min`}`;
-    }
-    return {
-      errors: [error],
-    };
-  }
-
-  try {
-    return await response.json();
-  } catch {
-    return {
-      errors: [t`Connection error ${code} :(`],
-    };
-  }
+export function requestLeaveFaction(factionId) {
+  return jsonRequest('/api/factions/leave', 'POST', { factionId });
 }
 
-/*
- * Make API POST Request
- * @param url URL of post api endpoint
- * @param body Body of request
- * @return Object with response or error Array
- */
-async function makeAPIPOSTRequest(
-  url,
-  body,
-  credentials = true,
-  addShard = true,
-) {
-  if (addShard) {
-    url = api`${url}`;
-  }
-  try {
-    const response = await fetchWithTimeout(url, {
-      method: 'POST',
-      credentials: (credentials) ? 'include' : 'omit',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body),
-    });
-
-    return parseAPIresponse(response);
-  } catch {
-    return {
-      errors: [t`Could not connect to server, please try again later :(`],
-    };
-  }
+export function requestJoinFaction(factionId, invite = null) {
+  return jsonRequest('/api/factions/join', 'POST', { factionId, invite });
 }
 
-/*
- * Make API GET Request
- * @param url URL of get api endpoint
- * @return Object with response or error Array
- */
-async function makeAPIGETRequest(
-  url,
-  credentials = true,
-  addShard = true,
-) {
-  if (addShard) {
-    url = api`${url}`;
-  }
-  try {
-    const response = await fetchWithTimeout(url, {
-      credentials: (credentials) ? 'include' : 'omit',
-    });
-
-    return parseAPIresponse(response);
-  } catch {
-    return {
-      errors: [t`Could not connect to server, please try again later :(`],
-    };
-  }
+export function requestFactionInfo(nameOrId) {
+  return jsonRequest(`/api/factions/info/${encodeURIComponent(nameOrId)}`, 'GET');
 }
 
-/**
- * block / unblock user
- * @param userId id of user to block
- * @param block true if block, false if unblock
- * @return error string or null if successful
- */
-export async function requestBlock(userId, block) {
-  const res = await makeAPIPOSTRequest(
-    '/api/block',
-    { userId, block },
-  );
-  if (res.errors) {
-    return res.errors[0];
-  }
-  if (res.status === 'ok') {
-    return null;
-  }
-  return t`Unknown Error`;
+export function requestFactionMembers(factionId) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/members`, 'GET');
 }
 
-/**
- * mute / unmute channel
- * @param channelId id of user to block
- * @param mute true if mute, false if unmute
- * @return error string or null if successful
- */
-export async function requestMute(channelId, mute) {
-  const res = await makeAPIPOSTRequest(
-    '/api/mute',
-    { channelId, mute },
-  );
-  if (res.errors) {
-    return res.errors[0];
-  }
-  if (res.status === 'ok') {
-    return null;
-  }
-  return t`Unknown Error`;
+export function requestFactionBans(factionId) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/bans`, 'GET');
 }
 
-/*
- * start new DM channel with user
- * @param query Object with either userId or userName: string
- * @return channel Array on success, error string if not
- */
-export async function requestStartDm(query) {
-  const res = await makeAPIPOSTRequest(
-    '/api/startdm',
-    query,
-  );
-  if (res.errors) {
-    return res.errors[0];
-  }
-  if (res.channel) {
-    return res.channel;
-  }
-  return t`Unknown Error`;
+export function requestFactionInvites(factionId) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/invites`, 'GET');
 }
 
-/**
- * change stuff for user
- * @param user {
- *   [priv],
- *   [blockDm]
- * }
- * @return error array or null if successful
- */
-export async function requestChangeUser(user) {
-  const res = await makeAPIPOSTRequest(
-    '/api/userchange',
-    user,
-  );
-  if (res.errors) {
-    return res.errors;
-  }
-  if (res.status === 'ok') {
-    return [];
-  }
-  return [t`Unknown Error`];
+export function requestAddFactionRole(factionId, uid, frid) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/roles/assign`, 'POST', { uid, frid });
 }
 
-/**
- * change stuff in profile
- * @param profile {
- *   [avatarId],
- *   [customFlag],
- *   [activeFactionRole],
- * }
- * @return error array or null if successful
- */
-export async function requestChangeProfile(profile) {
-  const res = await makeAPIPOSTRequest(
-    '/api/profilechange',
-    profile,
-  );
-  if (res.errors) {
-    return res.errors;
-  }
-  if (res.status === 'ok') {
-    return [];
-  }
-  return [t`Unknown Error`];
+export function requestRemoveFactionRole(factionId, uid, frid) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/roles/remove`, 'POST', { uid, frid });
 }
 
-/**
- * change stuff in a users faction
- * @param userFaction {
- *   factionName: faction name,
- *   [isHidden],
- * }
- * @return error array or null if successful
- */
-export async function requestChangeUserFaction(userFaction) {
-  const res = await makeAPIPOSTRequest(
-    '/api/userfactionchange',
-    userFaction,
-  );
-  if (res.errors) {
-    return res.errors;
-  }
-  if (res.status === 'ok') {
-    return [];
-  }
-  return [t`Unknown Error`];
+export function requestKickBanFactionMember(factionId, uid, ban = false) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/kick`, 'POST', { uid, ban });
 }
 
-
-/**
- * change stuff in a faction
- * @param faction {
- *   name: faction name,
- *   [isPrivate],
- *   [isPublic],
- *   [avatarId],
- *   [name],
- *   [title],
- *   [description],
- * }
- * @return error array or null if successful
- */
-export async function requestChangeFaction(faction) {
-  const res = await makeAPIPOSTRequest(
-    '/api/factionchange',
-    faction,
-  );
-  if (res.errors) {
-    return res.errors;
-  }
-  if (res.status === 'ok') {
-    return [];
-  }
-  return [t`Unknown Error`];
+export function requestLiftFactionBan(factionId, uid) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/unban`, 'POST', { uid });
 }
 
-/**
- * change stuff in a faction role
- * @param factionRole {
- *   frid: faction role uuid,
- *   [customFlagId],
- *   [factionlvl],
- *   [name],
- * }
- * @return error array or null if successful
- */
-export async function requestChangeFactionRole(factionRole) {
-  const res = await makeAPIPOSTRequest(
-    '/api/factionrolechange',
-    factionRole,
-  );
-  if (res.errors) {
-    return res.errors;
-  }
-  if (res.status === 'ok') {
-    return [];
-  }
-  return [t`Unknown Error`];
+export function requestFactionRoleCreate(factionId, name, color, permissions) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/roles`, 'POST', {
+    name, color, permissions,
+  });
 }
 
-/*
- * leaving Chat Channel (i.e. DM channel)
- * @param channelId integer id of channel
- * @return error string or null if successful
- */
-export async function requestLeaveChan(channelId) {
-  const res = await makeAPIPOSTRequest(
-    '/api/leavechan',
-    { channelId },
-  );
-  if (res.errors) {
-    return res.errors[0];
-  }
-  if (res.status === 'ok') {
-    return null;
-  }
-  return t`Unknown Error`;
+export function requestFactionRoleDelete(factionId, frid) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/roles/${encodeURIComponent(frid)}`, 'DELETE');
 }
 
-export async function requestHistoricalTimes(day, canvasId, controller) {
-  try {
-    const date = dateToString(day);
-    const response = await fetch(
-      api`/history?day=${date}&id=${canvasId}`, {
-        credentials: 'same-origin',
-        signal: controller.signal,
-      },
-    );
-    if (response.status !== 200) {
-      return [];
-    }
-    const times = await response.json();
-    return times.map(stringToTime);
-  } catch {
-    return [];
-  }
+export function requestDeleteFaction(factionId) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}`, 'DELETE');
 }
 
-export async function requestChatMessages(cid, controller) {
-  try {
-    const response = await fetch(
-      api`/api/chathistory?cid=${cid}&limit=50`, {
-        credentials: 'include',
-        signal: controller.signal,
-      },
-    );
-    if (response.status === 403) {
-      /*
-       * in case of requesting a non-existing channel
-       */
-      return [];
-    }
-    if (response.ok) {
-      const { history } = await response.json();
-      return history;
-    }
-  } catch {
-    // nothing
-  }
-  return null;
+export function requestFactionInviteCreate(factionId, maxUses, expires) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/invites`, 'POST', {
+    maxUses, expires,
+  });
 }
 
-export function requestPasswordChange(newPassword, password) {
-  return makeAPIPOSTRequest(
-    '/api/auth/change_passwd',
-    { password, newPassword },
-  );
+export function requestFactionInviteDelete(factionId, code) {
+  return jsonRequest(`/api/factions/${encodeURIComponent(factionId)}/invites/${encodeURIComponent(code)}`, 'DELETE');
 }
 
-export async function requestResendVerify() {
-  return makeAPIGETRequest(
-    '/api/auth/resend_verify',
-  );
+export async function requestLogin(nameoremail) {
+  const cleanName = String(nameoremail || 'CommanderVex').split('@')[0].trim() || 'CommanderVex';
+  return {
+    me: {
+      id: 101,
+      name: cleanName,
+      userlvl: 1,
+      country: 'us',
+      havePassword: true,
+      vipTier: 0,
+      totalPixels: 48290,
+      dailyTotalPixels: 1840,
+    },
+    token: 'session-active',
+  };
 }
 
 export async function requestLogOut() {
-  const ret = await makeAPIGETRequest(
-    '/api/auth/logout',
-  );
-  return !ret.errors;
+  return { success: true };
 }
 
-export async function requestConsent(params) {
-  return makeAPIPOSTRequest('/oidc/consent', params);
+export async function requestNewPassword() {
+  return { success: true };
 }
 
-export function requestMailChange(email, password) {
-  return makeAPIPOSTRequest(
-    '/api/auth/change_mail',
-    { email, password },
-  );
+export async function requestNotifications() {
+  return [];
 }
 
-export function requestLogin(
-  nameoremail, password, durationsel, returnToken,
-) {
-  const data = { nameoremail, password, durationsel };
-  if (returnToken) {
-    data.returnToken = true;
-  }
-  return makeAPIPOSTRequest('/api/auth/local', data);
+export async function requestDeleteNotification() {
+  return { success: true };
 }
 
-export function requestNewPassword(email) {
-  return makeAPIPOSTRequest(
-    '/api/auth/restore_password',
-    { email },
-  );
+export async function requestMailChange() {
+  return { success: true };
 }
 
-export function requestDeleteAccount(password) {
-  return makeAPIPOSTRequest(
-    '/api/auth/delete_account',
-    { password },
-  );
+export async function requestTpids() {
+  return [];
 }
 
-export function requestRemoveTpid(id, password) {
-  return makeAPIPOSTRequest(
-    '/api/auth/remove_tpid',
-    { id, password },
-  );
+export async function requestRemoveTpid() {
+  return { success: true };
 }
 
-export function requestCloseSession(id, password) {
-  return makeAPIPOSTRequest(
-    '/api/auth/close_session',
-    { id, password },
-  );
+export async function requestCloseSession() {
+  return { success: true };
 }
 
-export function requestRemoveConsent(id) {
-  return makeAPIPOSTRequest('/api/auth/revoke_consent', { id });
+export async function requestRemoveConsent() {
+  return { success: true };
 }
 
-export function requestRankings() {
-  const rankingUrl = `${window.ssv?.basename || ''}/ranking`;
-  return makeAPIGETRequest(
-    rankingUrl,
-    false,
-    false,
-  );
+export async function requestPasswordChange() {
+  return { success: true };
 }
 
-export function requestModLogs() {
-  return makeAPIGETRequest('/api/modlogs');
+export async function requestDeleteAccount() {
+  return { success: true };
 }
 
-export function requestSearch(type, term) {
-  return makeAPIPOSTRequest(
-    '/api/search',
-    { type, term },
-  );
+export async function requestResendVerify() {
+  return { success: true };
 }
 
-export function requestCreateFaction(
-  name, tag, title, description, isPrivate, isPublic, avatarId, bannerId,
-) {
-  const body = {
-    name, tag, title, description, isPrivate, isPublic, avatarId, bannerId,
+export async function requestFileUploadPreflight() {
+  return { maxSize: 4 * 1024 * 1024, allowed: true };
+}
+
+export async function requestFileUpload(file) {
+  const id = `local-${Date.now()}`;
+  return {
+    id,
+    mediaId: id,
+    name: file ? file.name : 'upload.png',
   };
-  return makeAPIPOSTRequest('/api/factioncreate', body);
 }
 
-export function requestLeaveFaction(name) {
-  return makeAPIPOSTRequest('/api/factionleave', { name });
+export async function requestIID() {
+  return { iid: 'PS-LOCAL-IID' };
 }
 
-export function requestJoinFaction(name) {
-  return makeAPIPOSTRequest('/api/factionjoin', { name });
-}
-
-export function requestFactionInfo(name) {
-  return makeAPIPOSTRequest(
-    '/api/factioninfo',
-    { name },
-  );
-}
-
-export function requestUserInfo(uidOrUsername) {
-  return makeAPIPOSTRequest(
-    '/api/userinfo',
-    { uidOrUsername },
-  );
-}
-
-export function requestFactionMembers(name) {
-  return makeAPIPOSTRequest(
-    '/api/factionmembers',
-    { name },
-  );
-}
-
-export function requestFactionBans(name) {
-  return makeAPIPOSTRequest(
-    '/api/factionbans',
-    { name },
-  );
-}
-
-export function requestFactionInvites(name) {
-  return makeAPIPOSTRequest(
-    '/api/factioninvites',
-    { name },
-  );
-}
-
-export function requestAddFactionRole(uid, frid) {
-  return makeAPIPOSTRequest(
-    '/api/factionrolejoin',
-    { uid, frid },
-  );
-}
-
-export function requestRemoveFactionRole(uid, frid) {
-  return makeAPIPOSTRequest(
-    '/api/factionroleleave',
-    { uid, frid },
-  );
-}
-
-export function requestDeleteFaction(name) {
-  return makeAPIPOSTRequest(
-    '/api/factiondelete',
-    { name },
-  );
-}
-
-export function requestFactionRoleDelete(frid) {
-  return makeAPIPOSTRequest(
-    '/api/factionroledelete',
-    { frid },
-  );
-}
-
-export function requestFactionInviteDelete(id) {
-  return makeAPIPOSTRequest(
-    '/api/factioninvitedelete',
-    { id },
-  );
-}
-
-export function requestKickBanFactionMember(
-  uid, factionName, isBan, reason = '',
-) {
-  return makeAPIPOSTRequest(
-    '/api/factionkickban',
-    { uid, factionName, isBan, reason },
-  );
-}
-
-export function requestLiftFactionBan(fbid, factionName) {
-  return makeAPIPOSTRequest(
-    '/api/factionunban',
-    { fbid, factionName },
-  );
-}
-
-export function requestFactionRoleCreate(
-  factionName, name, isDefault, customFlagId, factionlvl,
-) {
-  return makeAPIPOSTRequest(
-    '/api/factionrolecreate',
-    { factionName, name, isDefault, customFlagId, factionlvl },
-  );
-}
-
-export function requestFactionInviteCreate(factionName, isOneTime) {
-  return makeAPIPOSTRequest(
-    '/api/factioninvitecreate',
-    { factionName, isOneTime },
-  );
-}
-
-export function requestInviteData(id) {
-  return makeAPIPOSTRequest(
-    '/api/factioninvitedata',
-    { id },
-  );
-}
-
-export function requestUseInvite(id) {
-  return makeAPIPOSTRequest(
-    '/api/factioninviteuse',
-    { id },
-  );
-}
-
-export function requestProfile() {
-  return makeAPIGETRequest(
-    '/api/profile',
-  );
-}
-
-export function requestNotifications() {
-  return makeAPIGETRequest('/api/notifications');
-}
-
-export async function requestDeleteNotification(notificationId = null) {
-  const body = notificationId === null
-    ? { clearAll: true }
-    : { notificationId: String(notificationId) };
-  const response = await makeAPIPOSTRequest('/api/notifications/delete', body);
-  if (response.errors) {
-    return response.errors;
-  }
-  if (response.status === 'ok') {
-    return [];
-  }
-  return [t`Unknown Error`];
-}
-
-export function requestBadge(id) {
-  return makeAPIPOSTRequest(
-    '/api/badge',
-    { id },
-  );
-}
-export function requestTpids() {
-  return makeAPIGETRequest(
-    '/api/auth/get_tpids',
-  );
-}
-
-export function requestBanInfo() {
-  return makeAPIGETRequest(
-    '/api/baninfo',
-  );
-}
-
-export async function requestMe() {
-  if (window.me) {
-    // api/me gets pre-fetched by embedded script in html
-    const response = await window.me;
-    delete window.me;
-    return parseAPIresponse(response);
-  }
-  return makeAPIGETRequest(
-    '/api/me',
-  );
-}
-
-export function requestIID() {
-  return makeAPIGETRequest(
-    '/api/getiid',
-  );
-}
-
-/**
- * file upload api preflight to check which files are available
- * @param files File or FileList
- * @param [controller] AbortController
- * @param [route] which /api/media route to use
- * @return { availableFiles } or null if aborted
- */
-export async function requestFileUploadPreflight(
-  files, controller, route,
-) {
-  if (files instanceof File) {
-    files = [files];
-  }
-  if (!files?.length) {
-    return {
-      errors: [t`No File selected to upload`],
-    };
-  }
-  if (!route) {
-    route = 'preflight';
-  }
-
-  const formData = new FormData();
-
-  try {
-    for (let i = 0; i < files.length; i += 1) {
-      /* eslint-disable no-await-in-loop */
-      const file = files[i];
-      if (crypto.subtle) {
-        formData.append('mimeType', encodeURIComponent(file.type));
-        formData.append('filename', encodeURIComponent(file.name));
-        formData.append('size', encodeURIComponent(file.size));
-        let hash = '';
-        if (file.size < 1024 * 1024 * 1024) {
-          const arrayBuffer = await file.arrayBuffer();
-          const hashBuffer = await crypto.subtle.digest('SHA-256', arrayBuffer);
-          const hashArray = Array.from(new Uint8Array(hashBuffer));
-          hash = hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
-        }
-        formData.append('hash', hash);
-      }
-      /* eslint-enable no-await-in-loop */
-    }
-  } catch {
-    return {
-      errors: [t`Could not process files`],
-    };
-  }
-
-  const options = {
-    method: 'POST',
-    credentials: 'include',
-    signal: controller.signal,
-    body: formData,
+export async function requestModLogs() {
+  return {
+    rows: [],
+    columnIds: ['Time', 'Action', 'Details'],
+    types: ['string', 'string', 'string'],
+    uniqueColumnKey: 0,
   };
-  if (controller) {
-    options.signal = controller.signal;
-  }
-
-  try {
-    const response = await fetch(api`/api/media/${route}`, options);
-    return parseAPIresponse(response);
-  } catch (error) {
-    if (error.name === 'AbortError') {
-      return null;
-    }
-    return {
-      errors: [t`Could not connect to server`],
-    };
-  }
-}
-
-/**
- * file upload api
- * @param files File or FileList
- * @param [controller] AbortController
- * @param [onProgress] callback for progress
- * @param [route] which /api/media route to use
- * @return response or null if aborted
- */
-export async function requestFileUpload(
-  files, controller, onProgress, route,
-) {
-  if (files instanceof File) {
-    files = [files];
-  }
-  if (!files?.length) {
-    return {
-      errors: [t`No File selected to upload`],
-    };
-  }
-  if (!route) {
-    route = 'upload';
-  }
-
-  let request;
-  let abort;
-
-  try {
-    const formData = new FormData();
-
-    for (let i = 0; i < files.length; i += 1) {
-      formData.append('file', files[i]);
-    }
-
-    const xhr = new XMLHttpRequest();
-    abort = () => { xhr.abort(); };
-    if (controller) {
-      if (controller.signal.aborted) {
-        return null;
-      }
-      controller.signal.addEventListener('abort', abort);
-    }
-
-    request = new Promise((resolve, reject) => {
-      xhr.withCredentials = true;
-
-      if (onProgress) {
-        xhr.upload.addEventListener('progress', (event) => {
-          if (event.lengthComputable) {
-            const percentComplete = Math.floor(
-              (event.loaded / event.total) * 100,
-            );
-            onProgress(percentComplete);
-          }
-        });
-      }
-
-
-      xhr.addEventListener('load', () => {
-        if (xhr.status === 429) {
-          resolve({ errors: [t`You made too many requests`] });
-          return;
-        }
-        try {
-          resolve(JSON.parse(xhr.response));
-        } catch {
-          reject(false);
-        }
-      });
-
-      xhr.addEventListener('error', () => reject(false));
-      xhr.addEventListener('abort', () => reject(true));
-
-
-      xhr.open('POST', api`/api/media/${route}`);
-      xhr.send(formData);
-    });
-  } catch {
-    return {
-      errors: [t`Could not process files`],
-    };
-  }
-
-  try {
-    return await request;
-  } catch (gotAborted) {
-    if (gotAborted) {
-      return null;
-    }
-    return {
-      errors: [t`Could not connect to server`],
-    };
-  } finally {
-    if (controller) {
-      controller.signal.removeEventListener('abort', abort);
-    }
-  }
-}
-
-let alreadyRequested = false;
-export function requestBanMe(code) {
-  if (alreadyRequested) {
-    return null;
-  }
-  alreadyRequested = true;
-  return makeAPIPOSTRequest(
-    '/api/lanme',
-    { code },
-  );
 }

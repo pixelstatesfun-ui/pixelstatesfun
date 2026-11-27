@@ -1,55 +1,27 @@
-function fallbackCopyTextToClipboard(text) {
-  const textArea = document.createElement('textarea');
-  textArea.value = text;
+/*
+ * Clipboard copy helper with fallback
+ */
 
-  // Avoid scrolling to bottom
-  textArea.style.top = '0';
-  textArea.style.left = '0';
-  textArea.style.position = 'fixed';
-
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
-
-  try {
-    const successful = document.execCommand('copy');
-    document.body.removeChild(textArea);
-    return successful;
-  } catch {
-    document.body.removeChild(textArea);
-    return false;
-  }
-}
-
-export async function copyCanvasToClipboard(canvas) {
-  canvas.toBlob((blob) => {
-    try {
-      if (!navigator.clipboard) {
-        throw new Error('Clipboard API not implemented');
-      }
-      navigator.clipboard.write([
-        // this is defined in current chrome, but not firefox
-
-        new ClipboardItem({
-          'image/png': blob,
-        }),
-      ]);
-    } catch (e) {
-      console.log('Couldn\'t copy canvas to clipboard', e);
-    }
-  }, 'image/png');
-}
-
-async function copyTextToClipboard(text) {
-  if (!navigator.clipboard) {
-    return fallbackCopyTextToClipboard(text);
+export default function copyTextToClipboard(text) {
+  if (!text) return Promise.resolve(false);
+  if (typeof navigator !== 'undefined' && navigator.clipboard
+    && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(String(text))
+      .then(() => true)
+      .catch(() => false);
   }
   try {
-    await navigator.clipboard.writeText(text);
-    return true;
+    const el = document.createElement('textarea');
+    el.value = String(text);
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    return Promise.resolve(true);
   } catch {
-    return false;
+    return Promise.resolve(false);
   }
 }
-
-export default copyTextToClipboard;

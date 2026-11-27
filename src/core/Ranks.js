@@ -291,10 +291,16 @@ export class Ranks {
       .slice(0, 100)
       .map(({
         todayPixels, dr, totalPixels, r, name, title, avatarId,
-        id, displayName, type, members,
+        id, displayName, type, allianceType, members,
       }) => [
         r, avatarId, `${title},${name}`, totalPixels, dr, todayPixels,
-        { displayName, title, type, ...(members && { allianceId: id, members }) },
+        {
+          displayName,
+          title,
+          type,
+          ...(allianceType && { allianceType }),
+          ...(members && { allianceId: id, members }),
+        },
       ]);
 
     const dailyFactionRanking = factionRanks
@@ -304,10 +310,16 @@ export class Ranks {
       .slice(0, 100)
       .map(({
         todayPixels, dr, totalPixels, r, name, title, avatarId,
-        id, displayName, type, members,
+        id, displayName, type, allianceType, members,
       }) => [
         dr, avatarId, `${title},${name}`, todayPixels, r, totalPixels,
-        { displayName, title, type, ...(members && { allianceId: id, members }) },
+        {
+          displayName,
+          title,
+          type,
+          ...(allianceType && { allianceType }),
+          ...(members && { allianceId: id, members }),
+        },
       ]);
 
     const dailyCRanking = await getCountryRanks(1, 100);

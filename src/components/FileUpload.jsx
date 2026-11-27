@@ -6,7 +6,7 @@ import {
 } from 'preact/hooks';
 import { memo } from 'preact/compat';
 import { t } from 'ttag';
-import ImAttachment from '../icons/ImAttachment.svg';
+import { ImAttachment } from 'react-icons/im';
 
 import {
   requestFileUpload, requestFileUploadPreflight,

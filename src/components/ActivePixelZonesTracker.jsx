@@ -3,7 +3,7 @@ import { useSelector } from '../store/react-redux/index.js';
 import { api } from '../utils/utag.js';
 import { setActivePixelZones } from '../ui/ActivePixelZones.js';
 
-const REFRESH_INTERVAL = 15_000;
+const REFRESH_INTERVAL = 10_000;
 
 async function requestZones(canvasId) {
   const response = await fetch(

@@ -144,8 +144,14 @@ const Table = ({
                       }
                       const name = val.substring(separator + 1);
                       const displayName = label?.displayName || name;
-                      const title = label ? label.title
-                        : val.substring(0, separator);
+                      const resolvedTitle = label?.type === 'alliance'
+                        ? (label.allianceType === 'union'
+                            ? t`Union`
+                            : (label.allianceType === 'coalition' ? t`Coalition` : label.title))
+                        : (label ? label.title : val.substring(0, separator));
+                      const badgeClass = label?.type === 'alliance'
+                        ? `faction-badge faction-badge-${label.allianceType || 'coalition'}`
+                        : 'faction-badge';
                       return (
                         <td key={key}>
                           {expandable && (
@@ -178,7 +184,7 @@ const Table = ({
                               {displayName}
                             </span>
                           ))}
-                          {title && <> <span className="faction-badge">{title}</span></>}
+                          {resolvedTitle && <> <span className={badgeClass}>{resolvedTitle}</span></>}
                         </td>
                       );
                     }
@@ -293,7 +299,13 @@ const Table = ({
                 <tr className="ranking-alliance-members">
                   <td colSpan={visibleColumns}>
                     <div className="ranking-alliance-roster">
-                      <strong>{t`Alliance Members`}</strong>
+                      <strong>
+                        {label.allianceType === 'union'
+                          ? t`Union Members`
+                          : label.allianceType === 'coalition'
+                            ? t`Coalition Members`
+                            : t`Alliance Members`}
+                      </strong>
                       {label.members.length ? (
                         <ul>
                           {label.members.map((member) => (
