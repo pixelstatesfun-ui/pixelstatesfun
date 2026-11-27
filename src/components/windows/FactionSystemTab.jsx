@@ -1,5 +1,8 @@
 import { useCallback, useEffect, useState } from 'preact/hooks';
 import { t } from 'ttag';
+import TreatyTermsBuilder, { formatTreatyTermSummary } from './TreatyTermsBuilder.jsx';
+import TerritorySelector from './TerritorySelector.jsx';
+import DiplomaticNews from './DiplomaticNews.jsx';
 
 async function factionRequest(path, options = {}) {
   const response = await fetch(`/api/factions${path}`, {
@@ -124,7 +127,9 @@ const FactionTargetPicker = ({
   );
 };
 
-const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
+const FactionSystemTab = ({
+  faction = {}, tab, profile = false, diplomacySection = 'all',
+}) => {
   const publicDirectory = profile && tab === 'alliances';
   const allianceTab = tab === 'alliances';
   const [managedFactions, setManagedFactions] = useState([]);
@@ -138,12 +143,14 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
   const [refresh, setRefresh] = useState(0);
   const [napTarget, setNapTarget] = useState('');
   const [napTemplate, setNapTemplate] = useState('');
-  const [napType, setNapType] = useState('abandon_territory');
-  const [napDetails, setNapDetails] = useState('');
+  const [napTerms, setNapTerms] = useState([]);
+  const [napTerritory, setNapTerritory] = useState(null);
   const [peaceTarget, setPeaceTarget] = useState('');
   const [peaceTerms, setPeaceTerms] = useState('');
+  const [peaceConditions, setPeaceConditions] = useState([]);
   const [warTarget, setWarTarget] = useState('');
   const [allianceName, setAllianceName] = useState('');
+  const [allianceTag, setAllianceTag] = useState('');
   const [allianceTerms, setAllianceTerms] = useState('');
   const [allianceAvatar, setAllianceAvatar] = useState(null);
   const [allianceBanner, setAllianceBanner] = useState(null);
@@ -157,6 +164,13 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
   const [allianceAction, setAllianceAction] = useState(null);
   const [inviteTarget, setInviteTarget] = useState('');
   const [confirmAllianceAction, setConfirmAllianceAction] = useState(null);
+  const [settingsAllianceId, setSettingsAllianceId] = useState(null);
+  const [settingsName, setSettingsName] = useState('');
+  const [settingsTag, setSettingsTag] = useState('');
+  const [settingsTermsText, setSettingsTermsText] = useState('');
+  const [settingsSharedCoord, setSettingsSharedCoord] = useState(true);
+  const [settingsCoordMode, setSettingsCoordMode] = useState('all_members');
+  const [confirmDissolveId, setConfirmDissolveId] = useState(null);
   const [canvasId, setCanvasId] = useState('0');
   const [templateX, setTemplateX] = useState('0');
   const [templateY, setTemplateY] = useState('0');
@@ -200,18 +214,21 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
           diplomacy,
           templates,
           details,
+          allAlliancesRes,
         ] = await Promise.all([
           factionRequest('/naps/status'),
           factionRequest(`/${faction.id}/naps/mine`),
           factionRequest(`/${faction.id}/diplomacy`),
           factionRequest(`/${faction.id}/templates`),
           factionRequest(`/my?factionId=${faction.id}`),
+          factionRequest('/alliances').catch(() => ({ alliances: [] })),
         ]);
         setData({
           napStatus,
           ...naps,
           ...diplomacy,
           ...templates,
+          allAlliances: allAlliancesRes.alliances || [],
           viewFaction: details.faction,
         });
       } else if (tab === 'alliances') {
@@ -325,47 +342,74 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
     }
   };
 
-  const submitNap = (event) => {
+  const submitNap = async (event) => {
     event.preventDefault();
-    const term = { type: napType };
-    if (napType === 'abandon_territory' || napType === 'cease_activity') {
-      term.templateId = Number(napTemplate);
-      term.description = napDetails;
-    } else if (napType === 'sever_ally') {
-      term.allyFactionId = Number(napDetails);
-      term.description = t`Sever relations with the specified ally.`;
-    } else {
-      term.restrictions = napDetails;
+    if (!napTarget) {
+      setError(t`Choose a target faction for the NAP.`);
+      return;
     }
-    submitJson('/naps/propose', 'POST', {
+    const ok = await submitJson('/naps/propose', 'POST', {
       factionId: faction.id,
       targetFactionId: Number(napTarget),
-      templateId: Number(napTemplate),
-      terms: [term],
+      templateId: napTemplate ? Number(napTemplate) : null,
+      territory: napTerritory || null,
+      terms: napTerms.length ? napTerms : [{
+        type: 'cease_activity',
+        description: t`Mutual non-aggression over protected territory.`,
+      }],
     });
+    if (ok) {
+      setNapTarget('');
+      setNapTerms([]);
+      setNapTerritory(null);
+    }
   };
 
   const submitAlliance = async (event) => {
     event.preventDefault();
-    if (!allianceAvatar || !allianceBanner) {
-      setError(t`Choose both an alliance avatar and banner.`);
-      return;
-    }
-    const form = new FormData();
-    form.append('factionId', String(resolvedFaction?.id));
-    form.append('name', allianceName);
-    form.append(
-      'terms',
-      JSON.stringify(allianceTerms.split('\n').map((term) => term.trim()).filter(Boolean)),
-    );
-    form.append('allianceType', allianceType);
-    if (allianceType === 'coalition') form.append('targetFactionId', allianceTarget);
-    form.append('avatar', allianceAvatar);
-    form.append('banner', allianceBanner);
+    const parsedTerms = allianceTerms
+      .split('\n')
+      .map((term) => term.trim())
+      .filter(Boolean);
     setError('');
+    setMessage('');
     try {
-      await factionRequest('/alliances/create', { method: 'POST', body: form });
-      setMessage(t`Alliance created.`);
+      if (allianceAvatar && allianceBanner) {
+        const form = new FormData();
+        form.append('factionId', String(resolvedFaction?.id));
+        form.append('name', allianceName);
+        if (allianceTag.trim()) form.append('tag', allianceTag.trim().toUpperCase());
+        form.append('terms', JSON.stringify(parsedTerms));
+        form.append('allianceType', allianceType);
+        if (allianceType === 'coalition') form.append('targetFactionId', allianceTarget);
+        form.append('avatar', allianceAvatar);
+        form.append('banner', allianceBanner);
+        await factionRequest('/alliances/create', { method: 'POST', body: form });
+      } else {
+        await factionRequest('/alliances/create', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            factionId: resolvedFaction?.id,
+            name: allianceName,
+            tag: allianceTag.trim().toUpperCase() || undefined,
+            terms: parsedTerms,
+            allianceType,
+            targetFactionId: allianceType === 'coalition' ? Number(allianceTarget) : null,
+          }),
+        });
+      }
+      setMessage(
+        allianceType === 'union'
+          ? t`Union created.`
+          : allianceType === 'coalition'
+            ? t`Coalition created.`
+            : t`Bilateral pact created.`,
+      );
+      setAllianceName('');
+      setAllianceTag('');
+      setAllianceTerms('');
+      setAllianceTarget('');
       setAllianceView('home');
       setRefresh((value) => value + 1);
     } catch (requestError) {
@@ -407,18 +451,33 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
     ? (Number(data.viewFaction?.id) === Number(resolvedFaction?.id) ? data.viewFaction : {})
     : (data.viewFaction || faction);
   const allianceFactionId = viewFaction?.id;
-  const leader = viewFaction.role === 'owner' || viewFaction.role === 'leader';
+  const leader = viewFaction.role === 'owner'
+    || viewFaction.role === 'leader'
+    || viewFaction.myRole === 'owner'
+    || viewFaction.myRole === 'leader';
   const templates = data.templates || [];
   const peaceTargets = (data.wars || []).map((war) => {
     const isFactionA = Number(war.factionA) === Number(faction.id);
     return {
       id: isFactionA ? war.factionB : war.factionA,
       tag: isFactionA ? war.tagB : war.tagA,
-      name: isFactionA ? war.tagB : war.tagA,
+      name: isFactionA ? (war.nameB || war.tagB) : (war.nameA || war.tagA),
     };
   });
+  const getPactsForFaction = (targetId) => {
+    if (!targetId) return [];
+    const numId = Number(targetId);
+    return (data.allAlliances || data.alliances || []).filter((pact) => (
+      (pact.memberFactionIds || []).some((mid) => Number(mid) === numId)
+      || (pact.members || []).some((m) => Number(m.factionId || m.id) === numId)
+    ));
+  };
   const myAllianceMemberships = (data.myAlliances || []).filter(
-    (entry) => Number(entry.factionId) === Number(allianceFactionId),
+    (entry) => (
+      Number(entry.factionId) === Number(allianceFactionId)
+      || (entry.memberFactionIds || []).some((mid) => Number(mid) === Number(allianceFactionId))
+      || (entry.members || []).some((m) => Number(m.factionId || m.id) === Number(allianceFactionId))
+    ),
   );
   const hasAlliance = myAllianceMemberships.length > 0;
   const homeAlliances = [...new Map(myAllianceMemberships.map((entry) => [
@@ -426,8 +485,32 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
     (data.alliances || []).find((alliance) => Number(alliance.id) === Number(entry.id))
     || entry,
   ])).values()];
+  const unionOrCoalitionAlliances = homeAlliances.filter(
+    (entry) => entry.allianceType === 'union' || entry.allianceType === 'coalition',
+  );
+  const hasPrimaryBloc = unionOrCoalitionAlliances.length > 0;
+  const activeSettingsAlliance = unionOrCoalitionAlliances.find(
+    (entry) => Number(entry.id) === Number(settingsAllianceId),
+  ) || unionOrCoalitionAlliances[0] || null;
+
   useEffect(() => {
-    if (tab === 'alliances' && hasAlliance && !publicDirectory) setAllianceView('home');
+    if (!activeSettingsAlliance) return;
+    setSettingsAllianceId(activeSettingsAlliance.id);
+    setSettingsName(activeSettingsAlliance.name || '');
+    setSettingsTag(activeSettingsAlliance.tag || '');
+    setSettingsTermsText(
+      Array.isArray(activeSettingsAlliance.terms)
+        ? activeSettingsAlliance.terms.join('\n')
+        : '',
+    );
+    setSettingsSharedCoord(activeSettingsAlliance.sharedCoordinationEnabled !== false);
+    setSettingsCoordMode(activeSettingsAlliance.coordinationDrawMode || 'all_members');
+  }, [activeSettingsAlliance?.id]);
+
+  useEffect(() => {
+    if (tab === 'alliances' && hasAlliance && !publicDirectory && allianceView === 'directory') {
+      setAllianceView('home');
+    }
   }, [tab, allianceFactionId, hasAlliance, publicDirectory]);
   const visibleAlliances = (data.alliances || []).filter(
     (entry) => {
@@ -529,129 +612,254 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
         </section>
       )}
 
-      {tab === 'diplomacy' && (
-        <div>
-          <h3>{t`NAP proposals`}</h3>
-          {data.napStatus && <p>{data.napStatus.message}</p>}
-          {(data.naps || []).map((nap) => (
-            <div key={nap.id}>
-              <strong>{nap.tagA} / {nap.tagB}: {nap.status}</strong>
-              <ul className="faction-treaty-terms">
-                {(Array.isArray(nap.terms) ? nap.terms : []).map((term, index) => {
-                  if (typeof term === 'string') {
-                    return <li key={`${nap.id}-${index}`}>{term}</li>;
-                  }
-                  const label = NAP_TERM_LABELS[term?.type] || t`Treaty clause`;
-                  const details = term?.description || term?.restrictions;
-                  return (
-                    <li key={`${nap.id}-${index}`}>
-                      <strong>{label}</strong>
-                      {details && <span>{details}</span>}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
-          {!(data.naps || []).length && <p>{t`No NAP proposals.`}</p>}
-          {viewFaction.permissions?.manageNaps && data.napStatus?.enabled && (
-            <form onSubmit={submitNap}>
-              <h4>{t`Propose a NAP`}</h4>
-              <FactionTargetPicker
-                factionId={faction.id}
-                label={t`Target faction`}
-                value={napTarget}
-                onChange={setNapTarget}
-              />
-              <label>{t`Shared template`}: <select
-                value={napTemplate}
-                onChange={(event) => setNapTemplate(event.currentTarget.value)}
-                required>
-                <option value="">{t`Choose a template`}</option>
-                {templates.filter((template) => template.isActive).map((template) => (
-                  <option
-                    key={template.id}
-                    value={template.id}>{template.title || `Template ${template.id}`}</option>
-                ))}
-              </select></label>
-              <label>{t`Term type`}: <select
-                value={napType}
-                onChange={(event) => setNapType(event.currentTarget.value)}>
-                <option
-                  value="abandon_territory">{t`Abandon territory`}</option>
-                <option
-                  value="cease_activity">{t`Cease activity in territory`}</option>
-                <option
-                  value="sever_ally">{t`Sever relations with an ally`}</option>
-                <option
-                  value="surrender_restrictions">{t`Surrender restrictions`}</option>
-              </select></label>
-              <label>
-                {napType === 'sever_ally' ? t`Ally faction ID` : t`Term details`}:
-                <textarea
-                  value={napDetails}
-                  onInput={(event) => setNapDetails(event.currentTarget.value)}
-                  required />
-              </label>
-              <button type="submit">{t`Submit for moderator approval`}</button>
-            </form>
+      {tab === 'diplomacy' && diplomacySection === 'news' && (
+        <DiplomaticNews />
+      )}
+
+      {tab === 'diplomacy' && diplomacySection !== 'news' && (
+        <div className="faction-diplomacy-stack">
+          {(diplomacySection === 'all' || diplomacySection === 'naps') && (
+            <section className="faction-system-section">
+              <h3>{t`Non-Aggression Pacts & Multi-Term Treaties`}</h3>
+              {data.napStatus?.message && <p>{data.napStatus.message}</p>}
+              {(data.naps || []).map((nap) => (
+                <article key={nap.id} className="faction-alliance-card diplomacy-record-card">
+                  <div className="diplomacy-record-head">
+                    <strong>
+                      [{nap.tagA || nap.sourceFactionTag}] {nap.nameA || nap.sourceFactionName || ''}
+                      {' ⇄ '}
+                      [{nap.tagB || nap.targetFactionTag}] {nap.nameB || nap.targetFactionName || ''}
+                    </strong>
+                    <span className={`faction-badge diplomacy-status-${nap.status}`}>
+                      {nap.status}
+                    </span>
+                  </div>
+                  {nap.territory && (
+                    <p className="diplomacy-territory-meta">
+                      {t`Protected Territory`}: Canvas #{nap.territory.canvasId ?? 0}
+                      {Number.isFinite(nap.territory.x1)
+                        ? ` · [${nap.territory.x1}, ${nap.territory.y1}]–[${nap.territory.x2}, ${nap.territory.y2}]`
+                        : ''}
+                      {nap.territory.mode === 'template_mask' && nap.territory.pixelCount
+                        ? ` · ${t`Auto Template Mask`} (${nap.territory.pixelCount.toLocaleString()} px)`
+                        : nap.territory.polygon?.length
+                          ? ` · ${nap.territory.mode || 'polygon'} (${nap.territory.polygon.length} pts)`
+                          : ''}
+                    </p>
+                  )}
+                  <ul className="faction-treaty-terms">
+                    {(Array.isArray(nap.terms) ? nap.terms : []).map((term, index) => {
+                      if (typeof term === 'string') {
+                        return <li key={`${nap.id}-${index}`}>{term}</li>;
+                      }
+                      const label = NAP_TERM_LABELS[term?.type] || t`Treaty clause`;
+                      const summary = formatTreatyTermSummary(term);
+                      return (
+                        <li key={`${nap.id}-${index}`}>
+                          <strong>{label}</strong>
+                          {summary && <span>: {summary}</span>}
+                          {term?.forcesCoalitionDissolution && (
+                            <span className="treaty-term-warning-badge">
+                              {t`Dissolves Coalition`}
+                            </span>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  {nap.status === 'pending' && (leader || viewFaction.permissions?.manageNaps) && (
+                    <div className="diplomacy-record-actions">
+                      <button
+                        type="button"
+                        className="faction-btn primary sm"
+                        onClick={() => handleDecision(nap.id, 'approve')}
+                      >
+                        {t`Accept & Enact Terms`}
+                      </button>
+                      <button
+                        type="button"
+                        className="faction-btn danger sm"
+                        onClick={() => handleDecision(nap.id, 'reject')}
+                      >
+                        {t`Reject`}
+                      </button>
+                    </div>
+                  )}
+                </article>
+              ))}
+              {!(data.naps || []).length && <p>{t`No NAP proposals yet.`}</p>}
+              {(leader || viewFaction.permissions?.manageNaps || viewFaction.myPermissions?.manageNaps)
+                && data.napStatus?.enabled !== false && (
+                <form className="client-form diplomacy-composer-form" onSubmit={submitNap}>
+                  <h4>{t`Propose a NAP / Treaty`}</h4>
+                  <FactionTargetPicker
+                    factionId={faction.id}
+                    label={t`Target faction`}
+                    value={napTarget}
+                    onChange={setNapTarget}
+                  />
+                  {templates.length > 0 && (
+                    <label>{t`Linked template (optional)`}: <select
+                      value={napTemplate}
+                      onChange={(event) => setNapTemplate(event.currentTarget.value)}>
+                      <option value="">{t`Custom selection / Auto template upload`}</option>
+                      {templates.filter((template) => template.isActive !== false).map((template) => (
+                        <option
+                          key={template.id}
+                          value={template.id}>{template.title || `Template ${template.id}`}</option>
+                      ))}
+                    </select></label>
+                  )}
+                  <TerritorySelector
+                    value={napTerritory}
+                    onChange={setNapTerritory}
+                  />
+                  <TreatyTermsBuilder
+                    terms={napTerms}
+                    onChange={setNapTerms}
+                    targetFactionId={napTarget ? Number(napTarget) : null}
+                    targetPacts={getPactsForFaction(napTarget)}
+                  />
+                  <button type="submit" className="faction-btn primary" disabled={!napTarget}>
+                    {t`Send NAP / Treaty Proposal`}
+                  </button>
+                </form>
+              )}
+            </section>
           )}
 
-          <h3>{t`Wars and peace treaties`}</h3>
-          <h4>{t`Active wars`}</h4>
-          {(data.wars || []).length ? (
-            <ul>
-              {data.wars.map((war) => (
-                <li key={`${war.factionA}-${war.factionB}`}>
-                  [{war.tagA}] / [{war.tagB}]
-                  — {t`since`} {new Date(war.createdAt).toLocaleDateString()}
-                </li>
-              ))}
-            </ul>
-          ) : <p>{t`There are no active wars involving this faction.`}</p>}
-          {leader && (
-            <form onSubmit={(event) => {
-              event.preventDefault();
-              submitJson('/diplomacy/declare-war', 'POST', {
-                factionId: faction.id,
-                targetFactionId: Number(warTarget),
-              });
-            }}>
-              <FactionTargetPicker
-                factionId={faction.id}
-                label={t`Target faction`}
-                value={warTarget}
-                onChange={setWarTarget}
-              />
-              <button
-                type="submit"
-                disabled={!warTarget}>{t`Declare war`}</button>
-            </form>
-          )}
-          {leader && (
-            <form onSubmit={(event) => {
-              event.preventDefault();
-              submitJson('/diplomacy/peace', 'POST', {
-                factionId: faction.id,
-                targetFactionId: Number(peaceTarget),
-                terms: peaceTerms,
-              });
-            }}>
-              <FactionTargetPicker
-                factionId={faction.id}
-                label={t`Target faction`}
-                value={peaceTarget}
-                onChange={setPeaceTarget}
-                additionalTargets={peaceTargets}
-              />
-              <label>{t`Treaty terms`}: <textarea
-                value={peaceTerms}
-                onInput={(event) => setPeaceTerms(event.currentTarget.value)}
-                required /></label>
-              <button
-                type="submit"
-                disabled={!peaceTarget}>{t`Sign peace treaty`}</button>
-            </form>
+          {(diplomacySection === 'all' || diplomacySection === 'wars') && (
+            <section className="faction-system-section">
+              <h3>{t`Wars & Peace Treaties`}</h3>
+              <h4>{t`Active wars`}</h4>
+              {(data.wars || []).length ? (
+                <ul className="diplomacy-wars-list">
+                  {data.wars.map((war) => (
+                    <li key={war.id || `${war.factionA}-${war.factionB}`} className="diplomacy-war-item">
+                      <strong>
+                        [{war.tagA}] {war.nameA || ''} ⚔ [{war.tagB}] {war.nameB || ''}
+                      </strong>
+                      <span>
+                        {t`since`} {new Date(war.createdAt).toLocaleDateString()}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              ) : <p>{t`There are no active wars involving this faction.`}</p>}
+
+              {Array.isArray(data.treaties) && data.treaties.length > 0 && (
+                <div className="diplomacy-signed-treaties">
+                  <h4>{t`Signed Peace Treaties`}</h4>
+                  {data.treaties.map((treaty) => (
+                    <article key={treaty.id} className="faction-alliance-card diplomacy-record-card">
+                      <div className="diplomacy-record-head">
+                        <strong>
+                          [{treaty.tagA}] 🕊 [{treaty.tagB}]
+                        </strong>
+                        <small>{new Date(treaty.createdAt).toLocaleDateString()}</small>
+                      </div>
+                      {treaty.notes && <p>{treaty.notes}</p>}
+                      {Array.isArray(treaty.terms) && treaty.terms.length > 0 && (
+                        <ul className="faction-treaty-terms">
+                          {treaty.terms.map((term, idx) => (
+                            <li key={`${treaty.id}-t-${idx}`}>
+                              <strong>{NAP_TERM_LABELS[term.type] || t`Clause`}</strong>
+                              {': '}{formatTreatyTermSummary(term)}
+                              {term.forcesCoalitionDissolution && (
+                                <span className="treaty-term-warning-badge">
+                                  {t`Coalition Dissolved`}
+                                </span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              )}
+
+              {leader && (
+                <form
+                  className="client-form diplomacy-composer-form"
+                  onSubmit={(event) => {
+                    event.preventDefault();
+                    submitJson('/diplomacy/declare-war', 'POST', {
+                      factionId: faction.id,
+                      targetFactionId: Number(warTarget),
+                    }).then((ok) => {
+                      if (ok) setWarTarget('');
+                    });
+                  }}
+                >
+                  <h4>{t`Declare War`}</h4>
+                  <FactionTargetPicker
+                    factionId={faction.id}
+                    label={t`Target faction`}
+                    value={warTarget}
+                    onChange={setWarTarget}
+                  />
+                  <button
+                    type="submit"
+                    className="faction-btn danger"
+                    disabled={!warTarget}
+                  >
+                    {t`Declare war`}
+                  </button>
+                </form>
+              )}
+
+              {leader && (
+                <form
+                  className="client-form diplomacy-composer-form"
+                  onSubmit={(event) => {
+                    event.preventDefault();
+                    submitJson('/diplomacy/peace', 'POST', {
+                      factionId: faction.id,
+                      targetFactionId: Number(peaceTarget),
+                      terms: peaceConditions,
+                      notes: peaceTerms,
+                    }).then((ok) => {
+                      if (ok) {
+                        setPeaceTarget('');
+                        setPeaceTerms('');
+                        setPeaceConditions([]);
+                      }
+                    });
+                  }}
+                >
+                  <h4>{t`Draft Peace Treaty (Multi-Condition)`}</h4>
+                  <FactionTargetPicker
+                    factionId={faction.id}
+                    label={t`Target faction`}
+                    value={peaceTarget}
+                    onChange={setPeaceTarget}
+                    additionalTargets={peaceTargets}
+                  />
+                  <TreatyTermsBuilder
+                    terms={peaceConditions}
+                    onChange={setPeaceConditions}
+                    targetFactionId={peaceTarget ? Number(peaceTarget) : null}
+                    targetPacts={getPactsForFaction(peaceTarget)}
+                  />
+                  <label>
+                    {t`Additional treaty preamble / notes`}:
+                    <textarea
+                      value={peaceTerms}
+                      placeholder={t`Optional summary or border notes...`}
+                      onInput={(event) => setPeaceTerms(event.currentTarget.value)}
+                    />
+                  </label>
+                  <button
+                    type="submit"
+                    className="faction-btn primary"
+                    disabled={!peaceTarget || (!peaceConditions.length && !peaceTerms.trim())}
+                  >
+                    {t`Sign peace treaty`}
+                  </button>
+                </form>
+              )}
+            </section>
           )}
         </div>
       )}
@@ -690,7 +898,14 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                 type="button"
                 className={allianceView === 'home' ? 'selected' : ''}
                 onClick={() => setAllianceView('home')}
-              >{t`Home`}</button>
+              >{t`My Pacts`}</button>
+            )}
+            {unionOrCoalitionAlliances.length > 0 && (
+              <button
+                type="button"
+                className={allianceView === 'settings' ? 'selected' : ''}
+                onClick={() => setAllianceView('settings')}
+              >{t`Union / Coalition Settings`}</button>
             )}
             {hasAlliance && (
               <button
@@ -718,12 +933,12 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
               className={allianceView === 'directory' ? 'selected' : ''}
               onClick={() => setAllianceView('directory')}
             >{t`Alliance directory`}</button>
-            {leader && !hasAlliance && (
+            {leader && (
               <button
                 type="button"
                 className={allianceView === 'found' ? 'selected' : ''}
                 onClick={() => setAllianceView('found')}
-              >{t`Create alliance`}</button>
+              >{t`Create Pact / Alliance`}</button>
             )}
           </nav>
           {allianceView === 'home' && hasAlliance && (
@@ -770,11 +985,11 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                           <span
                             className={`faction-alliance-category-badge ${alliance.allianceType}`}>
                             {alliance.allianceType === 'coalition'
-                              ? t`Coalition Pact`
+                              ? t`Coalition`
                               : alliance.allianceType === 'union'
-                                ? t`Union` : t`Alliance`}
+                                ? t`Union` : t`Bilateral Pact`}
                           </span>
-                          <h4>{alliance.name}</h4>
+                          <h4>{alliance.name}{alliance.tag ? ` [${alliance.tag}]` : ''}</h4>
                         </div>
                         <span className="faction-alliance-count">
                           {members.length} {t`factions`}
@@ -810,10 +1025,10 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                         <section>
                           <h5>{t`Pact mechanics`}</h5>
                           <p>{alliance.allianceType === 'coalition'
-                            ? t`Members coordinate war declarations against the target. A member can leave by making peace.`
+                            ? t`War coalition grouped on leaderboards. If the Coalition Leader accepts a sever-coalition clause, the coalition dissolves.`
                             : alliance.allianceType === 'union'
-                              ? t`New factions join after founder approval. The pact roster and charter are shared.`
-                              : t`Two factions share a direct pact. New membership requires founder approval.`}</p>
+                              ? t`Long-term Union grouped on leaderboards with a shared Union Coordination drawing layer across all member factions.`
+                              : t`Bilateral pact between two factions. Multiple bilateral pacts are allowed and remain separate on leaderboards.`}</p>
                         </section>
                       </div>
                       {Array.isArray(alliance.terms) && alliance.terms.length > 0 && (
@@ -901,9 +1116,9 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                   aria-label={t`Filter by category`}>
                   {[
                     ['all', t`All pacts`],
-                    ['alliance', t`Alliance`],
-                    ['coalition', t`Coalition Pact`],
                     ['union', t`Union`],
+                    ['coalition', t`Coalition`],
+                    ['alliance', t`Bilateral Pact`],
                   ].map(([category, label]) => (
                     <button
                       type="button"
@@ -915,13 +1130,13 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                   ))}
                 </div>
                 {visibleAlliances.map((alliance) => {
-                  const allianceMembers = (data.myAlliances || []).filter(
-                    (entry) => Number(entry.id) === Number(alliance.id),
+                  const joined = (alliance.members || []).some(
+                    (entry) => Number(entry.factionId || entry.id) === Number(allianceFactionId),
+                  ) || (alliance.memberFactionIds || []).some(
+                    (mid) => Number(mid) === Number(allianceFactionId),
                   );
-                  const joined = allianceMembers.some(
-                    (entry) => Number(entry.factionId) === Number(allianceFactionId),
-                  );
-                  const inAnotherAlliance = !joined && hasAlliance;
+                  const isBilateral = alliance.allianceType === 'alliance';
+                  const inAnotherAlliance = !joined && !isBilateral && hasPrimaryBloc;
                   const requestPending = (data.myAllianceRequests || []).some(
                     (request) => Number(request.allianceId) === Number(alliance.id),
                   );
@@ -929,7 +1144,8 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                   const invited = (data.allianceInvites || []).some(
                     (invite) => Number(invite.allianceId) === Number(alliance.id),
                   );
-                  const full = alliance.allianceType === 'alliance' && alliance.memberCount >= 2;
+                  const memberTotal = alliance.memberCount ?? alliance.members?.length ?? 0;
+                  const full = isBilateral && memberTotal >= 2;
                   const isTarget = alliance.allianceType === 'coalition'
                     && Number(alliance.targetFactionId) === Number(allianceFactionId);
                   const action = allianceAction?.id === alliance.id ? allianceAction : null;
@@ -973,9 +1189,9 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                           className="faction-alliance-open"
                           onClick={() => setSelectedAllianceId(alliance.id)}
                         >
-                          {alliance.memberCount} {t`factions`} · {alliance.allianceType === 'coalition'
-                            ? t`Coalition Pact`
-                            : alliance.allianceType === 'union' ? t`Union` : t`Alliance`}
+                          {alliance.memberCount ?? alliance.members?.length ?? 0} {t`factions`} · {alliance.allianceType === 'coalition'
+                            ? t`Coalition`
+                            : alliance.allianceType === 'union' ? t`Union` : t`Bilateral Pact`}
                           <span>{t`View pact details`}</span>
                         </button>
                       )}
@@ -988,18 +1204,18 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                           >← {t`Back to alliances`}</button>
                           <p className="faction-alliance-type">
                             {alliance.allianceType === 'coalition'
-                              ? t`Coalition Pact`
+                              ? t`Coalition`
                               : alliance.allianceType === 'union'
-                                ? t`Union` : t`Alliance`}
+                                ? t`Union` : t`Bilateral Pact`}
                             {alliance.targetFactionId
                               ? ` · ${t`Target faction`} #${alliance.targetFactionId}` : ''}
                           </p>
                           <p className="faction-alliance-mechanics">
                             {alliance.allianceType === 'coalition'
-                              ? t`War coalition · members coordinate declarations against the selected target and may leave by making peace.`
+                              ? t`War coalition · grouped on leaderboards; dissolves automatically if the Coalition Leader accepts a sever-coalition term.`
                               : alliance.allianceType === 'union'
-                                ? t`Long-term pact · multiple factions share one approved membership roster and a durable charter.`
-                                : t`Bilateral pact · two factions, with every new member approved by the founder.`}
+                                ? t`Long-term Union · grouped on leaderboards with a shared Union Coordination drawing layer across all member factions.`
+                                : t`Bilateral pact · two factions, multiple bilateral pacts allowed, never merged on leaderboards.`}
                           </p>
                           <div className="faction-alliance-charter">
                             <strong>{t`Charter`}</strong>
@@ -1029,7 +1245,7 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                           </section>
                           {!joined && inAnotherAlliance && (
                             <p className="faction-alliance-note">
-                              {t`Your faction must leave its current alliance before joining another.`}
+                              {t`Your faction is already in a Union or Coalition. You may still join multiple Bilateral Pacts freely.`}
                             </p>
                           )}
                           {!leader && (
@@ -1178,37 +1394,252 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
               })}
             </section>
           )}
-          {allianceView === 'found' && leader && !hasAlliance && (
+          {allianceView === 'settings' && activeSettingsAlliance && (
+            <section className="faction-system-section alliance-settings-panel">
+              <div className="alliance-settings-header">
+                <div>
+                  <span className={`faction-alliance-category-badge ${activeSettingsAlliance.allianceType}`}>
+                    {activeSettingsAlliance.allianceType === 'union' ? t`Union` : t`Coalition`}
+                  </span>
+                  <h3>
+                    {activeSettingsAlliance.name}
+                    {activeSettingsAlliance.tag ? ` [${activeSettingsAlliance.tag}]` : ''}
+                    {' — '}{t`Settings`}
+                  </h3>
+                </div>
+                {unionOrCoalitionAlliances.length > 1 && (
+                  <select
+                    value={activeSettingsAlliance.id}
+                    onChange={(event) => setSettingsAllianceId(Number(event.currentTarget.value))}
+                  >
+                    {unionOrCoalitionAlliances.map((entry) => (
+                      <option key={entry.id} value={entry.id}>
+                        {entry.name} ({entry.allianceType})
+                      </option>
+                    ))}
+                  </select>
+                )}
+              </div>
+
+              {(() => {
+                const isBlocLeader = Number(
+                  activeSettingsAlliance.founderFactionId || activeSettingsAlliance.leaderFactionId,
+                ) === Number(allianceFactionId);
+                const canEditBloc = leader && isBlocLeader;
+                const blocMembers = activeSettingsAlliance.members || [];
+                return (
+                  <div className="alliance-settings-grid">
+                    <form
+                      className="faction-alliance-card client-form alliance-settings-card"
+                      onSubmit={async (event) => {
+                        event.preventDefault();
+                        if (!canEditBloc) return;
+                        const ok = await submitJson(
+                          `/alliances/${activeSettingsAlliance.id}/settings`,
+                          'PATCH',
+                          {
+                            factionId: allianceFactionId,
+                            name: settingsName.trim(),
+                            tag: settingsTag.trim().toUpperCase(),
+                            terms: settingsTermsText
+                              .split('\n')
+                              .map((line) => line.trim())
+                              .filter(Boolean),
+                            sharedCoordinationEnabled: settingsSharedCoord,
+                            coordinationDrawMode: settingsCoordMode,
+                          },
+                        );
+                        if (ok) setMessage(t`Union / Coalition settings saved.`);
+                      }}
+                    >
+                      <h4>{t`General & Charter Settings`}</h4>
+                      <label>
+                        {t`Name`}
+                        <input
+                          type="text"
+                          value={settingsName}
+                          disabled={!canEditBloc}
+                          maxLength={64}
+                          onInput={(event) => setSettingsName(event.currentTarget.value)}
+                          required
+                        />
+                      </label>
+                      <label>
+                        {t`Tag (2–5 chars)`}
+                        <input
+                          type="text"
+                          value={settingsTag}
+                          disabled={!canEditBloc}
+                          maxLength={5}
+                          onInput={(event) => setSettingsTag(event.currentTarget.value.toUpperCase())}
+                        />
+                      </label>
+                      <label>
+                        {t`Charter / Terms (one per line)`}
+                        <textarea
+                          rows={4}
+                          value={settingsTermsText}
+                          disabled={!canEditBloc}
+                          onInput={(event) => setSettingsTermsText(event.currentTarget.value)}
+                        />
+                      </label>
+
+                      {activeSettingsAlliance.allianceType === 'union' && (
+                        <div className="alliance-settings-coord-box">
+                          <h5>{t`Shared Union Coordination Tool`}</h5>
+                          <label className="alliance-settings-checkbox">
+                            <input
+                              type="checkbox"
+                              checked={settingsSharedCoord}
+                              disabled={!canEditBloc}
+                              onChange={(event) => setSettingsSharedCoord(event.currentTarget.checked)}
+                            />
+                            <span>{t`Enable shared drawing canvas across all member factions in this Union`}</span>
+                          </label>
+                          <label>
+                            {t`Who can draw on the shared Union layer`}
+                            <select
+                              value={settingsCoordMode}
+                              disabled={!canEditBloc || !settingsSharedCoord}
+                              onChange={(event) => setSettingsCoordMode(event.currentTarget.value)}
+                            >
+                              <option value="all_members">{t`All Union faction members with draw permission`}</option>
+                              <option value="officers_only">{t`Officers, Deputies & Leaders only`}</option>
+                              <option value="founders_only">{t`Union Leader faction only`}</option>
+                            </select>
+                          </label>
+                        </div>
+                      )}
+
+                      {canEditBloc ? (
+                        <button type="submit" className="faction-btn primary">
+                          {t`Save Settings`}
+                        </button>
+                      ) : (
+                        <p className="faction-alliance-note">
+                          {t`Only the founding/leading faction's leader can modify Union or Coalition settings.`}
+                        </p>
+                      )}
+                    </form>
+
+                    <div className="faction-alliance-card alliance-settings-card">
+                      <h4>{t`Member Factions & Leadership`}</h4>
+                      <ul className="alliance-settings-member-list">
+                        {blocMembers.map((member) => {
+                          const mid = Number(member.factionId || member.id);
+                          const isCurrentLeader = Number(
+                            activeSettingsAlliance.founderFactionId
+                            || activeSettingsAlliance.leaderFactionId,
+                          ) === mid;
+                          return (
+                            <li key={mid} className="alliance-settings-member-row">
+                              <div>
+                                <strong>[{member.tag || '—'}] {member.title || member.name}</strong>
+                                {isCurrentLeader && (
+                                  <span className="faction-badge">{t`Leader`}</span>
+                                )}
+                              </div>
+                              {canEditBloc && !isCurrentLeader && (
+                                <div className="alliance-settings-member-actions">
+                                  <button
+                                    type="button"
+                                    className="faction-btn sm"
+                                    onClick={() => submitJson(
+                                      `/alliances/${activeSettingsAlliance.id}/transfer-leadership`,
+                                      'POST',
+                                      { factionId: allianceFactionId, newLeaderFactionId: mid },
+                                    )}
+                                  >
+                                    {t`Make Leader`}
+                                  </button>
+                                  <button
+                                    type="button"
+                                    className="faction-btn danger sm"
+                                    onClick={() => submitJson(
+                                      `/alliances/${activeSettingsAlliance.id}/members/${mid}`,
+                                      'DELETE',
+                                      { factionId: allianceFactionId },
+                                    )}
+                                  >
+                                    {t`Remove`}
+                                  </button>
+                                </div>
+                              )}
+                            </li>
+                          );
+                        })}
+                      </ul>
+
+                      {canEditBloc && (
+                        <div className="alliance-settings-danger">
+                          <h5>{t`Dissolve`} {activeSettingsAlliance.allianceType === 'union' ? t`Union` : t`Coalition`}</h5>
+                          <p>{t`Dissolving permanently ends this pact and publishes a Diplomatic News notice.`}</p>
+                          <button
+                            type="button"
+                            className="faction-btn danger"
+                            onClick={async () => {
+                              if (confirmDissolveId !== activeSettingsAlliance.id) {
+                                setConfirmDissolveId(activeSettingsAlliance.id);
+                                return;
+                              }
+                              const dissolved = await submitJson(
+                                `/alliances/${activeSettingsAlliance.id}`,
+                                'DELETE',
+                                { factionId: allianceFactionId },
+                              );
+                              if (dissolved) {
+                                setConfirmDissolveId(null);
+                                setAllianceView('directory');
+                              }
+                            }}
+                          >
+                            {confirmDissolveId === activeSettingsAlliance.id
+                              ? t`Confirm Permanent Dissolution`
+                              : t`Dissolve Pact`}
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })()}
+            </section>
+          )}
+          {allianceView === 'found' && leader && (
             <form className="faction-alliance-create" onSubmit={submitAlliance}>
-              <h3>{t`Create alliance`}</h3>
-              <p>{t`Choose the pact style that fits your faction and define its charter.`}</p>
+              <h3>{t`Create Pact / Alliance`}</h3>
+              <p>{t`Unions and Coalitions appear grouped on leaderboards. Bilateral Pacts can be held in multiples and stay separate on leaderboards.`}</p>
               <fieldset className="faction-alliance-type-picker">
                 <legend>{t`Choose a category`}</legend>
                 {[
                   {
                     id: 'alliance',
-                    title: t`Alliance`,
-                    description: t`A close, two-faction partnership with founder-approved membership.`,
-                  },
-                  {
-                    id: 'coalition',
-                    title: t`Coalition Pact`,
-                    description: t`A focused war pact against one target, with coordinated declarations and peace-based exits.`,
+                    title: t`Bilateral Pact`,
+                    description: t`Direct two-faction pact. Multiple bilateral pacts allowed; never grouped together on leaderboards.`,
+                    disabled: false,
                   },
                   {
                     id: 'union',
                     title: t`Union`,
-                    description: t`A long-term, multi-faction pact with an approved shared roster and durable charter.`,
+                    description: t`Long-term multi-faction bloc grouped on leaderboards with a shared Union Coordination drawing layer.`,
+                    disabled: hasPrimaryBloc,
+                  },
+                  {
+                    id: 'coalition',
+                    title: t`Coalition`,
+                    description: t`Focused war bloc against a target faction. Dissolves if the Coalition Leader accepts a sever-coalition term.`,
+                    disabled: hasPrimaryBloc,
                   },
                 ].map((category) => (
                   <label
-                    className={`faction-alliance-type-option${allianceType === category.id ? ' selected' : ''}`}
+                    className={`faction-alliance-type-option${allianceType === category.id ? ' selected' : ''}${category.disabled ? ' disabled' : ''}`}
                     key={category.id}
                   >
                     <input
                       type="radio"
                       name="allianceType"
                       value={category.id}
+                      disabled={category.disabled}
                       checked={allianceType === category.id}
                       onChange={() => {
                         setAllianceType(category.id);
@@ -1217,7 +1648,10 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                     />
                     <span>
                       <strong>{category.title}</strong>
-                      <small>{category.description}</small>
+                      <small>
+                        {category.description}
+                        {category.disabled ? ` (${t`Already in a Union or Coalition`})` : ''}
+                      </small>
                     </span>
                   </label>
                 ))}
@@ -1231,7 +1665,7 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                 />
               )}
               <label>
-                {t`Alliance name`}
+                {t`Pact name`}
                 <input
                   value={allianceName}
                   onInput={(event) => setAllianceName(event.currentTarget.value)}
@@ -1240,25 +1674,32 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
                 />
               </label>
               <label>
-                {t`Alliance avatar`}
+                {t`Pact tag (optional, 2–5 chars)`}
+                <input
+                  value={allianceTag}
+                  placeholder={t`e.g. BRU`}
+                  onInput={(event) => setAllianceTag(event.currentTarget.value.toUpperCase())}
+                  maxLength="5"
+                />
+              </label>
+              <label>
+                {t`Emblem avatar (optional)`}
                 <input
                   type="file"
                   accept="image/png,image/jpeg,image/webp"
-                  required
                   onChange={(event) => setAllianceAvatar(event.currentTarget.files?.[0] || null)}
                 />
               </label>
               <label>
-                {t`Alliance banner`}
+                {t`Banner image (optional)`}
                 <input
                   type="file"
                   accept="image/png,image/jpeg,image/webp"
-                  required
                   onChange={(event) => setAllianceBanner(event.currentTarget.files?.[0] || null)}
                 />
               </label>
               <label>
-                {t`Charter terms`}
+                {t`Charter terms (one per line)`}
                 <textarea
                   value={allianceTerms}
                   onInput={(event) => setAllianceTerms(event.currentTarget.value)}
@@ -1267,8 +1708,9 @@ const FactionSystemTab = ({ faction = {}, tab, profile = false }) => {
               </label>
               <button
                 type="submit"
+                className="faction-btn primary"
                 disabled={allianceType === 'coalition' && !allianceTarget}
-              >{t`Create alliance`}</button>
+              >{t`Create Pact`}</button>
             </form>
           )}
         </div>

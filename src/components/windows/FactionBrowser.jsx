@@ -3,16 +3,9 @@ import { useSelector } from '../../store/react-redux/index.js';
 import { t } from 'ttag';
 import { api, cdn } from '../../utils/utag.js';
 import { getUrlsFromMediaIdAndName } from '../../utils/media/utils.js';
-import useLink from '../hooks/link.js';
+import FactionProfileView from './FactionProfileView.jsx';
 
 const PAGE_SIZE = 50;
-const ROLE_NAMES = {
-  owner: t`Owner`,
-  leader: t`Leader`,
-  deputy: t`Deputy`,
-  officer: t`Officer`,
-  member: t`Member`,
-};
 
 async function requestJson(route, options = {}) {
   const response = await fetch(api`${route}`, {
@@ -67,9 +60,7 @@ const FactionBrowser = () => {
   const [napsEnabled, setNapsEnabled] = useState(false);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
-  const [copied, setCopied] = useState(false);
   const userId = useSelector((state) => state.user.id);
-  const link = useLink();
 
   useEffect(() => {
     requestJson('/api/factions/naps/status')
@@ -203,168 +194,31 @@ const FactionBrowser = () => {
   }, []);
 
   if (profile) {
-    const isPrivate = profile.isPrivate;
     const canManageNaps = !!myPermissions?.manageNaps;
     const sameFaction = myFaction?.id === profile.id;
     const canProposeNap = napsEnabled && canManageNaps && !sameFaction
       && !!myTerritory && !!targetTerritory;
     const profileNaps = myFaction && !sameFaction
-      ? naps.filter((nap) => nap.otherFaction.id === profile.id)
+      ? naps.filter((nap) => nap.otherFaction?.id === profile.id)
       : (profile.naps || []);
     return (
-      <section className="faction-browser">
-        <button type="button" className="faction-back" onClick={() => setProfile(null)}>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7" /></svg>
-          {t`Back to list`}
-        </button>
-        <article className="faction-profile-card">
-          <FactionAvatar value={profile.flag} large />
-          <h2>{profile.name}</h2>
-          <button
-            type="button"
-            className="faction-profile-tag"
-            onClick={async () => {
-              try {
-                await navigator.clipboard.writeText(`[${profile.tag}]`);
-              } catch {
-                const field = document.createElement('textarea');
-                field.value = `[${profile.tag}]`;
-                document.body.appendChild(field);
-                field.select();
-                document.execCommand('copy');
-                field.remove();
-              }
-              setCopied(true);
-              setTimeout(() => setCopied(false), 1200);
-            }}
-            title={t`Copy faction tag`}
-          >[{profile.tag}] <span>{copied ? t`Copied` : t`Copy`}</span></button>
-          {!isPrivate && <p className="faction-profile-description">{profile.description || t`No description yet.`}</p>}
-          <div className="faction-profile-count">
-            {profile.memberCount || 0} {t`members`}
-          </div>
-          {!isPrivate && userId && !myFaction && (
-            <button
-              type="button"
-              disabled={busy || submittedApplications[profile.id]}
-              onClick={() => submitApplication(profile)}
-            >
-              {submittedApplications[profile.id]
-                ? t`Application sent`
-                : profile.openJoin ? t`Join` : t`Apply`}
-            </button>
-          )}
-        </article>
-
-        {!isPrivate && (
-          <section className="faction-profile-roster">
-            <h3>{t`Members`}</h3>
-            {profile.members?.length ? (
-              <div className="faction-roster-table" role="table" aria-label={t`Faction members`}>
-                <div className="faction-roster-head" role="row">
-                  <span role="columnheader">{t`Player`}</span>
-                  <span role="columnheader">{t`Role`}</span>
-                </div>
-                {profile.members.map((member) => (
-                  <button
-                    key={member.id}
-                    type="button"
-                    className="faction-roster-row"
-                    onClick={() => link('USER', {
-                      target: 'parent',
-                      args: { username: member.id },
-                    })}
-                    role="row"
-                  >
-                    <span className="faction-roster-identity" role="cell">
-                      {member.avatar ? (
-                        <img src={imageUrl(member.avatar)} alt="" loading="lazy" />
-                      ) : (
-                        <span className="faction-roster-avatar-empty" aria-hidden="true">
-                          <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-8 9a8 8 0 0 1 16 0H4Z" /></svg>
-                        </span>
-                      )}
-                      <span className="faction-roster-name">
-                        {member.memberTag && <small>[{member.memberTag}]</small>}
-                        <strong>{member.name}</strong>
-                      </span>
-                    </span>
-                    <span className={`faction-role-badge role-${member.role}`} role="cell">
-                      {ROLE_NAMES[member.role] || ROLE_NAMES.member}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            ) : <p className="faction-empty">{t`No members to display.`}</p>}
-          </section>
-        )}
-
-        {(!napsEnabled || profileNaps.length > 0 || (myFaction && !sameFaction)) && (
-          <section className="faction-profile-naps">
-            <div className="faction-section-title">
-              <h3>{t`NAP`}</h3>
-              {!napsEnabled && <span className="faction-badge faction-badge-soon">{t`SOON`}</span>}
-              {napsEnabled && myFaction && !sameFaction && canManageNaps && (
-                <button
-                  type="button"
-                  disabled={!canProposeNap || busy}
-                  title={!myTerritory || !targetTerritory
-                    ? t`One of the factions has no active template` : undefined}
-                  onClick={proposeNap}
-                >
-                  {t`Propose NAP`}
-                </button>
-              )}
-            </div>
-            {myFaction && !sameFaction && canManageNaps
-              && (!myTerritory || !targetTerritory) && (
-              <p className="faction-nap-warning">{t`One of the factions has no active template. NAP request unavailable.`}</p>
-            )}
-            {!napsEnabled && (
-              <p className="faction-nap-warning" role="status">
-                {t`NAP functionality is temporarily unavailable and will be added soon.`}
-              </p>
-            )}
-            {napsEnabled && profileNaps.map((nap) => (
-              <div className="faction-nap-row" key={nap.id}>
-                <span>[{nap.otherFaction.tag}] {nap.otherFaction.name}</span>
-                <span className={`faction-nap-status status-${nap.status}`}>
-                  {nap.status === 'active' ? t`Active`
-                    : nap.status === 'pending' ? t`Awaiting moderator review`
-                      : nap.status === 'broken' ? t`Broken` : t`Rejected`}
-                </span>
-                {nap.status === 'active'
-                  && (nap.breakAApproved || nap.breakBApproved) && (
-                  <small>
-                    Termination approvals: your faction {
-                      (nap.incoming ? nap.breakBApproved : nap.breakAApproved) ? '✓' : '—'
-                    } / {t`other faction`} {
-                      (nap.incoming ? nap.breakAApproved : nap.breakBApproved) ? '✓' : '—'
-                    }
-                  </small>
-                )}
-                {canManageNaps && (
-                  nap.status === 'active' || (nap.status === 'pending' && !nap.incoming)
-                ) && (
-                  <button
-                    type="button"
-                    disabled={busy || (nap.status === 'active'
-                      && (nap.incoming ? nap.breakBApproved : nap.breakAApproved))}
-                    onClick={() => performNapAction(nap)}
-                  >
-                    {nap.status === 'pending' ? t`Cancel`
-                      : (nap.incoming ? nap.breakBApproved : nap.breakAApproved)
-                          ? t`Awaiting other faction`
-                          : (nap.incoming ? nap.breakAApproved : nap.breakBApproved)
-                              ? t`Approve termination` : t`Request termination`}
-                  </button>
-                )}
-              </div>
-            ))}
-          </section>
-        )}
-        {error && <p className="faction-browser-message" role="status">{error}</p>}
-      </section>
+      <FactionProfileView
+        profile={profile}
+        onBack={() => setProfile(null)}
+        backLabel={t`Back to list`}
+        userId={userId}
+        myFaction={myFaction}
+        busy={busy}
+        applicationSent={Boolean(submittedApplications[profile.id])}
+        onJoinOrApply={submitApplication}
+        canProposeNap={canProposeNap}
+        onProposeNap={proposeNap}
+        napsEnabled={napsEnabled}
+        profileNaps={profileNaps}
+        canManageNaps={canManageNaps}
+        onNapAction={performNapAction}
+        error={error}
+      />
     );
   }
 

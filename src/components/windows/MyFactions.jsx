@@ -1,13 +1,16 @@
 /*
  * user faction overview
  */
-import { useMemo, useState, useCallback, useRef, useEffect } from 'preact/hooks';
+import {
+  useMemo, useState, useCallback, useRef, useEffect, useContext,
+} from 'preact/hooks';
 import { createPortal } from 'preact/compat';
 import {
   useDispatch, useSelector, shallowEqual,
 } from '../../store/react-redux/index.js';
 import { t } from 'ttag';
 import { USERLVL } from '../../core/constants.js';
+import WindowContext from '../context/window.js';
 
 import {
   validateFactionName, validateFactionTag, validateFactionTitle, validateDescription,
@@ -28,6 +31,9 @@ import useProfile from '../hooks/useProfile.js';
 import Table from '../Table.jsx';
 import FactionBrowser from './FactionBrowser.jsx';
 import FactionSystemTab from './FactionSystemTab.jsx';
+import DiplomaticNews from './DiplomaticNews.jsx';
+import TreatyTermsBuilder, { formatTreatyTermSummary } from './TreatyTermsBuilder.jsx';
+import TerritorySelector from './TerritorySelector.jsx';
 import templateLoader from '../../ui/templateLoader.js';
 import { toggleOVEnabled } from '../../store/actions/templates.js';
 
@@ -124,9 +130,29 @@ const DEFAULT_ROLE_PERMS = {
 };
 
 const MyFactions = () => {
-  const [page, setPage] = useState('list');
-  const [subTab, setSubTab] = useState('home');
+  const windowCtx = useContext(WindowContext);
+  const requestedPage = windowCtx?.args?.page;
+  const requestedSubTab = windowCtx?.args?.subTab;
+  const requestedDiplomacyTab = windowCtx?.args?.diplomacyTab;
+  const [page, setPage] = useState(requestedPage || 'list');
+  const [subTab, setSubTab] = useState(requestedSubTab || 'home');
+  const [diplomacyTab, setDiplomacyTab] = useState(requestedDiplomacyTab || 'naps');
+  const [allAlliances, setAllAlliances] = useState([]);
+  const [napConditions, setNapConditions] = useState([]);
+  const [advancedTerritory, setAdvancedTerritory] = useState(null);
   const [confirmLeave, setConfirmLeave] = useState(false);
+
+  useEffect(() => {
+    if (requestedPage) setPage(requestedPage);
+  }, [requestedPage]);
+
+  useEffect(() => {
+    if (requestedSubTab) setSubTab(requestedSubTab);
+  }, [requestedSubTab]);
+
+  useEffect(() => {
+    if (requestedDiplomacyTab) setDiplomacyTab(requestedDiplomacyTab);
+  }, [requestedDiplomacyTab]);
   const [copiedTag, setCopiedTag] = useState(false);
   const [myFactionDetails, setMyFactionDetails] = useState(null);
   const [membersList, setMembersList] = useState([]);
@@ -196,6 +222,11 @@ const MyFactions = () => {
     setActiveTerritoryTab('my');
     setTargetBBox(null);
     setMyBBox(null);
+    setNapConditions([]);
+    setAdvancedTerritory(null);
+    requestJson('/api/factions/alliances')
+      .then((res) => setAllAlliances(res.alliances || []))
+      .catch(() => {});
     setShowNewNapModal(true);
   };
 
@@ -369,9 +400,9 @@ const MyFactions = () => {
   useEffect(() => {
     if (subTab === 'members') loadMembers();
     else if (subTab === 'notifications') loadApplications();
-    else if (subTab === 'naps') loadNaps();
+    else if (subTab === 'naps' || (subTab === 'diplomacy' && diplomacyTab === 'naps')) loadNaps();
     else if (subTab === 'templates' || subTab === 'config') loadTemplate();
-  }, [subTab, loadMembers, loadApplications, loadNaps, loadTemplate]);
+  }, [subTab, diplomacyTab, loadMembers, loadApplications, loadNaps, loadTemplate]);
 
   const bboxToCanvasCoords = useCallback((bbox, canvas, img) => {
     if (!bbox || !canvas || !img || !editorTemplate) return null;
@@ -814,18 +845,14 @@ const MyFactions = () => {
       setNapModalError(t`Please enter a target faction tag (2-3 characters).`);
       return;
     }
-    if (!activeTemplate) {
-      setNapModalError(t`Your faction must have an active template.`);
-      return;
-    }
     setSubmittingNap(true);
     setNapModalError('');
     try {
-      const territoryPayload = (targetBBox || myBBox) ? {
-        canvasId: Number(targetBBox?.canvasId ?? myBBox?.canvasId ?? activeTemplate.canvasId) || 0,
+      const territoryPayload = advancedTerritory || ((targetBBox || myBBox) ? {
+        canvasId: Number(targetBBox?.canvasId ?? myBBox?.canvasId ?? activeTemplate?.canvasId) || 0,
         targetTerritory: targetBBox || undefined,
         myTerritory: myBBox || undefined,
-      } : undefined;
+      } : undefined);
 
       await requestJson(`/api/factions/${myFactionDetails.id}/naps/request`, {
         method: 'POST',
@@ -834,12 +861,15 @@ const MyFactions = () => {
           startDate: napStartDate,
           endDate: napEndDate,
           territory: territoryPayload,
+          terms: napConditions,
         }),
       });
       setShowNewNapModal(false);
       setNapTargetTag('');
       setTargetBBox(null);
       setMyBBox(null);
+      setAdvancedTerritory(null);
+      setNapConditions([]);
       setDrawPoints([]);
       setCurrentDragRect(null);
       window.dispatchEvent(new Event('factionnapupdate'));
@@ -1221,6 +1251,13 @@ const MyFactions = () => {
       </button>
       <button
         type="button"
+        className={page === 'news' ? 'active' : ''}
+        onClick={changePage('news')}
+      >
+        {t`Diplomatic News`}
+      </button>
+      <button
+        type="button"
         className={page === 'stats' ? 'active' : ''}
         onClick={showFactionStats}
       >
@@ -1248,6 +1285,16 @@ const MyFactions = () => {
         <h2 className="faction-header-title">{t`Factions`}</h2>
         {factionTabs}
         <FactionBrowser />
+      </div>
+    );
+  }
+
+  if (page === 'news') {
+    return (
+      <div className="content userarea faction-userarea" key="news">
+        <h2 className="faction-header-title">{t`Factions`}</h2>
+        {factionTabs}
+        <DiplomaticNews />
       </div>
     );
   }
@@ -1492,36 +1539,63 @@ const MyFactions = () => {
             )}
             <button
               type="button"
-              className={subTab === 'naps' ? 'active' : ''}
-              onClick={() => setSubTab('naps')}
+              className={subTab === 'diplomacy' ? 'active' : ''}
+              onClick={() => setSubTab('diplomacy')}
             >
-              {t`NAPs`} {!napsEnabled && <span className="faction-badge faction-badge-soon">{t`SOON`}</span>}
+              {t`Diplomacy`}
             </button>
-            {warsEnabled && (
-              <>
+          </nav>
+
+          {subTab === 'diplomacy' && (
+            <div className="faction-diplomacy-hub">
+              <nav className="diplomacy-subtabs" aria-label={t`Diplomacy sections`}>
                 <button
                   type="button"
-                  className={subTab === 'diplomacy' ? 'active' : ''}
-                  onClick={() => setSubTab('diplomacy')}
+                  className={diplomacyTab === 'naps' ? 'active' : ''}
+                  onClick={() => setDiplomacyTab('naps')}
+                >
+                  {t`NAPs`}
+                </button>
+                <button
+                  type="button"
+                  className={diplomacyTab === 'wars' ? 'active' : ''}
+                  onClick={() => setDiplomacyTab('wars')}
                 >
                   {t`Wars & Treaties`}
                 </button>
                 <button
                   type="button"
-                  className={subTab === 'alliances' ? 'active' : ''}
-                  onClick={() => setSubTab('alliances')}
+                  className={diplomacyTab === 'alliances' ? 'active' : ''}
+                  onClick={() => setDiplomacyTab('alliances')}
                 >
                   {t`Alliances`}
                 </button>
-              </>
-            )}
-          </nav>
+                <button
+                  type="button"
+                  className={diplomacyTab === 'news' ? 'active' : ''}
+                  onClick={() => setDiplomacyTab('news')}
+                >
+                  {t`Diplomatic News`}
+                </button>
+              </nav>
 
-          {subTab === 'diplomacy' && (
-            <FactionSystemTab faction={myFactionDetails} tab="diplomacy" />
-          )}
-          {subTab === 'alliances' && (
-            <FactionSystemTab faction={myFactionDetails} tab="alliances" />
+              {diplomacyTab === 'wars' && (
+                <FactionSystemTab
+                  faction={myFactionDetails}
+                  tab="diplomacy"
+                  diplomacySection="wars"
+                />
+              )}
+              {diplomacyTab === 'alliances' && (
+                <FactionSystemTab
+                  faction={myFactionDetails}
+                  tab="alliances"
+                />
+              )}
+              {diplomacyTab === 'news' && (
+                <DiplomaticNews />
+              )}
+            </div>
           )}
 
           {subTab === 'home' && (
@@ -2064,7 +2138,7 @@ const MyFactions = () => {
             </div>
           )}
 
-          {subTab === 'naps' && (
+          {subTab === 'diplomacy' && diplomacyTab === 'naps' && (
             <div className="faction-subpanel">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', flexWrap: 'wrap', gap: '8px' }}>
                 <h3 style={{ margin: 0 }}>{t`Non-Aggression Pacts (NAPs)`}</h3>
@@ -2072,8 +2146,8 @@ const MyFactions = () => {
                   <button
                     type="button"
                     className="faction-btn primary"
-                    disabled={!napsEnabled || !activeTemplate}
-                    title={!napsEnabled ? t`NAP feature is coming soon.` : (!activeTemplate ? t`Your faction must have an active template to propose NAPs` : undefined)}
+                    disabled={!napsEnabled}
+                    title={!napsEnabled ? t`NAP feature is coming soon.` : undefined}
                     onClick={openNewNapModal}
                   >
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
@@ -2219,7 +2293,12 @@ const MyFactions = () => {
                               <strong style={{ color: '#2563eb' }}>
                                 {[nap.territory.myTerritory, nap.territory.targetTerritory].filter(Boolean)
                                   .map((area) => `#${area.canvasId} [${area.x1}, ${area.y1}]–[${area.x2}, ${area.y2}]`).join(' / ')
-                                  || `#${nap.territory.canvasId} [${nap.territory.x1}, ${nap.territory.y1}]–[${nap.territory.x2}, ${nap.territory.y2}]`}
+                                  || `#${nap.territory.canvasId ?? 0} [${nap.territory.x1}, ${nap.territory.y1}]–[${nap.territory.x2}, ${nap.territory.y2}]`}
+                                {nap.territory.mode === 'template_mask' && nap.territory.pixelCount
+                                  ? ` · ${t`Template Mask`} (${nap.territory.pixelCount.toLocaleString()} px)`
+                                  : nap.territory.polygon?.length
+                                    ? ` · ${nap.territory.mode || 'polygon'} (${nap.territory.polygon.length} pts)`
+                                    : ''}
                               </strong>
                             ) : (
                               <span style={{ color: 'var(--caption-txt-color, #6b7280)' }}>
@@ -2236,9 +2315,57 @@ const MyFactions = () => {
                           </div>
                         </div>
 
+                        {Array.isArray(nap.terms) && nap.terms.length > 0 && (
+                          <ul className="faction-treaty-terms">
+                            {nap.terms.map((term, termIdx) => (
+                              <li key={`${nap.id}-clause-${termIdx}`}>
+                                <strong>{typeof term === 'string' ? t`Clause` : term.type}</strong>
+                                {': '}{formatTreatyTermSummary(term)}
+                                {term?.forcesCoalitionDissolution && (
+                                  <span className="treaty-term-warning-badge">
+                                    {t`Forces Coalition Dissolution`}
+                                  </span>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+
                         {/* Bottom Actions: Accept | Denied */}
                         {canManageNaps && (
                           <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px', marginTop: '4px', flexWrap: 'wrap' }}>
+                            {isPending && (
+                              <>
+                                <button
+                                  type="button"
+                                  className="faction-btn primary sm"
+                                  onClick={async () => {
+                                    try {
+                                      await requestJson(`/api/factions/naps/${nap.id}/approve`, { method: 'POST', body: '{}' });
+                                      loadNaps();
+                                    } catch (err) {
+                                      setErrors([err.message]);
+                                    }
+                                  }}
+                                >
+                                  {t`Accept & Enact`}
+                                </button>
+                                <button
+                                  type="button"
+                                  className="faction-btn danger sm"
+                                  onClick={async () => {
+                                    try {
+                                      await requestJson(`/api/factions/naps/${nap.id}/reject`, { method: 'POST', body: '{}' });
+                                      loadNaps();
+                                    } catch (err) {
+                                      setErrors([err.message]);
+                                    }
+                                  }}
+                                >
+                                  {t`Reject`}
+                                </button>
+                              </>
+                            )}
                             {isOutgoing && (
                               <button
                                 type="button"
@@ -2299,8 +2426,6 @@ const MyFactions = () => {
                     <button
                       type="button"
                       className="faction-btn primary"
-                      disabled={!activeTemplate}
-                      title={!activeTemplate ? 'Your faction must have an active template to propose NAPs' : undefined}
                       onClick={openNewNapModal}
                     >
                       <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
@@ -2432,64 +2557,34 @@ const MyFactions = () => {
                   </div>
 
                   <div className="faction-modal-field">
-                    <label>{t`Territory Distribution & Protection`}</label>
+                    <label>{t`Territory Selection & Auto Template Protection`}</label>
+                    <TerritorySelector
+                      value={advancedTerritory}
+                      onChange={setAdvancedTerritory}
+                      activeTemplate={activeTemplate}
+                    />
+                  </div>
 
-                    {activeTemplate ? (
-                      <div className="territory-config-summary-card">
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', flexWrap: 'wrap', gap: '8px' }}>
-                          <span style={{ fontSize: '0.84rem', color: 'var(--caption-txt-color, #6b7280)' }}>
-                            {t`Select the protected area for either faction. An unselected side uses its full active template.`}
-                          </span>
-                          <button
-                            type="button"
-                            className="faction-btn primary sm"
-                            onClick={() => setShowFullscreenTerritoryModal(true)}
-                            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-                          >
-                            <span>⛶</span> {t`Open Fullscreen Territory Editor`}
-                          </button>
-                        </div>
-
-                        {loadingTargetTemplate && (
-                          <p style={{ margin: '8px 0 0', fontSize: '0.82rem' }}>
-                            {t`Loading the target faction's active template…`}
-                          </p>
-                        )}
-                        {targetTemplateError && (
-                          <p className="errormessage" style={{ margin: '8px 0 0' }}>
-                            {targetTemplateError}
-                          </p>
-                        )}
-
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '6px 10px', background: 'rgba(239, 68, 68, 0.08)', borderRadius: '6px', border: '1px solid rgba(239, 68, 68, 0.25)' }}>
-                            <span style={{ color: '#ef4444', fontWeight: 600, fontSize: '0.85rem' }}>
-                              {t`Target`} [{napTargetTag.trim() || t`TARGET`}]:
-                            </span>
-                            <span style={{ fontSize: '0.82rem', fontFamily: 'monospace', color: '#b91c1c' }}>
-                              {targetBBox
-                                ? `${t`Canvas`} ${targetBBox.canvasId}: [${targetBBox.x1}, ${targetBBox.y1}] to [${targetBBox.x2}, ${targetBBox.y2}] (${targetBBox.x2 - targetBBox.x1 + 1}×${targetBBox.y2 - targetBBox.y1 + 1} px)`
-                                : t`Full template default`}
-                            </span>
-                          </div>
-
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '6px 10px', background: 'rgba(59, 130, 246, 0.08)', borderRadius: '6px', border: '1px solid rgba(59, 130, 246, 0.25)' }}>
-                            <span style={{ color: '#2563eb', fontWeight: 600, fontSize: '0.85rem' }}>
-                              {t`Your Faction`} [{myFactionDetails?.tag || t`YOU`}]:
-                            </span>
-                            <span style={{ fontSize: '0.82rem', fontFamily: 'monospace', color: '#1d4ed8' }}>
-                              {myBBox
-                                ? `${t`Canvas`} ${myBBox.canvasId}: [${myBBox.x1}, ${myBBox.y1}] to [${myBBox.x2}, ${myBBox.y2}] (${myBBox.x2 - myBBox.x1 + 1}×${myBBox.y2 - myBBox.y1 + 1} px)`
-                                : t`Full template default`}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    ) : (
-                      <p className="errormessage">
-                        {t`Your faction does not have an active template. Upload a template first to define NAP territory.`}
-                      </p>
-                    )}
+                  <div className="faction-modal-field">
+                    {(() => {
+                      const cleanTag = napTargetTag.trim().toUpperCase();
+                      const matchedTargetPacts = cleanTag.length >= 2
+                        ? allAlliances.filter((pact) => (pact.members || []).some(
+                            (m) => String(m.tag || '').toUpperCase() === cleanTag,
+                          ))
+                        : [];
+                      const matchedFactionId = matchedTargetPacts
+                        .flatMap((pact) => pact.members || [])
+                        .find((m) => String(m.tag || '').toUpperCase() === cleanTag)?.id || null;
+                      return (
+                        <TreatyTermsBuilder
+                          terms={napConditions}
+                          onChange={setNapConditions}
+                          targetFactionId={matchedFactionId}
+                          targetPacts={matchedTargetPacts}
+                        />
+                      );
+                    })()}
                   </div>
 
                   <div className="faction-modal-actions">
@@ -2499,9 +2594,9 @@ const MyFactions = () => {
                     <button
                       type="submit"
                       className="faction-btn primary"
-                      disabled={submittingNap || !activeTemplate || napTargetTag.trim().length < 2}
+                      disabled={submittingNap || napTargetTag.trim().length < 2}
                     >
-                      {submittingNap ? t`Submitting...` : t`Submit for moderator approval`}
+                      {submittingNap ? t`Submitting...` : t`Submit NAP / Treaty Proposal`}
                     </button>
                   </div>
                 </form>

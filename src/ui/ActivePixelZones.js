@@ -1,315 +1,399 @@
+/*
+ * Active pixel zone store for PixelStates Fire window, canvas markers,
+ * hotspot controls, unique user counts, and auto-expanding area screenshots.
+ */
 
-import { worldToScreen } from '../core/utils.js';
-import { TILE_SIZE } from '../core/constants.js';
+const ZONE_SIZE = 32;
+const ZONE_MERGE_MARGIN = 24;
+const ZONE_TTL_MS = 10 * 60 * 1000;
+const HOTSPOT_HIT_RADIUS_PX = 24;
+const MAX_SNAPSHOT_HISTORY = 5;
+const SNAPSHOT_EXPANSION_COOLDOWN_MS = 400;
 
-const MAX_MARKER_SCALE = 0.25;
-const MAX_VISIBLE_MARKERS = 150;
-const MIN_ZONE_PIXELS = 1;
-const DEFAULT_ZONE_RADIUS = 16;
-const ZONE_TIMEOUT = 40000;
+const syncedZonesByCanvas = new Map();
+const localZonesByCanvas = new Map();
+const snapshotsByCanvas = new Map();
+let snapshotProvider = null;
+let version = 0;
+let nextLocalZoneId = 1;
 
-let zonesByCanvas = new Map();
-let zonesVersion = 0;
-let zoneActivity = new Map();
+function getCanvasSnapshots(canvasId) {
+  let map = snapshotsByCanvas.get(canvasId);
+  if (!map) {
+    map = new Map();
+    snapshotsByCanvas.set(canvasId, map);
+  }
+  return map;
+}
+
+function getBoundsMetrics(zone) {
+  const minX = Math.floor(Number.isFinite(zone.minX) ? zone.minX : zone.x - 4);
+  const minY = Math.floor(Number.isFinite(zone.minY) ? zone.minY : zone.y - 4);
+  const maxX = Math.ceil(Number.isFinite(zone.maxX) ? zone.maxX : zone.x + 4);
+  const maxY = Math.ceil(Number.isFinite(zone.maxY) ? zone.maxY : zone.y + 4);
+  const width = Math.max(1, maxX - minX + 1);
+  const height = Math.max(1, maxY - minY + 1);
+  return {
+    minX,
+    minY,
+    maxX,
+    maxY,
+    width,
+    height,
+    area: width * height,
+  };
+}
+
+function hasBoundsExpanded(prevBounds, nextBounds) {
+  if (!prevBounds) return true;
+  return (
+    nextBounds.minX < prevBounds.minX
+    || nextBounds.minY < prevBounds.minY
+    || nextBounds.maxX > prevBounds.maxX
+    || nextBounds.maxY > prevBounds.maxY
+  );
+}
+
+function captureFallbackCanvasSnapshot(bounds) {
+  if (typeof document === 'undefined') return null;
+  const sourceCanvas = document.querySelector('canvas.ps-canvas-backdrop')
+    || document.querySelector('canvas');
+  if (!sourceCanvas || !sourceCanvas.width || !sourceCanvas.height) {
+    return null;
+  }
+  try {
+    const outW = 280;
+    const outH = 148;
+    const offscreen = document.createElement('canvas');
+    offscreen.width = outW;
+    offscreen.height = outH;
+    const ctx = offscreen.getContext('2d');
+    if (!ctx) return null;
+    ctx.imageSmoothingEnabled = false;
+    const pad = 40;
+    const sx = Math.max(
+      0,
+      Math.min(sourceCanvas.width - 1, Math.round(bounds.minX) - pad),
+    );
+    const sy = Math.max(
+      0,
+      Math.min(sourceCanvas.height - 1, Math.round(bounds.minY) - pad),
+    );
+    const sw = Math.max(
+      32,
+      Math.min(sourceCanvas.width - sx, Math.round(bounds.width) + pad * 2),
+    );
+    const sh = Math.max(
+      32,
+      Math.min(sourceCanvas.height - sy, Math.round(bounds.height) + pad * 2),
+    );
+    ctx.drawImage(sourceCanvas, sx, sy, sw, sh, 0, 0, outW, outH);
+    return offscreen.toDataURL('image/png');
+  } catch {
+    return null;
+  }
+}
+
+function ensureZoneSnapshot(canvasId, zoneKey, zone, now = Date.now()) {
+  const snapshots = getCanvasSnapshots(canvasId);
+  const existing = snapshots.get(zoneKey);
+  const bounds = getBoundsMetrics(zone);
+  const expanded = existing ? hasBoundsExpanded(existing.bounds, bounds) : false;
+
+  if (existing && !expanded) {
+    return existing;
+  }
+  if (
+    existing
+    && expanded
+    && (now - existing.capturedAt) < SNAPSHOT_EXPANSION_COOLDOWN_MS
+  ) {
+    return existing;
+  }
+
+  let dataUrl = null;
+  if (typeof snapshotProvider === 'function') {
+    try {
+      dataUrl = snapshotProvider(canvasId, {
+        ...bounds,
+        x: zone.x,
+        y: zone.y,
+        count: zone.count,
+        users: zone.users,
+      });
+    } catch {
+      dataUrl = null;
+    }
+  }
+  if (!dataUrl) {
+    dataUrl = captureFallbackCanvasSnapshot(bounds);
+  }
+  if (!dataUrl) {
+    return existing || null;
+  }
+
+  const revision = existing ? existing.revision + 1 : 1;
+  const entry = {
+    dataUrl,
+    capturedAt: now,
+    bounds,
+    revision,
+    expanded: revision > 1,
+  };
+  const history = existing
+    ? [...existing.history, entry].slice(-MAX_SNAPSHOT_HISTORY)
+    : [entry];
+  const record = {
+    ...entry,
+    history,
+  };
+  snapshots.set(zoneKey, record);
+  return record;
+}
+
+function attachSnapshotFields(zone, snapshot) {
+  const bounds = getBoundsMetrics(zone);
+  return {
+    ...zone,
+    width: bounds.width,
+    height: bounds.height,
+    screenshot: snapshot ? snapshot.dataUrl : null,
+    screenshotUpdatedAt: snapshot ? snapshot.capturedAt : null,
+    screenshotRevision: snapshot ? snapshot.revision : 0,
+    screenshotExpanded: snapshot ? snapshot.expanded : false,
+    screenshotHistory: snapshot ? snapshot.history : [],
+  };
+}
+
+function normalizeZone(zone, index = 0) {
+  const x = Number(zone.x);
+  const y = Number(zone.y);
+  const count = Math.max(1, Math.round(Number(zone.count) || 1));
+  const users = Math.max(
+    1,
+    Math.round(Number(zone.users ?? zone.userCount ?? 1) || 1),
+  );
+  const zoneKey = zone.id
+    || `s:${Math.round(x / ZONE_SIZE)}:${Math.round(y / ZONE_SIZE)}:${index}`;
+  return {
+    id: zoneKey,
+    x,
+    y,
+    count,
+    users,
+    minX: Number.isFinite(zone.minX) ? zone.minX : x - ZONE_SIZE / 2,
+    minY: Number.isFinite(zone.minY) ? zone.minY : y - ZONE_SIZE / 2,
+    maxX: Number.isFinite(zone.maxX) ? zone.maxX : x + ZONE_SIZE / 2,
+    maxY: Number.isFinite(zone.maxY) ? zone.maxY : y + ZONE_SIZE / 2,
+  };
+}
+
+function findMatchingLocalZone(bucket, x, y) {
+  let matched = null;
+  let bestDist = Infinity;
+  bucket.forEach((zone) => {
+    const withinBox = (
+      x >= zone.minX - ZONE_MERGE_MARGIN
+      && x <= zone.maxX + ZONE_MERGE_MARGIN
+      && y >= zone.minY - ZONE_MERGE_MARGIN
+      && y <= zone.maxY + ZONE_MERGE_MARGIN
+    );
+    if (withinBox) {
+      const dist = Math.hypot(x - zone.x, y - zone.y);
+      if (dist < bestDist) {
+        bestDist = dist;
+        matched = zone;
+      }
+    }
+  });
+  return matched;
+}
+
+function pruneLocalZones(canvasId, now = Date.now()) {
+  const bucket = localZonesByCanvas.get(canvasId);
+  if (!bucket) return [];
+  const snapshots = getCanvasSnapshots(canvasId);
+  const active = [];
+  bucket.forEach((zone, key) => {
+    if (now - zone.updatedAt > ZONE_TTL_MS) {
+      bucket.delete(key);
+      snapshots.delete(key);
+    } else {
+      const normalized = {
+        id: key,
+        x: zone.x,
+        y: zone.y,
+        count: zone.count,
+        users: Math.max(1, zone.users.size),
+        minX: zone.minX,
+        minY: zone.minY,
+        maxX: zone.maxX,
+        maxY: zone.maxY,
+      };
+      const snapshot = snapshots.get(key)
+        || ensureZoneSnapshot(canvasId, key, normalized, now);
+      active.push(attachSnapshotFields(normalized, snapshot));
+    }
+  });
+  return active;
+}
+
+export function registerZoneSnapshotProvider(providerFn) {
+  snapshotProvider = typeof providerFn === 'function' ? providerFn : null;
+  return () => {
+    if (snapshotProvider === providerFn) {
+      snapshotProvider = null;
+    }
+  };
+}
 
 export function setActivePixelZones(canvasId, zones) {
-  const id = String(canvasId);
+  if (canvasId === null || canvasId === undefined) return;
+  const keyId = Number(canvasId);
   const now = Date.now();
-
-  const previous = zoneActivity.get(id) || new Map();
-  const updated = new Map();
-
-  zones.forEach((zone) => {
-    const key = `${zone.x}:${zone.y}`;
-
-    updated.set(key, {
-      zone,
-      lastActivity: now,
+  const list = [];
+  if (Array.isArray(zones)) {
+    zones.forEach((zone, index) => {
+      const normalized = normalizeZone(zone, index);
+      const snapshot = ensureZoneSnapshot(
+        keyId,
+        normalized.id,
+        normalized,
+        now,
+      );
+      list.push(attachSnapshotFields(normalized, snapshot));
     });
-  });
+  }
+  syncedZonesByCanvas.set(keyId, list);
+  version += 1;
+}
 
-  // Əvvəlki zonaları saxla, əgər hələ 10 saniyə keçməyibsə
-  previous.forEach((data, key) => {
-    if (!updated.has(key) && now - data.lastActivity < ZONE_TIMEOUT) {
-      updated.set(key, data);
+export function recordActivePixels(canvasId, points, actorId = 'guest') {
+  if (
+    canvasId === null
+    || canvasId === undefined
+    || !Array.isArray(points)
+    || !points.length
+  ) {
+    return;
+  }
+  const keyId = Number(canvasId);
+  const now = Date.now();
+  let bucket = localZonesByCanvas.get(keyId);
+  if (!bucket) {
+    bucket = new Map();
+    localZonesByCanvas.set(keyId, bucket);
+  }
+  const actorValue = String(actorId || 'guest');
+  const touchedKeys = new Set();
+
+  points.forEach(([rawX, rawY]) => {
+    const x = Math.round(Number(rawX));
+    const y = Math.round(Number(rawY));
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+
+    const existing = findMatchingLocalZone(bucket, x, y);
+    if (existing) {
+      existing.count += 1;
+      existing.users.add(actorValue);
+      existing.minX = Math.min(existing.minX, x);
+      existing.minY = Math.min(existing.minY, y);
+      existing.maxX = Math.max(existing.maxX, x);
+      existing.maxY = Math.max(existing.maxY, y);
+      existing.x = (existing.minX + existing.maxX) / 2;
+      existing.y = (existing.minY + existing.maxY) / 2;
+      existing.updatedAt = now;
+      touchedKeys.add(existing.id);
+    } else {
+      const id = `local:${nextLocalZoneId}`;
+      nextLocalZoneId += 1;
+      bucket.set(id, {
+        id,
+        x,
+        y,
+        count: 1,
+        users: new Set([actorValue]),
+        minX: x,
+        minY: y,
+        maxX: x,
+        maxY: y,
+        updatedAt: now,
+      });
+      touchedKeys.add(id);
     }
   });
 
-  zoneActivity.set(id, updated);
+  touchedKeys.forEach((zoneKey) => {
+    const zone = bucket.get(zoneKey);
+    if (!zone) return;
+    ensureZoneSnapshot(
+      keyId,
+      zoneKey,
+      {
+        id: zoneKey,
+        x: zone.x,
+        y: zone.y,
+        count: zone.count,
+        users: Math.max(1, zone.users.size),
+        minX: zone.minX,
+        minY: zone.minY,
+        maxX: zone.maxX,
+        maxY: zone.maxY,
+      },
+      now,
+    );
+  });
 
-  const activeZones = [...updated.values()].map((item) => item.zone);
-
-  zonesByCanvas.set(id, activeZones);
-  zonesVersion += 1;
+  version += 1;
 }
 
-export function getActivePixelZonesVersion() {
-  return zonesVersion;
-}
-
-export function hasActivePixelActivity(canvasId) {
-  return getActivePixelZones(canvasId).length > 0;
+export function recordActivePixel(canvasId, x, y, actorId = 'guest') {
+  recordActivePixels(canvasId, [[x, y]], actorId);
 }
 
 export function getActivePixelZones(canvasId) {
-  const id = String(canvasId);
-  const activity = zoneActivity.get(id);
-
-  if (!activity) return [];
-
-  const now = Date.now();
-  let changed = false;
-
-  activity.forEach((data, key) => {
-    if (now - data.lastActivity >= ZONE_TIMEOUT) {
-      activity.delete(key);
-      changed = true;
-    }
-  });
-
-  if (changed) {
-    zonesByCanvas.set(
-      id,
-      [...activity.values()].map((item) => item.zone),
-    );
-    zonesVersion += 1;
+  if (canvasId === null || canvasId === undefined) return [];
+  const keyId = Number(canvasId);
+  const synced = syncedZonesByCanvas.get(keyId) || [];
+  const local = pruneLocalZones(keyId);
+  if (synced.length > 0 && local.length === 0) {
+    return synced;
   }
-
-  return zonesByCanvas.get(id) || [];
+  if (local.length > 0 && synced.length === 0) {
+    return local;
+  }
+  return [...synced, ...local];
 }
 
-export function renderActivePixelZones(
-  context,
-  canvasId,
-  viewport,
-  view,
-  scale,
-) {
-  if (scale > MAX_MARKER_SCALE) return;
-
-  getVisibleClusters(canvasId, viewport, view, scale)
-    .slice(0, MAX_VISIBLE_MARKERS)
-    .forEach((cluster) => {
-      if (cluster.pixels < MIN_ZONE_PIXELS) return;
-      drawActivityMarker(
-        context,
-        cluster.screenX,
-        cluster.screenY,
-        cluster.pixels,
-        cluster.users,
-      );
-    });
+export function getActivePixelZonesVersion() {
+  return version;
 }
 
 export function getActivePixelZoneAt(
   canvasId,
   viewport,
   view,
-  scale,
-  [x, y],
+  viewscale,
+  screenCoords,
 ) {
-  if (scale > MAX_MARKER_SCALE) return null;
-
-  let closest = null;
-  let closestDistance = 24;
-
-  getVisibleClusters(canvasId, viewport, view, scale).forEach((cluster) => {
-    if (cluster.pixels < MIN_ZONE_PIXELS) return;
-
-    const distance = Math.hypot(x - cluster.screenX, y - cluster.screenY);
-
-    if (distance <= closestDistance) {
-      closest = cluster;
-      closestDistance = distance;
+  if (!viewport || !view || !screenCoords || !Number.isFinite(viewscale)) {
+    return null;
+  }
+  const zones = getActivePixelZones(canvasId);
+  if (!zones.length) return null;
+  const [clickX, clickY] = screenCoords;
+  const halfW = (viewport.width || window.innerWidth) / 2;
+  const halfH = (viewport.height || window.innerHeight) / 2;
+  let best = null;
+  let bestDist = HOTSPOT_HIT_RADIUS_PX;
+  zones.forEach((zone) => {
+    const sx = (zone.x - view[0]) * viewscale + halfW;
+    const sy = (zone.y - view[1]) * viewscale + halfH;
+    const dist = Math.hypot(clickX - sx, clickY - sy);
+    if (dist <= bestDist) {
+      bestDist = dist;
+      best = zone;
     }
   });
-
-  if (!closest) return null;
-
-  const worldWidth = Math.max(
-    TILE_SIZE,
-    closest.maxX - closest.minX,
-  );
-
-  const worldHeight = Math.max(
-    TILE_SIZE,
-    closest.maxY - closest.minY,
-  );
-
-  const targetScale = Math.min(
-    18,
-    Math.max(
-      3,
-      Math.min(
-        (viewport.width * 0.72) / worldWidth,
-        (viewport.height * 0.72) / worldHeight,
-      ),
-    ),
-  );
-
-  return {
-    x: closest.worldX,
-    y: closest.worldY,
-    scale: targetScale,
-  };
-}
-
-function getVisibleClusters(canvasId, viewport, view, scale) {
-  const zones = getActivePixelZones(canvasId);
-
-  if (!zones.length) return [];
-
-  const visibleZones = [];
-
-  zones.forEach((zone) => {
-    const {
-      x, y, count, minX, minY, maxX, maxY,
-    } = zone;
-
-    const [screenX, screenY] = worldToScreen(
-      view,
-      scale,
-      viewport,
-      [x, y],
-    );
-
-    const worldMinX = Number.isFinite(minX)
-      ? minX
-      : x - DEFAULT_ZONE_RADIUS;
-
-    const worldMinY = Number.isFinite(minY)
-      ? minY
-      : y - DEFAULT_ZONE_RADIUS;
-
-    const worldMaxX = Number.isFinite(maxX)
-      ? maxX
-      : x + DEFAULT_ZONE_RADIUS;
-
-    const worldMaxY = Number.isFinite(maxY)
-      ? maxY
-      : y + DEFAULT_ZONE_RADIUS;
-
-    const screenRadiusX = Math.max(
-      DEFAULT_ZONE_RADIUS,
-      Math.max(Math.abs(x - worldMinX), Math.abs(worldMaxX - x)),
-    ) * scale;
-
-    const screenRadiusY = Math.max(
-      DEFAULT_ZONE_RADIUS,
-      Math.max(Math.abs(y - worldMinY), Math.abs(worldMaxY - y)),
-    ) * scale;
-
-    if (
-      screenX < -screenRadiusX - 32
-      || screenX > viewport.width + screenRadiusX + 32
-      || screenY < -screenRadiusY - 32
-      || screenY > viewport.height + screenRadiusY + 32
-    ) return;
-
-    visibleZones.push({
-      screenX,
-      screenY,
-      worldX: x,
-      worldY: y,
-      pixels: count,
-      users: zone.users,
-      minX: worldMinX,
-      maxX: worldMaxX,
-      minY: worldMinY,
-      maxY: worldMaxY,
-    });
-  });
-
-  return visibleZones;
-}
-
-function drawActivityMarker(context, x, y, count, users) {
-  const radius = 20;
-
-  const heat = users
-    ? Math.min(1, users / 8)
-    : Math.min(1, Math.log10(count + 1) / 4);
-
-  const phase = Date.now() / 180 + 1.7 * (users || count);
-
-  const flameSize = (20 + 16 * heat) * (
-    1 + 0.06 * Math.sin(phase) + 0.04 * Math.sin(2.3 * phase)
-  );
-
-  const glowRadius = 1.2 * Math.max(flameSize, radius * 2.4);
-
-  const glow = context.createRadialGradient(
-    x, y, 0, x, y, glowRadius,
-  );
-
-  glow.addColorStop(0, `rgba(255, 120, 0, ${0.35 + 0.2 * heat})`);
-  glow.addColorStop(1, 'rgba(255, 60, 0, 0)');
-
-  context.save();
-  context.fillStyle = glow;
-  context.beginPath();
-  context.arc(x, y, glowRadius, 0, Math.PI * 2);
-  context.fill();
-
-  context.lineWidth = 3;
-  context.fillStyle = '#fff';
-  context.strokeStyle = '#f07816';
-  context.beginPath();
-  context.arc(x, y, radius, 0, Math.PI * 2);
-  context.fill();
-  context.stroke();
-
-  context.fillStyle = '#f07816';
-  context.save();
-  context.translate(x, y);
-  context.scale(flameSize / 20, flameSize / 20);
-  context.translate(-x, -y);
-
-  context.beginPath();
-  context.moveTo(x, y + 9);
-  context.bezierCurveTo(x - 11, y + 1, x - 4, y - 8, x, y - 14);
-  context.bezierCurveTo(x + 1, y - 7, x + 11, y - 3, x + 7, y + 6);
-  context.bezierCurveTo(x + 5, y + 11, x + 1, y + 12, x, y + 9);
-  context.fill();
-
-  context.fillStyle = '#ffbe36';
-  context.beginPath();
-  context.ellipse(x + 1, y + 5, 3.5, 5, 0, 0, Math.PI * 2);
-  context.fill();
-  context.restore();
-
-  if (count >= MIN_ZONE_PIXELS) {
-    const badgeX = x + 14;
-    const badgeY = y + 14;
-    const badgeText = formatActivityCount(count);
-
-    context.fillStyle = '#e34d22';
-    context.beginPath();
-    context.arc(badgeX, badgeY, 11, 0, Math.PI * 2);
-    context.fill();
-
-    context.fillStyle = '#fff';
-    context.font = 'bold 9px sans-serif';
-    context.textAlign = 'center';
-    context.textBaseline = 'middle';
-    context.fillText(badgeText, badgeX, badgeY, 18);
-  }
-
-  context.restore();
-}
-
-function formatActivityCount(count) {
-  if (count >= 1000000) {
-    const millions = (count / 1000000)
-      .toFixed(1)
-      .replace(/\.0$/, '');
-
-    return `${millions}M`;
-  }
-
-  if (count >= 1000) {
-    return `${Math.floor(count / 1000)}k`;
-  }
-
-  return String(count);
+  return best;
 }

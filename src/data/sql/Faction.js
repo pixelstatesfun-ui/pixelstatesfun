@@ -459,12 +459,13 @@ export async function populateFactionRankEntities(rawRanks) {
     'SELECT f.id, f.tag, f.name, f.title AS displayName, f.memberCount, '
     + 'IF(f.dailyPixelsDate = UTC_DATE(), f.dailyPixels, 0) AS storedToday, '
     + 'rt.title AS rankTitle, CONCAT(m.shortId, \':\', m.extension) AS avatarId, '
-    + 'a.id AS allianceId, a.name AS allianceName '
+    + 'a.id AS allianceId, a.name AS allianceName, a.allianceType AS allianceType '
     + 'FROM Factions f '
     + 'LEFT JOIN FactionRankThresholds rt ON rt.rankCode = f.rankCode '
     + 'LEFT JOIN Media m ON m.id = f.avatar '
     + 'LEFT JOIN FactionAllianceMembers am ON am.factionId = f.id '
-    + 'LEFT JOIN FactionAlliances a ON a.id = am.allianceId AND a.status = \'active\' '
+    + 'LEFT JOIN FactionAlliances a ON a.id = am.allianceId '
+    + 'AND a.status = \'active\' AND a.allianceType IN (\'union\', \'coalition\') '
     + 'WHERE (f.flags & ?) = 0',
     [0x01 << FACTION_FLAGS.PRIV],
   );
@@ -472,12 +473,18 @@ export async function populateFactionRankEntities(rawRanks) {
   const allianceMembers = new Map();
   for (const faction of factionRows) {
     const id = Number(faction.id);
-    const allianceId = faction.allianceId ? Number(faction.allianceId) : null;
+    const allianceType = faction.allianceType || null;
+    const isGroupedPact = allianceType === 'union' || allianceType === 'coalition';
+    const allianceId = (faction.allianceId && isGroupedPact)
+      ? Number(faction.allianceId) : null;
     if (allianceId) {
       if (!allianceMembers.has(allianceId)) allianceMembers.set(allianceId, []);
-      allianceMembers.get(allianceId).push({
-        id, tag: faction.tag, name: faction.name, displayName: faction.displayName,
-      });
+      const existingMembers = allianceMembers.get(allianceId);
+      if (!existingMembers.some((member) => member.id === id)) {
+        existingMembers.push({
+          id, tag: faction.tag, name: faction.name, displayName: faction.displayName,
+        });
+      }
     }
     const scores = scoreByFactionId.get(id);
     const totalPixels = Number(scores?.t) || 0;
@@ -488,14 +495,16 @@ export async function populateFactionRankEntities(rawRanks) {
     const key = allianceId ? `alliance:${allianceId}` : `faction:${id}`;
     let entity = entities.get(key);
     if (!entity) {
+      const pactLabel = allianceType === 'union' ? 'Union' : 'Coalition';
       entity = {
         id: allianceId || id,
         type: allianceId ? 'alliance' : 'faction',
+        allianceType: allianceId ? allianceType : null,
         name: allianceId ? faction.allianceName : faction.name,
         displayName: allianceId ? faction.allianceName : faction.displayName,
         tag: allianceId ? null : faction.tag,
-        title: allianceId ? 'Coalition' : faction.rankTitle,
-        avatarId: allianceId ? null : faction.avatarId,
+        title: allianceId ? pactLabel : faction.rankTitle,
+        avatarId: allianceId ? `/api/factions/alliances/${allianceId}/image/avatar` : faction.avatarId,
         memberCount: 0,
         totalPixels: 0,
         todayPixels: 0,
@@ -503,19 +512,21 @@ export async function populateFactionRankEntities(rawRanks) {
       };
       entities.set(key, entity);
     }
-    entity.memberCount += Number(faction.memberCount) || 0;
-    entity.totalPixels += totalPixels;
-    entity.todayPixels += todayPixels;
-    entity.factions.push({
-      id,
-      tag: faction.tag,
-      name: faction.name,
-    });
+    if (!entity.factions.some((entry) => entry.id === id)) {
+      entity.memberCount += Number(faction.memberCount) || 0;
+      entity.totalPixels += totalPixels;
+      entity.todayPixels += todayPixels;
+      entity.factions.push({
+        id,
+        tag: faction.tag,
+        name: faction.name,
+      });
+    }
   }
   const rankings = [...entities.values()];
   for (const entity of rankings) {
     if (entity.type === 'alliance') {
-      entity.members = allianceMembers.get(entity.id).sort(
+      entity.members = (allianceMembers.get(entity.id) || []).sort(
         (a, b) => a.displayName.localeCompare(b.displayName) || a.id - b.id,
       );
     }

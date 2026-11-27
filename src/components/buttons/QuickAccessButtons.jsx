@@ -2,9 +2,13 @@ import { memo } from 'preact/compat';
 import { useSelector } from '../../store/react-redux/index.js';
 import { t } from 'ttag';
 
-import FaPaintRoller from '../../icons/FaPaintRoller.svg';
-import MdPerson from '../../icons/MdPerson.svg';
-import Flame from "../../icons/icons-flame.svg";
+import { MdPerson } from 'react-icons/md';
+import {
+  FaFire,
+  FaNewspaper,
+  FaPaintRoller,
+  FaShieldAlt,
+} from 'react-icons/fa';
 import useLink from '../hooks/link.js';
 
 const QuickAccessButtons = () => {
@@ -27,6 +31,32 @@ const QuickAccessButtons = () => {
         <MdPerson />
       </button>
 
+      <button
+        type="button"
+        id="quickfactions"
+        className="actionbuttons quickaccess-button"
+        title={t`Factions`}
+        aria-label={t`Factions`}
+        onClick={() => link('FACTIONS', { target: 'parent', reuse: true })}
+      >
+        <FaShieldAlt />
+      </button>
+
+      <button
+        type="button"
+        id="quicknews"
+        className="actionbuttons quickaccess-button"
+        title={t`Diplomatic News`}
+        aria-label={t`Diplomatic News`}
+        onClick={() => link('FACTIONS', {
+          target: 'parent',
+          reuse: true,
+          args: { page: 'news' },
+        })}
+      >
+        <FaNewspaper />
+      </button>
+
       {templatesAvailable && (
         <button
           type="button"
@@ -40,19 +70,19 @@ const QuickAccessButtons = () => {
         </button>
       )}
 
-<button
-  type="button"
-  id="quickfire"
-  className="actionbuttons quickaccess-button"
-  title="Fire"
-  aria-label="Fire"
-  onClick={() => link('FIRE', {
-    target: 'parent',
-    reuse: true,
-  })}
->
-  <Flame />
-</button>
+      <button
+        type="button"
+        id="quickfire"
+        className="actionbuttons quickaccess-button"
+        title="Fire"
+        aria-label="Fire"
+        onClick={() => link('FIRE', {
+          target: 'parent',
+          reuse: true,
+        })}
+      >
+        <FaFire />
+      </button>
     </div>
   );
 };

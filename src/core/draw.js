@@ -355,7 +355,8 @@ export default async function drawByOffsets(
     if (pxlCnt > 0 && !is3d) {
       const activityPixels = placedPixels.slice(0, pxlCnt)
         .map(([pixelI, pixelJ, offset]) => [pixelI, pixelJ, offset]);
-      recordPixelActivity(canvasId, activityPixels).catch((error) => {
+      const actorKey = userId ? `u:${userId}` : `ip:${ipString}`;
+      recordPixelActivity(canvasId, activityPixels, actorKey).catch((error) => {
         logger.error(`Failed to record active pixel zones: ${error.message}`);
       });
     }

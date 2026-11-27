@@ -1,106 +1,42 @@
-/**
- * get extension and name from filename
- * @param filename
- * @return [ name, extension ]
+/*
+ * Media ID and filename URL utilities
  */
-export function splitFilename(filename) {
-  const seperator = filename.lastIndexOf('.');
-  return [
-    filename.substring(0, seperator),
-    filename.substring(seperator + 1),
-  ];
+
+export function getUrlsFromMediaIdAndName(mediaId, name = 'media') {
+  if (!mediaId) {
+    return [null, null, null];
+  }
+  const str = String(mediaId);
+  if (str.startsWith('/') || /^https?:\/\//i.test(str)
+    || str.startsWith('data:')) {
+    return [str, str, str];
+  }
+  const encoded = encodeURIComponent(str);
+  const safeName = encodeURIComponent(name || 'media');
+  const full = `/api/media/${encoded}/${safeName}`;
+  return [full, full, full];
 }
 
-/**
- * add id to filename, used to distinguish between multiple files of the same
- * name
- * @param filename
- * @param id integer
- */
-export function addIdToFilename(filename, id) {
-  id = String(id);
-  const extSeperator = filename.lastIndexOf('.');
-  if (extSeperator === -1) {
-    return `${filename}:${id}`;
-  }
-  return `${filename.substring(0, extSeperator)}:${id
-  }${filename.substring(extSeperator)}`;
-}
-
-/**
- * extract id from filename in the form of name:id.png or name:id
- * @param filename
- * @return [filename, id]
- */
-export function extractIdFromFilename(filename) {
-  const idSeperator = filename.lastIndexOf(':');
-  if (idSeperator === -1) {
-    return [filename, null];
-  }
-  let extSeperator = filename.indexOf('.', idSeperator + 1);
-  if (extSeperator === -1) {
-    extSeperator = filename.length;
-  }
-  return [
-    filename.substring(0, idSeperator) + filename.substring(extSeperator),
-    parseInt(filename.substring(idSeperator + 1, extSeperator), 10),
-  ];
-}
-
-/**
- * get mediaId from url
- * @param url
- */
 export function getMediaDetailsFromUrl(url) {
-  if (url) {
-    if (url.startsWith('/') && url[4] !== '/' && url[9] === '/') {
-      const shortId = url.substring(3, 9);
-      let extEnd = url.indexOf('&', 10);
-      if (extEnd === -1) {
-        extEnd = url.length;
-      }
-      const extStart = url.lastIndexOf('.', extEnd) + 1;
-      const extension = url.substring(extStart, extEnd);
-      const name = decodeURIComponent(url.substring(10, extStart - 1));
-      return [`${shortId}:${extension}`, name];
-    }
+  if (!url) {
+    return ['', ''];
   }
-  return [null, null];
+  const parts = String(url).split('/').filter(Boolean);
+  const title = parts[parts.length - 1] || 'media';
+  const mediaId = parts.length >= 2 ? parts[parts.length - 2] : title;
+  return [mediaId, title];
 }
 
-/**
- * generate url from media id and name
- * @param mediaId
- * @return url or null
- */
-export function getUrlFromMediaIdAndName(mediaId, name) {
-  if (typeof mediaId !== 'string' || !mediaId) {
-    return null;
-  }
-  const [shortId, extension] = mediaId.split(':');
-  if (!shortId || !extension) {
-    return null;
-  }
-  return `/m/${shortId}/${encodeURIComponent(name || 'm')}.${extension}`;
+export function addIdToFilename(filename, id) {
+  if (!filename) return String(id || '');
+  if (!id) return filename;
+  const dot = filename.lastIndexOf('.');
+  if (dot <= 0) return `${filename}_${id}`;
+  return `${filename.slice(0, dot)}_${id}${filename.slice(dot)}`;
 }
 
-/**
- * generate urls with tumbnail and icons from media id
- * @param mediaId
- * @return [ url, thumbnail, icon ] or null
- */
-export function getUrlsFromMediaIdAndName(mediaId, name) {
-  if (typeof mediaId !== 'string' || !mediaId) {
-    return [null, null, null];
-  }
-  const [shortId, extension] = mediaId.split(':');
-  if (!shortId || !extension) {
-    return [null, null, null];
-  }
-  name = encodeURIComponent(name || 'm');
-  return [
-    `/m/${shortId}/${name}.${extension}`,
-    `/m/t/${shortId}/${name}.${extension}.webp`,
-    `/m/i/${shortId}/${name}.${extension}.webp`,
-  ];
+export function extractIdFromFilename(filename) {
+  if (!filename) return '';
+  const match = String(filename).match(/_([a-zA-Z0-9:-]+)(?:\.[^.]+)?$/);
+  return match ? match[1] : '';
 }

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { t } from 'ttag';
 
 import { USERLVL } from '../core/constants.js';
-import IoTrashOutline from '../icons/IoTrashOutline.svg';
+import { IoTrashOutline } from 'react-icons/io5';
 import {
   requestDeleteNotification, requestNotifications,
 } from '../store/actions/fetch.js';

@@ -7,9 +7,9 @@ import {
 import { Fragment } from 'preact';
 import { useDispatch } from '../../store/react-redux/index.js';
 import { t } from 'ttag';
-import RiSave3Line from '../../icons/RiSave3Line.svg';
-import IoTrashOutline from '../../icons/IoTrashOutline.svg';
-import IoIosRefresh from '../../icons/IoIosRefresh.svg';
+import { RiSave3Line } from 'react-icons/ri';
+import { IoTrashOutline } from 'react-icons/io5';
+import { IoIosRefresh } from 'react-icons/io';
 
 import { cdn } from '../../utils/utag.js';
 import { getUrlsFromMediaIdAndName } from '../../utils/media/utils.js';
@@ -45,8 +45,8 @@ import { FACTION_PERMISSIONS } from '../../core/constants.js';
 import useLink from '../hooks/link.js';
 import ClipboardCopyField from '../ClipboardCopyField.jsx';
 import FileUpload from '../FileUpload.jsx';
-import Stat from '../Stat.jsx';
 import FactionSystemTab from './FactionSystemTab.jsx';
+import FactionProfileView from './FactionProfileView.jsx';
 import { buildPopUpUrl } from './popUpAvailable.js';
 
 /* eslint-disable max-len */
@@ -784,122 +784,74 @@ const Faction = () => {
   if (!availableTabs.includes(activeTab)) {
     content = <h3 key="notallowed">{t`Not Allowed`}</h3>;
   } else if (activeTab === 'overview') {
-    /* ============================== OVERVIEW =============================== */
-    const [
-      mediaUrl, thumbUrl,
-    ] = getUrlsFromMediaIdAndName(faction.avatarId, 'avatar');
+    /* ============================== OVERVIEW (Unified Infobox) =============================== */
+    const unifiedProfile = {
+      ...faction,
+      flag: faction.avatarId || faction.flag,
+      name: faction.title || faction.name,
+      members: faction.members || memberData || [],
+      naps: faction.naps || [],
+      alliances: faction.alliances || [],
+      todayPixels: faction.dailyTotalPixels ?? faction.todayPixels,
+    };
+    const extraActions = (
+      <>
+        <ClipboardCopyField
+          hideField="true"
+          text={window.location.origin + buildPopUpUrl('FACTION', { name })}
+        />
+        <button
+          type="button"
+          title={t`Refresh`}
+          onClick={() => {
+            setFactionData(null);
+            setBanData(null);
+            setMemberData(null);
+            setInviteData(null);
+            setConfirm(null);
+          }}
+        ><IoIosRefresh /></button>
+        {(powerlvl === null && faction.isPublic) && (
+          <button
+            key="joinbutton"
+            type="button"
+            disabled={submitting}
+            title={t`Join Faction`}
+            onClick={() => {
+              submitJoinFaction(name);
+            }}
+          >
+            {t`Join Faction`}
+          </button>
+        )}
+        {(powerlvl !== null) && (
+          <button
+            key="leavebutton"
+            type="button"
+            disabled={submitting}
+            className={confirm ? 'confirm' : undefined}
+            title={t`Leave Faction`}
+            onClick={() => {
+              if (confirm !== 'leave') {
+                setConfirm('leave');
+                return;
+              }
+              submitLeaveFaction(name);
+            }}
+          >
+            {/* t: button for leaving a faction, it asks for confirmation */}
+            {(confirm === 'leave') ? t`Confirm Leave` : t`Leave Faction`}
+          </button>
+        )}
+      </>
+    );
     content = (
       <div className={`factionwin-${activeTab}`} key={activeTab}>
-        {(thumbUrl) && (
-          <div
-            className="avatar-big"
-            style={{
-              backgroundImage: `url(${cdn`${thumbUrl}`})`,
-            }}
-            onClick={(evt) => {
-              evt.stopPropagation();
-              link('PLAYER', {
-                reuse: true,
-                target: 'blank',
-                args: { uri: mediaUrl },
-              });
-            }}
-          />
-        )}
-        <span className="factionlist-key">{t`Description`}: </span>{faction.description}<br />
-        <Stat
-          text={t`Today Placed Pixels`}
-          value={faction.dailyTotalPixels}
+        <FactionProfileView
+          profile={unifiedProfile}
+          profileNaps={unifiedProfile.naps}
+          extraActions={extraActions}
         />
-        <Stat
-          text={t`Daily Rank`}
-          value={faction.dailyRanking}
-          zero="N/A"
-          rank
-        />
-        <Stat
-          text={t`Placed Pixels`}
-          value={faction.totalPixels}
-        />
-        <Stat
-          text={t`Total Rank`}
-          value={faction.ranking}
-          zero="N/A"
-          rank
-        />
-        <Stat
-          text={t`Members`}
-          value={faction.memberCount}
-        />
-        {(faction.roles.find((r) => r.customFlagId)) && (
-          <Fragment key="rolelist">
-            <span className="factionlist-key">{t`Role Flags`}: </span>
-            {faction.roles.map(({ customFlagId, name: roleName }) => {
-              const [flagUrl] = getUrlsFromMediaIdAndName(customFlagId);
-              if (!flagUrl) {
-                return null;
-              }
-              return (
-                <img
-                  key={customFlagId}
-                  className="chatflag presentation"
-                  src={cdn`${flagUrl}`}
-                  title={roleName}
-                  alt=""
-                />
-              );
-            })}<br />
-          </Fragment>
-        )}
-        <div className="form-actions">
-          <ClipboardCopyField
-            hideField="true"
-            text={window.location.origin + buildPopUpUrl('FACTION', { name })}
-          />
-          <button
-            type="button"
-            title={t`Refresh`}
-            onClick={() => {
-              setFactionData(null);
-              setBanData(null);
-              setMemberData(null);
-              setInviteData(null);
-              setConfirm(null);
-            }}
-          ><IoIosRefresh /></button>
-          {(powerlvl === null && faction.isPublic) && (
-            <button
-              key="joinbutton"
-              type="button"
-              disabled={submitting}
-              title={t`Join Faction`}
-              onClick={() => {
-                submitJoinFaction(name);
-              }}
-            >
-              {t`Join Faction`}
-            </button>
-          )}
-          {(powerlvl !== null) && (
-            <button
-              key="leavebutton"
-              type="button"
-              disabled={submitting}
-              className={confirm ? 'confirm' : undefined}
-              title={t`Leave Faction`}
-              onClick={() => {
-                if (confirm !== 'leave') {
-                  setConfirm('leave');
-                  return;
-                }
-                submitLeaveFaction(name);
-              }}
-            >
-              {/* t: button for leaving a faction, it asks for confirmation */}
-              {(confirm === 'leave') ? t`Confirm Leave` : t`Leave Faction`}
-            </button>
-          )}
-        </div>
       </div>
     );
   } else if (activeTab === 'templates'

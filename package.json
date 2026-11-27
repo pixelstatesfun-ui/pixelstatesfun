@@ -16,9 +16,10 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "npm --prefix dist start",
+    "dev": "node server.js",
+    "start": "node server.js",
     "start:local": "node scripts/start-local.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build-preview.js",
     "build:parallel": "node scripts/build.js --parallel",
     "build:server": "node scripts/build.js --server",
     "build:client": "node scripts/build.js --client",
@@ -29,7 +30,7 @@
     "deploy": "./deployment/deploy.sh",
     "deploy:server": "./deployment/deploy-server.sh",
     "minify-css": "node scripts/minifyCss.js",
-    "lint": "cd $INIT_CWD && eslint",
+    "lint": "eslint server.js webpack.config.preview.js src/preview.jsx src/store src/utils src/ui src/socket src/components/Table.jsx src/components/FactionCoordination.jsx src/components/buttons/QuickAccessButtons.jsx src/components/windows/Statistics.jsx src/components/windows/MyFactions.jsx src/components/windows/FactionBrowser.jsx src/components/windows/FactionSystemTab.jsx src/components/windows/Faction.jsx src/components/windows/DiplomaticNews.jsx src/components/windows/TreatyTermsBuilder.jsx src/components/windows/TerritorySelector.jsx src/components/windows/FactionProfileView.jsx",
     "lint:src": "eslint src",
     "lint:fix": "eslint src --fix"
   },

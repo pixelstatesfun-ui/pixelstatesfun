@@ -1,0 +1,852 @@
+/*
+ * Minimal additive styles for the Factions & Diplomacy Overhaul.
+ * PixelStates' authentic base styling and HUD come directly from
+ * /styles/default.css and /styles/theme-*.css without overriding them.
+ */
+
+.ps-canvas-backdrop {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: crosshair;
+  z-index: 0;
+}
+
+.window .win-content {
+  overflow-y: auto;
+  height: calc(100% - 28px);
+}
+
+.window .win-content > .content {
+  padding: 8px 10px;
+}
+
+.quickaccess-button svg,
+#menubutton svg,
+#chatbutton svg,
+#palselbutton svg,
+.menuelement svg,
+.onlinebox svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.onlinebox svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Union, Coalition & Bilateral badge variants inheriting PixelStates .faction-badge */
+.faction-badge-union,
+.faction-alliance-category-badge.union {
+  background: rgba(57, 135, 232, 0.16);
+  border: 1px solid var(--link-color, #3987e8);
+  color: var(--link-color, #3987e8);
+}
+
+.faction-badge-coalition,
+.faction-alliance-category-badge.coalition {
+  background: rgba(183, 60, 60, 0.16);
+  border: 1px solid var(--error-txt-color, #b73c3c);
+  color: var(--error-txt-color, #b73c3c);
+}
+
+.faction-badge-alliance,
+.faction-alliance-category-badge.alliance {
+  background: rgba(124, 58, 237, 0.14);
+  border: 1px solid #7c3aed;
+  color: #7c3aed;
+}
+
+.faction-alliance-category-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 4px;
+}
+
+/* Unified Diplomacy Sub-tabs */
+.diplomacy-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.diplomacy-subtabs button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  background: var(--pixelstates-raised, var(--control-bg-highlight, #d9d9d9));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  cursor: pointer;
+}
+
+.diplomacy-subtabs button.active {
+  background: var(--pixelstates-hover, var(--faction-accent, var(--link-color, #3987e8)));
+  border-color: var(--pixelstates-accent, var(--faction-accent, var(--link-color, #3987e8)));
+  color: var(--pixelstates-text, #fff);
+}
+
+/* Diplomatic News */
+.diplomatic-news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.diplomatic-news-header h3 {
+  margin: 0 0 4px;
+}
+
+.diplomatic-news-subtitle {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--pixelstates-muted, var(--caption-txt-color, #6e6e6e));
+}
+
+.diplomatic-news-list {
+  display: grid;
+  gap: 10px;
+}
+
+.diplomatic-news-card {
+  padding: 12px 14px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 12px;
+  background: var(--pixelstates-raised, var(--control-bg, #f7f7f7));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+}
+
+.diplomatic-news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+  color: var(--pixelstates-muted, var(--caption-txt-color, #6e6e6e));
+}
+
+.diplomatic-news-kind {
+  font-weight: 700;
+}
+
+.news-tone-war {
+  color: var(--error-txt-color, #b73c3c);
+}
+
+.news-tone-treaty {
+  color: #16a34a;
+}
+
+.news-tone-union {
+  color: var(--pixelstates-accent, var(--link-color, #3987e8));
+}
+
+.news-tone-coalition {
+  color: #d97706;
+}
+
+.news-tone-bilateral {
+  color: #8b5cf6;
+}
+
+.diplomatic-news-headline {
+  margin: 0 0 4px;
+}
+
+.diplomatic-news-summary {
+  margin: 0 0 6px;
+  color: var(--pixelstates-muted, var(--caption-txt-color, #6e6e6e));
+}
+
+.diplomatic-news-terms {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.diplomatic-news-factions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Multi-Condition Treaty Terms Builder */
+.treaty-terms-builder {
+  padding: 12px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 12px;
+  background: var(--pixelstates-raised, var(--control-bg, #f7f7f7));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  margin: 10px 0;
+}
+
+.treaty-terms-builder-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.treaty-terms-list {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.treaty-term-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  background: var(--pixelstates-surface, var(--window-bg, #fff));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+}
+
+.treaty-term-copy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.treaty-term-warning-text,
+.treaty-term-warning-badge {
+  color: var(--error-txt-color, #b73c3c);
+  font-weight: 700;
+  font-size: 0.78rem;
+  margin-left: 4px;
+}
+
+.treaty-sever-controls {
+  display: grid;
+  gap: 8px;
+}
+
+/* Advanced Territory Selector */
+.territory-selector {
+  padding: 12px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 12px;
+  background: var(--pixelstates-raised, var(--control-bg, #f7f7f7));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  margin: 10px 0;
+}
+
+.territory-coords-bar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(84px, 1fr));
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.territory-coords-bar label {
+  display: grid;
+  gap: 3px;
+  font-size: 0.8rem;
+}
+
+.territory-template-upload {
+  display: grid;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  background: var(--pixelstates-surface, var(--window-bg, #fff));
+  margin-bottom: 8px;
+}
+
+.territory-canvas-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  margin-bottom: 8px;
+}
+
+.territory-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.territory-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.territory-selected-readout {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--pixelstates-accent, var(--link-color, #3987e8));
+  background: var(--pixelstates-surface, var(--control-bg-selected, #e8e8e8));
+  font-size: 0.82rem;
+}
+
+.territory-status-note {
+  margin: 4px 0;
+  font-size: 0.82rem;
+  color: var(--pixelstates-accent, var(--link-color, #3987e8));
+}
+
+/* Diplomacy Forms & Records */
+.diplomacy-record-card,
+.diplomacy-composer-form {
+  padding: 12px 14px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 12px;
+  background: var(--pixelstates-raised, var(--control-bg, #f7f7f7));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  margin: 10px 0;
+  display: grid;
+  gap: 8px;
+}
+
+.diplomacy-record-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.diplomacy-record-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.diplomacy-wars-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.diplomacy-war-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--error-txt-color, #b73c3c);
+  background: rgba(183, 60, 60, 0.12);
+}
+
+/* Unified Faction Profile additions layered on native .faction-profile-card */
+.faction-unified-banner {
+  width: 100%;
+  height: 108px;
+  border-radius: 12px;
+  background-color: var(--pixelstates-surface, var(--control-bg-selected, #e8e8e8));
+  background-size: cover;
+  background-position: center;
+}
+
+.faction-unified-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.faction-unified-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.faction-unified-title-row h2 {
+  margin: 0;
+}
+
+.faction-unified-pacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 0.82rem;
+}
+
+.faction-unified-stats-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.faction-unified-stat {
+  padding: 8px 10px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 10px;
+  background: var(--pixelstates-surface, var(--window-bg, #fff));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  display: grid;
+  gap: 2px;
+}
+
+/* Union / Coalition Settings Tab */
+.alliance-settings-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.alliance-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.alliance-settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.alliance-settings-card {
+  padding: 12px 14px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 12px;
+  background: var(--pixelstates-raised, var(--control-bg, #f7f7f7));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  display: grid;
+  gap: 8px;
+}
+
+.alliance-settings-card label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.84rem;
+}
+
+.alliance-settings-checkbox {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.alliance-settings-coord-box {
+  padding: 8px 10px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 10px;
+  background: var(--pixelstates-surface, var(--window-bg, #fff));
+  display: grid;
+  gap: 6px;
+}
+
+.alliance-settings-member-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.alliance-settings-member-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 8px;
+  background: var(--pixelstates-surface, var(--window-bg, #fff));
+}
+
+.alliance-settings-member-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.alliance-settings-danger {
+  padding: 10px;
+  border: 1px solid var(--error-txt-color, #b73c3c);
+  border-radius: 10px;
+  background: rgba(183, 60, 60, 0.1);
+}
+
+/* Compact PixelStates-native Union / Faction Coordination GUI */
+.faction-coordination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.faction-coordination-toolbar.expanded {
+  width: 232px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #000));
+  border-radius: 6px;
+  background: var(--pixelstates-surface, var(--window-bg, #f7f7f7));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  font-size: 12px;
+  user-select: none;
+}
+
+.faction-coordination-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 6px;
+  background: var(--pixelstates-raised, var(--control-bg-highlight, #d9d9d9));
+  border-bottom: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  cursor: grab;
+}
+
+.faction-coordination-header:active {
+  cursor: grabbing;
+}
+
+.faction-coordination-grip {
+  opacity: 0.65;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.faction-coordination-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.faction-coordination-head-btns {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.faction-coordination-head-btns button {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 4px;
+  background: var(--pixelstates-surface, var(--control-bg, #fff));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  cursor: pointer;
+}
+
+.faction-coordination-head-btns button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.faction-coordination-head-btns button.active {
+  border-color: var(--pixelstates-accent, var(--link-color, #3987e8));
+  color: var(--pixelstates-accent, var(--link-color, #3987e8));
+}
+
+.faction-coordination-body {
+  padding: 7px;
+  display: grid;
+  gap: 7px;
+}
+
+.faction-coordination-scope {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.faction-coordination-scope button {
+  padding: 4px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 4px;
+  background: var(--pixelstates-raised, var(--control-bg, #ececec));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.faction-coordination-scope button.selected {
+  background: var(--pixelstates-accent, var(--link-color, #3987e8));
+  border-color: var(--pixelstates-accent, var(--link-color, #3987e8));
+  color: #fff;
+}
+
+.faction-coordination-faction-select {
+  width: 100%;
+  padding: 3px 5px;
+  font-size: 11px;
+}
+
+.faction-coordination-tools-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.faction-coordination-tools-row button {
+  flex: 1 1 0;
+  height: 28px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 4px;
+  background: var(--pixelstates-raised, var(--control-bg, #ececec));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  cursor: pointer;
+}
+
+.faction-coordination-tools-row button svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.faction-coordination-tools-row button.selected {
+  background: var(--pixelstates-accent, var(--link-color, #3987e8));
+  border-color: var(--pixelstates-accent, var(--link-color, #3987e8));
+  color: #fff;
+}
+
+.faction-coordination-swatches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.faction-coordination-swatch {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.faction-coordination-swatch.selected {
+  outline: 2px solid var(--pixelstates-accent, var(--link-color, #3987e8));
+  outline-offset: 1px;
+}
+
+.faction-coordination-color-picker {
+  width: 26px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.faction-coordination-sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.faction-coordination-sliders label {
+  display: grid;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--pixelstates-muted, var(--caption-txt-color, #555));
+}
+
+.faction-coordination-sliders input[type="range"] {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--pixelstates-accent, var(--link-color, #3987e8));
+}
+
+.faction-coordination-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding-top: 4px;
+  border-top: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+}
+
+.faction-coordination-meta {
+  font-size: 11px;
+  color: var(--pixelstates-muted, var(--caption-txt-color, #555));
+}
+
+.faction-coordination-clear {
+  padding: 3px 8px;
+  font-size: 11px;
+  border: 1px solid var(--error-txt-color, #b73c3c);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--error-txt-color, #b73c3c);
+  cursor: pointer;
+}
+
+.faction-coordination-clear:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Active Pixel Zones: Contributor Summary & Area Screenshots */
+.fire-contributors-summary {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 113, 56, 0.3);
+  border-radius: 6px;
+  background: var(--pixelstates-raised, var(--control-bg, rgba(255, 113, 56, 0.06)));
+  display: grid;
+  gap: 8px;
+}
+
+.fire-contributors-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+}
+
+.fire-contributors-header span {
+  color: #ff7138;
+  font-weight: 700;
+}
+
+.fire-contributors-list {
+  display: grid;
+  gap: 7px;
+}
+
+.fire-contributor-row {
+  display: grid;
+  gap: 4px;
+}
+
+.fire-contributor-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.fire-contributor-meta strong {
+  color: #ff7138;
+  font-size: 12px;
+}
+
+.fire-user-progress {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(127, 127, 127, 0.22);
+  overflow: hidden;
+}
+
+.fire-user-progress-bar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff7138, #ff9a52);
+  transition: width 0.25s ease;
+}
+
+.fire-zone-snapshot {
+  margin-top: 8px;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, rgba(255, 120, 40, 0.3)));
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--pixelstates-surface, var(--window-bg, #fff));
+}
+
+.fire-zone-screenshot {
+  display: block;
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+  image-rendering: pixelated;
+  background: #cae3ff;
+}
+
+.fire-zone-snapshot-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 8px;
+  font-size: 11px;
+  background: var(--pixelstates-raised, var(--control-bg, rgba(0, 0, 0, 0.04)));
+  border-top: 1px solid var(--pixelstates-border, var(--border-seperator-color, rgba(127, 127, 127, 0.2)));
+}
+
+.fire-zone-snapshot-badge {
+  font-weight: 700;
+  color: #ff7138;
+}
+
+.fire-zone-snapshot-meta {
+  opacity: 0.75;
+}
+
+.fire-zone-snapshot-thumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px;
+  border-top: 1px solid var(--pixelstates-border, var(--border-seperator-color, rgba(127, 127, 127, 0.2)));
+  background: var(--pixelstates-surface, var(--window-bg, transparent));
+}
+
+.fire-zone-snapshot-thumb {
+  padding: 2px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid var(--pixelstates-border, var(--border-seperator-color, #b1b1b2));
+  border-radius: 4px;
+  background: var(--pixelstates-raised, var(--control-bg, #f0f0f0));
+  color: var(--pixelstates-text, var(--control-txt-color, #000));
+  cursor: pointer;
+}
+
+.fire-zone-snapshot-thumb.selected {
+  border-color: #ff7138;
+  background: #ff7138;
+  color: #fff;
+}
+

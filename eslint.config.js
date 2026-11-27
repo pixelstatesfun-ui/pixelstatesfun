@@ -12,7 +12,7 @@ export default [
     ignores: [
       'dist/', 'node_modules/', 'tests/',
       /* maybe we fix those at some point in the future */
-      'deployment/scripts/', 'scripts/',
+      'deployment/scripts/', 'scripts/', 'captcha/', 'PythonIPQSDBReader-2.0.1/',
     ],
   },
 
