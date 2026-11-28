@@ -17,9 +17,10 @@
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
-    "start": "node server.js",
+    "start": "npm --prefix dist start",
     "start:local": "node scripts/start-local.js",
-    "build": "node scripts/build-preview.js",
+    "build": "node scripts/build.js",
+    "build:preview": "node scripts/build-preview.js",
     "build:parallel": "node scripts/build.js --parallel",
     "build:server": "node scripts/build.js --server",
     "build:client": "node scripts/build.js --client",

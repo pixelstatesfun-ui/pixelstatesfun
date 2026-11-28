@@ -17,7 +17,6 @@ export default {
     path: path.resolve(currentDir, 'dist/public/assets'),
     filename: 'preview.js',
     publicPath: '/assets/',
-    clean: true,
   },
   devtool: 'source-map',
   resolve: {

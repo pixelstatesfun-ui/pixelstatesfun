@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useState } from 'preact/hooks';
 import { t } from 'ttag';
+import { api } from '../../utils/utag.js';
 import TreatyTermsBuilder, { formatTreatyTermSummary } from './TreatyTermsBuilder.jsx';
 import TerritorySelector from './TerritorySelector.jsx';
 import DiplomaticNews from './DiplomaticNews.jsx';
 
 async function factionRequest(path, options = {}) {
-  const response = await fetch(`/api/factions${path}`, {
-    credentials: 'same-origin',
+  const response = await fetch(api`/api/factions${path}`, {
+    credentials: 'include',
     ...options,
   });
   let data;

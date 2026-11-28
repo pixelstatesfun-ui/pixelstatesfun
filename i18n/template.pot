@@ -7,7 +7,7 @@ msgstr ""
 msgid " which is in "
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1794
+#: src/components/windows/MyFactions.jsx:1868
 #, javascript-format
 msgid "${ factionTitle } banner"
 msgstr ""
@@ -46,7 +46,7 @@ msgstr ""
 msgid "(0 = infinite)"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1077
+#: src/components/windows/Faction.jsx:1029
 msgid "(click a role to assign or remove it)"
 msgstr ""
 
@@ -66,33 +66,17 @@ msgstr ""
 msgid "30d / 12h / permanent"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1191
-msgid "A close, two-faction partnership with founder-approved membership."
-msgstr ""
-
-#: src/components/windows/Faction.jsx:1219
+#: src/components/windows/Faction.jsx:1171
 msgid ""
 "A flag representing the role, it should be 16x11 pixels. If left empty, "
 "users with this role selected will still show their own flags."
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:1196
-msgid ""
-"A focused war pact against one target, with coordinated declarations and "
-"peace-based exits."
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:1201
-msgid ""
-"A long-term, multi-faction pact with an approved shared roster and durable "
-"charter."
 msgstr ""
 
 #: src/components/UserMessages.jsx:46
 msgid "A new verification mail is getting sent to you."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1458
+#: src/components/windows/Faction.jsx:1410
 msgid ""
 "A role has all the permissions of all levels below and equal to it. In "
 "example: Every role with a power level of >=50 can manage invites (50)."
@@ -102,7 +86,7 @@ msgstr ""
 msgid "A timelapse can be created once every 30 minutes."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1332
+#: src/components/windows/MyFactions.jsx:1379
 msgid "A wide image displayed on your faction home and in chat"
 msgstr ""
 
@@ -110,16 +94,24 @@ msgstr ""
 msgid "ACCESS MODTOOLS"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:24
-#: src/components/windows/FactionSystemTab.jsx:581
+#: src/components/windows/FactionSystemTab.jsx:28
+#: src/components/windows/TreatyTermsBuilder.jsx:11
 msgid "Abandon territory"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1763
+#: src/components/windows/MyFactions.jsx:1837
 msgid "Accept"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1066
+#: src/components/windows/MyFactions.jsx:2351
+msgid "Accept & Enact"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:678
+msgid "Accept & Enact Terms"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1283
 msgid "Accept invitation"
 msgstr ""
 
@@ -131,7 +123,7 @@ msgstr ""
 msgid "Account ID (UID):"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1663
+#: src/components/windows/MyFactions.jsx:1737
 msgid "Action"
 msgstr ""
 
@@ -144,26 +136,30 @@ msgid ""
 msgstr ""
 
 #: src/components/ChaosTools.jsx:225
-#: src/components/windows/FactionBrowser.jsx:332
-#: src/components/windows/FactionSystemTab.jsx:462
-#: src/components/windows/MyFactions.jsx:1941
+#: src/components/windows/FactionProfileView.jsx:252
+#: src/components/windows/FactionSystemTab.jsx:546
+#: src/components/windows/MyFactions.jsx:2015
 msgid "Active"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2160
+#: src/components/windows/MyFactions.jsx:2234
 msgid "Active NAP"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1969
+#: src/components/windows/MyFactions.jsx:2043
 msgid "Active NAPs"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1839
+#: src/components/windows/MyFactions.jsx:1913
 msgid "Active Template"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:601
+#: src/components/windows/FactionSystemTab.jsx:735
 msgid "Active wars"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:258
+msgid "Add Condition"
 msgstr ""
 
 #: src/components/windows/Converter.jsx:380
@@ -182,11 +178,25 @@ msgstr ""
 msgid "Add emoji"
 msgstr ""
 
+#: src/components/windows/TreatyTermsBuilder.jsx:147
+msgid ""
+"Add one or more conditions below (e.g., abandon territory + sever an "
+"alliance in the same treaty)."
+msgstr ""
+
 #: src/components/IIDTools.jsx:205
 msgid "Add to whitelist"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1872
+#: src/components/windows/TreatyTermsBuilder.jsx:229
+msgid "Additional clause notes (optional if pact selected)"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:847
+msgid "Additional treaty preamble / notes"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:1946
 msgid "Adds this template to your personal game overlay"
 msgstr ""
 
@@ -198,15 +208,27 @@ msgstr ""
 msgid "Age"
 msgstr ""
 
+#: src/components/windows/TreatyTermsBuilder.jsx:111
+msgid "Agreement Conditions"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:14
+msgid "All News"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1507
+msgid "All Union faction members with draw permission"
+msgstr ""
+
 #: src/components/CooldownTools.jsx:172
 msgid "All canvases"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:916
+#: src/components/windows/Faction.jsx:868
 msgid "All members of this faction are hidden"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:903
+#: src/components/windows/FactionSystemTab.jsx:1119
 msgid "All pacts"
 msgstr ""
 
@@ -214,76 +236,52 @@ msgstr ""
 msgid "All sound effects will be disabled."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:775
-#: src/components/windows/FactionSystemTab.jsx:904
-#: src/components/windows/FactionSystemTab.jsx:978
-#: src/components/windows/FactionSystemTab.jsx:993
-#: src/components/windows/FactionSystemTab.jsx:1190
-msgid "Alliance"
-msgstr ""
-
-#: src/components/Table.jsx:296
-#: src/components/windows/FactionSystemTab.jsx:789
-#: src/components/windows/FactionSystemTab.jsx:1014
-#: src/components/windows/FactionSystemTab.jsx:1157
+#: src/components/Table.jsx:307
+#: src/components/windows/FactionSystemTab.jsx:1005
+#: src/components/windows/FactionSystemTab.jsx:1231
+#: src/components/windows/FactionSystemTab.jsx:1374
 msgid "Alliance Members"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1145
+#: src/components/windows/FactionSystemTab.jsx:1362
 msgid "Alliance Statistics"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1243
-msgid "Alliance avatar"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:1252
-msgid "Alliance banner"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:368
-msgid "Alliance created."
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:720
+#: src/components/windows/FactionSystemTab.jsx:936
 msgid "Alliance directory"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:835
+#: src/components/windows/FactionSystemTab.jsx:1051
 msgid "Alliance invitation sent."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1083
+#: src/components/windows/FactionSystemTab.jsx:1300
 msgid "Alliance invitations"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1234
-msgid "Alliance name"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:687
+#: src/components/windows/FactionSystemTab.jsx:896
 msgid "Alliance sections"
 msgstr ""
 
 #: src/components/windows/Faction.jsx:92
-#: src/components/windows/MyFactions.jsx:1514
+#: src/components/windows/MyFactions.jsx:1571
 msgid "Alliances"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2800
+#: src/components/windows/MyFactions.jsx:2895
 msgid "Allow All"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2017
+#: src/components/windows/MyFactions.jsx:2091
 msgid "Allow Open Join"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2006
+#: src/components/windows/MyFactions.jsx:2080
 msgid "Allow anyone to join freely or require invitations/applications."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:590
-msgid "Ally faction ID"
+#: src/components/windows/FactionSystemTab.jsx:1654
+msgid "Already in a Union or Coalition"
 msgstr ""
 
 #: src/components/IIDTools.jsx:670
@@ -302,7 +300,7 @@ msgstr ""
 msgid "Amethyst"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1318
+#: src/components/windows/MyFactions.jsx:1365
 msgid "An image representing your faction (automatically fitted)"
 msgstr ""
 
@@ -322,29 +320,29 @@ msgstr ""
 msgid "Anti Aliasing"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2008
+#: src/components/windows/MyFactions.jsx:2082
 msgid "Anyone can join"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:253
-#: src/components/windows/FactionBrowser.jsx:422
+#: src/components/windows/FactionBrowser.jsx:276
+#: src/components/windows/FactionProfileView.jsx:176
 msgid "Application sent"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:320
+#: src/components/windows/FactionSystemTab.jsx:338
 msgid "Application sent. The founder can review it in Notifications."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:197
+#: src/components/windows/FactionBrowser.jsx:188
 msgid "Application submitted. The faction admins have been notified."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:254
-#: src/components/windows/FactionBrowser.jsx:423
+#: src/components/windows/FactionBrowser.jsx:277
+#: src/components/windows/FactionProfileView.jsx:177
 msgid "Apply"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2545
+#: src/components/windows/MyFactions.jsx:2640
 msgid "Apply & Return"
 msgstr ""
 
@@ -356,28 +354,24 @@ msgstr ""
 msgid "Apply a filter to clean trash in large canvas areas."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:664
+#: src/components/windows/FactionSystemTab.jsx:873
 msgid "Apply on behalf of"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:521
-#: src/components/windows/FactionSystemTab.jsx:1123
+#: src/components/windows/FactionSystemTab.jsx:605
+#: src/components/windows/FactionSystemTab.jsx:1340
 msgid "Approve"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2284
+#: src/components/windows/MyFactions.jsx:2411
 msgid "Approve Termination"
-msgstr ""
-
-#: src/components/windows/FactionBrowser.jsx:359
-msgid "Approve termination"
 msgstr ""
 
 #: src/components/windows/CanvasSelect.jsx:55
 msgid "Archive"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:992
+#: src/components/windows/MyFactions.jsx:1022
 #, javascript-format
 msgid "Are you sure you want to kick ${ memberName } from the faction?"
 msgstr ""
@@ -391,7 +385,7 @@ msgstr ""
 msgid "Arrow"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1035
+#: src/components/windows/Faction.jsx:987
 msgid "Assign Roles"
 msgstr ""
 
@@ -399,19 +393,19 @@ msgstr ""
 msgid "Assign new Mod"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1244
+#: src/components/windows/Faction.jsx:1196
 msgid "Assign role per default to new members"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1481
+#: src/components/windows/Faction.jsx:1433
 msgid "Assign roles below their own"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1246
+#: src/components/windows/Faction.jsx:1198
 msgid "Assign this role to every new member automatically on join."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1390
+#: src/components/windows/Faction.jsx:1342
 msgid "Assigned role per default"
 msgstr ""
 
@@ -427,15 +421,26 @@ msgstr ""
 msgid "Aurora"
 msgstr ""
 
+#: src/components/windows/FactionSystemTab.jsx:645
+msgid "Auto Template Mask"
+msgstr ""
+
 #: src/components/windows/Settings.jsx:311
 msgid "Auto Zoom In"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:269
+#, javascript-format
+msgid ""
+"Auto-protected ${ formattedOpaqueCount } opaque template pixels at Canvas "
+"#${ cId } (${ ox }, ${ oy })."
 msgstr ""
 
 #: src/components/SocialSettings.jsx:51
 #: src/components/Table.jsx:25
 #: src/components/VipPersonalization.jsx:79
-#: src/components/windows/Faction.jsx:1527
-#: src/components/windows/MyFactions.jsx:1308
+#: src/components/windows/Faction.jsx:1479
+#: src/components/windows/MyFactions.jsx:1355
 msgid "Avatar"
 msgstr ""
 
@@ -443,34 +448,34 @@ msgstr ""
 msgid "Avatar glow"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2283
+#: src/components/windows/MyFactions.jsx:2410
 msgid "Awaiting Other Faction"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:966
+#: src/components/windows/FactionSystemTab.jsx:1183
 msgid "Awaiting founder approval"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:333
-#: src/components/windows/MyFactions.jsx:2171
-#: src/components/windows/MyFactions.jsx:2176
+#: src/components/windows/MyFactions.jsx:2245
+#: src/components/windows/MyFactions.jsx:2250
 msgid "Awaiting moderator review"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:357
-msgid "Awaiting other faction"
+#: src/components/windows/FactionProfileView.jsx:253
+msgid "Awaiting review"
 msgstr ""
 
 #: src/components/LogInForm.jsx:213
-#: src/components/windows/MyFactions.jsx:1235
+#: src/components/windows/MyFactions.jsx:1272
 msgid "Back"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:988
+#: src/components/windows/FactionSystemTab.jsx:1205
 msgid "Back to alliances"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:218
+#: src/components/windows/FactionBrowser.jsx:208
+#: src/components/windows/FactionProfileView.jsx:83
 msgid "Back to list"
 msgstr ""
 
@@ -482,7 +487,7 @@ msgstr ""
 msgid "Badges"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1111
+#: src/components/windows/Faction.jsx:1063
 msgid "Ban"
 msgstr ""
 
@@ -502,7 +507,7 @@ msgstr ""
 msgid "Ban media"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1485
+#: src/components/windows/Faction.jsx:1437
 msgid "Ban members"
 msgstr ""
 
@@ -515,22 +520,59 @@ msgid "Banned? Detected as Proxy?"
 msgstr ""
 
 #: src/components/VipPersonalization.jsx:80
-#: src/components/windows/MyFactions.jsx:1322
+#: src/components/windows/MyFactions.jsx:1369
 msgid "Banner"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1695
+msgid "Banner image (optional)"
 msgstr ""
 
 #: src/components/windows/Faction.jsx:96
 msgid "Bans"
 msgstr ""
 
+#: src/components/windows/TreatyTermsBuilder.jsx:219
+msgid ""
+"Because the target faction leads this coalition, accepting this condition "
+"will automatically dissolve the entire coalition."
+msgstr ""
+
 #: src/components/windows/Chat.jsx:269
 msgid "Best flags"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1002
+#: src/components/windows/FactionProfileView.jsx:133
+msgid "Bilateral"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:29
+#: src/components/windows/FactionSystemTab.jsx:991
+#: src/components/windows/FactionSystemTab.jsx:1122
+#: src/components/windows/FactionSystemTab.jsx:1195
+#: src/components/windows/FactionSystemTab.jsx:1210
+#: src/components/windows/FactionSystemTab.jsx:1618
+msgid "Bilateral Pact"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:18
+msgid "Bilateral Pacts"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1032
 msgid ""
-"Bilateral pact · two factions, with every new member approved by the "
-"founder."
+"Bilateral pact between two factions. Multiple bilateral pacts are allowed "
+"and remain separate on leaderboards."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:408
+msgid "Bilateral pact created."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1219
+msgid ""
+"Bilateral pact · two factions, multiple bilateral pacts allowed, never "
+"merged on leaderboards."
 msgstr ""
 
 #: src/components/CooldownTools.jsx:228
@@ -576,16 +618,17 @@ msgstr ""
 msgid "Bottom-right corner"
 msgstr ""
 
+#: src/components/windows/TreatyTermsBuilder.jsx:20
+#: src/components/windows/TreatyTermsBuilder.jsx:33
+msgid "Break Bilateral Pact"
+msgstr ""
+
 #: src/core/pixelRanks.js:42
 msgid "Brigade Commander"
 msgstr ""
 
 #: src/core/pixelRanks.js:41
 msgid "Brigadier"
-msgstr ""
-
-#: src/components/windows/FactionBrowser.jsx:334
-msgid "Broken"
 msgstr ""
 
 #: src/core/pixelRanks.js:60
@@ -645,22 +688,22 @@ msgstr ""
 #: src/components/RefreshPrompt.jsx:16
 #: src/components/TemplateItemEdit.jsx:179
 #: src/components/windows/Chat.jsx:579
-#: src/components/windows/Faction.jsx:1264
-#: src/components/windows/Faction.jsx:1424
-#: src/components/windows/Faction.jsx:1706
-#: src/components/windows/Faction.jsx:1747
-#: src/components/windows/FactionBrowser.jsx:355
+#: src/components/windows/Faction.jsx:1216
+#: src/components/windows/Faction.jsx:1376
+#: src/components/windows/Faction.jsx:1658
+#: src/components/windows/Faction.jsx:1699
+#: src/components/windows/FactionProfileView.jsx:264
 #: src/components/windows/Invite.jsx:130
-#: src/components/windows/MyFactions.jsx:1398
-#: src/components/windows/MyFactions.jsx:2363
-#: src/components/windows/MyFactions.jsx:2497
-#: src/components/windows/MyFactions.jsx:2684
-#: src/components/windows/MyFactions.jsx:2729
-#: src/components/windows/MyFactions.jsx:2850
+#: src/components/windows/MyFactions.jsx:1445
+#: src/components/windows/MyFactions.jsx:2488
+#: src/components/windows/MyFactions.jsx:2592
+#: src/components/windows/MyFactions.jsx:2779
+#: src/components/windows/MyFactions.jsx:2824
+#: src/components/windows/MyFactions.jsx:2945
 msgid "Cancel"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2258
+#: src/components/windows/MyFactions.jsx:2385
 msgid "Cancel Proposal"
 msgstr ""
 
@@ -668,7 +711,7 @@ msgstr ""
 msgid "Cancel adding Template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2247
+#: src/components/windows/MyFactions.jsx:2374
 msgid "Cancel this pending NAP proposal?"
 msgstr ""
 
@@ -676,12 +719,11 @@ msgstr ""
 #: src/components/TemplateItemEdit.jsx:120
 #: src/components/TimelapseMaker.jsx:197
 #: src/components/Watchtools.jsx:166
-#: src/components/windows/FactionSystemTab.jsx:510
-#: src/components/windows/MyFactions.jsx:1839
-#: src/components/windows/MyFactions.jsx:1872
-#: src/components/windows/MyFactions.jsx:1941
-#: src/components/windows/MyFactions.jsx:2471
-#: src/components/windows/MyFactions.jsx:2482
+#: src/components/windows/FactionSystemTab.jsx:594
+#: src/components/windows/MyFactions.jsx:1913
+#: src/components/windows/MyFactions.jsx:1946
+#: src/components/windows/MyFactions.jsx:2015
+#: src/components/windows/TerritorySelector.jsx:442
 msgid "Canvas"
 msgstr ""
 
@@ -690,19 +732,19 @@ msgstr ""
 msgid "Canvas ${ id }"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2335
+#: src/components/windows/MyFactions.jsx:2460
 msgid "Canvas 0 (Earth)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2336
+#: src/components/windows/MyFactions.jsx:2461
 msgid "Canvas 1 (Moon)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2337
+#: src/components/windows/MyFactions.jsx:2462
 msgid "Canvas 2 (135M)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2338
+#: src/components/windows/MyFactions.jsx:2463
 msgid "Canvas 7 (3D)"
 msgstr ""
 
@@ -718,11 +760,11 @@ msgstr ""
 msgid "Canvas Error"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:477
+#: src/components/windows/FactionSystemTab.jsx:561
 msgid "Canvas ID"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:113
+#: src/components/windows/MyFactions.jsx:119
 msgid "Canvas Planning Access"
 msgstr ""
 
@@ -748,8 +790,8 @@ msgstr ""
 msgid "Captcha answer"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:25
-#: src/components/windows/FactionSystemTab.jsx:583
+#: src/components/windows/FactionSystemTab.jsx:29
+#: src/components/windows/TreatyTermsBuilder.jsx:12
 msgid "Cease activity in territory"
 msgstr ""
 
@@ -757,7 +799,7 @@ msgstr ""
 msgid "Change Cooldown Permanently"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1331
+#: src/components/windows/Faction.jsx:1283
 msgid "Change Flag"
 msgstr ""
 
@@ -773,15 +815,15 @@ msgstr ""
 msgid "Change Password"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1888
+#: src/components/windows/MyFactions.jsx:1962
 msgid "Change Template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1578
+#: src/components/windows/MyFactions.jsx:1652
 msgid "Change avatar"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1535
+#: src/components/windows/MyFactions.jsx:1609
 msgid "Change banner"
 msgstr ""
 
@@ -791,7 +833,7 @@ msgstr ""
 msgid "Change or remove avatar"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:104
+#: src/components/windows/MyFactions.jsx:110
 msgid "Change the faction avatar and banner"
 msgstr ""
 
@@ -799,7 +841,7 @@ msgstr ""
 msgid "Change username"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2783
+#: src/components/windows/MyFactions.jsx:2878
 msgid "Changing role automatically updates default permission presets below."
 msgstr ""
 
@@ -834,12 +876,16 @@ msgstr ""
 msgid "Characters are not case-sensitive. I and l are treated the same."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1005
+#: src/components/windows/FactionSystemTab.jsx:1222
 msgid "Charter"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1261
-msgid "Charter terms"
+#: src/components/windows/FactionSystemTab.jsx:1479
+msgid "Charter / Terms (one per line)"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1703
+msgid "Charter terms (one per line)"
 msgstr ""
 
 #: src/components/windows/Statistics.jsx:98
@@ -886,8 +932,8 @@ msgstr ""
 msgid "Check who placed in an area"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1832
-#: src/components/windows/FactionSystemTab.jsx:1279
+#: src/components/windows/Faction.jsx:1784
+#: src/components/windows/FactionSystemTab.jsx:1722
 msgid "Chiefdom"
 msgstr ""
 
@@ -908,20 +954,20 @@ msgstr ""
 msgid "Choose a banner design or upload your own."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1186
+#: src/components/windows/FactionSystemTab.jsx:1614
 msgid "Choose a category"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:109
-#: src/components/windows/FactionSystemTab.jsx:678
+#: src/components/windows/FactionSystemTab.jsx:113
+#: src/components/windows/FactionSystemTab.jsx:887
 msgid "Choose a faction"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:570
-msgid "Choose a template"
+#: src/components/windows/FactionSystemTab.jsx:349
+msgid "Choose a target faction for the NAP."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:383
+#: src/components/windows/FactionSystemTab.jsx:428
 msgid "Choose a template image to upload."
 msgstr ""
 
@@ -933,7 +979,7 @@ msgstr ""
 msgid "Choose an emoji image"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:907
+#: src/components/windows/MyFactions.jsx:937
 msgid "Choose an image and wait for it to upload."
 msgstr ""
 
@@ -941,11 +987,7 @@ msgstr ""
 msgid "Choose any area on the canvas and up to 7 days."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:351
-msgid "Choose both an alliance avatar and banner."
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:1038
+#: src/components/windows/FactionSystemTab.jsx:1255
 msgid "Choose the faction you want to represent above."
 msgstr ""
 
@@ -953,14 +995,15 @@ msgstr ""
 msgid "Choose the glow shown around your profile avatar."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1184
-msgid "Choose the pact style that fits your faction and define its charter."
-msgstr ""
-
 #: src/components/windows/Templates.jsx:86
 msgid ""
 "Choose whether the pencil uses your selected color, enabled templates, or "
 "canvas history."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:767
+#: src/components/windows/MyFactions.jsx:2322
+msgid "Clause"
 msgstr ""
 
 #: src/components/Canvastools.jsx:321
@@ -985,11 +1028,15 @@ msgid "Cleaners can use 0cd blank colors."
 msgstr ""
 
 #: src/components/SocialSettings.jsx:73
-#: src/components/windows/Faction.jsx:1342
-#: src/components/windows/Faction.jsx:1548
-#: src/components/windows/Faction.jsx:1595
-#: src/components/windows/MyFactions.jsx:2623
+#: src/components/windows/Faction.jsx:1294
+#: src/components/windows/Faction.jsx:1500
+#: src/components/windows/Faction.jsx:1547
+#: src/components/windows/MyFactions.jsx:2718
 msgid "Clear"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:541
+msgid "Clear Selection"
 msgstr ""
 
 #: src/components/UserNotifications.jsx:137
@@ -1036,7 +1083,7 @@ msgstr ""
 msgid "Click a color in palette to select it"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1651
+#: src/components/windows/MyFactions.jsx:1725
 msgid "Click a member to manage role & permissions"
 msgstr ""
 
@@ -1064,7 +1111,7 @@ msgstr ""
 #: src/components/Watchtools.jsx:161
 #: src/components/Window.jsx:270
 #: src/components/menus/channelContextMenu.js:35
-#: src/components/windows/Faction.jsx:1123
+#: src/components/windows/Faction.jsx:1075
 msgid "Close"
 msgstr ""
 
@@ -1076,20 +1123,54 @@ msgstr ""
 msgid "Close Palette"
 msgstr ""
 
+#: src/components/windows/TerritorySelector.jsx:520
+#, javascript-format
+msgid "Close Polygon (${ polygonPts.length } pts)"
+msgstr ""
+
 #: src/components/VipPersonalization.jsx:70
 msgid "Close customization"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:773
-#: src/components/windows/FactionSystemTab.jsx:905
-#: src/components/windows/FactionSystemTab.jsx:977
-#: src/components/windows/FactionSystemTab.jsx:991
-#: src/components/windows/FactionSystemTab.jsx:1195
-msgid "Coalition Pact"
+#: src/components/Table.jsx:150
+#: src/components/windows/FactionProfileView.jsx:132
+#: src/components/windows/FactionSystemTab.jsx:989
+#: src/components/windows/FactionSystemTab.jsx:1121
+#: src/components/windows/FactionSystemTab.jsx:1194
+#: src/components/windows/FactionSystemTab.jsx:1208
+#: src/components/windows/FactionSystemTab.jsx:1403
+#: src/components/windows/FactionSystemTab.jsx:1576
+#: src/components/windows/FactionSystemTab.jsx:1630
+msgid "Coalition"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:785
-#: src/components/windows/FactionSystemTab.jsx:1228
+#: src/components/windows/DiplomaticNews.jsx:28
+#: src/components/windows/FactionSystemTab.jsx:771
+msgid "Coalition Dissolved"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:27
+msgid "Coalition Formed"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:218
+msgid "Coalition Leader Clause:"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:207
+msgid "Coalition Leader — Dissolves Coalition"
+msgstr ""
+
+#: src/components/Table.jsx:306
+msgid "Coalition Members"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:407
+msgid "Coalition created."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1001
+#: src/components/windows/FactionSystemTab.jsx:1663
 msgid "Coalition target"
 msgstr ""
 
@@ -1123,38 +1204,46 @@ msgstr ""
 msgid "Completed"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1490
+#: src/components/windows/TreatyTermsBuilder.jsx:154
+msgid "Condition"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:230
+msgid "Condition details"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:1537
 msgid "Config"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:110
+#: src/components/windows/MyFactions.jsx:116
 msgid "Configure canvas coordination and settings"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:112
+#: src/components/windows/MyFactions.jsx:118
 msgid "Configure coordination IDs"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1031
-#: src/components/windows/Faction.jsx:1073
-#: src/components/windows/MyFactions.jsx:1635
+#: src/components/windows/Faction.jsx:983
+#: src/components/windows/Faction.jsx:1025
+#: src/components/windows/MyFactions.jsx:1709
 msgid "Confirm"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1111
+#: src/components/windows/Faction.jsx:1063
 msgid "Confirm Ban"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1413
-#: src/components/windows/Faction.jsx:1699
+#: src/components/windows/Faction.jsx:1365
+#: src/components/windows/Faction.jsx:1651
 msgid "Confirm Delete"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1096
+#: src/components/windows/Faction.jsx:1048
 msgid "Confirm Kick"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:899
+#: src/components/windows/Faction.jsx:843
 msgid "Confirm Leave"
 msgstr ""
 
@@ -1166,15 +1255,19 @@ msgstr ""
 msgid "Confirm Password"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:868
+#: src/components/windows/FactionSystemTab.jsx:1598
+msgid "Confirm Permanent Dissolution"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1084
 msgid "Confirm disband"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:868
+#: src/components/windows/FactionSystemTab.jsx:1084
 msgid "Confirm leave"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:929
+#: src/components/windows/MyFactions.jsx:959
 msgid "Confirmation name does not match the faction name."
 msgstr ""
 
@@ -1195,7 +1288,7 @@ msgstr ""
 msgid "Consul"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1988
+#: src/components/windows/MyFactions.jsx:2062
 msgid "Control whether your faction appears in public search and list."
 msgstr ""
 
@@ -1263,19 +1356,19 @@ msgstr ""
 #: src/components/ClipboardCopyField.jsx:39
 #: src/components/CoordinatesBox.jsx:49
 #: src/components/GetIID.jsx:51
-#: src/components/windows/FactionBrowser.jsx:241
+#: src/components/windows/FactionProfileView.jsx:120
 #: src/controls/keypress.js:181
 msgid "Copied"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1619
+#: src/components/windows/MyFactions.jsx:1693
 msgid "Copied!"
 msgstr ""
 
 #: src/components/ClipboardCopyField.jsx:41
 #: src/components/GetIID.jsx:53
-#: src/components/windows/Faction.jsx:1768
-#: src/components/windows/FactionBrowser.jsx:241
+#: src/components/windows/Faction.jsx:1720
+#: src/components/windows/FactionProfileView.jsx:120
 msgid "Copy"
 msgstr ""
 
@@ -1299,8 +1392,8 @@ msgstr ""
 msgid "Copy UserId to Clipboard"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:240
-#: src/components/windows/MyFactions.jsx:1612
+#: src/components/windows/FactionProfileView.jsx:118
+#: src/components/windows/MyFactions.jsx:1686
 msgid "Copy faction tag"
 msgstr ""
 
@@ -1349,7 +1442,7 @@ msgstr ""
 msgid "Could not load statistics:"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:560
+#: src/components/windows/MyFactions.jsx:591
 msgid "Could not load the target faction template."
 msgstr ""
 
@@ -1377,34 +1470,37 @@ msgstr ""
 msgid "Country"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1277
-#: src/components/windows/MyFactions.jsx:2880
+#: src/components/windows/MyFactions.jsx:1324
+#: src/components/windows/MyFactions.jsx:2975
 msgid "Create Faction"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1717
+#: src/components/windows/Faction.jsx:1669
 msgid "Create Invite"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1816
+#: src/components/windows/Faction.jsx:1768
 msgid "Create New Invite"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1446
+#: src/components/windows/Faction.jsx:1398
 msgid "Create New Role"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1195
+#: src/components/windows/FactionSystemTab.jsx:1714
+msgid "Create Pact"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:942
+#: src/components/windows/FactionSystemTab.jsx:1611
+msgid "Create Pact / Alliance"
+msgstr ""
+
+#: src/components/windows/Faction.jsx:1147
 msgid "Create Role"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:726
-#: src/components/windows/FactionSystemTab.jsx:1183
-#: src/components/windows/FactionSystemTab.jsx:1271
-msgid "Create alliance"
-msgstr ""
-
-#: src/components/windows/Faction.jsx:1497
+#: src/components/windows/Faction.jsx:1449
 msgid "Create roles"
 msgstr ""
 
@@ -1412,11 +1508,11 @@ msgstr ""
 msgid "Create timelapse"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1625
+#: src/components/windows/MyFactions.jsx:1699
 msgid "Created date"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1280
+#: src/components/windows/MyFactions.jsx:1327
 msgid "Creating a faction requires at least 50,000 placed pixels."
 msgstr ""
 
@@ -1443,7 +1539,7 @@ msgstr ""
 msgid "Credit for the Palette of the Top10 canvas goes to ${ vinikLink }."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1299
+#: src/components/windows/FactionSystemTab.jsx:1742
 msgid "Cumulative faction contributions"
 msgstr ""
 
@@ -1451,7 +1547,7 @@ msgstr ""
 msgid "Current Cooldown Changes per Country"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2765
+#: src/components/windows/MyFactions.jsx:2860
 msgid "Current Role"
 msgstr ""
 
@@ -1467,11 +1563,11 @@ msgstr ""
 msgid "Custom Cursor"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1209
+#: src/components/windows/Faction.jsx:1161
 msgid "Custom Flag"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2789
+#: src/components/windows/MyFactions.jsx:2884
 msgid "Custom Permissions"
 msgstr ""
 
@@ -1481,6 +1577,10 @@ msgstr ""
 
 #: src/components/VipPersonalization.jsx:209
 msgid "Custom nickname gradient (Emperor)"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:706
+msgid "Custom selection / Auto template upload"
 msgstr ""
 
 #: src/components/VipPersonalization.jsx:76
@@ -1499,6 +1599,7 @@ msgid "DM"
 msgstr ""
 
 #: src/components/Table.jsx:39
+#: src/components/windows/FactionProfileView.jsx:162
 msgid "Daily Pixels"
 msgstr ""
 
@@ -1515,20 +1616,19 @@ msgid "Daily Pixels per Player"
 msgstr ""
 
 #: src/components/Table.jsx:38
-#: src/components/windows/Faction.jsx:815
 #: src/components/windows/User.jsx:229
 msgid "Daily Rank"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1327
+#: src/components/windows/FactionSystemTab.jsx:1770
 msgid "Daily faction and coalition ranking"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1280
+#: src/components/windows/FactionSystemTab.jsx:1723
 msgid "Daily faction pixels"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1282
+#: src/components/windows/FactionSystemTab.jsx:1725
 msgid "Daily pixel tally"
 msgstr ""
 
@@ -1537,7 +1637,7 @@ msgstr ""
 msgid "Daily rating"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2233
+#: src/components/windows/MyFactions.jsx:2312
 msgid "Date Created"
 msgstr ""
 
@@ -1545,15 +1645,19 @@ msgstr ""
 msgid "Date of Award"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:628
+#: src/components/windows/FactionSystemTab.jsx:796
+msgid "Declare War"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:808
 msgid "Declare war"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1131
+#: src/components/windows/FactionSystemTab.jsx:1348
 msgid "Decline"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1105
+#: src/components/windows/FactionSystemTab.jsx:1322
 msgid "Decline invitation"
 msgstr ""
 
@@ -1566,8 +1670,8 @@ msgid "Default (1s User / 0.5s VIP)"
 msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:172
-#: src/components/windows/Faction.jsx:1413
-#: src/components/windows/Faction.jsx:1767
+#: src/components/windows/Faction.jsx:1365
+#: src/components/windows/Faction.jsx:1719
 msgid "Delete"
 msgstr ""
 
@@ -1575,8 +1679,8 @@ msgstr ""
 msgid "Delete Account"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1699
-#: src/components/windows/MyFactions.jsx:2059
+#: src/components/windows/Faction.jsx:1651
+#: src/components/windows/MyFactions.jsx:2133
 msgid "Delete Faction"
 msgstr ""
 
@@ -1597,11 +1701,11 @@ msgstr ""
 msgid "Delete notification"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1509
+#: src/components/windows/Faction.jsx:1461
 msgid "Delete the faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2181
+#: src/components/windows/MyFactions.jsx:2255
 msgid "Denied"
 msgstr ""
 
@@ -1610,38 +1714,40 @@ msgstr ""
 msgid "Deny"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2807
+#: src/components/windows/MyFactions.jsx:2902
 msgid "Deny All"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:12
-#: src/components/windows/MyFactions.jsx:97
+#: src/components/windows/FactionProfileView.jsx:16
+#: src/components/windows/MyFactions.jsx:103
 msgid "Deputy"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2779
+#: src/components/windows/MyFactions.jsx:2874
 msgid "Deputy (Administrator)"
 msgstr ""
 
 #: src/components/Table.jsx:29
-#: src/components/windows/Faction.jsx:809
-#: src/components/windows/Faction.jsx:1637
-#: src/components/windows/MyFactions.jsx:1347
-#: src/components/windows/MyFactions.jsx:2675
+#: src/components/windows/Faction.jsx:1589
+#: src/components/windows/MyFactions.jsx:1394
+#: src/components/windows/MyFactions.jsx:2770
 msgid "Description"
 msgstr ""
 
-#: src/utils/validation.js:122
-msgid "Description can't be empty"
+#: src/utils/validation.js:169
+msgid "Description cannot be longer than 500 characters."
 msgstr ""
 
-#: src/utils/validation.js:125
-msgid "Description must be shorter than 1000 characters"
-msgstr ""
-
-#: src/components/windows/Faction.jsx:1644
-#: src/components/windows/MyFactions.jsx:1354
+#: src/components/windows/Faction.jsx:1596
+#: src/components/windows/MyFactions.jsx:1401
 msgid "Description of your faction"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:491
+#, javascript-format
+msgid ""
+"Detected ${ formattedAutoMaskCount } exact template pixels (${ "
+"autoMaskInfo.width }×${ autoMaskInfo.height })."
 msgstr ""
 
 #: src/ui/PixelTransferController.js:121
@@ -1658,11 +1764,30 @@ msgid "Dimensions"
 msgstr ""
 
 #: src/components/windows/Faction.jsx:91
+#: src/components/windows/MyFactions.jsx:1545
 msgid "Diplomacy"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:298
+#: src/components/windows/MyFactions.jsx:1551
+msgid "Diplomacy sections"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:316
 msgid "Diplomacy update saved."
+msgstr ""
+
+#: src/components/buttons/QuickAccessButtons.jsx:49
+#: src/components/buttons/QuickAccessButtons.jsx:50
+#: src/components/windows/DiplomaticNews.jsx:105
+#: src/components/windows/MyFactions.jsx:1257
+#: src/components/windows/MyFactions.jsx:1578
+msgid "Diplomatic News"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1619
+msgid ""
+"Direct two-faction pact. Multiple bilateral pacts allowed; never grouped "
+"together on leaderboards."
 msgstr ""
 
 #: src/components/windows/Settings.jsx:348
@@ -1681,16 +1806,16 @@ msgstr ""
 msgid "Disable Pencil"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2044
-#: src/components/windows/MyFactions.jsx:2699
+#: src/components/windows/MyFactions.jsx:2118
+#: src/components/windows/MyFactions.jsx:2794
 msgid "Disband Faction"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:869
+#: src/components/windows/FactionSystemTab.jsx:1085
 msgid "Disband alliance"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2736
+#: src/components/windows/MyFactions.jsx:2831
 msgid "Disbanding..."
 msgstr ""
 
@@ -1714,12 +1839,38 @@ msgstr ""
 msgid "Discord is optional for gameplay; link for VIP/moderator roles."
 msgstr ""
 
+#: src/components/windows/DiplomaticNews.jsx:145
+msgid "Dispatch"
+msgstr ""
+
 #: src/components/windows/Settings.jsx:35
 msgid "Display"
 msgstr ""
 
 #: src/components/windows/Settings.jsx:322
 msgid "Display the palette in a compact form."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1576
+msgid "Dissolve"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:31
+msgid "Dissolve Coalition (Target is Leader)"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1599
+msgid "Dissolve Pact"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:664
+msgid "Dissolves Coalition"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1577
+msgid ""
+"Dissolving permanently ends this pact and publishes a Diplomatic News "
+"notice."
 msgstr ""
 
 #: src/core/pixelRanks.js:43
@@ -1730,8 +1881,8 @@ msgstr ""
 msgid "Do stuff with IPs (one IP per line)"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1657
-#: src/components/windows/MyFactions.jsx:1367
+#: src/components/windows/Faction.jsx:1609
+#: src/components/windows/MyFactions.jsx:1414
 msgid "Don't let people find this faction in public search or look at its profile."
 msgstr ""
 
@@ -1739,8 +1890,8 @@ msgstr ""
 msgid "Don't remember"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1655
-#: src/components/windows/MyFactions.jsx:1365
+#: src/components/windows/Faction.jsx:1607
+#: src/components/windows/MyFactions.jsx:1412
 msgid "Don't show faction in search"
 msgstr ""
 
@@ -1754,7 +1905,7 @@ msgstr ""
 msgid "Done"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2587
+#: src/components/windows/MyFactions.jsx:2682
 msgid "Double-click to apply | Right-click to cancel"
 msgstr ""
 
@@ -1770,6 +1921,10 @@ msgstr ""
 msgid "Download timelapse video"
 msgstr ""
 
+#: src/components/windows/FactionSystemTab.jsx:832
+msgid "Draft Peace Treaty (Multi-Condition)"
+msgstr ""
+
 #: src/components/FactionCoordination.jsx:708
 msgid "Drag"
 msgstr ""
@@ -1783,7 +1938,7 @@ msgstr ""
 msgid "Drag to move"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2585
+#: src/components/windows/MyFactions.jsx:2680
 msgid "Drag to select area"
 msgstr ""
 
@@ -1824,27 +1979,27 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2037
+#: src/components/windows/MyFactions.jsx:2111
 msgid "Edit Details"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2663
+#: src/components/windows/MyFactions.jsx:2758
 msgid "Edit Faction Details"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1501
+#: src/components/windows/Faction.jsx:1453
 msgid "Edit faction"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1493
+#: src/components/windows/Faction.jsx:1445
 msgid "Edit roles below their own"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1505
+#: src/components/windows/Faction.jsx:1457
 msgid "Edit their own role and elevate users to their own level"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:103
+#: src/components/windows/MyFactions.jsx:109
 msgid "Edit title, description, privacy, and open join"
 msgstr ""
 
@@ -1852,24 +2007,28 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: src/utils/validation.js:19
+#: src/utils/validation.js:12
 msgid "Email can't be empty."
 msgstr ""
 
-#: src/utils/validation.js:21
+#: src/utils/validation.js:14
 msgid "Email can't be longer than 40 characters."
 msgstr ""
 
-#: src/utils/validation.js:22
+#: src/utils/validation.js:15
 msgid "Email should at least contain a dot"
 msgstr ""
 
-#: src/utils/validation.js:20
+#: src/utils/validation.js:13
 msgid "Email should be at least 5 characters long."
 msgstr ""
 
-#: src/utils/validation.js:25
+#: src/utils/validation.js:18
 msgid "Email should contain a @"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1687
+msgid "Emblem avatar (optional)"
 msgstr ""
 
 #: src/components/windows/Chat.jsx:655
@@ -1906,7 +2065,11 @@ msgstr ""
 msgid "Enable chat notifications"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2423
+#: src/components/windows/FactionSystemTab.jsx:1498
+msgid "Enable shared drawing canvas across all member factions in this Union"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2548
 msgid "End Date"
 msgstr ""
 
@@ -1935,7 +2098,7 @@ msgstr ""
 msgid "Enter a User ID, IID, or nickname"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1350
+#: src/components/windows/MyFactions.jsx:1397
 msgid "Enter a little text that describes your faction"
 msgstr ""
 
@@ -1968,7 +2131,7 @@ msgstr ""
 msgid "Enter search term and press Search."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2409
+#: src/components/windows/MyFactions.jsx:2534
 msgid "Enter the 2-3 letter tag of the other faction."
 msgstr ""
 
@@ -1997,16 +2160,16 @@ msgstr ""
 #: src/components/TurnstileCaptcha.jsx:108
 #: src/components/windows/BadgeDisplay.jsx:39
 #: src/components/windows/Faction.jsx:741
-#: src/components/windows/Faction.jsx:989
-#: src/components/windows/Faction.jsx:1328
-#: src/components/windows/Faction.jsx:1675
-#: src/components/windows/Faction.jsx:1852
+#: src/components/windows/Faction.jsx:941
+#: src/components/windows/Faction.jsx:1280
+#: src/components/windows/Faction.jsx:1627
+#: src/components/windows/Faction.jsx:1804
 #: src/components/windows/Invite.jsx:64
-#: src/components/windows/MyFactions.jsx:1385
-#: src/components/windows/MyFactions.jsx:1438
-#: src/components/windows/MyFactions.jsx:2381
-#: src/components/windows/MyFactions.jsx:2703
-#: src/components/windows/MyFactions.jsx:2752
+#: src/components/windows/MyFactions.jsx:1432
+#: src/components/windows/MyFactions.jsx:1485
+#: src/components/windows/MyFactions.jsx:2506
+#: src/components/windows/MyFactions.jsx:2798
+#: src/components/windows/MyFactions.jsx:2847
 #: src/components/windows/OIDCConsent.jsx:288
 #: src/components/windows/Search.jsx:78
 #: src/components/windows/User.jsx:97
@@ -2036,6 +2199,10 @@ msgstr ""
 msgid "Event Status"
 msgstr ""
 
+#: src/components/windows/TerritorySelector.jsx:551
+msgid "Exact Template Mask"
+msgstr ""
+
 #: src/components/BadgeList.jsx:53
 msgid "Expand"
 msgstr ""
@@ -2050,42 +2217,42 @@ msgstr ""
 
 #: src/components/FactionCoordination.jsx:836
 #: src/components/FactionCoordination.jsx:838
-#: src/components/windows/FactionSystemTab.jsx:1161
+#: src/components/windows/FactionSystemTab.jsx:1378
 #: src/components/windows/index.js:52
 msgid "Faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2023
+#: src/components/windows/MyFactions.jsx:2097
 msgid "Faction Details"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2151
+#: src/components/windows/MyFactions.jsx:2225
 msgid "Faction ID"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1220
-#: src/components/windows/MyFactions.jsx:2871
+#: src/components/windows/MyFactions.jsx:1250
+#: src/components/windows/MyFactions.jsx:2966
 msgid "Faction List"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1934
+#: src/components/windows/MyFactions.jsx:2008
 msgid "Faction Settings & Actions"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1227
-#: src/components/windows/MyFactions.jsx:1789
+#: src/components/windows/MyFactions.jsx:1264
+#: src/components/windows/MyFactions.jsx:1863
 msgid "Faction Statistics"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1817
+#: src/components/windows/MyFactions.jsx:1891
 msgid "Faction Templates"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2666
+#: src/components/windows/MyFactions.jsx:2761
 msgid "Faction Title / Name"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1576
+#: src/components/windows/Faction.jsx:1528
 msgid "Faction banner"
 msgstr ""
 
@@ -2094,16 +2261,16 @@ msgstr ""
 msgid "Faction canvas planning"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:263
+#: src/components/windows/FactionProfileView.jsx:188
 msgid "Faction members"
 msgstr ""
 
 #: src/components/FactionCoordination.jsx:37
-#: src/components/windows/FactionSystemTab.jsx:16
+#: src/components/windows/FactionSystemTab.jsx:20
 msgid "Faction request failed."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1207
+#: src/components/windows/MyFactions.jsx:1237
 msgid "Faction sections"
 msgstr ""
 
@@ -2112,9 +2279,12 @@ msgid "Faction-only coordination marks"
 msgstr ""
 
 #: src/components/ChannelDropDown.jsx:86
-#: src/components/windows/MyFactions.jsx:1248
-#: src/components/windows/MyFactions.jsx:1258
-#: src/components/windows/MyFactions.jsx:1430
+#: src/components/buttons/QuickAccessButtons.jsx:38
+#: src/components/buttons/QuickAccessButtons.jsx:39
+#: src/components/windows/MyFactions.jsx:1285
+#: src/components/windows/MyFactions.jsx:1295
+#: src/components/windows/MyFactions.jsx:1305
+#: src/components/windows/MyFactions.jsx:1477
 #: src/components/windows/Search.jsx:26
 #: src/components/windows/User.jsx:251
 #: src/components/windows/UserArea.jsx:175
@@ -2133,12 +2303,16 @@ msgstr ""
 msgid "Factor"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1045
+#: src/components/windows/MyFactions.jsx:1075
 msgid "Failed to download template image."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1078
+#: src/components/windows/MyFactions.jsx:1108
 msgid "Failed to install template"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:74
+msgid "Failed to load diplomatic news."
 msgstr ""
 
 #: src/components/CooldownTools.jsx:255
@@ -2158,11 +2332,15 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:901
+#: src/components/windows/FactionSystemTab.jsx:1117
 msgid "Filter by category"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:883
+#: src/components/windows/DiplomaticNews.jsx:116
+msgid "Filter diplomatic news"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1099
 msgid "Find your pact"
 msgstr ""
 
@@ -2189,6 +2367,12 @@ msgstr ""
 
 #: src/components/windows/Chat.jsx:266
 msgid "Flags"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1631
+msgid ""
+"Focused war bloc against a target faction. Dissolves if the Coalition "
+"Leader accepts a sever-coalition term."
 msgstr ""
 
 #: src/components/windows/BadgeDisplay.jsx:64
@@ -2230,6 +2414,11 @@ msgstr ""
 msgid "For when you are playing on a potato."
 msgstr ""
 
+#: src/components/windows/MyFactions.jsx:2326
+#: src/components/windows/TreatyTermsBuilder.jsx:129
+msgid "Forces Coalition Dissolution"
+msgstr ""
+
 #: src/components/LogInForm.jsx:163
 #: src/components/windows/OIDCConsent.jsx:264
 msgid "Forever"
@@ -2237,6 +2426,11 @@ msgstr ""
 
 #: src/components/TimelapseMaker.jsx:268
 msgid "Frame skip"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:422
+#: src/components/windows/TerritorySelector.jsx:553
+msgid "Freehand Lasso"
 msgstr ""
 
 #: src/components/windows/Templates.jsx:48
@@ -2249,22 +2443,17 @@ msgstr ""
 msgid "From Template"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:965
+#: src/components/windows/FactionSystemTab.jsx:1182
 msgid "Full"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2226
+#: src/components/windows/MyFactions.jsx:2305
 msgid "Full active template territory"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2635
-#: src/components/windows/MyFactions.jsx:2641
+#: src/components/windows/MyFactions.jsx:2730
+#: src/components/windows/MyFactions.jsx:2736
 msgid "Full template"
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:2472
-#: src/components/windows/MyFactions.jsx:2483
-msgid "Full template default"
 msgstr ""
 
 #: src/components/windows/Settings.jsx:384
@@ -2274,6 +2463,10 @@ msgstr ""
 
 #: src/core/pixelRanks.js:46
 msgid "General"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1456
+msgid "General & Charter Settings"
 msgstr ""
 
 #: src/components/GetIID.jsx:44
@@ -2365,7 +2558,7 @@ msgid ""
 "currently only one."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1990
+#: src/components/windows/MyFactions.jsx:2064
 msgid "Hidden from search"
 msgstr ""
 
@@ -2410,8 +2603,7 @@ msgstr ""
 msgid "Hold left ${ bindShift } for pencil (to place while moving mouse)"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:693
-#: src/components/windows/MyFactions.jsx:1450
+#: src/components/windows/MyFactions.jsx:1497
 msgid "Home"
 msgstr ""
 
@@ -2429,11 +2621,11 @@ msgstr ""
 msgid "I forgot my Password."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1060
+#: src/components/windows/FactionSystemTab.jsx:1277
 msgid "I have read and agree to this charter."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1761
+#: src/components/windows/Faction.jsx:1713
 msgid "ID"
 msgstr ""
 
@@ -2489,7 +2681,7 @@ msgid ""
 "the following identifiers:"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:472
+#: src/components/windows/FactionSystemTab.jsx:556
 msgid "Image"
 msgstr ""
 
@@ -2510,16 +2702,16 @@ msgid "Import templates"
 msgstr ""
 
 #: src/components/ChaosTools.jsx:229
-#: src/components/windows/FactionSystemTab.jsx:462
+#: src/components/windows/FactionSystemTab.jsx:546
 msgid "Inactive"
 msgstr ""
 
-#: src/utils/validation.js:72
+#: src/utils/validation.js:65
 msgid "Incorrect password"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:506
-#: src/components/windows/MyFactions.jsx:2210
+#: src/components/windows/FactionSystemTab.jsx:590
+#: src/components/windows/MyFactions.jsx:2284
 msgid "Indefinite duration"
 msgstr ""
 
@@ -2527,15 +2719,15 @@ msgstr ""
 msgid "Information alert sound"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1864
+#: src/components/windows/MyFactions.jsx:1938
 msgid "Install to My Templates"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1074
+#: src/components/windows/MyFactions.jsx:1104
 msgid "Installed to your templates!"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1861
+#: src/components/windows/MyFactions.jsx:1935
 msgid "Installing..."
 msgstr ""
 
@@ -2569,19 +2761,19 @@ msgstr ""
 msgid "Invite"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:840
+#: src/components/windows/FactionSystemTab.jsx:1056
 msgid "Invite a faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2008
+#: src/components/windows/MyFactions.jsx:2082
 msgid "Invite only"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:106
+#: src/components/windows/MyFactions.jsx:112
 msgid "Invite players to the faction"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:965
+#: src/components/windows/FactionSystemTab.jsx:1182
 msgid "Invited"
 msgstr ""
 
@@ -2593,7 +2785,7 @@ msgstr ""
 msgid "Invites"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1727
+#: src/components/windows/Faction.jsx:1679
 msgid "Is One-Time-Invite"
 msgstr ""
 
@@ -2605,18 +2797,18 @@ msgstr ""
 msgid "Jannies can rollback and protect, but not watch or ban."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:254
-#: src/components/windows/FactionBrowser.jsx:423
+#: src/components/windows/FactionBrowser.jsx:277
+#: src/components/windows/FactionProfileView.jsx:177
 #: src/components/windows/Invite.jsx:119
 msgid "Join"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1734
+#: src/components/windows/MyFactions.jsx:1808
 msgid "Join Applications"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:875
-#: src/components/windows/Faction.jsx:880
+#: src/components/windows/Faction.jsx:819
+#: src/components/windows/Faction.jsx:824
 msgid "Join Faction"
 msgstr ""
 
@@ -2648,19 +2840,19 @@ msgstr ""
 msgid "Key Bindings"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1096
+#: src/components/windows/Faction.jsx:1048
 msgid "Kick"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2844
+#: src/components/windows/MyFactions.jsx:2939
 msgid "Kick Member"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:107
+#: src/components/windows/MyFactions.jsx:113
 msgid "Kick lower-ranked members"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1473
+#: src/components/windows/Faction.jsx:1425
 msgid "Kick members"
 msgstr ""
 
@@ -2681,7 +2873,7 @@ msgstr ""
 msgid "Know that an account exists"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2581
+#: src/components/windows/MyFactions.jsx:2676
 msgid "Lasso Tool"
 msgstr ""
 
@@ -2693,25 +2885,39 @@ msgstr ""
 msgid "Launch Chaos Event"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:11
-#: src/components/windows/MyFactions.jsx:96
+#: src/components/windows/FactionProfileView.jsx:15
+#: src/components/windows/FactionSystemTab.jsx:1540
+#: src/components/windows/MyFactions.jsx:102
 msgid "Leader"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2780
+#: src/components/windows/MyFactions.jsx:2875
 msgid "Leader (Co-Leader)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1635
+#: src/components/windows/MyFactions.jsx:1709
 msgid "Leave"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:889
-#: src/components/windows/Faction.jsx:899
+#: src/components/windows/TreatyTermsBuilder.jsx:19
+msgid "Leave / Dissolve Coalition"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:32
+msgid "Leave Coalition"
+msgstr ""
+
+#: src/components/windows/Faction.jsx:833
+#: src/components/windows/Faction.jsx:843
 msgid "Leave Faction"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:869
+#: src/components/windows/TreatyTermsBuilder.jsx:18
+#: src/components/windows/TreatyTermsBuilder.jsx:28
+msgid "Leave Union"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1085
 msgid "Leave alliance"
 msgstr ""
 
@@ -2727,17 +2933,17 @@ msgstr ""
 msgid "Legend"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1668
-#: src/components/windows/MyFactions.jsx:1378
+#: src/components/windows/Faction.jsx:1620
+#: src/components/windows/MyFactions.jsx:1425
 msgid "Let everyone join this faction"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1670
-#: src/components/windows/MyFactions.jsx:1380
+#: src/components/windows/Faction.jsx:1622
+#: src/components/windows/MyFactions.jsx:1427
 msgid "Let people join this faction without needing an invite."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1464
+#: src/components/windows/Faction.jsx:1416
 msgid "Level"
 msgstr ""
 
@@ -2760,6 +2966,10 @@ msgstr ""
 
 #: src/components/windows/UserArea.jsx:348
 msgid "Link Discord!"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:703
+msgid "Linked template (optional)"
 msgstr ""
 
 #: src/components/IIDTools.jsx:209
@@ -2803,11 +3013,7 @@ msgstr ""
 msgid "Loading statistics..."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2455
-msgid "Loading the target faction's active template…"
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:2563
+#: src/components/windows/MyFactions.jsx:2658
 msgid ""
 "Loading the target template. You can already select its territory using the "
 "displayed template."
@@ -2819,15 +3025,15 @@ msgstr ""
 #: src/components/windows/Converter.jsx:91
 #: src/components/windows/Faction.jsx:743
 #: src/components/windows/Invite.jsx:66
-#: src/components/windows/MyFactions.jsx:1242
-#: src/components/windows/MyFactions.jsx:1727
-#: src/components/windows/MyFactions.jsx:1736
+#: src/components/windows/MyFactions.jsx:1279
+#: src/components/windows/MyFactions.jsx:1801
+#: src/components/windows/MyFactions.jsx:1810
 #: src/components/windows/User.jsx:99
 msgid "Loading..."
 msgstr ""
 
-#: src/components/buttons/QuickAccessButtons.jsx:23
-#: src/components/buttons/QuickAccessButtons.jsx:24
+#: src/components/buttons/QuickAccessButtons.jsx:27
+#: src/components/buttons/QuickAccessButtons.jsx:28
 msgid "Log in"
 msgstr ""
 
@@ -2867,10 +3073,22 @@ msgstr ""
 msgid "Login with Name or Mail:"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1001
+#: src/components/windows/FactionSystemTab.jsx:1031
 msgid ""
-"Long-term pact · multiple factions share one approved membership roster and "
-"a durable charter."
+"Long-term Union grouped on leaderboards with a shared Union Coordination "
+"drawing layer across all member factions."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1218
+msgid ""
+"Long-term Union · grouped on leaderboards with a shared Union Coordination "
+"drawing layer across all member factions."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1625
+msgid ""
+"Long-term multi-faction bloc grouped on leaderboards with a shared Union "
+"Coordination drawing layer."
 msgstr ""
 
 #: src/components/PixelRankCounter.jsx:35
@@ -2881,11 +3099,15 @@ msgstr ""
 msgid "Major"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1999
+#: src/components/windows/MyFactions.jsx:2073
 msgid "Make Hidden"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1999
+#: src/components/windows/FactionSystemTab.jsx:1554
+msgid "Make Leader"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2073
 msgid "Make Public"
 msgstr ""
 
@@ -2897,15 +3119,15 @@ msgstr ""
 msgid "Make shorter eraser strokes to keep the canvas responsive."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1714
+#: src/components/windows/MyFactions.jsx:1788
 msgid "Manage"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:108
+#: src/components/windows/MyFactions.jsx:114
 msgid "Manage Admin & Roles"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:105
+#: src/components/windows/MyFactions.jsx:111
 msgid "Manage Applications"
 msgstr ""
 
@@ -2913,31 +3135,31 @@ msgstr ""
 msgid "Manage Chaos Event with reduced pixel cooldowns across all canvases."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:110
+#: src/components/windows/MyFactions.jsx:116
 msgid "Manage Configurations"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:112
+#: src/components/windows/MyFactions.jsx:118
 msgid "Manage Coordination"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:104
+#: src/components/windows/MyFactions.jsx:110
 msgid "Manage Faction Appearance"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:103
+#: src/components/windows/MyFactions.jsx:109
 msgid "Manage Faction Settings"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:106
+#: src/components/windows/MyFactions.jsx:112
 msgid "Manage Invitations"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2748
+#: src/components/windows/MyFactions.jsx:2843
 msgid "Manage Member Permissions"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:107
+#: src/components/windows/MyFactions.jsx:113
 msgid "Manage Members"
 msgstr ""
 
@@ -2945,11 +3167,11 @@ msgstr ""
 msgid "Manage Moderators"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:111
+#: src/components/windows/MyFactions.jsx:117
 msgid "Manage NAPs"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:109
+#: src/components/windows/MyFactions.jsx:115
 msgid "Manage Templates"
 msgstr ""
 
@@ -2958,11 +3180,11 @@ msgstr ""
 msgid "Manage VIP"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1469
+#: src/components/windows/Faction.jsx:1421
 msgid "Manage invites"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1687
+#: src/components/windows/MyFactions.jsx:1761
 msgid "Manage this member's role and permissions"
 msgstr ""
 
@@ -2978,7 +3200,7 @@ msgstr ""
 msgid "Master volume for all game sounds."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:103
+#: src/components/windows/FactionSystemTab.jsx:107
 msgid "Matching factions"
 msgstr ""
 
@@ -2986,50 +3208,48 @@ msgstr ""
 msgid "Maximize"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:14
-#: src/components/windows/FactionSystemTab.jsx:965
-#: src/components/windows/FactionSystemTab.jsx:1286
-#: src/components/windows/FactionSystemTab.jsx:1303
-#: src/components/windows/MyFactions.jsx:99
-#: src/components/windows/MyFactions.jsx:1659
+#: src/components/windows/FactionProfileView.jsx:18
+#: src/components/windows/FactionSystemTab.jsx:1182
+#: src/components/windows/FactionSystemTab.jsx:1729
+#: src/components/windows/FactionSystemTab.jsx:1746
+#: src/components/windows/MyFactions.jsx:105
+#: src/components/windows/MyFactions.jsx:1733
 msgid "Member"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2777
+#: src/components/windows/MyFactions.jsx:2872
 msgid "Member (Regular)"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1148
+#: src/components/windows/FactionSystemTab.jsx:1527
+msgid "Member Factions & Leadership"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1365
 msgid "Member factions"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1644
+#: src/components/windows/MyFactions.jsx:1718
 msgid "Member pixel statistics could not be loaded:"
 msgstr ""
 
 #: src/components/Table.jsx:34
 #: src/components/windows/Faction.jsx:93
-#: src/components/windows/Faction.jsx:831
-#: src/components/windows/FactionBrowser.jsx:261
-#: src/components/windows/FactionBrowser.jsx:412
-#: src/components/windows/MyFactions.jsx:1457
-#: src/components/windows/MyFactions.jsx:1624
-#: src/components/windows/MyFactions.jsx:1648
-#: src/components/windows/MyFactions.jsx:1807
+#: src/components/windows/FactionBrowser.jsx:266
+#: src/components/windows/FactionProfileView.jsx:151
+#: src/components/windows/FactionProfileView.jsx:186
+#: src/components/windows/MyFactions.jsx:1504
+#: src/components/windows/MyFactions.jsx:1698
+#: src/components/windows/MyFactions.jsx:1722
+#: src/components/windows/MyFactions.jsx:1881
 msgid "Members"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:813
-msgid ""
-"Members coordinate war declarations against the target. A member can leave "
-"by making peace."
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:2005
+#: src/components/windows/MyFactions.jsx:2079
 msgid "Membership Access"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1109
+#: src/components/windows/FactionSystemTab.jsx:1326
 msgid "Membership requests"
 msgstr ""
 
@@ -3089,7 +3309,11 @@ msgstr ""
 msgid "Muted Sound"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1213
+#: src/components/windows/FactionSystemTab.jsx:359
+msgid "Mutual non-aggression over protected territory."
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:1243
 msgid "My Faction"
 msgstr ""
 
@@ -3097,72 +3321,85 @@ msgstr ""
 msgid "My Factions"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:305
-msgid "NAP"
+#: src/components/windows/FactionSystemTab.jsx:902
+msgid "My Pacts"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2516
+#: src/components/windows/FactionProfileView.jsx:234
+msgid "NAP & Treaties"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:25
+msgid "NAP Proposed"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:24
+msgid "NAP Signed"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2611
 msgid "NAP Territory Distribution & Protection"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1977
-#: src/components/windows/MyFactions.jsx:2076
+#: src/components/windows/MyFactions.jsx:2051
+#: src/components/windows/MyFactions.jsx:2150
 msgid "NAP feature is coming soon."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:325
-#: src/components/windows/MyFactions.jsx:2090
+#: src/components/windows/MyFactions.jsx:2164
 msgid "NAP functionality is temporarily unavailable and will be added soon."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:534
-msgid "NAP proposals"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:501
+#: src/components/windows/FactionSystemTab.jsx:585
 msgid "NAP proposals awaiting review"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1498
+#: src/components/windows/MyFactions.jsx:1557
 msgid "NAPs"
 msgstr ""
 
 #: src/components/Table.jsx:28
-#: src/components/windows/Faction.jsx:1198
-#: src/components/windows/Faction.jsx:1366
-#: src/components/windows/MyFactions.jsx:1285
-#: src/components/windows/MyFactions.jsx:2024
+#: src/components/windows/Faction.jsx:1150
+#: src/components/windows/Faction.jsx:1318
+#: src/components/windows/FactionSystemTab.jsx:1458
+#: src/components/windows/MyFactions.jsx:1332
+#: src/components/windows/MyFactions.jsx:2098
 msgid "Name"
 msgstr ""
 
-#: src/utils/validation.js:104
-msgid "Name can only contain the characters: a-z . _ and -"
-msgstr ""
-
-#: src/utils/validation.js:32
-#: src/utils/validation.js:96
+#: src/utils/validation.js:25
 msgid "Name can't be empty."
 msgstr ""
 
-#: src/utils/validation.js:43
+#: src/utils/validation.js:139
+msgid "Name cannot be longer than 32 characters."
+msgstr ""
+
+#: src/utils/validation.js:36
 msgid "Name contains invalid character like @, /, \\ or #"
 msgstr ""
 
-#: src/utils/validation.js:33
-#: src/utils/validation.js:98
+#: src/utils/validation.js:142
+msgid "Name contains invalid characters."
+msgstr ""
+
+#: src/utils/validation.js:26
 msgid "Name must be at least 2 characters long"
 msgstr ""
 
-#: src/utils/validation.js:34
-#: src/utils/validation.js:101
+#: src/utils/validation.js:136
+msgid "Name must be at least 2 characters long."
+msgstr ""
+
+#: src/utils/validation.js:27
 msgid "Name must be shorter than 26 characters"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1205
+#: src/components/windows/Faction.jsx:1157
 msgid "Name of this role"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1292
+#: src/components/windows/MyFactions.jsx:1339
 msgid "Name of your faction (this can not be changed later)"
 msgstr ""
 
@@ -3170,7 +3407,7 @@ msgstr ""
 msgid "Name or Email"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2877
+#: src/components/windows/MyFactions.jsx:2972
 msgid "Need 50,000 pixels to create"
 msgstr ""
 
@@ -3182,11 +3419,11 @@ msgstr ""
 msgid "New Mail"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1981
+#: src/components/windows/MyFactions.jsx:2055
 msgid "New NAP"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2082
+#: src/components/windows/MyFactions.jsx:2156
 msgid "New NAP Proposal"
 msgstr ""
 
@@ -3198,13 +3435,7 @@ msgstr ""
 msgid "New Password"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:815
-msgid ""
-"New factions join after founder approval. The pact roster and charter are "
-"shared."
-msgstr ""
-
-#: src/components/windows/FactionBrowser.jsx:438
+#: src/components/windows/FactionBrowser.jsx:292
 msgid "Next"
 msgstr ""
 
@@ -3222,28 +3453,31 @@ msgstr ""
 msgid "No File selected to upload"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:528
-#: src/components/windows/FactionSystemTab.jsx:556
+#: src/components/windows/FactionSystemTab.jsx:691
+msgid "No NAP proposals yet."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:612
 msgid "No NAP proposals."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1076
+#: src/components/windows/FactionSystemTab.jsx:1293
 msgid "No active alliances are available yet."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2296
+#: src/components/windows/MyFactions.jsx:2423
 msgid "No active or incoming non-aggression pacts."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1941
+#: src/components/windows/MyFactions.jsx:2015
 msgid "No active template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1909
+#: src/components/windows/MyFactions.jsx:1983
 msgid "No active template for this faction."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1108
+#: src/components/windows/FactionSystemTab.jsx:1325
 msgid "No alliance invitations."
 msgstr ""
 
@@ -3259,28 +3493,32 @@ msgstr ""
 msgid "No database record"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2025
+#: src/components/windows/MyFactions.jsx:2099
 msgid "No description provided."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:242
-#: src/components/windows/FactionBrowser.jsx:411
+#: src/components/windows/FactionBrowser.jsx:265
+#: src/components/windows/FactionProfileView.jsx:145
 msgid "No description yet."
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:140
+msgid "No diplomatic news matches this filter yet."
 msgstr ""
 
 #: src/components/windows/Chat.jsx:641
 msgid "No emojis in this category yet"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1583
+#: src/components/windows/Faction.jsx:1535
 msgid "No faction banner set"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:468
+#: src/components/windows/FactionSystemTab.jsx:552
 msgid "No faction templates have been uploaded."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:430
+#: src/components/windows/FactionBrowser.jsx:284
 msgid "No factions found."
 msgstr ""
 
@@ -3288,12 +3526,16 @@ msgstr ""
 msgid "No history backups are configured; rollback is unavailable."
 msgstr ""
 
-#: src/components/Table.jsx:314
-#: src/components/windows/FactionSystemTab.jsx:1026
+#: src/components/windows/TreatyTermsBuilder.jsx:198
+msgid "No matching active pacts found (specify below)"
+msgstr ""
+
+#: src/components/Table.jsx:326
+#: src/components/windows/FactionSystemTab.jsx:1243
 msgid "No member factions found."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:298
+#: src/components/windows/FactionProfileView.jsx:226
 msgid "No members to display."
 msgstr ""
 
@@ -3301,7 +3543,7 @@ msgstr ""
 msgid "No or invalid captcha text"
 msgstr ""
 
-#: src/utils/validation.js:140
+#: src/utils/validation.js:76
 msgid "No password given."
 msgstr ""
 
@@ -3316,7 +3558,7 @@ msgid ""
 "see detection results."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:120
+#: src/components/windows/FactionSystemTab.jsx:124
 msgid "No public factions match that search."
 msgstr ""
 
@@ -3353,7 +3595,7 @@ msgstr ""
 msgid "No signal"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1011
+#: src/components/windows/FactionSystemTab.jsx:1228
 msgid "No terms were provided."
 msgstr ""
 
@@ -3361,15 +3603,19 @@ msgstr ""
 msgid "No times available for this date"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1141
+#: src/components/windows/Faction.jsx:1093
 msgid "Nobody is banned from this faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1963
+#: src/components/windows/MyFactions.jsx:2037
 msgid "Non-Aggression Pact (NAP)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2070
+#: src/components/windows/FactionSystemTab.jsx:624
+msgid "Non-Aggression Pacts & Multi-Term Treaties"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2144
 msgid "Non-Aggression Pacts (NAPs)"
 msgstr ""
 
@@ -3415,8 +3661,8 @@ msgid "Notification sound"
 msgstr ""
 
 #: src/components/UserNotifications.jsx:79
-#: src/components/windows/FactionSystemTab.jsx:708
-#: src/components/windows/MyFactions.jsx:1465
+#: src/components/windows/FactionSystemTab.jsx:924
+#: src/components/windows/MyFactions.jsx:1512
 #: src/components/windows/UserArea.jsx:172
 msgid "Notifications"
 msgstr ""
@@ -3430,13 +3676,17 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:13
-#: src/components/windows/MyFactions.jsx:98
+#: src/components/windows/FactionProfileView.jsx:17
+#: src/components/windows/MyFactions.jsx:104
 msgid "Officer"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2778
+#: src/components/windows/MyFactions.jsx:2873
 msgid "Officer (Moderator)"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1508
+msgid "Officers, Deputies & Leaders only"
 msgstr ""
 
 #: src/components/windows/Converter.jsx:402
@@ -3448,19 +3698,11 @@ msgstr ""
 msgid "Old Password"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:505
+#: src/components/windows/FactionSystemTab.jsx:589
 msgid "On approval"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:312
-msgid "One of the factions has no active template"
-msgstr ""
-
-#: src/components/windows/FactionBrowser.jsx:321
-msgid "One of the factions has no active template. NAP request unavailable."
-msgstr ""
-
-#: src/components/windows/Faction.jsx:1763
+#: src/components/windows/Faction.jsx:1715
 msgid "One-Time"
 msgstr ""
 
@@ -3472,12 +3714,18 @@ msgstr ""
 msgid "Online Users on Canvas"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1948
+#: src/components/windows/MyFactions.jsx:2022
 msgid "Only owner or members with template permissions can upload"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1039
+#: src/components/windows/FactionSystemTab.jsx:1256
 msgid "Only signed-in faction owners and leaders can apply."
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1521
+msgid ""
+"Only the founding/leading faction's leader can modify Union or Coalition "
+"settings."
 msgstr ""
 
 #: src/ui/PixelTransferController.js:276
@@ -3496,15 +3744,11 @@ msgstr ""
 msgid "Open Chat"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2449
-msgid "Open Fullscreen Territory Editor"
-msgstr ""
-
 #: src/components/buttons/PalselButton.jsx:32
 msgid "Open Palette"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:967
+#: src/components/windows/FactionSystemTab.jsx:1184
 msgid "Open for applications"
 msgstr ""
 
@@ -3513,7 +3757,7 @@ msgstr ""
 msgid "Open in PopUp"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:393
+#: src/components/windows/FactionBrowser.jsx:247
 msgid "Open only"
 msgstr ""
 
@@ -3521,11 +3765,17 @@ msgstr ""
 msgid "OpenID Connect Client registration"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2343
+#: src/components/windows/FactionSystemTab.jsx:850
+msgid "Optional summary or border notes..."
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2468
+#: src/components/windows/TerritorySelector.jsx:450
 msgid "Origin X"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2352
+#: src/components/windows/MyFactions.jsx:2477
+#: src/components/windows/TerritorySelector.jsx:458
 msgid "Origin Y"
 msgstr ""
 
@@ -3543,7 +3793,7 @@ msgid ""
 "and 7s on already set pixels."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1316
+#: src/components/windows/FactionSystemTab.jsx:1759
 msgid "Overall faction and coalition ranking"
 msgstr ""
 
@@ -3567,21 +3817,37 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:10
-#: src/components/windows/MyFactions.jsx:95
+#: src/components/windows/FactionProfileView.jsx:14
+#: src/components/windows/MyFactions.jsx:101
 msgid "Owner"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2047
+#: src/components/windows/MyFactions.jsx:2121
 msgid "Owner Only"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:821
+#: src/components/windows/DiplomaticNews.jsx:30
+msgid "Pact Severed"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:173
+msgid "Pact Type to Sever"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1037
 msgid "Pact charter"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:811
+#: src/components/windows/FactionSystemTab.jsx:1027
 msgid "Pact mechanics"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1669
+msgid "Pact name"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1678
+msgid "Pact tag (optional, 2–5 chars)"
 msgstr ""
 
 #: src/components/windows/Converter.jsx:227
@@ -3600,11 +3866,11 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: src/utils/validation.js:143
+#: src/utils/validation.js:78
 msgid "Password must be at least 6 characters long."
 msgstr ""
 
-#: src/utils/validation.js:146
+#: src/utils/validation.js:81
 msgid "Password must be shorter than 60 characters."
 msgstr ""
 
@@ -3614,6 +3880,10 @@ msgstr ""
 
 #: src/components/ChangePassword.jsx:22
 msgid "Passwords do not match."
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:23
+msgid "Peace Treaty"
 msgstr ""
 
 #: src/components/windows/Templates.jsx:73
@@ -3632,22 +3902,22 @@ msgstr ""
 msgid "Permanent Cooldown Settings"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2736
+#: src/components/windows/MyFactions.jsx:2831
 msgid "Permanently Delete Faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2045
+#: src/components/windows/MyFactions.jsx:2119
 msgid ""
 "Permanently delete your faction, channels, templates, and pacts. This "
 "action cannot be undone."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1462
+#: src/components/windows/Faction.jsx:1414
 #: src/components/windows/OIDCConsent.jsx:224
 msgid "Permission"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1457
+#: src/components/windows/Faction.jsx:1409
 msgid "Permissions of Powerlevels"
 msgstr ""
 
@@ -3698,12 +3968,12 @@ msgstr ""
 #: src/components/PixelRankProgress.jsx:44
 #: src/components/Table.jsx:41
 #: src/components/Table.jsx:44
-#: src/components/windows/MyFactions.jsx:1622
+#: src/components/windows/MyFactions.jsx:1696
 #: src/components/windows/PixelRanks.jsx:63
 msgid "Pixels"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1803
+#: src/components/windows/MyFactions.jsx:1877
 msgid "Pixels Today"
 msgstr ""
 
@@ -3712,9 +3982,9 @@ msgstr ""
 msgid "Pixels placed"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1154
-#: src/components/windows/FactionSystemTab.jsx:1162
-#: src/components/windows/FactionSystemTab.jsx:1287
+#: src/components/windows/FactionSystemTab.jsx:1371
+#: src/components/windows/FactionSystemTab.jsx:1379
+#: src/components/windows/FactionSystemTab.jsx:1730
 #: src/components/windows/UserArea.jsx:314
 #: src/components/windows/UserArea.jsx:392
 msgid "Pixels today"
@@ -3725,7 +3995,6 @@ msgid "Place color pixels on a large canvas with other players online!"
 msgstr ""
 
 #: src/components/OnlineBox.jsx:85
-#: src/components/windows/Faction.jsx:821
 #: src/components/windows/User.jsx:233
 msgid "Placed Pixels"
 msgstr ""
@@ -3735,7 +4004,7 @@ msgid "Play a sound when new chat messages arrive"
 msgstr ""
 
 #: src/components/UserNotifications.jsx:91
-#: src/components/windows/FactionBrowser.jsx:265
+#: src/components/windows/FactionProfileView.jsx:190
 msgid "Player"
 msgstr ""
 
@@ -3743,7 +4012,7 @@ msgstr ""
 msgid "Players and Pixels per hour"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:814
+#: src/components/windows/MyFactions.jsx:845
 msgid "Please enter a target faction tag (2-3 characters)."
 msgstr ""
 
@@ -3755,7 +4024,7 @@ msgstr ""
 msgid "Please refresh the website"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:779
+#: src/components/windows/MyFactions.jsx:810
 msgid "Please select an image file to upload."
 msgstr ""
 
@@ -3769,16 +4038,24 @@ msgstr ""
 msgid "Political Compass Canvas"
 msgstr ""
 
+#: src/components/windows/TerritorySelector.jsx:553
+msgid "Polygon"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:415
+msgid "Polygon Click"
+msgstr ""
+
 #: src/components/windows/Settings.jsx:411
 msgid "Potato Mode"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1223
-#: src/components/windows/Faction.jsx:1375
+#: src/components/windows/Faction.jsx:1175
+#: src/components/windows/Faction.jsx:1327
 msgid "Powerlevel"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1233
+#: src/components/windows/Faction.jsx:1185
 msgid "Powerlevel of this role. See table below for an explanation."
 msgstr ""
 
@@ -3823,7 +4100,7 @@ msgstr ""
 msgid "Press a key…"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:434
+#: src/components/windows/FactionBrowser.jsx:288
 msgid "Prev"
 msgstr ""
 
@@ -3853,8 +4130,8 @@ msgstr ""
 
 #: src/components/SocialSettings.jsx:120
 #: src/components/Table.jsx:139
-#: src/components/Table.jsx:187
-#: src/components/windows/FactionBrowser.jsx:426
+#: src/components/Table.jsx:193
+#: src/components/windows/FactionBrowser.jsx:280
 msgid "Private"
 msgstr ""
 
@@ -3862,11 +4139,11 @@ msgstr ""
 msgid "Private (military rank)"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:411
+#: src/components/windows/FactionBrowser.jsx:265
 msgid "Private faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1763
+#: src/components/windows/MyFactions.jsx:1837
 msgid "Processing..."
 msgstr ""
 
@@ -3879,42 +4156,67 @@ msgstr ""
 msgid "Profile banner"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:108
+#: src/components/windows/MyFactions.jsx:114
 msgid "Promote/demote and configure member permissions"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:315
+#: src/components/windows/FactionProfileView.jsx:241
 msgid "Propose NAP"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2309
+#: src/components/windows/MyFactions.jsx:2434
 msgid "Propose New NAP"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2378
+#: src/components/windows/MyFactions.jsx:2503
 msgid "Propose Non-Aggression Pact (NAP)"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:559
-msgid "Propose a NAP"
+#: src/components/windows/FactionSystemTab.jsx:695
+msgid "Propose a NAP / Treaty"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1965
+#: src/components/windows/MyFactions.jsx:2039
 msgid ""
 "Propose a non-aggression pact with another faction protecting defined "
 "territories."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:111
+#: src/components/windows/MyFactions.jsx:117
 msgid "Propose and manage Non-Aggression Pacts"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2216
+#: src/components/windows/TerritorySelector.jsx:548
+msgid "Protected Area"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:640
+#: src/components/windows/MyFactions.jsx:2290
 msgid "Protected Territory"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:336
+#, javascript-format
+msgid "Protected freehand territory (${ worldPolygon.length } border points)."
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:335
+#, javascript-format
+msgid "Protected polygon with ${ worldPolygon.length } vertices."
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:395
+msgid "Protected rectangular territory."
 msgstr ""
 
 #: src/components/IIDTools.jsx:678
 msgid "Proxy check"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:107
+msgid ""
+"Public record of war declarations, peace treaties, NAPs, unions, "
+"coalitions, and bilateral pacts."
 msgstr ""
 
 #: src/components/Admintools.jsx:248
@@ -3953,6 +4255,10 @@ msgstr ""
 msgid "Ranks"
 msgstr ""
 
+#: src/components/windows/TerritorySelector.jsx:486
+msgid "Re-scan Template Pixels"
+msgstr ""
+
 #: src/components/windows/OIDCConsent.jsx:64
 msgid "Read badges"
 msgstr ""
@@ -3971,7 +4277,12 @@ msgstr ""
 msgid "Recruit"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2573
+#: src/components/windows/TerritorySelector.jsx:429
+#: src/components/windows/TerritorySelector.jsx:553
+msgid "Rectangle"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2668
 msgid "Rectangle Tool"
 msgstr ""
 
@@ -3983,10 +4294,15 @@ msgstr ""
 
 #: src/components/ModLogTools.jsx:115
 #: src/components/RefreshPrompt.jsx:14
-#: src/components/windows/Faction.jsx:861
+#: src/components/windows/DiplomaticNews.jsx:111
+#: src/components/windows/Faction.jsx:805
 #: src/components/windows/Modlog.jsx:53
 #: src/components/windows/User.jsx:291
 msgid "Refresh"
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:111
+msgid "Refreshing..."
 msgstr ""
 
 #: src/components/ChaosTools.jsx:390
@@ -4011,12 +4327,14 @@ msgstr ""
 msgid "Regularly update this data"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:524
-#: src/components/windows/MyFactions.jsx:1773
+#: src/components/windows/FactionSystemTab.jsx:608
+#: src/components/windows/FactionSystemTab.jsx:685
+#: src/components/windows/MyFactions.jsx:1847
+#: src/components/windows/MyFactions.jsx:2365
 msgid "Reject"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:334
+#: src/components/windows/FactionProfileView.jsx:254
 msgid "Rejected"
 msgstr ""
 
@@ -4026,8 +4344,9 @@ msgstr ""
 
 #: src/components/DeleteList.jsx:31
 #: src/components/IIDTools.jsx:804
-#: src/components/windows/MyFactions.jsx:1557
-#: src/components/windows/MyFactions.jsx:1600
+#: src/components/windows/FactionSystemTab.jsx:1565
+#: src/components/windows/MyFactions.jsx:1631
+#: src/components/windows/MyFactions.jsx:1674
 msgid "Remove"
 msgstr ""
 
@@ -4047,11 +4366,11 @@ msgstr ""
 msgid "Remove Moderator"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:993
+#: src/components/windows/Faction.jsx:945
 msgid "Remove Roles"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1902
+#: src/components/windows/MyFactions.jsx:1976
 msgid "Remove Template"
 msgstr ""
 
@@ -4061,6 +4380,10 @@ msgstr ""
 
 #: src/components/ChangeMail.jsx:193
 msgid "Remove a Login method:"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:137
+msgid "Remove condition"
 msgstr ""
 
 #: src/components/IIDTools.jsx:206
@@ -4078,20 +4401,20 @@ msgstr ""
 msgid "Represents ${ activeFactionTitle } as ${ activeFactionRoleName }"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2284
+#: src/components/windows/MyFactions.jsx:2411
 msgid "Request Termination"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:27
-#: src/components/windows/MyFactions.jsx:83
+#: src/components/windows/FactionBrowser.jsx:20
+#: src/components/windows/MyFactions.jsx:89
 msgid "Request failed."
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:359
+#: src/components/windows/FactionProfileView.jsx:264
 msgid "Request termination"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1066
+#: src/components/windows/FactionSystemTab.jsx:1283
 msgid "Request to join"
 msgstr ""
 
@@ -4107,7 +4430,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2626
+#: src/components/windows/MyFactions.jsx:2721
 msgid "Reset Both"
 msgstr ""
 
@@ -4155,15 +4478,15 @@ msgstr ""
 msgid "Return to the game to watch or download it."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1433
+#: src/components/windows/MyFactions.jsx:1480
 msgid "Review NAP proposals"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:105
+#: src/components/windows/MyFactions.jsx:111
 msgid "Review and accept/reject join applications"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1098
+#: src/components/windows/FactionSystemTab.jsx:1315
 msgid "Review charter"
 msgstr ""
 
@@ -4176,17 +4499,13 @@ msgid "Revoke consent of third party applications:"
 msgstr ""
 
 #: src/components/Table.jsx:35
-#: src/components/windows/FactionBrowser.jsx:266
-#: src/components/windows/MyFactions.jsx:1660
+#: src/components/windows/FactionProfileView.jsx:191
+#: src/components/windows/MyFactions.jsx:1734
 msgid "Role"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2772
+#: src/components/windows/MyFactions.jsx:2867
 msgid "Role / Rank"
-msgstr ""
-
-#: src/components/windows/Faction.jsx:836
-msgid "Role Flags"
 msgstr ""
 
 #: src/components/windows/Faction.jsx:97
@@ -4197,12 +4516,10 @@ msgstr ""
 msgid "Rotate the moving characters until they are upright"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:306
-#: src/components/windows/MyFactions.jsx:1498
-#: src/components/windows/MyFactions.jsx:1969
-#: src/components/windows/MyFactions.jsx:1981
-#: src/components/windows/MyFactions.jsx:2082
-#: src/components/windows/MyFactions.jsx:2089
+#: src/components/windows/MyFactions.jsx:2043
+#: src/components/windows/MyFactions.jsx:2055
+#: src/components/windows/MyFactions.jsx:2156
+#: src/components/windows/MyFactions.jsx:2163
 msgid "SOON"
 msgstr ""
 
@@ -4212,27 +4529,31 @@ msgstr ""
 #: src/components/LanguageSelect.jsx:75
 #: src/components/SocialSettings.jsx:95
 #: src/components/TemplateItemEdit.jsx:207
-#: src/components/windows/Faction.jsx:1355
-#: src/components/windows/Faction.jsx:1397
-#: src/components/windows/Faction.jsx:1561
-#: src/components/windows/Faction.jsx:1608
-#: src/components/windows/Faction.jsx:1682
-#: src/components/windows/MyFactions.jsx:1550
-#: src/components/windows/MyFactions.jsx:1593
+#: src/components/windows/Faction.jsx:1307
+#: src/components/windows/Faction.jsx:1349
+#: src/components/windows/Faction.jsx:1513
+#: src/components/windows/Faction.jsx:1560
+#: src/components/windows/Faction.jsx:1634
+#: src/components/windows/MyFactions.jsx:1624
+#: src/components/windows/MyFactions.jsx:1667
 #: src/components/windows/OIDCConsent.jsx:315
 msgid "Save"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2651
+#: src/components/windows/MyFactions.jsx:2746
 msgid "Save & Return"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2687
+#: src/components/windows/MyFactions.jsx:2782
 msgid "Save Changes"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2853
+#: src/components/windows/MyFactions.jsx:2948
 msgid "Save Permissions"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1517
+msgid "Save Settings"
 msgstr ""
 
 #: src/components/VipPersonalization.jsx:241
@@ -4243,8 +4564,8 @@ msgstr ""
 msgid "Save uploaded banner"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2687
-#: src/components/windows/MyFactions.jsx:2853
+#: src/components/windows/MyFactions.jsx:2782
+#: src/components/windows/MyFactions.jsx:2948
 msgid "Saving..."
 msgstr ""
 
@@ -4264,7 +4585,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1987
+#: src/components/windows/MyFactions.jsx:2061
 msgid "Search Privacy"
 msgstr ""
 
@@ -4274,7 +4595,7 @@ msgstr ""
 msgid "Search Term"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:891
+#: src/components/windows/FactionSystemTab.jsx:1107
 msgid "Search alliances"
 msgstr ""
 
@@ -4282,19 +4603,23 @@ msgstr ""
 msgid "Search alternate accounts"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:94
+#: src/components/windows/FactionSystemTab.jsx:98
 msgid "Search by faction name or tag"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:381
+#: src/components/windows/FactionBrowser.jsx:235
 msgid "Search by name or tag"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:895
+#: src/components/windows/FactionSystemTab.jsx:1111
 msgid "Search by pact or faction name"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:382
+#: src/components/windows/DiplomaticNews.jsx:132
+msgid "Search faction, pact, or headline"
+msgstr ""
+
+#: src/components/windows/FactionBrowser.jsx:236
 msgid "Search factions"
 msgstr ""
 
@@ -4306,13 +4631,13 @@ msgstr ""
 msgid "Search settings…"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:884
+#: src/components/windows/FactionSystemTab.jsx:1100
 msgid ""
 "Search the directory, compare pact styles, and request to join with your "
 "faction."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:118
+#: src/components/windows/FactionSystemTab.jsx:122
 msgid "Searching factions..."
 msgstr ""
 
@@ -4320,15 +4645,15 @@ msgstr ""
 msgid "Second gradient color"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1477
+#: src/components/windows/Faction.jsx:1429
 msgid "See hidden users in member list"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1569
+#: src/components/windows/Faction.jsx:1521
 msgid "Select Avatar of this Faction. Supported Formats: jpg, gif, png, webp"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2620
+#: src/components/windows/MyFactions.jsx:2715
 msgid "Select Entire Template for"
 msgstr ""
 
@@ -4349,18 +4674,16 @@ msgstr ""
 msgid "Select a valid pwerlevel"
 msgstr ""
 
+#: src/components/windows/TreatyTermsBuilder.jsx:197
+msgid "Select target faction's pact..."
+msgstr ""
+
 #: src/components/windows/CanvasSelect.jsx:47
 msgid ""
 "Select the canvas you want to use.\n"
 "Every canvas is unique and has different palettes, cooldown and "
 "requirements.\n"
 "Archived canvases can be accessed here:"
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:2441
-msgid ""
-"Select the protected area for either faction. An unselected side uses its "
-"full active template."
 msgstr ""
 
 #: src/components/SocialSettings.jsx:103
@@ -4380,11 +4703,15 @@ msgstr ""
 msgid "Selected moderation actions that happened within the past two weeks."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2623
+#: src/components/windows/MyFactions.jsx:2718
 msgid "Selection"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:844
+#: src/components/windows/FactionSystemTab.jsx:725
+msgid "Send NAP / Treaty Proposal"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1060
 msgid "Send invitation"
 msgstr ""
 
@@ -4404,7 +4731,7 @@ msgstr ""
 msgid "Serpentine"
 msgstr ""
 
-#: src/utils/validation.js:74
+#: src/utils/validation.js:67
 msgid "Server Error"
 msgstr ""
 
@@ -4416,8 +4743,8 @@ msgstr ""
 msgid "Set Password"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1832
-#: src/components/windows/MyFactions.jsx:1924
+#: src/components/windows/MyFactions.jsx:1906
+#: src/components/windows/MyFactions.jsx:1998
 msgid "Set Template"
 msgstr ""
 
@@ -4435,7 +4762,7 @@ msgid ""
 "with image upload and alpha layers)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2017
+#: src/components/windows/MyFactions.jsx:2091
 msgid "Set to Invite Only"
 msgstr ""
 
@@ -4446,6 +4773,7 @@ msgid ""
 msgstr ""
 
 #: src/components/menus/mainMenu.js:116
+#: src/components/windows/FactionSystemTab.jsx:1408
 #: src/components/windows/index.js:38
 msgid "Settings"
 msgstr ""
@@ -4454,24 +4782,23 @@ msgstr ""
 msgid "Settings categories"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:26
-#: src/components/windows/FactionSystemTab.jsx:585
+#: src/components/windows/TreatyTermsBuilder.jsx:13
+msgid "Sever alliance / leave pact"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:30
 msgid "Sever relations with an ally"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:336
-msgid "Sever relations with the specified ally."
+#: src/components/windows/FactionSystemTab.jsx:1490
+msgid "Shared Union Coordination Tool"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:566
-msgid "Shared template"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:394
+#: src/components/windows/FactionSystemTab.jsx:439
 msgid "Shared template uploaded."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:455
+#: src/components/windows/FactionSystemTab.jsx:539
 msgid "Shared templates"
 msgstr ""
 
@@ -4524,8 +4851,12 @@ msgstr ""
 msgid "Shrink"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:653
+#: src/components/windows/FactionSystemTab.jsx:859
 msgid "Sign peace treaty"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:753
+msgid "Signed Peace Treaties"
 msgstr ""
 
 #: src/components/VipPersonalization.jsx:98
@@ -4557,7 +4888,7 @@ msgstr ""
 msgid "Start Chaos Event"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2414
+#: src/components/windows/MyFactions.jsx:2539
 msgid "Start Date"
 msgstr ""
 
@@ -4578,7 +4909,7 @@ msgid "Start date"
 msgstr ""
 
 #: src/components/menus/mainMenu.js:108
-#: src/components/windows/FactionSystemTab.jsx:700
+#: src/components/windows/FactionSystemTab.jsx:916
 #: src/components/windows/UserArea.jsx:173
 #: src/components/windows/index.js:50
 msgid "Statistics"
@@ -4589,7 +4920,7 @@ msgid "Statistics sections"
 msgstr ""
 
 #: src/components/windows/Faction.jsx:95
-#: src/components/windows/MyFactions.jsx:1475
+#: src/components/windows/MyFactions.jsx:1522
 msgid "Stats"
 msgstr ""
 
@@ -4628,18 +4959,17 @@ msgstr ""
 #: src/components/Canvastools.jsx:872
 #: src/components/IIDTools.jsx:599
 #: src/components/LogInForm.jsx:235
-#: src/components/windows/Faction.jsx:1254
-#: src/components/windows/Faction.jsx:1737
-#: src/components/windows/MyFactions.jsx:1392
+#: src/components/windows/Faction.jsx:1206
+#: src/components/windows/Faction.jsx:1689
+#: src/components/windows/MyFactions.jsx:1439
 msgid "Submit"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:596
-#: src/components/windows/MyFactions.jsx:2504
-msgid "Submit for moderator approval"
+#: src/components/windows/MyFactions.jsx:2599
+msgid "Submit NAP / Treaty Proposal"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2504
+#: src/components/windows/MyFactions.jsx:2599
 msgid "Submitting..."
 msgstr ""
 
@@ -4647,8 +4977,8 @@ msgstr ""
 msgid "Summon Bonus Void"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:27
-#: src/components/windows/FactionSystemTab.jsx:587
+#: src/components/windows/FactionSystemTab.jsx:31
+#: src/components/windows/TreatyTermsBuilder.jsx:14
 msgid "Surrender restrictions"
 msgstr ""
 
@@ -4661,129 +4991,136 @@ msgstr ""
 msgid "Switched to ${ canvasName }"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1300
+#: src/components/windows/MyFactions.jsx:1347
 msgid "TAG (e.g. PXF)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:448
-#: src/components/windows/MyFactions.jsx:2467
-#: src/components/windows/MyFactions.jsx:2526
-#: src/components/windows/MyFactions.jsx:2632
+#: src/components/windows/MyFactions.jsx:479
+#: src/components/windows/MyFactions.jsx:2621
+#: src/components/windows/MyFactions.jsx:2727
 msgid "TARGET"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1296
-#: src/components/windows/MyFactions.jsx:2024
+#: src/components/windows/MyFactions.jsx:1343
+#: src/components/windows/MyFactions.jsx:2098
 msgid "Tag"
 msgstr ""
 
-#: src/utils/validation.js:115
-msgid "Tag can only contain latin letters and numbers"
+#: src/components/windows/FactionSystemTab.jsx:1469
+msgid "Tag (2–5 chars)"
 msgstr ""
 
-#: src/utils/validation.js:110
-msgid "Tag can't be empty."
+#: src/utils/validation.js:152
+msgid "Tag cannot be longer than 6 characters."
 msgstr ""
 
-#: src/utils/validation.js:112
-msgid "Tag must be at least 2 characters long"
+#: src/utils/validation.js:149
+msgid "Tag must be at least 2 characters long."
 msgstr ""
 
-#: src/utils/validation.js:113
-msgid "Tag must be at most 3 characters long"
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:1304
+#: src/components/windows/MyFactions.jsx:1351
 msgid "Tag of your faction (2-3 uppercase latin letters or numbers, e.g. PXF)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2467
-#: src/components/windows/MyFactions.jsx:2620
-#: src/components/windows/MyFactions.jsx:2623
-#: src/components/windows/MyFactions.jsx:2632
+#: src/components/windows/MyFactions.jsx:2715
+#: src/components/windows/MyFactions.jsx:2718
+#: src/components/windows/MyFactions.jsx:2727
 msgid "Target"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2333
+#: src/components/windows/MyFactions.jsx:2458
 msgid "Target Canvas"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2526
+#: src/components/windows/MyFactions.jsx:2621
 msgid "Target Faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2395
+#: src/components/windows/MyFactions.jsx:2520
 msgid "Target Faction (TAG)"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:190
+msgid "Target Pact"
 msgstr ""
 
 #: src/components/ManageVip.jsx:50
 msgid "Target a user by UID, IID, username, or nickname."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:562
-#: src/components/windows/FactionSystemTab.jsx:622
-#: src/components/windows/FactionSystemTab.jsx:642
-#: src/components/windows/FactionSystemTab.jsx:995
+#: src/components/windows/FactionSystemTab.jsx:698
+#: src/components/windows/FactionSystemTab.jsx:799
+#: src/components/windows/FactionSystemTab.jsx:835
+#: src/components/windows/FactionSystemTab.jsx:1212
 msgid "Target faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2564
+#: src/components/windows/MyFactions.jsx:2659
 msgid ""
 "Target template preview is unavailable. The selected coordinates will be "
 "checked against the target faction template when you submit."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1844
+#: src/components/windows/MyFactions.jsx:1918
 msgid "Template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2324
+#: src/components/windows/TerritorySelector.jsx:436
+msgid "Template Auto-Protect"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2449
 msgid "Template Image (.png, .webp, .jpeg)"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1938
+#: src/components/windows/MyFactions.jsx:2012
 msgid "Template Management"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2298
+msgid "Template Mask"
 msgstr ""
 
 #: src/components/TemplateItemEdit.jsx:118
 msgid "Template Name"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:798
+#: src/components/windows/TerritorySelector.jsx:248
+msgid "Template has no opaque pixels to protect."
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:829
 msgid "Template upload failed."
 msgstr ""
 
-#: src/components/buttons/QuickAccessButtons.jsx:35
-#: src/components/buttons/QuickAccessButtons.jsx:36
+#: src/components/buttons/QuickAccessButtons.jsx:65
+#: src/components/buttons/QuickAccessButtons.jsx:66
 #: src/components/windows/Faction.jsx:94
-#: src/components/windows/MyFactions.jsx:1482
+#: src/components/windows/MyFactions.jsx:1529
 #: src/components/windows/Templates.jsx:61
 #: src/components/windows/index.js:46
 msgid "Templates"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:590
-msgid "Term details"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:577
-msgid "Term type"
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:2186
+#: src/components/windows/FactionProfileView.jsx:254
+#: src/components/windows/MyFactions.jsx:2260
 msgid "Terminated"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2164
+#: src/components/windows/MyFactions.jsx:2238
 msgid "Termination approvals"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2435
-msgid "Territory Distribution & Protection"
+#: src/components/windows/MyFactions.jsx:2560
+msgid "Territory Selection & Auto Template Protection"
 msgstr ""
 
 #: src/ui/PixelTransferController.js:283
 msgid "Territory protected by NAP"
+msgstr ""
+
+#: src/components/windows/TerritorySelector.jsx:409
+msgid "Territory selection tools"
 msgstr ""
 
 #: src/components/windows/Settings.jsx:206
@@ -4803,7 +5140,7 @@ msgid ""
 "for orientation, can be downloaded from mega.nz here: "
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1043
+#: src/components/windows/FactionSystemTab.jsx:1260
 msgid "The coalition target cannot join the coalition."
 msgstr ""
 
@@ -4812,11 +5149,11 @@ msgid "The converted image could not be displayed."
 msgstr ""
 
 #: src/components/FactionCoordination.jsx:34
-#: src/components/windows/FactionSystemTab.jsx:13
+#: src/components/windows/FactionSystemTab.jsx:17
 msgid "The faction server returned an invalid response."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:910
+#: src/components/windows/MyFactions.jsx:940
 msgid "The image upload did not return a media ID."
 msgstr ""
 
@@ -4824,12 +5161,12 @@ msgstr ""
 msgid "The selected canvas has no usable color palette."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:80
+#: src/components/windows/MyFactions.jsx:86
 #, javascript-format
 msgid "The server returned a non-JSON response (HTTP ${ response.status })."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:79
+#: src/components/windows/MyFactions.jsx:85
 msgid "The server returned a non-JSON response."
 msgstr ""
 
@@ -4838,11 +5175,11 @@ msgstr ""
 msgid "Themes"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:611
+#: src/components/windows/FactionSystemTab.jsx:749
 msgid "There are no active wars involving this faction."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1781
+#: src/components/windows/MyFactions.jsx:1855
 msgid "There are no pending join applications."
 msgstr ""
 
@@ -4856,7 +5193,7 @@ msgstr ""
 msgid "This URL is not supported by our Media Player"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1042
+#: src/components/windows/FactionSystemTab.jsx:1259
 msgid "This bilateral alliance already has two factions."
 msgstr ""
 
@@ -4872,7 +5209,7 @@ msgid ""
 "remained active for months till it got shut down on November 30th."
 msgstr ""
 
-#: src/utils/validation.js:70
+#: src/utils/validation.js:63
 msgid ""
 "This email / password combination got hacked and leaked. To protect this "
 "account, the password has been reset. Please use the \"Forgot my password\" "
@@ -4880,15 +5217,15 @@ msgid ""
 "not installing malware, Thank You."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1805
+#: src/components/windows/Faction.jsx:1757
 msgid "This faction has no invites"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1966
+#: src/components/windows/MyFactions.jsx:2040
 msgid "This feature will be available soon."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1616
+#: src/components/windows/Faction.jsx:1568
 msgid "This image appears behind your faction members in chat."
 msgstr ""
 
@@ -4906,11 +5243,11 @@ msgid ""
 "placed."
 msgstr ""
 
-#: src/utils/validation.js:67
+#: src/utils/validation.js:60
 msgid "This user has not password set"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2708
+#: src/components/windows/MyFactions.jsx:2803
 msgid "This will"
 msgstr ""
 
@@ -4954,33 +5291,25 @@ msgid ""
 msgstr ""
 
 #: src/components/Table.jsx:27
-#: src/components/windows/Faction.jsx:1626
-#: src/components/windows/MyFactions.jsx:1336
+#: src/components/windows/Faction.jsx:1578
+#: src/components/windows/MyFactions.jsx:1383
 msgid "Title"
 msgstr ""
 
-#: src/utils/validation.js:79
-msgid "Title can't be empty."
+#: src/utils/validation.js:162
+msgid "Title cannot be longer than 48 characters."
 msgstr ""
 
-#: src/utils/validation.js:90
-msgid "Title contains invalid character like @, /, \\ or #"
+#: src/utils/validation.js:159
+msgid "Title must be at least 2 characters long."
 msgstr ""
 
-#: src/utils/validation.js:80
-msgid "Title must be at least 2 characters long"
-msgstr ""
-
-#: src/utils/validation.js:81
-msgid "Title must be shorter than 26 characters"
-msgstr ""
-
-#: src/components/windows/Faction.jsx:1633
-#: src/components/windows/MyFactions.jsx:1343
+#: src/components/windows/Faction.jsx:1585
+#: src/components/windows/MyFactions.jsx:1390
 msgid "Title of your faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2716
+#: src/components/windows/MyFactions.jsx:2811
 msgid "To confirm, type your faction name"
 msgstr ""
 
@@ -4989,17 +5318,16 @@ msgid "To use this page, enter your Password:"
 msgstr ""
 
 #: src/components/OnlineBox.jsx:93
-#: src/components/windows/MyFactions.jsx:1662
+#: src/components/windows/MyFactions.jsx:1736
 #: src/components/windows/Statistics.jsx:93
 msgid "Today"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:811
 #: src/components/windows/User.jsx:225
 msgid "Today Placed Pixels"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1623
+#: src/components/windows/MyFactions.jsx:1697
 msgid "Today placed pixels"
 msgstr ""
 
@@ -5051,7 +5379,7 @@ msgstr ""
 msgid "Top 10 Players from Yesterday"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1261
+#: src/components/windows/MyFactions.jsx:1308
 msgid "Top Factions by Total Pixels"
 msgstr ""
 
@@ -5072,8 +5400,9 @@ msgstr ""
 msgid "Total Online Users"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1661
-#: src/components/windows/MyFactions.jsx:1799
+#: src/components/windows/FactionProfileView.jsx:156
+#: src/components/windows/MyFactions.jsx:1735
+#: src/components/windows/MyFactions.jsx:1873
 msgid "Total Pixels"
 msgstr ""
 
@@ -5089,18 +5418,17 @@ msgstr ""
 msgid "Total Pixels placed per day"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:825
 #: src/components/windows/User.jsx:237
 msgid "Total Rank"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1281
+#: src/components/windows/FactionSystemTab.jsx:1724
 msgid "Total faction pixels"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1151
-#: src/components/windows/FactionSystemTab.jsx:1163
-#: src/components/windows/FactionSystemTab.jsx:1304
+#: src/components/windows/FactionSystemTab.jsx:1368
+#: src/components/windows/FactionSystemTab.jsx:1380
+#: src/components/windows/FactionSystemTab.jsx:1747
 msgid "Total pixels"
 msgstr ""
 
@@ -5109,12 +5437,12 @@ msgstr ""
 msgid "Total rating"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:544
-msgid "Treaty clause"
+#: src/components/windows/DiplomaticNews.jsx:16
+msgid "Treaties & NAPs"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:647
-msgid "Treaty terms"
+#: src/components/windows/FactionSystemTab.jsx:656
+msgid "Treaty clause"
 msgstr ""
 
 #: src/components/Admintools.jsx:408
@@ -5147,10 +5475,6 @@ msgstr ""
 msgid "Turquoise"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:816
-msgid "Two factions share a direct pact. New membership requires founder approval."
-msgstr ""
-
 #: src/components/IIDTools.jsx:647
 msgid "Type"
 msgstr ""
@@ -5171,7 +5495,7 @@ msgstr ""
 msgid "Unban"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1489
+#: src/components/windows/Faction.jsx:1441
 msgid "Unban members"
 msgstr ""
 
@@ -5190,12 +5514,54 @@ msgstr ""
 msgid "Undo"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:775
-#: src/components/windows/FactionSystemTab.jsx:906
-#: src/components/windows/FactionSystemTab.jsx:978
-#: src/components/windows/FactionSystemTab.jsx:993
-#: src/components/windows/FactionSystemTab.jsx:1200
+#: src/components/windows/TerritorySelector.jsx:526
+msgid "Undo Point"
+msgstr ""
+
+#: src/components/Table.jsx:149
+#: src/components/windows/FactionProfileView.jsx:130
+#: src/components/windows/FactionSystemTab.jsx:991
+#: src/components/windows/FactionSystemTab.jsx:1120
+#: src/components/windows/FactionSystemTab.jsx:1195
+#: src/components/windows/FactionSystemTab.jsx:1210
+#: src/components/windows/FactionSystemTab.jsx:1403
+#: src/components/windows/FactionSystemTab.jsx:1576
+#: src/components/windows/FactionSystemTab.jsx:1624
 msgid "Union"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:909
+msgid "Union / Coalition Settings"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1453
+msgid "Union / Coalition settings saved."
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:26
+msgid "Union Formed"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1509
+msgid "Union Leader faction only"
+msgstr ""
+
+#: src/components/Table.jsx:304
+msgid "Union Members"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:405
+msgid "Union created."
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:17
+msgid "Unions & Coalitions"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1612
+msgid ""
+"Unions and Coalitions appear grouped on leaderboards. Bilateral Pacts can "
+"be held in multiples and stay separate on leaderboards."
 msgstr ""
 
 #: src/components/GlobalCaptcha.jsx:100
@@ -5236,20 +5602,20 @@ msgstr ""
 msgid "Until the browser closes"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1863
+#: src/components/windows/MyFactions.jsx:1937
 msgid "Update in My Templates"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2321
+#: src/components/windows/MyFactions.jsx:2446
 msgid "Upload Faction Template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1957
-#: src/components/windows/MyFactions.jsx:2366
+#: src/components/windows/MyFactions.jsx:2031
+#: src/components/windows/MyFactions.jsx:2491
 msgid "Upload Template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1939
+#: src/components/windows/MyFactions.jsx:2013
 msgid "Upload a new image template to establish your faction canvas territory."
 msgstr ""
 
@@ -5261,20 +5627,26 @@ msgstr ""
 msgid "Upload images to canvas"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:471
+#: src/components/windows/FactionSystemTab.jsx:555
 msgid "Upload shared template"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:493
+#: src/components/windows/FactionSystemTab.jsx:577
 msgid "Upload template"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:109
+#: src/components/windows/TerritorySelector.jsx:470
+msgid ""
+"Upload template image (.png / .webp) to auto-protect only its "
+"non-transparent pixels:"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:115
 msgid "Upload, set, and delete faction canvas templates"
 msgstr ""
 
 #: src/components/windows/Chat.jsx:676
-#: src/components/windows/MyFactions.jsx:2366
+#: src/components/windows/MyFactions.jsx:2491
 msgid "Uploading..."
 msgstr ""
 
@@ -5286,7 +5658,7 @@ msgstr ""
 msgid "Use our custom cursor"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:113
+#: src/components/windows/MyFactions.jsx:119
 msgid ""
 "Use the faction drawing tool to add private plans and arrows that only "
 "faction members can see"
@@ -5301,8 +5673,8 @@ msgstr ""
 msgid "User Account"
 msgstr ""
 
-#: src/components/buttons/QuickAccessButtons.jsx:23
-#: src/components/buttons/QuickAccessButtons.jsx:24
+#: src/components/buttons/QuickAccessButtons.jsx:27
+#: src/components/buttons/QuickAccessButtons.jsx:28
 #: src/components/windows/UserArea.jsx:186
 #: src/components/windows/index.js:39
 msgid "User Area"
@@ -5333,7 +5705,7 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: src/utils/validation.js:57
+#: src/utils/validation.js:50
 msgid "Username can only contain the characters: a-z . _ and -"
 msgstr ""
 
@@ -5341,15 +5713,15 @@ msgstr ""
 msgid "Username can only contain the characters: a-z A-z . _ and -"
 msgstr ""
 
-#: src/utils/validation.js:49
+#: src/utils/validation.js:42
 msgid "Username can't be empty."
 msgstr ""
 
-#: src/utils/validation.js:51
+#: src/utils/validation.js:44
 msgid "Username must be at least 2 characters long"
 msgstr ""
 
-#: src/utils/validation.js:54
+#: src/utils/validation.js:47
 msgid "Username must be shorter than 26 characters"
 msgstr ""
 
@@ -5385,7 +5757,7 @@ msgstr ""
 msgid "VIP stack limits: Prince 10 min, King 14 min, Emperor 20 min."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2207
+#: src/components/windows/MyFactions.jsx:2281
 msgid "Validity Period"
 msgstr ""
 
@@ -5393,7 +5765,7 @@ msgstr ""
 msgid "Verify"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:979
+#: src/components/windows/FactionSystemTab.jsx:1196
 msgid "View pact details"
 msgstr ""
 
@@ -5401,7 +5773,7 @@ msgstr ""
 msgid "View pixel rank requirements"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1990
+#: src/components/windows/MyFactions.jsx:2064
 msgid "Visible in search"
 msgstr ""
 
@@ -5413,19 +5785,33 @@ msgstr ""
 msgid "Volume for this sound effect."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:999
+#: src/components/windows/DiplomaticNews.jsx:22
+msgid "War Declared"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1029
 msgid ""
-"War coalition · members coordinate declarations against the selected target "
-"and may leave by making peace."
+"War coalition grouped on leaderboards. If the Coalition Leader accepts a "
+"sever-coalition clause, the coalition dissolves."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:804
-#: src/components/windows/MyFactions.jsx:1507
+#: src/components/windows/FactionSystemTab.jsx:1216
+msgid ""
+"War coalition · grouped on leaderboards; dissolves automatically if the "
+"Coalition Leader accepts a sever-coalition term."
+msgstr ""
+
+#: src/components/windows/DiplomaticNews.jsx:15
+msgid "Wars"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:734
+msgid "Wars & Peace Treaties"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:1020
+#: src/components/windows/MyFactions.jsx:1564
 msgid "Wars & Treaties"
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:600
-msgid "Wars and peace treaties"
 msgstr ""
 
 #: src/components/Watchtools.jsx:132
@@ -5460,7 +5846,7 @@ msgid ""
 "offline players on all canvases and revert automatically when time expires."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1729
+#: src/components/windows/Faction.jsx:1681
 msgid "Whether or not this invite can only be used once."
 msgstr ""
 
@@ -5480,6 +5866,10 @@ msgstr ""
 msgid "Whitelisted"
 msgstr ""
 
+#: src/components/windows/FactionSystemTab.jsx:1501
+msgid "Who can draw on the shared Union layer"
+msgstr ""
+
 #: src/components/BanInfo.jsx:146
 msgid "Why?"
 msgstr ""
@@ -5497,7 +5887,7 @@ msgstr ""
 msgid "Wrong Color"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:483
+#: src/components/windows/FactionSystemTab.jsx:567
 msgid "X"
 msgstr ""
 
@@ -5506,14 +5896,13 @@ msgstr ""
 msgid "X, Y"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:488
+#: src/components/windows/FactionSystemTab.jsx:572
 msgid "Y"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:474
-#: src/components/windows/MyFactions.jsx:2478
-#: src/components/windows/MyFactions.jsx:2534
-#: src/components/windows/MyFactions.jsx:2638
+#: src/components/windows/MyFactions.jsx:505
+#: src/components/windows/MyFactions.jsx:2629
+#: src/components/windows/MyFactions.jsx:2733
 msgid "YOU"
 msgstr ""
 
@@ -5555,7 +5944,7 @@ msgstr ""
 msgid "You are logged in as ${ name }."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2864
+#: src/components/windows/MyFactions.jsx:2959
 msgid "You are not a member of any faction yet."
 msgstr ""
 
@@ -5604,7 +5993,7 @@ msgstr ""
 msgid "You have no notifications."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:1135
+#: src/components/windows/FactionSystemTab.jsx:1352
 msgid "You have no pending alliance requests."
 msgstr ""
 
@@ -5616,7 +6005,7 @@ msgstr ""
 msgid "You have to be logged in to place on this canvas"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:187
+#: src/components/windows/FactionBrowser.jsx:178
 msgid "You joined the faction."
 msgstr ""
 
@@ -5669,7 +6058,7 @@ msgstr ""
 msgid "You must enter at least one identifier"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1171
+#: src/components/windows/MyFactions.jsx:1201
 msgid "You must select both an avatar and a banner for your faction"
 msgstr ""
 
@@ -5677,7 +6066,7 @@ msgstr ""
 msgid "You took too long, try again."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2623
+#: src/components/windows/MyFactions.jsx:2718
 msgid "Your"
 msgstr ""
 
@@ -5685,11 +6074,10 @@ msgstr ""
 msgid "Your Browser looks shady"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2386
-#: src/components/windows/MyFactions.jsx:2478
-#: src/components/windows/MyFactions.jsx:2534
-#: src/components/windows/MyFactions.jsx:2620
-#: src/components/windows/MyFactions.jsx:2638
+#: src/components/windows/MyFactions.jsx:2511
+#: src/components/windows/MyFactions.jsx:2629
+#: src/components/windows/MyFactions.jsx:2715
+#: src/components/windows/MyFactions.jsx:2733
 msgid "Your Faction"
 msgstr ""
 
@@ -5715,31 +6103,22 @@ msgid ""
 "other applications. You can set it now:"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1181
+#: src/components/windows/MyFactions.jsx:1211
 msgid "Your faction avatar and banner must finish uploading first"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2490
+#: src/components/windows/FactionSystemTab.jsx:1249
 msgid ""
-"Your faction does not have an active template. Upload a template first to "
-"define NAP territory."
+"Your faction is already in a Union or Coalition. You may still join "
+"multiple Bilateral Pacts freely."
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:321
+#: src/components/windows/FactionSystemTab.jsx:339
 msgid "Your faction joined the alliance."
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1977
-#: src/components/windows/MyFactions.jsx:2076
+#: src/components/windows/MyFactions.jsx:2051
 msgid "Your faction must have an active template to propose NAPs"
-msgstr ""
-
-#: src/components/windows/MyFactions.jsx:818
-msgid "Your faction must have an active template."
-msgstr ""
-
-#: src/components/windows/FactionSystemTab.jsx:1032
-msgid "Your faction must leave its current alliance before joining another."
 msgstr ""
 
 #: src/store/middleware/notifications.js:32
@@ -5776,12 +6155,12 @@ msgstr ""
 msgid "Zoom out"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:475
+#: src/components/windows/MyFactions.jsx:506
 #, javascript-format
 msgid "[${ factionTag }] Your Territory"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:449
+#: src/components/windows/MyFactions.jsx:480
 #, javascript-format
 msgid "[${ targetTag }] Their Territory"
 msgstr ""
@@ -5790,15 +6169,15 @@ msgstr ""
 msgid "a hidden faction"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:808
+#: src/components/windows/FactionSystemTab.jsx:1024
 msgid "active non-aggression treaties"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:806
+#: src/components/windows/FactionSystemTab.jsx:1022
 msgid "active wars involving your faction"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1151
+#: src/components/windows/Faction.jsx:1103
 msgid "affects"
 msgstr ""
 
@@ -5807,11 +6186,11 @@ msgstr ""
 msgid "and ${ canvas.req } Pixels set"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:887
+#: src/components/windows/FactionSystemTab.jsx:1103
 msgid "available"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1153
+#: src/components/windows/Faction.jsx:1105
 msgid "by"
 msgstr ""
 
@@ -5819,8 +6198,16 @@ msgstr ""
 msgid "check compliance here"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1155
-#: src/components/windows/Faction.jsx:1764
+#: src/components/windows/TreatyTermsBuilder.jsx:113
+msgid "condition"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:113
+msgid "conditions"
+msgstr ""
+
+#: src/components/windows/Faction.jsx:1107
+#: src/components/windows/Faction.jsx:1716
 msgid "created at"
 msgstr ""
 
@@ -5832,16 +6219,36 @@ msgstr ""
 msgid "download here"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2399
+#: src/components/windows/FactionSystemTab.jsx:1681
+msgid "e.g. BRU"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:242
+msgid "e.g. Demilitarized zone or reparations"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:239
+msgid "e.g. No pixel placement inside protected border"
+msgstr ""
+
+#: src/components/windows/MyFactions.jsx:2524
 msgid "e.g. PXF"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:780
-#: src/components/windows/FactionSystemTab.jsx:976
+#: src/components/windows/TreatyTermsBuilder.jsx:241
+msgid "e.g. Pact name or severance deadline"
+msgstr ""
+
+#: src/components/windows/TreatyTermsBuilder.jsx:237
+msgid "e.g. Withdraw from northern sector [120, -40]"
+msgstr ""
+
+#: src/components/windows/FactionSystemTab.jsx:996
+#: src/components/windows/FactionSystemTab.jsx:1193
 msgid "factions"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2710
+#: src/components/windows/MyFactions.jsx:2805
 msgid ""
 "including all member associations, channel messages, uploaded templates, "
 "and non-aggression pacts."
@@ -5851,12 +6258,11 @@ msgstr ""
 msgid "is typing..."
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1157
+#: src/components/windows/Faction.jsx:1109
 msgid "lift"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:244
-#: src/components/windows/FactionSystemTab.jsx:1279
+#: src/components/windows/FactionSystemTab.jsx:1722
 msgid "members"
 msgstr ""
 
@@ -5864,7 +6270,7 @@ msgstr ""
 msgid "minutes"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1289
+#: src/components/windows/MyFactions.jsx:1336
 msgid "name"
 msgstr ""
 
@@ -5872,12 +6278,11 @@ msgstr ""
 msgid "or login with:"
 msgstr ""
 
-#: src/components/windows/FactionBrowser.jsx:341
-#: src/components/windows/MyFactions.jsx:2164
+#: src/components/windows/MyFactions.jsx:2238
 msgid "other faction"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2708
+#: src/components/windows/MyFactions.jsx:2803
 msgid "permanently delete"
 msgstr ""
 
@@ -5885,19 +6290,19 @@ msgstr ""
 msgid "recommended"
 msgstr ""
 
-#: src/components/windows/FactionSystemTab.jsx:607
+#: src/components/windows/FactionSystemTab.jsx:744
 msgid "since"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2708
+#: src/components/windows/MyFactions.jsx:2803
 msgid "the faction"
 msgstr ""
 
-#: src/components/windows/Faction.jsx:1766
+#: src/components/windows/Faction.jsx:1718
 msgid "times used"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:1340
+#: src/components/windows/MyFactions.jsx:1387
 msgid "title"
 msgstr ""
 
@@ -5914,7 +6319,7 @@ msgstr ""
 msgid "y out of bounds"
 msgstr ""
 
-#: src/components/windows/MyFactions.jsx:2164
+#: src/components/windows/MyFactions.jsx:2238
 msgid "your faction"
 msgstr ""
 

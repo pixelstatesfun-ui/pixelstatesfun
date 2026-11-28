@@ -1,41 +1,77 @@
 /*
- * URL template tag helpers for API and CDN requests
+ * tagFunctions for template literals that prepends a basename or CDN
+ * This is only useful client side
  */
 
-function interpolate(strings, values) {
-  let out = strings[0] || '';
-  for (let i = 0; i < values.length; i += 1) {
-    out += String(values[i] ?? '');
-    out += strings[i + 1] || '';
-  }
-  return out;
+if (!process.env.BROWSER) {
+  throw new Error('Only include utag in client code');
 }
 
-function getBase() {
-  if (typeof window !== 'undefined' && window.ssv && window.ssv.basename) {
-    return window.ssv.basename.replace(/\/+$/, '');
-  }
-  return '';
+/*
+ * basename needs to be a path like '/ppfun', it shall not end with an '/'
+ */
+const basename = window.ssv?.basename || '';
+
+/*
+ * apiUrl needs to be a url like 'https://pixelplanet.fun', shall not end with
+ * an '/'
+ */
+const apiUrl = window.ssv?.apiUrl || basename;
+
+/*
+ * cdnUrl needs to be a url without path like "https://pixelplanet.fun"
+ */
+let cdnUrl = window.ssv?.cdnUrl || basename;
+
+/*
+ * check if cdnTestUrl is reachable, and use it as cdn if it is
+ */
+if (window.ssv.cdnTestUrl) {
+  const img = new Image();
+  img.addEventListener('load', () => {
+    cdnUrl = window.ssv.cdnTestUrl;
+  }, { once: true });
+  img.src = 'https://cdn.ponybooru.org/img/view/2026/2/21/3987750.jpg';
 }
 
-export function api(strings, ...values) {
-  const path = interpolate(strings, values);
-  if (/^https?:\/\//i.test(path)) {
-    return path;
-  }
-  const normalized = path.startsWith('/') ? path : `/${path}`;
-  return `${getBase()}${normalized}`;
-}
-
-export function cdn(strings, ...values) {
-  const path = interpolate(strings, values);
-  if (/^https?:\/\//i.test(path) || path.startsWith('data:')) {
-    return path;
-  }
-  const normalized = path.startsWith('/') ? path : `/${path}`;
-  return `${getBase()}${normalized}`;
-}
-
+/**
+ * tagFunction to change the path of a URL
+ */
 export function u(strings, ...values) {
-  return interpolate(strings, values);
+  let result = basename;
+  for (let i = 0; i < strings.length; i++) {
+    result += strings[i];
+    if (i < values.length) {
+      result += values[i];
+    }
+  }
+  return result;
+}
+
+/**
+ * tagFunction to redirect a URL to a CDN
+ */
+export function cdn(strings, ...values) {
+  let result = cdnUrl;
+  for (let i = 0; i < strings.length; i++) {
+    result += strings[i];
+    if (i < values.length) {
+      result += values[i];
+    }
+  }
+  return result;
+}
+
+/**
+ * tagFUnction to redirect to API_URL
+ */
+export function api(strings, ...values) {
+  let result = apiUrl;
+  for (let i = 0; i < strings.length; i++) {
+    result += strings[i];
+    if (i < values.length) {
+      result += values[i];
+    }
+  }
+  return result;
 }

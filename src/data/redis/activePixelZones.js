@@ -1,33 +1,23 @@
 import client from './client.js';
 import { TILE_SIZE } from '../../core/constants.js';
 
-// Longer fire duration: 10 x 60s buckets = 10 minutes visible (12m TTL)
-const BUCKET_MS = 60_000;
-const BUCKET_TTL_SECONDS = 720;
-const VISIBLE_BUCKETS = 10;
-
-// Easier fire activation: lower spread threshold & compact single-cell trigger
+const BUCKET_MS = 30_000;
+const BUCKET_TTL_SECONDS = 120;
+const VISIBLE_BUCKETS = 3;
 const MIN_ZONE_PIXELS = 1;
-const MIN_SINGLE_CELL_PIXELS = 4;
-const MIN_USERS_FOR_INSTANT_FIRE = 2;
 export const ACTIVITY_CELL_SIZE = 32;
 const ACTIVITY_REGION_CELLS = 4;
 const MAX_ACTIVE_ZONE_CLUSTERS = 500;
-const MIN_ACTIVITY_SPREAD = 32;
+const MIN_ACTIVITY_SPREAD = 96;
 
 function getBucketKey(canvasId, bucket) {
   return `activity:${canvasId}:${bucket}`;
 }
 
-function getBucketRegionUsersKey(canvasId, bucket, regionKey) {
-  return `activity:${canvasId}:${bucket}:users:${regionKey}`;
-}
-
-export async function recordPixelActivity(canvasId, pixels, actorId = null) {
+export async function recordPixelActivity(canvasId, pixels) {
   if (!pixels.length) return;
 
   const counts = new Map();
-  const touchedRegions = new Set();
   pixels.forEach(([chunkX, chunkY, offset]) => {
     const pixelX = chunkX * TILE_SIZE + (offset % TILE_SIZE);
     const pixelY = chunkY * TILE_SIZE + Math.floor(offset / TILE_SIZE);
@@ -35,10 +25,8 @@ export async function recordPixelActivity(canvasId, pixels, actorId = null) {
     const cellY = Math.floor(pixelY / ACTIVITY_CELL_SIZE);
     const regionX = Math.floor(cellX / ACTIVITY_REGION_CELLS);
     const regionY = Math.floor(cellY / ACTIVITY_REGION_CELLS);
-    const regionKey = `${regionX}:${regionY}`;
     const field = `${regionX}:${regionY}:${cellX}:${cellY}`;
     counts.set(field, (counts.get(field) || 0) + 1);
-    touchedRegions.add(regionKey);
   });
 
   const bucket = Math.floor(Date.now() / BUCKET_MS);
@@ -48,16 +36,6 @@ export async function recordPixelActivity(canvasId, pixels, actorId = null) {
     transaction.hIncrBy(key, field, count);
   });
   transaction.expire(key, BUCKET_TTL_SECONDS);
-
-  if (actorId !== null && actorId !== undefined && String(actorId).length > 0) {
-    const actorValue = String(actorId);
-    touchedRegions.forEach((regionKey) => {
-      const usersKey = getBucketRegionUsersKey(canvasId, bucket, regionKey);
-      transaction.sAdd(usersKey, actorValue);
-      transaction.expire(usersKey, BUCKET_TTL_SECONDS);
-    });
-  }
-
   await transaction.exec();
 }
 
@@ -87,38 +65,12 @@ export async function getActivePixelZones(canvasId) {
     });
   });
 
-  const regionKeys = Array.from(regions.keys());
-  const regionUsersMap = new Map();
-  if (regionKeys.length > 0) {
-    const userSets = await Promise.all(
-      regionKeys.map(async (regionKey) => {
-        const memberLists = await Promise.all(
-          buckets.map((bucket) => client.sMembers(
-            getBucketRegionUsersKey(canvasId, bucket, regionKey),
-          )),
-        );
-        const uniqueUsers = new Set();
-        memberLists.forEach((members) => {
-          if (Array.isArray(members)) {
-            members.forEach((member) => uniqueUsers.add(member));
-          }
-        });
-        return [regionKey, uniqueUsers];
-      }),
-    );
-    userSets.forEach(([regionKey, uniqueUsers]) => {
-      regionUsersMap.set(regionKey, uniqueUsers);
-    });
-  }
-
   const activeRegions = new Map();
   regions.forEach((region, regionKey) => {
     const cells = Array.from(region, ([field, count]) => {
       const [cellX, cellY] = field.split(':').map(Number);
       return { cellX, cellY, count };
     });
-    const users = regionUsersMap.get(regionKey) || new Set();
-    const totalRegionPixels = cells.reduce((sum, cell) => sum + cell.count, 0);
     const hasSpread = cells.some((cell, index) => (
       cells.slice(index + 1).some((other) => (
         Math.hypot(
@@ -127,10 +79,7 @@ export async function getActivePixelZones(canvasId) {
         ) >= MIN_ACTIVITY_SPREAD
       ))
     ));
-    const meetsEasyTrigger = hasSpread
-      || totalRegionPixels >= MIN_SINGLE_CELL_PIXELS
-      || users.size >= MIN_USERS_FOR_INSTANT_FIRE;
-    if (!meetsEasyTrigger) return;
+    if (!hasSpread) return;
 
     let count = 0;
     let weightedX = 0;
@@ -154,7 +103,6 @@ export async function getActivePixelZones(canvasId) {
         regionX: Number(regionKey.split(':')[0]),
         regionY: Number(regionKey.split(':')[1]),
         count,
-        users,
         weightedX,
         weightedY,
         minCellX,
@@ -178,7 +126,6 @@ export async function getActivePixelZones(canvasId) {
     let minCellY = Infinity;
     let maxCellX = -Infinity;
     let maxCellY = -Infinity;
-    const zoneUsers = new Set();
     for (let index = 0; index < queue.length; index += 1) {
       const region = queue[index];
       count += region.count;
@@ -188,7 +135,6 @@ export async function getActivePixelZones(canvasId) {
       minCellY = Math.min(minCellY, region.minCellY);
       maxCellX = Math.max(maxCellX, region.maxCellX);
       maxCellY = Math.max(maxCellY, region.maxCellY);
-      region.users.forEach((member) => zoneUsers.add(member));
 
       for (let dx = -1; dx <= 1; dx += 1) {
         for (let dy = -1; dy <= 1; dy += 1) {
@@ -206,7 +152,6 @@ export async function getActivePixelZones(canvasId) {
       cellX: (weightedX / count) - 0.5,
       cellY: (weightedY / count) - 0.5,
       count,
-      users: Math.max(1, zoneUsers.size),
       minCellX,
       minCellY,
       maxCellX,

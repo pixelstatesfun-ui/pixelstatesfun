@@ -1,63 +1,71 @@
 /*
- * Overlay template actions
+ * actions for templates
  */
 
-import {
-  TOGGLE_OV_ENABLED,
-  TOGGLE_SMALL_PXLS,
-  SET_OV_OPACITY,
-  ADD_TEMPLATE,
-  CHANGE_TEMPLATE,
-  DELETE_TEMPLATE,
-  SET_TEMPLATES,
-} from './index.js';
-
-export function toggleOVEnabled(enabled) {
+export function listTemplate(imageId, title, canvasId, x, y, width, height) {
   return {
-    type: TOGGLE_OV_ENABLED,
-    enabled,
+    type: 's/LIST_TEMPLATE',
+    imageId,
+    title,
+    canvasId,
+    x,
+    y,
+    width,
+    height,
+  };
+}
+
+export function templatesReady() {
+  return {
+    type: 'TEMPLATES_READY',
+  };
+}
+
+export function removeTemplate(title) {
+  return {
+    type: 's/REM_TEMPLATE',
+    title,
+  };
+}
+
+export function changeTemplate(title, props) {
+  return {
+    type: 's/CHG_TEMPLATE',
+    title,
+    props,
+  };
+}
+
+export function toggleOVEnabled() {
+  return {
+    type: 's/TGL_OVENABLED',
   };
 }
 
 export function toggleSmallPxls() {
   return {
-    type: TOGGLE_SMALL_PXLS,
+    type: 's/TGL_SMALLPXLS',
   };
 }
 
 export function setOvOpacity(opacity) {
-  const num = Number(opacity);
   return {
-    type: SET_OV_OPACITY,
-    opacity: Number.isFinite(num) ? Math.max(10, Math.min(100, num)) : 75,
+    type: 's/SET_O_OPACITY',
+    opacity,
   };
 }
 
-export function addTemplate(template) {
+export function receivedTemplate() {
   return {
-    type: ADD_TEMPLATE,
-    template,
+    type: 'REC_TEMPLATE',
   };
 }
 
-export function changeTemplate(title, updates) {
+export function updatedTemplateImage(imageId, width, height) {
   return {
-    type: CHANGE_TEMPLATE,
-    title,
-    updates,
-  };
-}
-
-export function deleteTemplate(title) {
-  return {
-    type: DELETE_TEMPLATE,
-    title,
-  };
-}
-
-export function setTemplates(list) {
-  return {
-    type: SET_TEMPLATES,
-    list: Array.isArray(list) ? list : [],
+    type: 's/UPD_TEMPLATE_IMG',
+    imageId,
+    width,
+    height,
   };
 }

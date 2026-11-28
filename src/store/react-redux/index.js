@@ -1,82 +1,15 @@
-/*
- * Minimal Preact-compatible React-Redux bindings
- */
 
-import { createContext } from 'preact';
-import {
-  useContext, useEffect, useRef, useState,
-} from 'preact/hooks';
+import shallowEqual from './utils/shallowEqual.js';
 
-const ReduxContext = createContext(null);
+import Provider from './components/Provider.jsx';
 
-export function shallowEqual(a, b) {
-  if (Object.is(a, b)) return true;
-  if (typeof a !== 'object' || a === null
-    || typeof b !== 'object' || b === null) {
-    return false;
-  }
-  if (Array.isArray(a) && Array.isArray(b)) {
-    if (a.length !== b.length) return false;
-    for (let i = 0; i < a.length; i += 1) {
-      if (!Object.is(a[i], b[i])) return false;
-    }
-    return true;
-  }
-  const keysA = Object.keys(a);
-  const keysB = Object.keys(b);
-  if (keysA.length !== keysB.length) return false;
-  for (let i = 0; i < keysA.length; i += 1) {
-    const key = keysA[i];
-    if (!Object.prototype.hasOwnProperty.call(b, key)
-      || !Object.is(a[key], b[key])) {
-      return false;
-    }
-  }
-  return true;
-}
 
-export const Provider = ({ store, children }) => (
-  <ReduxContext.Provider value={store}>
-    {children}
-  </ReduxContext.Provider>
-);
+export { ReactReduxContext } from './components/Context.js';
 
-export function useDispatch() {
-  const store = useContext(ReduxContext);
-  if (!store) {
-    throw new Error('useDispatch must be used inside a Redux Provider');
-  }
-  return store.dispatch;
-}
+export { createDispatchHook, useDispatch } from './hooks/useDispatch.js';
 
-export function useSelector(selector, equalityFn = Object.is) {
-  const store = useContext(ReduxContext);
-  if (!store) {
-    throw new Error('useSelector must be used inside a Redux Provider');
-  }
-  const selectorRef = useRef(selector);
-  const equalityRef = useRef(equalityFn);
+export { createSelectorHook, useSelector } from './hooks/useSelector.js';
 
-  const [selected, setSelected] = useState(() => selector(store.getState()));
-  const selectedRef = useRef(selected);
+export { createStoreHook, useStore } from './hooks/useStore.js';
 
-  useEffect(() => {
-    selectorRef.current = selector;
-    equalityRef.current = equalityFn;
-    selectedRef.current = selected;
-  }, [selector, equalityFn, selected]);
-
-  useEffect(() => {
-    const check = () => {
-      const next = selectorRef.current(store.getState());
-      if (!equalityRef.current(selectedRef.current, next)) {
-        selectedRef.current = next;
-        setSelected(next);
-      }
-    };
-    check();
-    return store.subscribe(check);
-  }, [store]);
-
-  return selected;
-}
+export { Provider, shallowEqual };

@@ -1,12 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from 'preact/hooks';
-import {
-  MdClose,
-  MdDragIndicator,
-  MdRedo,
-  MdUndo,
-  MdVisibility,
-  MdVisibilityOff,
-} from 'react-icons/md';
 import { shallowEqual, useSelector } from '../store/react-redux/index.js';
 import { CANVAS_TYPES } from '../core/constants.js';
 import { t } from 'ttag';
@@ -130,15 +122,12 @@ const FactionCoordination = () => {
   );
   const [factions, setFactions] = useState([]);
   const [factionId, setFactionId] = useState('');
-  const [coordScope, setCoordScope] = useState('faction');
-  const [unionInfo, setUnionInfo] = useState(null);
   const [marks, setMarks] = useState([]);
-  const [marksVisible, setMarksVisible] = useState(true);
   const [enabled, setEnabled] = useState(false);
   const [canDraw, setCanDraw] = useState(false);
   const [isPanning, setIsPanning] = useState(false);
   const [tool, setTool] = useState('brush');
-  const [color, setColor] = useState('#e50000');
+  const [color, setColor] = useState('#ff3b30');
   const [width, setWidth] = useState(4);
   const [opacity, setOpacity] = useState(100);
   const [currentPoints, setCurrentPoints] = useState([]);
@@ -226,47 +215,16 @@ const FactionCoordination = () => {
   }, [factionProfiles]);
 
   const faction = factions.find((entry) => String(entry.id) === factionId);
-
-  useEffect(() => {
-    if (!faction) {
-      setUnionInfo(null);
-      setCoordScope('faction');
-      return undefined;
-    }
-    let active = true;
-    factionRequest(`/${faction.id}/diplomacy`)
-      .then((diplomacy) => {
-        if (!active) return;
-        const activeUnion = (diplomacy.alliances || []).find(
-          (entry) => entry.allianceType === 'union' && entry.sharedCoordinationEnabled !== false,
-        ) || null;
-        setUnionInfo(activeUnion);
-        if (!activeUnion) setCoordScope('faction');
-      })
-      .catch(() => {
-        if (active) {
-          setUnionInfo(null);
-          setCoordScope('faction');
-        }
-      });
-    return () => { active = false; };
-  }, [faction]);
-
-  const coordBasePath = coordScope === 'union' && unionInfo
-    ? `/coordination/union/${unionInfo.id}`
-    : faction
-      ? `/coordination/${faction.id}`
-      : null;
-
   useEffect(() => {
     setCanDraw(Boolean(faction?.canDraw));
     setMarks([]);
     setUndoStack([]);
     setRedoStack([]);
-  }, [canvasId, faction?.canDraw, factionId, coordScope, unionInfo?.id]);
+    setEnabled(false);
+  }, [canvasId, faction?.canDraw, factionId]);
 
   useEffect(() => {
-    if (!coordBasePath || isHistoricalView || rendererType !== CANVAS_TYPES.TWOD) {
+    if (!faction || isHistoricalView || rendererType !== CANVAS_TYPES.TWOD) {
       setMarks([]);
       return undefined;
     }
@@ -274,7 +232,7 @@ const FactionCoordination = () => {
     const loadMarks = async () => {
       try {
         const result = await factionRequest(
-          `${coordBasePath}?canvasId=${encodeURIComponent(canvasId)}`,
+          `/coordination/${faction.id}?canvasId=${encodeURIComponent(canvasId)}`,
         );
         if (active) {
           setCanDraw(result.canDraw);
@@ -297,7 +255,7 @@ const FactionCoordination = () => {
       active = false;
       clearInterval(timer);
     };
-  }, [coordBasePath, canvasId, isHistoricalView, rendererType, refresh]);
+  }, [faction, canvasId, isHistoricalView, rendererType, refresh]);
 
   useEffect(() => {
     const syncRendererView = () => {
@@ -326,8 +284,7 @@ const FactionCoordination = () => {
   }, [overlayView]);
 
   const createMark = useCallback(async (mark) => {
-    if (!coordBasePath) return mark;
-    const result = await factionRequest(coordBasePath, {
+    const result = await factionRequest(`/coordination/${faction.id}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -340,26 +297,24 @@ const FactionCoordination = () => {
       }),
     });
     return { ...mark, id: result.id, canvasId: Number(canvasId) };
-  }, [canvasId, coordBasePath]);
+  }, [canvasId, faction]);
 
   const deleteMark = useCallback(async (mark) => {
-    if (!coordBasePath) return;
     await factionRequest(
-      `${coordBasePath}/marks/${mark.id}`
+      `/coordination/${faction.id}/marks/${mark.id}`
       + `?canvasId=${encodeURIComponent(canvasId)}`,
       { method: 'DELETE' },
     );
-  }, [canvasId, coordBasePath]);
+  }, [canvasId, faction]);
 
   const applyMarkChanges = useCallback(async (changes) => {
-    if (!coordBasePath) return [];
-    const result = await factionRequest(`${coordBasePath}/marks`, {
+    const result = await factionRequest(`/coordination/${faction.id}/marks`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ canvasId: Number(canvasId), changes }),
     });
     return result.groups;
-  }, [canvasId, coordBasePath]);
+  }, [canvasId, faction]);
 
   const finishDrawing = useCallback(async () => {
     drawingRef.current = false;
@@ -615,10 +570,10 @@ const FactionCoordination = () => {
   };
 
   const clearMarks = async () => {
-    if (!coordBasePath) return;
+    if (!faction) return;
     try {
       await factionRequest(
-        `${coordBasePath}?canvasId=${encodeURIComponent(canvasId)}`,
+        `/coordination/${faction.id}?canvasId=${encodeURIComponent(canvasId)}`,
         { method: 'DELETE' },
       );
       setMarks([]);
@@ -691,26 +646,40 @@ const FactionCoordination = () => {
     renderer.updateView([centerX, centerY, scale * factor]);
   };
 
-  const quickColors = [
-    '#e50000', '#0083c7', '#02be01', '#e59500', '#820080', '#000000',
-  ];
-
   return (
     <>
       {canDraw && (
-        <>
+        <div
+          className={`faction-coordination-toolbar${enabled ? ' expanded' : ''}`}
+          style={{
+            position: 'fixed',
+            ...(enabled && panelPosition
+              ? { left: `${panelPosition.left}px`, top: `${panelPosition.top}px` }
+              : {
+                  bottom: enabled ? '72px' : '16px',
+                  right: enabled ? '12px' : '139px',
+                }),
+            zIndex: 9,
+            display: 'flex',
+            flexDirection: enabled ? 'column' : 'row',
+            alignItems: enabled ? 'stretch' : 'center',
+            gap: enabled ? '0.65rem' : '0.3rem',
+            width: enabled ? '190px' : 'auto',
+            padding: enabled ? '0.8rem' : '0',
+            color: '#fff',
+            background: enabled ? 'rgba(23, 28, 38, 0.97)' : 'transparent',
+            border: enabled ? '1px solid rgba(255,255,255,0.16)' : '0',
+            borderRadius: enabled ? '0.85rem' : '0',
+            boxShadow: enabled ? '0 10px 32px rgba(0,0,0,0.32)' : 'none',
+          }}
+          ref={toolbarRef}
+        >
           <button
             type="button"
-            className={`actionbuttons faction-coordination-button${enabled ? ' pressed' : ''}`}
-            style={{
-              position: 'fixed',
-              bottom: '16px',
-              right: '139px',
-              zIndex: 9,
-            }}
+            className="actionbuttons faction-coordination-button"
             aria-pressed={enabled}
-            title={t`Union & Faction Coordination Tool`}
-            aria-label={t`Union & Faction Coordination Tool`}
+            title={t`Faction canvas planning`}
+            aria-label={t`Faction canvas planning`}
             onClick={() => setEnabled((value) => !value)}
           >
             <svg
@@ -718,252 +687,178 @@ const FactionCoordination = () => {
               width="20"
               height="20"
               fill="currentColor"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <path
-                d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25Zm17.71-10.04a1 1 0 0 0 0-1.42l-2.5-2.5a1 1 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 2-1.66Z"
-              />
+                d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25Zm17.71-10.04a1 1 0 0 0 0-1.42l-2.5-2.5a1 1 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 2-1.66Z" />
             </svg>
           </button>
-
           {enabled && (
-            <div
-              className="faction-coordination-toolbar expanded"
-              style={{
-                position: 'fixed',
-                ...(panelPosition
-                  ? { left: `${panelPosition.left}px`, top: `${panelPosition.top}px` }
-                  : { bottom: '59px', right: '139px' }),
-                zIndex: 12,
-              }}
-              ref={toolbarRef}
-              aria-label={t`Coordination tools`}
-            >
+            <>
               <div
-                className="faction-coordination-header"
+                className="faction-coordination-drag-handle"
                 onPointerDown={startPanelDrag}
                 onPointerMove={movePanel}
                 onPointerUp={stopPanelDrag}
                 onPointerCancel={stopPanelDrag}
                 title={t`Drag to move`}
               >
-                <span className="faction-coordination-grip" aria-hidden="true">
-                  <MdDragIndicator />
-                </span>
-                <strong className="faction-coordination-title">
-                  {coordScope === 'union' && unionInfo
-                    ? unionInfo.name
-                    : `[${faction?.tag || faction?.name || 'Faction'}]`}
-                </strong>
-                <div
-                  className="faction-coordination-head-btns"
-                  onPointerDown={(event) => event.stopPropagation()}
-                >
+                <span aria-hidden="true">⠿</span>
+                <strong>{t`Coordination`}</strong>
+                <span
+                  className="faction-coordination-drag-hint">{t`Drag`}</span>
+              </div>
+              <section
+                className="faction-coordination-panel"
+                aria-label={t`Coordination tools`}>
+                <div className="faction-coordination-history">
                   <button
                     type="button"
                     onClick={undo}
                     disabled={!undoStack.length}
                     aria-label={t`Undo`}
                     title={t`Undo`}
-                  ><MdUndo /></button>
+                  >↶ {t`Undo`}</button>
                   <button
                     type="button"
                     onClick={redo}
                     disabled={!redoStack.length}
                     aria-label={t`Redo`}
                     title={t`Redo`}
-                  ><MdRedo /></button>
-                  <button
-                    type="button"
-                    className={!marksVisible ? 'active' : ''}
-                    onClick={() => setMarksVisible((v) => !v)}
-                    aria-label={marksVisible ? t`Hide marks` : t`Show marks`}
-                    title={marksVisible ? t`Hide marks` : t`Show marks`}
-                  >{marksVisible ? <MdVisibility /> : <MdVisibilityOff />}</button>
-                  <button
-                    type="button"
-                    onClick={() => setEnabled(false)}
-                    aria-label={t`Close coordination toolbar`}
-                    title={t`Done`}
-                  ><MdClose /></button>
+                  >↷ {t`Redo`}</button>
                 </div>
-              </div>
-
-              <div className="faction-coordination-body">
-                {unionInfo && (
-                  <div className="faction-coordination-scope" role="group" aria-label={t`Coordination layer`}>
-                    <button
-                      type="button"
-                      className={coordScope === 'faction' ? 'selected' : ''}
-                      onClick={() => setCoordScope('faction')}
-                    >
-                      [{faction?.tag || t`Faction`}]
-                    </button>
-                    <button
-                      type="button"
-                      className={coordScope === 'union' ? 'selected' : ''}
-                      onClick={() => setCoordScope('union')}
-                    >
-                      {t`Union`}
-                    </button>
-                  </div>
-                )}
-
-                {factions.length > 1 && (
-                  <select
-                    className="faction-coordination-faction-select"
-                    aria-label={t`Faction`}
-                    value={factionId}
-                    onChange={(event) => setFactionId(event.currentTarget.value)}
-                  >
-                    {factions.map((entry) => (
-                      <option key={entry.id} value={entry.id}>
-                        [{entry.tag || entry.name}] {entry.name}
-                      </option>
-                    ))}
-                  </select>
-                )}
-
-                <div className="faction-coordination-tools-row">
-                  <button
-                    type="button"
-                    className={tool === 'hand' ? 'selected' : ''}
-                    aria-label={t`Hand`}
-                    aria-pressed={tool === 'hand'}
-                    title={t`Move canvas`}
-                    onClick={() => setTool('hand')}
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M8 11V5a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v7c0 4-2.5 6-6 6h-3c-2 0-3.5-.9-4.5-2.3L3 15a1.5 1.5 0 0 1 2.4-1.8L8 16v-5Z"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    className={tool === 'brush' ? 'selected' : ''}
-                    aria-label={t`Brush`}
-                    aria-pressed={tool === 'brush'}
-                    title={t`Brush`}
-                    onClick={() => setTool('brush')}
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M15.5 4.5a2.1 2.1 0 0 1 3 3L9 17l-4 1 1-4 9.5-9.5ZM4 20c1.4 0 2.5-.5 3.2-1.4"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    className={tool === 'arrow' ? 'selected' : ''}
-                    aria-label={t`Arrow`}
-                    aria-pressed={tool === 'arrow'}
-                    title={t`Arrow`}
-                    onClick={() => setTool('arrow')}
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M5 19 19 5M9 5h10v10" />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    className={tool === 'eraser' ? 'selected' : ''}
-                    aria-label={t`Eraser`}
-                    aria-pressed={tool === 'eraser'}
-                    title={t`Eraser`}
-                    onClick={() => setTool('eraser')}
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="m3 14 9-9a2 2 0 0 1 3 0l6 6a2 2 0 0 1 0 3l-7 7H9l-6-6a2 2 0 0 1 0-1Z"
-                      />
-                      <path d="m8 9 7 7M14 21h7" />
-                    </svg>
-                  </button>
-                  {tool === 'hand' && (
-                    <>
-                      <button
-                        type="button"
-                        aria-label={t`Zoom out`}
-                        title={t`Zoom out`}
-                        onClick={() => zoomCanvas(0.8)}
-                      >−</button>
-                      <button
-                        type="button"
-                        aria-label={t`Zoom in`}
-                        title={t`Zoom in`}
-                        onClick={() => zoomCanvas(1.25)}
-                      >+</button>
-                    </>
-                  )}
-                </div>
-
-                <div className="faction-coordination-swatches">
-                  {quickColors.map((hex) => (
-                    <button
-                      key={hex}
-                      type="button"
-                      className={`faction-coordination-swatch${color.toLowerCase() === hex ? ' selected' : ''}`}
-                      style={{ backgroundColor: hex }}
-                      aria-label={`Color ${hex}`}
-                      onClick={() => setColor(hex)}
-                    />
-                  ))}
+                <label className="faction-coordination-color">
+                  <span>{t`Color`}</span>
                   <input
                     type="color"
-                    className="faction-coordination-color-picker"
                     aria-label={t`Drawing color`}
-                    title={t`Custom color`}
                     value={color}
                     onInput={(event) => setColor(event.currentTarget.value)}
                   />
+                </label>
+                <label className="faction-coordination-opacity">
+                  <span>{t`Opacity`} · {opacity}%</span>
+                  <input
+                    type="range"
+                    aria-label={t`Drawing opacity`}
+                    min="0"
+                    max="100"
+                    step="5"
+                    value={opacity}
+                    onInput={(event) => setOpacity(Number(event.currentTarget.value))}
+                  />
+                </label>
+                <div className="faction-coordination-tool-group">
+                  <span>{t`Tools`}</span>
+                  <div className="faction-coordination-tool-grid">
+                    <button
+                      type="button"
+                      className={tool === 'hand' ? 'selected' : ''}
+                      aria-label={t`Hand`}
+                      aria-pressed={tool === 'hand'}
+                      title={t`Move canvas`}
+                      onClick={() => setTool('hand')}
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M8 11V5a1.5 1.5 0 0 1 3 0v5-7a1.5 1.5 0 0 1 3 0v7-5a1.5 1.5 0 0 1 3 0v6-3a1.5 1.5 0 0 1 3 0v7c0 4-2.5 6-6 6h-3c-2 0-3.5-.9-4.5-2.3L3 15a1.5 1.5 0 0 1 2.4-1.8L8 16v-5Z" />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className={tool === 'brush' ? 'selected' : ''}
+                      aria-label={t`Brush`}
+                      aria-pressed={tool === 'brush'}
+                      title={t`Brush`}
+                      onClick={() => setTool('brush')}
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="M15.5 4.5a2.1 2.1 0 0 1 3 3L9 17l-4 1 1-4 9.5-9.5ZM4 20c1.4 0 2.5-.5 3.2-1.4" />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className={tool === 'arrow' ? 'selected' : ''}
+                      aria-label={t`Arrow`}
+                      aria-pressed={tool === 'arrow'}
+                      title={t`Arrow`}
+                      onClick={() => setTool('arrow')}
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 19 19 5M9 5h10v10" />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      className={tool === 'eraser' ? 'selected' : ''}
+                      aria-label={t`Eraser`}
+                      aria-pressed={tool === 'eraser'}
+                      title={t`Eraser`}
+                      onClick={() => setTool('eraser')}
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                          d="m3 14 9-9a2 2 0 0 1 3 0l6 6a2 2 0 0 1 0 3l-7 7H9l-6-6a2 2 0 0 1 0-1Z" />
+                        <path d="m8 9 7 7M14 21h7" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-
-                <div className="faction-coordination-sliders">
-                  <label>
-                    <span>{t`Size`} {width}</span>
-                    <input
-                      type="range"
-                      aria-label={t`Drawing thickness`}
-                      min="1"
-                      max="32"
-                      value={width}
-                      onInput={(event) => setWidth(Number(event.currentTarget.value))}
-                    />
+                {tool === 'hand' && (
+                  <div className="faction-coordination-zoom-controls">
+                    <button
+                      type="button"
+                      aria-label={t`Zoom out`}
+                      title={t`Zoom out`}
+                      onClick={() => zoomCanvas(0.8)}
+                    >−</button>
+                    <button
+                      type="button"
+                      aria-label={t`Zoom in`}
+                      title={t`Zoom in`}
+                      onClick={() => zoomCanvas(1.25)}
+                    >+</button>
+                  </div>
+                )}
+                <label className="faction-coordination-width">
+                  <span>{t`Width`} · {width}</span>
+                  <input
+                    type="range"
+                    aria-label={t`Drawing thickness`}
+                    min="1"
+                    max="32"
+                    value={width}
+                    onInput={(event) => setWidth(Number(event.currentTarget.value))}
+                  />
+                </label>
+                {factions.length > 1 && (
+                  <label className="faction-coordination-select">
+                    <span>{t`Faction`}</span>
+                    <select
+                      aria-label={t`Faction`}
+                      value={factionId}
+                      onChange={(event) => setFactionId(event.currentTarget.value)}
+                    >
+                      {factions.map((entry) => (
+                        <option key={entry.id} value={entry.id}>
+                          [{entry.tag || entry.name}]
+                        </option>
+                      ))}
+                    </select>
                   </label>
-                  <label>
-                    <span>{t`Alpha`} {opacity}%</span>
-                    <input
-                      type="range"
-                      aria-label={t`Drawing opacity`}
-                      min="10"
-                      max="100"
-                      step="5"
-                      value={opacity}
-                      onInput={(event) => setOpacity(Number(event.currentTarget.value))}
-                    />
-                  </label>
-                </div>
-
-                <div className="faction-coordination-footer">
-                  <span className="faction-coordination-meta">
-                    {marks.length} {marks.length === 1 ? t`mark` : t`marks`}
-                    {' · '}
-                    {coordScope === 'union' && unionInfo ? t`Shared` : t`Private`}
-                  </span>
-                  <button
-                    type="button"
-                    className="faction-coordination-clear"
-                    onClick={clearMarks}
-                    disabled={!marks.length}
-                  >
-                    {t`Clear`}
+                )}
+                <div className="faction-coordination-actions">
+                  <button type="button" onClick={clearMarks}>
+                    {t`Clear marks`}
+                  </button>
+                  <button type="button" onClick={() => setEnabled(false)}>
+                    {t`Done`}
                   </button>
                 </div>
-              </div>
-            </div>
+              </section>
+            </>
           )}
-        </>
+        </div>
       )}
       <svg
         aria-label={t`Faction-only coordination marks`}
@@ -1096,8 +991,8 @@ const FactionCoordination = () => {
           if (drawingRef.current) finishDrawing();
         }}
       >
-        {marksVisible && marks.map((mark) => renderMark(mark))}
-        {marksVisible && currentPoints.length > 1 && renderMark({
+        {marks.map((mark) => renderMark(mark))}
+        {currentPoints.length > 1 && renderMark({
           points: tool === 'arrow'
             ? [currentPoints[0], currentPoints[currentPoints.length - 1]]
             : currentPoints,

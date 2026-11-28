@@ -227,6 +227,8 @@ All needed files to run it got created in `./dist`. You can copy it to wherever 
 
 ## Development
 
+Run `npm run dev` to start the in-memory preview server. Use `npm run build:preview` to build its preview bundle; this does not replace the production build.
+
 Run `npm run lint:src` to check for code errors and warnings or `npm run lint -- ./your/file.js` to check a single file.
 
 Compile with source-maps and debug options (but only english language) with

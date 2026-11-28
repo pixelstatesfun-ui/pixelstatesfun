@@ -179,7 +179,6 @@ msgstr ""
 #: src/routes/api/factionkickban.js:63
 #: src/routes/api/factionleave.js:29
 #: src/routes/api/factionroleleave.js:36
-#. when leaving a faction and you are the last owner
 msgid "Can not orphan a faction"
 msgstr ""
 
@@ -360,12 +359,8 @@ msgstr ""
 msgid "Delete Application"
 msgstr ""
 
-#: src/utils/validation.js:122
-msgid "Description can't be empty"
-msgstr ""
-
-#: src/utils/validation.js:125
-msgid "Description must be shorter than 1000 characters"
+#: src/utils/validation.js:169
+msgid "Description cannot be longer than 500 characters."
 msgstr ""
 
 #: src/routes/oidc/register.js:193
@@ -389,23 +384,23 @@ msgstr ""
 msgid "Edit existing applications"
 msgstr ""
 
-#: src/utils/validation.js:19
+#: src/utils/validation.js:12
 msgid "Email can't be empty."
 msgstr ""
 
-#: src/utils/validation.js:21
+#: src/utils/validation.js:14
 msgid "Email can't be longer than 40 characters."
 msgstr ""
 
-#: src/utils/validation.js:22
+#: src/utils/validation.js:15
 msgid "Email should at least contain a dot"
 msgstr ""
 
-#: src/utils/validation.js:20
+#: src/utils/validation.js:13
 msgid "Email should be at least 5 characters long."
 msgstr ""
 
-#: src/utils/validation.js:25
+#: src/utils/validation.js:18
 msgid "Email should contain a @"
 msgstr ""
 
@@ -536,7 +531,7 @@ msgstr ""
 msgid "Images must be GIF, WebP, or PNG and no larger than 512 × 512"
 msgstr ""
 
-#: src/utils/validation.js:72
+#: src/utils/validation.js:65
 msgid "Incorrect password"
 msgstr ""
 
@@ -697,30 +692,35 @@ msgstr ""
 msgid "Name already in use."
 msgstr ""
 
-#: src/utils/validation.js:104
-msgid "Name can only contain the characters: a-z . _ and -"
-msgstr ""
-
-#: src/utils/validation.js:32
-#: src/utils/validation.js:96
+#: src/utils/validation.js:25
 msgid "Name can't be empty."
 msgstr ""
 
-#: src/utils/validation.js:43
+#: src/utils/validation.js:139
+msgid "Name cannot be longer than 32 characters."
+msgstr ""
+
+#: src/utils/validation.js:36
 msgid "Name contains invalid character like @, /, \\ or #"
+msgstr ""
+
+#: src/utils/validation.js:142
+msgid "Name contains invalid characters."
 msgstr ""
 
 #: src/routes/oidc/register.js:86
 msgid "Name is too long"
 msgstr ""
 
-#: src/utils/validation.js:33
-#: src/utils/validation.js:98
+#: src/utils/validation.js:26
 msgid "Name must be at least 2 characters long"
 msgstr ""
 
-#: src/utils/validation.js:34
-#: src/utils/validation.js:101
+#: src/utils/validation.js:136
+msgid "Name must be at least 2 characters long."
+msgstr ""
+
+#: src/utils/validation.js:27
 msgid "Name must be shorter than 26 characters"
 msgstr ""
 
@@ -752,7 +752,7 @@ msgstr ""
 msgid "No or invalid badge id."
 msgstr ""
 
-#: src/utils/validation.js:140
+#: src/utils/validation.js:76
 msgid "No password given."
 msgstr ""
 
@@ -813,11 +813,11 @@ msgstr ""
 msgid "Overlord"
 msgstr ""
 
-#: src/utils/validation.js:143
+#: src/utils/validation.js:78
 msgid "Password must be at least 6 characters long."
 msgstr ""
 
-#: src/utils/validation.js:146
+#: src/utils/validation.js:81
 msgid "Password must be shorter than 60 characters."
 msgstr ""
 
@@ -961,7 +961,7 @@ msgstr ""
 #: src/routes/api/factionroleleave.js:38
 #: src/routes/api/media.js:194
 #: src/routes/api/media.js:355
-#: src/utils/validation.js:74
+#: src/utils/validation.js:67
 msgid "Server Error"
 msgstr ""
 
@@ -1014,20 +1014,12 @@ msgstr ""
 msgid "Tag already in use."
 msgstr ""
 
-#: src/utils/validation.js:115
-msgid "Tag can only contain latin letters and numbers"
+#: src/utils/validation.js:152
+msgid "Tag cannot be longer than 6 characters."
 msgstr ""
 
-#: src/utils/validation.js:110
-msgid "Tag can't be empty."
-msgstr ""
-
-#: src/utils/validation.js:112
-msgid "Tag must be at least 2 characters long"
-msgstr ""
-
-#: src/utils/validation.js:113
-msgid "Tag must be at most 3 characters long"
+#: src/utils/validation.js:149
+msgid "Tag must be at least 2 characters long."
 msgstr ""
 
 #: src/core/MailProvider.js:74
@@ -1086,7 +1078,7 @@ msgid ""
 "installing malware, Thank You."
 msgstr ""
 
-#: src/utils/validation.js:70
+#: src/utils/validation.js:63
 msgid ""
 "This email / password combination got hacked and leaked. To protect this "
 "account, the password has been reset. Please use the \"Forgot my password\" "
@@ -1131,7 +1123,7 @@ msgstr ""
 msgid "This password-reset link isn't valid anymore :("
 msgstr ""
 
-#: src/utils/validation.js:67
+#: src/utils/validation.js:60
 msgid "This user has not password set"
 msgstr ""
 
@@ -1156,20 +1148,12 @@ msgstr ""
 msgid "Timelapses unlock after placing 300,000 pixels"
 msgstr ""
 
-#: src/utils/validation.js:79
-msgid "Title can't be empty."
+#: src/utils/validation.js:162
+msgid "Title cannot be longer than 48 characters."
 msgstr ""
 
-#: src/utils/validation.js:90
-msgid "Title contains invalid character like @, /, \\ or #"
-msgstr ""
-
-#: src/utils/validation.js:80
-msgid "Title must be at least 2 characters long"
-msgstr ""
-
-#: src/utils/validation.js:81
-msgid "Title must be shorter than 26 characters"
+#: src/utils/validation.js:159
+msgid "Title must be at least 2 characters long."
 msgstr ""
 
 #: src/routes/api/timelapse.js:345
@@ -1219,19 +1203,19 @@ msgstr ""
 msgid "Username can not start with pp_"
 msgstr ""
 
-#: src/utils/validation.js:57
+#: src/utils/validation.js:50
 msgid "Username can only contain the characters: a-z . _ and -"
 msgstr ""
 
-#: src/utils/validation.js:49
+#: src/utils/validation.js:42
 msgid "Username can't be empty."
 msgstr ""
 
-#: src/utils/validation.js:51
+#: src/utils/validation.js:44
 msgid "Username must be at least 2 characters long"
 msgstr ""
 
-#: src/utils/validation.js:54
+#: src/utils/validation.js:47
 msgid "Username must be shorter than 26 characters"
 msgstr ""
 

@@ -6,8 +6,8 @@ import { memo } from 'preact/compat';
 import {
   useSelector, shallowEqual, useDispatch,
 } from '../store/react-redux/index.js';
-import { RiSave3Line } from 'react-icons/ri';
-import { IoTrashOutline } from 'react-icons/io5';
+import RiSave3Line from '../icons/RiSave3Line.svg';
+import IoTrashOutline from '../icons/IoTrashOutline.svg';
 import { t } from 'ttag';
 
 import DeleteList from './DeleteList.jsx';

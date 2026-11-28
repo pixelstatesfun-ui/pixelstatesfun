@@ -2,41 +2,78 @@
  * Media ID and filename URL utilities
  */
 
-export function getUrlsFromMediaIdAndName(mediaId, name = 'media') {
-  if (!mediaId) {
-    return [null, null, null];
-  }
-  const str = String(mediaId);
-  if (str.startsWith('/') || /^https?:\/\//i.test(str)
-    || str.startsWith('data:')) {
-    return [str, str, str];
-  }
-  const encoded = encodeURIComponent(str);
-  const safeName = encodeURIComponent(name || 'media');
-  const full = `/api/media/${encoded}/${safeName}`;
-  return [full, full, full];
-}
-
-export function getMediaDetailsFromUrl(url) {
-  if (!url) {
-    return ['', ''];
-  }
-  const parts = String(url).split('/').filter(Boolean);
-  const title = parts[parts.length - 1] || 'media';
-  const mediaId = parts.length >= 2 ? parts[parts.length - 2] : title;
-  return [mediaId, title];
+export function splitFilename(filename) {
+  const separator = filename.lastIndexOf('.');
+  return [
+    filename.substring(0, separator),
+    filename.substring(separator + 1),
+  ];
 }
 
 export function addIdToFilename(filename, id) {
-  if (!filename) return String(id || '');
-  if (!id) return filename;
-  const dot = filename.lastIndexOf('.');
-  if (dot <= 0) return `${filename}_${id}`;
-  return `${filename.slice(0, dot)}_${id}${filename.slice(dot)}`;
+  id = String(id);
+  const extSeparator = filename.lastIndexOf('.');
+  if (extSeparator === -1) {
+    return `${filename}:${id}`;
+  }
+  return `${filename.substring(0, extSeparator)}:${id
+  }${filename.substring(extSeparator)}`;
 }
 
 export function extractIdFromFilename(filename) {
-  if (!filename) return '';
-  const match = String(filename).match(/_([a-zA-Z0-9:-]+)(?:\.[^.]+)?$/);
-  return match ? match[1] : '';
+  const idSeparator = filename.lastIndexOf(':');
+  if (idSeparator === -1) {
+    return [filename, null];
+  }
+  let extSeparator = filename.indexOf('.', idSeparator + 1);
+  if (extSeparator === -1) {
+    extSeparator = filename.length;
+  }
+  return [
+    filename.substring(0, idSeparator) + filename.substring(extSeparator),
+    parseInt(filename.substring(idSeparator + 1, extSeparator), 10),
+  ];
+}
+
+export function getMediaDetailsFromUrl(url) {
+  if (url?.startsWith('/m/') && url[4] !== '/' && url[9] === '/') {
+    const shortId = url.substring(3, 9);
+    let extEnd = url.indexOf('&', 10);
+    if (extEnd === -1) {
+      extEnd = url.length;
+    }
+    const extStart = url.lastIndexOf('.', extEnd) + 1;
+    const extension = url.substring(extStart, extEnd);
+    const name = decodeURIComponent(url.substring(10, extStart - 1));
+    return [`${shortId}:${extension}`, name];
+  }
+  return [null, null];
+}
+
+export function getUrlFromMediaIdAndName(mediaId, name) {
+  return getUrlsFromMediaIdAndName(mediaId, name)[0];
+}
+
+export function getUrlsFromMediaIdAndName(mediaId, name = 'm') {
+  if (typeof mediaId !== 'string' || !mediaId) {
+    return [null, null, null];
+  }
+  if (mediaId.startsWith('/') || /^https?:\/\//i.test(mediaId)
+    || mediaId.startsWith('data:')) {
+    return [mediaId, mediaId, mediaId];
+  }
+  const [shortId, extension] = mediaId.split(':');
+  if (!shortId || !extension) {
+    return [null, null, null];
+  }
+  const safeName = encodeURIComponent(name || 'm');
+  if (/^[a-zA-Z0-9]{6}$/.test(shortId)) {
+    return [
+      `/m/${shortId}/${safeName}.${extension}`,
+      `/m/t/${shortId}/${safeName}.${extension}.webp`,
+      `/m/i/${shortId}/${safeName}.${extension}.webp`,
+    ];
+  }
+  const previewUrl = `/api/media/${encodeURIComponent(mediaId)}/${safeName}`;
+  return [previewUrl, previewUrl, previewUrl];
 }

@@ -71,6 +71,7 @@ const TerritorySelector = ({
   const [autoMaskInfo, setAutoMaskInfo] = useState(null);
   const [hasLoadedImage, setHasLoadedImage] = useState(false);
   const [statusNote, setStatusNote] = useState('');
+  const formattedAutoMaskCount = autoMaskInfo?.opaqueCount.toLocaleString();
 
   const toWorldCoords = useCallback((pt, canvas) => {
     const scaleX = imgMeta.width / canvas.width;
@@ -263,8 +264,9 @@ const TerritorySelector = ({
       templateHeight: height,
     };
     setAutoMaskInfo({ opaqueCount, width, height });
+    const formattedOpaqueCount = opaqueCount.toLocaleString();
     setStatusNote(
-      t`Auto-protected ${opaqueCount.toLocaleString()} opaque template pixels at Canvas #${cId} (${ox}, ${oy}).`,
+      t`Auto-protected ${formattedOpaqueCount} opaque template pixels at Canvas #${cId} (${ox}, ${oy}).`,
     );
     onChange(selection);
   }, [onChange]);
@@ -486,7 +488,7 @@ const TerritorySelector = ({
           )}
           {autoMaskInfo && (
             <small className="territory-mask-summary">
-              {t`Detected ${autoMaskInfo.opaqueCount.toLocaleString()} exact template pixels (${autoMaskInfo.width}×${autoMaskInfo.height}).`}
+              {t`Detected ${formattedAutoMaskCount} exact template pixels (${autoMaskInfo.width}×${autoMaskInfo.height}).`}
             </small>
           )}
         </div>

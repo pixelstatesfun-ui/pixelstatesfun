@@ -2,13 +2,11 @@ import { memo } from 'preact/compat';
 import { useSelector } from '../../store/react-redux/index.js';
 import { t } from 'ttag';
 
-import { MdPerson } from 'react-icons/md';
-import {
-  FaFire,
-  FaNewspaper,
-  FaPaintRoller,
-  FaShieldAlt,
-} from 'react-icons/fa';
+import FaClipboard from '../../icons/FaClipboard.svg';
+import FaPaintRoller from '../../icons/FaPaintRoller.svg';
+import FaShieldAlt from '../../icons/FaShieldAlt.svg';
+import Flame from '../../icons/icons-flame.svg';
+import MdPerson from '../../icons/MdPerson.svg';
 import useLink from '../hooks/link.js';
 
 const QuickAccessButtons = () => {
@@ -54,7 +52,7 @@ const QuickAccessButtons = () => {
           args: { page: 'news' },
         })}
       >
-        <FaNewspaper />
+        <FaClipboard />
       </button>
 
       {templatesAvailable && (
@@ -81,7 +79,7 @@ const QuickAccessButtons = () => {
           reuse: true,
         })}
       >
-        <FaFire />
+        <Flame />
       </button>
     </div>
   );
