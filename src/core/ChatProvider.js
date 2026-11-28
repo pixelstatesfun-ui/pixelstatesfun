@@ -6,7 +6,7 @@ import {
   findIdByNameOrId, getDummyUser, getFactionChatStyleForUser, getLastIPOfUser,
 } from '../data/sql/User.js';
 import {
-  getDefaultChannel, isFactionChannel,
+  getDefaultChannel,
 } from '../data/sql/Channel.js';
 import ChatMessageBuffer from './ChatMessageBuffer.js';
 import socketEvents from '../socket/socketEvents.js';
@@ -86,12 +86,10 @@ export class ChatProvider {
      */
     this.defaultChannelIds = new Set();
     this.enChannelId = 0;
-    this.intChannelId = 0;
     this.infoUserId = 1;
     this.eventUserId = 1;
     this.apiSocketUserId = 1;
     this.caseCheck = /^[A-Z !.]*$/;
-    this.cyrillic = /[\u0436-\u043B]'/;
     // unused as of 2026-03-03
     this.substitutes = [];
     this.chatMessageBuffer = new ChatMessageBuffer(socketEvents);
@@ -133,8 +131,6 @@ export class ChatProvider {
       const { id, lastTs } = channel;
       if (name === 'en') {
         this.enChannelId = id;
-      } else if (name === 'int') {
-        this.intChannelId = id;
       }
       const channelArray = [id, name, lastTs, null, true, null];
       this.defaultChannels.push(channelArray);
@@ -208,38 +204,6 @@ export class ChatProvider {
 
   getHistory(cid, limit = 30) {
     return this.chatMessageBuffer.getMessages(cid, limit);
-  }
-
-  static isLikelyEnglishMessage(message) {
-    const trimmed = message.trim();
-    if (!trimmed || trimmed.length < 4) {
-      return false;
-    }
-    const hasCyrillic = /[\u0400-\u04FF]/.test(trimmed);
-    const englishWords = (trimmed.match(/\b[a-z]{3,}\b/gi) || []).length;
-    const asciiRatio = (trimmed.match(/[a-z]/gi) || []).length / trimmed.length;
-    return !hasCyrillic && englishWords >= 2 && asciiRatio >= 0.45;
-  }
-
-  async punishLanguageMismatch(user, channelId, message, ttag) {
-    const { t } = ttag;
-    if (await isFactionChannel(channelId)) {
-      return false;
-    }
-    if (channelId === this.enChannelId || channelId === this.intChannelId
-      || !ChatProvider.isLikelyEnglishMessage(message)
-    ) {
-      return false;
-    }
-    const lastWarning = user.languageWarningAt || 0;
-    const now = Date.now();
-    if (now - lastWarning < 10000) {
-      user.languageWarningAt = 0;
-      await this.mute(user.id, { duration: 60, printChannel: channelId });
-      return true;
-    }
-    user.languageWarningAt = now;
-    throw new Error(t`Please keep this channel language consistent.`);
   }
 
   async punishVoidSpam(user, message, channelId, ttag) {
@@ -502,14 +466,6 @@ export class ChatProvider {
     }
 
     const chatCommand = message.trim().toLowerCase();
-    if (channelId === this.enChannelId
-      && !(await isFactionChannel(channelId))
-      && /[\u0400-\u04FF\u0600-\u06FF\u3040-\u30FF\u3400-\u9FFF\uAC00-\uD7AF]/
-        .test(message)
-    ) {
-      await this.mute(user.id, { duration: 60, printChannel: channelId });
-      return t`Please use the chat channel for your language.`;
-    }
 
     if (chatCommand === '!void' || chatCommand === '/void'
       || chatCommand === '!whenvoid' || chatCommand === '/whenvoid'
@@ -531,17 +487,6 @@ export class ChatProvider {
       return null;
     }
 
-    try {
-      const langBlocked = await this.punishLanguageMismatch(
-        user, channelId, message, ttag,
-      );
-      if (langBlocked) {
-        return null;
-      }
-    } catch (error) {
-      return error.message;
-    }
-
     if (baseName.trim() === '') {
       return 'nope';
     }
@@ -556,12 +501,6 @@ export class ChatProvider {
     for (let i = 0; i < this.substitutes.length; i += 1) {
       const substitute = this.substitutes[i];
       message = message.replace(substitute.regexp, substitute.replace);
-    }
-
-    if (message.match(this.cyrillic) && channelId === this.enChannelId
-      && !(await isFactionChannel(channelId))
-    ) {
-      return t`Please use int channel`;
     }
 
     if (user.lastMessage && user.lastMessage === message) {
